@@ -1,0 +1,119 @@
+Path to Bowtie 2 specified as: bowtie2
+Bowtie seems to be working fine (tested command 'bowtie2 --version' [2.3.0])
+Output format is BAM (default)
+Did not find Samtools on the system. Alignments will be compressed with GZIP instead (.sam.gz)
+Reference genome folder provided is Crassostrea_gigas.oyster_v9.dna_sm.toplevel/	(absolute path is '/Users/yaamini/Documents/project-gigas-oa-meth/analyses/2019-08-30-Bismark-Parameter-Testing/Crassostrea_gigas.oyster_v9.dna_sm.toplevel/)'
+Processing sequences up to read no. 10000 from the input file
+
+Input files to be analysed (in current folder '/Users/yaamini/Documents/project-gigas-oa-meth/analyses/2019-08-30-Bismark-Parameter-Testing'):
+YRVL_R1_001.fastq.gz
+YRVL_R2_001.fastq.gz
+Library was specified to be not strand-specific (non-directional), therefore alignments to all four possible bisulfite strands (OT, CTOT, OB and CTOB) will be reported
+Setting parallelization to single-threaded (default)
+
+Current working directory is: /Users/yaamini/Documents/project-gigas-oa-meth/analyses/2019-08-30-Bismark-Parameter-Testing
+
+Now reading in and storing sequence information of the genome specified in: /Users/yaamini/Documents/project-gigas-oa-meth/analyses/2019-08-30-Bismark-Parameter-Testing/Crassostrea_gigas.oyster_v9.dna_sm.toplevel/
+
+Single-core mode: setting pid to 1
+
+Paired-end alignments will be performed
+=======================================
+
+The provided filenames for paired-end alignments are YRVL_R1_001.fastq.gz and YRVL_R2_001.fastq.gz
+Input files are in FastQ format
+Processing reads up to sequence no. 10000 from YRVL_R1_001.fastq.gz
+Writing a C -> T converted version of the input file YRVL_R1_001.fastq.gz to YRVL_R1_001.fastq.gz_C_to_T.fastq
+Writing a G -> A converted version of the input file YRVL_R1_001.fastq.gz to YRVL_R1_001.fastq.gz_G_to_A.fastq
+
+Created C -> T as well as G -> A converted versions of the FastQ file YRVL_R1_001.fastq.gz (10001 sequences in total)
+
+Processing reads up to sequence no. 10000 from YRVL_R2_001.fastq.gz
+Writing a C -> T converted version of the input file YRVL_R2_001.fastq.gz to YRVL_R2_001.fastq.gz_C_to_T.fastq
+Writing a G -> A converted version of the input file YRVL_R2_001.fastq.gz to YRVL_R2_001.fastq.gz_G_to_A.fastq
+
+Created C -> T as well as G -> A converted versions of the FastQ file YRVL_R2_001.fastq.gz (10001 sequences in total)
+
+Input files are YRVL_R1_001.fastq.gz_C_to_T.fastq and YRVL_R1_001.fastq.gz_G_to_A.fastq and YRVL_R2_001.fastq.gz_C_to_T.fastq and YRVL_R2_001.fastq.gz_G_to_A.fastq (FastQ)
+Now running 4 individual instances of Bowtie 2 against the bisulfite genome of /Users/yaamini/Documents/project-gigas-oa-meth/analyses/2019-08-30-Bismark-Parameter-Testing/Crassostrea_gigas.oyster_v9.dna_sm.toplevel/ with the specified options: -q --score-min L,0,-0.6 -p 4 --reorder --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500
+
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2CTgenome (reading in sequences from YRVL_R1_001.fastq.gz_C_to_T.fastq and YRVL_R2_001.fastq.gz_G_to_A.fastq, with the options: -q --score-min L,0,-0.6 -p 4 --reorder --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --norc))
+Found first alignment:
+GWNJ-0901:413:GW1904042006th:8:1101:9120:1327_1:N:0:NGACCA/1	77	*	0	0	*	*	0	0	NTATTTGAAATAAGTTTTGTAGTGTGTGTAAAAAATTGAAATAATGTTGTTTATGGTGTTAAGGTTTTTTGTGGAAATAAAAAGATATATATTTAAATATGGAGATTTTTTTTTTTATATAATTTTTTTTAGATTGTAAGTGTTTATGTT	#AAFFJFJJJJJJJJJJ<J<AAAAFA<AFF-F<FFJJJ-AFJFFJJJJFJJJA-FJJJFJ-<JFJ<JJJ-AJAAJJ-FJJF-FJ-J7-<J-FAJJ<AJ<FJA-<-FJAJJ<JJ-F-<F-FF-A-A--AF-77AJ7F<-77777-7<-AJ-	YT:Z:UP
+GWNJ-0901:413:GW1904042006th:8:1101:9120:1327_2:N:0:NGACCA/2	141	*	0	0	*	*	0	0	NAAAAATATTATATTATATAAAAAATCTCCTTATTTAATTATCTATCTTTTAATTTCCACTTTATATCTTAACAACTTAATCAATATTATTTCAATTTTTTACACACACTTCAAATTTTATTTCTAATATTAATCAAAAAAACATTATAT	#A-AA-FFJJ<JJJJJJJ--AFFJF-<A-F-AFJAJJJ-FA7-<<FAFFJ<-FJJJF7AFJ-7-F7-F-<-7-7-7AJFJ---<-7A7-A7F<F-FFJJJJAAAFFF-7AF-77---7F-FAFF--7FA7--7---)-7--7<)--<<<F	YT:Z:UP
+Now starting a Bowtie 2 paired-end alignment for GAread1CTread2GAgenome (reading in sequences from YRVL_R1_001.fastq.gz_G_to_A.fastq and YRVL_R2_001.fastq.gz_C_to_T.fastq, with the options: -q --score-min L,0,-0.6 -p 4 --reorder --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --norc))
+Found first alignment:
+GWNJ-0901:413:GW1904042006th:8:1101:9120:1327_1:N:0:NGACCA/1	77	*	0	0	*	*	0	0	NTATTTAAAATAAATTTTATAATATATATAAAAAATTAAAATAATATTATTTATAATATTAAAATTTTTTATAAAAATAAAAAAATATATATTTAAATATAAAAATTTTTTTTTTTATATAATTTCTTTCAAATTATAAATACTTACATC	#AAFFJFJJJJJJJJJJ<J<AAAAFA<AFF-F<FFJJJ-AFJFFJJJJFJJJA-FJJJFJ-<JFJ<JJJ-AJAAJJ-FJJF-FJ-J7-<J-FAJJ<AJ<FJA-<-FJAJJ<JJ-F-<F-FF-A-A--AF-77AJ7F<-77777-7<-AJ-	YT:Z:UP
+GWNJ-0901:413:GW1904042006th:8:1101:9120:1327_2:N:0:NGACCA/2	141	*	0	0	*	*	0	0	NGGGGATATTATATTATATAAAAAATTTTTTTATTTAATTATTTATTTTTTAATTTTTATTTTATATTTTAATAATTTAATTAATATTATTTTAATTTTTTATATATATTTTAAATTTTATTTTTAATATTGATTGGAAGAGTGTTGTGT	#A-AA-FFJJ<JJJJJJJ--AFFJF-<A-F-AFJAJJJ-FA7-<<FAFFJ<-FJJJF7AFJ-7-F7-F-<-7-7-7AJFJ---<-7A7-A7F<F-FFJJJJAAAFFF-7AF-77---7F-FAFF--7FA7--7---)-7--7<)--<<<F	YT:Z:UP
+Now starting a Bowtie 2 paired-end alignment for GAread1CTread2CTgenome (reading in sequences from YRVL_R1_001.fastq.gz_G_to_A.fastq and YRVL_R2_001.fastq.gz_C_to_T.fastq, with the options: -q --score-min L,0,-0.6 -p 4 --reorder --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --nofw))
+Found first alignment:
+GWNJ-0901:413:GW1904042006th:8:1101:9120:1327_1:N:0:NGACCA/1	77	*	0	0	*	*	0	0	NTATTTAAAATAAATTTTATAATATATATAAAAAATTAAAATAATATTATTTATAATATTAAAATTTTTTATAAAAATAAAAAAATATATATTTAAATATAAAAATTTTTTTTTTTATATAATTTCTTTCAAATTATAAATACTTACATC	#AAFFJFJJJJJJJJJJ<J<AAAAFA<AFF-F<FFJJJ-AFJFFJJJJFJJJA-FJJJFJ-<JFJ<JJJ-AJAAJJ-FJJF-FJ-J7-<J-FAJJ<AJ<FJA-<-FJAJJ<JJ-F-<F-FF-A-A--AF-77AJ7F<-77777-7<-AJ-	YT:Z:UP
+GWNJ-0901:413:GW1904042006th:8:1101:9120:1327_2:N:0:NGACCA/2	141	*	0	0	*	*	0	0	NGGGGATATTATATTATATAAAAAATTTTTTTATTTAATTATTTATTTTTTAATTTTTATTTTATATTTTAATAATTTAATTAATATTATTTTAATTTTTTATATATATTTTAAATTTTATTTTTAATATTGATTGGAAGAGTGTTGTGT	#A-AA-FFJJ<JJJJJJJ--AFFJF-<A-F-AFJAJJJ-FA7-<<FAFFJ<-FJJJF7AFJ-7-F7-F-<-7-7-7AJFJ---<-7A7-A7F<F-FFJJJJAAAFFF-7AF-77---7F-FAFF--7FA7--7---)-7--7<)--<<<F	YT:Z:UP
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2GAgenome (reading in sequences from YRVL_R1_001.fastq.gz_C_to_T.fastq and YRVL_R2_001.fastq.gz_G_to_A.fastq, with the options: -q --score-min L,0,-0.6 -p 4 --reorder --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --nofw))
+Found first alignment:
+GWNJ-0901:413:GW1904042006th:8:1101:9120:1327_1:N:0:NGACCA/1	77	*	0	0	*	*	0	0	NTATTTGAAATAAGTTTTGTAGTGTGTGTAAAAAATTGAAATAATGTTGTTTATGGTGTTAAGGTTTTTTGTGGAAATAAAAAGATATATATTTAAATATGGAGATTTTTTTTTTTATATAATTTTTTTTAGATTGTAAGTGTTTATGTT	#AAFFJFJJJJJJJJJJ<J<AAAAFA<AFF-F<FFJJJ-AFJFFJJJJFJJJA-FJJJFJ-<JFJ<JJJ-AJAAJJ-FJJF-FJ-J7-<J-FAJJ<AJ<FJA-<-FJAJJ<JJ-F-<F-FF-A-A--AF-77AJ7F<-77777-7<-AJ-	YT:Z:UP
+GWNJ-0901:413:GW1904042006th:8:1101:9120:1327_2:N:0:NGACCA/2	141	*	0	0	*	*	0	0	NAAAAATATTATATTATATAAAAAATCTCCTTATTTAATTATCTATCTTTTAATTTCCACTTTATATCTTAACAACTTAATCAATATTATTTCAATTTTTTACACACACTTCAAATTTTATTTCTAATATTAATCAAAAAAACATTATAT	#A-AA-FFJJ<JJJJJJJ--AFFJF-<A-F-AFJAJJJ-FA7-<<FAFFJ<-FJJJF7AFJ-7-F7-F-<-7-7-7AJFJ---<-7A7-A7F<F-FFJJJJAAAFFF-7AF-77---7F-FAFF--7FA7--7---)-7--7<)--<<<F	YT:Z:UP
+
+>>> Writing bisulfite mapping results to YRVL_R1_001_bismark_bt2_pe.sam.gz <<<
+
+
+Reading in the sequence files YRVL_R1_001.fastq.gz and YRVL_R2_001.fastq.gz
+Chromosomal sequence could not be extracted for	GWNJ-0901:413:GW1904042006th:8:1101:18264:3524_1:N:0:TGACCA	scaffold36208	2
+10000 reads; of these:
+  10000 (100.00%) were paired; of these:
+    9993 (99.93%) aligned concordantly 0 times
+    3 (0.03%) aligned concordantly exactly 1 time
+    4 (0.04%) aligned concordantly >1 times
+0.07% overall alignment rate
+10000 reads; of these:
+  10000 (100.00%) were paired; of these:
+    9986 (99.86%) aligned concordantly 0 times
+    6 (0.06%) aligned concordantly exactly 1 time
+    8 (0.08%) aligned concordantly >1 times
+0.14% overall alignment rate
+10000 reads; of these:
+  10000 (100.00%) were paired; of these:
+    6514 (65.14%) aligned concordantly 0 times
+    2005 (20.05%) aligned concordantly exactly 1 time
+    1481 (14.81%) aligned concordantly >1 times
+34.86% overall alignment rate
+10000 reads; of these:
+  10000 (100.00%) were paired; of these:
+    6534 (65.34%) aligned concordantly 0 times
+    1972 (19.72%) aligned concordantly exactly 1 time
+    1494 (14.94%) aligned concordantly >1 times
+34.66% overall alignment rate
+Processed 10000 sequences in total
+
+
+Successfully deleted the temporary files YRVL_R1_001.fastq.gz_C_to_T.fastq, YRVL_R1_001.fastq.gz_G_to_A.fastq, YRVL_R2_001.fastq.gz_C_to_T.fastq and YRVL_R2_001.fastq.gz_G_to_A.fastq
+
+Final Alignment report
+======================
+Sequence pairs analysed in total:	10000
+Final Cytosine Methylation Report
+=================================
+Total number of C's analysed:	222656
+
+Total methylated C's in CpG context:	4408
+Total methylated C's in CHG context:	1358
+Total methylated C's in CHH context:	6232
+Total methylated C's in Unknown context:	187
+
+Total unmethylated C's in CpG context:	22424
+Total unmethylated C's in CHG context:	35582
+Total unmethylated C's in CHH context:	152652
+Total unmethylated C's in Unknown context:	937
+
+C methylated in CpG context:	16.4%
+C methylated in CHG context:	3.7%
+C methylated in CHH context:	3.9%
+C methylated in unknown context (CN or CHN):	16.6%
+
+
+Bismark completed in 0d 0h 0m 27s
+
+====================
+Bismark run complete
+====================
+

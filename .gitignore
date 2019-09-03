@@ -1,0 +1,8 @@
+
+*.bt2
+*.fa
+*.tar
+analyses/2019-08-30-Bismark-Parameter-Testing/YRVA_R1_001.fastq.gz
+analyses/2019-08-30-Bismark-Parameter-Testing/YRVA_R2_001.fastq.gz
+analyses/2019-08-30-Bismark-Parameter-Testing/YRVL_R1_001.fastq.gz
+analyses/2019-08-30-Bismark-Parameter-Testing/YRVL_R2_001.fastq.gz
