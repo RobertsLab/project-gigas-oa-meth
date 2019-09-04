@@ -15,11 +15,11 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=yaaminiv@uw.edu
 ## Specify the working directory for this job
-#SBATCH --workdir=/gscratch/scrubbed/yaamini/analyses/Gigas-WGBS/2019-09-03-Gigas-Bismark
+#SBATCH --chdir=/gscratch/scrubbed/yaamini/analyses/Gigas-WGBS/2019-09-03-Gigas-Bismark
 
 #Add Directories and Programs to Path
 
-bismark_dir="/gscratch/srlab/programs/Bismark-0.19.0"
+bismark_dir="/gscratch/srlab/programs/Bismark-0.21.0"
 bowtie2_dir="/gscratch/srlab/programs/bowtie2-2.3.4.1-linux-x86_64/"
 trimmed_files="/gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Trimmed-Files/"
 genome="/gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Bismark-Inputs/"
