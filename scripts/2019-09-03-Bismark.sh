@@ -32,7 +32,7 @@ samtools_dir="/gscratch/srlab/programs/samtools-1.9/"
 
 find ${trimmed_files}/YRV*_R1_001.fastq.gz \
 | xargs basename -s _R1_001.fastq.gz | xargs -I{} ${bismark_dir}bismark \
---path_to_bowtie ${bowtie2_dir} \
+--path_to_bowtie2 ${bowtie2_dir} \
 --samtools_path ${samtools_dir} \
 --non_directional \
 -p 4 \
