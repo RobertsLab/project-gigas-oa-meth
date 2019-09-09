@@ -17,14 +17,6 @@
 ## Specify the working directory for this job
 #SBATCH --chdir=/gscratch/scrubbed/yaamini/analyses/Gigas-WGBS/2019-09-03-Gigas-Bismark
 
-#Add Directories and Programs to Path
-
-bismark_dir="/gscratch/srlab/programs/Bismark-0.21.0/"
-bowtie2_dir="/gscratch/srlab/programs/bowtie2-2.3.4.1-linux-x86_64/"
-trimmed_files="/gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Trimmed-Files"
-genome="/gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Bismark-Inputs/"
-samtools_dir="/gscratch/srlab/programs/samtools-1.9/"
-
 #Genome preparation
 #Sam White prepared the bisulfite genome: https://robertslab.github.io/sams-notebook/2019/02/21/Data-Management-Create-C.gigas-Bisulfite-Genome-with-Bismark-on-Mox.html
 
@@ -32,23 +24,23 @@ samtools_dir="/gscratch/srlab/programs/samtools-1.9/"
 
 %%bash
 
-find ${trimmed_files}/YRV*_R1_001.fastq.gz \
-| xargs basename -s _R1_001.fastq.gz | xargs -I{} ${bismark_dir}bismark \
---path_to_bowtie ${bowtie2_dir} \
---samtools_path ${samtools_dir} \
+find /gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Trimmed-Files/YRV*_R1_001.fastq.gz \
+| xargs basename -s _R1_001.fastq.gz | xargs -I{} /gscratch/srlab/programs/Bismark-0.21.0/bismark \
+--path_to_bowtie2 /gscratch/srlab/programs/bowtie2-2.3.4.1-linux-x86_64/ \
+--samtools_path /gscratch/srlab/programs/samtools-1.9/ \
 --non_directional \
 -p 4 \
 -score_min L,0,-0.9 \
---genome ${genome} \
--1 ${trimmed_files}/{}_R1_001.fastq.gz \
--2 ${trimmed_files}/{}_R2_001.fastq.gz
+--genome /gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Bismark-Inputs/ \
+-1 /gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Trimmed-Files/{}_R1_001.fastq.gz \
+-2 /gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Trimmed-Files/{}_R2_001.fastq.gz
 
 #Deduplication
 
 %%bash
 
-${bismark_dir}deduplicate_bismark \
---samtools_path ${samtools_dir} \
+/gscratch/srlab/programs/Bismark-0.21.0/deduplicate_bismark \
+--samtools_path /gscratch/srlab/programs/samtools-1.9/ \
 -p \
 --bam \
 YRV*_R1_001_bismark_bt2_pe.bam
@@ -58,7 +50,7 @@ YRV*_R1_001_bismark_bt2_pe.bam
 %%bash
 
 find *deduplicated.bam \
-| xargs basename -s _R1_001_bismark_bt2_pe.deduplicated.bam | xargs -I{} ${samtools_dir}samtools \
+| xargs basename -s _R1_001_bismark_bt2_pe.deduplicated.bam | xargs -I{} /gscratch/srlab/programs/samtools-1.9/samtools \
 sort {}_R1_001_bismark_bt2_pe.deduplicated.bam \
 -o {}_dedup.sorted.bam
 
@@ -67,15 +59,15 @@ sort {}_R1_001_bismark_bt2_pe.deduplicated.bam \
 %%bash
 
 find *dedup.sorted.bam \
-| xargs basename -s _dedup.sorted.bam | xargs -I{} ${samtools_dir}samtools \
+| xargs basename -s _dedup.sorted.bam | xargs -I{} /gscratch/srlab/programs/samtools-1.9/samtools \
 index {}_dedup.sorted.bam
 
 #Methylation Extraction
 
 %%bash
 
-${bismark_dir}bismark_methylation_extractor \
---samtools_path ${samtools_dir} \
+/gscratch/srlab/programs/Bismark-0.21.0/bismark_methylation_extractor \
+--samtools_path /gscratch/srlab/programs/samtools-1.9/ \
 -p \
 --bedGraph \
 --counts \
@@ -87,10 +79,10 @@ ${bismark_dir}bismark_methylation_extractor \
 
 %%bash
 
-${bismark_dir}bismark2report
+/gscratch/srlab/programs/Bismark-0.21.0/bismark2report
 
 #Summary Report
 
 %%bash
 
-${bismark_dir}bismark2summary
+/gscratch/srlab/programs/Bismark-0.21.0/bismark2summary
