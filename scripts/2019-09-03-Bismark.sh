@@ -8,7 +8,7 @@
 ## Nodes
 #SBATCH --nodes=1
 ## Walltime (days-hours:minutes:seconds format)
-#SBATCH --time=00-09:00:00
+#SBATCH --time=00-15:00:00
 ## Memory per node
 #SBATCH --mem=120G
 ##turn on e-mail notification
@@ -22,22 +22,18 @@
 
 #Alignment
 
-%%bash
-
-find /gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Trimmed-Files/YRV*_R1_001.fastq.gz \
+find /gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Trimmed-Files/*_R1_001.fastq.gz \
 | xargs basename -s _R1_001.fastq.gz | xargs -I{} /gscratch/srlab/programs/Bismark-0.19.0/bismark \
 --path_to_bowtie /gscratch/srlab/programs/bowtie2-2.3.4.1-linux-x86_64/ \
 --samtools_path /gscratch/srlab/programs/samtools-1.9/ \
 --non_directional \
 -p 4 \
 -score_min L,0,-0.9 \
---genome /gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Bismark-Inputs/ \
+--genome /gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Bismark-Inputs/Crassostrea_gigas.oyster_v9.dna_sm.toplevel/ \
 -1 /gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Trimmed-Files/{}_R1_001.fastq.gz \
 -2 /gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Trimmed-Files/{}_R2_001.fastq.gz
 
 #Deduplication
-
-%%bash
 
 /gscratch/srlab/programs/Bismark-0.19.0/deduplicate_bismark \
 --samtools_path /gscratch/srlab/programs/samtools-1.9/ \
@@ -47,8 +43,6 @@ YRV*_R1_001_bismark_bt2_pe.bam
 
 #Sorting for Downstream Applications
 
-%%bash
-
 find *deduplicated.bam \
 | xargs basename -s _R1_001_bismark_bt2_pe.deduplicated.bam | xargs -I{} /gscratch/srlab/programs/samtools-1.9/samtools \
 sort {}_R1_001_bismark_bt2_pe.deduplicated.bam \
@@ -56,15 +50,11 @@ sort {}_R1_001_bismark_bt2_pe.deduplicated.bam \
 
 #Indexing for Downstream Applications
 
-%%bash
-
 find *dedup.sorted.bam \
 | xargs basename -s _dedup.sorted.bam | xargs -I{} /gscratch/srlab/programs/samtools-1.9/samtools \
 index {}_dedup.sorted.bam
 
 #Methylation Extraction
-
-%%bash
 
 /gscratch/srlab/programs/Bismark-0.19.0/bismark_methylation_extractor \
 --samtools_path /gscratch/srlab/programs/samtools-1.9/ \
@@ -77,12 +67,8 @@ index {}_dedup.sorted.bam
 
 #HTML Processing Report
 
-%%bash
-
 /gscratch/srlab/programs/Bismark-0.19.0/bismark2report
 
 #Summary Report
-
-%%bash
 
 /gscratch/srlab/programs/Bismark-0.19.0/bismark2summary
