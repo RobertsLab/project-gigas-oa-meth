@@ -30,9 +30,11 @@ samtools_dir="/gscratch/srlab/programs/samtools-1.9/"
 
 #Alignment
 
+%%bash
+
 find ${trimmed_files}/YRV*_R1_001.fastq.gz \
 | xargs basename -s _R1_001.fastq.gz | xargs -I{} ${bismark_dir}bismark \
---path_to_bowtie2 ${bowtie2_dir} \
+--path_to_bowtie ${bowtie2_dir} \
 --samtools_path ${samtools_dir} \
 --non_directional \
 -p 4 \
@@ -43,6 +45,8 @@ find ${trimmed_files}/YRV*_R1_001.fastq.gz \
 
 #Deduplication
 
+%%bash
+
 ${bismark_dir}deduplicate_bismark \
 --samtools_path ${samtools_dir} \
 -p \
@@ -51,6 +55,8 @@ YRV*_R1_001_bismark_bt2_pe.bam
 
 #Sorting for Downstream Applications
 
+%%bash
+
 find *deduplicated.bam \
 | xargs basename -s _R1_001_bismark_bt2_pe.deduplicated.bam | xargs -I{} ${samtools_dir}samtools \
 sort {}_R1_001_bismark_bt2_pe.deduplicated.bam \
@@ -58,11 +64,15 @@ sort {}_R1_001_bismark_bt2_pe.deduplicated.bam \
 
 #Indexing for Downstream Applications
 
+%%bash
+
 find *dedup.sorted.bam \
 | xargs basename -s _dedup.sorted.bam | xargs -I{} ${samtools_dir}samtools \
 index {}_dedup.sorted.bam
 
 #Methylation Extraction
+
+%%bash
 
 ${bismark_dir}bismark_methylation_extractor \
 --samtools_path ${samtools_dir} \
@@ -75,8 +85,12 @@ ${bismark_dir}bismark_methylation_extractor \
 
 #HTML Processing Report
 
-${bismark_dir}/bismark2report
+%%bash
+
+${bismark_dir}bismark2report
 
 #Summary Report
 
-${bismark_dir}/bismark2summary
+%%bash
+
+${bismark_dir}bismark2summary
