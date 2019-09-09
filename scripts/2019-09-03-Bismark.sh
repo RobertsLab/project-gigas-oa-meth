@@ -8,7 +8,7 @@
 ## Nodes
 #SBATCH --nodes=1
 ## Walltime (days-hours:minutes:seconds format)
-#SBATCH --time=30-00:00:00
+#SBATCH --time=00-09:00:00
 ## Memory per node
 #SBATCH --mem=120G
 ##turn on e-mail notification
@@ -19,9 +19,9 @@
 
 #Add Directories and Programs to Path
 
-bismark_dir="/gscratch/srlab/programs/Bismark-0.21.0"
+bismark_dir="/gscratch/srlab/programs/Bismark-0.21.0/"
 bowtie2_dir="/gscratch/srlab/programs/bowtie2-2.3.4.1-linux-x86_64/"
-trimmed_files="/gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Trimmed-Files/"
+trimmed_files="/gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Trimmed-Files"
 genome="/gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Bismark-Inputs/"
 samtools_dir="/gscratch/srlab/programs/samtools-1.9/"
 
@@ -30,8 +30,8 @@ samtools_dir="/gscratch/srlab/programs/samtools-1.9/"
 
 #Alignment
 
-find ${trimmed_files}YRV*_R1_001.fastq.gz \
-| xargs basename -s _R1_001.fastq.gz | xargs -I{} ${bismark_dir}/bismark \
+find ${trimmed_files}/YRV*_R1_001.fastq.gz \
+| xargs basename -s _R1_001.fastq.gz | xargs -I{} ${bismark_dir}bismark \
 --path_to_bowtie ${bowtie2_dir} \
 --samtools_path ${samtools_dir} \
 --non_directional \
@@ -39,11 +39,11 @@ find ${trimmed_files}YRV*_R1_001.fastq.gz \
 -score_min L,0,-0.9 \
 --genome ${genome} \
 -1 ${trimmed_files}/{}_R1_001.fastq.gz \
--2 ${trimmed_files}/{}_R2_001.fastq.gz \
+-2 ${trimmed_files}/{}_R2_001.fastq.gz
 
 #Deduplication
 
-${bismark_dir}/deduplicate_bismark \
+${bismark_dir}deduplicate_bismark \
 --samtools_path ${samtools_dir} \
 -p \
 --bam \
@@ -52,19 +52,19 @@ YRV*_R1_001_bismark_bt2_pe.bam
 #Sorting for Downstream Applications
 
 find *deduplicated.bam \
-| xargs basename -s _R1_001_bismark_bt2_pe.deduplicated.bam | xargs -I{} ${samtools_dir}/samtools \
+| xargs basename -s _R1_001_bismark_bt2_pe.deduplicated.bam | xargs -I{} ${samtools_dir}samtools \
 sort {}_R1_001_bismark_bt2_pe.deduplicated.bam \
 -o {}_dedup.sorted.bam
 
 #Indexing for Downstream Applications
 
 find *dedup.sorted.bam \
-| xargs basename -s _dedup.sorted.bam | xargs -I{} ${samtools_dir}/samtools \
+| xargs basename -s _dedup.sorted.bam | xargs -I{} ${samtools_dir}samtools \
 index {}_dedup.sorted.bam
 
 #Methylation Extraction
 
-${bismark_dir}/bismark_methylation_extractor \
+${bismark_dir}bismark_methylation_extractor \
 --samtools_path ${samtools_dir} \
 -p \
 --bedGraph \
