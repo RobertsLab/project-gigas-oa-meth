@@ -23,7 +23,7 @@
 #Alignment
 
 find /gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Trimmed-Files/*_R1_001.fastq.gz \
-| xargs basename -s _R1_001.fastq.gz | xargs -I{} /gscratch/srlab/programs/Bismark-0.19.0/bismark \
+| xargs basename -s _R1_001.fastq.gz | xargs -I{} /gscratch/srlab/programs/Bismark-0.21.0/bismark \
 --path_to_bowtie /gscratch/srlab/programs/bowtie2-2.3.4.1-linux-x86_64/ \
 --samtools_path /gscratch/srlab/programs/samtools-1.9/ \
 --non_directional \
@@ -35,7 +35,7 @@ find /gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Trimmed-Files/*_R1_00
 
 #Deduplication
 
-/gscratch/srlab/programs/Bismark-0.19.0/deduplicate_bismark \
+/gscratch/srlab/programs/Bismark-0.21.0/deduplicate_bismark \
 --samtools_path /gscratch/srlab/programs/samtools-1.9/ \
 -p \
 --bam \
@@ -56,7 +56,7 @@ index {}_dedup.sorted.bam
 
 #Methylation Extraction
 
-/gscratch/srlab/programs/Bismark-0.19.0/bismark_methylation_extractor \
+/gscratch/srlab/programs/Bismark-0.21.0/bismark_methylation_extractor \
 --samtools_path /gscratch/srlab/programs/samtools-1.9/ \
 -p \
 --bedGraph \
@@ -67,8 +67,8 @@ index {}_dedup.sorted.bam
 
 #HTML Processing Report
 
-/gscratch/srlab/programs/Bismark-0.19.0/bismark2report
+/gscratch/srlab/programs/Bismark-0.21.0/bismark2report
 
 #Summary Report
 
-/gscratch/srlab/programs/Bismark-0.19.0/bismark2summary
+/gscratch/srlab/programs/Bismark-0.21.0/bismark2summary
