@@ -23,7 +23,7 @@
 #Alignment
 
 /gscratch/srlab/programs/Bismark-0.21.0/bismark \
---path_to_bowtie /gscratch/srlab/programs/bowtie2-2.3.4.1-linux-x86_64/ \
+--path_to_bowtie2 /gscratch/srlab/programs/bowtie2-2.3.4.1-linux-x86_64/ \
 --samtools_path /gscratch/srlab/programs/samtools-1.9/ \
 --non_directional \
 -p 4 \
