@@ -15,7 +15,7 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=yaaminiv@uw.edu
 ## Specify the working directory for this job
-#SBATCH --chdir=/gscratch/scrubbed/yaamini/analyses/Gigas-WGBS/2019-09-03-Gigas-Bismark
+#SBATCH --chdir=/gscratch/scrubbed/yaamini/analyses/Gigas-WGBS/2019-09-11-Gigas-Bismark
 
 #Genome preparation
 #Sam White prepared the bisulfite genome: https://robertslab.github.io/sams-notebook/2019/02/21/Data-Management-Create-C.gigas-Bisulfite-Genome-with-Bismark-on-Mox.html
@@ -39,7 +39,7 @@ find /gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Trimmed-Files/*_R1_00
 --samtools_path /gscratch/srlab/programs/samtools-1.9/ \
 -p \
 --bam \
-YRV*_R1_001_bismark_bt2_pe.bam
+*_R1_001_bismark_bt2_pe.bam
 
 #Sorting for Downstream Applications
 
