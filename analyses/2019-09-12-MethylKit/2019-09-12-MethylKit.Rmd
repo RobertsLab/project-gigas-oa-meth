@@ -183,7 +183,7 @@ head(diffMethStats50FilteredCov5DestrandHypo) #Confirm creation
 ```
 
 ```{r}
-write.csv(diffMethStats50FilteredCov5DestrandHypo, "2018-10-25-Loci-Analysis/2019-04-05-Differentially-Methylated-Loci-Filtered-Destrand-50-Cov5-Hypomethylated.csv") #Save table as .csv
+write.csv(diffMethStats50FilteredCov5DestrandHypo, "2019-09-12-Loci-Analysis/2019-09-12-Differentially-Methylated-Loci-Filtered-Destrand-50-Cov5-Hypomethylated.csv") #Save table as .csv
 ```
 
 # Save DMLs as BEDfiles
