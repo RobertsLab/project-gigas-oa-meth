@@ -25,7 +25,8 @@ source /gscratch/srlab/programs/scripts/paths.sh
 --samtools_path /gscratch/srlab/programs/samtools-1.9/ \
 -p \
 --bam \
-YRV*_R1_001_bismark_bt2_pe.bam
+YRVA_R1_001_bismark_bt2_pe.bam \
+YRVL_R1_001_bismark_bt2_pe.bam
 
 #Sorting for Downstream Applications
 
