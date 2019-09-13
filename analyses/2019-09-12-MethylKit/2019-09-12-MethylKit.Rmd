@@ -79,11 +79,16 @@ processedFilteredFilesCov5 <- filterByCoverage(processedFiles, lo.count = 5, lo.
 
 ## Obtain methylation and coverage plots
 
+```{bash}
+mkdir 2019-09-12-Loci-Analysis #Create directory to save plots
+```
+
+
 ```{r}
 nFiles <- length(sample.IDs) #Count number of samples
 fileName <- data.frame("nameBase" = rep("2019-09-12-Loci-Analysis/2019-09-12-Percent-CpG-Methylation", times = nFiles),
-                       "nameBase2" = rep("2019-09-12-Loci-Analysis/2019-09-12--Percent-CpG-Coverage", times = nFiles),
-                       "sample.ID" = 1:10) #Create new dataframe for filenames
+                       "nameBase2" = rep("2019-09-12-Loci-Analysis/2019-09-12-Percent-CpG-Coverage", times = nFiles),
+                       "sample.ID" = 1:2) #Create new dataframe for filenames
 head(fileName) #Confirm dataframe creation
 ```
 
@@ -152,7 +157,7 @@ head(differentialMethylationStatsFilteredCov5Destrand) #Look at differential met
 ```
 
 ```{r}
-write.csv(differentialMethylationStatsFilteredCov5Destrand, "2019-09-12-Loci-Analysis/2019-09-12-All-Loci-Methylation-Statistic-Filtered-Destrand-50-Cov5.csv") #Save table as a .csv
+write.csv(differentialMethylationStatsFilteredCov5Destrand, "2019-09-12-Loci-Analysis/2019-09-12-All-Loci-Methylation-Statistic-Filtered-Destrand-50-Cov5.csv") #Save DML background as a .csv
 ```
 
 ```{r}
