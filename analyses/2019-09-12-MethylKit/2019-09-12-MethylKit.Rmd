@@ -75,6 +75,10 @@ processedFiles <- processBismarkAln(location = analysisFiles, sample.id = sample
 processedFilteredFilesCov5 <- filterByCoverage(processedFiles, lo.count = 5, lo.perc = NULL, hi.count = 100, hi.perc = NULL) #filter processed files using lo.count and hi.count coverage thresholds. Coverage should be no less than 5 and should not exceed 100.
 ```
 
+```{r}
+processedFilteredFilesCov10 <- filterByCoverage(processedFiles, lo.count = 10, lo.perc = NULL, hi.count = 100, hi.perc = NULL) #filter processed files using lo.count and hi.count coverage thresholds. Coverage should be no less than 10 and should not exceed 100.
+```
+
 # Differentially methylated loci
 
 ## Obtain methylation and coverage plots
@@ -91,6 +95,8 @@ fileName <- data.frame("nameBase" = rep("2019-09-12-Loci-Analysis/2019-09-12-Per
                        "sample.ID" = 1:2) #Create new dataframe for filenames
 head(fileName) #Confirm dataframe creation
 ```
+
+### 5x coverage
 
 ```{r}
 fileName$actualFileName1 <- paste(fileName$nameBase, "-Filtered", "-5xCoverage", "-Sample", fileName$sample.ID, ".jpeg", sep = "") #Create a new column for the full filename for filtered + 5x coverage + specific sample's percent CpG methylation plot
@@ -114,7 +120,33 @@ for(i in 1:nFiles) { #For each data file
 } #Plot and save CpG coverage information
 ```
 
+### 10x coverage
+
+```{r}
+fileName$actualFileName3 <- paste(fileName$nameBase, "-Filtered", "-10xCoverage", "-Sample", fileName$sample.ID, ".jpeg", sep = "") #Create a new column for the full filename for filtered + 10x coverage + specific sample's percent CpG methylation plot
+fileName$actualFileName4 <- paste(fileName$nameBase2, "-Filtered", "-10xCoverage", "-Sample", fileName$sample.ID, ".jpeg", sep = "") #Create a new column for the full filename for filtered + 10x coverage + specific sample's percent CpG coverage plot
+head(fileName) #Confirm column creation
+```
+
+```{r}
+for(i in 1:nFiles) { #For each data file
+  jpeg(filename = fileName$actualFileName3[i], height = 1000, width = 1000) #Save file with designated name
+  getMethylationStats(processedFilteredFilesCov5[[i]], plot = TRUE, both.strands = FALSE) #Get %CpG methylation information
+  dev.off() #Turn off plotting device
+} #Plot and save %CpG methylation information
+```
+
+```{r}
+for(i in 1:nFiles) { #For each data file
+  jpeg(filename = fileName$actualFileName4[i], height = 1000, width = 1000) #Save file with designated name
+  getCoverageStats(processedFilteredFilesCov5[[i]], plot = TRUE, both.strands = FALSE) #Get CpG coverage information
+  dev.off() #Turn off plotting device
+} #Plot and save CpG coverage information
+```
+
 ## Obtain clustering information
+
+### 5x coverage
 
 ```{r}
 methylationInformationFilteredCov5Destrand <- unite(processedFilteredFilesCov5, destrand = TRUE) #Combine all processed files into a single table. Use destrand = TRUE to separate strands
@@ -149,7 +181,44 @@ PCASamples(methylationInformationFilteredCov5Destrand, screeplot = TRUE) #Run th
 dev.off()
 ```
 
+### 10x coverage
+
+```{r}
+methylationInformationFilteredCov10Destrand <- unite(processedFilteredFilesCov10, destrand = TRUE) #Combine all processed files into a single table. Use destrand = TRUE to separate strands
+head(methylationInformationFilteredCov10Destrand) #Confirm unite
+```
+
+```{r}
+clusteringInformationFilteredCov10Destrand <- clusterSamples(methylationInformationFilteredCov10Destrand, dist = "correlation", method = "ward", plot = FALSE) #Save cluster information as a new object
+```
+
+```{r}
+jpeg(filename = "2019-09-12-Loci-Analysis/2019-09-12-Full-Sample-Pearson-Correlation-Plot-FilteredCov10Destrand.jpeg", height = 1000, width = 1000) #Save file with designated name
+getCorrelation(methylationInformationFilteredCov10Destrand, plot = TRUE) #Understand correlation between methylation patterns in different samples
+dev.off()
+```
+
+```{r}
+jpeg(filename = "2019-09-12-Loci-Analysis/2019-09-12-Full-Sample-CpG-Methylation-Clustering-FilteredCov10Destrand.jpeg", height = 1000, width = 1000) #Save file with designated name
+clusterSamples(methylationInformationFilteredCov10Destrand, dist = "correlation", method = "ward", plot = TRUE) #Cluster samples based on correlation coefficients
+dev.off()
+```
+
+```{r}
+jpeg(filename = "2019-09-12-Loci-Analysis/2019-09-12-Full-Sample-Methylation-PCA-FilteredCov10Destrand.jpeg", height = 1000, width = 1000) #Save file with designated name
+PCASamples(methylationInformationFilteredCov10Destrand) #Run a PCA analysis on percent methylation for all samples
+dev.off() #Turn off plotting device
+```
+
+```{r}
+jpeg(filename = "2019-09-12-Loci-Analysis/2019-09-12-Full-Sample-Methylation-Screeplot-FilteredCov10Destrand.jpeg", height = 1000, width = 1000) #Save file with designated name
+PCASamples(methylationInformationFilteredCov10Destrand, screeplot = TRUE) #Run the PCA analysis and plot variances against PC number in a screeplot
+dev.off()
+```
+
 ## Obtain differentially methylated loci
+
+### 5x coverage
 
 ```{r}
 differentialMethylationStatsFilteredCov5Destrand <- calculateDiffMeth(methylationInformationFilteredCov5Destrand) #Calculate differential methylation statistics based on treatment indication from processBismarkAln
@@ -169,7 +238,7 @@ head(diffMethStats50FilteredCov5Destrand) #Confirm creation
 write.csv(diffMethStats50FilteredCov5Destrand, "2019-09-12-Loci-Analysis/2019-09-12-Differentially-Methylated-Loci-Filtered-Destrand-50-Cov5.csv") #Save table as .csv
 ```
 
-### Hypermethylated DML
+#### Hypermethylated DML
 
 ```{r}
 diffMethStats50FilteredCov5DestrandHyper <- getMethylDiff(differentialMethylationStatsFilteredCov5Destrand, difference = 50, qvalue = 0.01, type = "hyper") #Identify hypermethylated loci that are at least 50% different
@@ -180,7 +249,7 @@ head(diffMethStats50FilteredCov5DestrandHyper) #Confirm creation
 write.csv(diffMethStats50FilteredCov5DestrandHyper, "2019-09-12-Loci-Analysis/2019-09-12-Differentially-Methylated-Loci-Filtered-Destrand-50-Cov5-Hypermethylated.csv") #Save table as .csv
 ```
 
-### Hypomethylated DML
+#### Hypomethylated DML
 
 ```{r}
 diffMethStats50FilteredCov5DestrandHypo <- getMethylDiff(differentialMethylationStatsFilteredCov5Destrand, difference = 50, qvalue = 0.01, type = "hypo") #Identify hypomethylated loci that are at least 50% different
@@ -189,6 +258,48 @@ head(diffMethStats50FilteredCov5DestrandHypo) #Confirm creation
 
 ```{r}
 write.csv(diffMethStats50FilteredCov5DestrandHypo, "2019-09-12-Loci-Analysis/2019-09-12-Differentially-Methylated-Loci-Filtered-Destrand-50-Cov5-Hypomethylated.csv") #Save table as .csv
+```
+
+### 10x coverage
+
+```{r}
+differentialMethylationStatsFilteredCov10Destrand <- calculateDiffMeth(methylationInformationFilteredCov10Destrand) #Calculate differential methylation statistics based on treatment indication from processBismarkAln
+head(differentialMethylationStatsFilteredCov10Destrand) #Look at differential methylation statistics
+```
+
+```{r}
+write.csv(differentialMethylationStatsFilteredCov10Destrand, "2019-09-12-Loci-Analysis/2019-09-12-All-Loci-Methylation-Statistic-Filtered-Destrand-50-Cov10.csv") #Save DML background as a .csv
+```
+
+```{r}
+diffMethStats50FilteredCov10Destrand <- getMethylDiff(differentialMethylationStatsFilteredCov10Destrand, difference = 50, qvalue = 0.01) #Identify loci that are at least 50% different
+head(diffMethStats50FilteredCov10Destrand) #Confirm creation
+```
+
+```{r}
+write.csv(diffMethStats50FilteredCov10Destrand, "2019-09-12-Loci-Analysis/2019-09-12-Differentially-Methylated-Loci-Filtered-Destrand-50-Cov10.csv") #Save table as .csv
+```
+
+#### Hypermethylated DML
+
+```{r}
+diffMethStats50FilteredCov10DestrandHyper <- getMethylDiff(differentialMethylationStatsFilteredCov10Destrand, difference = 50, qvalue = 0.01, type = "hyper") #Identify hypermethylated loci that are at least 50% different
+head(diffMethStats50FilteredCov10DestrandHyper) #Confirm creation
+```
+
+```{r}
+write.csv(diffMethStats50FilteredCov10DestrandHyper, "2019-09-12-Loci-Analysis/2019-09-12-Differentially-Methylated-Loci-Filtered-Destrand-50-Cov10-Hypermethylated.csv") #Save table as .csv
+```
+
+#### Hypomethylated DML
+
+```{r}
+diffMethStats50FilteredCov10DestrandHypo <- getMethylDiff(differentialMethylationStatsFilteredCov10Destrand, difference = 50, qvalue = 0.01, type = "hypo") #Identify hypomethylated loci that are at least 50% different
+head(diffMethStats50FilteredCov10DestrandHypo) #Confirm creation
+```
+
+```{r}
+write.csv(diffMethStats50FilteredCov10DestrandHypo, "2019-09-12-Loci-Analysis/2019-09-12-Differentially-Methylated-Loci-Filtered-Destrand-50-Cov10-Hypomethylated.csv") #Save table as .csv
 ```
 
 # Save DMLs as BEDfiles
@@ -205,6 +316,8 @@ library(tidyverse) #Load package
 ```
 
 ## DML Background
+
+### 5x coverage
 
 ```{r}
 head(methylationInformationFilteredCov5Destrand) #I only want the columns with chromosome, start position, stop position, and strand.
@@ -231,7 +344,32 @@ write_delim(methylationInformationFilteredCov5DestrandReduced, "2019-09-12-Methy
 head 2019-09-12-Methylation-Information-Filtered-Destrand-Cov5.bed #Confirm formatting was retained in export
 ```
 
+### 10x coverage
+
+```{r}
+methylationInformationFilteredCov10DestrandReduced <- data.frame("chr" = methylationInformationFilteredCov10Destrand$chr,
+                                                                "start" = methylationInformationFilteredCov10Destrand$start,
+                                                                "stop" = methylationInformationFilteredCov10Destrand$end,
+                                                                "strand" = methylationInformationFilteredCov10Destrand$strand) #Subset file 
+head(methylationInformationFilteredCov10DestrandReduced) #Confirm subsetting
+```
+
+```{r}
+methylationInformationFilteredCov10DestrandReduced$start <- (methylationInformationFilteredCov10DestrandReduced$start - 1) #Subtract 1 from the start position for visualization
+head(methylationInformationFilteredCov10DestrandReduced) #Confirm subtracting worked
+```
+
+```{r}
+write_delim(methylationInformationFilteredCov10DestrandReduced, "2019-09-12-Methylation-Information-Filtered-Destrand-Cov10.bed", delim = "\t", col_names = FALSE) #Write out all methylation information as a background to be used for gene enrichment analyses.
+```
+
+```{bash}
+head 2019-09-12-Methylation-Information-Filtered-Destrand-Cov10.bed #Confirm formatting was retained in export
+```
+
 ## DMLs
+
+### 5x coverage
 
 ```{r}
 DML5xFilteredDestrand09122019 <- mutate(diffMethStats50FilteredCov5Destrand, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
@@ -245,7 +383,7 @@ head(DML5xFilteredDestrand09122019) #Confirm changes
 write_delim(DML5xFilteredDestrand09122019, "2019-09-12-DML-Destrand-5x-Locations.bed",  delim = '\t', col_names = FALSE) #Save data as a BED file
 ```
 
-### Hypermethylated DML
+#### Hypermethylated DML
 
 ```{r}
 DML5xFilteredDestrandHyper09122019 <- mutate(diffMethStats50FilteredCov5DestrandHyper, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
@@ -259,7 +397,7 @@ head(DML5xFilteredDestrandHyper09122019) #Confirm changes
 write_delim(DML5xFilteredDestrandHyper09122019, "2019-09-12-DML-Destrand-5x-Locations-Hypermethylated.bed",  delim = '\t', col_names = FALSE) #Save data as a BED file
 ```
 
-### Hypomethyalted DML
+#### Hypomethyalted DML
 
 ```{r}
 DML5xFilteredDestrandHypo09122019 <- mutate(diffMethStats50FilteredCov5DestrandHypo, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
@@ -271,4 +409,46 @@ head(DML5xFilteredDestrandHypo09122019) #Confirm changes
 
 ```{r}
 write_delim(DML5xFilteredDestrandHypo09122019, "2019-09-12-DML-Destrand-5x-Locations-Hypomethylated.bed",  delim = '\t', col_names = FALSE) #Save data as a BED file
+```
+
+### 10x coverage
+
+```{r}
+DML10xFilteredDestrand09122019 <- mutate(diffMethStats50FilteredCov10Destrand, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
+```
+
+```{r}
+head(DML10xFilteredDestrand09122019) #Confirm changes
+```
+
+```{r}
+write_delim(DML10xFilteredDestrand09122019, "2019-09-12-DML-Destrand-10x-Locations.bed",  delim = '\t', col_names = FALSE) #Save data as a BED file
+```
+
+#### Hypermethylated DML
+
+```{r}
+DML10xFilteredDestrandHyper09122019 <- mutate(diffMethStats50FilteredCov10DestrandHyper, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
+```
+
+```{r}
+head(DML10xFilteredDestrandHyper09122019) #Confirm changes
+```
+
+```{r}
+write_delim(DML10xFilteredDestrandHyper09122019, "2019-09-12-DML-Destrand-10x-Locations-Hypermethylated.bed",  delim = '\t', col_names = FALSE) #Save data as a BED file
+```
+
+#### Hypomethyalted DML
+
+```{r}
+DML10xFilteredDestrandHypo09122019 <- mutate(diffMethStats50FilteredCov10DestrandHypo, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
+```
+
+```{r}
+head(DML10xFilteredDestrandHypo09122019) #Confirm changes
+```
+
+```{r}
+write_delim(DML10xFilteredDestrandHypo09122019, "2019-09-12-DML-Destrand-10x-Locations-Hypomethylated.bed",  delim = '\t', col_names = FALSE) #Save data as a BED file
 ```
