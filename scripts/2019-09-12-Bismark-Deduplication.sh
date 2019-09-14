@@ -25,15 +25,23 @@ source /gscratch/srlab/programs/scripts/paths.sh
 --samtools_path /gscratch/srlab/programs/samtools-1.9/ \
 -p \
 --bam \
-YRVA_R1_001_bismark_bt2_pe.bam \
+YRVA_R1_001_bismark_bt2_pe.bam
+
+/gscratch/srlab/programs/Bismark-0.21.0/deduplicate_bismark \
+--samtools_path /gscratch/srlab/programs/samtools-1.9/ \
+-p \
+--bam \
 YRVL_R1_001_bismark_bt2_pe.bam
 
 #Sorting for Downstream Applications
 
-find *deduplicated.bam \
-| xargs basename -s _R1_001_bismark_bt2_pe.deduplicated.bam | xargs -I{} /gscratch/srlab/programs/samtools-1.9/samtools \
-sort {}_R1_001_bismark_bt2_pe.deduplicated.bam \
--o {}_dedup.sorted.bam
+/gscratch/srlab/programs/samtools-1.9/samtools \
+sort YRVA_R1_001_bismark_bt2_pe.deduplicated.bam \
+-o YRVA_dedup.sorted.bam
+
+/gscratch/srlab/programs/samtools-1.9/samtools \
+sort YRVL_R1_001_bismark_bt2_pe.deduplicated.bam \
+-o YRVL_dedup.sorted.bam
 
 #Indexing for Downstream Applications
 
