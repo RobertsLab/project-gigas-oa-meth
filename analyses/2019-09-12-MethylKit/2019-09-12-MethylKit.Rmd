@@ -402,11 +402,6 @@ head(methylationInformationFilteredCov5DestrandReduced) #Confirm subsetting
 ```
 
 ```{r}
-methylationInformationFilteredCov5DestrandReduced$start <- (methylationInformationFilteredCov5DestrandReduced$start - 1) #Subtract 2 from the start position for visualization
-head(methylationInformationFilteredCov5DestrandReduced) #Confirm subtracting worked
-```
-
-```{r}
 write_delim(methylationInformationFilteredCov5DestrandReduced, "2019-09-12-Methylation-Information-Filtered-Destrand-Cov5.bed", delim = "\t", col_names = FALSE) #Write out all methylation information as a background to be used for gene enrichment analyses.
 ```
 
@@ -442,7 +437,7 @@ head 2019-09-12-Methylation-Information-Filtered-Destrand-Cov10.bed #Confirm for
 ### 5x coverage and 50% difference
 
 ```{r}
-DML5xFilteredDestrand09122019 <- mutate(diffMethStats50FilteredCov5Destrand, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
+DML5xFilteredDestrand09122019 <- mutate(diffMethStats50FilteredCov5Destrand, start = start - 3, end = end) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
 ```
 
 ```{r}
@@ -456,7 +451,7 @@ write_delim(DML5xFilteredDestrand09122019, "2019-09-12-DML-Destrand-5x-Locations
 #### Hypermethylated DML
 
 ```{r}
-DML5xFilteredDestrandHyper09122019 <- mutate(diffMethStats50FilteredCov5DestrandHyper, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
+DML5xFilteredDestrandHyper09122019 <- mutate(diffMethStats50FilteredCov5DestrandHyper, start = start -3, end = end) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
 ```
 
 ```{r}
@@ -470,7 +465,7 @@ write_delim(DML5xFilteredDestrandHyper09122019, "2019-09-12-DML-Destrand-5x-Loca
 #### Hypomethyalted DML
 
 ```{r}
-DML5xFilteredDestrandHypo09122019 <- mutate(diffMethStats50FilteredCov5DestrandHypo, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
+DML5xFilteredDestrandHypo09122019 <- mutate(diffMethStats50FilteredCov5DestrandHypo, start = start - 3, end = end) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
 ```
 
 ```{r}
@@ -484,7 +479,7 @@ write_delim(DML5xFilteredDestrandHypo09122019, "2019-09-12-DML-Destrand-5x-Locat
 ### 5x coverage and 100% difference
 
 ```{r}
-DML5x100diffFilteredDestrand09122019 <- mutate(diffMethStats100FilteredCov5Destrand, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
+DML5x100diffFilteredDestrand09122019 <- mutate(diffMethStats100FilteredCov5Destrand, start = start - 3, end = end) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
 head(DML5x100diffFilteredDestrand09122019) #Confirm changes
 ```
 
@@ -495,7 +490,7 @@ write_delim(DML5x100diffFilteredDestrand09122019, "2019-09-12-DML-Destrand-5x-Lo
 #### Hypermethylated DML
 
 ```{r}
-DML5x100diffFilteredDestrandHyper09122019 <- mutate(diffMethStats100FilteredCov5DestrandHyper, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
+DML5x100diffFilteredDestrandHyper09122019 <- mutate(diffMethStats100FilteredCov5DestrandHyper, start = start -3, end = end) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
 head(DML5x100diffFilteredDestrandHyper09122019) #Confirm changes
 ```
 
@@ -506,7 +501,7 @@ write_delim(DML5x100diffFilteredDestrandHyper09122019, "2019-09-12-DML-Destrand-
 #### Hypomethyalted DML
 
 ```{r}
-DML5x100diffFilteredDestrandHypo09122019 <- mutate(diffMethStats100FilteredCov5DestrandHypo, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
+DML5x100diffFilteredDestrandHypo09122019 <- mutate(diffMethStats100FilteredCov5DestrandHypo, start = start -3, end = end) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
 head(DML5x100diffFilteredDestrandHypo09122019) #Confirm changes
 ```
 
@@ -517,7 +512,7 @@ write_delim(DML5x100diffFilteredDestrandHypo09122019, "2019-09-12-DML-Destrand-5
 ### 10x coverage and 50% difference
 
 ```{r}
-DML10xFilteredDestrand09122019 <- mutate(diffMethStats50FilteredCov10Destrand, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
+DML10xFilteredDestrand09122019 <- mutate(diffMethStats50FilteredCov10Destrand, start = start -3, end = end) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
 ```
 
 ```{r}
@@ -531,7 +526,7 @@ write_delim(DML10xFilteredDestrand09122019, "2019-09-12-DML-Destrand-10x-Locatio
 #### Hypermethylated DML
 
 ```{r}
-DML10xFilteredDestrandHyper09122019 <- mutate(diffMethStats50FilteredCov10DestrandHyper, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
+DML10xFilteredDestrandHyper09122019 <- mutate(diffMethStats50FilteredCov10DestrandHyper, start = start -3, end = end) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
 ```
 
 ```{r}
@@ -545,7 +540,7 @@ write_delim(DML10xFilteredDestrandHyper09122019, "2019-09-12-DML-Destrand-10x-Lo
 #### Hypomethyalted DML
 
 ```{r}
-DML10xFilteredDestrandHypo09122019 <- mutate(diffMethStats50FilteredCov10DestrandHypo, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
+DML10xFilteredDestrandHypo09122019 <- mutate(diffMethStats50FilteredCov10DestrandHypo, start = start -3, end = end) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
 ```
 
 ```{r}
@@ -559,7 +554,7 @@ write_delim(DML10xFilteredDestrandHypo09122019, "2019-09-12-DML-Destrand-10x-Loc
 ### 10x coverage and 100% difference
 
 ```{r}
-DML10x100diffFilteredDestrand09122019 <- mutate(diffMethStats100FilteredCov10Destrand, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
+DML10x100diffFilteredDestrand09122019 <- mutate(diffMethStats100FilteredCov10Destrand, start = start -3, end = end) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
 head(DML10x100diffFilteredDestrand09122019) #Confirm changes
 ```
 
@@ -570,7 +565,7 @@ write_delim(DML10x100diffFilteredDestrand09122019, "2019-09-12-DML-Destrand-10x-
 #### Hypermethylated DML
 
 ```{r}
-DML10x100diffFilteredDestrandHyper09122019 <- mutate(diffMethStats100FilteredCov10DestrandHyper, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
+DML10x100diffFilteredDestrandHyper09122019 <- mutate(diffMethStats100FilteredCov10DestrandHyper, start = start -3, end = end) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
 head(DML10x100diffFilteredDestrandHyper09122019) #Confirm changes
 ```
 
