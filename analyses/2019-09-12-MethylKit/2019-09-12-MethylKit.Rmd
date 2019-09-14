@@ -229,6 +229,8 @@ head(differentialMethylationStatsFilteredCov5Destrand) #Look at differential met
 write.csv(differentialMethylationStatsFilteredCov5Destrand, "2019-09-12-Loci-Analysis/2019-09-12-All-Loci-Methylation-Statistic-Filtered-Destrand-50-Cov5.csv") #Save DML background as a .csv
 ```
 
+I will try a 50% difference (what I did with *C. virginica*), but I will also try a 75% and 100% difference. Since I only have two samples, I want to increase the stringency so I feel more confident in my DML.
+
 ```{r}
 diffMethStats50FilteredCov5Destrand <- getMethylDiff(differentialMethylationStatsFilteredCov5Destrand, difference = 50, qvalue = 0.01) #Identify loci that are at least 50% different
 head(diffMethStats50FilteredCov5Destrand) #Confirm creation
@@ -237,6 +239,24 @@ head(diffMethStats50FilteredCov5Destrand) #Confirm creation
 ```{r}
 write.csv(diffMethStats50FilteredCov5Destrand, "2019-09-12-Loci-Analysis/2019-09-12-Differentially-Methylated-Loci-Filtered-Destrand-50-Cov5.csv") #Save table as .csv
 ```
+
+```{r}
+diffMethStats75FilteredCov5Destrand <- getMethylDiff(differentialMethylationStatsFilteredCov5Destrand, difference = 75, qvalue = 0.01) #Identify loci that are at least 75% different
+length(diffMethStats75FilteredCov5Destrand$chr) #Count the number of DML
+head(diffMethStats75FilteredCov5Destrand) #Confirm creation
+```
+
+```{r}
+diffMethStats100FilteredCov5Destrand <- getMethylDiff(differentialMethylationStatsFilteredCov5Destrand, difference = 99, qvalue = 0.001) #Identify loci that are at least 100% different
+length(diffMethStats100FilteredCov5Destrand$chr) #Count the number of DML
+head(diffMethStats100FilteredCov5Destrand) #Confirm creation
+```
+
+```{r}
+write.csv(diffMethStats100FilteredCov5Destrand, "2019-09-12-Loci-Analysis/2019-09-12-Differentially-Methylated-Loci-Filtered-Destrand-100-Cov5.csv") #Save table as .csv
+```
+
+I'm going to use the following settings moving forward: 100% difference and q-value < 0.001. These are more stringent and narrow down the number of DML.
 
 #### Hypermethylated DML
 
@@ -249,6 +269,16 @@ head(diffMethStats50FilteredCov5DestrandHyper) #Confirm creation
 write.csv(diffMethStats50FilteredCov5DestrandHyper, "2019-09-12-Loci-Analysis/2019-09-12-Differentially-Methylated-Loci-Filtered-Destrand-50-Cov5-Hypermethylated.csv") #Save table as .csv
 ```
 
+```{r}
+diffMethStats100FilteredCov5DestrandHyper <- getMethylDiff(differentialMethylationStatsFilteredCov5Destrand, difference = 99, qvalue = 0.001, type = "hyper") #Identify hypermethylated loci that are at least 50% different
+length(diffMethStats100FilteredCov5DestrandHyper$chr) #Count number of DML
+head(diffMethStats100FilteredCov5DestrandHyper) #Confirm creation
+```
+
+```{r}
+write.csv(diffMethStats100FilteredCov5DestrandHyper, "2019-09-12-Loci-Analysis/2019-09-12-Differentially-Methylated-Loci-Filtered-Destrand-100-Cov5-Hypermethylated.csv") #Save table as .csv
+```
+
 #### Hypomethylated DML
 
 ```{r}
@@ -258,6 +288,16 @@ head(diffMethStats50FilteredCov5DestrandHypo) #Confirm creation
 
 ```{r}
 write.csv(diffMethStats50FilteredCov5DestrandHypo, "2019-09-12-Loci-Analysis/2019-09-12-Differentially-Methylated-Loci-Filtered-Destrand-50-Cov5-Hypomethylated.csv") #Save table as .csv
+```
+
+```{r}
+diffMethStats100FilteredCov5DestrandHypo <- getMethylDiff(differentialMethylationStatsFilteredCov5Destrand, difference = 99, qvalue = 0.001, type = "hypo") #Identify hypomethylated loci that are at least 100% different
+length(diffMethStats100FilteredCov5DestrandHypo$chr) #Count number of DML
+head(diffMethStats100FilteredCov5DestrandHypo) #Confirm creation
+```
+
+```{r}
+write.csv(diffMethStats100FilteredCov5DestrandHypo, "2019-09-12-Loci-Analysis/2019-09-12-Differentially-Methylated-Loci-Filtered-Destrand-100-Cov5-Hypomethylated.csv") #Save table as .csv
 ```
 
 ### 10x coverage
@@ -280,6 +320,16 @@ head(diffMethStats50FilteredCov10Destrand) #Confirm creation
 write.csv(diffMethStats50FilteredCov10Destrand, "2019-09-12-Loci-Analysis/2019-09-12-Differentially-Methylated-Loci-Filtered-Destrand-50-Cov10.csv") #Save table as .csv
 ```
 
+```{r}
+diffMethStats100FilteredCov10Destrand <- getMethylDiff(differentialMethylationStatsFilteredCov10Destrand, difference = 99, qvalue = 0.001) #Identify loci that are at least 50% different
+length(diffMethStats100FilteredCov10Destrand$chr) #Count number of DML
+head(diffMethStats100FilteredCov10Destrand) #Confirm creation
+```
+
+```{r}
+write.csv(diffMethStats100FilteredCov10Destrand, "2019-09-12-Loci-Analysis/2019-09-12-Differentially-Methylated-Loci-Filtered-Destrand-100-Cov10.csv") #Save table as .csv
+```
+
 #### Hypermethylated DML
 
 ```{r}
@@ -289,6 +339,16 @@ head(diffMethStats50FilteredCov10DestrandHyper) #Confirm creation
 
 ```{r}
 write.csv(diffMethStats50FilteredCov10DestrandHyper, "2019-09-12-Loci-Analysis/2019-09-12-Differentially-Methylated-Loci-Filtered-Destrand-50-Cov10-Hypermethylated.csv") #Save table as .csv
+```
+
+```{r}
+diffMethStats100FilteredCov10DestrandHyper <- getMethylDiff(differentialMethylationStatsFilteredCov10Destrand, difference = 99, qvalue = 0.001, type = "hyper") #Identify hypermethylated loci that are at least 50% different
+length(diffMethStats100FilteredCov10DestrandHyper$chr) #Count number of DML
+head(diffMethStats100FilteredCov10DestrandHyper) #Confirm creation
+```
+
+```{r}
+write.csv(diffMethStats100FilteredCov10DestrandHyper, "2019-09-12-Loci-Analysis/2019-09-12-Differentially-Methylated-Loci-Filtered-Destrand-100-Cov10-Hypermethylated.csv") #Save table as .csv
 ```
 
 #### Hypomethylated DML
@@ -302,6 +362,16 @@ head(diffMethStats50FilteredCov10DestrandHypo) #Confirm creation
 write.csv(diffMethStats50FilteredCov10DestrandHypo, "2019-09-12-Loci-Analysis/2019-09-12-Differentially-Methylated-Loci-Filtered-Destrand-50-Cov10-Hypomethylated.csv") #Save table as .csv
 ```
 
+```{r}
+diffMethStats100FilteredCov10DestrandHypo <- getMethylDiff(differentialMethylationStatsFilteredCov10Destrand, difference = 99, qvalue = 0.001, type = "hypo") #Identify hypomethylated loci that are at least 100% different
+length(diffMethStats100FilteredCov10DestrandHypo$chr) #Count number of DML
+head(diffMethStats100FilteredCov10DestrandHypo) #Confirm creation
+```
+
+```{r}
+write.csv(diffMethStats100FilteredCov10DestrandHypo, "2019-09-12-Loci-Analysis/2019-09-12-Differentially-Methylated-Loci-Filtered-Destrand-100-Cov10-Hypomethylated.csv") #Save table as .csv
+```
+
 # Save DMLs as BEDfiles
 
 ## Install packages
@@ -309,10 +379,10 @@ write.csv(diffMethStats50FilteredCov10DestrandHypo, "2019-09-12-Loci-Analysis/20
 **Do not** install these packages until analysis in `methylKit` is complete, as some of the installed packages will mask others important for analysis.
 
 ```{r}
-library(readr) #Load package
+require(readr) #Load package
 
 install.packages("tidyverse") #Install tidyverse
-library(tidyverse) #Load package
+require(tidyverse) #Load package
 ```
 
 ## DML Background
@@ -332,7 +402,7 @@ head(methylationInformationFilteredCov5DestrandReduced) #Confirm subsetting
 ```
 
 ```{r}
-methylationInformationFilteredCov5DestrandReduced$start <- (methylationInformationFilteredCov5DestrandReduced$start - 1) #Subtract 1 from the start position for visualization
+methylationInformationFilteredCov5DestrandReduced$start <- (methylationInformationFilteredCov5DestrandReduced$start - 1) #Subtract 2 from the start position for visualization
 head(methylationInformationFilteredCov5DestrandReduced) #Confirm subtracting worked
 ```
 
@@ -369,7 +439,7 @@ head 2019-09-12-Methylation-Information-Filtered-Destrand-Cov10.bed #Confirm for
 
 ## DMLs
 
-### 5x coverage
+### 5x coverage and 50% difference
 
 ```{r}
 DML5xFilteredDestrand09122019 <- mutate(diffMethStats50FilteredCov5Destrand, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
@@ -411,7 +481,40 @@ head(DML5xFilteredDestrandHypo09122019) #Confirm changes
 write_delim(DML5xFilteredDestrandHypo09122019, "2019-09-12-DML-Destrand-5x-Locations-Hypomethylated.bed",  delim = '\t', col_names = FALSE) #Save data as a BED file
 ```
 
-### 10x coverage
+### 5x coverage and 100% difference
+
+```{r}
+DML5x100diffFilteredDestrand09122019 <- mutate(diffMethStats100FilteredCov5Destrand, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
+head(DML5x100diffFilteredDestrand09122019) #Confirm changes
+```
+
+```{r}
+write_delim(DML5x100diffFilteredDestrand09122019, "2019-09-12-DML-Destrand-5x-Locations-100diff.bed",  delim = '\t', col_names = FALSE) #Save data as a BED file
+```
+
+#### Hypermethylated DML
+
+```{r}
+DML5x100diffFilteredDestrandHyper09122019 <- mutate(diffMethStats100FilteredCov5DestrandHyper, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
+head(DML5x100diffFilteredDestrandHyper09122019) #Confirm changes
+```
+
+```{r}
+write_delim(DML5x100diffFilteredDestrandHyper09122019, "2019-09-12-DML-Destrand-5x-Locations-Hypermethylated-100diff.bed",  delim = '\t', col_names = FALSE) #Save data as a BED file
+```
+
+#### Hypomethyalted DML
+
+```{r}
+DML5x100diffFilteredDestrandHypo09122019 <- mutate(diffMethStats100FilteredCov5DestrandHypo, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
+head(DML5x100diffFilteredDestrandHypo09122019) #Confirm changes
+```
+
+```{r}
+write_delim(DML5x100diffFilteredDestrandHypo09122019, "2019-09-12-DML-Destrand-5x-Locations-Hypomethylated-100diff.bed",  delim = '\t', col_names = FALSE) #Save data as a BED file
+```
+
+### 10x coverage and 50% difference
 
 ```{r}
 DML10xFilteredDestrand09122019 <- mutate(diffMethStats50FilteredCov10Destrand, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
@@ -451,4 +554,37 @@ head(DML10xFilteredDestrandHypo09122019) #Confirm changes
 
 ```{r}
 write_delim(DML10xFilteredDestrandHypo09122019, "2019-09-12-DML-Destrand-10x-Locations-Hypomethylated.bed",  delim = '\t', col_names = FALSE) #Save data as a BED file
+```
+
+### 10x coverage and 100% difference
+
+```{r}
+DML10x100diffFilteredDestrand09122019 <- mutate(diffMethStats100FilteredCov10Destrand, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
+head(DML10x100diffFilteredDestrand09122019) #Confirm changes
+```
+
+```{r}
+write_delim(DML10x100diffFilteredDestrand09122019, "2019-09-12-DML-Destrand-10x-Locations-100diff.bed",  delim = '\t', col_names = FALSE) #Save data as a BED file
+```
+
+#### Hypermethylated DML
+
+```{r}
+DML10x100diffFilteredDestrandHyper09122019 <- mutate(diffMethStats100FilteredCov10DestrandHyper, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
+head(DML10x100diffFilteredDestrandHyper09122019) #Confirm changes
+```
+
+```{r}
+write_delim(DML10x100diffFilteredDestrandHyper09122019, "2019-09-12-DML-Destrand-10x-Locations-Hypermethylated-100diff.bed",  delim = '\t', col_names = FALSE) #Save data as a BED file
+```
+
+#### Hypomethyalted DML
+
+```{r}
+DML10x100diffFilteredDestrandHypo09122019 <- mutate(diffMethStats100FilteredCov10DestrandHypo, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
+head(DML10x100diffFilteredDestrandHypo09122019) #Confirm changes
+```
+
+```{r}
+write_delim(DML10x100diffFilteredDestrandHypo09122019, "2019-09-12-DML-Destrand-10x-Locations-Hypomethylated-100diff.bed",  delim = '\t', col_names = FALSE) #Save data as a BED file
 ```
