@@ -583,3 +583,36 @@ head(DML10x100diffFilteredDestrandHypo09122019) #Confirm changes
 ```{r}
 write_delim(DML10x100diffFilteredDestrandHypo09122019, "2019-09-12-DML-Destrand-10x-Locations-Hypomethylated-100diff.bed",  delim = '\t', col_names = FALSE) #Save data as a BED file
 ```
+
+# Remove extraneous DML
+
+There are some 10x DML that are not in the 5x DML data. It does not make sense to have a DML at a more stringent coverage metric that does not exist in the 5x data, so I need to remove them. I will use `intersectBed` to do this.
+
+```{bash}
+#Path to intersectBed
+#Print line a information for overlaps
+#File a: 10x 100% diff DML
+#File b: 5x 100% diff DML
+#Output filename
+/Users/Shared/bioinformatics/bedtools2/bin/intersectBed \
+-wa \
+-a 2019-09-12-DML-Destrand-10x-Locations-100diff.bed \
+-b 2019-09-12-DML-Destrand-5x-Locations-100diff.bed \
+> 2019-09-12-DML-Destrand-10x-Locations-100diff-NoExtras.bed
+```
+
+```{bash}
+wc -l 2019-09-12-DML-Destrand-10x-Locations-100diff-NoExtras.bed #Count the number of lines in the new file. There are 100 less DML
+head 2019-09-12-DML-Destrand-10x-Locations-100diff.bed #Look at newly generated file
+```
+
+
+
+
+
+
+
+
+
+
+
