@@ -605,14 +605,3 @@ There are some 10x DML that are not in the 5x DML data. It does not make sense t
 wc -l 2019-09-12-DML-Destrand-10x-Locations-100diff-NoExtras.bed #Count the number of lines in the new file. There are 100 less DML
 head 2019-09-12-DML-Destrand-10x-Locations-100diff.bed #Look at newly generated file
 ```
-
-
-
-
-
-
-
-
-
-
-
