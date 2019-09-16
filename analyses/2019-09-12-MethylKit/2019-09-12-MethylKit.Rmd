@@ -331,6 +331,11 @@ write.csv(diffMethStats100FilteredCov10Destrand, "2019-09-15-Loci-Analysis/2019-
 ```
 
 ```{r}
+diffMethChrStatsFilteredCov10Destrand <- diffMethPerChr(differentialMethylationStatsFilteredCov10Destrand, plot = FALSE, qvalue.cutoff = 0.001, meth.cutoff = 99) #Save distribution of hyper- and hypomethylated DML per chromosome.
+write.csv(diffMethChrStatsFilteredCov10Destrand, "2019-09-15-Loci-Analysis/2019-09-15-DML-Distribution-by-Chromosome.csv") #Save table as a .csv
+```
+
+```{r}
 jpeg(filename = "2019-09-15-Loci-Analysis/2019-09-15-DML-Distribution-by-Chromosome.jpeg", height = 1000, width = 1000) #Save file with designated name
 diffMethPerChr(differentialMethylationStatsFilteredCov10Destrand, plot = TRUE, qvalue.cutoff = 0.001, meth.cutoff = 99) #Look at distribution of hyper- and hypomethylated DML per chromosome. Create an accompanying plot.
 dev.off()
