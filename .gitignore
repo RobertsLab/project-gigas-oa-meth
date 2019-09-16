@@ -20,3 +20,7 @@ analyses/2019-09-15-DML-Analysis/2019-09-15-Genes-CGmotifs.txt
 analyses/2019-09-15-DML-Analysis/2019-09-15-Intron-CGmotifs.txt
 analyses/2019-09-15-DML-Analysis/2019-09-15-Promoter-CGmotifs.txt
 analyses/2019-09-15-DML-Analysis/2019-09-15-TE-CGmotifs.txt
+analyses/2019-09-12-MethylKit/2019-09-15-Methylation-Information-Filtered-Destrand-Cov5.bed
+analyses/2019-09-12-MethylKit/2019-09-15-Methylation-Information-Filtered-Destrand-Cov10.bed
+analyses/2019-09-12-MethylKit/2019-09-15-Loci-Analysis/2019-09-15-All-Loci-Methylation-Statistic-Filtered-Destrand-50-Cov5.csv
+analyses/2019-09-12-MethylKit/2019-09-15-Loci-Analysis/2019-09-15-All-Loci-Methylation-Statistic-Filtered-Destrand-50-Cov10.csv
