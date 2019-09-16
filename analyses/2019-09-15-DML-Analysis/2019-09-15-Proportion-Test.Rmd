@@ -1,0 +1,81 @@
+---
+title: "Proportion Test"
+author: "Yaamini Venkataraman"
+date: "1/15/2019"
+output: html_document
+---
+
+I will use a proportion test to compare the proportion of genome feature overlaps between differentially methylated loci (DML), differentially methylated regions (DMR), and the gene background.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Obtain session information
+
+```{r}
+sessionInfo()
+```
+
+# Import data
+
+```{r}
+overlapData <- read.csv("2019-09-15-Overlap-Proportions.csv", header = TRUE)
+rownames(overlapData) <- overlapData$genomicFeature #Set genomic feature indication and rownames
+overlapData <- overlapData[,-1] #Remove genomic feature indication column
+head(overlapData) #Confirm import
+```
+
+## Reformat data
+
+```{r}
+proportionData <- overlapData #Copy overlap data as a new dataframe
+nLength <- length(proportionData$totalCpG) #Count number of rows
+for(i in 1:nLength) {
+  proportionData[i,] <- (proportionData[i,]/proportionData[6,])*100
+} #Divide each column of proportionData by respective totalLines entry. Multiply by 100 and and save the percentage
+head(proportionData) #Confirm changes
+```
+
+```{r}
+proportionData <- proportionData[-6,] #Remove totalLines row
+tail(proportionData) #Confirm changes
+```
+
+# DML
+
+## Conduct chi-squared tests of homogeneity
+
+The null hypothesis is that loci distributions in the genome are the same between different categories.
+
+### Total CpGs vs. DML
+
+Even though the total CpGs are not the background of the DML, it's still an interesting comparison.
+
+```{r}
+methylatedVersusDMLTest <- chisq.test(t(proportionData)) #Conduct a chi-squared test
+methylatedVersusDMLTest #The distribution of DML is significantly different from CpGs.
+```
+
+## Create figures
+
+### Total CpGs vs. DML
+
+```{r}
+#pdf("2019-09-15-Total-CpGs-Versus-DML.pdf", height = 8.5, width = 11)
+par(mar = c(3,5,1,1)) #Change figure boundaries
+barplot(t(proportionData), 
+        beside = TRUE, 
+        axes = FALSE, 
+        names.arg = c("Exons", "Introns", "TE", "Promoters", "Other"),
+        ylim = c(0,65)) #Create a grouped barplot (beside = TRUE) using a transposed version of the proportion data. Use axes = FALSE to remove the y-axis and names.arg to set labels on the x-axis.
+axis(side = 2, at = seq(0, 65, by = 5), las = 2, col = "grey80")
+mtext(side = 2, "Proportion CpGs", line = 3) #Add y-axis label
+legend("topright", 
+       legend = c("All CpGs", "DML"),
+       pch = 16,
+       col = c("grey20", "grey80"),
+       bty = "n") #Place a legend in the top right of the figure with no box
+#dev.off()
+```
+
