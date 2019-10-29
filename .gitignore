@@ -25,3 +25,4 @@ analyses/2019-09-12-MethylKit/2019-09-15-Methylation-Information-Filtered-Destra
 analyses/2019-09-12-MethylKit/2019-09-15-Loci-Analysis/2019-09-15-All-Loci-Methylation-Statistic-Filtered-Destrand-50-Cov5.csv
 analyses/2019-09-12-MethylKit/2019-09-15-Loci-Analysis/2019-09-15-All-Loci-Methylation-Statistic-Filtered-Destrand-50-Cov10.csv
 analyses/2019-09-15-DML-Analysis/uniprot-SP-GO.sorted
+*.gff
