@@ -1,7 +1,7 @@
 ---
 title: "Proportion Test"
 author: "Yaamini Venkataraman"
-date: "1/15/2019"
+date: "9/15/2019"
 output: html_document
 ---
 
@@ -30,16 +30,21 @@ head(overlapData) #Confirm import
 
 ```{r}
 proportionData <- overlapData #Copy overlap data as a new dataframe
-nLength <- length(proportionData$totalCpG) #Count number of rows
-for(i in 1:nLength) {
-  proportionData[i,] <- (proportionData[i,]/proportionData[6,])*100
-} #Divide each column of proportionData by respective totalLines entry. Multiply by 100 and and save the percentage
+proportionData <- proportionData[-6,] #Remove totalLines row
+totalEntries <- c(sum(proportionData$totalCpG),
+                  sum(proportionData$DML)) #Sum the number of CpGs in each category
+proportionData <- rbind(proportionData, totalEntries) #Add totalEntries to bottom of proportionData
+row.names(proportionData)[6] <- "totalEntries" #Add rowname
 head(proportionData) #Confirm changes
 ```
 
 ```{r}
-proportionData <- proportionData[-6,] #Remove totalLines row
-tail(proportionData) #Confirm changes
+nLength <- length(proportionData$totalCpG) #Count number of rows
+for(i in 1:nLength) {
+  proportionData[i,] <- (proportionData[i,]/proportionData[6,])*100
+} #Divide each column of proportionData by respective totalEntries entry. Multiply by 100 and and save the percentage
+proportionData <- proportionData[-6,] #Remove totalEntries
+head(proportionData) #Confirm changes
 ```
 
 # DML
@@ -59,23 +64,35 @@ methylatedVersusDMLTest #The distribution of DML is significantly different from
 
 ## Create figures
 
+```{r}
+plotColors <- rev(RColorBrewer::brewer.pal(5, "Purples")) #Create a color palette for the barplots. Use 5 purple shades from RColorBrewer. Reverse the order so the darkest shade is used first.
+```
+
+
 ### Total CpGs vs. DML
 
 ```{r}
 #pdf("2019-09-15-Total-CpGs-Versus-DML.pdf", height = 8.5, width = 11)
-par(mar = c(3,5,1,1)) #Change figure boundaries
-barplot(t(proportionData), 
-        beside = TRUE, 
+
+par(mar = c(3,5,1,1), oma = c(1, 1, 1, 10)) #Change figure boundaries
+barplot(t(t(proportionData)), 
         axes = FALSE, 
-        names.arg = c("Exons", "Introns", "TE", "Promoters", "Other"),
-        ylim = c(0,65)) #Create a grouped barplot (beside = TRUE) using a transposed version of the proportion data. Use axes = FALSE to remove the y-axis and names.arg to set labels on the x-axis.
-axis(side = 2, at = seq(0, 65, by = 5), las = 2, col = "grey80")
+        names.arg = c("All CpGs", "DML"),
+        ylim = c(0,100),
+        col = plotColors) #Create a stacked barplot. Use axes = FALSE to remove the y-axis and names.arg to set labels on the x-axis.
+axis(side = 2, at = seq(0, 100, by = 10), las = 2, col = "grey80")
 mtext(side = 2, "Proportion CpGs", line = 3) #Add y-axis label
-legend("topright", 
-       legend = c("All CpGs", "DML"),
-       pch = 16,
-       col = c("grey20", "grey80"),
+
+par(fig = c(0, 1, 0, 1), oma = c(0, 0, 0, 0), mar = c(0, 0, 0, 0), new = TRUE) #Create new plot
+plot(0, 0, type = "n", bty = "n", xaxt = "n", yaxt = "n") #Add new plot on top of current plot
+legend("topright",
+       xpd = TRUE,
+       legend = c("Exons", "Introns", "Transposable Elements", "Putative Promoters", "Other"),
+       pch = 22, 
+        col = "black", 
+        pt.bg = plotColors,
        bty = "n") #Place a legend in the top right of the figure with no box
+
 #dev.off()
 ```
 
