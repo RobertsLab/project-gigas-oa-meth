@@ -11,6 +11,14 @@ I will use a proportion test to compare the proportion of genome feature overlap
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+# Load packages
+
+```{r}
+#install.packages("dichromat") #Install package for looking at colors from colorblind perspective
+require("dichromat") #Load package
+```
+
+
 # Obtain session information
 
 ```{r}
@@ -66,8 +74,9 @@ methylatedVersusDMLTest #The distribution of DML is significantly different from
 
 ```{r}
 plotColors <- rev(RColorBrewer::brewer.pal(5, "Purples")) #Create a color palette for the barplots. Use 5 purple shades from RColorBrewer. Reverse the order so the darkest shade is used first.
+barplot(t(t(proportionData)),
+        col = dichromat(plotColors)) #Check that plot colors will be easy to interpret for those with color blindness
 ```
-
 
 ### Total CpGs vs. DML
 
