@@ -92,7 +92,7 @@ pie(pieBPGOSlimCounts, cex = 1.5,
 ```{r}
 #pdf("2019-10-31-BP-GOSlim-DML-Gene-Overlaps.pdf", width = 11, height = 8.5) #Save as a pdf
 
-par(mar = c(5, 14, 1, 1)) #Change figure boundaries
+par(mar = c(5, 20, 1, 1)) #Change figure boundaries
 
 barsGOSlim <- barplot(BPGOSlimCounts$percentage,
                       horiz = TRUE,
@@ -103,7 +103,7 @@ barsGOSlim <- barplot(BPGOSlimCounts$percentage,
                               rep(plotColors[5], times = 1),
                               rep(plotColors[1], times = 4))) #Create a barplot that is horizontal (horiz = TRUE). Use axes = FALSE to remove all axes. Set xlim based on maximum percentage value. Colors correspond to broader GOSlim groupings. Save plot as a new object.
 
-axis(side = 2, at = barsGOSlim, labels = BPGOSlimCounts$GOSlim, tick = FALSE, las = 2, col = "grey80", cex.lab = 1.5) #Add y-axis with GOSlim terms from BPGOSlimCounts. Place labels at specific barplot values from barsGOSlim. Remove tick marks (tick) and change orientation of labels (las)
+axis(side = 2, at = barsGOSlim, labels = BPGOSlimCounts$GOSlim, tick = FALSE, las = 2, col = "grey80", cex.axis = 1.5) #Add y-axis with GOSlim terms from BPGOSlimCounts. Place labels at specific barplot values from barsGOSlim. Remove tick marks (tick) and change orientation of labels (las)
 
 axis(side = 1, at = seq(from = 0, to = 14, by = 2), cex = 1.2, col = "grey80") #Add x-axis
 mtext(side = 1, "Percent of Genes with DML", line = 3, cex = 1.5) #Add x-axis label
