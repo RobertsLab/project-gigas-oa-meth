@@ -1,0 +1,792 @@
+geneID,Uniprot,evalue,Product,GOSlim
+CGI_10000428,Q52KJ8,6e-41,Methionine-R-sulfoxide reductase B1 (MsrB1) (EC 1.8.4.-) (Selenoprotein X) (SelX),cell organization and biogenesis
+CGI_10000428,Q52KJ8,6e-41,Methionine-R-sulfoxide reductase B1 (MsrB1) (EC 1.8.4.-) (Selenoprotein X) (SelX),protein metabolism
+CGI_10000428,Q52KJ8,6e-41,Methionine-R-sulfoxide reductase B1 (MsrB1) (EC 1.8.4.-) (Selenoprotein X) (SelX),stress response
+CGI_10000485,Q4R7X9,2e-38,Protein LMBR1L,cell organization and biogenesis
+CGI_10000485,Q4R7X9,2e-38,Protein LMBR1L,transport
+CGI_10000789,Q15369,5e-37,Elongin-C (EloC) (Elongin 15 kDa subunit) (RNA polymerase II transcription factor SIII subunit C) (SIII p15) (Transcription elongation factor B polypeptide 1),protein metabolism
+CGI_10000789,Q15369,5e-37,Elongin-C (EloC) (Elongin 15 kDa subunit) (RNA polymerase II transcription factor SIII subunit C) (SIII p15) (Transcription elongation factor B polypeptide 1),RNA metabolism
+CGI_10001200,Q93034,0,Cullin-5 (CUL-5) (Vasopressin-activated calcium-mobilizing receptor 1) (VACM-1),protein metabolism
+CGI_10001200,Q93034,0,Cullin-5 (CUL-5) (Vasopressin-activated calcium-mobilizing receptor 1) (VACM-1),cell cycle and proliferation
+CGI_10001200,Q93034,0,Cullin-5 (CUL-5) (Vasopressin-activated calcium-mobilizing receptor 1) (VACM-1),stress response
+CGI_10001223,Q32NQ8,3e-75,RING finger protein 10,RNA metabolism
+CGI_10001223,Q32NQ8,3e-75,RING finger protein 10,developmental processes
+CGI_10001223,Q32NQ8,3e-75,RING finger protein 10,cell cycle and proliferation
+CGI_10001358,Q9R1R2,3e-13,Tripartite motif-containing protein 3 (RING finger protein 22) (RING finger protein HAC1),protein metabolism
+CGI_10001358,Q9R1R2,3e-13,Tripartite motif-containing protein 3 (RING finger protein 22) (RING finger protein HAC1),transport
+CGI_10001451,Q9HBY0,1e-43,NADPH oxidase 3 (EC 1.6.3.-) (Mitogenic oxidase 2) (MOX-2) (gp91phox homolog 3) (GP91-3),other metabolic processes
+CGI_10001451,Q9HBY0,1e-43,NADPH oxidase 3 (EC 1.6.3.-) (Mitogenic oxidase 2) (MOX-2) (gp91phox homolog 3) (GP91-3),developmental processes
+CGI_10001721,Q08DZ8,2e-15,DNA-directed primase/polymerase protein (EC 2.7.7.-) (Coiled-coil domain-containing protein 111),DNA metabolism
+CGI_10001721,Q08DZ8,2e-15,DNA-directed primase/polymerase protein (EC 2.7.7.-) (Coiled-coil domain-containing protein 111),cell organization and biogenesis
+CGI_10001721,Q08DZ8,2e-15,DNA-directed primase/polymerase protein (EC 2.7.7.-) (Coiled-coil domain-containing protein 111),stress response
+CGI_10001789,P11276,2e-13,Fibronectin (FN) [Cleaved into: Anastellin],other metabolic processes
+CGI_10001789,P11276,2e-13,Fibronectin (FN) [Cleaved into: Anastellin],cell adhesion
+CGI_10001789,P11276,2e-13,Fibronectin (FN) [Cleaved into: Anastellin],protein metabolism
+CGI_10001789,P11276,2e-13,Fibronectin (FN) [Cleaved into: Anastellin],cell cycle and proliferation
+CGI_10001789,P11276,2e-13,Fibronectin (FN) [Cleaved into: Anastellin],signal transduction
+CGI_10001789,P11276,2e-13,Fibronectin (FN) [Cleaved into: Anastellin],stress response
+CGI_10001789,P11276,2e-13,Fibronectin (FN) [Cleaved into: Anastellin],developmental processes
+CGI_10001789,P11276,2e-13,Fibronectin (FN) [Cleaved into: Anastellin],cell organization and biogenesis
+CGI_10001851,P28271,0,Cytoplasmic aconitate hydratase (Aconitase) (EC 4.2.1.3) (Citrate hydro-lyase) (Iron regulatory protein 1) (IRP1) (Iron-responsive element-binding protein 1) (IRE-BP 1),developmental processes
+CGI_10001851,P28271,0,Cytoplasmic aconitate hydratase (Aconitase) (EC 4.2.1.3) (Citrate hydro-lyase) (Iron regulatory protein 1) (IRP1) (Iron-responsive element-binding protein 1) (IRE-BP 1),protein metabolism
+CGI_10001851,P28271,0,Cytoplasmic aconitate hydratase (Aconitase) (EC 4.2.1.3) (Citrate hydro-lyase) (Iron regulatory protein 1) (IRP1) (Iron-responsive element-binding protein 1) (IRE-BP 1),other metabolic processes
+CGI_10001930,B0S733,2e-33,Regulator of nonsense transcripts 3A (Up-frameshift suppressor 3 homolog A),RNA metabolism
+CGI_10001930,B0S733,2e-33,Regulator of nonsense transcripts 3A (Up-frameshift suppressor 3 homolog A),transport
+CGI_10002160,P42765,3e-168,3-ketoacyl-CoA thiolase, mitochondrial (EC 2.3.1.16) (Acetyl-CoA acyltransferase) (Beta-ketothiolase) (Mitochondrial 3-oxoacyl-CoA thiolase) (T1),other metabolic processes
+CGI_10002232,Q6GPV5,2e-16,E3 ubiquitin-protein ligase RNF181 (EC 2.3.2.27) (RING finger protein 181) (RING-type E3 ubiquitin transferase RNF181),protein metabolism
+CGI_10002413,Q5QQ53,0,Xylosyltransferase oxt (EC 2.4.2.26) (Peptide O-xylosyltransferase),other metabolic processes
+CGI_10002414,Q5QQ53,3e-23,Xylosyltransferase oxt (EC 2.4.2.26) (Peptide O-xylosyltransferase),other metabolic processes
+CGI_10002584,Q9U1M8,2e-159,Myosin-I heavy chain (Class VII unconventional myosin) (DdMVII) (DdM7),cell organization and biogenesis
+CGI_10002584,Q9U1M8,2e-159,Myosin-I heavy chain (Class VII unconventional myosin) (DdMVII) (DdM7),cell adhesion
+CGI_10002584,Q9U1M8,2e-159,Myosin-I heavy chain (Class VII unconventional myosin) (DdMVII) (DdM7),transport
+CGI_10002688,Q01831,2e-26,DNA repair protein complementing XP-C cells (Xeroderma pigmentosum group C-complementing protein) (p125),cell cycle and proliferation
+CGI_10002688,Q01831,2e-26,DNA repair protein complementing XP-C cells (Xeroderma pigmentosum group C-complementing protein) (p125),DNA metabolism
+CGI_10002688,Q01831,2e-26,DNA repair protein complementing XP-C cells (Xeroderma pigmentosum group C-complementing protein) (p125),cell organization and biogenesis
+CGI_10002688,Q01831,2e-26,DNA repair protein complementing XP-C cells (Xeroderma pigmentosum group C-complementing protein) (p125),stress response
+CGI_10002688,Q01831,2e-26,DNA repair protein complementing XP-C cells (Xeroderma pigmentosum group C-complementing protein) (p125),signal transduction
+CGI_10002774,P53007,3e-102,Tricarboxylate transport protein, mitochondrial (Citrate transport protein) (CTP) (Solute carrier family 25 member 1) (Tricarboxylate carrier protein),transport
+CGI_10002774,P53007,3e-102,Tricarboxylate transport protein, mitochondrial (Citrate transport protein) (CTP) (Solute carrier family 25 member 1) (Tricarboxylate carrier protein),other metabolic processes
+CGI_10002811,Q6KCD5,0,Nipped-B-like protein (Delangin homolog) (SCC2 homolog),cell cycle and proliferation
+CGI_10002811,Q6KCD5,0,Nipped-B-like protein (Delangin homolog) (SCC2 homolog),cell organization and biogenesis
+CGI_10002811,Q6KCD5,0,Nipped-B-like protein (Delangin homolog) (SCC2 homolog),stress response
+CGI_10002811,Q6KCD5,0,Nipped-B-like protein (Delangin homolog) (SCC2 homolog),RNA metabolism
+CGI_10002811,Q6KCD5,0,Nipped-B-like protein (Delangin homolog) (SCC2 homolog),protein metabolism
+CGI_10002811,Q6KCD5,0,Nipped-B-like protein (Delangin homolog) (SCC2 homolog),developmental processes
+CGI_10003069,Q969S3,3e-56,Zinc finger protein 622 (Zinc finger-like protein 9),signal transduction
+CGI_10003069,Q969S3,3e-56,Zinc finger protein 622 (Zinc finger-like protein 9),death
+CGI_10003069,Q969S3,3e-56,Zinc finger protein 622 (Zinc finger-like protein 9),stress response
+CGI_10003069,Q969S3,3e-56,Zinc finger protein 622 (Zinc finger-like protein 9),other metabolic processes
+CGI_10003141,A7YWD2,5e-171,Importin-13 (Imp13),transport
+CGI_10003201,Q9DBR7,6e-20,Protein phosphatase 1 regulatory subunit 12A (Myosin phosphatase-targeting subunit 1) (Myosin phosphatase target subunit 1),transport
+CGI_10003201,Q9DBR7,6e-20,Protein phosphatase 1 regulatory subunit 12A (Myosin phosphatase-targeting subunit 1) (Myosin phosphatase target subunit 1),RNA metabolism
+CGI_10003201,Q9DBR7,6e-20,Protein phosphatase 1 regulatory subunit 12A (Myosin phosphatase-targeting subunit 1) (Myosin phosphatase target subunit 1),cell adhesion
+CGI_10003201,Q9DBR7,6e-20,Protein phosphatase 1 regulatory subunit 12A (Myosin phosphatase-targeting subunit 1) (Myosin phosphatase target subunit 1),protein metabolism
+CGI_10003201,Q9DBR7,6e-20,Protein phosphatase 1 regulatory subunit 12A (Myosin phosphatase-targeting subunit 1) (Myosin phosphatase target subunit 1),cell cycle and proliferation
+CGI_10003201,Q9DBR7,6e-20,Protein phosphatase 1 regulatory subunit 12A (Myosin phosphatase-targeting subunit 1) (Myosin phosphatase target subunit 1),cell organization and biogenesis
+CGI_10003308,P49139,1e-177,MAP kinase-activated protein kinase 2 (MAPK-activated protein kinase 2) (MAPKAP kinase 2) (MAPKAP-K2) (MAPKAPK-2) (MK-2) (MK2) (EC 2.7.11.1) (Fragment),cell cycle and proliferation
+CGI_10003308,P49139,1e-177,MAP kinase-activated protein kinase 2 (MAPK-activated protein kinase 2) (MAPKAP kinase 2) (MAPKAP-K2) (MAPKAPK-2) (MK-2) (MK2) (EC 2.7.11.1) (Fragment),signal transduction
+CGI_10003308,P49139,1e-177,MAP kinase-activated protein kinase 2 (MAPK-activated protein kinase 2) (MAPKAP kinase 2) (MAPKAP-K2) (MAPKAPK-2) (MK-2) (MK2) (EC 2.7.11.1) (Fragment),stress response
+CGI_10003316,Q9Y2G3,0,Probable phospholipid-transporting ATPase IF (EC 3.6.3.1) (ATPase IR) (ATPase class VI type 11B) (P4-ATPase flippase complex alpha subunit ATP11B),cell organization and biogenesis
+CGI_10003316,Q9Y2G3,0,Probable phospholipid-transporting ATPase IF (EC 3.6.3.1) (ATPase IR) (ATPase class VI type 11B) (P4-ATPase flippase complex alpha subunit ATP11B),transport
+CGI_10003400,Q9H3S7,1e-151,Tyrosine-protein phosphatase non-receptor type 23 (EC 3.1.3.48) (His domain-containing protein tyrosine phosphatase) (HD-PTP) (Protein tyrosine phosphatase TD14) (PTP-TD14),transport
+CGI_10003400,Q9H3S7,1e-151,Tyrosine-protein phosphatase non-receptor type 23 (EC 3.1.3.48) (His domain-containing protein tyrosine phosphatase) (HD-PTP) (Protein tyrosine phosphatase TD14) (PTP-TD14),protein metabolism
+CGI_10003400,Q9H3S7,1e-151,Tyrosine-protein phosphatase non-receptor type 23 (EC 3.1.3.48) (His domain-containing protein tyrosine phosphatase) (HD-PTP) (Protein tyrosine phosphatase TD14) (PTP-TD14),cell organization and biogenesis
+CGI_10003458,P70207,5e-08,Plexin-A2 (Plex 2) (Plexin-2),signal transduction
+CGI_10003458,P70207,5e-08,Plexin-A2 (Plex 2) (Plexin-2),cell organization and biogenesis
+CGI_10003458,P70207,5e-08,Plexin-A2 (Plex 2) (Plexin-2),developmental processes
+CGI_10003467,O14981,0,TATA-binding protein-associated factor 172 (EC 3.6.4.-) (ATP-dependent helicase BTAF1) (B-TFIID transcription factor-associated 170 kDa subunit) (TAF(II)170) (TBP-associated factor 172) (TAF-172),RNA metabolism
+CGI_10003741,Q8CGS4,8e-82,Charged multivesicular body protein 3 (Chromatin-modifying protein 3) (Vacuolar protein sorting-associated protein 24) (rVps24p),cell cycle and proliferation
+CGI_10003741,Q8CGS4,8e-82,Charged multivesicular body protein 3 (Chromatin-modifying protein 3) (Vacuolar protein sorting-associated protein 24) (rVps24p),transport
+CGI_10004088,Q5F339,5e-94,Cytochrome c-type heme lyase (CCHL) (EC 4.4.1.17) (Holocytochrome c-type synthase),protein metabolism
+CGI_10004088,Q5F339,5e-94,Cytochrome c-type heme lyase (CCHL) (EC 4.4.1.17) (Holocytochrome c-type synthase),cell organization and biogenesis
+CGI_10004178,Q8WV93,2e-138,AFG1-like ATPase (Lactation elevated protein 1) (EC 3.6.-.-) (Protein AFG1 homolog),cell organization and biogenesis
+CGI_10004335,Q95ZJ1,3e-138,Polypeptide N-acetylgalactosaminyltransferase 5 (pp-GaNTase 5) (EC 2.4.1.41) (Protein-UDP acetylgalactosaminyltransferase 5) (UDP-GalNAc:polypeptide N-acetylgalactosaminyltransferase 5),protein metabolism
+CGI_10004548,Q2KIB5,1e-21,V-type proton ATPase subunit e 2 (V-ATPase subunit e 2) (Vacuolar proton pump subunit e 2),transport
+CGI_10004606,O43826,6e-79,Glucose-6-phosphate exchanger SLC37A4 (Glucose-5-phosphate transporter) (Glucose-6-phosphate translocase) (Solute carrier family 37 member 4) (Transformation-related gene 19 protein) (TRG-19),other metabolic processes
+CGI_10004606,O43826,6e-79,Glucose-6-phosphate exchanger SLC37A4 (Glucose-5-phosphate transporter) (Glucose-6-phosphate translocase) (Solute carrier family 37 member 4) (Transformation-related gene 19 protein) (TRG-19),transport
+CGI_10004647,P62597,7e-43,Protection of telomeres protein 1 (cPot1) (POT1-like telomere end-binding protein),cell organization and biogenesis
+CGI_10004647,P62597,7e-43,Protection of telomeres protein 1 (cPot1) (POT1-like telomere end-binding protein),DNA metabolism
+CGI_10004707,Q8TF62,4e-131,Probable phospholipid-transporting ATPase IM (EC 3.6.3.1) (ATPase class I type 8B member 4) (P4-ATPase flippase complex alpha subunit ATP8B4),cell organization and biogenesis
+CGI_10004707,Q8TF62,4e-131,Probable phospholipid-transporting ATPase IM (EC 3.6.3.1) (ATPase class I type 8B member 4) (P4-ATPase flippase complex alpha subunit ATP8B4),transport
+CGI_10004725,E1C1R4,0,Ubiquitin carboxyl-terminal hydrolase 47 (EC 3.4.19.12) (Deubiquitinating enzyme 47) (Ubiquitin thioesterase 47) (Ubiquitin-specific-processing protease 47),DNA metabolism
+CGI_10004725,E1C1R4,0,Ubiquitin carboxyl-terminal hydrolase 47 (EC 3.4.19.12) (Deubiquitinating enzyme 47) (Ubiquitin thioesterase 47) (Ubiquitin-specific-processing protease 47),death
+CGI_10004725,E1C1R4,0,Ubiquitin carboxyl-terminal hydrolase 47 (EC 3.4.19.12) (Deubiquitinating enzyme 47) (Ubiquitin thioesterase 47) (Ubiquitin-specific-processing protease 47),protein metabolism
+CGI_10004725,E1C1R4,0,Ubiquitin carboxyl-terminal hydrolase 47 (EC 3.4.19.12) (Deubiquitinating enzyme 47) (Ubiquitin thioesterase 47) (Ubiquitin-specific-processing protease 47),stress response
+CGI_10004725,E1C1R4,0,Ubiquitin carboxyl-terminal hydrolase 47 (EC 3.4.19.12) (Deubiquitinating enzyme 47) (Ubiquitin thioesterase 47) (Ubiquitin-specific-processing protease 47),RNA metabolism
+CGI_10004766,P50429,8e-133,Arylsulfatase B (ASB) (EC 3.1.6.12) (N-acetylgalactosamine-4-sulfatase) (G4S),other metabolic processes
+CGI_10004766,P50429,8e-133,Arylsulfatase B (ASB) (EC 3.1.6.12) (N-acetylgalactosamine-4-sulfatase) (G4S),cell organization and biogenesis
+CGI_10004766,P50429,8e-133,Arylsulfatase B (ASB) (EC 3.1.6.12) (N-acetylgalactosamine-4-sulfatase) (G4S),developmental processes
+CGI_10005033,P0C8Z3,0,Ubiquitin carboxyl-terminal hydrolase 22 (EC 3.4.19.12) (Deubiquitinating enzyme 22) (Ubiquitin thioesterase 22) (Ubiquitin-specific-processing protease 22),RNA metabolism
+CGI_10005033,P0C8Z3,0,Ubiquitin carboxyl-terminal hydrolase 22 (EC 3.4.19.12) (Deubiquitinating enzyme 22) (Ubiquitin thioesterase 22) (Ubiquitin-specific-processing protease 22),cell cycle and proliferation
+CGI_10005033,P0C8Z3,0,Ubiquitin carboxyl-terminal hydrolase 22 (EC 3.4.19.12) (Deubiquitinating enzyme 22) (Ubiquitin thioesterase 22) (Ubiquitin-specific-processing protease 22),protein metabolism
+CGI_10005033,P0C8Z3,0,Ubiquitin carboxyl-terminal hydrolase 22 (EC 3.4.19.12) (Deubiquitinating enzyme 22) (Ubiquitin thioesterase 22) (Ubiquitin-specific-processing protease 22),cell organization and biogenesis
+CGI_10005126,Q9ULV0,0,Unconventional myosin-Vb,transport
+CGI_10005133,Q8R4E0,5e-34,Interferon regulatory factor 2 (IRF-2),cell cycle and proliferation
+CGI_10005133,Q8R4E0,5e-34,Interferon regulatory factor 2 (IRF-2),RNA metabolism
+CGI_10005214,Q9NZW4,2e-06,Dentin sialophosphoprotein [Cleaved into: Dentin phosphoprotein (Dentin phosphophoryn) (DPP); Dentin sialoprotein (DSP)],cell organization and biogenesis
+CGI_10005214,Q9NZW4,2e-06,Dentin sialophosphoprotein [Cleaved into: Dentin phosphoprotein (Dentin phosphophoryn) (DPP); Dentin sialoprotein (DSP)],developmental processes
+CGI_10005249,Q9Y4A5,0,Transformation/transcription domain-associated protein (350/400 kDa PCAF-associated factor) (PAF350/400) (STAF40) (Tra1 homolog),DNA metabolism
+CGI_10005249,Q9Y4A5,0,Transformation/transcription domain-associated protein (350/400 kDa PCAF-associated factor) (PAF350/400) (STAF40) (Tra1 homolog),protein metabolism
+CGI_10005249,Q9Y4A5,0,Transformation/transcription domain-associated protein (350/400 kDa PCAF-associated factor) (PAF350/400) (STAF40) (Tra1 homolog),RNA metabolism
+CGI_10005249,Q9Y4A5,0,Transformation/transcription domain-associated protein (350/400 kDa PCAF-associated factor) (PAF350/400) (STAF40) (Tra1 homolog),stress response
+CGI_10005249,Q9Y4A5,0,Transformation/transcription domain-associated protein (350/400 kDa PCAF-associated factor) (PAF350/400) (STAF40) (Tra1 homolog),cell organization and biogenesis
+CGI_10005253,Q7TPD0,0,Integrator complex subunit 3 (Int3) (SOSS complex subunit A) (Sensor of single-strand DNA complex subunit A) (SOSS-A) (Sensor of ssDNA subunit A),RNA metabolism
+CGI_10005253,Q7TPD0,0,Integrator complex subunit 3 (Int3) (SOSS complex subunit A) (Sensor of single-strand DNA complex subunit A) (SOSS-A) (Sensor of ssDNA subunit A),stress response
+CGI_10005253,Q7TPD0,0,Integrator complex subunit 3 (Int3) (SOSS complex subunit A) (Sensor of single-strand DNA complex subunit A) (SOSS-A) (Sensor of ssDNA subunit A),cell cycle and proliferation
+CGI_10005253,Q7TPD0,0,Integrator complex subunit 3 (Int3) (SOSS complex subunit A) (Sensor of single-strand DNA complex subunit A) (SOSS-A) (Sensor of ssDNA subunit A),DNA metabolism
+CGI_10005392,Q13490,2e-44,Baculoviral IAP repeat-containing protein 2 (EC 2.3.2.27) (Cellular inhibitor of apoptosis 1) (C-IAP1) (IAP homolog B) (Inhibitor of apoptosis protein 2) (hIAP-2) (hIAP2) (RING finger protein 48) (RING-type E3 ubiquitin transferase BIRC2) (TNFR2-TRAF-signaling complex protein 2),signal transduction
+CGI_10005392,Q13490,2e-44,Baculoviral IAP repeat-containing protein 2 (EC 2.3.2.27) (Cellular inhibitor of apoptosis 1) (C-IAP1) (IAP homolog B) (Inhibitor of apoptosis protein 2) (hIAP-2) (hIAP2) (RING finger protein 48) (RING-type E3 ubiquitin transferase BIRC2) (TNFR2-TRAF-signaling complex protein 2),developmental processes
+CGI_10005392,Q13490,2e-44,Baculoviral IAP repeat-containing protein 2 (EC 2.3.2.27) (Cellular inhibitor of apoptosis 1) (C-IAP1) (IAP homolog B) (Inhibitor of apoptosis protein 2) (hIAP-2) (hIAP2) (RING finger protein 48) (RING-type E3 ubiquitin transferase BIRC2) (TNFR2-TRAF-signaling complex protein 2),cell cycle and proliferation
+CGI_10005392,Q13490,2e-44,Baculoviral IAP repeat-containing protein 2 (EC 2.3.2.27) (Cellular inhibitor of apoptosis 1) (C-IAP1) (IAP homolog B) (Inhibitor of apoptosis protein 2) (hIAP-2) (hIAP2) (RING finger protein 48) (RING-type E3 ubiquitin transferase BIRC2) (TNFR2-TRAF-signaling complex protein 2),protein metabolism
+CGI_10005392,Q13490,2e-44,Baculoviral IAP repeat-containing protein 2 (EC 2.3.2.27) (Cellular inhibitor of apoptosis 1) (C-IAP1) (IAP homolog B) (Inhibitor of apoptosis protein 2) (hIAP-2) (hIAP2) (RING finger protein 48) (RING-type E3 ubiquitin transferase BIRC2) (TNFR2-TRAF-signaling complex protein 2),stress response
+CGI_10005392,Q13490,2e-44,Baculoviral IAP repeat-containing protein 2 (EC 2.3.2.27) (Cellular inhibitor of apoptosis 1) (C-IAP1) (IAP homolog B) (Inhibitor of apoptosis protein 2) (hIAP-2) (hIAP2) (RING finger protein 48) (RING-type E3 ubiquitin transferase BIRC2) (TNFR2-TRAF-signaling complex protein 2),RNA metabolism
+CGI_10005392,Q13490,2e-44,Baculoviral IAP repeat-containing protein 2 (EC 2.3.2.27) (Cellular inhibitor of apoptosis 1) (C-IAP1) (IAP homolog B) (Inhibitor of apoptosis protein 2) (hIAP-2) (hIAP2) (RING finger protein 48) (RING-type E3 ubiquitin transferase BIRC2) (TNFR2-TRAF-signaling complex protein 2),death
+CGI_10005392,Q13490,2e-44,Baculoviral IAP repeat-containing protein 2 (EC 2.3.2.27) (Cellular inhibitor of apoptosis 1) (C-IAP1) (IAP homolog B) (Inhibitor of apoptosis protein 2) (hIAP-2) (hIAP2) (RING finger protein 48) (RING-type E3 ubiquitin transferase BIRC2) (TNFR2-TRAF-signaling complex protein 2),cell organization and biogenesis
+CGI_10005632,B4U7S7,7e-28,Probable transcriptional regulatory protein HY04AAS1_0501,RNA metabolism
+CGI_10005801,P17439,3e-83,Glucosylceramidase (EC 3.2.1.45) (Acid beta-glucosidase) (Beta-glucocerebrosidase) (D-glucosyl-N-acylsphingosine glucohydrolase),protein metabolism
+CGI_10005801,P17439,3e-83,Glucosylceramidase (EC 3.2.1.45) (Acid beta-glucosidase) (Beta-glucocerebrosidase) (D-glucosyl-N-acylsphingosine glucohydrolase),other metabolic processes
+CGI_10005801,P17439,3e-83,Glucosylceramidase (EC 3.2.1.45) (Acid beta-glucosidase) (Beta-glucocerebrosidase) (D-glucosyl-N-acylsphingosine glucohydrolase),developmental processes
+CGI_10005801,P17439,3e-83,Glucosylceramidase (EC 3.2.1.45) (Acid beta-glucosidase) (Beta-glucocerebrosidase) (D-glucosyl-N-acylsphingosine glucohydrolase),cell organization and biogenesis
+CGI_10005801,P17439,3e-83,Glucosylceramidase (EC 3.2.1.45) (Acid beta-glucosidase) (Beta-glucocerebrosidase) (D-glucosyl-N-acylsphingosine glucohydrolase),stress response
+CGI_10005904,P05455,4e-25,Lupus La protein (La autoantigen) (La ribonucleoprotein) (Sjoegren syndrome type B antigen) (SS-B),transport
+CGI_10005904,P05455,4e-25,Lupus La protein (La autoantigen) (La ribonucleoprotein) (Sjoegren syndrome type B antigen) (SS-B),RNA metabolism
+CGI_10005915,B5X2B8,4e-53,GTPase Era, mitochondrial (ERA-like protein 1),cell organization and biogenesis
+CGI_10005980,Q74GW7,3e-37,tRNA 2-thiocytidine biosynthesis protein TtcA,RNA metabolism
+CGI_10006326,P51947,6e-66,Cyclin-H (MO15-associated protein) (p36),RNA metabolism
+CGI_10006326,P51947,6e-66,Cyclin-H (MO15-associated protein) (p36),cell cycle and proliferation
+CGI_10006374,Q3HNM7,8e-100,Protein inscuteable homolog (Minsc),cell organization and biogenesis
+CGI_10006374,Q3HNM7,8e-100,Protein inscuteable homolog (Minsc),developmental processes
+CGI_10006374,Q3HNM7,8e-100,Protein inscuteable homolog (Minsc),cell cycle and proliferation
+CGI_10006381,Q9UHJ3,0,Scm-like with four MBT domains protein 1 (hSFMBT) (Renal ubiquitous protein 1),developmental processes
+CGI_10006381,Q9UHJ3,0,Scm-like with four MBT domains protein 1 (hSFMBT) (Renal ubiquitous protein 1),cell organization and biogenesis
+CGI_10006381,Q9UHJ3,0,Scm-like with four MBT domains protein 1 (hSFMBT) (Renal ubiquitous protein 1),RNA metabolism
+CGI_10006403,O60306,0,Intron-binding protein aquarius (Intron-binding protein of 160 kDa) (IBP160),RNA metabolism
+CGI_10006403,O60306,0,Intron-binding protein aquarius (Intron-binding protein of 160 kDa) (IBP160),stress response
+CGI_10006403,O60306,0,Intron-binding protein aquarius (Intron-binding protein of 160 kDa) (IBP160),DNA metabolism
+CGI_10006425,A6QR44,1e-85,Microprocessor complex subunit DGCR8 (DiGeorge syndrome critical region 8 homolog),RNA metabolism
+CGI_10006474,Q9NYQ6,0,Cadherin EGF LAG seven-pass G-type receptor 1 (Cadherin family member 9) (Flamingo homolog 2) (hFmi2),signal transduction
+CGI_10006474,Q9NYQ6,0,Cadherin EGF LAG seven-pass G-type receptor 1 (Cadherin family member 9) (Flamingo homolog 2) (hFmi2),cell adhesion
+CGI_10006474,Q9NYQ6,0,Cadherin EGF LAG seven-pass G-type receptor 1 (Cadherin family member 9) (Flamingo homolog 2) (hFmi2),stress response
+CGI_10006474,Q9NYQ6,0,Cadherin EGF LAG seven-pass G-type receptor 1 (Cadherin family member 9) (Flamingo homolog 2) (hFmi2),developmental processes
+CGI_10006474,Q9NYQ6,0,Cadherin EGF LAG seven-pass G-type receptor 1 (Cadherin family member 9) (Flamingo homolog 2) (hFmi2),cell organization and biogenesis
+CGI_10006664,O29230,7e-07,DNA double-strand break repair Rad50 ATPase,DNA metabolism
+CGI_10006664,O29230,7e-07,DNA double-strand break repair Rad50 ATPase,stress response
+CGI_10006703,Q5W0Z9,2e-113,Probable palmitoyltransferase ZDHHC20 (EC 2.3.1.225) (Zinc finger DHHC domain-containing protein 20) (DHHC-20),protein metabolism
+CGI_10006854,Q60HD5,3e-74,Protoporphyrinogen oxidase (PPO) (EC 1.3.3.4),other metabolic processes
+CGI_10006924,P52590,0,Nuclear pore complex protein Nup107 (107 kDa nucleoporin) (Nucleoporin Nup107) (p105),cell organization and biogenesis
+CGI_10006924,P52590,0,Nuclear pore complex protein Nup107 (107 kDa nucleoporin) (Nucleoporin Nup107) (p105),RNA metabolism
+CGI_10006924,P52590,0,Nuclear pore complex protein Nup107 (107 kDa nucleoporin) (Nucleoporin Nup107) (p105),transport
+CGI_10006975,Q12996,0,Cleavage stimulation factor subunit 3 (CF-1 77 kDa subunit) (Cleavage stimulation factor 77 kDa subunit) (CSTF 77 kDa subunit) (CstF-77),RNA metabolism
+CGI_10006975,Q12996,0,Cleavage stimulation factor subunit 3 (CF-1 77 kDa subunit) (Cleavage stimulation factor 77 kDa subunit) (CSTF 77 kDa subunit) (CstF-77),cell organization and biogenesis
+CGI_10006996,P84798,7e-14,DNA polymerase delta subunit 3 (DNA polymerase delta subunit p66) (p68),DNA metabolism
+CGI_10006996,P84798,7e-14,DNA polymerase delta subunit 3 (DNA polymerase delta subunit p66) (p68),stress response
+CGI_10007033,Q8BJ34,0,Meiosis regulator and mRNA stability factor 1 (Limkain-b1) (Meiosis arrest female protein 1),stress response
+CGI_10007033,Q8BJ34,0,Meiosis regulator and mRNA stability factor 1 (Limkain-b1) (Meiosis arrest female protein 1),cell cycle and proliferation
+CGI_10007033,Q8BJ34,0,Meiosis regulator and mRNA stability factor 1 (Limkain-b1) (Meiosis arrest female protein 1),other metabolic processes
+CGI_10007033,Q8BJ34,0,Meiosis regulator and mRNA stability factor 1 (Limkain-b1) (Meiosis arrest female protein 1),DNA metabolism
+CGI_10007140,P22292,1e-135,Mitochondrial 2-oxoglutarate/malate carrier protein (OGCP) (Solute carrier family 25 member 11),transport
+CGI_10007347,Q8K4K5,0,Lethal(2) giant larvae protein homolog 1 (LLGL) (Rgl-1),cell organization and biogenesis
+CGI_10007347,Q8K4K5,0,Lethal(2) giant larvae protein homolog 1 (LLGL) (Rgl-1),developmental processes
+CGI_10007347,Q8K4K5,0,Lethal(2) giant larvae protein homolog 1 (LLGL) (Rgl-1),transport
+CGI_10007640,O75533,0,Splicing factor 3B subunit 1 (Pre-mRNA-splicing factor SF3b 155 kDa subunit) (SF3b155) (Spliceosome-associated protein 155) (SAP 155),other metabolic processes
+CGI_10007640,O75533,0,Splicing factor 3B subunit 1 (Pre-mRNA-splicing factor SF3b 155 kDa subunit) (SF3b155) (Spliceosome-associated protein 155) (SAP 155),cell organization and biogenesis
+CGI_10007640,O75533,0,Splicing factor 3B subunit 1 (Pre-mRNA-splicing factor SF3b 155 kDa subunit) (SF3b155) (Spliceosome-associated protein 155) (SAP 155),RNA metabolism
+CGI_10007708,P35398,2e-29,Nuclear receptor ROR-alpha (Nuclear receptor RZR-alpha) (Nuclear receptor subfamily 1 group F member 1) (RAR-related orphan receptor A) (Retinoid-related orphan receptor-alpha),RNA metabolism
+CGI_10007708,P35398,2e-29,Nuclear receptor ROR-alpha (Nuclear receptor RZR-alpha) (Nuclear receptor subfamily 1 group F member 1) (RAR-related orphan receptor A) (Retinoid-related orphan receptor-alpha),cell organization and biogenesis
+CGI_10007708,P35398,2e-29,Nuclear receptor ROR-alpha (Nuclear receptor RZR-alpha) (Nuclear receptor subfamily 1 group F member 1) (RAR-related orphan receptor A) (Retinoid-related orphan receptor-alpha),cell cycle and proliferation
+CGI_10007708,P35398,2e-29,Nuclear receptor ROR-alpha (Nuclear receptor RZR-alpha) (Nuclear receptor subfamily 1 group F member 1) (RAR-related orphan receptor A) (Retinoid-related orphan receptor-alpha),stress response
+CGI_10007708,P35398,2e-29,Nuclear receptor ROR-alpha (Nuclear receptor RZR-alpha) (Nuclear receptor subfamily 1 group F member 1) (RAR-related orphan receptor A) (Retinoid-related orphan receptor-alpha),developmental processes
+CGI_10007708,P35398,2e-29,Nuclear receptor ROR-alpha (Nuclear receptor RZR-alpha) (Nuclear receptor subfamily 1 group F member 1) (RAR-related orphan receptor A) (Retinoid-related orphan receptor-alpha),signal transduction
+CGI_10007708,P35398,2e-29,Nuclear receptor ROR-alpha (Nuclear receptor RZR-alpha) (Nuclear receptor subfamily 1 group F member 1) (RAR-related orphan receptor A) (Retinoid-related orphan receptor-alpha),other metabolic processes
+CGI_10007718,Q55E58,2e-64,Probable serine/threonine-protein kinase pats1 (EC 2.7.11.1) (Protein associated with the transduction of signal 1),cell cycle and proliferation
+CGI_10007718,Q55E58,2e-64,Probable serine/threonine-protein kinase pats1 (EC 2.7.11.1) (Protein associated with the transduction of signal 1),protein metabolism
+CGI_10007718,Q55E58,2e-64,Probable serine/threonine-protein kinase pats1 (EC 2.7.11.1) (Protein associated with the transduction of signal 1),signal transduction
+CGI_10007751,Q91YN5,0,UDP-N-acetylhexosamine pyrophosphorylase [Includes: UDP-N-acetylgalactosamine pyrophosphorylase (EC 2.7.7.83); UDP-N-acetylglucosamine pyrophosphorylase (EC 2.7.7.23)],other metabolic processes
+CGI_10007801,Q8UVC3,0,Inversin,signal transduction
+CGI_10007801,Q8UVC3,0,Inversin,developmental processes
+CGI_10008103,O08550,2e-112,Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7),protein metabolism
+CGI_10008103,O08550,2e-112,Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7),other metabolic processes
+CGI_10008103,O08550,2e-112,Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7),RNA metabolism
+CGI_10008103,O08550,2e-112,Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7),developmental processes
+CGI_10008103,O08550,2e-112,Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7),cell organization and biogenesis
+CGI_10008109,O14832,1e-140,Phytanoyl-CoA dioxygenase, peroxisomal (EC 1.14.11.18) (Phytanic acid oxidase) (Phytanoyl-CoA alpha-hydroxylase) (PhyH),other metabolic processes
+CGI_10008613,Q5ZM35,1e-118,Twinfilin-2,cell organization and biogenesis
+CGI_10008613,Q5ZM35,1e-118,Twinfilin-2,protein metabolism
+CGI_10008650,Q3ZBX6,2e-51,39S ribosomal protein L3, mitochondrial (L3mt) (MRP-L3),cell organization and biogenesis
+CGI_10008650,Q3ZBX6,2e-51,39S ribosomal protein L3, mitochondrial (L3mt) (MRP-L3),protein metabolism
+CGI_10008716,Q5RBL1,0,Glycine--tRNA ligase (EC 3.6.1.17) (EC 6.1.1.14) (Diadenosine tetraphosphate synthetase) (AP-4-A synthetase) (Glycyl-tRNA synthetase) (GlyRS),protein metabolism
+CGI_10008716,Q5RBL1,0,Glycine--tRNA ligase (EC 3.6.1.17) (EC 6.1.1.14) (Diadenosine tetraphosphate synthetase) (AP-4-A synthetase) (Glycyl-tRNA synthetase) (GlyRS),RNA metabolism
+CGI_10008716,Q5RBL1,0,Glycine--tRNA ligase (EC 3.6.1.17) (EC 6.1.1.14) (Diadenosine tetraphosphate synthetase) (AP-4-A synthetase) (Glycyl-tRNA synthetase) (GlyRS),other metabolic processes
+CGI_10008780,Q58CU2,7e-141,Band 4.1-like protein 5,cell organization and biogenesis
+CGI_10008810,Q9R1P4,8e-128,Proteasome subunit alpha type-1 (EC 3.4.25.1) (Macropain subunit C2) (Multicatalytic endopeptidase complex subunit C2) (Proteasome component C2) (Proteasome nu chain),stress response
+CGI_10008810,Q9R1P4,8e-128,Proteasome subunit alpha type-1 (EC 3.4.25.1) (Macropain subunit C2) (Multicatalytic endopeptidase complex subunit C2) (Proteasome component C2) (Proteasome nu chain),protein metabolism
+CGI_10008836,Q6DJI8,2e-105,Eukaryotic translation initiation factor 3 subunit G-A (eIF3g-A) (Eukaryotic translation initiation factor 3 RNA-binding subunit A) (eIF-3 RNA-binding subunit A) (Eukaryotic translation initiation factor 3 subunit 4-A),protein metabolism
+CGI_10009056,Q5U550,2e-27,DET1- and DDB1-associated protein 1,protein metabolism
+CGI_10009078,O54701,1e-117,Sodium/potassium/calcium exchanger 2 (Na(+)/K(+)/Ca(2+)-exchange protein 2) (Retinal cone Na-Ca+K exchanger) (Solute carrier family 24 member 2),cell-cell signaling
+CGI_10009078,O54701,1e-117,Sodium/potassium/calcium exchanger 2 (Na(+)/K(+)/Ca(2+)-exchange protein 2) (Retinal cone Na-Ca+K exchanger) (Solute carrier family 24 member 2),transport
+CGI_10009129,Q8N448,2e-106,Ligand of Numb protein X 2 (Numb-binding protein 2) (PDZ domain-containing RING finger protein 1),cell organization and biogenesis
+CGI_10009375,Q99973,3e-31,Telomerase protein component 1 (Telomerase-associated protein 1) (Telomerase protein 1) (p240) (p80 telomerase homolog),RNA metabolism
+CGI_10009375,Q99973,3e-31,Telomerase protein component 1 (Telomerase-associated protein 1) (Telomerase protein 1) (p240) (p80 telomerase homolog),DNA metabolism
+CGI_10009375,Q99973,3e-31,Telomerase protein component 1 (Telomerase-associated protein 1) (Telomerase protein 1) (p240) (p80 telomerase homolog),cell organization and biogenesis
+CGI_10009492,Q8K2Y0,1e-38,RING finger protein 219,RNA metabolism
+CGI_10009638,Q9NQV6,8e-120,PR domain zinc finger protein 10 (EC 2.1.1.-) (PR domain-containing protein 10) (Tristanin),RNA metabolism
+CGI_10009786,Q7SY52,8e-131,Serine/threonine-protein kinase 10 (EC 2.7.11.1),signal transduction
+CGI_10009786,Q7SY52,8e-131,Serine/threonine-protein kinase 10 (EC 2.7.11.1),death
+CGI_10009786,Q7SY52,8e-131,Serine/threonine-protein kinase 10 (EC 2.7.11.1),protein metabolism
+CGI_10009786,Q7SY52,8e-131,Serine/threonine-protein kinase 10 (EC 2.7.11.1),cell cycle and proliferation
+CGI_10009786,Q7SY52,8e-131,Serine/threonine-protein kinase 10 (EC 2.7.11.1),stress response
+CGI_10009786,Q7SY52,8e-131,Serine/threonine-protein kinase 10 (EC 2.7.11.1),other metabolic processes
+CGI_10009837,Q63424,9e-88,Solute carrier family 15 member 2 (Kidney H(+)/peptide cotransporter) (Oligopeptide transporter, kidney isoform) (Peptide transporter 2),transport
+CGI_10010191,Q9Z1J2,3e-53,Serine/threonine-protein kinase Nek4 (EC 2.7.11.1) (Never in mitosis A-related kinase 4) (NimA-related protein kinase 4) (Serine/threonine-protein kinase 2),death
+CGI_10010191,Q9Z1J2,3e-53,Serine/threonine-protein kinase Nek4 (EC 2.7.11.1) (Never in mitosis A-related kinase 4) (NimA-related protein kinase 4) (Serine/threonine-protein kinase 2),signal transduction
+CGI_10010191,Q9Z1J2,3e-53,Serine/threonine-protein kinase Nek4 (EC 2.7.11.1) (Never in mitosis A-related kinase 4) (NimA-related protein kinase 4) (Serine/threonine-protein kinase 2),stress response
+CGI_10010191,Q9Z1J2,3e-53,Serine/threonine-protein kinase Nek4 (EC 2.7.11.1) (Never in mitosis A-related kinase 4) (NimA-related protein kinase 4) (Serine/threonine-protein kinase 2),other metabolic processes
+CGI_10010191,Q9Z1J2,3e-53,Serine/threonine-protein kinase Nek4 (EC 2.7.11.1) (Never in mitosis A-related kinase 4) (NimA-related protein kinase 4) (Serine/threonine-protein kinase 2),protein metabolism
+CGI_10010191,Q9Z1J2,3e-53,Serine/threonine-protein kinase Nek4 (EC 2.7.11.1) (Never in mitosis A-related kinase 4) (NimA-related protein kinase 4) (Serine/threonine-protein kinase 2),RNA metabolism
+CGI_10010191,Q9Z1J2,3e-53,Serine/threonine-protein kinase Nek4 (EC 2.7.11.1) (Never in mitosis A-related kinase 4) (NimA-related protein kinase 4) (Serine/threonine-protein kinase 2),cell cycle and proliferation
+CGI_10010442,O43913,2e-153,Origin recognition complex subunit 5,cell cycle and proliferation
+CGI_10010442,O43913,2e-153,Origin recognition complex subunit 5,DNA metabolism
+CGI_10010584,Q9CX99,2e-06,GRB2-related adapter protein,stress response
+CGI_10010584,Q9CX99,2e-06,GRB2-related adapter protein,cell cycle and proliferation
+CGI_10010584,Q9CX99,2e-06,GRB2-related adapter protein,signal transduction
+CGI_10010714,Q7ZVA6,0,Eukaryotic initiation factor 4A-III (eIF-4A-III) (eIF4A-III) (EC 3.6.4.13) (ATP-dependent RNA helicase DDX48) (ATP-dependent RNA helicase eIF4A-3) (DEAD box protein 48) (Eukaryotic translation initiation factor 4A isoform 3),RNA metabolism
+CGI_10010714,Q7ZVA6,0,Eukaryotic initiation factor 4A-III (eIF-4A-III) (eIF4A-III) (EC 3.6.4.13) (ATP-dependent RNA helicase DDX48) (ATP-dependent RNA helicase eIF4A-3) (DEAD box protein 48) (Eukaryotic translation initiation factor 4A isoform 3),protein metabolism
+CGI_10010714,Q7ZVA6,0,Eukaryotic initiation factor 4A-III (eIF-4A-III) (eIF4A-III) (EC 3.6.4.13) (ATP-dependent RNA helicase DDX48) (ATP-dependent RNA helicase eIF4A-3) (DEAD box protein 48) (Eukaryotic translation initiation factor 4A isoform 3),transport
+CGI_10010714,Q7ZVA6,0,Eukaryotic initiation factor 4A-III (eIF-4A-III) (eIF4A-III) (EC 3.6.4.13) (ATP-dependent RNA helicase DDX48) (ATP-dependent RNA helicase eIF4A-3) (DEAD box protein 48) (Eukaryotic translation initiation factor 4A isoform 3),other metabolic processes
+CGI_10010795,B0S5N4,2e-08,Plexin A3,cell organization and biogenesis
+CGI_10010795,B0S5N4,2e-08,Plexin A3,developmental processes
+CGI_10010809,Q5RB35,0,Muskelin,cell adhesion
+CGI_10010809,Q5RB35,0,Muskelin,cell organization and biogenesis
+CGI_10010882,O75665,7e-89,Oral-facial-digital syndrome 1 protein (Protein 71-7A),cell cycle and proliferation
+CGI_10010882,O75665,7e-89,Oral-facial-digital syndrome 1 protein (Protein 71-7A),developmental processes
+CGI_10010882,O75665,7e-89,Oral-facial-digital syndrome 1 protein (Protein 71-7A),cell organization and biogenesis
+CGI_10010890,P38942,3e-109,4-hydroxybutyrate coenzyme A transferase (EC 2.8.3.-),other metabolic processes
+CGI_10010913,Q94BZ1,2e-20,Protein ZINC INDUCED FACILITATOR-LIKE 1 (Protein ZIF-LIKE 1),developmental processes
+CGI_10010913,Q94BZ1,2e-20,Protein ZINC INDUCED FACILITATOR-LIKE 1 (Protein ZIF-LIKE 1),transport
+CGI_10010913,Q94BZ1,2e-20,Protein ZINC INDUCED FACILITATOR-LIKE 1 (Protein ZIF-LIKE 1),stress response
+CGI_10010914,P35626,0,Beta-adrenergic receptor kinase 2 (Beta-ARK-2) (EC 2.7.11.15) (G-protein-coupled receptor kinase 3),transport
+CGI_10010914,P35626,0,Beta-adrenergic receptor kinase 2 (Beta-ARK-2) (EC 2.7.11.15) (G-protein-coupled receptor kinase 3),cell organization and biogenesis
+CGI_10010914,P35626,0,Beta-adrenergic receptor kinase 2 (Beta-ARK-2) (EC 2.7.11.15) (G-protein-coupled receptor kinase 3),signal transduction
+CGI_10010914,P35626,0,Beta-adrenergic receptor kinase 2 (Beta-ARK-2) (EC 2.7.11.15) (G-protein-coupled receptor kinase 3),other metabolic processes
+CGI_10011007,Q8BK67,3e-170,Protein RCC2,cell cycle and proliferation
+CGI_10011007,Q8BK67,3e-170,Protein RCC2,signal transduction
+CGI_10011007,Q8BK67,3e-170,Protein RCC2,cell adhesion
+CGI_10011007,Q8BK67,3e-170,Protein RCC2,cell organization and biogenesis
+CGI_10011288,Q8BGF9,8e-29,Solute carrier family 25 member 44,transport
+CGI_10011651,Q9UBB5,4e-77,Methyl-CpG-binding domain protein 2 (Demethylase) (DMTase) (Methyl-CpG-binding protein MBD2),signal transduction
+CGI_10011651,Q9UBB5,4e-77,Methyl-CpG-binding domain protein 2 (Demethylase) (DMTase) (Methyl-CpG-binding protein MBD2),cell organization and biogenesis
+CGI_10011651,Q9UBB5,4e-77,Methyl-CpG-binding domain protein 2 (Demethylase) (DMTase) (Methyl-CpG-binding protein MBD2),developmental processes
+CGI_10011651,Q9UBB5,4e-77,Methyl-CpG-binding domain protein 2 (Demethylase) (DMTase) (Methyl-CpG-binding protein MBD2),cell cycle and proliferation
+CGI_10011651,Q9UBB5,4e-77,Methyl-CpG-binding domain protein 2 (Demethylase) (DMTase) (Methyl-CpG-binding protein MBD2),DNA metabolism
+CGI_10011651,Q9UBB5,4e-77,Methyl-CpG-binding domain protein 2 (Demethylase) (DMTase) (Methyl-CpG-binding protein MBD2),RNA metabolism
+CGI_10011720,Q6PEE2,2e-39,CBP80/20-dependent translation initiation factor,RNA metabolism
+CGI_10011720,Q6PEE2,2e-39,CBP80/20-dependent translation initiation factor,protein metabolism
+CGI_10011721,Q9UII5,3e-51,Zinc finger protein 107 (Zinc finger protein 588) (Zinc finger protein ZFD25),RNA metabolism
+CGI_10011812,A4IF87,2e-148,Dihydroxyacetone phosphate acyltransferase (DAP-AT) (DHAP-AT) (EC 2.3.1.42) (Acyl-CoA:dihydroxyacetonephosphateacyltransferase) (Glycerone-phosphate O-acyltransferase),other metabolic processes
+CGI_10011877,Q922B6,2e-72,E3 ubiquitin-protein ligase TRAF7 (EC 2.3.2.27) (RING-type E3 ubiquitin transferase TRAF7) (TNF receptor-associated factor 7),death
+CGI_10011877,Q922B6,2e-72,E3 ubiquitin-protein ligase TRAF7 (EC 2.3.2.27) (RING-type E3 ubiquitin transferase TRAF7) (TNF receptor-associated factor 7),other metabolic processes
+CGI_10011877,Q922B6,2e-72,E3 ubiquitin-protein ligase TRAF7 (EC 2.3.2.27) (RING-type E3 ubiquitin transferase TRAF7) (TNF receptor-associated factor 7),protein metabolism
+CGI_10011877,Q922B6,2e-72,E3 ubiquitin-protein ligase TRAF7 (EC 2.3.2.27) (RING-type E3 ubiquitin transferase TRAF7) (TNF receptor-associated factor 7),signal transduction
+CGI_10011877,Q922B6,2e-72,E3 ubiquitin-protein ligase TRAF7 (EC 2.3.2.27) (RING-type E3 ubiquitin transferase TRAF7) (TNF receptor-associated factor 7),RNA metabolism
+CGI_10011917,Q99683,0,Mitogen-activated protein kinase kinase kinase 5 (EC 2.7.11.25) (Apoptosis signal-regulating kinase 1) (ASK-1) (MAPK/ERK kinase kinase 5) (MEK kinase 5) (MEKK 5),stress response
+CGI_10011917,Q99683,0,Mitogen-activated protein kinase kinase kinase 5 (EC 2.7.11.25) (Apoptosis signal-regulating kinase 1) (ASK-1) (MAPK/ERK kinase kinase 5) (MEK kinase 5) (MEKK 5),RNA metabolism
+CGI_10011917,Q99683,0,Mitogen-activated protein kinase kinase kinase 5 (EC 2.7.11.25) (Apoptosis signal-regulating kinase 1) (ASK-1) (MAPK/ERK kinase kinase 5) (MEK kinase 5) (MEKK 5),developmental processes
+CGI_10011917,Q99683,0,Mitogen-activated protein kinase kinase kinase 5 (EC 2.7.11.25) (Apoptosis signal-regulating kinase 1) (ASK-1) (MAPK/ERK kinase kinase 5) (MEK kinase 5) (MEKK 5),signal transduction
+CGI_10011917,Q99683,0,Mitogen-activated protein kinase kinase kinase 5 (EC 2.7.11.25) (Apoptosis signal-regulating kinase 1) (ASK-1) (MAPK/ERK kinase kinase 5) (MEK kinase 5) (MEKK 5),death
+CGI_10011917,Q99683,0,Mitogen-activated protein kinase kinase kinase 5 (EC 2.7.11.25) (Apoptosis signal-regulating kinase 1) (ASK-1) (MAPK/ERK kinase kinase 5) (MEK kinase 5) (MEKK 5),protein metabolism
+CGI_10012067,Q9UP83,0,Conserved oligomeric Golgi complex subunit 5 (COG complex subunit 5) (13S Golgi transport complex 90 kDa subunit) (GTC-90) (Component of oligomeric Golgi complex 5) (Golgi transport complex 1),transport
+CGI_10012126,Q14202,3e-85,Zinc finger MYM-type protein 3 (Zinc finger protein 261),cell organization and biogenesis
+CGI_10012126,Q14202,3e-85,Zinc finger MYM-type protein 3 (Zinc finger protein 261),developmental processes
+CGI_10012169,Q28H54,2e-119,Choline/ethanolaminephosphotransferase 1 (EC 2.7.8.1) (EC 2.7.8.2),other metabolic processes
+CGI_10012236,Q920R0,0,Alsin (Amyotrophic lateral sclerosis 2 protein homolog),cell organization and biogenesis
+CGI_10012236,Q920R0,0,Alsin (Amyotrophic lateral sclerosis 2 protein homolog),other metabolic processes
+CGI_10012236,Q920R0,0,Alsin (Amyotrophic lateral sclerosis 2 protein homolog),death
+CGI_10012236,Q920R0,0,Alsin (Amyotrophic lateral sclerosis 2 protein homolog),signal transduction
+CGI_10012236,Q920R0,0,Alsin (Amyotrophic lateral sclerosis 2 protein homolog),cell-cell signaling
+CGI_10012236,Q920R0,0,Alsin (Amyotrophic lateral sclerosis 2 protein homolog),transport
+CGI_10012236,Q920R0,0,Alsin (Amyotrophic lateral sclerosis 2 protein homolog),stress response
+CGI_10012236,Q920R0,0,Alsin (Amyotrophic lateral sclerosis 2 protein homolog),developmental processes
+CGI_10012324,Q24307,4e-13,Death-associated inhibitor of apoptosis 2 (EC 6.3.2.-) (Apoptosis 2 inhibitor) (IAP homolog A) (IAP-like protein) (ILP) (dILP) (Inhibitor of apoptosis 2),protein metabolism
+CGI_10012324,Q24307,4e-13,Death-associated inhibitor of apoptosis 2 (EC 6.3.2.-) (Apoptosis 2 inhibitor) (IAP homolog A) (IAP-like protein) (ILP) (dILP) (Inhibitor of apoptosis 2),other metabolic processes
+CGI_10012324,Q24307,4e-13,Death-associated inhibitor of apoptosis 2 (EC 6.3.2.-) (Apoptosis 2 inhibitor) (IAP homolog A) (IAP-like protein) (ILP) (dILP) (Inhibitor of apoptosis 2),developmental processes
+CGI_10012324,Q24307,4e-13,Death-associated inhibitor of apoptosis 2 (EC 6.3.2.-) (Apoptosis 2 inhibitor) (IAP homolog A) (IAP-like protein) (ILP) (dILP) (Inhibitor of apoptosis 2),transport
+CGI_10012324,Q24307,4e-13,Death-associated inhibitor of apoptosis 2 (EC 6.3.2.-) (Apoptosis 2 inhibitor) (IAP homolog A) (IAP-like protein) (ILP) (dILP) (Inhibitor of apoptosis 2),death
+CGI_10012324,Q24307,4e-13,Death-associated inhibitor of apoptosis 2 (EC 6.3.2.-) (Apoptosis 2 inhibitor) (IAP homolog A) (IAP-like protein) (ILP) (dILP) (Inhibitor of apoptosis 2),stress response
+CGI_10012324,Q24307,4e-13,Death-associated inhibitor of apoptosis 2 (EC 6.3.2.-) (Apoptosis 2 inhibitor) (IAP homolog A) (IAP-like protein) (ILP) (dILP) (Inhibitor of apoptosis 2),signal transduction
+CGI_10012354,Q96JL9,5e-34,Zinc finger protein 333,RNA metabolism
+CGI_10012373,Q14186,1e-104,Transcription factor Dp-1 (DRTF1-polypeptide 1) (DRTF1) (E2F dimerization partner 1),developmental processes
+CGI_10012373,Q14186,1e-104,Transcription factor Dp-1 (DRTF1-polypeptide 1) (DRTF1) (E2F dimerization partner 1),stress response
+CGI_10012373,Q14186,1e-104,Transcription factor Dp-1 (DRTF1-polypeptide 1) (DRTF1) (E2F dimerization partner 1),cell cycle and proliferation
+CGI_10012373,Q14186,1e-104,Transcription factor Dp-1 (DRTF1-polypeptide 1) (DRTF1) (E2F dimerization partner 1),death
+CGI_10012373,Q14186,1e-104,Transcription factor Dp-1 (DRTF1-polypeptide 1) (DRTF1) (E2F dimerization partner 1),RNA metabolism
+CGI_10012373,Q14186,1e-104,Transcription factor Dp-1 (DRTF1-polypeptide 1) (DRTF1) (E2F dimerization partner 1),signal transduction
+CGI_10012473,P10351,9e-145,Xanthine dehydrogenase (XD) (EC 1.17.1.4) (Protein rosy locus),developmental processes
+CGI_10012473,P10351,9e-145,Xanthine dehydrogenase (XD) (EC 1.17.1.4) (Protein rosy locus),other metabolic processes
+CGI_10012476,Q92609,3e-167,TBC1 domain family member 5,protein metabolism
+CGI_10012476,Q92609,3e-167,TBC1 domain family member 5,stress response
+CGI_10012476,Q92609,3e-167,TBC1 domain family member 5,cell organization and biogenesis
+CGI_10012476,Q92609,3e-167,TBC1 domain family member 5,transport
+CGI_10012476,Q92609,3e-167,TBC1 domain family member 5,other metabolic processes
+CGI_10012696,Q92541,1e-94,RNA polymerase-associated protein RTF1 homolog,RNA metabolism
+CGI_10012696,Q92541,1e-94,RNA polymerase-associated protein RTF1 homolog,developmental processes
+CGI_10012696,Q92541,1e-94,RNA polymerase-associated protein RTF1 homolog,signal transduction
+CGI_10012696,Q92541,1e-94,RNA polymerase-associated protein RTF1 homolog,protein metabolism
+CGI_10012696,Q92541,1e-94,RNA polymerase-associated protein RTF1 homolog,cell organization and biogenesis
+CGI_10012824,Q920N2,7e-114,Biotin--protein ligase (EC 6.3.4.-) (Biotin apo-protein ligase) [Includes: Biotin--[methylmalonyl-CoA-carboxytransferase] ligase (EC 6.3.4.9); Biotin--[propionyl-CoA-carboxylase [ATP-hydrolyzing]] ligase (EC 6.3.4.10) (Holocarboxylase synthetase) (HCS); Biotin--[methylcrotonoyl-CoA-carboxylase] ligase (EC 6.3.4.11); Biotin--[acetyl-CoA-carboxylase] ligase (EC 6.3.4.15)],cell organization and biogenesis
+CGI_10012824,Q920N2,7e-114,Biotin--protein ligase (EC 6.3.4.-) (Biotin apo-protein ligase) [Includes: Biotin--[methylmalonyl-CoA-carboxytransferase] ligase (EC 6.3.4.9); Biotin--[propionyl-CoA-carboxylase [ATP-hydrolyzing]] ligase (EC 6.3.4.10) (Holocarboxylase synthetase) (HCS); Biotin--[methylcrotonoyl-CoA-carboxylase] ligase (EC 6.3.4.11); Biotin--[acetyl-CoA-carboxylase] ligase (EC 6.3.4.15)],protein metabolism
+CGI_10012824,Q920N2,7e-114,Biotin--protein ligase (EC 6.3.4.-) (Biotin apo-protein ligase) [Includes: Biotin--[methylmalonyl-CoA-carboxytransferase] ligase (EC 6.3.4.9); Biotin--[propionyl-CoA-carboxylase [ATP-hydrolyzing]] ligase (EC 6.3.4.10) (Holocarboxylase synthetase) (HCS); Biotin--[methylcrotonoyl-CoA-carboxylase] ligase (EC 6.3.4.11); Biotin--[acetyl-CoA-carboxylase] ligase (EC 6.3.4.15)],cell cycle and proliferation
+CGI_10012930,O08839,3e-08,Myc box-dependent-interacting protein 1 (Amphiphysin II) (Amphiphysin-like protein) (Bridging integrator 1),death
+CGI_10012930,O08839,3e-08,Myc box-dependent-interacting protein 1 (Amphiphysin II) (Amphiphysin-like protein) (Bridging integrator 1),developmental processes
+CGI_10012930,O08839,3e-08,Myc box-dependent-interacting protein 1 (Amphiphysin II) (Amphiphysin-like protein) (Bridging integrator 1),cell organization and biogenesis
+CGI_10012930,O08839,3e-08,Myc box-dependent-interacting protein 1 (Amphiphysin II) (Amphiphysin-like protein) (Bridging integrator 1),transport
+CGI_10013037,Q8TDX9,1e-96,Polycystic kidney disease protein 1-like 1 (PC1-like 1 protein) (Polycystin-1L1),cell adhesion
+CGI_10013098,Q5TB80,7e-106,Centrosomal protein of 162 kDa (Cep162) (Protein QN1 homolog),cell organization and biogenesis
+CGI_10013103,O75417,0,DNA polymerase theta (EC 2.7.7.7) (DNA polymerase eta),stress response
+CGI_10013103,O75417,0,DNA polymerase theta (EC 2.7.7.7) (DNA polymerase eta),DNA metabolism
+CGI_10013103,O75417,0,DNA polymerase theta (EC 2.7.7.7) (DNA polymerase eta),developmental processes
+CGI_10013103,O75417,0,DNA polymerase theta (EC 2.7.7.7) (DNA polymerase eta),cell organization and biogenesis
+CGI_10013374,Q5RGJ8,0,N-acetylglucosamine-1-phosphotransferase subunits alpha/beta (EC 2.7.8.17) (GlcNAc-1-phosphotransferase subunits alpha/beta) (Stealth protein gnptab) (UDP-N-acetylglucosamine-1-phosphotransferase subunits alpha/beta) [Cleaved into: N-acetylglucosamine-1-phosphotransferase subunit alpha; N-acetylglucosamine-1-phosphotransferase subunit beta],other metabolic processes
+CGI_10013374,Q5RGJ8,0,N-acetylglucosamine-1-phosphotransferase subunits alpha/beta (EC 2.7.8.17) (GlcNAc-1-phosphotransferase subunits alpha/beta) (Stealth protein gnptab) (UDP-N-acetylglucosamine-1-phosphotransferase subunits alpha/beta) [Cleaved into: N-acetylglucosamine-1-phosphotransferase subunit alpha; N-acetylglucosamine-1-phosphotransferase subunit beta],protein metabolism
+CGI_10013374,Q5RGJ8,0,N-acetylglucosamine-1-phosphotransferase subunits alpha/beta (EC 2.7.8.17) (GlcNAc-1-phosphotransferase subunits alpha/beta) (Stealth protein gnptab) (UDP-N-acetylglucosamine-1-phosphotransferase subunits alpha/beta) [Cleaved into: N-acetylglucosamine-1-phosphotransferase subunit alpha; N-acetylglucosamine-1-phosphotransferase subunit beta],cell organization and biogenesis
+CGI_10013374,Q5RGJ8,0,N-acetylglucosamine-1-phosphotransferase subunits alpha/beta (EC 2.7.8.17) (GlcNAc-1-phosphotransferase subunits alpha/beta) (Stealth protein gnptab) (UDP-N-acetylglucosamine-1-phosphotransferase subunits alpha/beta) [Cleaved into: N-acetylglucosamine-1-phosphotransferase subunit alpha; N-acetylglucosamine-1-phosphotransferase subunit beta],developmental processes
+CGI_10013374,Q5RGJ8,0,N-acetylglucosamine-1-phosphotransferase subunits alpha/beta (EC 2.7.8.17) (GlcNAc-1-phosphotransferase subunits alpha/beta) (Stealth protein gnptab) (UDP-N-acetylglucosamine-1-phosphotransferase subunits alpha/beta) [Cleaved into: N-acetylglucosamine-1-phosphotransferase subunit alpha; N-acetylglucosamine-1-phosphotransferase subunit beta],transport
+CGI_10013442,Q14527,0,Helicase-like transcription factor (EC 2.3.2.27) (EC 3.6.4.-) (DNA-binding protein/plasminogen activator inhibitor 1 regulator) (HIP116) (RING finger protein 80) (RING-type E3 ubiquitin transferase HLTF) (SWI/SNF-related matrix-associated actin-dependent regulator of chromatin subfamily A member 3) (Sucrose nonfermenting protein 2-like 3),protein metabolism
+CGI_10013442,Q14527,0,Helicase-like transcription factor (EC 2.3.2.27) (EC 3.6.4.-) (DNA-binding protein/plasminogen activator inhibitor 1 regulator) (HIP116) (RING finger protein 80) (RING-type E3 ubiquitin transferase HLTF) (SWI/SNF-related matrix-associated actin-dependent regulator of chromatin subfamily A member 3) (Sucrose nonfermenting protein 2-like 3),stress response
+CGI_10013442,Q14527,0,Helicase-like transcription factor (EC 2.3.2.27) (EC 3.6.4.-) (DNA-binding protein/plasminogen activator inhibitor 1 regulator) (HIP116) (RING finger protein 80) (RING-type E3 ubiquitin transferase HLTF) (SWI/SNF-related matrix-associated actin-dependent regulator of chromatin subfamily A member 3) (Sucrose nonfermenting protein 2-like 3),cell organization and biogenesis
+CGI_10013442,Q14527,0,Helicase-like transcription factor (EC 2.3.2.27) (EC 3.6.4.-) (DNA-binding protein/plasminogen activator inhibitor 1 regulator) (HIP116) (RING finger protein 80) (RING-type E3 ubiquitin transferase HLTF) (SWI/SNF-related matrix-associated actin-dependent regulator of chromatin subfamily A member 3) (Sucrose nonfermenting protein 2-like 3),DNA metabolism
+CGI_10013442,Q14527,0,Helicase-like transcription factor (EC 2.3.2.27) (EC 3.6.4.-) (DNA-binding protein/plasminogen activator inhibitor 1 regulator) (HIP116) (RING finger protein 80) (RING-type E3 ubiquitin transferase HLTF) (SWI/SNF-related matrix-associated actin-dependent regulator of chromatin subfamily A member 3) (Sucrose nonfermenting protein 2-like 3),RNA metabolism
+CGI_10013614,Q8WV92,4e-76,MIT domain-containing protein 1,cell cycle and proliferation
+CGI_10013614,Q8WV92,4e-76,MIT domain-containing protein 1,transport
+CGI_10013637,Q91YJ2,5e-145,Sorting nexin-4,cell organization and biogenesis
+CGI_10013637,Q91YJ2,5e-145,Sorting nexin-4,transport
+CGI_10013666,P60924,7e-25,Death ligand signal enhancer,death
+CGI_10013732,A6NHR9,0,Structural maintenance of chromosomes flexible hinge domain-containing protein 1 (SMC hinge domain-containing protein 1),cell organization and biogenesis
+CGI_10013732,A6NHR9,0,Structural maintenance of chromosomes flexible hinge domain-containing protein 1 (SMC hinge domain-containing protein 1),developmental processes
+CGI_10013770,Q8BYF6,6e-112,Sodium-coupled monocarboxylate transporter 1 (Electrogenic sodium monocarboxylate cotransporter) (Solute carrier family 5 member 8),transport
+CGI_10013770,Q8BYF6,6e-112,Sodium-coupled monocarboxylate transporter 1 (Electrogenic sodium monocarboxylate cotransporter) (Solute carrier family 5 member 8),death
+CGI_10013781,P47989,4e-159,Xanthine dehydrogenase/oxidase [Includes: Xanthine dehydrogenase (XD) (EC 1.17.1.4); Xanthine oxidase (XO) (EC 1.17.3.2) (Xanthine oxidoreductase) (XOR)],signal transduction
+CGI_10013781,P47989,4e-159,Xanthine dehydrogenase/oxidase [Includes: Xanthine dehydrogenase (XD) (EC 1.17.1.4); Xanthine oxidase (XO) (EC 1.17.3.2) (Xanthine oxidoreductase) (XOR)],protein metabolism
+CGI_10013781,P47989,4e-159,Xanthine dehydrogenase/oxidase [Includes: Xanthine dehydrogenase (XD) (EC 1.17.1.4); Xanthine oxidase (XO) (EC 1.17.3.2) (Xanthine oxidoreductase) (XOR)],death
+CGI_10013781,P47989,4e-159,Xanthine dehydrogenase/oxidase [Includes: Xanthine dehydrogenase (XD) (EC 1.17.1.4); Xanthine oxidase (XO) (EC 1.17.3.2) (Xanthine oxidoreductase) (XOR)],other metabolic processes
+CGI_10013781,P47989,4e-159,Xanthine dehydrogenase/oxidase [Includes: Xanthine dehydrogenase (XD) (EC 1.17.1.4); Xanthine oxidase (XO) (EC 1.17.3.2) (Xanthine oxidoreductase) (XOR)],cell cycle and proliferation
+CGI_10013781,P47989,4e-159,Xanthine dehydrogenase/oxidase [Includes: Xanthine dehydrogenase (XD) (EC 1.17.1.4); Xanthine oxidase (XO) (EC 1.17.3.2) (Xanthine oxidoreductase) (XOR)],developmental processes
+CGI_10013782,Q7SY73,3e-58,Monoacylglycerol lipase abhd6-B (EC 3.1.1.23) (Abhydrolase domain-containing protein 6-B),other metabolic processes
+CGI_10013795,Q1LY77,2e-28,Histone-lysine N-methyltransferase SETD1B-A (EC 2.1.1.43) (SET domain-containing protein 1B-A),RNA metabolism
+CGI_10013795,Q1LY77,2e-28,Histone-lysine N-methyltransferase SETD1B-A (EC 2.1.1.43) (SET domain-containing protein 1B-A),developmental processes
+CGI_10013799,O00410,0,Importin-5 (Imp5) (Importin subunit beta-3) (Karyopherin beta-3) (Ran-binding protein 5) (RanBP5),transport
+CGI_10013945,Q8UVC3,6e-22,Inversin,developmental processes
+CGI_10013945,Q8UVC3,6e-22,Inversin,signal transduction
+CGI_10013991,Q06441,2e-155,Thrombospondin-4,cell adhesion
+CGI_10013991,Q06441,2e-155,Thrombospondin-4,stress response
+CGI_10014051,B0W2S0,0,Clustered mitochondria protein homolog,cell organization and biogenesis
+CGI_10014131,P09487,8e-107,Alkaline phosphatase, tissue-nonspecific isozyme (AP-TNAP) (TNSALP) (EC 3.1.3.1) (Alkaline phosphatase liver/bone/kidney isozyme),developmental processes
+CGI_10014259,Q5RA62,0,TFIIH basal transcription factor complex helicase XPB subunit (EC 3.6.4.12) (DNA excision repair protein ERCC-3),DNA metabolism
+CGI_10014259,Q5RA62,0,TFIIH basal transcription factor complex helicase XPB subunit (EC 3.6.4.12) (DNA excision repair protein ERCC-3),RNA metabolism
+CGI_10014259,Q5RA62,0,TFIIH basal transcription factor complex helicase XPB subunit (EC 3.6.4.12) (DNA excision repair protein ERCC-3),cell organization and biogenesis
+CGI_10014259,Q5RA62,0,TFIIH basal transcription factor complex helicase XPB subunit (EC 3.6.4.12) (DNA excision repair protein ERCC-3),developmental processes
+CGI_10014259,Q5RA62,0,TFIIH basal transcription factor complex helicase XPB subunit (EC 3.6.4.12) (DNA excision repair protein ERCC-3),stress response
+CGI_10014259,Q5RA62,0,TFIIH basal transcription factor complex helicase XPB subunit (EC 3.6.4.12) (DNA excision repair protein ERCC-3),protein metabolism
+CGI_10014259,Q5RA62,0,TFIIH basal transcription factor complex helicase XPB subunit (EC 3.6.4.12) (DNA excision repair protein ERCC-3),death
+CGI_10014314,O75891,0,Cytosolic 10-formyltetrahydrofolate dehydrogenase (10-FTHFDH) (FDH) (EC 1.5.1.6) (Aldehyde dehydrogenase family 1 member L1),other metabolic processes
+CGI_10014460,O35134,0,DNA-directed RNA polymerase I subunit RPA1 (RNA polymerase I subunit A1) (EC 2.7.7.6) (DNA-directed RNA polymerase I largest subunit) (DNA-directed RNA polymerase I subunit A) (RNA polymerase I 194 kDa subunit) (RPA194),cell organization and biogenesis
+CGI_10014460,O35134,0,DNA-directed RNA polymerase I subunit RPA1 (RNA polymerase I subunit A1) (EC 2.7.7.6) (DNA-directed RNA polymerase I largest subunit) (DNA-directed RNA polymerase I subunit A) (RNA polymerase I 194 kDa subunit) (RPA194),RNA metabolism
+CGI_10014583,Q8IQC1,4e-51,Uncharacterized Golgi apparatus membrane protein-like protein CG5021,transport
+CGI_10014632,O46037,0,Vinculin,developmental processes
+CGI_10014632,O46037,0,Vinculin,cell organization and biogenesis
+CGI_10014632,O46037,0,Vinculin,transport
+CGI_10014632,O46037,0,Vinculin,cell adhesion
+CGI_10014713,Q80ZJ7,4e-08,Sorting nexin-32 (Sorting nexin-6B),cell organization and biogenesis
+CGI_10014713,Q80ZJ7,4e-08,Sorting nexin-32 (Sorting nexin-6B),transport
+CGI_10014850,O75445,0,Usherin (Usher syndrome type IIa protein) (Usher syndrome type-2A protein),developmental processes
+CGI_10014965,Q9UKD2,2e-94,mRNA turnover protein 4 homolog (Ribosome assembly factor MRTO4),RNA metabolism
+CGI_10014965,Q9UKD2,2e-94,mRNA turnover protein 4 homolog (Ribosome assembly factor MRTO4),cell organization and biogenesis
+CGI_10015025,Q5RG45,4e-174,Centrosomal protein of 135 kDa (Cep135),cell cycle and proliferation
+CGI_10015025,Q5RG45,4e-174,Centrosomal protein of 135 kDa (Cep135),cell organization and biogenesis
+CGI_10015140,P10076,4e-34,Zinc finger protein 26 (Zfp-26) (Protein mKR3),RNA metabolism
+CGI_10015150,Q8CIV2,4e-129,Membralin (Transmembrane protein 259),stress response
+CGI_10015211,Q6P1C1,8e-42,Inositol-pentakisphosphate 2-kinase (EC 2.7.1.158) (Inositol-1,3,4,5,6-pentakisphosphate 2-kinase) (Ins(1,3,4,5,6)P5 2-kinase) (InsP5 2-kinase),other metabolic processes
+CGI_10015257,Q96KG9,0,N-terminal kinase-like protein (Coated vesicle-associated kinase of 90 kDa) (SCY1-like protein 1) (Telomerase regulation-associated protein) (Telomerase transcriptional element-interacting factor) (Teratoma-associated tyrosine kinase),RNA metabolism
+CGI_10015257,Q96KG9,0,N-terminal kinase-like protein (Coated vesicle-associated kinase of 90 kDa) (SCY1-like protein 1) (Telomerase regulation-associated protein) (Telomerase transcriptional element-interacting factor) (Teratoma-associated tyrosine kinase),transport
+CGI_10015344,Q3T0J9,1e-118,Guanine nucleotide-binding protein-like 3-like protein,cell organization and biogenesis
+CGI_10015344,Q3T0J9,1e-118,Guanine nucleotide-binding protein-like 3-like protein,DNA metabolism
+CGI_10015344,Q3T0J9,1e-118,Guanine nucleotide-binding protein-like 3-like protein,protein metabolism
+CGI_10015408,Q9P2D0,3e-85,Inhibitor of Bruton tyrosine kinase (IBtk),transport
+CGI_10015408,Q9P2D0,3e-85,Inhibitor of Bruton tyrosine kinase (IBtk),protein metabolism
+CGI_10015580,Q9BYT1,6e-121,Solute carrier family 17 member 9,transport
+CGI_10015594,Q9BUJ2,2e-147,Heterogeneous nuclear ribonucleoprotein U-like protein 1 (Adenovirus early region 1B-associated protein 5) (E1B-55 kDa-associated protein 5) (E1B-AP5),RNA metabolism
+CGI_10015640,Q5RBN9,3e-93,Transcriptional adapter 2-beta,cell organization and biogenesis
+CGI_10015640,Q5RBN9,3e-93,Transcriptional adapter 2-beta,protein metabolism
+CGI_10015640,Q5RBN9,3e-93,Transcriptional adapter 2-beta,RNA metabolism
+CGI_10015644,Q2KIU7,1e-101,Radial spoke head protein 9 homolog,cell organization and biogenesis
+CGI_10015774,Q6PDJ1,2e-62,VWFA and cache domain-containing protein 1 (Cache domain-containing protein 1),transport
+CGI_10015818,Q13136,0,Liprin-alpha-1 (LAR-interacting protein 1) (LIP-1) (Protein tyrosine phosphatase receptor type f polypeptide-interacting protein alpha-1) (PTPRF-interacting protein alpha-1),cell adhesion
+CGI_10015818,Q13136,0,Liprin-alpha-1 (LAR-interacting protein 1) (LIP-1) (Protein tyrosine phosphatase receptor type f polypeptide-interacting protein alpha-1) (PTPRF-interacting protein alpha-1),cell-cell signaling
+CGI_10015818,Q13136,0,Liprin-alpha-1 (LAR-interacting protein 1) (LIP-1) (Protein tyrosine phosphatase receptor type f polypeptide-interacting protein alpha-1) (PTPRF-interacting protein alpha-1),transport
+CGI_10015818,Q13136,0,Liprin-alpha-1 (LAR-interacting protein 1) (LIP-1) (Protein tyrosine phosphatase receptor type f polypeptide-interacting protein alpha-1) (PTPRF-interacting protein alpha-1),cell organization and biogenesis
+CGI_10015818,Q13136,0,Liprin-alpha-1 (LAR-interacting protein 1) (LIP-1) (Protein tyrosine phosphatase receptor type f polypeptide-interacting protein alpha-1) (PTPRF-interacting protein alpha-1),signal transduction
+CGI_10015978,P08183,0,Multidrug resistance protein 1 (EC 3.6.3.44) (ATP-binding cassette sub-family B member 1) (P-glycoprotein 1) (CD antigen CD243),stress response
+CGI_10015978,P08183,0,Multidrug resistance protein 1 (EC 3.6.3.44) (ATP-binding cassette sub-family B member 1) (P-glycoprotein 1) (CD antigen CD243),cell cycle and proliferation
+CGI_10015978,P08183,0,Multidrug resistance protein 1 (EC 3.6.3.44) (ATP-binding cassette sub-family B member 1) (P-glycoprotein 1) (CD antigen CD243),cell organization and biogenesis
+CGI_10015978,P08183,0,Multidrug resistance protein 1 (EC 3.6.3.44) (ATP-binding cassette sub-family B member 1) (P-glycoprotein 1) (CD antigen CD243),transport
+CGI_10016028,O61577,3e-170,Katanin p60 ATPase-containing subunit A1 (Katanin p60 subunit A1) (EC 3.6.4.3) (p60 katanin),cell cycle and proliferation
+CGI_10016397,Q8BRH4,1e-117,Histone-lysine N-methyltransferase 2C (Lysine N-methyltransferase 2C) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 3 homolog),protein metabolism
+CGI_10016397,Q8BRH4,1e-117,Histone-lysine N-methyltransferase 2C (Lysine N-methyltransferase 2C) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 3 homolog),cell organization and biogenesis
+CGI_10016397,Q8BRH4,1e-117,Histone-lysine N-methyltransferase 2C (Lysine N-methyltransferase 2C) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 3 homolog),RNA metabolism
+CGI_10016397,Q8BRH4,1e-117,Histone-lysine N-methyltransferase 2C (Lysine N-methyltransferase 2C) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 3 homolog),other metabolic processes
+CGI_10016397,Q8BRH4,1e-117,Histone-lysine N-methyltransferase 2C (Lysine N-methyltransferase 2C) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 3 homolog),cell cycle and proliferation
+CGI_10016416,Q9EPZ8,1e-56,E3 ubiquitin-protein ligase RNF103 (EC 2.3.2.27) (Protein ADRG34) (RING finger protein 103) (RING-type E3 ubiquitin transferase RNF103) (Zinc finger protein 103) (Zfp-103),protein metabolism
+CGI_10016431,Q17LW0,0,Myosin-VIIa (Protein crinkled),developmental processes
+CGI_10016431,Q17LW0,0,Myosin-VIIa (Protein crinkled),transport
+CGI_10016431,Q17LW0,0,Myosin-VIIa (Protein crinkled),cell organization and biogenesis
+CGI_10016453,P49815,0,Tuberin (Tuberous sclerosis 2 protein),transport
+CGI_10016453,P49815,0,Tuberin (Tuberous sclerosis 2 protein),death
+CGI_10016453,P49815,0,Tuberin (Tuberous sclerosis 2 protein),cell cycle and proliferation
+CGI_10016453,P49815,0,Tuberin (Tuberous sclerosis 2 protein),stress response
+CGI_10016453,P49815,0,Tuberin (Tuberous sclerosis 2 protein),other metabolic processes
+CGI_10016453,P49815,0,Tuberin (Tuberous sclerosis 2 protein),cell organization and biogenesis
+CGI_10016453,P49815,0,Tuberin (Tuberous sclerosis 2 protein),signal transduction
+CGI_10016453,P49815,0,Tuberin (Tuberous sclerosis 2 protein),developmental processes
+CGI_10016527,Q5T3U5,0,Multidrug resistance-associated protein 7 (ATP-binding cassette sub-family C member 10),transport
+CGI_10017167,Q92604,5e-74,Acyl-CoA:lysophosphatidylglycerol acyltransferase 1 (EC 2.3.1.-),other metabolic processes
+CGI_10017467,Q75QN2,7e-158,Integrator complex subunit 8 (Int8) (Protein kaonashi-1),RNA metabolism
+CGI_10017491,Q8NFA0,0,Ubiquitin carboxyl-terminal hydrolase 32 (EC 3.4.19.12) (Deubiquitinating enzyme 32) (Renal carcinoma antigen NY-REN-60) (Ubiquitin thioesterase 32) (Ubiquitin-specific-processing protease 32),protein metabolism
+CGI_10017492,Q8UUY8,9e-07,Beta-2 adrenergic receptor (Beta-2 adrenoreceptor) (Beta-2 adrenoceptor),transport
+CGI_10017492,Q8UUY8,9e-07,Beta-2 adrenergic receptor (Beta-2 adrenoreceptor) (Beta-2 adrenoceptor),other metabolic processes
+CGI_10017508,Q9CQL5,8e-29,39S ribosomal protein L18, mitochondrial (L18mt) (MRP-L18),protein metabolism
+CGI_10017598,P91929,4e-26,NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 10, mitochondrial (Complex I-42kD) (CI-42kD) (NADH-ubiquinone oxidoreductase 42 kDa subunit),other metabolic processes
+CGI_10017694,P00491,5e-97,Purine nucleoside phosphorylase (PNP) (EC 2.4.2.1) (Inosine phosphorylase) (Inosine-guanosine phosphorylase),developmental processes
+CGI_10017694,P00491,5e-97,Purine nucleoside phosphorylase (PNP) (EC 2.4.2.1) (Inosine phosphorylase) (Inosine-guanosine phosphorylase),transport
+CGI_10017694,P00491,5e-97,Purine nucleoside phosphorylase (PNP) (EC 2.4.2.1) (Inosine phosphorylase) (Inosine-guanosine phosphorylase),other metabolic processes
+CGI_10017694,P00491,5e-97,Purine nucleoside phosphorylase (PNP) (EC 2.4.2.1) (Inosine phosphorylase) (Inosine-guanosine phosphorylase),cell cycle and proliferation
+CGI_10017792,Q9BQS8,4e-84,FYVE and coiled-coil domain-containing protein 1 (Zinc finger FYVE domain-containing protein 7),protein metabolism
+CGI_10018003,Q3MHR7,1e-150,Actin-related protein 2/3 complex subunit 2 (Arp2/3 complex 34 kDa subunit) (p34-ARC),cell organization and biogenesis
+CGI_10018110,Q54X15,6e-08,Type-2 histone deacetylase 1 (DdHdaD) (EC 3.5.1.98),RNA metabolism
+CGI_10018571,F8WLE0,9e-160,Kinesin-like protein KIF28P (Kinesin-like protein 6),cell organization and biogenesis
+CGI_10018668,Q9NZQ3,1e-79,NCK-interacting protein with SH3 domain (54 kDa VacA-interacting protein) (54 kDa vimentin-interacting protein) (VIP54) (90 kDa SH3 protein interacting with Nck) (AF3p21) (Dia-interacting protein 1) (DIP-1) (Diaphanous protein-interacting protein) (SH3 adapter protein SPIN90) (WASP-interacting SH3-domain protein) (WISH) (Wiskott-Aldrich syndrome protein-interacting protein),cell organization and biogenesis
+CGI_10018668,Q9NZQ3,1e-79,NCK-interacting protein with SH3 domain (54 kDa VacA-interacting protein) (54 kDa vimentin-interacting protein) (VIP54) (90 kDa SH3 protein interacting with Nck) (AF3p21) (Dia-interacting protein 1) (DIP-1) (Diaphanous protein-interacting protein) (SH3 adapter protein SPIN90) (WASP-interacting SH3-domain protein) (WISH) (Wiskott-Aldrich syndrome protein-interacting protein),transport
+CGI_10018668,Q9NZQ3,1e-79,NCK-interacting protein with SH3 domain (54 kDa VacA-interacting protein) (54 kDa vimentin-interacting protein) (VIP54) (90 kDa SH3 protein interacting with Nck) (AF3p21) (Dia-interacting protein 1) (DIP-1) (Diaphanous protein-interacting protein) (SH3 adapter protein SPIN90) (WASP-interacting SH3-domain protein) (WISH) (Wiskott-Aldrich syndrome protein-interacting protein),signal transduction
+CGI_10018668,Q9NZQ3,1e-79,NCK-interacting protein with SH3 domain (54 kDa VacA-interacting protein) (54 kDa vimentin-interacting protein) (VIP54) (90 kDa SH3 protein interacting with Nck) (AF3p21) (Dia-interacting protein 1) (DIP-1) (Diaphanous protein-interacting protein) (SH3 adapter protein SPIN90) (WASP-interacting SH3-domain protein) (WISH) (Wiskott-Aldrich syndrome protein-interacting protein),developmental processes
+CGI_10018734,Q5RD33,1e-25,Amyloid beta A4 precursor protein-binding family A member 2,transport
+CGI_10018734,Q5RD33,1e-25,Amyloid beta A4 precursor protein-binding family A member 2,cell-cell signaling
+CGI_10018768,Q99700,1e-48,Ataxin-2 (Spinocerebellar ataxia type 2 protein) (Trinucleotide repeat-containing gene 13 protein),cell organization and biogenesis
+CGI_10018768,Q99700,1e-48,Ataxin-2 (Spinocerebellar ataxia type 2 protein) (Trinucleotide repeat-containing gene 13 protein),transport
+CGI_10018768,Q99700,1e-48,Ataxin-2 (Spinocerebellar ataxia type 2 protein) (Trinucleotide repeat-containing gene 13 protein),protein metabolism
+CGI_10018768,Q99700,1e-48,Ataxin-2 (Spinocerebellar ataxia type 2 protein) (Trinucleotide repeat-containing gene 13 protein),RNA metabolism
+CGI_10018880,Q75WF2,9e-41,Plancitoxin-1 (EC 3.1.22.1) (Plancitoxin I) (Plan-I) [Cleaved into: Plancitoxin-1 subunit alpha; Plancitoxin-1 subunit beta],death
+CGI_10018933,Q28FX0,2e-72,ELAV-like protein 3 (Protein ElrC),developmental processes
+CGI_10018964,O75643,0,U5 small nuclear ribonucleoprotein 200 kDa helicase (EC 3.6.4.13) (Activating signal cointegrator 1 complex subunit 3-like 1) (BRR2 homolog) (U5 snRNP-specific 200 kDa protein) (U5-200KD),developmental processes
+CGI_10018964,O75643,0,U5 small nuclear ribonucleoprotein 200 kDa helicase (EC 3.6.4.13) (Activating signal cointegrator 1 complex subunit 3-like 1) (BRR2 homolog) (U5 snRNP-specific 200 kDa protein) (U5-200KD),cell organization and biogenesis
+CGI_10018964,O75643,0,U5 small nuclear ribonucleoprotein 200 kDa helicase (EC 3.6.4.13) (Activating signal cointegrator 1 complex subunit 3-like 1) (BRR2 homolog) (U5 snRNP-specific 200 kDa protein) (U5-200KD),RNA metabolism
+CGI_10019031,Q9WU70,0,Syntaxin-binding protein 5 (Lethal(2) giant larvae protein homolog 3) (Tomosyn-1),stress response
+CGI_10019031,Q9WU70,0,Syntaxin-binding protein 5 (Lethal(2) giant larvae protein homolog 3) (Tomosyn-1),other metabolic processes
+CGI_10019031,Q9WU70,0,Syntaxin-binding protein 5 (Lethal(2) giant larvae protein homolog 3) (Tomosyn-1),transport
+CGI_10019057,P13667,0,Protein disulfide-isomerase A4 (EC 5.3.4.1) (Endoplasmic reticulum resident protein 70) (ER protein 70) (ERp70) (Endoplasmic reticulum resident protein 72) (ER protein 72) (ERp-72) (ERp72),protein metabolism
+CGI_10019057,P13667,0,Protein disulfide-isomerase A4 (EC 5.3.4.1) (Endoplasmic reticulum resident protein 70) (ER protein 70) (ERp70) (Endoplasmic reticulum resident protein 72) (ER protein 72) (ERp-72) (ERp72),stress response
+CGI_10019057,P13667,0,Protein disulfide-isomerase A4 (EC 5.3.4.1) (Endoplasmic reticulum resident protein 70) (ER protein 70) (ERp70) (Endoplasmic reticulum resident protein 72) (ER protein 72) (ERp-72) (ERp72),transport
+CGI_10019085,Q9BYN7,1e-175,Zinc finger protein 341,RNA metabolism
+CGI_10019275,Q8CFI5,1e-125,Probable proline--tRNA ligase, mitochondrial (EC 6.1.1.15) (Prolyl-tRNA synthetase) (ProRS),RNA metabolism
+CGI_10019275,Q8CFI5,1e-125,Probable proline--tRNA ligase, mitochondrial (EC 6.1.1.15) (Prolyl-tRNA synthetase) (ProRS),protein metabolism
+CGI_10019329,Q8VHF0,0,MAP/microtubule affinity-regulating kinase 3 (EC 2.7.11.1),cell organization and biogenesis
+CGI_10019480,Q8CFA2,1e-154,Aminomethyltransferase, mitochondrial (EC 2.1.2.10) (Glycine cleavage system T protein) (GCVT),other metabolic processes
+CGI_10019481,Q498T3,1e-98,Inhibitor of growth protein 3,death
+CGI_10019481,Q498T3,1e-98,Inhibitor of growth protein 3,protein metabolism
+CGI_10019481,Q498T3,1e-98,Inhibitor of growth protein 3,cell organization and biogenesis
+CGI_10019481,Q498T3,1e-98,Inhibitor of growth protein 3,RNA metabolism
+CGI_10019530,Q01484,0,Ankyrin-2 (ANK-2) (Ankyrin-B) (Brain ankyrin) (Non-erythroid ankyrin),other metabolic processes
+CGI_10019530,Q01484,0,Ankyrin-2 (ANK-2) (Ankyrin-B) (Brain ankyrin) (Non-erythroid ankyrin),transport
+CGI_10019530,Q01484,0,Ankyrin-2 (ANK-2) (Ankyrin-B) (Brain ankyrin) (Non-erythroid ankyrin),developmental processes
+CGI_10019530,Q01484,0,Ankyrin-2 (ANK-2) (Ankyrin-B) (Brain ankyrin) (Non-erythroid ankyrin),protein metabolism
+CGI_10019530,Q01484,0,Ankyrin-2 (ANK-2) (Ankyrin-B) (Brain ankyrin) (Non-erythroid ankyrin),cell organization and biogenesis
+CGI_10019642,Q7ZTY7,1e-31,Vesicle transport protein USE1 (USE1-like protein),transport
+CGI_10019649,P11087,3e-15,Collagen alpha-1(I) chain (Alpha-1 type I collagen),cell organization and biogenesis
+CGI_10019649,P11087,3e-15,Collagen alpha-1(I) chain (Alpha-1 type I collagen),cell adhesion
+CGI_10019649,P11087,3e-15,Collagen alpha-1(I) chain (Alpha-1 type I collagen),other metabolic processes
+CGI_10019649,P11087,3e-15,Collagen alpha-1(I) chain (Alpha-1 type I collagen),developmental processes
+CGI_10019649,P11087,3e-15,Collagen alpha-1(I) chain (Alpha-1 type I collagen),RNA metabolism
+CGI_10019649,P11087,3e-15,Collagen alpha-1(I) chain (Alpha-1 type I collagen),stress response
+CGI_10019649,P11087,3e-15,Collagen alpha-1(I) chain (Alpha-1 type I collagen),transport
+CGI_10019710,Q6P1D7,4e-24,Structure-specific endonuclease subunit SLX4 (BTB/POZ domain-containing protein 12),cell cycle and proliferation
+CGI_10019710,Q6P1D7,4e-24,Structure-specific endonuclease subunit SLX4 (BTB/POZ domain-containing protein 12),stress response
+CGI_10019710,Q6P1D7,4e-24,Structure-specific endonuclease subunit SLX4 (BTB/POZ domain-containing protein 12),DNA metabolism
+CGI_10019873,Q6NXK5,9e-36,RNA/RNP complex-1-interacting phosphatase (EC 3.1.3.-) (Dual specificity protein phosphatase 11) (Phosphatase that interacts with RNA/RNP complex 1),protein metabolism
+CGI_10019873,Q6NXK5,9e-36,RNA/RNP complex-1-interacting phosphatase (EC 3.1.3.-) (Dual specificity protein phosphatase 11) (Phosphatase that interacts with RNA/RNP complex 1),RNA metabolism
+CGI_10019880,P34056,3e-92,Transcription factor AP-2-alpha (AP2-alpha) (AP-2 transcription factor) (Activating enhancer-binding protein 2-alpha) (Activator protein 2) (AP-2),other metabolic processes
+CGI_10019880,P34056,3e-92,Transcription factor AP-2-alpha (AP2-alpha) (AP-2 transcription factor) (Activating enhancer-binding protein 2-alpha) (Activator protein 2) (AP-2),RNA metabolism
+CGI_10019880,P34056,3e-92,Transcription factor AP-2-alpha (AP2-alpha) (AP-2 transcription factor) (Activating enhancer-binding protein 2-alpha) (Activator protein 2) (AP-2),cell cycle and proliferation
+CGI_10019880,P34056,3e-92,Transcription factor AP-2-alpha (AP2-alpha) (AP-2 transcription factor) (Activating enhancer-binding protein 2-alpha) (Activator protein 2) (AP-2),death
+CGI_10019880,P34056,3e-92,Transcription factor AP-2-alpha (AP2-alpha) (AP-2 transcription factor) (Activating enhancer-binding protein 2-alpha) (Activator protein 2) (AP-2),cell-cell signaling
+CGI_10019880,P34056,3e-92,Transcription factor AP-2-alpha (AP2-alpha) (AP-2 transcription factor) (Activating enhancer-binding protein 2-alpha) (Activator protein 2) (AP-2),signal transduction
+CGI_10019880,P34056,3e-92,Transcription factor AP-2-alpha (AP2-alpha) (AP-2 transcription factor) (Activating enhancer-binding protein 2-alpha) (Activator protein 2) (AP-2),developmental processes
+CGI_10019899,Q5M7P5,0,Nucleolar protein 6,RNA metabolism
+CGI_10019899,Q5M7P5,0,Nucleolar protein 6,transport
+CGI_10019922,Q99502,4e-153,Eyes absent homolog 1 (EC 3.1.3.16) (EC 3.1.3.48),cell cycle and proliferation
+CGI_10019922,Q99502,4e-153,Eyes absent homolog 1 (EC 3.1.3.16) (EC 3.1.3.48),developmental processes
+CGI_10019922,Q99502,4e-153,Eyes absent homolog 1 (EC 3.1.3.16) (EC 3.1.3.48),cell organization and biogenesis
+CGI_10019922,Q99502,4e-153,Eyes absent homolog 1 (EC 3.1.3.16) (EC 3.1.3.48),DNA metabolism
+CGI_10019922,Q99502,4e-153,Eyes absent homolog 1 (EC 3.1.3.16) (EC 3.1.3.48),protein metabolism
+CGI_10019922,Q99502,4e-153,Eyes absent homolog 1 (EC 3.1.3.16) (EC 3.1.3.48),stress response
+CGI_10019922,Q99502,4e-153,Eyes absent homolog 1 (EC 3.1.3.16) (EC 3.1.3.48),RNA metabolism
+CGI_10019922,Q99502,4e-153,Eyes absent homolog 1 (EC 3.1.3.16) (EC 3.1.3.48),signal transduction
+CGI_10019931,Q29RL9,4e-73,Transcription elongation factor A protein 1 (Transcription elongation factor S-II protein 1),RNA metabolism
+CGI_10020015,Q9C0G6,0,Dynein heavy chain 6, axonemal (Axonemal beta dynein heavy chain 6) (Ciliary dynein heavy chain 6),cell organization and biogenesis
+CGI_10020052,Q91VA6,4e-32,Polymerase delta-interacting protein 2,stress response
+CGI_10020052,Q91VA6,4e-32,Polymerase delta-interacting protein 2,cell organization and biogenesis
+CGI_10020052,Q91VA6,4e-32,Polymerase delta-interacting protein 2,cell cycle and proliferation
+CGI_10020052,Q91VA6,4e-32,Polymerase delta-interacting protein 2,other metabolic processes
+CGI_10020208,Q13042,0,Cell division cycle protein 16 homolog (Anaphase-promoting complex subunit 6) (APC6) (CDC16 homolog) (CDC16Hs) (Cyclosome subunit 6),cell cycle and proliferation
+CGI_10020208,Q13042,0,Cell division cycle protein 16 homolog (Anaphase-promoting complex subunit 6) (APC6) (CDC16 homolog) (CDC16Hs) (Cyclosome subunit 6),cell organization and biogenesis
+CGI_10020208,Q13042,0,Cell division cycle protein 16 homolog (Anaphase-promoting complex subunit 6) (APC6) (CDC16 homolog) (CDC16Hs) (Cyclosome subunit 6),protein metabolism
+CGI_10020327,Q32NG5,4e-99,Solute carrier family 2, facilitated glucose transporter member 12 (Glucose transporter type 12) (GLUT-12),transport
+CGI_10020331,Q922B6,0,E3 ubiquitin-protein ligase TRAF7 (EC 2.3.2.27) (RING-type E3 ubiquitin transferase TRAF7) (TNF receptor-associated factor 7),protein metabolism
+CGI_10020331,Q922B6,0,E3 ubiquitin-protein ligase TRAF7 (EC 2.3.2.27) (RING-type E3 ubiquitin transferase TRAF7) (TNF receptor-associated factor 7),signal transduction
+CGI_10020331,Q922B6,0,E3 ubiquitin-protein ligase TRAF7 (EC 2.3.2.27) (RING-type E3 ubiquitin transferase TRAF7) (TNF receptor-associated factor 7),RNA metabolism
+CGI_10020331,Q922B6,0,E3 ubiquitin-protein ligase TRAF7 (EC 2.3.2.27) (RING-type E3 ubiquitin transferase TRAF7) (TNF receptor-associated factor 7),death
+CGI_10020331,Q922B6,0,E3 ubiquitin-protein ligase TRAF7 (EC 2.3.2.27) (RING-type E3 ubiquitin transferase TRAF7) (TNF receptor-associated factor 7),other metabolic processes
+CGI_10020412,P27600,1e-162,Guanine nucleotide-binding protein subunit alpha-12 (G alpha-12) (G-protein subunit alpha-12),developmental processes
+CGI_10020412,P27600,1e-162,Guanine nucleotide-binding protein subunit alpha-12 (G alpha-12) (G-protein subunit alpha-12),cell organization and biogenesis
+CGI_10020412,P27600,1e-162,Guanine nucleotide-binding protein subunit alpha-12 (G alpha-12) (G-protein subunit alpha-12),signal transduction
+CGI_10020412,P27600,1e-162,Guanine nucleotide-binding protein subunit alpha-12 (G alpha-12) (G-protein subunit alpha-12),protein metabolism
+CGI_10020438,P35285,5e-65,Ras-related protein Rab-22A (Rab-22) (Rab-14),cell organization and biogenesis
+CGI_10020438,P35285,5e-65,Ras-related protein Rab-22A (Rab-22) (Rab-14),transport
+CGI_10020442,Q9CSH3,0,Exosome complex exonuclease RRP44 (EC 3.1.13.-) (EC 3.1.26.-) (Protein DIS3 homolog) (Ribosomal RNA-processing protein 44),RNA metabolism
+CGI_10020547,Q95ZJ1,1e-45,Polypeptide N-acetylgalactosaminyltransferase 5 (pp-GaNTase 5) (EC 2.4.1.41) (Protein-UDP acetylgalactosaminyltransferase 5) (UDP-GalNAc:polypeptide N-acetylgalactosaminyltransferase 5),protein metabolism
+CGI_10020564,Q9UHB9,2e-169,Signal recognition particle subunit SRP68 (SRP68) (Signal recognition particle 68 kDa protein),transport
+CGI_10020669,Q8BW86,2e-19,Rho guanine nucleotide exchange factor 33,signal transduction
+CGI_10020687,A2AHJ4,0,Bromodomain and WD repeat-containing protein 3,RNA metabolism
+CGI_10020687,A2AHJ4,0,Bromodomain and WD repeat-containing protein 3,cell organization and biogenesis
+CGI_10020806,Q5R9H4,0,APOBEC1 complementation factor (APOBEC1-stimulating protein),protein metabolism
+CGI_10020806,Q5R9H4,0,APOBEC1 complementation factor (APOBEC1-stimulating protein),RNA metabolism
+CGI_10020993,Q9HAU5,0,Regulator of nonsense transcripts 2 (Nonsense mRNA reducing factor 2) (Up-frameshift suppressor 2 homolog) (hUpf2),transport
+CGI_10020993,Q9HAU5,0,Regulator of nonsense transcripts 2 (Nonsense mRNA reducing factor 2) (Up-frameshift suppressor 2 homolog) (hUpf2),RNA metabolism
+CGI_10020993,Q9HAU5,0,Regulator of nonsense transcripts 2 (Nonsense mRNA reducing factor 2) (Up-frameshift suppressor 2 homolog) (hUpf2),developmental processes
+CGI_10021125,Q80U96,0,Exportin-1 (Exp1) (Chromosome region maintenance 1 protein homolog),RNA metabolism
+CGI_10021125,Q80U96,0,Exportin-1 (Exp1) (Chromosome region maintenance 1 protein homolog),transport
+CGI_10021125,Q80U96,0,Exportin-1 (Exp1) (Chromosome region maintenance 1 protein homolog),cell cycle and proliferation
+CGI_10021125,Q80U96,0,Exportin-1 (Exp1) (Chromosome region maintenance 1 protein homolog),cell organization and biogenesis
+CGI_10021125,Q80U96,0,Exportin-1 (Exp1) (Chromosome region maintenance 1 protein homolog),protein metabolism
+CGI_10021127,Q8R1S0,7e-129,Ubiquinone biosynthesis monooxygenase COQ6, mitochondrial (EC 1.14.13.-) (Coenzyme Q10 monooxygenase 6),other metabolic processes
+CGI_10021243,Q15392,0,Delta(24)-sterol reductase (EC 1.3.1.72) (24-dehydrocholesterol reductase) (3-beta-hydroxysterol delta-24-reductase) (Diminuto/dwarf1 homolog) (Seladin-1),protein metabolism
+CGI_10021243,Q15392,0,Delta(24)-sterol reductase (EC 1.3.1.72) (24-dehydrocholesterol reductase) (3-beta-hydroxysterol delta-24-reductase) (Diminuto/dwarf1 homolog) (Seladin-1),developmental processes
+CGI_10021243,Q15392,0,Delta(24)-sterol reductase (EC 1.3.1.72) (24-dehydrocholesterol reductase) (3-beta-hydroxysterol delta-24-reductase) (Diminuto/dwarf1 homolog) (Seladin-1),cell cycle and proliferation
+CGI_10021243,Q15392,0,Delta(24)-sterol reductase (EC 1.3.1.72) (24-dehydrocholesterol reductase) (3-beta-hydroxysterol delta-24-reductase) (Diminuto/dwarf1 homolog) (Seladin-1),stress response
+CGI_10021243,Q15392,0,Delta(24)-sterol reductase (EC 1.3.1.72) (24-dehydrocholesterol reductase) (3-beta-hydroxysterol delta-24-reductase) (Diminuto/dwarf1 homolog) (Seladin-1),death
+CGI_10021243,Q15392,0,Delta(24)-sterol reductase (EC 1.3.1.72) (24-dehydrocholesterol reductase) (3-beta-hydroxysterol delta-24-reductase) (Diminuto/dwarf1 homolog) (Seladin-1),signal transduction
+CGI_10021243,Q15392,0,Delta(24)-sterol reductase (EC 1.3.1.72) (24-dehydrocholesterol reductase) (3-beta-hydroxysterol delta-24-reductase) (Diminuto/dwarf1 homolog) (Seladin-1),other metabolic processes
+CGI_10021444,Q61124,4e-14,Battenin (Protein CLN3),protein metabolism
+CGI_10021444,Q61124,4e-14,Battenin (Protein CLN3),transport
+CGI_10021444,Q61124,4e-14,Battenin (Protein CLN3),signal transduction
+CGI_10021444,Q61124,4e-14,Battenin (Protein CLN3),death
+CGI_10021444,Q61124,4e-14,Battenin (Protein CLN3),cell-cell signaling
+CGI_10021444,Q61124,4e-14,Battenin (Protein CLN3),cell organization and biogenesis
+CGI_10021444,Q61124,4e-14,Battenin (Protein CLN3),other metabolic processes
+CGI_10021444,Q61124,4e-14,Battenin (Protein CLN3),stress response
+CGI_10021563,O75165,0,DnaJ homolog subfamily C member 13 (Required for receptor-mediated endocytosis 8) (RME-8),transport
+CGI_10021563,O75165,0,DnaJ homolog subfamily C member 13 (Required for receptor-mediated endocytosis 8) (RME-8),developmental processes
+CGI_10021563,O75165,0,DnaJ homolog subfamily C member 13 (Required for receptor-mediated endocytosis 8) (RME-8),cell organization and biogenesis
+CGI_10021679,O60504,7e-42,Vinexin (SH3-containing adapter molecule 1) (SCAM-1) (Sorbin and SH3 domain-containing protein 3),cell adhesion
+CGI_10021679,O60504,7e-42,Vinexin (SH3-containing adapter molecule 1) (SCAM-1) (Sorbin and SH3 domain-containing protein 3),RNA metabolism
+CGI_10021679,O60504,7e-42,Vinexin (SH3-containing adapter molecule 1) (SCAM-1) (Sorbin and SH3 domain-containing protein 3),signal transduction
+CGI_10021679,O60504,7e-42,Vinexin (SH3-containing adapter molecule 1) (SCAM-1) (Sorbin and SH3 domain-containing protein 3),cell organization and biogenesis
+CGI_10021786,Q8CDF7,2e-38,piRNA biogenesis protein EXD1 (Exonuclease 3'-5' domain-containing protein 1) (Exonuclease 3'-5' domain-like-containing protein 1) (Inactive exonuclease EXD1) (mExd1),RNA metabolism
+CGI_10021786,Q8CDF7,2e-38,piRNA biogenesis protein EXD1 (Exonuclease 3'-5' domain-containing protein 1) (Exonuclease 3'-5' domain-like-containing protein 1) (Inactive exonuclease EXD1) (mExd1),other metabolic processes
+CGI_10021786,Q8CDF7,2e-38,piRNA biogenesis protein EXD1 (Exonuclease 3'-5' domain-containing protein 1) (Exonuclease 3'-5' domain-like-containing protein 1) (Inactive exonuclease EXD1) (mExd1),cell cycle and proliferation
+CGI_10021842,Q6DCP1,1e-123,FAD-dependent oxidoreductase domain-containing protein 1 (EC 1.-.-.-),cell organization and biogenesis
+CGI_10021945,Q62915,3e-176,Peripheral plasma membrane protein CASK (EC 2.7.11.1) (Calcium/calmodulin-dependent serine protein kinase),cell-cell signaling
+CGI_10021945,Q62915,3e-176,Peripheral plasma membrane protein CASK (EC 2.7.11.1) (Calcium/calmodulin-dependent serine protein kinase),RNA metabolism
+CGI_10021945,Q62915,3e-176,Peripheral plasma membrane protein CASK (EC 2.7.11.1) (Calcium/calmodulin-dependent serine protein kinase),transport
+CGI_10021945,Q62915,3e-176,Peripheral plasma membrane protein CASK (EC 2.7.11.1) (Calcium/calmodulin-dependent serine protein kinase),developmental processes
+CGI_10021948,P24928,0,DNA-directed RNA polymerase II subunit RPB1 (RNA polymerase II subunit B1) (EC 2.7.7.6) (DNA-directed RNA polymerase II subunit A) (DNA-directed RNA polymerase III largest subunit) (RNA-directed RNA polymerase II subunit RPB1) (EC 2.7.7.48),cell organization and biogenesis
+CGI_10021948,P24928,0,DNA-directed RNA polymerase II subunit RPB1 (RNA polymerase II subunit B1) (EC 2.7.7.6) (DNA-directed RNA polymerase II subunit A) (DNA-directed RNA polymerase III largest subunit) (RNA-directed RNA polymerase II subunit RPB1) (EC 2.7.7.48),RNA metabolism
+CGI_10021948,P24928,0,DNA-directed RNA polymerase II subunit RPB1 (RNA polymerase II subunit B1) (EC 2.7.7.6) (DNA-directed RNA polymerase II subunit A) (DNA-directed RNA polymerase III largest subunit) (RNA-directed RNA polymerase II subunit RPB1) (EC 2.7.7.48),stress response
+CGI_10021948,P24928,0,DNA-directed RNA polymerase II subunit RPB1 (RNA polymerase II subunit B1) (EC 2.7.7.6) (DNA-directed RNA polymerase II subunit A) (DNA-directed RNA polymerase III largest subunit) (RNA-directed RNA polymerase II subunit RPB1) (EC 2.7.7.48),DNA metabolism
+CGI_10021948,P24928,0,DNA-directed RNA polymerase II subunit RPB1 (RNA polymerase II subunit B1) (EC 2.7.7.6) (DNA-directed RNA polymerase II subunit A) (DNA-directed RNA polymerase III largest subunit) (RNA-directed RNA polymerase II subunit RPB1) (EC 2.7.7.48),signal transduction
+CGI_10021960,P25228,5e-133,Ras-related protein Rab-3,cell organization and biogenesis
+CGI_10021960,P25228,5e-133,Ras-related protein Rab-3,signal transduction
+CGI_10021960,P25228,5e-133,Ras-related protein Rab-3,cell-cell signaling
+CGI_10021960,P25228,5e-133,Ras-related protein Rab-3,transport
+CGI_10021968,Q9QXG4,0,Acetyl-coenzyme A synthetase, cytoplasmic (EC 6.2.1.1) (Acetate--CoA ligase) (Acetyl-CoA synthetase) (ACS) (AceCS) (Acyl-CoA synthetase short-chain family member 2) (Acyl-activating enzyme),other metabolic processes
+CGI_10022184,Q2PC93,0,SCO-spondin,cell adhesion
+CGI_10022184,Q2PC93,0,SCO-spondin,developmental processes
+CGI_10022483,Q01518,2e-118,Adenylyl cyclase-associated protein 1 (CAP 1),cell organization and biogenesis
+CGI_10022483,Q01518,2e-118,Adenylyl cyclase-associated protein 1 (CAP 1),transport
+CGI_10022483,Q01518,2e-118,Adenylyl cyclase-associated protein 1 (CAP 1),other metabolic processes
+CGI_10022483,Q01518,2e-118,Adenylyl cyclase-associated protein 1 (CAP 1),signal transduction
+CGI_10022501,Q6P1E7,2e-32,DNA-directed primase/polymerase protein (EC 2.7.7.-) (Coiled-coil domain-containing protein 111),cell organization and biogenesis
+CGI_10022501,Q6P1E7,2e-32,DNA-directed primase/polymerase protein (EC 2.7.7.-) (Coiled-coil domain-containing protein 111),stress response
+CGI_10022501,Q6P1E7,2e-32,DNA-directed primase/polymerase protein (EC 2.7.7.-) (Coiled-coil domain-containing protein 111),DNA metabolism
+CGI_10022703,P07207,0,Neurogenic locus Notch protein [Cleaved into: Processed neurogenic locus Notch protein],cell cycle and proliferation
+CGI_10022703,P07207,0,Neurogenic locus Notch protein [Cleaved into: Processed neurogenic locus Notch protein],developmental processes
+CGI_10022703,P07207,0,Neurogenic locus Notch protein [Cleaved into: Processed neurogenic locus Notch protein],cell adhesion
+CGI_10022703,P07207,0,Neurogenic locus Notch protein [Cleaved into: Processed neurogenic locus Notch protein],RNA metabolism
+CGI_10022703,P07207,0,Neurogenic locus Notch protein [Cleaved into: Processed neurogenic locus Notch protein],death
+CGI_10022703,P07207,0,Neurogenic locus Notch protein [Cleaved into: Processed neurogenic locus Notch protein],cell organization and biogenesis
+CGI_10022703,P07207,0,Neurogenic locus Notch protein [Cleaved into: Processed neurogenic locus Notch protein],other metabolic processes
+CGI_10022703,P07207,0,Neurogenic locus Notch protein [Cleaved into: Processed neurogenic locus Notch protein],cell-cell signaling
+CGI_10022703,P07207,0,Neurogenic locus Notch protein [Cleaved into: Processed neurogenic locus Notch protein],stress response
+CGI_10022703,P07207,0,Neurogenic locus Notch protein [Cleaved into: Processed neurogenic locus Notch protein],signal transduction
+CGI_10022771,Q96SB3,7e-42,Neurabin-2 (Neurabin-II) (Protein phosphatase 1 regulatory subunit 9B) (Spinophilin),RNA metabolism
+CGI_10022771,Q96SB3,7e-42,Neurabin-2 (Neurabin-II) (Protein phosphatase 1 regulatory subunit 9B) (Spinophilin),developmental processes
+CGI_10022771,Q96SB3,7e-42,Neurabin-2 (Neurabin-II) (Protein phosphatase 1 regulatory subunit 9B) (Spinophilin),cell organization and biogenesis
+CGI_10022771,Q96SB3,7e-42,Neurabin-2 (Neurabin-II) (Protein phosphatase 1 regulatory subunit 9B) (Spinophilin),cell-cell signaling
+CGI_10022771,Q96SB3,7e-42,Neurabin-2 (Neurabin-II) (Protein phosphatase 1 regulatory subunit 9B) (Spinophilin),signal transduction
+CGI_10022771,Q96SB3,7e-42,Neurabin-2 (Neurabin-II) (Protein phosphatase 1 regulatory subunit 9B) (Spinophilin),cell cycle and proliferation
+CGI_10022832,Q5R9C1,0,6-phosphofructo-2-kinase/fructose-2,6-bisphosphatase 3 (6PF-2-K/Fru-2,6-P2ase 3) (PFK/FBPase 3) (6PF-2-K/Fru-2,6-P2ase brain/placenta-type isozyme) [Includes: 6-phosphofructo-2-kinase (EC 2.7.1.105); Fructose-2,6-bisphosphatase (EC 3.1.3.46)],other metabolic processes
+CGI_10023025,Q9UKU7,0,Isobutyryl-CoA dehydrogenase, mitochondrial (EC 1.3.99.-) (Activator-recruited cofactor 42 kDa component) (ARC42) (Acyl-CoA dehydrogenase family member 8) (ACAD-8),RNA metabolism
+CGI_10023025,Q9UKU7,0,Isobutyryl-CoA dehydrogenase, mitochondrial (EC 1.3.99.-) (Activator-recruited cofactor 42 kDa component) (ARC42) (Acyl-CoA dehydrogenase family member 8) (ACAD-8),other metabolic processes
+CGI_10023236,Q9YHZ6,0,Cell division control protein 45 homolog,cell cycle and proliferation
+CGI_10023236,Q9YHZ6,0,Cell division control protein 45 homolog,DNA metabolism
+CGI_10023240,P42573,4e-10,Cell death protein 3 (EC 3.4.22.-) [Cleaved into: Cell death protein 3 subunit 1; Cell death protein 3 subunit 2],protein metabolism
+CGI_10023240,P42573,4e-10,Cell death protein 3 (EC 3.4.22.-) [Cleaved into: Cell death protein 3 subunit 1; Cell death protein 3 subunit 2],developmental processes
+CGI_10023240,P42573,4e-10,Cell death protein 3 (EC 3.4.22.-) [Cleaved into: Cell death protein 3 subunit 1; Cell death protein 3 subunit 2],death
+CGI_10023240,P42573,4e-10,Cell death protein 3 (EC 3.4.22.-) [Cleaved into: Cell death protein 3 subunit 1; Cell death protein 3 subunit 2],cell adhesion
+CGI_10023240,P42573,4e-10,Cell death protein 3 (EC 3.4.22.-) [Cleaved into: Cell death protein 3 subunit 1; Cell death protein 3 subunit 2],cell organization and biogenesis
+CGI_10023427,P55210,2e-82,Caspase-7 (CASP-7) (EC 3.4.22.60) (Apoptotic protease Mch-3) (CMH-1) (ICE-like apoptotic protease 3) (ICE-LAP3) [Cleaved into: Caspase-7 subunit p20; Caspase-7 subunit p11],protein metabolism
+CGI_10023427,P55210,2e-82,Caspase-7 (CASP-7) (EC 3.4.22.60) (Apoptotic protease Mch-3) (CMH-1) (ICE-like apoptotic protease 3) (ICE-LAP3) [Cleaved into: Caspase-7 subunit p20; Caspase-7 subunit p11],death
+CGI_10023442,P22793,2e-15,Trichohyalin,developmental processes
+CGI_10023492,Q5H8A4,4e-143,GPI ethanolamine phosphate transferase 2 (EC 2.-.-.-) (GPI7 homolog) (hGPI7) (Phosphatidylinositol-glycan biosynthesis class G protein) (PIG-G),protein metabolism
+CGI_10023537,Q4V348,6e-49,Zinc finger protein 658B,RNA metabolism
+CGI_10023569,Q6P9P0,7e-14,SMC5-SMC6 complex localization factor protein 2,cell organization and biogenesis
+CGI_10023569,Q6P9P0,7e-14,SMC5-SMC6 complex localization factor protein 2,DNA metabolism
+CGI_10023569,Q6P9P0,7e-14,SMC5-SMC6 complex localization factor protein 2,stress response
+CGI_10023569,Q6P9P0,7e-14,SMC5-SMC6 complex localization factor protein 2,cell cycle and proliferation
+CGI_10023639,Q96JG6,0,Syndetin (Coiled-coil domain-containing protein 132) (EARP/GARPII complex subunit VPS50),transport
+CGI_10023684,P23634,0,Plasma membrane calcium-transporting ATPase 4 (PMCA4) (EC 3.6.3.8) (Matrix-remodeling-associated protein 1) (Plasma membrane calcium ATPase isoform 4) (Plasma membrane calcium pump isoform 4),signal transduction
+CGI_10023684,P23634,0,Plasma membrane calcium-transporting ATPase 4 (PMCA4) (EC 3.6.3.8) (Matrix-remodeling-associated protein 1) (Plasma membrane calcium ATPase isoform 4) (Plasma membrane calcium pump isoform 4),stress response
+CGI_10023684,P23634,0,Plasma membrane calcium-transporting ATPase 4 (PMCA4) (EC 3.6.3.8) (Matrix-remodeling-associated protein 1) (Plasma membrane calcium ATPase isoform 4) (Plasma membrane calcium pump isoform 4),developmental processes
+CGI_10023684,P23634,0,Plasma membrane calcium-transporting ATPase 4 (PMCA4) (EC 3.6.3.8) (Matrix-remodeling-associated protein 1) (Plasma membrane calcium ATPase isoform 4) (Plasma membrane calcium pump isoform 4),transport
+CGI_10023684,P23634,0,Plasma membrane calcium-transporting ATPase 4 (PMCA4) (EC 3.6.3.8) (Matrix-remodeling-associated protein 1) (Plasma membrane calcium ATPase isoform 4) (Plasma membrane calcium pump isoform 4),RNA metabolism
+CGI_10023684,P23634,0,Plasma membrane calcium-transporting ATPase 4 (PMCA4) (EC 3.6.3.8) (Matrix-remodeling-associated protein 1) (Plasma membrane calcium ATPase isoform 4) (Plasma membrane calcium pump isoform 4),protein metabolism
+CGI_10023684,P23634,0,Plasma membrane calcium-transporting ATPase 4 (PMCA4) (EC 3.6.3.8) (Matrix-remodeling-associated protein 1) (Plasma membrane calcium ATPase isoform 4) (Plasma membrane calcium pump isoform 4),other metabolic processes
+CGI_10023759,Q3SWZ4,6e-120,Exosome complex component RRP45 (Exosome component 9),RNA metabolism
+CGI_10023847,Q96RQ3,0,Methylcrotonoyl-CoA carboxylase subunit alpha, mitochondrial (MCCase subunit alpha) (EC 6.4.1.4) (3-methylcrotonyl-CoA carboxylase 1) (3-methylcrotonyl-CoA carboxylase biotin-containing subunit) (3-methylcrotonyl-CoA:carbon dioxide ligase subunit alpha),cell organization and biogenesis
+CGI_10023847,Q96RQ3,0,Methylcrotonoyl-CoA carboxylase subunit alpha, mitochondrial (MCCase subunit alpha) (EC 6.4.1.4) (3-methylcrotonyl-CoA carboxylase 1) (3-methylcrotonyl-CoA carboxylase biotin-containing subunit) (3-methylcrotonyl-CoA:carbon dioxide ligase subunit alpha),other metabolic processes
+CGI_10023907,Q91048,2e-175,Inactive tyrosine-protein kinase 7 (Kinase-like protein) (Protein-tyrosine kinase 7) (Pseudo tyrosine kinase receptor 7) (Tyrosine-protein kinase-like 7),developmental processes
+CGI_10023907,Q91048,2e-175,Inactive tyrosine-protein kinase 7 (Kinase-like protein) (Protein-tyrosine kinase 7) (Pseudo tyrosine kinase receptor 7) (Tyrosine-protein kinase-like 7),cell adhesion
+CGI_10024079,Q9BXB4,0,Oxysterol-binding protein-related protein 11 (ORP-11) (OSBP-related protein 11),transport
+CGI_10024169,P04183,2e-82,Thymidine kinase, cytosolic (EC 2.7.1.21),other metabolic processes
+CGI_10024169,P04183,2e-82,Thymidine kinase, cytosolic (EC 2.7.1.21),DNA metabolism
+CGI_10024169,P04183,2e-82,Thymidine kinase, cytosolic (EC 2.7.1.21),cell organization and biogenesis
+CGI_10024210,A8MTY0,4e-46,Zinc finger protein 724,RNA metabolism
+CGI_10024362,Q6DFM9,1e-40,Mitochondrial import receptor subunit TOM20 homolog (Mitochondrial 20 kDa outer membrane protein) (Outer mitochondrial membrane receptor Tom20),cell organization and biogenesis
+CGI_10024362,Q6DFM9,1e-40,Mitochondrial import receptor subunit TOM20 homolog (Mitochondrial 20 kDa outer membrane protein) (Outer mitochondrial membrane receptor Tom20),transport
+CGI_10024415,O75596,2e-08,C-type lectin domain family 3 member A (C-type lectin superfamily member 1) (Cartilage-derived C-type lectin),developmental processes
+CGI_10024516,Q9CYA6,3e-16,Zinc finger CCHC domain-containing protein 8 (TRAMP-like complex RNA-binding factor ZCCHC8),RNA metabolism
+CGI_10024637,E1C2Z0,3e-82,Protein MMS22-like (Methyl methanesulfonate-sensitivity protein 22-like),DNA metabolism
+CGI_10024637,E1C2Z0,3e-82,Protein MMS22-like (Methyl methanesulfonate-sensitivity protein 22-like),stress response
+CGI_10024760,A6QQP7,0,Dysferlin (Dystrophy-associated fer-1-like protein) (Fer-1-like protein 1),cell organization and biogenesis
+CGI_10024760,A6QQP7,0,Dysferlin (Dystrophy-associated fer-1-like protein) (Fer-1-like protein 1),transport
+CGI_10024801,P97852,0,Peroxisomal multifunctional enzyme type 2 (MFE-2) (17-beta-hydroxysteroid dehydrogenase 4) (17-beta-HSD 4) (D-bifunctional protein) (DBP) (Multifunctional protein 2) (MPF-2) [Cleaved into: (3R)-hydroxyacyl-CoA dehydrogenase (EC 1.1.1.n12); Enoyl-CoA hydratase 2 (EC 4.2.1.107) (EC 4.2.1.119) (3-alpha,7-alpha,12-alpha-trihydroxy-5-beta-cholest-24-enoyl-CoA hydratase)],other metabolic processes
+CGI_10024836,Q9QYE0,2e-67,Zinc finger protein PLAG1 (Pleiomorphic adenoma gene 1 protein),cell cycle and proliferation
+CGI_10024836,Q9QYE0,2e-67,Zinc finger protein PLAG1 (Pleiomorphic adenoma gene 1 protein),other metabolic processes
+CGI_10024836,Q9QYE0,2e-67,Zinc finger protein PLAG1 (Pleiomorphic adenoma gene 1 protein),RNA metabolism
+CGI_10024836,Q9QYE0,2e-67,Zinc finger protein PLAG1 (Pleiomorphic adenoma gene 1 protein),developmental processes
+CGI_10024836,Q9QYE0,2e-67,Zinc finger protein PLAG1 (Pleiomorphic adenoma gene 1 protein),death
+CGI_10025079,Q9NVH0,2e-108,Exonuclease 3'-5' domain-containing protein 2 (EC 3.1.11.1) (Exonuclease 3'-5' domain-like-containing protein 2),stress response
+CGI_10025079,Q9NVH0,2e-108,Exonuclease 3'-5' domain-containing protein 2 (EC 3.1.11.1) (Exonuclease 3'-5' domain-like-containing protein 2),DNA metabolism
+CGI_10025081,Q9W1W9,1e-42,PRADC1-like protein (PAP21-like protein),developmental processes
+CGI_10025169,E1B7X9,0,SWI/SNF-related matrix-associated actin-dependent regulator of chromatin subfamily A containing DEAD/H box 1 (EC 3.6.4.12),DNA metabolism
+CGI_10025169,E1B7X9,0,SWI/SNF-related matrix-associated actin-dependent regulator of chromatin subfamily A containing DEAD/H box 1 (EC 3.6.4.12),stress response
+CGI_10025169,E1B7X9,0,SWI/SNF-related matrix-associated actin-dependent regulator of chromatin subfamily A containing DEAD/H box 1 (EC 3.6.4.12),cell cycle and proliferation
+CGI_10025169,E1B7X9,0,SWI/SNF-related matrix-associated actin-dependent regulator of chromatin subfamily A containing DEAD/H box 1 (EC 3.6.4.12),cell organization and biogenesis
+CGI_10025234,Q24498,0,Ryanodine receptor (Ryanodine receptor 44F),cell cycle and proliferation
+CGI_10025234,Q24498,0,Ryanodine receptor (Ryanodine receptor 44F),transport
+CGI_10025234,Q24498,0,Ryanodine receptor (Ryanodine receptor 44F),developmental processes
+CGI_10025330,O15400,1e-55,Syntaxin-7,death
+CGI_10025330,O15400,1e-55,Syntaxin-7,transport
+CGI_10025330,O15400,1e-55,Syntaxin-7,cell organization and biogenesis
+CGI_10025432,Q09LZ8,0,Cytosolic carboxypeptidase 6 (EC 3.4.17.-) (ATP/GTP-binding protein-like 4),stress response
+CGI_10025484,Q75N73,8e-56,Zinc transporter ZIP14 (Factor for adipocyte differentiation 123) (FAD-123) (Solute carrier family 39 member 14) (Zrt- and Irt-like protein 14) (ZIP-14),transport
+CGI_10025541,Q14690,1e-122,Protein RRP5 homolog (NF-kappa-B-binding protein) (NFBP) (Programmed cell death protein 11),RNA metabolism
+CGI_10025557,A2BGR3,0,DNA excision repair protein ERCC-6-like (EC 3.6.4.12) (ATP-dependent helicase ERCC6-like),cell cycle and proliferation
+CGI_10025557,A2BGR3,0,DNA excision repair protein ERCC-6-like (EC 3.6.4.12) (ATP-dependent helicase ERCC6-like),protein metabolism
+CGI_10025645,Q5RFA0,0,Negative elongation factor D (NELF-D) (TH1-like protein),RNA metabolism
+CGI_10025652,Q922M3,2e-63,BTB/POZ domain-containing adapter for CUL3-mediated RhoA degradation protein 3 (mBACURD3) (BTB/POZ domain-containing protein KCTD10),cell organization and biogenesis
+CGI_10025652,Q922M3,2e-63,BTB/POZ domain-containing adapter for CUL3-mediated RhoA degradation protein 3 (mBACURD3) (BTB/POZ domain-containing protein KCTD10),protein metabolism
+CGI_10025652,Q922M3,2e-63,BTB/POZ domain-containing adapter for CUL3-mediated RhoA degradation protein 3 (mBACURD3) (BTB/POZ domain-containing protein KCTD10),signal transduction
+CGI_10025652,Q922M3,2e-63,BTB/POZ domain-containing adapter for CUL3-mediated RhoA degradation protein 3 (mBACURD3) (BTB/POZ domain-containing protein KCTD10),developmental processes
+CGI_10025721,P13395,0,Spectrin alpha chain,cell-cell signaling
+CGI_10025721,P13395,0,Spectrin alpha chain,cell organization and biogenesis
+CGI_10025721,P13395,0,Spectrin alpha chain,protein metabolism
+CGI_10025721,P13395,0,Spectrin alpha chain,developmental processes
+CGI_10025721,P13395,0,Spectrin alpha chain,transport
+CGI_10025721,P13395,0,Spectrin alpha chain,cell cycle and proliferation
+CGI_10025943,B5FZ19,2e-173,Eukaryotic translation initiation factor 3 subunit I (eIF3i) (Eukaryotic translation initiation factor 3 subunit 2) (eIF-3-beta) (eIF3 p36),protein metabolism
+CGI_10025955,P23913,1e-148,Lamin-B receptor,other metabolic processes
+CGI_10026116,Q86WG5,0,Myotubularin-related protein 13 (SET-binding factor 2),developmental processes
+CGI_10026116,Q86WG5,0,Myotubularin-related protein 13 (SET-binding factor 2),cell organization and biogenesis
+CGI_10026155,O75096,0,Low-density lipoprotein receptor-related protein 4 (LRP-4) (Multiple epidermal growth factor-like domains 7),signal transduction
+CGI_10026155,O75096,0,Low-density lipoprotein receptor-related protein 4 (LRP-4) (Multiple epidermal growth factor-like domains 7),developmental processes
+CGI_10026155,O75096,0,Low-density lipoprotein receptor-related protein 4 (LRP-4) (Multiple epidermal growth factor-like domains 7),cell organization and biogenesis
+CGI_10026155,O75096,0,Low-density lipoprotein receptor-related protein 4 (LRP-4) (Multiple epidermal growth factor-like domains 7),protein metabolism
+CGI_10026155,O75096,0,Low-density lipoprotein receptor-related protein 4 (LRP-4) (Multiple epidermal growth factor-like domains 7),transport
+CGI_10026181,O15182,2e-93,Centrin-3,cell organization and biogenesis
+CGI_10026181,O15182,2e-93,Centrin-3,cell cycle and proliferation
+CGI_10026247,Q92543,3e-41,Sorting nexin-19,transport
+CGI_10026247,Q92543,3e-41,Sorting nexin-19,developmental processes
+CGI_10026247,Q92543,3e-41,Sorting nexin-19,cell-cell signaling
+CGI_10026294,Q6YHK3,5e-92,CD109 antigen (150 kDa TGF-beta-1-binding protein) (C3 and PZP-like alpha-2-macroglobulin domain-containing protein 7) (Platelet-specific Gov antigen) (p180) (r150) (CD antigen CD109),signal transduction
+CGI_10026294,Q6YHK3,5e-92,CD109 antigen (150 kDa TGF-beta-1-binding protein) (C3 and PZP-like alpha-2-macroglobulin domain-containing protein 7) (Platelet-specific Gov antigen) (p180) (r150) (CD antigen CD109),transport
+CGI_10026294,Q6YHK3,5e-92,CD109 antigen (150 kDa TGF-beta-1-binding protein) (C3 and PZP-like alpha-2-macroglobulin domain-containing protein 7) (Platelet-specific Gov antigen) (p180) (r150) (CD antigen CD109),cell cycle and proliferation
+CGI_10026294,Q6YHK3,5e-92,CD109 antigen (150 kDa TGF-beta-1-binding protein) (C3 and PZP-like alpha-2-macroglobulin domain-containing protein 7) (Platelet-specific Gov antigen) (p180) (r150) (CD antigen CD109),developmental processes
+CGI_10026294,Q6YHK3,5e-92,CD109 antigen (150 kDa TGF-beta-1-binding protein) (C3 and PZP-like alpha-2-macroglobulin domain-containing protein 7) (Platelet-specific Gov antigen) (p180) (r150) (CD antigen CD109),protein metabolism
+CGI_10026446,Q9CXP4,1e-92,Rho GTPase-activating protein 8 (Rho-type GTPase-activating protein 8),signal transduction
+CGI_10026535,Q5REU4,0,Staphylococcal nuclease domain-containing protein 1 (100 kDa coactivator) (p100 co-activator),RNA metabolism
+CGI_10026535,Q5REU4,0,Staphylococcal nuclease domain-containing protein 1 (100 kDa coactivator) (p100 co-activator),other metabolic processes
+CGI_10026556,Q96AE7,4e-153,Tetratricopeptide repeat protein 17 (TPR repeat protein 17),cell organization and biogenesis
+CGI_10026569,A2AWP0,7e-19,Baculoviral IAP repeat-containing protein 7 (EC 2.3.2.27) (Livin) (RING-type E3 ubiquitin transferase BIRC7) [Cleaved into: Baculoviral IAP repeat-containing protein 7 30 kDa subunit (Truncated livin) (p30-Livin) (tLivin)],cell cycle and proliferation
+CGI_10026569,A2AWP0,7e-19,Baculoviral IAP repeat-containing protein 7 (EC 2.3.2.27) (Livin) (RING-type E3 ubiquitin transferase BIRC7) [Cleaved into: Baculoviral IAP repeat-containing protein 7 30 kDa subunit (Truncated livin) (p30-Livin) (tLivin)],death
+CGI_10026569,A2AWP0,7e-19,Baculoviral IAP repeat-containing protein 7 (EC 2.3.2.27) (Livin) (RING-type E3 ubiquitin transferase BIRC7) [Cleaved into: Baculoviral IAP repeat-containing protein 7 30 kDa subunit (Truncated livin) (p30-Livin) (tLivin)],signal transduction
+CGI_10026569,A2AWP0,7e-19,Baculoviral IAP repeat-containing protein 7 (EC 2.3.2.27) (Livin) (RING-type E3 ubiquitin transferase BIRC7) [Cleaved into: Baculoviral IAP repeat-containing protein 7 30 kDa subunit (Truncated livin) (p30-Livin) (tLivin)],protein metabolism
+CGI_10026576,Q92621,0,Nuclear pore complex protein Nup205 (205 kDa nucleoporin) (Nucleoporin Nup205),cell cycle and proliferation
+CGI_10026576,Q92621,0,Nuclear pore complex protein Nup205 (205 kDa nucleoporin) (Nucleoporin Nup205),protein metabolism
+CGI_10026576,Q92621,0,Nuclear pore complex protein Nup205 (205 kDa nucleoporin) (Nucleoporin Nup205),RNA metabolism
+CGI_10026576,Q92621,0,Nuclear pore complex protein Nup205 (205 kDa nucleoporin) (Nucleoporin Nup205),transport
+CGI_10026576,Q92621,0,Nuclear pore complex protein Nup205 (205 kDa nucleoporin) (Nucleoporin Nup205),cell organization and biogenesis
+CGI_10026622,O88974,2e-85,Histone-lysine N-methyltransferase SETDB1 (EC 2.1.1.43) (ERG-associated protein with SET domain) (ESET) (SET domain bifurcated 1),RNA metabolism
+CGI_10026622,O88974,2e-85,Histone-lysine N-methyltransferase SETDB1 (EC 2.1.1.43) (ERG-associated protein with SET domain) (ESET) (SET domain bifurcated 1),developmental processes
+CGI_10026622,O88974,2e-85,Histone-lysine N-methyltransferase SETDB1 (EC 2.1.1.43) (ERG-associated protein with SET domain) (ESET) (SET domain bifurcated 1),cell cycle and proliferation
+CGI_10026622,O88974,2e-85,Histone-lysine N-methyltransferase SETDB1 (EC 2.1.1.43) (ERG-associated protein with SET domain) (ESET) (SET domain bifurcated 1),signal transduction
+CGI_10026821,Q00174,0,Laminin subunit alpha (Laminin A chain),other metabolic processes
+CGI_10026821,Q00174,0,Laminin subunit alpha (Laminin A chain),cell adhesion
+CGI_10026821,Q00174,0,Laminin subunit alpha (Laminin A chain),stress response
+CGI_10026821,Q00174,0,Laminin subunit alpha (Laminin A chain),developmental processes
+CGI_10026821,Q00174,0,Laminin subunit alpha (Laminin A chain),cell organization and biogenesis
+CGI_10026821,Q00174,0,Laminin subunit alpha (Laminin A chain),cell-cell signaling
+CGI_10026821,Q00174,0,Laminin subunit alpha (Laminin A chain),cell cycle and proliferation
+CGI_10026852,Q8BX70,6e-151,Vacuolar protein sorting-associated protein 13C,cell organization and biogenesis
+CGI_10026964,Q9H8V3,0,Protein ECT2 (Epithelial cell-transforming sequence 2 oncogene),stress response
+CGI_10026964,Q9H8V3,0,Protein ECT2 (Epithelial cell-transforming sequence 2 oncogene),other metabolic processes
+CGI_10026964,Q9H8V3,0,Protein ECT2 (Epithelial cell-transforming sequence 2 oncogene),cell organization and biogenesis
+CGI_10026964,Q9H8V3,0,Protein ECT2 (Epithelial cell-transforming sequence 2 oncogene),signal transduction
+CGI_10026964,Q9H8V3,0,Protein ECT2 (Epithelial cell-transforming sequence 2 oncogene),death
+CGI_10026964,Q9H8V3,0,Protein ECT2 (Epithelial cell-transforming sequence 2 oncogene),transport
+CGI_10026964,Q9H8V3,0,Protein ECT2 (Epithelial cell-transforming sequence 2 oncogene),developmental processes
+CGI_10027004,P97864,7e-29,Caspase-7 (CASP-7) (EC 3.4.22.60) (Apoptotic protease Mch-3) (Cysteine protease LICE2) [Cleaved into: Caspase-7 subunit p20; Caspase-7 subunit p11],developmental processes
+CGI_10027004,P97864,7e-29,Caspase-7 (CASP-7) (EC 3.4.22.60) (Apoptotic protease Mch-3) (Cysteine protease LICE2) [Cleaved into: Caspase-7 subunit p20; Caspase-7 subunit p11],death
+CGI_10027004,P97864,7e-29,Caspase-7 (CASP-7) (EC 3.4.22.60) (Apoptotic protease Mch-3) (Cysteine protease LICE2) [Cleaved into: Caspase-7 subunit p20; Caspase-7 subunit p11],protein metabolism
+CGI_10027133,Q20930,2e-15,ADAM family mig-17 (EC 3.4.24.-) (A disintegrin and metalloproteinase mig-17) (Abnormal cell migration protein 17),developmental processes
+CGI_10027133,Q20930,2e-15,ADAM family mig-17 (EC 3.4.24.-) (A disintegrin and metalloproteinase mig-17) (Abnormal cell migration protein 17),protein metabolism
+CGI_10027235,Q9UJX5,1e-112,Anaphase-promoting complex subunit 4 (APC4) (Cyclosome subunit 4),cell cycle and proliferation
+CGI_10027235,Q9UJX5,1e-112,Anaphase-promoting complex subunit 4 (APC4) (Cyclosome subunit 4),cell organization and biogenesis
+CGI_10027235,Q9UJX5,1e-112,Anaphase-promoting complex subunit 4 (APC4) (Cyclosome subunit 4),protein metabolism
+CGI_10027261,O94913,2e-48,Pre-mRNA cleavage complex 2 protein Pcf11 (Pre-mRNA cleavage complex II protein Pcf11),cell organization and biogenesis
+CGI_10027261,O94913,2e-48,Pre-mRNA cleavage complex 2 protein Pcf11 (Pre-mRNA cleavage complex II protein Pcf11),RNA metabolism
+CGI_10027282,Q15811,2e-18,Intersectin-1 (SH3 domain-containing protein 1A) (SH3P17),signal transduction
+CGI_10027282,Q15811,2e-18,Intersectin-1 (SH3 domain-containing protein 1A) (SH3P17),transport
+CGI_10027282,Q15811,2e-18,Intersectin-1 (SH3 domain-containing protein 1A) (SH3P17),death
+CGI_10027282,Q15811,2e-18,Intersectin-1 (SH3 domain-containing protein 1A) (SH3P17),cell organization and biogenesis
+CGI_10027347,Q27954,0,Coatomer subunit alpha (Alpha-coat protein) (Alpha-COP) (HEP-COP) (HEPCOP) [Cleaved into: Xenin (Xenopsin-related peptide); Proxenin],transport
+CGI_10027375,Q96RT7,1e-96,Gamma-tubulin complex component 6 (GCP-6),cell cycle and proliferation
+CGI_10027375,Q96RT7,1e-96,Gamma-tubulin complex component 6 (GCP-6),cell organization and biogenesis
+CGI_10027500,Q8C033,5e-105,Rho guanine nucleotide exchange factor 10,cell organization and biogenesis
+CGI_10027500,Q8C033,5e-105,Rho guanine nucleotide exchange factor 10,cell cycle and proliferation
+CGI_10027500,Q8C033,5e-105,Rho guanine nucleotide exchange factor 10,developmental processes
+CGI_10027500,Q8C033,5e-105,Rho guanine nucleotide exchange factor 10,signal transduction
+CGI_10027751,O15027,4e-123,Protein transport protein Sec16A (SEC16 homolog A),transport
+CGI_10027751,O15027,4e-123,Protein transport protein Sec16A (SEC16 homolog A),cell organization and biogenesis
+CGI_10027751,O15027,4e-123,Protein transport protein Sec16A (SEC16 homolog A),developmental processes
+CGI_10027880,Q32PI8,7e-18,28S ribosomal protein S27, mitochondrial (MRP-S27) (S27mt),protein metabolism
+CGI_10027880,Q32PI8,7e-18,28S ribosomal protein S27, mitochondrial (MRP-S27) (S27mt),cell organization and biogenesis
+CGI_10027970,Q8N157,0,Jouberin (Abelson helper integration site 1 protein homolog) (AHI-1),signal transduction
+CGI_10027970,Q8N157,0,Jouberin (Abelson helper integration site 1 protein homolog) (AHI-1),death
+CGI_10027970,Q8N157,0,Jouberin (Abelson helper integration site 1 protein homolog) (AHI-1),transport
+CGI_10027970,Q8N157,0,Jouberin (Abelson helper integration site 1 protein homolog) (AHI-1),protein metabolism
+CGI_10027970,Q8N157,0,Jouberin (Abelson helper integration site 1 protein homolog) (AHI-1),RNA metabolism
+CGI_10027970,Q8N157,0,Jouberin (Abelson helper integration site 1 protein homolog) (AHI-1),developmental processes
+CGI_10027970,Q8N157,0,Jouberin (Abelson helper integration site 1 protein homolog) (AHI-1),cell organization and biogenesis
+CGI_10028030,Q9VX32,7e-163,Rho GTPase-activating protein 190 (Rho GTPase-activating protein of 190 kDa),cell organization and biogenesis
+CGI_10028030,Q9VX32,7e-163,Rho GTPase-activating protein 190 (Rho GTPase-activating protein of 190 kDa),developmental processes
+CGI_10028030,Q9VX32,7e-163,Rho GTPase-activating protein 190 (Rho GTPase-activating protein of 190 kDa),signal transduction
+CGI_10028314,Q8AYS7,6e-94,Centromere protein I (CENP-I),cell organization and biogenesis
+CGI_10028421,Q8BFR4,4e-159,N-acetylglucosamine-6-sulfatase (EC 3.1.6.14) (Glucosamine-6-sulfatase) (G6S),other metabolic processes
+CGI_10028697,Q53HV7,6e-75,Single-strand selective monofunctional uracil DNA glycosylase (EC 3.2.2.-),DNA metabolism
+CGI_10028697,Q53HV7,6e-75,Single-strand selective monofunctional uracil DNA glycosylase (EC 3.2.2.-),stress response
+CGI_10028915,P42859,0,Huntingtin (Huntington disease protein homolog) (HD protein homolog),transport
+CGI_10028915,P42859,0,Huntingtin (Huntington disease protein homolog) (HD protein homolog),cell-cell signaling
+CGI_10028915,P42859,0,Huntingtin (Huntington disease protein homolog) (HD protein homolog),other metabolic processes
+CGI_10028915,P42859,0,Huntingtin (Huntington disease protein homolog) (HD protein homolog),protein metabolism
+CGI_10028915,P42859,0,Huntingtin (Huntington disease protein homolog) (HD protein homolog),cell cycle and proliferation
+CGI_10028915,P42859,0,Huntingtin (Huntington disease protein homolog) (HD protein homolog),cell organization and biogenesis
+CGI_10028915,P42859,0,Huntingtin (Huntington disease protein homolog) (HD protein homolog),death
+CGI_10028915,P42859,0,Huntingtin (Huntington disease protein homolog) (HD protein homolog),developmental processes
+CGI_10028915,P42859,0,Huntingtin (Huntington disease protein homolog) (HD protein homolog),signal transduction

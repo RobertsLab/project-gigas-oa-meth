@@ -29,7 +29,7 @@ require("treemap")
 sessionInfo() #Obtain session information
 ```
 
-# Create biological process plots
+# Initial Biological Process information
 
 I obtained biological process GOSlim terms for DML-Gene overlaps. I'm going to try plotting them in different ways to identify some trends in genes with DML.
 
@@ -120,7 +120,27 @@ legend("bottomleft",
 #dev.off()
 ```
 
+
+
 **CODE BELOW THIS HAS NOT BEEN UPDATED TO REFLECT LATEST DATASET. DO NOT USE.**
+
+## Match gene products to GOSlim categories
+
+```{r}
+DMLGeneAnnotations <- read.delim("../2019-09-15-DML-Analysis/DML-Gene-annot.tab", sep = "\t", header = FALSE) #Import gene annotation information
+DMLGeneAnnotations <- DMLGeneAnnotations[,c(1:3, 6)] #Only keep the indicated columns
+colnames(DMLGeneAnnotations) <- c("Uniprot", "geneID", "evalue", "Product") #Add column names
+head(DMLGeneAnnotations) #Confirm import
+```
+
+```{r}
+BPGOSlimDMLGeneAnnotations <- unique(merge(x = DMLGeneAnnotations, y = BPGOSlim, by = "geneID")) #Merge annotations with GOSlim terms by gene ID
+head(BPGOSlimDMLGeneAnnotations) #Confirm merge
+```
+
+```{r}
+write.csv(BPGOSlimDMLGeneAnnotations, "2019-10-31-BP-GOSlim-DML-Gene-Annotations.csv", quote = FALSE, row.names = FALSE) #Save file
+```
 
 # Create master list
 
