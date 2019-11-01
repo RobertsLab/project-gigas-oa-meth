@@ -23,7 +23,6 @@ install.packages("treemap")
 require("treemap")
 ```
 
-
 # Obtain session information
 
 ```{r}
@@ -120,8 +119,6 @@ legend("bottomleft",
 
 #dev.off()
 ```
-
-## Tree map
 
 **CODE BELOW THIS HAS NOT BEEN UPDATED TO REFLECT LATEST DATASET. DO NOT USE.**
 

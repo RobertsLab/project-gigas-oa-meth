@@ -73,7 +73,7 @@ methylatedVersusDMLTest #The distribution of DML is significantly different from
 ## Create figures
 
 ```{r}
-plotColors <- rev(RColorBrewer::brewer.pal(5, "Purples")) #Create a color palette for the barplots. Use 5 purple shades from RColorBrewer. Reverse the order so the darkest shade is used first.
+plotColors <- rev(RColorBrewer::brewer.pal(5, "RdPu")) #Create a color palette for the barplots. Use 5 purple shades from RColorBrewer. Reverse the order so the darkest shade is used first.
 barplot(t(t(proportionData)),
         col = dichromat(plotColors)) #Check that plot colors will be easy to interpret for those with color blindness
 ```
