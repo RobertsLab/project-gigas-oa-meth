@@ -24,16 +24,15 @@
 
 source /gscratch/srlab/programs/scripts/paths.sh
 
-find /gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Trimmed-Files/*_R1_001.fastq.gz \
-| xargs basename -s _R1_001.fastq.gz | xargs -I{} /gscratch/srlab/programs/Bismark-0.21.0/bismark \
+/gscratch/srlab/programs/Bismark-0.21.0/bismark \
 --path_to_bowtie /gscratch/srlab/programs/bowtie2-2.3.4.1-linux-x86_64/ \
 --samtools_path /gscratch/srlab/programs/samtools-1.9/ \
 --non_directional \
 -p 4 \
 -score_min L,0,-0.9 \
 --genome /gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Bismark-Inputs/Crassostrea_gigas.oyster_v9.dna_sm.toplevel/ \
--1 /gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Trimmed-Files/{}_R1_001.fastq.gz \
--2 /gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Trimmed-Files/{}_R2_001.fastq.gz
+-1 /gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Trimmed-Files/YRVL_R1_001.fastq.gz \
+-2 /gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Trimmed-Files/YRVL_R2_001.fastq.gz
 
 #Deduplication
 
@@ -41,7 +40,13 @@ find /gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Trimmed-Files/*_R1_00
 --samtools_path /gscratch/srlab/programs/samtools-1.9/ \
 -p \
 --bam \
-*_R1_001_bismark_bt2_pe.bam
+YRVA_R1_001_bismark_bt2_pe.bam
+
+/gscratch/srlab/programs/Bismark-0.21.0/deduplicate_bismark \
+--samtools_path /gscratch/srlab/programs/samtools-1.9/ \
+-p \
+--bam \
+YRVL_R1_001_bismark_bt2_pe.bam
 
 #Sorting for Downstream Applications
 
@@ -73,4 +78,6 @@ index {}_dedup.sorted.bam
 
 #Summary Report
 
-/gscratch/srlab/programs/Bismark-0.21.0/bismark2summary
+/gscratch/srlab/programs/Bismark-0.21.0/bismark2summary \
+YRVA_R1_001_bismark_bt2_pe.bam \
+YRVL_R1_001_bismark_bt2_pe.bam
