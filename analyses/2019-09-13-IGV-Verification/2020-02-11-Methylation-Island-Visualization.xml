@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<Session genome="https://gannet.fish.washington.edu/spartina/2019-09-03-project-gigas-oa-meth/analyses/2019-09-13-IGV-Verification/Crassostrea_gigas.oyster_v9.dna_sm.toplevel.fa" hasGeneTrack="false" hasSequenceTrack="true" locus="All" nextAutoscaleGroup="3" path="/Users/yaamini/Documents/project-gigas-oa-meth/analyses/2019-09-13-IGV-Verification/2019-09-13-DML-Visualization.xml" version="8">
+<Session genome="https://gannet.fish.washington.edu/spartina/2019-09-03-project-gigas-oa-meth/analyses/2019-08-30-Bismark-Parameter-Testing/Crassostrea_gigas.oyster_v9.dna_sm.toplevel/Crassostrea_gigas.oyster_v9.dna_sm.toplevel.fa" hasGeneTrack="false" hasSequenceTrack="true" locus="All" nextAutoscaleGroup="3" path="/Users/yaamini/Documents/project-gigas-oa-meth/analyses/2019-09-13-IGV-Verification/2019-09-13-DML-Visualization.xml" version="8">
     <Resources>
         <Resource path="https://gannet.fish.washington.edu/spartina/2019-09-03-project-gigas-oa-meth/analyses/2019-09-13-IGV-Verification/YRVA_R1_001_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
         <Resource path="https://gannet.fish.washington.edu/spartina/2019-09-03-project-gigas-oa-meth/analyses/2019-09-13-IGV-Verification/YRVL_R1_001_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph"/>
