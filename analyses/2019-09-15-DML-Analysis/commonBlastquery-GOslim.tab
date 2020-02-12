@@ -1,0 +1,622 @@
+CGI_10007347	ER/Golgi	C
+CGI_10016735	RNA metabolism	P
+CGI_10020993	RNA metabolism	P
+CGI_10004647	DNA metabolism	P
+CGI_10004647	cell organization and biogenesis	P
+CGI_10013103	DNA metabolism	P
+CGI_10013103	stress response	P
+CGI_10025557	other cellular component	C
+CGI_10004647	other cellular component	C
+CGI_10004647	nucleus	C
+CGI_10003741	other cytoplasmic organelle	C
+CGI_10003741	other membranes	C
+CGI_10016028	cytoskeleton	C
+CGI_10016735	other cellular component	C
+CGI_10020993	other cellular component	C
+CGI_10008103	developmental processes	P
+CGI_10028528	other cellular component	C
+CGI_10016735	developmental processes	P
+CGI_10020993	developmental processes	P
+CGI_10008103	nucleic acid binding activity	F
+CGI_10015140	nucleic acid binding activity	F
+CGI_10025557	nucleic acid binding activity	F
+CGI_10013103	other molecular function	F
+CGI_10013103	nucleic acid binding activity	F
+CGI_10015140	nucleic acid binding activity	F
+CGI_10015140	transcription regulatory activity	F
+CGI_10015140	nucleic acid binding activity	F
+CGI_10015140	transcription regulatory activity	F
+CGI_10015140	nucleic acid binding activity	F
+CGI_10015140	transcription regulatory activity	F
+CGI_10015140	nucleic acid binding activity	F
+CGI_10015140	transcription regulatory activity	F
+CGI_10015140	nucleic acid binding activity	F
+CGI_10015140	transcription regulatory activity	F
+CGI_10002034	nucleic acid binding activity	F
+CGI_10016735	nucleic acid binding activity	F
+CGI_10019057	nucleic acid binding activity	F
+CGI_10020993	nucleic acid binding activity	F
+CGI_10002034	other molecular function	F
+CGI_10019057	other molecular function	F
+CGI_10012096	cytoskeletal activity	F
+CGI_10014961	cytoskeletal activity	F
+CGI_10013103	other molecular function	F
+CGI_10028528	other molecular function	F
+CGI_10025557	other molecular function	F
+CGI_10007347	enzyme regulator activity	F
+CGI_10012616	transporter activity	F
+CGI_10019324	transporter activity	F
+CGI_10019325	transporter activity	F
+CGI_10025234	transporter activity	F
+CGI_10012096	other molecular function	F
+CGI_10012616	other molecular function	F
+CGI_10014961	other molecular function	F
+CGI_10019324	other molecular function	F
+CGI_10019325	other molecular function	F
+CGI_10025234	other molecular function	F
+CGI_10012096	other molecular function	F
+CGI_10013103	other molecular function	F
+CGI_10014961	other molecular function	F
+CGI_10016028	other molecular function	F
+CGI_10025557	other molecular function	F
+CGI_10003741	other molecular function	F
+CGI_10002034	non-structural extracellular	C
+CGI_10019057	non-structural extracellular	C
+CGI_10008103	nucleus	C
+CGI_10013103	nucleus	C
+CGI_10015140	nucleus	C
+CGI_10016028	nucleus	C
+CGI_10016735	nucleus	C
+CGI_10020687	nucleus	C
+CGI_10020993	nucleus	C
+CGI_10026576	nucleus	C
+CGI_10026576	nucleus	C
+CGI_10026576	other membranes	C
+CGI_10004647	nucleus	C
+CGI_10013103	nucleus	C
+CGI_10013103	other cellular component	C
+CGI_10013103	other cellular component	C
+CGI_10016028	other cellular component	C
+CGI_10016735	other cellular component	C
+CGI_10020993	other cellular component	C
+CGI_10028528	mitochondrion	C
+CGI_10003741	other cytoplasmic organelle	C
+CGI_10003741	other cytoplasmic organelle	C
+CGI_10002034	ER/Golgi	C
+CGI_10019057	ER/Golgi	C
+CGI_10002034	ER/Golgi	C
+CGI_10019057	ER/Golgi	C
+CGI_10016028	cytoskeleton	C
+CGI_10016028	cytoskeleton	C
+CGI_10003741	cytosol	C
+CGI_10012096	cytosol	C
+CGI_10014961	cytosol	C
+CGI_10016735	cytosol	C
+CGI_10020993	cytosol	C
+CGI_10016735	other cellular component	C
+CGI_10020993	other cellular component	C
+CGI_10007347	cytoskeleton	C
+CGI_10012096	cytoskeleton	C
+CGI_10014961	cytoskeleton	C
+CGI_10012096	cytoskeleton	C
+CGI_10014961	cytoskeleton	C
+CGI_10016028	cytoskeleton	C
+CGI_10007347	other membranes	C
+CGI_10007347	plasma membrane	C
+CGI_10007347	other membranes	C
+CGI_10007347	plasma membrane	C
+CGI_10012616	other membranes	C
+CGI_10012616	plasma membrane	C
+CGI_10012616	other membranes	C
+CGI_10012616	plasma membrane	C
+CGI_10012616	other membranes	C
+CGI_10012616	plasma membrane	C
+CGI_10012616	other membranes	C
+CGI_10012616	plasma membrane	C
+CGI_10012616	other membranes	C
+CGI_10012616	plasma membrane	C
+CGI_10012616	other membranes	C
+CGI_10012616	plasma membrane	C
+CGI_10012616	other membranes	C
+CGI_10012616	plasma membrane	C
+CGI_10012616	other membranes	C
+CGI_10012616	plasma membrane	C
+CGI_10019324	other membranes	C
+CGI_10019324	plasma membrane	C
+CGI_10019324	other membranes	C
+CGI_10019324	plasma membrane	C
+CGI_10019324	other membranes	C
+CGI_10019324	plasma membrane	C
+CGI_10019324	other membranes	C
+CGI_10019324	plasma membrane	C
+CGI_10019324	other membranes	C
+CGI_10019324	plasma membrane	C
+CGI_10019324	other membranes	C
+CGI_10019324	plasma membrane	C
+CGI_10019324	other membranes	C
+CGI_10019324	plasma membrane	C
+CGI_10019324	other membranes	C
+CGI_10019324	plasma membrane	C
+CGI_10019325	other membranes	C
+CGI_10019325	plasma membrane	C
+CGI_10019325	other membranes	C
+CGI_10019325	plasma membrane	C
+CGI_10019325	other membranes	C
+CGI_10019325	plasma membrane	C
+CGI_10019325	other membranes	C
+CGI_10019325	plasma membrane	C
+CGI_10019325	other membranes	C
+CGI_10019325	plasma membrane	C
+CGI_10019325	other membranes	C
+CGI_10019325	plasma membrane	C
+CGI_10019325	other membranes	C
+CGI_10019325	plasma membrane	C
+CGI_10019325	other membranes	C
+CGI_10019325	plasma membrane	C
+CGI_10025234	other membranes	C
+CGI_10025234	plasma membrane	C
+CGI_10025234	other membranes	C
+CGI_10025234	plasma membrane	C
+CGI_10025234	other membranes	C
+CGI_10025234	plasma membrane	C
+CGI_10025234	other membranes	C
+CGI_10025234	plasma membrane	C
+CGI_10025234	other membranes	C
+CGI_10025234	plasma membrane	C
+CGI_10025234	other membranes	C
+CGI_10025234	plasma membrane	C
+CGI_10025234	other membranes	C
+CGI_10025234	plasma membrane	C
+CGI_10025234	other membranes	C
+CGI_10025234	plasma membrane	C
+CGI_10012096	other cellular component	C
+CGI_10014961	other cellular component	C
+CGI_10010890	other metabolic processes	P
+CGI_10021542	other metabolic processes	P
+CGI_10013103	DNA metabolism	P
+CGI_10013103	DNA metabolism	P
+CGI_10013103	stress response	P
+CGI_10013103	DNA metabolism	P
+CGI_10013103	stress response	P
+CGI_10013103	DNA metabolism	P
+CGI_10013103	stress response	P
+CGI_10008103	RNA metabolism	P
+CGI_10008103	RNA metabolism	P
+CGI_10015140	RNA metabolism	P
+CGI_10020687	RNA metabolism	P
+CGI_10016735	transport	P
+CGI_10020993	transport	P
+CGI_10026576	transport	P
+CGI_10026576	transport	P
+CGI_10002034	protein metabolism	P
+CGI_10019057	protein metabolism	P
+CGI_10012616	transport	P
+CGI_10019324	transport	P
+CGI_10019325	transport	P
+CGI_10025234	transport	P
+CGI_10007347	transport	P
+CGI_10007347	transport	P
+CGI_10026576	transport	P
+CGI_10012616	other biological processes	P
+CGI_10019324	other biological processes	P
+CGI_10019325	other biological processes	P
+CGI_10025234	other biological processes	P
+CGI_10013103	stress response	P
+CGI_10004647	DNA metabolism	P
+CGI_10004647	cell organization and biogenesis	P
+CGI_10020687	cell organization and biogenesis	P
+CGI_10003741	cell cycle and proliferation	P
+CGI_10016028	cell cycle and proliferation	P
+CGI_10025557	cell cycle and proliferation	P
+CGI_10026576	cell cycle and proliferation	P
+CGI_10026576	cell organization and biogenesis	P
+CGI_10012616	developmental processes	P
+CGI_10019324	developmental processes	P
+CGI_10019325	developmental processes	P
+CGI_10025234	developmental processes	P
+CGI_10007347	cell organization and biogenesis	P
+CGI_10007347	developmental processes	P
+CGI_10007347	cell organization and biogenesis	P
+CGI_10007347	developmental processes	P
+CGI_10008103	other biological processes	P
+CGI_10016028	cytoskeletal activity	F
+CGI_10008103	other molecular function	F
+CGI_10003741	transport	P
+CGI_10020687	cell organization and biogenesis	P
+CGI_10016028	other molecular function	F
+CGI_10012096	cytoskeletal activity	F
+CGI_10014961	cytoskeletal activity	F
+CGI_10002034	transport	P
+CGI_10019057	transport	P
+CGI_10002034	other cellular component	C
+CGI_10019057	other cellular component	C
+CGI_10008103	other biological processes	P
+CGI_10004647	enzyme regulator activity	F
+CGI_10026576	transport	P
+CGI_10003741	transport	P
+CGI_10002034	other molecular function	F
+CGI_10019057	other molecular function	F
+CGI_10026576	other membranes	C
+CGI_10012616	other membranes	C
+CGI_10019324	other membranes	C
+CGI_10019325	other membranes	C
+CGI_10025234	other membranes	C
+CGI_10026576	other biological processes	P
+CGI_10004647	DNA metabolism	P
+CGI_10004647	cell organization and biogenesis	P
+CGI_10013103	developmental processes	P
+CGI_10008103	other metabolic processes	P
+CGI_10025557	protein metabolism	P
+CGI_10010890	other molecular function	F
+CGI_10021542	other molecular function	F
+CGI_10026576	protein metabolism	P
+CGI_10026576	other molecular function	F
+CGI_10007347	enzyme regulator activity	F
+CGI_10007347	transport	P
+CGI_10026576	RNA metabolism	P
+CGI_10007347	other cellular component	C
+CGI_10003741	other cellular component	C
+CGI_10016028	other cellular component	C
+CGI_10008103	other biological processes	P
+CGI_10016735	developmental processes	P
+CGI_10020993	developmental processes	P
+CGI_10028528	other cellular component	C
+CGI_10007347	other cytoplasmic organelle	C
+CGI_10007347	other membranes	C
+CGI_10007347	other cytoplasmic organelle	C
+CGI_10007347	other membranes	C
+CGI_10003741	other cytoplasmic organelle	C
+CGI_10003741	other membranes	C
+CGI_10026576	nucleus	C
+CGI_10026576	other membranes	C
+CGI_10004647	DNA metabolism	P
+CGI_10004647	cell organization and biogenesis	P
+CGI_10003741	other biological processes	P
+CGI_10007347	ER/Golgi	C
+CGI_10007347	other membranes	C
+CGI_10007347	ER/Golgi	C
+CGI_10007347	other membranes	C
+CGI_10012616	ER/Golgi	C
+CGI_10012616	other membranes	C
+CGI_10012616	ER/Golgi	C
+CGI_10012616	other membranes	C
+CGI_10012616	ER/Golgi	C
+CGI_10012616	other membranes	C
+CGI_10012616	ER/Golgi	C
+CGI_10012616	other membranes	C
+CGI_10012616	ER/Golgi	C
+CGI_10012616	other membranes	C
+CGI_10012616	ER/Golgi	C
+CGI_10012616	other membranes	C
+CGI_10012616	ER/Golgi	C
+CGI_10012616	other membranes	C
+CGI_10012616	ER/Golgi	C
+CGI_10012616	other membranes	C
+CGI_10019324	ER/Golgi	C
+CGI_10019324	other membranes	C
+CGI_10019324	ER/Golgi	C
+CGI_10019324	other membranes	C
+CGI_10019324	ER/Golgi	C
+CGI_10019324	other membranes	C
+CGI_10019324	ER/Golgi	C
+CGI_10019324	other membranes	C
+CGI_10019324	ER/Golgi	C
+CGI_10019324	other membranes	C
+CGI_10019324	ER/Golgi	C
+CGI_10019324	other membranes	C
+CGI_10019324	ER/Golgi	C
+CGI_10019324	other membranes	C
+CGI_10019324	ER/Golgi	C
+CGI_10019324	other membranes	C
+CGI_10019325	ER/Golgi	C
+CGI_10019325	other membranes	C
+CGI_10019325	ER/Golgi	C
+CGI_10019325	other membranes	C
+CGI_10019325	ER/Golgi	C
+CGI_10019325	other membranes	C
+CGI_10019325	ER/Golgi	C
+CGI_10019325	other membranes	C
+CGI_10019325	ER/Golgi	C
+CGI_10019325	other membranes	C
+CGI_10019325	ER/Golgi	C
+CGI_10019325	other membranes	C
+CGI_10019325	ER/Golgi	C
+CGI_10019325	other membranes	C
+CGI_10019325	ER/Golgi	C
+CGI_10019325	other membranes	C
+CGI_10025234	ER/Golgi	C
+CGI_10025234	other membranes	C
+CGI_10025234	ER/Golgi	C
+CGI_10025234	other membranes	C
+CGI_10025234	ER/Golgi	C
+CGI_10025234	other membranes	C
+CGI_10025234	ER/Golgi	C
+CGI_10025234	other membranes	C
+CGI_10025234	ER/Golgi	C
+CGI_10025234	other membranes	C
+CGI_10025234	ER/Golgi	C
+CGI_10025234	other membranes	C
+CGI_10025234	ER/Golgi	C
+CGI_10025234	other membranes	C
+CGI_10025234	ER/Golgi	C
+CGI_10025234	other membranes	C
+CGI_10026576	nucleus	C
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10002034	stress response	P
+CGI_10019057	stress response	P
+CGI_10008103	nucleus	C
+CGI_10016735	nucleus	C
+CGI_10020993	nucleus	C
+CGI_10012616	cell cycle and proliferation	P
+CGI_10012616	developmental processes	P
+CGI_10012616	cell cycle and proliferation	P
+CGI_10012616	developmental processes	P
+CGI_10012616	cell cycle and proliferation	P
+CGI_10012616	developmental processes	P
+CGI_10012616	cell cycle and proliferation	P
+CGI_10012616	developmental processes	P
+CGI_10012616	cell cycle and proliferation	P
+CGI_10012616	developmental processes	P
+CGI_10012616	cell cycle and proliferation	P
+CGI_10012616	developmental processes	P
+CGI_10012616	cell cycle and proliferation	P
+CGI_10012616	developmental processes	P
+CGI_10012616	cell cycle and proliferation	P
+CGI_10012616	developmental processes	P
+CGI_10019324	cell cycle and proliferation	P
+CGI_10019324	developmental processes	P
+CGI_10019324	cell cycle and proliferation	P
+CGI_10019324	developmental processes	P
+CGI_10019324	cell cycle and proliferation	P
+CGI_10019324	developmental processes	P
+CGI_10019324	cell cycle and proliferation	P
+CGI_10019324	developmental processes	P
+CGI_10019324	cell cycle and proliferation	P
+CGI_10019324	developmental processes	P
+CGI_10019324	cell cycle and proliferation	P
+CGI_10019324	developmental processes	P
+CGI_10019324	cell cycle and proliferation	P
+CGI_10019324	developmental processes	P
+CGI_10019324	cell cycle and proliferation	P
+CGI_10019324	developmental processes	P
+CGI_10019325	cell cycle and proliferation	P
+CGI_10019325	developmental processes	P
+CGI_10019325	cell cycle and proliferation	P
+CGI_10019325	developmental processes	P
+CGI_10019325	cell cycle and proliferation	P
+CGI_10019325	developmental processes	P
+CGI_10019325	cell cycle and proliferation	P
+CGI_10019325	developmental processes	P
+CGI_10019325	cell cycle and proliferation	P
+CGI_10019325	developmental processes	P
+CGI_10019325	cell cycle and proliferation	P
+CGI_10019325	developmental processes	P
+CGI_10019325	cell cycle and proliferation	P
+CGI_10019325	developmental processes	P
+CGI_10019325	cell cycle and proliferation	P
+CGI_10019325	developmental processes	P
+CGI_10025234	cell cycle and proliferation	P
+CGI_10025234	developmental processes	P
+CGI_10025234	cell cycle and proliferation	P
+CGI_10025234	developmental processes	P
+CGI_10025234	cell cycle and proliferation	P
+CGI_10025234	developmental processes	P
+CGI_10025234	cell cycle and proliferation	P
+CGI_10025234	developmental processes	P
+CGI_10025234	cell cycle and proliferation	P
+CGI_10025234	developmental processes	P
+CGI_10025234	cell cycle and proliferation	P
+CGI_10025234	developmental processes	P
+CGI_10025234	cell cycle and proliferation	P
+CGI_10025234	developmental processes	P
+CGI_10025234	cell cycle and proliferation	P
+CGI_10025234	developmental processes	P
+CGI_10016735	nucleic acid binding activity	F
+CGI_10020993	nucleic acid binding activity	F
+CGI_10002034	other cellular component	C
+CGI_10019057	other cellular component	C
+CGI_10008103	other molecular function	F
+CGI_10004647	nucleic acid binding activity	F
+CGI_10013103	other molecular function	F
+CGI_10002034	other biological processes	P
+CGI_10019057	other biological processes	P
+CGI_10028528	other biological processes	P
+CGI_10012096	other molecular function	F
+CGI_10014961	other molecular function	F
+CGI_10012096	other molecular function	F
+CGI_10014961	other molecular function	F
+CGI_10015140	other molecular function	F
+CGI_10016735	other cellular component	C
+CGI_10020993	other cellular component	C
+CGI_10028528	other molecular function	F
+CGI_10007347	transport	P
+CGI_10016028	other biological processes	P
+CGI_10003741	other biological processes	P
+CGI_10013103	cell organization and biogenesis	P
+CGI_10026576	cell organization and biogenesis	P
+CGI_10003741	other biological processes	P
+CGI_10016028	other biological processes	P
+CGI_10025557	other biological processes	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10008103	cell organization and biogenesis	P
+CGI_10008103	protein metabolism	P
+CGI_10013103	other molecular function	F
+CGI_10012096	other molecular function	F
+CGI_10014961	other molecular function	F
+CGI_10004647	other biological processes	P
+CGI_10012616	other biological processes	P
+CGI_10019324	other biological processes	P
+CGI_10019325	other biological processes	P
+CGI_10025234	other biological processes	P
+CGI_10012096	other biological processes	P
+CGI_10014961	other biological processes	P

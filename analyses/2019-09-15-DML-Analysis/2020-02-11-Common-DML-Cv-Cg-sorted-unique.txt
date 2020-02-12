@@ -1,81 +1,81 @@
-A2AHJ4	XM_022436597.1	bromodomain and WD repeat-containing protein 3-like	CGI_10020687	Bromodomain and WD repeat-containing protein 3
-A2AHJ4	XM_022436599.1	bromodomain and WD repeat-containing protein 3-like	CGI_10020687	Bromodomain and WD repeat-containing protein 3
-A2AHJ4	XM_022436597.1	bromodomain and WD repeat-containing protein 3-like	CGI_10020687	Bromodomain and WD repeat-containing protein 3
-A2AHJ4	XM_022436599.1	bromodomain and WD repeat-containing protein 3-like	CGI_10020687	Bromodomain and WD repeat-containing protein 3
-A2BGR3	XM_022487559.1	DNA excision repair protein ERCC-6-like	CGI_10025557	DNA excision repair protein ERCC-6-like (EC 3.6.4.12) (ATP-dependent helicase ERCC6-like)
-A2BGR3	XM_022487560.1	DNA excision repair protein ERCC-6-like	CGI_10025557	DNA excision repair protein ERCC-6-like (EC 3.6.4.12) (ATP-dependent helicase ERCC6-like)
-A2BGR3	XM_022487561.1	DNA excision repair protein ERCC-6-like	CGI_10025557	DNA excision repair protein ERCC-6-like (EC 3.6.4.12) (ATP-dependent helicase ERCC6-like)
-A2BGR3	XM_022487562.1	DNA excision repair protein ERCC-6-like	CGI_10025557	DNA excision repair protein ERCC-6-like (EC 3.6.4.12) (ATP-dependent helicase ERCC6-like)
-A2BGR3	XM_022487563.1	DNA excision repair protein ERCC-6-like	CGI_10025557	DNA excision repair protein ERCC-6-like (EC 3.6.4.12) (ATP-dependent helicase ERCC6-like)
-A2BGR3	XM_022487561.1	DNA excision repair protein ERCC-6-like	CGI_10025557	DNA excision repair protein ERCC-6-like (EC 3.6.4.12) (ATP-dependent helicase ERCC6-like)
-A2BGR3	XM_022487562.1	DNA excision repair protein ERCC-6-like	CGI_10025557	DNA excision repair protein ERCC-6-like (EC 3.6.4.12) (ATP-dependent helicase ERCC6-like)
-A2BGR3	XM_022487559.1	DNA excision repair protein ERCC-6-like	CGI_10025557	DNA excision repair protein ERCC-6-like (EC 3.6.4.12) (ATP-dependent helicase ERCC6-like)
-A2BGR3	XM_022487563.1	DNA excision repair protein ERCC-6-like	CGI_10025557	DNA excision repair protein ERCC-6-like (EC 3.6.4.12) (ATP-dependent helicase ERCC6-like)
-A2BGR3	XM_022487560.1	DNA excision repair protein ERCC-6-like	CGI_10025557	DNA excision repair protein ERCC-6-like (EC 3.6.4.12) (ATP-dependent helicase ERCC6-like)
-A2BGR3	XM_022487561.1	DNA excision repair protein ERCC-6-like	CGI_10025557	DNA excision repair protein ERCC-6-like (EC 3.6.4.12) (ATP-dependent helicase ERCC6-like)
-A2BGR3	XM_022487563.1	DNA excision repair protein ERCC-6-like	CGI_10025557	DNA excision repair protein ERCC-6-like (EC 3.6.4.12) (ATP-dependent helicase ERCC6-like)
-A2BGR3	XM_022487559.1	DNA excision repair protein ERCC-6-like	CGI_10025557	DNA excision repair protein ERCC-6-like (EC 3.6.4.12) (ATP-dependent helicase ERCC6-like)
-A2BGR3	XM_022487560.1	DNA excision repair protein ERCC-6-like	CGI_10025557	DNA excision repair protein ERCC-6-like (EC 3.6.4.12) (ATP-dependent helicase ERCC6-like)
-A2BGR3	XM_022487562.1	DNA excision repair protein ERCC-6-like	CGI_10025557	DNA excision repair protein ERCC-6-like (EC 3.6.4.12) (ATP-dependent helicase ERCC6-like)
-O08550	XM_022471648.1	uncharacterized LOC111126788	CGI_10008103	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7)
-O08550	XM_022471650.1	uncharacterized LOC111126788	CGI_10008103	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7)
-O08550	XM_022471651.1	uncharacterized LOC111126788	CGI_10008103	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7)
-O08550	XM_022471652.1	uncharacterized LOC111126788	CGI_10008103	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7)
-O08550	XM_022471651.1	uncharacterized LOC111126788	CGI_10008103	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7)
-O08550	XM_022471652.1	uncharacterized LOC111126788	CGI_10008103	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7)
-O08550	XM_022471651.1	uncharacterized LOC111126788	CGI_10008103	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7)
-O08550	XM_022471652.1	uncharacterized LOC111126788	CGI_10008103	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7)
-O08550	XM_022471650.1	uncharacterized LOC111126788	CGI_10008103	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7)
-O08550	XM_022471651.1	uncharacterized LOC111126788	CGI_10008103	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7)
-O08550	XM_022471652.1	uncharacterized LOC111126788	CGI_10008103	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7)
-O08550	XM_022471651.1	uncharacterized LOC111126788	CGI_10008103	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7)
-O08550	XM_022471652.1	uncharacterized LOC111126788	CGI_10008103	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7)
-O08550	XM_022471651.1	uncharacterized LOC111126788	CGI_10008103	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7)
-O08550	XM_022471652.1	uncharacterized LOC111126788	CGI_10008103	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7)
-O08550	XM_022471651.1	uncharacterized LOC111126788	CGI_10008103	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7)
-O08550	XM_022471652.1	uncharacterized LOC111126788	CGI_10008103	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7)
-O08550	XM_022471651.1	uncharacterized LOC111126788	CGI_10008103	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7)
-O08550	XM_022471652.1	uncharacterized LOC111126788	CGI_10008103	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7)
-O08550	XM_022471651.1	uncharacterized LOC111126788	CGI_10008103	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7)
-O08550	XM_022471652.1	uncharacterized LOC111126788	CGI_10008103	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7)
-O08550	XM_022471648.1	uncharacterized LOC111126788	CGI_10008103	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7)
-O08550	XM_022471650.1	uncharacterized LOC111126788	CGI_10008103	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7)
-O08550	XM_022471648.1	uncharacterized LOC111126788	CGI_10008103	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7)
-O08550	XM_022471650.1	uncharacterized LOC111126788	CGI_10008103	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7)
-O08550	XM_022471648.1	uncharacterized LOC111126788	CGI_10008103	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7)
-O08550	XM_022471650.1	uncharacterized LOC111126788	CGI_10008103	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7)
-O08550	XM_022471648.1	uncharacterized LOC111126788	CGI_10008103	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7)
-O08550	XM_022471650.1	uncharacterized LOC111126788	CGI_10008103	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransferase 2B) (EC 2.1.1.43) (Myeloid/lymphoid or mixed-lineage leukemia protein 4 homolog) (Trithorax homolog 2) (WW domain-binding protein 7) (WBP-7)
-O61577	XM_022437425.1	titin homolog	CGI_10016028	Katanin p60 ATPase-containing subunit A1 (Katanin p60 subunit A1) (EC 3.6.4.3) (p60 katanin)
-O75417	XM_022432831.1	DNA polymerase theta-like	CGI_10013103	DNA polymerase theta (EC 2.7.7.7) (DNA polymerase eta)
-P09623	XM_022444177.1	dihydrolipoyl dehydrogenase	CGI_10028528	Dihydrolipoyl dehydrogenase, mitochondrial (EC 1.8.1.4) (Dihydrolipoamide dehydrogenase)
-P10076	XM_022460297.1	zinc finger protein 91-like	CGI_10015140	Zinc finger protein 26 (Zfp-26) (Protein mKR3)
-P10076	XM_022477202.1	zinc finger and BTB domain-containing protein 17-like	CGI_10015140	Zinc finger protein 26 (Zfp-26) (Protein mKR3)
-P10076	XM_022460297.1	zinc finger protein 91-like	CGI_10015140	Zinc finger protein 26 (Zfp-26) (Protein mKR3)
-P10076	XM_022477202.1	zinc finger and BTB domain-containing protein 17-like	CGI_10015140	Zinc finger protein 26 (Zfp-26) (Protein mKR3)
-P10076	XM_022460297.1	zinc finger protein 91-like	CGI_10015140	Zinc finger protein 26 (Zfp-26) (Protein mKR3)
-P13667	XM_022454164.1	protein disulfide-isomerase A4-like	CGI_10019057	Protein disulfide-isomerase A4 (EC 5.3.4.1) (Endoplasmic reticulum resident protein 70) (ER protein 70) (ERp70) (Endoplasmic reticulum resident protein 72) (ER protein 72) (ERp-72) (ERp72)
-P38942	XM_022489969.1	4-hydroxybutyrate coenzyme A transferase-like	CGI_10010890	4-hydroxybutyrate coenzyme A transferase (EC 2.8.3.-)
-P62597	XM_022482270.1	protection of telomeres protein 1-like	CGI_10004647	Protection of telomeres protein 1 (cPot1) (POT1-like telomere end-binding protein)
-Q24498	XM_022474165.1	ryanodine receptor-like	CGI_10025234	Ryanodine receptor (Ryanodine receptor 44F)
-Q24498	XM_022474166.1	ryanodine receptor-like	CGI_10025234	Ryanodine receptor (Ryanodine receptor 44F)
-Q24498	XM_022474165.1	ryanodine receptor-like	CGI_10025234	Ryanodine receptor (Ryanodine receptor 44F)
-Q24498	XM_022474166.1	ryanodine receptor-like	CGI_10025234	Ryanodine receptor (Ryanodine receptor 44F)
-Q24498	XM_022474165.1	ryanodine receptor-like	CGI_10025234	Ryanodine receptor (Ryanodine receptor 44F)
-Q24498	XM_022474166.1	ryanodine receptor-like	CGI_10025234	Ryanodine receptor (Ryanodine receptor 44F)
-Q24498	XM_022474165.1	ryanodine receptor-like	CGI_10025234	Ryanodine receptor (Ryanodine receptor 44F)
-Q24498	XM_022474166.1	ryanodine receptor-like	CGI_10025234	Ryanodine receptor (Ryanodine receptor 44F)
-Q8CGS4	XM_022434917.1	charged multivesicular body protein 3-like	CGI_10003741	Charged multivesicular body protein 3 (Chromatin-modifying protein 3) (Vacuolar protein sorting-associated protein 24) (rVps24p)
-Q8K4K5	XM_022461271.1	lethal(2) giant larvae protein homolog 1-like	CGI_10007347	Lethal(2) giant larvae protein homolog 1 (LLGL) (Rgl-1)
-Q8K4K5	XM_022461273.1	lethal(2) giant larvae protein homolog 1-like	CGI_10007347	Lethal(2) giant larvae protein homolog 1 (LLGL) (Rgl-1)
-Q8WXX0	XM_022440199.1	dynein heavy chain 12	CGI_10012096	Dynein heavy chain 7, axonemal (Axonemal beta dynein heavy chain 7) (Ciliary dynein heavy chain 7) (Dynein heavy chain-like protein 2) (hDHC2)
-Q8WXX0	XM_022440201.1	dynein heavy chain 12	CGI_10012096	Dynein heavy chain 7, axonemal (Axonemal beta dynein heavy chain 7) (Ciliary dynein heavy chain 7) (Dynein heavy chain-like protein 2) (hDHC2)
-Q8WXX0	XM_022440202.1	dynein heavy chain 12	CGI_10012096	Dynein heavy chain 7, axonemal (Axonemal beta dynein heavy chain 7) (Ciliary dynein heavy chain 7) (Dynein heavy chain-like protein 2) (hDHC2)
-Q8WXX0	XM_022440203.1	dynein heavy chain 12	CGI_10012096	Dynein heavy chain 7, axonemal (Axonemal beta dynein heavy chain 7) (Ciliary dynein heavy chain 7) (Dynein heavy chain-like protein 2) (hDHC2)
-Q8WXX0	XM_022440204.1	dynein heavy chain 12	CGI_10012096	Dynein heavy chain 7, axonemal (Axonemal beta dynein heavy chain 7) (Ciliary dynein heavy chain 7) (Dynein heavy chain-like protein 2) (hDHC2)
-Q8WXX0	XM_022440205.1	dynein heavy chain 12	CGI_10012096	Dynein heavy chain 7, axonemal (Axonemal beta dynein heavy chain 7) (Ciliary dynein heavy chain 7) (Dynein heavy chain-like protein 2) (hDHC2)
-Q8WXX0	XM_022440206.1	dynein heavy chain 12	CGI_10012096	Dynein heavy chain 7, axonemal (Axonemal beta dynein heavy chain 7) (Ciliary dynein heavy chain 7) (Dynein heavy chain-like protein 2) (hDHC2)
-Q92621	XM_022434596.1	nuclear pore complex protein Nup205-like	CGI_10026576	Nuclear pore complex protein Nup205 (205 kDa nucleoporin) (Nucleoporin Nup205)
-Q9HAU5	XM_022443530.1	regulator of nonsense transcripts 2-like	CGI_10020993	Regulator of nonsense transcripts 2 (Nonsense mRNA reducing factor 2) (Up-frameshift suppressor 2 homolog) (hUpf2)
-Q9HAU5	XM_022443531.1	regulator of nonsense transcripts 2-like	CGI_10020993	Regulator of nonsense transcripts 2 (Nonsense mRNA reducing factor 2) (Up-frameshift suppressor 2 homolog) (hUpf2)
-Q9HAU5	XM_022443532.1	regulator of nonsense transcripts 2-like	CGI_10020993	Regulator of nonsense transcripts 2 (Nonsense mRNA reducing factor 2) (Up-frameshift suppressor 2 homolog) (hUpf2)
+A2AHJ4	XM_022436597.1	CGI_10020687
+A2AHJ4	XM_022436599.1	CGI_10020687
+A2AHJ4	XM_022436597.1	CGI_10020687
+A2AHJ4	XM_022436599.1	CGI_10020687
+A2BGR3	XM_022487559.1	CGI_10025557
+A2BGR3	XM_022487560.1	CGI_10025557
+A2BGR3	XM_022487561.1	CGI_10025557
+A2BGR3	XM_022487562.1	CGI_10025557
+A2BGR3	XM_022487563.1	CGI_10025557
+A2BGR3	XM_022487561.1	CGI_10025557
+A2BGR3	XM_022487562.1	CGI_10025557
+A2BGR3	XM_022487559.1	CGI_10025557
+A2BGR3	XM_022487563.1	CGI_10025557
+A2BGR3	XM_022487560.1	CGI_10025557
+A2BGR3	XM_022487561.1	CGI_10025557
+A2BGR3	XM_022487563.1	CGI_10025557
+A2BGR3	XM_022487559.1	CGI_10025557
+A2BGR3	XM_022487560.1	CGI_10025557
+A2BGR3	XM_022487562.1	CGI_10025557
+O08550	XM_022471648.1	CGI_10008103
+O08550	XM_022471650.1	CGI_10008103
+O08550	XM_022471651.1	CGI_10008103
+O08550	XM_022471652.1	CGI_10008103
+O08550	XM_022471651.1	CGI_10008103
+O08550	XM_022471652.1	CGI_10008103
+O08550	XM_022471651.1	CGI_10008103
+O08550	XM_022471652.1	CGI_10008103
+O08550	XM_022471650.1	CGI_10008103
+O08550	XM_022471651.1	CGI_10008103
+O08550	XM_022471652.1	CGI_10008103
+O08550	XM_022471651.1	CGI_10008103
+O08550	XM_022471652.1	CGI_10008103
+O08550	XM_022471651.1	CGI_10008103
+O08550	XM_022471652.1	CGI_10008103
+O08550	XM_022471651.1	CGI_10008103
+O08550	XM_022471652.1	CGI_10008103
+O08550	XM_022471651.1	CGI_10008103
+O08550	XM_022471652.1	CGI_10008103
+O08550	XM_022471651.1	CGI_10008103
+O08550	XM_022471652.1	CGI_10008103
+O08550	XM_022471648.1	CGI_10008103
+O08550	XM_022471650.1	CGI_10008103
+O08550	XM_022471648.1	CGI_10008103
+O08550	XM_022471650.1	CGI_10008103
+O08550	XM_022471648.1	CGI_10008103
+O08550	XM_022471650.1	CGI_10008103
+O08550	XM_022471648.1	CGI_10008103
+O08550	XM_022471650.1	CGI_10008103
+O61577	XM_022437425.1	CGI_10016028
+O75417	XM_022432831.1	CGI_10013103
+P09623	XM_022444177.1	CGI_10028528
+P10076	XM_022460297.1	CGI_10015140
+P10076	XM_022477202.1	CGI_10015140
+P10076	XM_022460297.1	CGI_10015140
+P10076	XM_022477202.1	CGI_10015140
+P10076	XM_022460297.1	CGI_10015140
+P13667	XM_022454164.1	CGI_10019057
+P38942	XM_022489969.1	CGI_10010890
+P62597	XM_022482270.1	CGI_10004647
+Q24498	XM_022474165.1	CGI_10025234
+Q24498	XM_022474166.1	CGI_10025234
+Q24498	XM_022474165.1	CGI_10025234
+Q24498	XM_022474166.1	CGI_10025234
+Q24498	XM_022474165.1	CGI_10025234
+Q24498	XM_022474166.1	CGI_10025234
+Q24498	XM_022474165.1	CGI_10025234
+Q24498	XM_022474166.1	CGI_10025234
+Q8CGS4	XM_022434917.1	CGI_10003741
+Q8K4K5	XM_022461271.1	CGI_10007347
+Q8K4K5	XM_022461273.1	CGI_10007347
+Q8WXX0	XM_022440199.1	CGI_10012096
+Q8WXX0	XM_022440201.1	CGI_10012096
+Q8WXX0	XM_022440202.1	CGI_10012096
+Q8WXX0	XM_022440203.1	CGI_10012096
+Q8WXX0	XM_022440204.1	CGI_10012096
+Q8WXX0	XM_022440205.1	CGI_10012096
+Q8WXX0	XM_022440206.1	CGI_10012096
+Q92621	XM_022434596.1	CGI_10026576
+Q9HAU5	XM_022443530.1	CGI_10020993
+Q9HAU5	XM_022443531.1	CGI_10020993
+Q9HAU5	XM_022443532.1	CGI_10020993
