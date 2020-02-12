@@ -34,6 +34,16 @@ source /gscratch/srlab/programs/scripts/paths.sh
 -1 /gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Trimmed-Files/YRVL_R1_001.fastq.gz \
 -2 /gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Trimmed-Files/YRVL_R2_001.fastq.gz
 
+/gscratch/srlab/programs/Bismark-0.21.0/bismark \
+--path_to_bowtie /gscratch/srlab/programs/bowtie2-2.3.4.1-linux-x86_64/ \
+--samtools_path /gscratch/srlab/programs/samtools-1.9/ \
+--non_directional \
+-p 4 \
+-score_min L,0,-0.9 \
+--genome /gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Bismark-Inputs/Crassostrea_gigas.oyster_v9.dna_sm.toplevel/ \
+-1 /gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Trimmed-Files/YRVA_R1_001.fastq.gz \
+-2 /gscratch/scrubbed/yaamini/data/Gigas-WGBS/2019-09-03-Trimmed-Files/YRVA_R2_001.fastq.gz
+
 #Deduplication
 
 /gscratch/srlab/programs/Bismark-0.21.0/deduplicate_bismark \
