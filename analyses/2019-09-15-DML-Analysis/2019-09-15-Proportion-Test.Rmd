@@ -140,3 +140,43 @@ The null hypothesis is that loci distributions amongst various genomic features 
 speciesDMLTest <- chisq.test(t(comboPropData)) #Conduct a chi-squared test
 speciesDMLTest #The distribution of DML is significantly different between species.
 ```
+
+## Create figures
+
+```{r}
+RColorBrewer::display.brewer.all(colorblindFriendly = TRUE) #Only display colorblind-friendly palettes
+```
+
+
+```{r}
+plotColors2 <- rev(RColorBrewer::brewer.pal(5, "Oranges")) #Create a color palette for the barplots. Use 5 purple shades from RColorBrewer. Reverse the order so the darkest shade is used first.
+barplot(t(t(comboPropData)),
+        col = dichromat(plotColors2)) #Check that plot colors will be easy to interpret for those with color blindness
+```
+
+```{r}
+#pdf("2020-02-12-Cvirg-Versus-Cgigas-DML.pdf", height = 8.5, width = 11)
+
+par(mar = c(3,5,1,1), oma = c(1, 1, 1, 10)) #Change figure boundaries
+barplot(t(t(comboPropData)), 
+        axes = FALSE, 
+        names.arg = c(expression(italic("C. virginica")), expression(italic("C. gigas"))),
+        ylim = c(0,100),
+        col = plotColors2) #Create a stacked barplot. Use axes = FALSE to remove the y-axis and names.arg to set labels on the x-axis. Use expression(italic()) to italicize species names
+axis(side = 2, at = seq(0, 100, by = 10), las = 2, col = "grey80")
+mtext(side = 2, "Proportion CpGs", line = 3) #Add y-axis label
+
+par(fig = c(0, 1, 0, 1), oma = c(0, 0, 0, 0), mar = c(0, 0, 0, 0), new = TRUE) #Create new plot
+plot(0, 0, type = "n", bty = "n", xaxt = "n", yaxt = "n") #Add new plot on top of current plot
+legend("topright",
+       xpd = TRUE,
+       legend = c("Putative Promoters", "Exons", "Introns", "Transposable Elements", "Other"),
+       pch = 22, 
+        col = "black", 
+        pt.bg = plotColors2,
+       bty = "n") #Place a legend in the top right of the figure with no box
+
+#dev.off()
+```
+
+
