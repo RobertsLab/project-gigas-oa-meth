@@ -26,3 +26,9 @@ analyses/2019-09-12-MethylKit/2019-09-15-Loci-Analysis/2019-09-15-All-Loci-Methy
 analyses/2019-09-12-MethylKit/2019-09-15-Loci-Analysis/2019-09-15-All-Loci-Methylation-Statistic-Filtered-Destrand-50-Cov10.csv
 analyses/2019-09-15-DML-Analysis/uniprot-SP-GO.sorted
 *.gff
+analyses/2019-09-13-IGV-Verification/YRVL_R1_001_bismark_bt2_pe.deduplicated.bismark.cov
+analyses/2019-09-13-IGV-Verification/YRVA_R1_001_bismark_bt2_pe.deduplicated.bismark.cov
+analyses/2019-09-13-IGV-Verification/YRVA_R1_001_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph
+analyses/2019-09-13-IGV-Verification/YRVA_R1_001_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph
+analyses/2019-09-13-IGV-Verification/YRVL_R1_001_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph
+analyses/2019-09-13-IGV-Verification/YRVL_R1_001_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph
