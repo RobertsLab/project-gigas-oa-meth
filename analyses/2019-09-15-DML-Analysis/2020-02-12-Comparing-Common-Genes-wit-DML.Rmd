@@ -26,7 +26,9 @@ require("dichromat")
 sessionInfo() #Obtain session information
 ```
 
-# Import and reformat data
+# Common genes
+
+## Import and reformat data
 
 ```{r}
 commonBPGOSlim <- read.delim("commonBlastquery-GOslim-BP.sorted.unique.noOther", sep = "\t", header = FALSE) #Import unique BP GOslim terms without any "other biological processes" entries. File is tab-delimited and does not have a header.
@@ -73,7 +75,7 @@ fullBPGOSlimCounts$GOSlim <- c("Cell-Cell Signaling", "Cell Adhesion", "Death", 
 head(fullBPGOSlimCounts) #Confirm capitalization
 ```
 
-# Barplot
+## Barplot
 
 ```{r}
 #pdf("2020-02-12-Common-BP-GOSlim-DML-Gene-Overlaps.pdf", width = 11, height = 8.5) #Save as a pdf
@@ -107,5 +109,67 @@ mtext(side = 1, "Common Genes with DML (%)", line = 3, cex = 1.5) #Add x-axis la
 #dev.off()
 ```
 
+# *C. virginica* vs. *C. gigas*
 
+## Import and reformat data
 
+```{r}
+speciesBPGOSlimCounts <- read.delim("2020-02-12-Cv-Cg-GOSlim-Counts.txt", sep = "\t", header = TRUE) #Import BP GOSlim counts for each species
+head(speciesBPGOSlimCounts) #Confirm import
+```
+
+```{r}
+speciesBPGOSlimCounts$gigasPercentage <- (speciesBPGOSlimCounts$gigasFrequency/sum(speciesBPGOSlimCounts$gigasFrequency)*100) #Create a new column with percentages of GOSlim terms instead of raw counts for Cg
+speciesBPGOSlimCounts$virgPercentage <- (speciesBPGOSlimCounts$virgFrequency/sum(speciesBPGOSlimCounts$virgFrequency)*100) #Create a new column with percentages of GOSlim terms instead of raw counts for Cv
+tail(speciesBPGOSlimCounts) #Confirm column creation
+```
+
+## Barplots
+
+### *C. virginica*
+
+```{r}
+#pdf("2020-02-12-Cv-BP-GOSlim-DML-Gene-Overlaps.pdf", width = 11, height = 8.5) #Save as a pdf
+
+par(mar = c(5, 20, 1, 2)) #Change figure boundaries
+
+virgBarsGOSlim <- barplot(speciesBPGOSlimCounts$virgPercentage,
+                           horiz = TRUE,
+                           axes = FALSE,
+                           xlim = c(0,22),
+                           col = c(rep(plotColors2[2], times = 5),
+                                   rep(plotColors2[4], times = 3),
+                                   rep(plotColors2[5], times = 1),
+                                   rep(plotColors2[1], times = 4))) #Create a barplot that is horizontal (horiz = TRUE). Use axes = FALSE to remove all axes. Set xlim based on maximum percentage value. Colors correspond to broader GOSlim groupings. Save plot as a new object.
+
+axis(side = 2, at = virgBarsGOSlim, labels = speciesBPGOSlimCounts$GOSlim, tick = FALSE, las = 2, col = "grey80", cex.axis = 1.5) #Add y-axis with GOSlim terms from BPGOSlimCounts. Place labels at specific barplot values from barsGOSlim. Remove tick marks (tick) and change orientation of labels (las)
+
+axis(side = 1, at = seq(from = 0, to = 22, by = 2), cex = 1.2, col = "grey80") #Add x-axis
+mtext(side = 1, substitute(paste(italic("C. virginica"), " Genes with DML (%)")), line = 3, cex = 1.5) #Add x-axis label
+
+#dev.off()
+```
+
+### *C. gigas*
+
+```{r}
+#pdf("2020-02-12-Cg-BP-GOSlim-DML-Gene-Overlaps.pdf", width = 11, height = 8.5) #Save as a pdf
+
+par(mar = c(5, 20, 1, 1)) #Change figure boundaries
+
+gigasBarsGOSlim <- barplot(speciesBPGOSlimCounts$gigasPercentage,
+                           horiz = TRUE,
+                           axes = FALSE,
+                           xlim = c(0,22),
+                           col = c(rep(plotColors2[2], times = 5),
+                                   rep(plotColors2[4], times = 3),
+                                   rep(plotColors2[5], times = 1),
+                                   rep(plotColors2[1], times = 4))) #Create a barplot that is horizontal (horiz = TRUE). Use axes = FALSE to remove all axes. Set xlim based on maximum percentage value. Colors correspond to broader GOSlim groupings. Save plot as a new object.
+
+axis(side = 2, at = gigasBarsGOSlim, labels = speciesBPGOSlimCounts$GOSlim, tick = FALSE, las = 2, col = "grey80", cex.axis = 1.5) #Add y-axis with GOSlim terms from BPGOSlimCounts. Place labels at specific barplot values from barsGOSlim. Remove tick marks (tick) and change orientation of labels (las)
+
+axis(side = 1, at = seq(from = 0, to = 22, by = 2), cex = 1.2, col = "grey80") #Add x-axis
+mtext(side = 1, substitute(paste(italic("C. gigas"), " Genes with DML (%)")), line = 3, cex = 1.5) #Add x-axis label
+
+#dev.off()
+```
