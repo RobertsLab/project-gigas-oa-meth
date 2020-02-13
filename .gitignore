@@ -38,3 +38,5 @@ analyses/2020-02-11-Characterizing-CpG-Methylation/cgigas_gonad-10x_raw.cov
 analyses/2020-02-11-Characterizing-CpG-Methylation/cgigas_gonad-10x_concat.cov
 analyses/2020-02-11-Characterizing-CpG-Methylation/2020-02-11-All-10x-CpGs.csv
 analyses/2020-02-11-Characterizing-CpG-Methylation/2020-02-11-All-10x-CpGs.bedgraph
+analyses/2020-02-11-Characterizing-CpG-Methylation/2020-02-11-All-10x-CpGs.bed
+analyses/2020-02-11-Characterizing-CpG-Methylation/2020-02-11-All-10x-CpG-Loci-Unmethylated.bedgraph
