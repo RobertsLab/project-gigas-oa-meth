@@ -36,3 +36,5 @@ analyses/2019-09-13-IGV-Verification/YRVA_R1_001_bismark_bt2_pe.deduplicated.bis
 analyses/2019-09-13-IGV-Verification/YRVL_R1_001_bismark_bt2_pe.deduplicated.bismark.cov.sorted
 analyses/2020-02-11-Characterizing-CpG-Methylation/cgigas_gonad-10x_raw.cov
 analyses/2020-02-11-Characterizing-CpG-Methylation/cgigas_gonad-10x_concat.cov
+analyses/2020-02-11-Characterizing-CpG-Methylation/2020-02-11-All-10x-CpGs.csv
+analyses/2020-02-11-Characterizing-CpG-Methylation/2020-02-11-All-10x-CpGs.bedgraph
