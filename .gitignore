@@ -44,3 +44,6 @@ analyses/2020-02-11-Characterizing-CpG-Methylation/2020-02-11-All-10x-CpG-Loci-U
 analyses/2020-02-11-Characterizing-CpG-Methylation/2020-02-11-All10xCpGs-Exon.txt
 analyses/2020-02-11-Characterizing-CpG-Methylation/2020-02-11-All10xCpGs-Intron.txt
 analyses/2020-02-11-Characterizing-CpG-Methylation/2020-02-11-UnMethLoci-Intron.txt
+analyses/2020-02-11-Characterizing-CpG-Methylation/2020-02-11-All10xCpGs-Genes.txt
+analyses/2020-02-11-Characterizing-CpG-Methylation/2020-02-11-MethLoci-Genes.txt
+analyses/2020-02-11-Characterizing-CpG-Methylation/2020-02-11-UnMethLoci-Genes.txt
