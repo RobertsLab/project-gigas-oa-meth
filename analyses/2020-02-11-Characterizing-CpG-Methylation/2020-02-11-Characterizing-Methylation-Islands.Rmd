@@ -49,7 +49,7 @@ boxplot(exonMI$percent)
 
 ```{r}
 intronMI <- read.delim("../2019-09-15-DML-Analysis/2020-02-11-Intron-MI.txt", header = FALSE) #Import overlaps
-intronMI <- intronMI[,-4] #Remove redundant column
+intronMI <- intronMI[,-c(2:3, 6:10)] #Remove redundant columns
 colnames(intronMI) <- c("chr", "intron.start", "intron.end", "MI.start", "MI.end", "overlap") #Add column names
 head(intronMI) #Confirm reformatting
 ```
@@ -185,7 +185,7 @@ plotColors2 <- rev(RColorBrewer::brewer.pal(5, "Oranges")) #Create a color palet
 ```{r}
 #pdf("2019-02-11-Cv-Cg-Methylation-Island-Boxplots.pdf", width = 11, height = 8.5) #Save as a pdf
 
-par(mar = c(4, 5, 1, 1)) #Change figure boundaries
+par(mar = c(4, 5, 1, 7)) #Change figure boundaries
 
 boxplot(CvexonMI$percent, CvintronMI$percent, CvtransElemMI$percent,
         exonMI$percent, intronMI$percent, transElemMI$percent,
@@ -194,13 +194,16 @@ boxplot(CvexonMI$percent, CvintronMI$percent, CvtransElemMI$percent,
         axes = FALSE, names = c("Exons", "Introns", "Transposable Elements"), ylim = c(0,0.8),
         col = plotColors2[2:4], border = "grey20") #Create a boxplot with exon, intron, and transposable element MI overlap data for both species that are colored according to plotColors. Group species information together using at. Do not plot outlier information (outline = FALSE). Do not use dashed lines (lty = 1), increase line thickness (lwd = 1.5), and change border color (border).
 
-mtext(side = 1, expression(italic("  C. virginica                                                                                     C. gigas     ")), line = 0.5, cex = 1.2) #Add species information
+mtext(side = 1, expression(italic(" C. virginica                                                                        C. gigas     ")), line = 0.5, cex = 1.2) #Add species information
 mtext(side = 1, "Genomic Feature", line = 2, cex = 1.5) #Add x-axis label
 
 axis(side = 2, at = seq(from = 0, to = 0.8, by = 0.2), las = 2, col = "grey80", cex = 1.2) #Add y-axis
 mtext(side = 2, "Overlap with MI (%)", cex = 1.5, line = 3) #Add y-axis label
 
+par(fig = c(0, 1, 0, 1), oma = c(0, 0, 0, 0), mar = c(0, 0, 0, 0), new = TRUE) #Create new plot
+plot(0, 0, type = "n", bty = "n", xaxt = "n", yaxt = "n") #Add new plot on top of current plot
 legend("topright",
+       xpd = TRUE,
        legend = c("Exons", "Introns", "Transposable Elements"),
        pch = 22, 
         col = "black", 
