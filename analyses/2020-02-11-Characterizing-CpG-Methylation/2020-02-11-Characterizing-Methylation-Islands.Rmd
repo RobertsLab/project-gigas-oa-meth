@@ -194,7 +194,7 @@ boxplot(CvexonMI$percent, CvintronMI$percent, CvtransElemMI$percent,
         axes = FALSE, names = c("Exons", "Introns", "Transposable Elements"), ylim = c(0,0.8),
         col = plotColors2[2:4], border = "grey20") #Create a boxplot with exon, intron, and transposable element MI overlap data for both species that are colored according to plotColors. Group species information together using at. Do not plot outlier information (outline = FALSE). Do not use dashed lines (lty = 1), increase line thickness (lwd = 1.5), and change border color (border).
 
-mtext(side = 1, expression(italic("  C. virginica                                             C. gigas     ")), line = 0.5, cex = 1.2) #Add species information
+mtext(side = 1, expression(italic("  C. virginica                                                                                     C. gigas     ")), line = 0.5, cex = 1.2) #Add species information
 mtext(side = 1, "Genomic Feature", line = 2, cex = 1.5) #Add x-axis label
 
 axis(side = 2, at = seq(from = 0, to = 0.8, by = 0.2), las = 2, col = "grey80", cex = 1.2) #Add y-axis
@@ -209,5 +209,4 @@ legend("topright",
 
 #dev.off()
 ```
-
 
