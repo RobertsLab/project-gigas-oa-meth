@@ -5,7 +5,7 @@ date: "9/15/2019"
 output: html_document
 ---
 
-I will use a proportion test to compare the proportion of genome feature overlaps between differentially methylated loci (DML), differentially methylated regions (DMR), and the gene background.
+I will use a proportion test to compare the proportion of genome feature overlaps between differentially methylated loci (DML) and the gene background. I will also examine differences in genomic location bewteen *C. gigas* and previously-analyzed *C. virginica* DML.
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -18,14 +18,15 @@ knitr::opts_chunk$set(echo = TRUE)
 require("dichromat") #Load package
 ```
 
-
 # Obtain session information
 
 ```{r}
 sessionInfo()
 ```
 
-# Import data
+# *C. gigas* only
+
+## Import data
 
 ```{r}
 overlapData <- read.csv("2019-09-15-Overlap-Proportions.csv", header = TRUE)
@@ -55,15 +56,9 @@ proportionData <- proportionData[-6,] #Remove totalEntries
 head(proportionData) #Confirm changes
 ```
 
-# DML
-
 ## Conduct chi-squared tests of homogeneity
 
-The null hypothesis is that loci distributions in the genome are the same between different categories.
-
-### Total CpGs vs. DML
-
-Even though the total CpGs are not the background of the DML, it's still an interesting comparison.
+The null hypothesis is that loci distributions in the genome are the same between different categories. Even though the total CpGs are not the background of the DML, it's still an interesting comparison.
 
 ```{r}
 methylatedVersusDMLTest <- chisq.test(t(proportionData)) #Conduct a chi-squared test
@@ -77,8 +72,6 @@ plotColors <- rev(RColorBrewer::brewer.pal(5, "RdPu")) #Create a color palette f
 barplot(t(t(proportionData)),
         col = dichromat(plotColors)) #Check that plot colors will be easy to interpret for those with color blindness
 ```
-
-### Total CpGs vs. DML
 
 ```{r}
 #pdf("2019-09-15-Total-CpGs-Versus-DML.pdf", height = 8.5, width = 11)
@@ -105,3 +98,45 @@ legend("topright",
 #dev.off()
 ```
 
+# *C. gigas* vs. *C. virginica*
+
+Information for the *C. virginica* DML can be found [here](https://github.com/epigeneticstoocean/paper-gonad-meth).
+
+## Import data
+
+```{r}
+comboData <- read.csv("2020-02-12-Combined-Overlap-Proportions.csv", header = TRUE)
+rownames(comboData) <- comboData$genomicFeature #Set genomic feature indication and rownames
+comboData <- comboData[,-1] #Remove genomic feature indication column
+head(comboData) #Confirm import
+```
+
+## Reformat data
+
+```{r}
+comboPropData <- comboData #Copy overlap data as a new dataframe
+comboPropData <- comboPropData[-6,] #Remove totalLines row
+comboTotalEntries <- c(sum(comboPropData$Cvirg),
+                  sum(comboPropData$Cgigas)) #Sum the number of CpGs in each category
+comboPropData <- rbind(comboPropData, comboTotalEntries) #Add comboTotalEntries to bottom of proportionData
+row.names(comboPropData)[6] <- "totalEntries" #Add rowname
+head(comboPropData) #Confirm changes
+```
+
+```{r}
+nLength <- length(comboPropData$Cvirg) #Count number of rows
+for(i in 1:nLength) {
+  comboPropData[i,] <- (comboPropData[i,]/comboPropData[6,])*100
+} #Divide each column of comboPropData by respective totalEntries entry. Multiply by 100 and and save the percentage
+comboPropData <- comboPropData[-6,] #Remove totalEntries
+head(comboPropData) #Confirm changes
+```
+
+## Conduct chi-squared tests of homogeneity
+
+The null hypothesis is that loci distributions amongst various genomic features are the same in both species.
+
+```{r}
+speciesDMLTest <- chisq.test(t(comboPropData)) #Conduct a chi-squared test
+speciesDMLTest #The distribution of DML is significantly different between species.
+```
