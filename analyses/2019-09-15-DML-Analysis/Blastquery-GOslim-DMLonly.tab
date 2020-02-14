@@ -1,0 +1,4200 @@
+GO:0000018	DNA metabolism	P
+GO:0000027	cell organization and biogenesis	P
+GO:0000028	cell organization and biogenesis	P
+GO:0000049	nucleic acid binding activity	F
+GO:0000050	other metabolic processes	P
+GO:0000052	other metabolic processes	P
+GO:0000055	transport	P
+GO:0000056	transport	P
+GO:0000060	transport	P
+GO:0000082	cell cycle and proliferation	P
+GO:0000082	cell cycle and proliferation	P
+GO:0000083	RNA metabolism	P
+GO:0000083	cell cycle and proliferation	P
+GO:0000086	cell cycle and proliferation	P
+GO:0000086	cell cycle and proliferation	P
+GO:0000111	nucleus	C
+GO:0000118	nucleus	C
+GO:0000122	RNA metabolism	P
+GO:0000122	RNA metabolism	P
+GO:0000122	RNA metabolism	P
+GO:0000122	RNA metabolism	P
+GO:0000122	RNA metabolism	P
+GO:0000122	RNA metabolism	P
+GO:0000122	RNA metabolism	P
+GO:0000122	RNA metabolism	P
+GO:0000122	RNA metabolism	P
+GO:0000122	RNA metabolism	P
+GO:0000124	nucleus	C
+GO:0000125	nucleus	C
+GO:0000132	cell cycle and proliferation	P
+GO:0000132	cell cycle and proliferation	P
+GO:0000132	cell cycle and proliferation	P
+GO:0000132	cell organization and biogenesis	P
+GO:0000132	cell organization and biogenesis	P
+GO:0000132	cell organization and biogenesis	P
+GO:0000137	ER/Golgi	C
+GO:0000139	ER/Golgi	C
+GO:0000139	ER/Golgi	C
+GO:0000139	ER/Golgi	C
+GO:0000139	ER/Golgi	C
+GO:0000139	ER/Golgi	C
+GO:0000139	ER/Golgi	C
+GO:0000139	ER/Golgi	C
+GO:0000139	ER/Golgi	C
+GO:0000139	ER/Golgi	C
+GO:0000139	ER/Golgi	C
+GO:0000139	other membranes	C
+GO:0000139	other membranes	C
+GO:0000139	other membranes	C
+GO:0000139	other membranes	C
+GO:0000139	other membranes	C
+GO:0000139	other membranes	C
+GO:0000139	other membranes	C
+GO:0000139	other membranes	C
+GO:0000139	other membranes	C
+GO:0000139	other membranes	C
+GO:0000146	cytoskeletal activity	F
+GO:0000149	other molecular function	F
+GO:0000149	other molecular function	F
+GO:0000151	other cellular component	C
+GO:0000151	other cellular component	C
+GO:0000164	other cellular component	C
+GO:0000165	signal transduction	P
+GO:0000166	other molecular function	F
+GO:0000175	other molecular function	F
+GO:0000176	nucleus	C
+GO:0000176	nucleus	C
+GO:0000177	other cytoplasmic organelle	C
+GO:0000178	other cellular component	C
+GO:0000178	other cellular component	C
+GO:0000183	RNA metabolism	P
+GO:0000183	RNA metabolism	P
+GO:0000184	RNA metabolism	P
+GO:0000184	RNA metabolism	P
+GO:0000184	RNA metabolism	P
+GO:0000184	RNA metabolism	P
+GO:0000185	other metabolic processes	P
+GO:0000185	other metabolic processes	P
+GO:0000185	signal transduction	P
+GO:0000185	signal transduction	P
+GO:0000186	protein metabolism	P
+GO:0000186	signal transduction	P
+GO:0000209	protein metabolism	P
+GO:0000209	protein metabolism	P
+GO:0000226	cell organization and biogenesis	P
+GO:0000228	nucleus	C
+GO:0000245	RNA metabolism	P
+GO:0000245	cell organization and biogenesis	P
+GO:0000246	other molecular function	F
+GO:0000278	cell cycle and proliferation	P
+GO:0000278	cell cycle and proliferation	P
+GO:0000278	cell cycle and proliferation	P
+GO:0000281	cell cycle and proliferation	P
+GO:0000281	cell cycle and proliferation	P
+GO:0000287	other molecular function	F
+GO:0000287	other molecular function	F
+GO:0000287	other molecular function	F
+GO:0000354	RNA metabolism	P
+GO:0000354	cell organization and biogenesis	P
+GO:0000375	RNA metabolism	P
+GO:0000381	RNA metabolism	P
+GO:0000398	RNA metabolism	P
+GO:0000398	RNA metabolism	P
+GO:0000398	RNA metabolism	P
+GO:0000398	RNA metabolism	P
+GO:0000398	RNA metabolism	P
+GO:0000398	RNA metabolism	P
+GO:0000398	RNA metabolism	P
+GO:0000404	nucleic acid binding activity	F
+GO:0000405	nucleic acid binding activity	F
+GO:0000462	RNA metabolism	P
+GO:0000466	RNA metabolism	P
+GO:0000467	RNA metabolism	P
+GO:0000502	other cellular component	C
+GO:0000703	other molecular function	F
+GO:0000706	DNA metabolism	P
+GO:0000706	cell cycle and proliferation	P
+GO:0000706	stress response	P
+GO:0000712	DNA metabolism	P
+GO:0000712	cell cycle and proliferation	P
+GO:0000715	DNA metabolism	P
+GO:0000715	cell organization and biogenesis	P
+GO:0000715	stress response	P
+GO:0000717	DNA metabolism	P
+GO:0000717	DNA metabolism	P
+GO:0000717	stress response	P
+GO:0000717	stress response	P
+GO:0000722	DNA metabolism	P
+GO:0000722	cell organization and biogenesis	P
+GO:0000723	DNA metabolism	P
+GO:0000723	cell organization and biogenesis	P
+GO:0000724	DNA metabolism	P
+GO:0000724	DNA metabolism	P
+GO:0000724	DNA metabolism	P
+GO:0000724	DNA metabolism	P
+GO:0000724	stress response	P
+GO:0000724	stress response	P
+GO:0000724	stress response	P
+GO:0000724	stress response	P
+GO:0000729	DNA metabolism	P
+GO:0000729	DNA metabolism	P
+GO:0000729	stress response	P
+GO:0000729	stress response	P
+GO:0000776	other cellular component	C
+GO:0000776	other cellular component	C
+GO:0000776	other cellular component	C
+GO:0000777	other cellular component	C
+GO:0000777	other cellular component	C
+GO:0000781	other cellular component	C
+GO:0000781	other cellular component	C
+GO:0000781	other cellular component	C
+GO:0000783	nucleus	C
+GO:0000784	nucleus	C
+GO:0000784	nucleus	C
+GO:0000784	nucleus	C
+GO:0000785	other cellular component	C
+GO:0000785	other cellular component	C
+GO:0000785	other cellular component	C
+GO:0000790	nucleus	C
+GO:0000790	nucleus	C
+GO:0000792	other cellular component	C
+GO:0000792	other cellular component	C
+GO:0000808	other cellular component	C
+GO:0000812	nucleus	C
+GO:0000812	nucleus	C
+GO:0000815	other cytoplasmic organelle	C
+GO:0000815	other membranes	C
+GO:0000902	cell organization and biogenesis	P
+GO:0000902	cell organization and biogenesis	P
+GO:0000902	cell organization and biogenesis	P
+GO:0000910	other biological processes	P
+GO:0000920	other biological processes	P
+GO:0000922	cytoskeleton	C
+GO:0000922	cytoskeleton	C
+GO:0000923	cytoskeleton	C
+GO:0000932	other cellular component	C
+GO:0000956	RNA metabolism	P
+GO:0001501	developmental processes	P
+GO:0001501	developmental processes	P
+GO:0001501	developmental processes	P
+GO:0001503	developmental processes	P
+GO:0001508	other biological processes	P
+GO:0001525	developmental processes	P
+GO:0001525	developmental processes	P
+GO:0001525	developmental processes	P
+GO:0001530	other molecular function	F
+GO:0001539	other biological processes	P
+GO:0001540	other molecular function	F
+GO:0001541	developmental processes	P
+GO:0001560	signal transduction	P
+GO:0001561	other metabolic processes	P
+GO:0001568	developmental processes	P
+GO:0001575	other metabolic processes	P
+GO:0001649	developmental processes	P
+GO:0001649	developmental processes	P
+GO:0001649	developmental processes	P
+GO:0001649	developmental processes	P
+GO:0001650	nucleus	C
+GO:0001656	developmental processes	P
+GO:0001658	developmental processes	P
+GO:0001659	other biological processes	P
+GO:0001662	stress response	P
+GO:0001666	stress response	P
+GO:0001667	other biological processes	P
+GO:0001669	other cellular component	C
+GO:0001682	RNA metabolism	P
+GO:0001701	developmental processes	P
+GO:0001701	developmental processes	P
+GO:0001708	other biological processes	P
+GO:0001711	other biological processes	P
+GO:0001726	other cellular component	C
+GO:0001726	other cellular component	C
+GO:0001726	other cellular component	C
+GO:0001736	developmental processes	P
+GO:0001736	developmental processes	P
+GO:0001738	developmental processes	P
+GO:0001740	nucleus	C
+GO:0001741	nucleus	C
+GO:0001745	developmental processes	P
+GO:0001756	developmental processes	P
+GO:0001764	developmental processes	P
+GO:0001772	other membranes	C
+GO:0001772	plasma membrane	C
+GO:0001822	developmental processes	P
+GO:0001822	developmental processes	P
+GO:0001832	developmental processes	P
+GO:0001833	cell cycle and proliferation	P
+GO:0001833	developmental processes	P
+GO:0001843	developmental processes	P
+GO:0001843	developmental processes	P
+GO:0001843	developmental processes	P
+GO:0001881	other metabolic processes	P
+GO:0001881	signal transduction	P
+GO:0001882	other molecular function	F
+GO:0001889	developmental processes	P
+GO:0001890	developmental processes	P
+GO:0001891	other membranes	C
+GO:0001891	plasma membrane	C
+GO:0001916	death	P
+GO:0001917	other cellular component	C
+GO:0001932	protein metabolism	P
+GO:0001933	protein metabolism	P
+GO:0001933	protein metabolism	P
+GO:0001933	protein metabolism	P
+GO:0001934	protein metabolism	P
+GO:0001937	cell cycle and proliferation	P
+GO:0001942	developmental processes	P
+GO:0001942	developmental processes	P
+GO:0001942	developmental processes	P
+GO:0001947	developmental processes	P
+GO:0001957	developmental processes	P
+GO:0001958	developmental processes	P
+GO:0001958	developmental processes	P
+GO:0001964	other biological processes	P
+GO:0002020	other molecular function	F
+GO:0002020	other molecular function	F
+GO:0002027	other biological processes	P
+GO:0002039	other molecular function	F
+GO:0002039	other molecular function	F
+GO:0002060	other molecular function	F
+GO:0002062	developmental processes	P
+GO:0002063	developmental processes	P
+GO:0002089	developmental processes	P
+GO:0002091	cell organization and biogenesis	P
+GO:0002091	protein metabolism	P
+GO:0002091	transport	P
+GO:0002092	cell organization and biogenesis	P
+GO:0002092	cell organization and biogenesis	P
+GO:0002092	protein metabolism	P
+GO:0002092	protein metabolism	P
+GO:0002092	transport	P
+GO:0002092	transport	P
+GO:0002121	other biological processes	P
+GO:0002142	other cellular component	C
+GO:0002213	stress response	P
+GO:0002224	signal transduction	P
+GO:0002224	stress response	P
+GO:0002244	developmental processes	P
+GO:0002376	other biological processes	P
+GO:0002576	transport	P
+GO:0002862	stress response	P
+GO:0003006	other biological processes	P
+GO:0003007	developmental processes	P
+GO:0003091	other biological processes	P
+GO:0003676	nucleic acid binding activity	F
+GO:0003676	nucleic acid binding activity	F
+GO:0003676	nucleic acid binding activity	F
+GO:0003676	nucleic acid binding activity	F
+GO:0003677	nucleic acid binding activity	F
+GO:0003677	nucleic acid binding activity	F
+GO:0003677	nucleic acid binding activity	F
+GO:0003677	nucleic acid binding activity	F
+GO:0003677	nucleic acid binding activity	F
+GO:0003677	nucleic acid binding activity	F
+GO:0003677	nucleic acid binding activity	F
+GO:0003677	nucleic acid binding activity	F
+GO:0003677	nucleic acid binding activity	F
+GO:0003677	nucleic acid binding activity	F
+GO:0003677	nucleic acid binding activity	F
+GO:0003677	nucleic acid binding activity	F
+GO:0003677	nucleic acid binding activity	F
+GO:0003677	nucleic acid binding activity	F
+GO:0003677	nucleic acid binding activity	F
+GO:0003677	nucleic acid binding activity	F
+GO:0003677	nucleic acid binding activity	F
+GO:0003677	nucleic acid binding activity	F
+GO:0003677	nucleic acid binding activity	F
+GO:0003677	nucleic acid binding activity	F
+GO:0003677	nucleic acid binding activity	F
+GO:0003677	nucleic acid binding activity	F
+GO:0003677	nucleic acid binding activity	F
+GO:0003677	nucleic acid binding activity	F
+GO:0003677	nucleic acid binding activity	F
+GO:0003677	nucleic acid binding activity	F
+GO:0003677	nucleic acid binding activity	F
+GO:0003682	other molecular function	F
+GO:0003682	other molecular function	F
+GO:0003682	other molecular function	F
+GO:0003682	other molecular function	F
+GO:0003682	other molecular function	F
+GO:0003682	other molecular function	F
+GO:0003682	other molecular function	F
+GO:0003682	other molecular function	F
+GO:0003682	other molecular function	F
+GO:0003682	other molecular function	F
+GO:0003684	nucleic acid binding activity	F
+GO:0003684	nucleic acid binding activity	F
+GO:0003688	nucleic acid binding activity	F
+GO:0003696	nucleic acid binding activity	F
+GO:0003697	nucleic acid binding activity	F
+GO:0003697	nucleic acid binding activity	F
+GO:0003700	nucleic acid binding activity	F
+GO:0003700	nucleic acid binding activity	F
+GO:0003700	nucleic acid binding activity	F
+GO:0003700	nucleic acid binding activity	F
+GO:0003700	nucleic acid binding activity	F
+GO:0003700	nucleic acid binding activity	F
+GO:0003700	nucleic acid binding activity	F
+GO:0003700	transcription regulatory activity	F
+GO:0003700	transcription regulatory activity	F
+GO:0003700	transcription regulatory activity	F
+GO:0003700	transcription regulatory activity	F
+GO:0003700	transcription regulatory activity	F
+GO:0003700	transcription regulatory activity	F
+GO:0003700	transcription regulatory activity	F
+GO:0003707	signal transduction activity	F
+GO:0003712	transcription regulatory activity	F
+GO:0003713	transcription regulatory activity	F
+GO:0003713	transcription regulatory activity	F
+GO:0003713	transcription regulatory activity	F
+GO:0003713	transcription regulatory activity	F
+GO:0003714	transcription regulatory activity	F
+GO:0003720	other molecular function	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003723	nucleic acid binding activity	F
+GO:0003725	nucleic acid binding activity	F
+GO:0003727	nucleic acid binding activity	F
+GO:0003729	nucleic acid binding activity	F
+GO:0003729	nucleic acid binding activity	F
+GO:0003729	nucleic acid binding activity	F
+GO:0003729	nucleic acid binding activity	F
+GO:0003729	nucleic acid binding activity	F
+GO:0003735	other molecular function	F
+GO:0003735	other molecular function	F
+GO:0003743	nucleic acid binding activity	F
+GO:0003743	nucleic acid binding activity	F
+GO:0003756	other molecular function	F
+GO:0003774	cytoskeletal activity	F
+GO:0003774	cytoskeletal activity	F
+GO:0003777	cytoskeletal activity	F
+GO:0003777	cytoskeletal activity	F
+GO:0003777	cytoskeletal activity	F
+GO:0003779	cytoskeletal activity	F
+GO:0003779	cytoskeletal activity	F
+GO:0003779	cytoskeletal activity	F
+GO:0003779	cytoskeletal activity	F
+GO:0003779	cytoskeletal activity	F
+GO:0003779	cytoskeletal activity	F
+GO:0003779	cytoskeletal activity	F
+GO:0003779	cytoskeletal activity	F
+GO:0003779	cytoskeletal activity	F
+GO:0003824	other molecular function	F
+GO:0003841	other molecular function	F
+GO:0003873	kinase activity	F
+GO:0003887	other molecular function	F
+GO:0003887	other molecular function	F
+GO:0003887	other molecular function	F
+GO:0003887	other molecular function	F
+GO:0003896	other molecular function	F
+GO:0003896	other molecular function	F
+GO:0003899	other molecular function	F
+GO:0003924	other molecular function	F
+GO:0003924	other molecular function	F
+GO:0003924	other molecular function	F
+GO:0003924	other molecular function	F
+GO:0003924	other molecular function	F
+GO:0003943	other molecular function	F
+GO:0003954	other molecular function	F
+GO:0003968	other molecular function	F
+GO:0003976	other molecular function	F
+GO:0003977	other molecular function	F
+GO:0003987	other molecular function	F
+GO:0003988	other molecular function	F
+GO:0003993	other molecular function	F
+GO:0003994	other molecular function	F
+GO:0003995	other molecular function	F
+GO:0004003	other molecular function	F
+GO:0004004	other molecular function	F
+GO:0004004	other molecular function	F
+GO:0004012	transporter activity	F
+GO:0004012	transporter activity	F
+GO:0004029	other molecular function	F
+GO:0004035	other molecular function	F
+GO:0004047	other molecular function	F
+GO:0004065	other molecular function	F
+GO:0004075	other molecular function	F
+GO:0004077	other molecular function	F
+GO:0004078	other molecular function	F
+GO:0004079	other molecular function	F
+GO:0004080	other molecular function	F
+GO:0004081	other molecular function	F
+GO:0004142	other molecular function	F
+GO:0004148	other molecular function	F
+GO:0004175	other molecular function	F
+GO:0004181	other molecular function	F
+GO:0004190	other molecular function	F
+GO:0004197	other molecular function	F
+GO:0004197	other molecular function	F
+GO:0004197	other molecular function	F
+GO:0004222	other molecular function	F
+GO:0004298	other molecular function	F
+GO:0004303	other molecular function	F
+GO:0004307	other molecular function	F
+GO:0004331	other molecular function	F
+GO:0004348	other molecular function	F
+GO:0004386	other molecular function	F
+GO:0004386	other molecular function	F
+GO:0004386	other molecular function	F
+GO:0004386	other molecular function	F
+GO:0004386	other molecular function	F
+GO:0004402	other molecular function	F
+GO:0004408	other molecular function	F
+GO:0004485	other molecular function	F
+GO:0004518	other molecular function	F
+GO:0004519	other molecular function	F
+GO:0004519	other molecular function	F
+GO:0004525	other molecular function	F
+GO:0004527	other molecular function	F
+GO:0004531	other molecular function	F
+GO:0004651	other molecular function	F
+GO:0004653	other molecular function	F
+GO:0004653	other molecular function	F
+GO:0004672	kinase activity	F
+GO:0004672	kinase activity	F
+GO:0004674	kinase activity	F
+GO:0004674	kinase activity	F
+GO:0004674	kinase activity	F
+GO:0004674	kinase activity	F
+GO:0004674	kinase activity	F
+GO:0004674	kinase activity	F
+GO:0004674	kinase activity	F
+GO:0004703	kinase activity	F
+GO:0004709	kinase activity	F
+GO:0004709	signal transduction activity	F
+GO:0004713	kinase activity	F
+GO:0004713	kinase activity	F
+GO:0004715	kinase activity	F
+GO:0004721	other molecular function	F
+GO:0004725	other molecular function	F
+GO:0004725	other molecular function	F
+GO:0004725	other molecular function	F
+GO:0004729	other molecular function	F
+GO:0004731	other molecular function	F
+GO:0004797	kinase activity	F
+GO:0004820	other molecular function	F
+GO:0004827	other molecular function	F
+GO:0004842	other molecular function	F
+GO:0004842	other molecular function	F
+GO:0004842	other molecular function	F
+GO:0004842	other molecular function	F
+GO:0004842	other molecular function	F
+GO:0004842	other molecular function	F
+GO:0004842	other molecular function	F
+GO:0004842	other molecular function	F
+GO:0004843	other molecular function	F
+GO:0004843	other molecular function	F
+GO:0004843	other molecular function	F
+GO:0004844	other molecular function	F
+GO:0004854	other molecular function	F
+GO:0004854	other molecular function	F
+GO:0004855	other molecular function	F
+GO:0004855	other molecular function	F
+GO:0004857	enzyme regulator activity	F
+GO:0004864	enzyme regulator activity	F
+GO:0004867	enzyme regulator activity	F
+GO:0004871	signal transduction activity	F
+GO:0004871	signal transduction activity	F
+GO:0004871	signal transduction activity	F
+GO:0004871	signal transduction activity	F
+GO:0004872	signal transduction activity	F
+GO:0004872	signal transduction activity	F
+GO:0004879	signal transduction activity	F
+GO:0004888	signal transduction activity	F
+GO:0004888	signal transduction activity	F
+GO:0004930	signal transduction activity	F
+GO:0004941	signal transduction activity	F
+GO:0005047	other molecular function	F
+GO:0005049	other molecular function	F
+GO:0005085	enzyme regulator activity	F
+GO:0005085	enzyme regulator activity	F
+GO:0005085	enzyme regulator activity	F
+GO:0005089	enzyme regulator activity	F
+GO:0005089	enzyme regulator activity	F
+GO:0005089	enzyme regulator activity	F
+GO:0005089	enzyme regulator activity	F
+GO:0005095	enzyme regulator activity	F
+GO:0005096	enzyme regulator activity	F
+GO:0005096	enzyme regulator activity	F
+GO:0005096	enzyme regulator activity	F
+GO:0005096	enzyme regulator activity	F
+GO:0005096	enzyme regulator activity	F
+GO:0005096	enzyme regulator activity	F
+GO:0005096	enzyme regulator activity	F
+GO:0005096	enzyme regulator activity	F
+GO:0005102	signal transduction activity	F
+GO:0005102	signal transduction activity	F
+GO:0005102	signal transduction activity	F
+GO:0005102	signal transduction activity	F
+GO:0005112	signal transduction activity	F
+GO:0005154	signal transduction activity	F
+GO:0005154	signal transduction activity	F
+GO:0005158	signal transduction activity	F
+GO:0005178	signal transduction activity	F
+GO:0005179	signal transduction activity	F
+GO:0005198	other molecular function	F
+GO:0005198	other molecular function	F
+GO:0005200	cytoskeletal activity	F
+GO:0005200	cytoskeletal activity	F
+GO:0005200	cytoskeletal activity	F
+GO:0005200	cytoskeletal activity	F
+GO:0005200	cytoskeletal activity	F
+GO:0005201	extracellular structural activity	F
+GO:0005201	extracellular structural activity	F
+GO:0005215	transporter activity	F
+GO:0005215	transporter activity	F
+GO:0005219	transporter activity	F
+GO:0005262	transporter activity	F
+GO:0005262	transporter activity	F
+GO:0005262	transporter activity	F
+GO:0005384	transporter activity	F
+GO:0005385	transporter activity	F
+GO:0005388	transporter activity	F
+GO:0005484	other molecular function	F
+GO:0005487	transporter activity	F
+GO:0005506	other molecular function	F
+GO:0005506	other molecular function	F
+GO:0005509	other molecular function	F
+GO:0005509	other molecular function	F
+GO:0005509	other molecular function	F
+GO:0005509	other molecular function	F
+GO:0005509	other molecular function	F
+GO:0005509	other molecular function	F
+GO:0005509	other molecular function	F
+GO:0005509	other molecular function	F
+GO:0005509	other molecular function	F
+GO:0005509	other molecular function	F
+GO:0005509	other molecular function	F
+GO:0005509	other molecular function	F
+GO:0005509	other molecular function	F
+GO:0005509	other molecular function	F
+GO:0005509	other molecular function	F
+GO:0005509	other molecular function	F
+GO:0005516	other molecular function	F
+GO:0005516	other molecular function	F
+GO:0005516	other molecular function	F
+GO:0005516	other molecular function	F
+GO:0005516	other molecular function	F
+GO:0005516	other molecular function	F
+GO:0005518	other molecular function	F
+GO:0005518	other molecular function	F
+GO:0005522	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005524	other molecular function	F
+GO:0005525	other molecular function	F
+GO:0005525	other molecular function	F
+GO:0005525	other molecular function	F
+GO:0005525	other molecular function	F
+GO:0005525	other molecular function	F
+GO:0005525	other molecular function	F
+GO:0005525	other molecular function	F
+GO:0005525	other molecular function	F
+GO:0005543	other molecular function	F
+GO:0005546	other molecular function	F
+GO:0005576	non-structural extracellular	C
+GO:0005576	non-structural extracellular	C
+GO:0005576	non-structural extracellular	C
+GO:0005576	non-structural extracellular	C
+GO:0005576	non-structural extracellular	C
+GO:0005576	non-structural extracellular	C
+GO:0005576	non-structural extracellular	C
+GO:0005576	non-structural extracellular	C
+GO:0005576	non-structural extracellular	C
+GO:0005577	non-structural extracellular	C
+GO:0005578	extracellular matrix	C
+GO:0005578	extracellular matrix	C
+GO:0005578	extracellular matrix	C
+GO:0005578	extracellular matrix	C
+GO:0005578	extracellular matrix	C
+GO:0005581	extracellular matrix	C
+GO:0005584	extracellular matrix	C
+GO:0005604	extracellular matrix	C
+GO:0005604	extracellular matrix	C
+GO:0005604	extracellular matrix	C
+GO:0005604	extracellular matrix	C
+GO:0005605	extracellular matrix	C
+GO:0005605	extracellular matrix	C
+GO:0005615	non-structural extracellular	C
+GO:0005615	non-structural extracellular	C
+GO:0005615	non-structural extracellular	C
+GO:0005615	non-structural extracellular	C
+GO:0005615	non-structural extracellular	C
+GO:0005615	non-structural extracellular	C
+GO:0005615	non-structural extracellular	C
+GO:0005615	non-structural extracellular	C
+GO:0005615	non-structural extracellular	C
+GO:0005615	non-structural extracellular	C
+GO:0005615	non-structural extracellular	C
+GO:0005615	non-structural extracellular	C
+GO:0005622	other cellular component	C
+GO:0005622	other cellular component	C
+GO:0005622	other cellular component	C
+GO:0005622	other cellular component	C
+GO:0005622	other cellular component	C
+GO:0005622	other cellular component	C
+GO:0005623	other cellular component	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005634	nucleus	C
+GO:0005635	nucleus	C
+GO:0005637	nucleus	C
+GO:0005637	other membranes	C
+GO:0005639	nucleus	C
+GO:0005639	other membranes	C
+GO:0005642	other membranes	C
+GO:0005643	nucleus	C
+GO:0005643	nucleus	C
+GO:0005643	nucleus	C
+GO:0005643	other membranes	C
+GO:0005643	other membranes	C
+GO:0005643	other membranes	C
+GO:0005652	nucleus	C
+GO:0005652	other membranes	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005654	nucleus	C
+GO:0005664	nucleus	C
+GO:0005665	nucleus	C
+GO:0005667	nucleus	C
+GO:0005667	nucleus	C
+GO:0005675	nucleus	C
+GO:0005680	nucleus	C
+GO:0005680	nucleus	C
+GO:0005681	nucleus	C
+GO:0005681	nucleus	C
+GO:0005682	nucleus	C
+GO:0005682	nucleus	C
+GO:0005686	nucleus	C
+GO:0005689	nucleus	C
+GO:0005694	other cellular component	C
+GO:0005694	other cellular component	C
+GO:0005694	other cellular component	C
+GO:0005697	nucleus	C
+GO:0005697	nucleus	C
+GO:0005730	nucleus	C
+GO:0005730	nucleus	C
+GO:0005730	nucleus	C
+GO:0005730	nucleus	C
+GO:0005730	nucleus	C
+GO:0005730	nucleus	C
+GO:0005730	nucleus	C
+GO:0005730	nucleus	C
+GO:0005730	nucleus	C
+GO:0005730	nucleus	C
+GO:0005730	nucleus	C
+GO:0005730	nucleus	C
+GO:0005730	nucleus	C
+GO:0005730	nucleus	C
+GO:0005730	nucleus	C
+GO:0005730	nucleus	C
+GO:0005730	nucleus	C
+GO:0005730	nucleus	C
+GO:0005730	nucleus	C
+GO:0005736	nucleus	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005737	other cellular component	C
+GO:0005739	mitochondrion	C
+GO:0005739	mitochondrion	C
+GO:0005739	mitochondrion	C
+GO:0005739	mitochondrion	C
+GO:0005739	mitochondrion	C
+GO:0005739	mitochondrion	C
+GO:0005739	mitochondrion	C
+GO:0005739	mitochondrion	C
+GO:0005739	mitochondrion	C
+GO:0005739	mitochondrion	C
+GO:0005739	mitochondrion	C
+GO:0005739	mitochondrion	C
+GO:0005739	mitochondrion	C
+GO:0005739	mitochondrion	C
+GO:0005739	mitochondrion	C
+GO:0005739	mitochondrion	C
+GO:0005739	mitochondrion	C
+GO:0005739	mitochondrion	C
+GO:0005739	mitochondrion	C
+GO:0005739	mitochondrion	C
+GO:0005739	mitochondrion	C
+GO:0005739	mitochondrion	C
+GO:0005739	mitochondrion	C
+GO:0005741	mitochondrion	C
+GO:0005741	other membranes	C
+GO:0005742	mitochondrion	C
+GO:0005742	other membranes	C
+GO:0005743	mitochondrion	C
+GO:0005743	mitochondrion	C
+GO:0005743	mitochondrion	C
+GO:0005743	mitochondrion	C
+GO:0005743	mitochondrion	C
+GO:0005743	mitochondrion	C
+GO:0005743	mitochondrion	C
+GO:0005743	mitochondrion	C
+GO:0005743	mitochondrion	C
+GO:0005743	mitochondrion	C
+GO:0005743	mitochondrion	C
+GO:0005743	mitochondrion	C
+GO:0005743	mitochondrion	C
+GO:0005743	other membranes	C
+GO:0005743	other membranes	C
+GO:0005743	other membranes	C
+GO:0005743	other membranes	C
+GO:0005743	other membranes	C
+GO:0005743	other membranes	C
+GO:0005743	other membranes	C
+GO:0005743	other membranes	C
+GO:0005743	other membranes	C
+GO:0005743	other membranes	C
+GO:0005743	other membranes	C
+GO:0005743	other membranes	C
+GO:0005743	other membranes	C
+GO:0005747	mitochondrion	C
+GO:0005747	mitochondrion	C
+GO:0005747	other membranes	C
+GO:0005747	other membranes	C
+GO:0005759	mitochondrion	C
+GO:0005759	mitochondrion	C
+GO:0005759	mitochondrion	C
+GO:0005759	mitochondrion	C
+GO:0005759	mitochondrion	C
+GO:0005759	mitochondrion	C
+GO:0005759	mitochondrion	C
+GO:0005759	mitochondrion	C
+GO:0005759	mitochondrion	C
+GO:0005762	mitochondrion	C
+GO:0005762	mitochondrion	C
+GO:0005762	translational apparatus	C
+GO:0005762	translational apparatus	C
+GO:0005763	mitochondrion	C
+GO:0005763	translational apparatus	C
+GO:0005764	other cytoplasmic organelle	C
+GO:0005764	other cytoplasmic organelle	C
+GO:0005764	other cytoplasmic organelle	C
+GO:0005764	other cytoplasmic organelle	C
+GO:0005764	other cytoplasmic organelle	C
+GO:0005764	other cytoplasmic organelle	C
+GO:0005765	other cytoplasmic organelle	C
+GO:0005765	other cytoplasmic organelle	C
+GO:0005765	other cytoplasmic organelle	C
+GO:0005765	other cytoplasmic organelle	C
+GO:0005765	other cytoplasmic organelle	C
+GO:0005765	other cytoplasmic organelle	C
+GO:0005765	other membranes	C
+GO:0005765	other membranes	C
+GO:0005765	other membranes	C
+GO:0005765	other membranes	C
+GO:0005765	other membranes	C
+GO:0005765	other membranes	C
+GO:0005768	other cytoplasmic organelle	C
+GO:0005768	other cytoplasmic organelle	C
+GO:0005768	other cytoplasmic organelle	C
+GO:0005768	other cytoplasmic organelle	C
+GO:0005768	other cytoplasmic organelle	C
+GO:0005769	other cytoplasmic organelle	C
+GO:0005769	other cytoplasmic organelle	C
+GO:0005769	other cytoplasmic organelle	C
+GO:0005769	other cytoplasmic organelle	C
+GO:0005769	other cytoplasmic organelle	C
+GO:0005769	other cytoplasmic organelle	C
+GO:0005769	other cytoplasmic organelle	C
+GO:0005769	other cytoplasmic organelle	C
+GO:0005770	other cytoplasmic organelle	C
+GO:0005770	other cytoplasmic organelle	C
+GO:0005770	other cytoplasmic organelle	C
+GO:0005770	other cytoplasmic organelle	C
+GO:0005770	other cytoplasmic organelle	C
+GO:0005770	other cytoplasmic organelle	C
+GO:0005770	other cytoplasmic organelle	C
+GO:0005774	other cytoplasmic organelle	C
+GO:0005774	other membranes	C
+GO:0005776	other cytoplasmic organelle	C
+GO:0005776	other cytoplasmic organelle	C
+GO:0005776	other cytoplasmic organelle	C
+GO:0005776	other cytoplasmic organelle	C
+GO:0005777	other cytoplasmic organelle	C
+GO:0005777	other cytoplasmic organelle	C
+GO:0005777	other cytoplasmic organelle	C
+GO:0005777	other cytoplasmic organelle	C
+GO:0005777	other cytoplasmic organelle	C
+GO:0005778	other cytoplasmic organelle	C
+GO:0005778	other membranes	C
+GO:0005782	other cytoplasmic organelle	C
+GO:0005783	ER/Golgi	C
+GO:0005783	ER/Golgi	C
+GO:0005783	ER/Golgi	C
+GO:0005783	ER/Golgi	C
+GO:0005783	ER/Golgi	C
+GO:0005783	ER/Golgi	C
+GO:0005783	ER/Golgi	C
+GO:0005783	ER/Golgi	C
+GO:0005783	ER/Golgi	C
+GO:0005783	ER/Golgi	C
+GO:0005783	ER/Golgi	C
+GO:0005783	ER/Golgi	C
+GO:0005783	ER/Golgi	C
+GO:0005783	ER/Golgi	C
+GO:0005783	ER/Golgi	C
+GO:0005783	ER/Golgi	C
+GO:0005783	ER/Golgi	C
+GO:0005786	translational apparatus	C
+GO:0005788	ER/Golgi	C
+GO:0005788	ER/Golgi	C
+GO:0005788	ER/Golgi	C
+GO:0005789	ER/Golgi	C
+GO:0005789	ER/Golgi	C
+GO:0005789	ER/Golgi	C
+GO:0005789	ER/Golgi	C
+GO:0005789	ER/Golgi	C
+GO:0005789	ER/Golgi	C
+GO:0005789	ER/Golgi	C
+GO:0005789	ER/Golgi	C
+GO:0005789	ER/Golgi	C
+GO:0005789	ER/Golgi	C
+GO:0005789	ER/Golgi	C
+GO:0005789	ER/Golgi	C
+GO:0005789	other membranes	C
+GO:0005789	other membranes	C
+GO:0005789	other membranes	C
+GO:0005789	other membranes	C
+GO:0005789	other membranes	C
+GO:0005789	other membranes	C
+GO:0005789	other membranes	C
+GO:0005789	other membranes	C
+GO:0005789	other membranes	C
+GO:0005789	other membranes	C
+GO:0005789	other membranes	C
+GO:0005789	other membranes	C
+GO:0005793	ER/Golgi	C
+GO:0005793	ER/Golgi	C
+GO:0005794	ER/Golgi	C
+GO:0005794	ER/Golgi	C
+GO:0005794	ER/Golgi	C
+GO:0005794	ER/Golgi	C
+GO:0005794	ER/Golgi	C
+GO:0005794	ER/Golgi	C
+GO:0005794	ER/Golgi	C
+GO:0005794	ER/Golgi	C
+GO:0005794	ER/Golgi	C
+GO:0005794	ER/Golgi	C
+GO:0005794	ER/Golgi	C
+GO:0005794	ER/Golgi	C
+GO:0005794	ER/Golgi	C
+GO:0005794	ER/Golgi	C
+GO:0005794	ER/Golgi	C
+GO:0005794	ER/Golgi	C
+GO:0005794	ER/Golgi	C
+GO:0005794	ER/Golgi	C
+GO:0005794	ER/Golgi	C
+GO:0005794	ER/Golgi	C
+GO:0005794	ER/Golgi	C
+GO:0005794	ER/Golgi	C
+GO:0005794	ER/Golgi	C
+GO:0005794	ER/Golgi	C
+GO:0005794	ER/Golgi	C
+GO:0005795	ER/Golgi	C
+GO:0005796	ER/Golgi	C
+GO:0005801	ER/Golgi	C
+GO:0005802	ER/Golgi	C
+GO:0005802	ER/Golgi	C
+GO:0005813	cytoskeleton	C
+GO:0005813	cytoskeleton	C
+GO:0005813	cytoskeleton	C
+GO:0005813	cytoskeleton	C
+GO:0005813	cytoskeleton	C
+GO:0005813	cytoskeleton	C
+GO:0005813	cytoskeleton	C
+GO:0005813	cytoskeleton	C
+GO:0005813	cytoskeleton	C
+GO:0005813	cytoskeleton	C
+GO:0005813	cytoskeleton	C
+GO:0005814	cytoskeleton	C
+GO:0005814	cytoskeleton	C
+GO:0005814	cytoskeleton	C
+GO:0005814	cytoskeleton	C
+GO:0005814	cytoskeleton	C
+GO:0005814	cytoskeleton	C
+GO:0005814	cytoskeleton	C
+GO:0005815	cytoskeleton	C
+GO:0005815	cytoskeleton	C
+GO:0005815	cytoskeleton	C
+GO:0005819	cytoskeleton	C
+GO:0005819	cytoskeleton	C
+GO:0005819	cytoskeleton	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005829	cytosol	C
+GO:0005834	other membranes	C
+GO:0005834	plasma membrane	C
+GO:0005839	other cellular component	C
+GO:0005840	translational apparatus	C
+GO:0005844	other cellular component	C
+GO:0005844	other cellular component	C
+GO:0005849	nucleus	C
+GO:0005852	other cellular component	C
+GO:0005852	other cellular component	C
+GO:0005856	cytoskeleton	C
+GO:0005856	cytoskeleton	C
+GO:0005856	cytoskeleton	C
+GO:0005856	cytoskeleton	C
+GO:0005856	cytoskeleton	C
+GO:0005856	cytoskeleton	C
+GO:0005856	cytoskeleton	C
+GO:0005856	cytoskeleton	C
+GO:0005856	cytoskeleton	C
+GO:0005856	cytoskeleton	C
+GO:0005856	cytoskeleton	C
+GO:0005856	cytoskeleton	C
+GO:0005858	cytoskeleton	C
+GO:0005858	cytoskeleton	C
+GO:0005868	cytoskeleton	C
+GO:0005871	cytoskeleton	C
+GO:0005874	cytoskeleton	C
+GO:0005874	cytoskeleton	C
+GO:0005874	cytoskeleton	C
+GO:0005874	cytoskeleton	C
+GO:0005874	cytoskeleton	C
+GO:0005874	cytoskeleton	C
+GO:0005874	cytoskeleton	C
+GO:0005874	cytoskeleton	C
+GO:0005874	cytoskeleton	C
+GO:0005879	cytoskeleton	C
+GO:0005881	cytoskeleton	C
+GO:0005882	cytoskeleton	C
+GO:0005885	cytoskeleton	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	other membranes	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005886	plasma membrane	C
+GO:0005887	other membranes	C
+GO:0005887	other membranes	C
+GO:0005887	other membranes	C
+GO:0005887	other membranes	C
+GO:0005887	other membranes	C
+GO:0005887	other membranes	C
+GO:0005887	other membranes	C
+GO:0005887	plasma membrane	C
+GO:0005887	plasma membrane	C
+GO:0005887	plasma membrane	C
+GO:0005887	plasma membrane	C
+GO:0005887	plasma membrane	C
+GO:0005887	plasma membrane	C
+GO:0005887	plasma membrane	C
+GO:0005901	other membranes	C
+GO:0005901	other membranes	C
+GO:0005901	plasma membrane	C
+GO:0005901	plasma membrane	C
+GO:0005905	other membranes	C
+GO:0005911	other membranes	C
+GO:0005911	other membranes	C
+GO:0005911	plasma membrane	C
+GO:0005911	plasma membrane	C
+GO:0005912	other membranes	C
+GO:0005912	other membranes	C
+GO:0005912	other membranes	C
+GO:0005912	other membranes	C
+GO:0005912	plasma membrane	C
+GO:0005912	plasma membrane	C
+GO:0005912	plasma membrane	C
+GO:0005912	plasma membrane	C
+GO:0005923	other membranes	C
+GO:0005923	plasma membrane	C
+GO:0005925	other membranes	C
+GO:0005925	other membranes	C
+GO:0005925	other membranes	C
+GO:0005925	other membranes	C
+GO:0005925	other membranes	C
+GO:0005925	other membranes	C
+GO:0005925	other membranes	C
+GO:0005925	plasma membrane	C
+GO:0005925	plasma membrane	C
+GO:0005925	plasma membrane	C
+GO:0005925	plasma membrane	C
+GO:0005925	plasma membrane	C
+GO:0005925	plasma membrane	C
+GO:0005925	plasma membrane	C
+GO:0005929	other cellular component	C
+GO:0005929	other cellular component	C
+GO:0005929	other cellular component	C
+GO:0005929	other cellular component	C
+GO:0005929	other cellular component	C
+GO:0005929	other cellular component	C
+GO:0005929	other cellular component	C
+GO:0005929	other cellular component	C
+GO:0005938	other cellular component	C
+GO:0005938	other cellular component	C
+GO:0005938	other cellular component	C
+GO:0006000	other metabolic processes	P
+GO:0006003	other metabolic processes	P
+GO:0006006	other metabolic processes	P
+GO:0006048	other metabolic processes	P
+GO:0006084	other metabolic processes	P
+GO:0006085	other metabolic processes	P
+GO:0006094	other metabolic processes	P
+GO:0006099	other metabolic processes	P
+GO:0006101	other metabolic processes	P
+GO:0006103	other metabolic processes	P
+GO:0006110	other metabolic processes	P
+GO:0006120	other metabolic processes	P
+GO:0006139	other metabolic processes	P
+GO:0006139	other metabolic processes	P
+GO:0006144	other metabolic processes	P
+GO:0006148	other metabolic processes	P
+GO:0006195	other metabolic processes	P
+GO:0006195	other metabolic processes	P
+GO:0006206	other metabolic processes	P
+GO:0006259	DNA metabolism	P
+GO:0006260	DNA metabolism	P
+GO:0006260	DNA metabolism	P
+GO:0006260	DNA metabolism	P
+GO:0006261	DNA metabolism	P
+GO:0006264	DNA metabolism	P
+GO:0006264	DNA metabolism	P
+GO:0006264	cell organization and biogenesis	P
+GO:0006264	cell organization and biogenesis	P
+GO:0006265	DNA metabolism	P
+GO:0006270	DNA metabolism	P
+GO:0006270	DNA metabolism	P
+GO:0006281	DNA metabolism	P
+GO:0006281	DNA metabolism	P
+GO:0006281	DNA metabolism	P
+GO:0006281	DNA metabolism	P
+GO:0006281	DNA metabolism	P
+GO:0006281	DNA metabolism	P
+GO:0006281	DNA metabolism	P
+GO:0006281	DNA metabolism	P
+GO:0006281	DNA metabolism	P
+GO:0006281	stress response	P
+GO:0006281	stress response	P
+GO:0006281	stress response	P
+GO:0006281	stress response	P
+GO:0006281	stress response	P
+GO:0006281	stress response	P
+GO:0006281	stress response	P
+GO:0006281	stress response	P
+GO:0006281	stress response	P
+GO:0006283	DNA metabolism	P
+GO:0006283	DNA metabolism	P
+GO:0006283	DNA metabolism	P
+GO:0006283	stress response	P
+GO:0006283	stress response	P
+GO:0006283	stress response	P
+GO:0006284	DNA metabolism	P
+GO:0006284	DNA metabolism	P
+GO:0006284	DNA metabolism	P
+GO:0006284	stress response	P
+GO:0006284	stress response	P
+GO:0006284	stress response	P
+GO:0006289	DNA metabolism	P
+GO:0006289	DNA metabolism	P
+GO:0006289	DNA metabolism	P
+GO:0006289	stress response	P
+GO:0006289	stress response	P
+GO:0006289	stress response	P
+GO:0006294	DNA metabolism	P
+GO:0006294	cell organization and biogenesis	P
+GO:0006294	stress response	P
+GO:0006298	DNA metabolism	P
+GO:0006298	stress response	P
+GO:0006301	DNA metabolism	P
+GO:0006301	stress response	P
+GO:0006302	DNA metabolism	P
+GO:0006302	DNA metabolism	P
+GO:0006302	DNA metabolism	P
+GO:0006302	DNA metabolism	P
+GO:0006302	stress response	P
+GO:0006302	stress response	P
+GO:0006302	stress response	P
+GO:0006302	stress response	P
+GO:0006346	RNA metabolism	P
+GO:0006346	cell organization and biogenesis	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006351	RNA metabolism	P
+GO:0006353	RNA metabolism	P
+GO:0006353	cell organization and biogenesis	P
+GO:0006355	RNA metabolism	P
+GO:0006355	RNA metabolism	P
+GO:0006355	RNA metabolism	P
+GO:0006355	RNA metabolism	P
+GO:0006355	RNA metabolism	P
+GO:0006355	RNA metabolism	P
+GO:0006355	RNA metabolism	P
+GO:0006355	RNA metabolism	P
+GO:0006355	RNA metabolism	P
+GO:0006355	RNA metabolism	P
+GO:0006355	RNA metabolism	P
+GO:0006355	RNA metabolism	P
+GO:0006355	RNA metabolism	P
+GO:0006355	RNA metabolism	P
+GO:0006355	RNA metabolism	P
+GO:0006355	RNA metabolism	P
+GO:0006355	RNA metabolism	P
+GO:0006355	RNA metabolism	P
+GO:0006355	RNA metabolism	P
+GO:0006355	RNA metabolism	P
+GO:0006355	RNA metabolism	P
+GO:0006355	RNA metabolism	P
+GO:0006355	RNA metabolism	P
+GO:0006355	RNA metabolism	P
+GO:0006355	RNA metabolism	P
+GO:0006355	RNA metabolism	P
+GO:0006357	RNA metabolism	P
+GO:0006357	RNA metabolism	P
+GO:0006357	RNA metabolism	P
+GO:0006357	RNA metabolism	P
+GO:0006357	RNA metabolism	P
+GO:0006357	RNA metabolism	P
+GO:0006357	RNA metabolism	P
+GO:0006361	RNA metabolism	P
+GO:0006361	cell organization and biogenesis	P
+GO:0006364	RNA metabolism	P
+GO:0006364	RNA metabolism	P
+GO:0006364	RNA metabolism	P
+GO:0006364	RNA metabolism	P
+GO:0006366	RNA metabolism	P
+GO:0006366	RNA metabolism	P
+GO:0006366	RNA metabolism	P
+GO:0006366	RNA metabolism	P
+GO:0006367	RNA metabolism	P
+GO:0006367	RNA metabolism	P
+GO:0006367	RNA metabolism	P
+GO:0006367	cell organization and biogenesis	P
+GO:0006367	cell organization and biogenesis	P
+GO:0006367	cell organization and biogenesis	P
+GO:0006368	RNA metabolism	P
+GO:0006368	RNA metabolism	P
+GO:0006368	RNA metabolism	P
+GO:0006369	RNA metabolism	P
+GO:0006369	RNA metabolism	P
+GO:0006369	cell organization and biogenesis	P
+GO:0006369	cell organization and biogenesis	P
+GO:0006370	RNA metabolism	P
+GO:0006378	RNA metabolism	P
+GO:0006378	RNA metabolism	P
+GO:0006379	RNA metabolism	P
+GO:0006379	RNA metabolism	P
+GO:0006396	RNA metabolism	P
+GO:0006397	RNA metabolism	P
+GO:0006397	RNA metabolism	P
+GO:0006397	RNA metabolism	P
+GO:0006397	RNA metabolism	P
+GO:0006400	RNA metabolism	P
+GO:0006401	RNA metabolism	P
+GO:0006406	transport	P
+GO:0006406	transport	P
+GO:0006406	transport	P
+GO:0006409	transport	P
+GO:0006409	transport	P
+GO:0006409	transport	P
+GO:0006412	protein metabolism	P
+GO:0006413	protein metabolism	P
+GO:0006413	protein metabolism	P
+GO:0006417	protein metabolism	P
+GO:0006417	protein metabolism	P
+GO:0006417	protein metabolism	P
+GO:0006426	RNA metabolism	P
+GO:0006426	protein metabolism	P
+GO:0006433	RNA metabolism	P
+GO:0006433	protein metabolism	P
+GO:0006446	protein metabolism	P
+GO:0006457	protein metabolism	P
+GO:0006458	protein metabolism	P
+GO:0006468	protein metabolism	P
+GO:0006468	protein metabolism	P
+GO:0006468	protein metabolism	P
+GO:0006469	other metabolic processes	P
+GO:0006470	protein metabolism	P
+GO:0006470	protein metabolism	P
+GO:0006470	protein metabolism	P
+GO:0006501	protein metabolism	P
+GO:0006506	protein metabolism	P
+GO:0006508	protein metabolism	P
+GO:0006508	protein metabolism	P
+GO:0006511	protein metabolism	P
+GO:0006511	protein metabolism	P
+GO:0006511	protein metabolism	P
+GO:0006511	protein metabolism	P
+GO:0006511	protein metabolism	P
+GO:0006520	other metabolic processes	P
+GO:0006525	other metabolic processes	P
+GO:0006552	other metabolic processes	P
+GO:0006568	other metabolic processes	P
+GO:0006574	other metabolic processes	P
+GO:0006606	transport	P
+GO:0006606	transport	P
+GO:0006606	transport	P
+GO:0006607	transport	P
+GO:0006607	transport	P
+GO:0006610	transport	P
+GO:0006611	transport	P
+GO:0006614	transport	P
+GO:0006629	other metabolic processes	P
+GO:0006635	other metabolic processes	P
+GO:0006635	other metabolic processes	P
+GO:0006646	other metabolic processes	P
+GO:0006650	other metabolic processes	P
+GO:0006650	other metabolic processes	P
+GO:0006672	other metabolic processes	P
+GO:0006678	other metabolic processes	P
+GO:0006680	other metabolic processes	P
+GO:0006681	other metabolic processes	P
+GO:0006684	other metabolic processes	P
+GO:0006695	other metabolic processes	P
+GO:0006695	other metabolic processes	P
+GO:0006720	other metabolic processes	P
+GO:0006730	other metabolic processes	P
+GO:0006738	other metabolic processes	P
+GO:0006744	other metabolic processes	P
+GO:0006768	other metabolic processes	P
+GO:0006779	other metabolic processes	P
+GO:0006782	other metabolic processes	P
+GO:0006783	other metabolic processes	P
+GO:0006805	other metabolic processes	P
+GO:0006809	other metabolic processes	P
+GO:0006810	transport	P
+GO:0006810	transport	P
+GO:0006810	transport	P
+GO:0006811	transport	P
+GO:0006814	transport	P
+GO:0006816	transport	P
+GO:0006816	transport	P
+GO:0006820	transport	P
+GO:0006826	transport	P
+GO:0006829	transport	P
+GO:0006839	transport	P
+GO:0006839	transport	P
+GO:0006839	transport	P
+GO:0006839	transport	P
+GO:0006843	transport	P
+GO:0006865	transport	P
+GO:0006869	transport	P
+GO:0006874	other biological processes	P
+GO:0006874	other biological processes	P
+GO:0006874	other biological processes	P
+GO:0006879	other biological processes	P
+GO:0006882	other biological processes	P
+GO:0006886	transport	P
+GO:0006886	transport	P
+GO:0006886	transport	P
+GO:0006887	transport	P
+GO:0006887	transport	P
+GO:0006887	transport	P
+GO:0006887	transport	P
+GO:0006887	transport	P
+GO:0006888	transport	P
+GO:0006888	transport	P
+GO:0006888	transport	P
+GO:0006888	transport	P
+GO:0006890	transport	P
+GO:0006890	transport	P
+GO:0006890	transport	P
+GO:0006891	transport	P
+GO:0006891	transport	P
+GO:0006893	transport	P
+GO:0006897	cell organization and biogenesis	P
+GO:0006897	cell organization and biogenesis	P
+GO:0006897	cell organization and biogenesis	P
+GO:0006897	cell organization and biogenesis	P
+GO:0006897	cell organization and biogenesis	P
+GO:0006897	cell organization and biogenesis	P
+GO:0006897	cell organization and biogenesis	P
+GO:0006897	cell organization and biogenesis	P
+GO:0006897	transport	P
+GO:0006897	transport	P
+GO:0006897	transport	P
+GO:0006897	transport	P
+GO:0006897	transport	P
+GO:0006897	transport	P
+GO:0006897	transport	P
+GO:0006897	transport	P
+GO:0006898	cell organization and biogenesis	P
+GO:0006898	cell organization and biogenesis	P
+GO:0006898	cell organization and biogenesis	P
+GO:0006898	transport	P
+GO:0006898	transport	P
+GO:0006898	transport	P
+GO:0006906	cell organization and biogenesis	P
+GO:0006906	cell organization and biogenesis	P
+GO:0006906	transport	P
+GO:0006906	transport	P
+GO:0006909	cell organization and biogenesis	P
+GO:0006909	cell organization and biogenesis	P
+GO:0006909	transport	P
+GO:0006909	transport	P
+GO:0006913	transport	P
+GO:0006913	transport	P
+GO:0006914	other metabolic processes	P
+GO:0006915	death	P
+GO:0006915	death	P
+GO:0006915	death	P
+GO:0006915	death	P
+GO:0006915	death	P
+GO:0006915	death	P
+GO:0006915	death	P
+GO:0006915	death	P
+GO:0006915	death	P
+GO:0006915	death	P
+GO:0006915	death	P
+GO:0006919	death	P
+GO:0006919	death	P
+GO:0006936	other biological processes	P
+GO:0006936	other biological processes	P
+GO:0006953	stress response	P
+GO:0006954	stress response	P
+GO:0006955	other biological processes	P
+GO:0006964	other metabolic processes	P
+GO:0006964	stress response	P
+GO:0006974	stress response	P
+GO:0006974	stress response	P
+GO:0006974	stress response	P
+GO:0006974	stress response	P
+GO:0006974	stress response	P
+GO:0006974	stress response	P
+GO:0006974	stress response	P
+GO:0006974	stress response	P
+GO:0006977	cell cycle and proliferation	P
+GO:0006977	signal transduction	P
+GO:0006977	stress response	P
+GO:0006979	stress response	P
+GO:0006979	stress response	P
+GO:0006979	stress response	P
+GO:0006979	stress response	P
+GO:0006986	stress response	P
+GO:0007004	DNA metabolism	P
+GO:0007004	cell organization and biogenesis	P
+GO:0007005	cell organization and biogenesis	P
+GO:0007005	cell organization and biogenesis	P
+GO:0007005	cell organization and biogenesis	P
+GO:0007005	cell organization and biogenesis	P
+GO:0007009	cell organization and biogenesis	P
+GO:0007010	cell organization and biogenesis	P
+GO:0007010	cell organization and biogenesis	P
+GO:0007010	cell organization and biogenesis	P
+GO:0007015	cell organization and biogenesis	P
+GO:0007015	cell organization and biogenesis	P
+GO:0007016	cell organization and biogenesis	P
+GO:0007018	other biological processes	P
+GO:0007018	other biological processes	P
+GO:0007020	cell organization and biogenesis	P
+GO:0007026	cell organization and biogenesis	P
+GO:0007026	protein metabolism	P
+GO:0007029	cell organization and biogenesis	P
+GO:0007029	cell organization and biogenesis	P
+GO:0007030	cell organization and biogenesis	P
+GO:0007030	cell organization and biogenesis	P
+GO:0007032	cell organization and biogenesis	P
+GO:0007032	cell organization and biogenesis	P
+GO:0007032	cell organization and biogenesis	P
+GO:0007034	transport	P
+GO:0007040	cell organization and biogenesis	P
+GO:0007040	cell organization and biogenesis	P
+GO:0007041	transport	P
+GO:0007042	cell organization and biogenesis	P
+GO:0007044	cell organization and biogenesis	P
+GO:0007049	cell cycle and proliferation	P
+GO:0007049	cell cycle and proliferation	P
+GO:0007049	cell cycle and proliferation	P
+GO:0007049	cell cycle and proliferation	P
+GO:0007049	cell cycle and proliferation	P
+GO:0007049	cell cycle and proliferation	P
+GO:0007049	cell cycle and proliferation	P
+GO:0007049	cell cycle and proliferation	P
+GO:0007050	cell cycle and proliferation	P
+GO:0007050	cell cycle and proliferation	P
+GO:0007050	cell cycle and proliferation	P
+GO:0007050	cell cycle and proliferation	P
+GO:0007064	cell cycle and proliferation	P
+GO:0007064	cell organization and biogenesis	P
+GO:0007077	cell cycle and proliferation	P
+GO:0007077	cell organization and biogenesis	P
+GO:0007088	cell cycle and proliferation	P
+GO:0007088	cell organization and biogenesis	P
+GO:0007093	cell cycle and proliferation	P
+GO:0007096	cell cycle and proliferation	P
+GO:0007096	cell organization and biogenesis	P
+GO:0007098	cell cycle and proliferation	P
+GO:0007098	cell cycle and proliferation	P
+GO:0007098	cell organization and biogenesis	P
+GO:0007098	cell organization and biogenesis	P
+GO:0007099	cell cycle and proliferation	P
+GO:0007099	cell organization and biogenesis	P
+GO:0007143	cell cycle and proliferation	P
+GO:0007155	cell adhesion	P
+GO:0007155	cell adhesion	P
+GO:0007155	cell adhesion	P
+GO:0007155	cell adhesion	P
+GO:0007155	cell adhesion	P
+GO:0007155	cell adhesion	P
+GO:0007155	cell adhesion	P
+GO:0007156	cell adhesion	P
+GO:0007157	cell adhesion	P
+GO:0007160	cell adhesion	P
+GO:0007160	cell adhesion	P
+GO:0007160	cell adhesion	P
+GO:0007161	cell adhesion	P
+GO:0007163	cell organization and biogenesis	P
+GO:0007165	signal transduction	P
+GO:0007165	signal transduction	P
+GO:0007165	signal transduction	P
+GO:0007165	signal transduction	P
+GO:0007165	signal transduction	P
+GO:0007166	signal transduction	P
+GO:0007166	signal transduction	P
+GO:0007169	signal transduction	P
+GO:0007169	signal transduction	P
+GO:0007186	signal transduction	P
+GO:0007186	signal transduction	P
+GO:0007188	signal transduction	P
+GO:0007190	other metabolic processes	P
+GO:0007190	other metabolic processes	P
+GO:0007212	signal transduction	P
+GO:0007219	signal transduction	P
+GO:0007229	signal transduction	P
+GO:0007249	signal transduction	P
+GO:0007254	signal transduction	P
+GO:0007254	stress response	P
+GO:0007257	protein metabolism	P
+GO:0007257	signal transduction	P
+GO:0007257	stress response	P
+GO:0007264	signal transduction	P
+GO:0007264	signal transduction	P
+GO:0007265	signal transduction	P
+GO:0007265	signal transduction	P
+GO:0007266	signal transduction	P
+GO:0007266	signal transduction	P
+GO:0007266	signal transduction	P
+GO:0007268	cell-cell signaling	P
+GO:0007269	cell-cell signaling	P
+GO:0007269	cell-cell signaling	P
+GO:0007269	transport	P
+GO:0007269	transport	P
+GO:0007274	cell-cell signaling	P
+GO:0007275	developmental processes	P
+GO:0007275	developmental processes	P
+GO:0007275	developmental processes	P
+GO:0007275	developmental processes	P
+GO:0007275	developmental processes	P
+GO:0007283	other biological processes	P
+GO:0007283	other biological processes	P
+GO:0007283	other biological processes	P
+GO:0007283	other biological processes	P
+GO:0007293	other biological processes	P
+GO:0007293	other biological processes	P
+GO:0007294	other biological processes	P
+GO:0007297	other biological processes	P
+GO:0007298	other biological processes	P
+GO:0007308	cell organization and biogenesis	P
+GO:0007314	cell organization and biogenesis	P
+GO:0007314	developmental processes	P
+GO:0007338	other biological processes	P
+GO:0007346	cell cycle and proliferation	P
+GO:0007346	cell cycle and proliferation	P
+GO:0007346	cell cycle and proliferation	P
+GO:0007369	developmental processes	P
+GO:0007389	developmental processes	P
+GO:0007391	developmental processes	P
+GO:0007398	developmental processes	P
+GO:0007399	developmental processes	P
+GO:0007399	developmental processes	P
+GO:0007399	developmental processes	P
+GO:0007399	developmental processes	P
+GO:0007399	developmental processes	P
+GO:0007400	developmental processes	P
+GO:0007403	developmental processes	P
+GO:0007409	cell organization and biogenesis	P
+GO:0007409	cell organization and biogenesis	P
+GO:0007409	developmental processes	P
+GO:0007409	developmental processes	P
+GO:0007411	cell organization and biogenesis	P
+GO:0007411	cell organization and biogenesis	P
+GO:0007411	developmental processes	P
+GO:0007411	developmental processes	P
+GO:0007415	cell organization and biogenesis	P
+GO:0007415	developmental processes	P
+GO:0007417	developmental processes	P
+GO:0007417	developmental processes	P
+GO:0007417	developmental processes	P
+GO:0007417	developmental processes	P
+GO:0007419	developmental processes	P
+GO:0007420	developmental processes	P
+GO:0007420	developmental processes	P
+GO:0007422	developmental processes	P
+GO:0007423	developmental processes	P
+GO:0007423	developmental processes	P
+GO:0007423	developmental processes	P
+GO:0007424	developmental processes	P
+GO:0007440	developmental processes	P
+GO:0007446	developmental processes	P
+GO:0007447	developmental processes	P
+GO:0007450	developmental processes	P
+GO:0007451	developmental processes	P
+GO:0007460	developmental processes	P
+GO:0007464	cell organization and biogenesis	P
+GO:0007464	developmental processes	P
+GO:0007473	developmental processes	P
+GO:0007474	developmental processes	P
+GO:0007476	developmental processes	P
+GO:0007478	developmental processes	P
+GO:0007498	developmental processes	P
+GO:0007498	developmental processes	P
+GO:0007501	developmental processes	P
+GO:0007507	developmental processes	P
+GO:0007507	developmental processes	P
+GO:0007507	developmental processes	P
+GO:0007507	developmental processes	P
+GO:0007507	developmental processes	P
+GO:0007507	developmental processes	P
+GO:0007519	developmental processes	P
+GO:0007521	developmental processes	P
+GO:0007521	developmental processes	P
+GO:0007528	cell organization and biogenesis	P
+GO:0007528	developmental processes	P
+GO:0007568	other biological processes	P
+GO:0007568	other biological processes	P
+GO:0007568	other biological processes	P
+GO:0007569	other biological processes	P
+GO:0007595	developmental processes	P
+GO:0007601	other biological processes	P
+GO:0007601	other biological processes	P
+GO:0007601	other biological processes	P
+GO:0007605	other biological processes	P
+GO:0007605	other biological processes	P
+GO:0007605	other biological processes	P
+GO:0007605	other biological processes	P
+GO:0007605	other biological processes	P
+GO:0007605	other biological processes	P
+GO:0007611	other biological processes	P
+GO:0007612	other biological processes	P
+GO:0007612	other biological processes	P
+GO:0007613	other biological processes	P
+GO:0007613	other biological processes	P
+GO:0007616	other biological processes	P
+GO:0007625	other biological processes	P
+GO:0007626	other biological processes	P
+GO:0007626	other biological processes	P
+GO:0007626	other biological processes	P
+GO:0008013	other molecular function	F
+GO:0008017	cytoskeletal activity	F
+GO:0008017	cytoskeletal activity	F
+GO:0008017	cytoskeletal activity	F
+GO:0008017	cytoskeletal activity	F
+GO:0008017	cytoskeletal activity	F
+GO:0008017	cytoskeletal activity	F
+GO:0008021	other cellular component	C
+GO:0008021	other cellular component	C
+GO:0008021	other cellular component	C
+GO:0008021	other cellular component	C
+GO:0008021	other cellular component	C
+GO:0008021	other cellular component	C
+GO:0008022	other molecular function	F
+GO:0008022	other molecular function	F
+GO:0008022	other molecular function	F
+GO:0008022	other molecular function	F
+GO:0008022	other molecular function	F
+GO:0008026	other molecular function	F
+GO:0008033	RNA metabolism	P
+GO:0008033	RNA metabolism	P
+GO:0008045	cell organization and biogenesis	P
+GO:0008045	cell organization and biogenesis	P
+GO:0008045	developmental processes	P
+GO:0008045	developmental processes	P
+GO:0008047	enzyme regulator activity	F
+GO:0008083	signal transduction activity	F
+GO:0008088	transport	P
+GO:0008091	cytoskeleton	C
+GO:0008092	cytoskeletal activity	F
+GO:0008092	cytoskeletal activity	F
+GO:0008092	cytoskeletal activity	F
+GO:0008097	nucleic acid binding activity	F
+GO:0008104	other biological processes	P
+GO:0008104	other biological processes	P
+GO:0008104	other biological processes	P
+GO:0008104	other biological processes	P
+GO:0008134	other molecular function	F
+GO:0008134	other molecular function	F
+GO:0008134	other molecular function	F
+GO:0008134	other molecular function	F
+GO:0008134	other molecular function	F
+GO:0008137	other molecular function	F
+GO:0008138	other molecular function	F
+GO:0008139	other molecular function	F
+GO:0008139	other molecular function	F
+GO:0008142	other molecular function	F
+GO:0008144	other molecular function	F
+GO:0008152	other metabolic processes	P
+GO:0008154	cell organization and biogenesis	P
+GO:0008157	other molecular function	F
+GO:0008168	other molecular function	F
+GO:0008168	other molecular function	F
+GO:0008168	other molecular function	F
+GO:0008179	other molecular function	F
+GO:0008198	other molecular function	F
+GO:0008201	other molecular function	F
+GO:0008203	other metabolic processes	P
+GO:0008219	death	P
+GO:0008233	other molecular function	F
+GO:0008233	other molecular function	F
+GO:0008234	other molecular function	F
+GO:0008237	other molecular function	F
+GO:0008266	nucleic acid binding activity	F
+GO:0008270	other molecular function	F
+GO:0008270	other molecular function	F
+GO:0008270	other molecular function	F
+GO:0008270	other molecular function	F
+GO:0008270	other molecular function	F
+GO:0008270	other molecular function	F
+GO:0008270	other molecular function	F
+GO:0008270	other molecular function	F
+GO:0008270	other molecular function	F
+GO:0008270	other molecular function	F
+GO:0008270	other molecular function	F
+GO:0008270	other molecular function	F
+GO:0008270	other molecular function	F
+GO:0008270	other molecular function	F
+GO:0008270	other molecular function	F
+GO:0008270	other molecular function	F
+GO:0008270	other molecular function	F
+GO:0008270	other molecular function	F
+GO:0008270	other molecular function	F
+GO:0008270	other molecular function	F
+GO:0008273	transporter activity	F
+GO:0008274	cytoskeleton	C
+GO:0008283	cell cycle and proliferation	P
+GO:0008283	cell cycle and proliferation	P
+GO:0008283	cell cycle and proliferation	P
+GO:0008283	cell cycle and proliferation	P
+GO:0008283	cell cycle and proliferation	P
+GO:0008284	cell cycle and proliferation	P
+GO:0008284	cell cycle and proliferation	P
+GO:0008285	cell cycle and proliferation	P
+GO:0008285	cell cycle and proliferation	P
+GO:0008285	cell cycle and proliferation	P
+GO:0008285	cell cycle and proliferation	P
+GO:0008289	other molecular function	F
+GO:0008303	cytosol	C
+GO:0008306	other biological processes	P
+GO:0008306	other biological processes	P
+GO:0008310	other molecular function	F
+GO:0008312	nucleic acid binding activity	F
+GO:0008327	nucleic acid binding activity	F
+GO:0008333	transport	P
+GO:0008334	RNA metabolism	P
+GO:0008340	developmental processes	P
+GO:0008340	developmental processes	P
+GO:0008340	developmental processes	P
+GO:0008347	developmental processes	P
+GO:0008356	other biological processes	P
+GO:0008360	cell organization and biogenesis	P
+GO:0008360	cell organization and biogenesis	P
+GO:0008360	cell organization and biogenesis	P
+GO:0008360	cell organization and biogenesis	P
+GO:0008360	cell organization and biogenesis	P
+GO:0008375	other molecular function	F
+GO:0008375	other molecular function	F
+GO:0008380	RNA metabolism	P
+GO:0008380	RNA metabolism	P
+GO:0008380	RNA metabolism	P
+GO:0008380	RNA metabolism	P
+GO:0008407	developmental processes	P
+GO:0008407	developmental processes	P
+GO:0008408	other molecular function	F
+GO:0008449	other molecular function	F
+GO:0008483	other molecular function	F
+GO:0008484	other molecular function	F
+GO:0008536	other molecular function	F
+GO:0008536	other molecular function	F
+GO:0008536	other molecular function	F
+GO:0008542	other biological processes	P
+GO:0008543	signal transduction	P
+GO:0008544	developmental processes	P
+GO:0008559	transporter activity	F
+GO:0008565	transporter activity	F
+GO:0008565	transporter activity	F
+GO:0008568	other molecular function	F
+GO:0008569	cytoskeletal activity	F
+GO:0008569	cytoskeletal activity	F
+GO:0008569	cytoskeletal activity	F
+GO:0008569	cytoskeletal activity	F
+GO:0008587	developmental processes	P
+GO:0008589	signal transduction	P
+GO:0008610	other metabolic processes	P
+GO:0008611	other metabolic processes	P
+GO:0008625	death	P
+GO:0008631	death	P
+GO:0008631	death	P
+GO:0008635	death	P
+GO:0008643	transport	P
+GO:0008654	other metabolic processes	P
+GO:0008656	enzyme regulator activity	F
+GO:0008821	other molecular function	F
+GO:0008852	other molecular function	F
+GO:0009055	other molecular function	F
+GO:0009055	other molecular function	F
+GO:0009058	other metabolic processes	P
+GO:0009083	other metabolic processes	P
+GO:0009083	other metabolic processes	P
+GO:0009115	other metabolic processes	P
+GO:0009115	other metabolic processes	P
+GO:0009258	other metabolic processes	P
+GO:0009267	stress response	P
+GO:0009268	other biological processes	P
+GO:0009305	protein metabolism	P
+GO:0009306	transport	P
+GO:0009306	transport	P
+GO:0009374	other molecular function	F
+GO:0009374	other molecular function	F
+GO:0009411	other biological processes	P
+GO:0009411	other biological processes	P
+GO:0009411	other biological processes	P
+GO:0009411	other biological processes	P
+GO:0009414	stress response	P
+GO:0009590	other biological processes	P
+GO:0009608	other biological processes	P
+GO:0009612	other biological processes	P
+GO:0009615	other biological processes	P
+GO:0009630	other biological processes	P
+GO:0009653	other biological processes	P
+GO:0009653	other biological processes	P
+GO:0009705	other cytoplasmic organelle	C
+GO:0009705	other membranes	C
+GO:0009725	other biological processes	P
+GO:0009791	developmental processes	P
+GO:0009792	developmental processes	P
+GO:0009847	other biological processes	P
+GO:0009880	developmental processes	P
+GO:0009888	developmental processes	P
+GO:0009897	other membranes	C
+GO:0009897	plasma membrane	C
+GO:0009898	other membranes	C
+GO:0009898	plasma membrane	C
+GO:0009950	developmental processes	P
+GO:0009952	developmental processes	P
+GO:0009952	developmental processes	P
+GO:0009952	developmental processes	P
+GO:0009954	developmental processes	P
+GO:0009966	signal transduction	P
+GO:0009966	signal transduction	P
+GO:0009986	other cellular component	C
+GO:0009986	other cellular component	C
+GO:0009986	other cellular component	C
+GO:0009986	other cellular component	C
+GO:0009986	other cellular component	C
+GO:0009986	other cellular component	C
+GO:0009994	other biological processes	P
+GO:0010001	developmental processes	P
+GO:0010008	other cytoplasmic organelle	C
+GO:0010008	other cytoplasmic organelle	C
+GO:0010008	other cytoplasmic organelle	C
+GO:0010008	other membranes	C
+GO:0010008	other membranes	C
+GO:0010008	other membranes	C
+GO:0010040	other biological processes	P
+GO:0010172	developmental processes	P
+GO:0010212	other biological processes	P
+GO:0010212	other biological processes	P
+GO:0010224	other biological processes	P
+GO:0010457	cell organization and biogenesis	P
+GO:0010468	other metabolic processes	P
+GO:0010468	other metabolic processes	P
+GO:0010468	other metabolic processes	P
+GO:0010468	other metabolic processes	P
+GO:0010468	other metabolic processes	P
+GO:0010468	other metabolic processes	P
+GO:0010485	other molecular function	F
+GO:0010494	other cellular component	C
+GO:0010501	RNA metabolism	P
+GO:0010521	enzyme regulator activity	F
+GO:0010540	transport	P
+GO:0010575	other biological processes	P
+GO:0010603	cell organization and biogenesis	P
+GO:0010626	cell cycle and proliferation	P
+GO:0010626	developmental processes	P
+GO:0010628	other metabolic processes	P
+GO:0010628	other metabolic processes	P
+GO:0010628	other metabolic processes	P
+GO:0010628	other metabolic processes	P
+GO:0010629	other metabolic processes	P
+GO:0010629	other metabolic processes	P
+GO:0010629	other metabolic processes	P
+GO:0010632	other biological processes	P
+GO:0010633	other biological processes	P
+GO:0010666	death	P
+GO:0010718	cell organization and biogenesis	P
+GO:0010718	developmental processes	P
+GO:0010751	signal transduction	P
+GO:0010762	other biological processes	P
+GO:0010762	other biological processes	P
+GO:0010792	DNA metabolism	P
+GO:0010792	stress response	P
+GO:0010803	signal transduction	P
+GO:0010812	cell adhesion	P
+GO:0010824	cell cycle and proliferation	P
+GO:0010824	cell organization and biogenesis	P
+GO:0010827	transport	P
+GO:0010839	cell cycle and proliferation	P
+GO:0010842	developmental processes	P
+GO:0010881	transport	P
+GO:0010882	other biological processes	P
+GO:0010890	other biological processes	P
+GO:0010906	other metabolic processes	P
+GO:0010906	other metabolic processes	P
+GO:0010906	other metabolic processes	P
+GO:0010906	other metabolic processes	P
+GO:0010923	other metabolic processes	P
+GO:0010944	RNA metabolism	P
+GO:0010954	protein metabolism	P
+GO:0010971	cell cycle and proliferation	P
+GO:0010976	cell organization and biogenesis	P
+GO:0010976	cell organization and biogenesis	P
+GO:0010976	developmental processes	P
+GO:0010976	developmental processes	P
+GO:0010996	other biological processes	P
+GO:0012501	death	P
+GO:0012505	other cellular component	C
+GO:0014032	developmental processes	P
+GO:0014047	cell-cell signaling	P
+GO:0014047	transport	P
+GO:0014067	signal transduction	P
+GO:0014069	cytoskeleton	C
+GO:0014069	cytoskeleton	C
+GO:0014069	cytoskeleton	C
+GO:0014070	other biological processes	P
+GO:0014704	other membranes	C
+GO:0014704	plasma membrane	C
+GO:0014706	developmental processes	P
+GO:0015012	other metabolic processes	P
+GO:0015012	other metabolic processes	P
+GO:0015030	nucleus	C
+GO:0015031	transport	P
+GO:0015031	transport	P
+GO:0015031	transport	P
+GO:0015031	transport	P
+GO:0015031	transport	P
+GO:0015031	transport	P
+GO:0015031	transport	P
+GO:0015031	transport	P
+GO:0015031	transport	P
+GO:0015031	transport	P
+GO:0015031	transport	P
+GO:0015031	transport	P
+GO:0015031	transport	P
+GO:0015031	transport	P
+GO:0015031	transport	P
+GO:0015031	transport	P
+GO:0015031	transport	P
+GO:0015031	transport	P
+GO:0015037	other molecular function	F
+GO:0015075	transporter activity	F
+GO:0015093	transporter activity	F
+GO:0015137	transporter activity	F
+GO:0015142	transporter activity	F
+GO:0015152	transporter activity	F
+GO:0015293	transporter activity	F
+GO:0015293	transporter activity	F
+GO:0015293	transporter activity	F
+GO:0015367	transporter activity	F
+GO:0015450	transporter activity	F
+GO:0015629	cytoskeleton	C
+GO:0015629	cytoskeleton	C
+GO:0015629	cytoskeleton	C
+GO:0015629	cytoskeleton	C
+GO:0015631	cytoskeletal activity	F
+GO:0015758	transport	P
+GO:0015760	transport	P
+GO:0015809	transport	P
+GO:0015917	transport	P
+GO:0015966	other metabolic processes	P
+GO:0015991	transport	P
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016020	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016021	other membranes	C
+GO:0016031	transport	P
+GO:0016032	other biological processes	P
+GO:0016032	other biological processes	P
+GO:0016032	other biological processes	P
+GO:0016032	other biological processes	P
+GO:0016032	other biological processes	P
+GO:0016032	other biological processes	P
+GO:0016032	other biological processes	P
+GO:0016050	cell organization and biogenesis	P
+GO:0016050	cell organization and biogenesis	P
+GO:0016050	cell organization and biogenesis	P
+GO:0016055	signal transduction	P
+GO:0016055	signal transduction	P
+GO:0016055	signal transduction	P
+GO:0016070	RNA metabolism	P
+GO:0016070	RNA metabolism	P
+GO:0016070	RNA metabolism	P
+GO:0016075	RNA metabolism	P
+GO:0016126	other metabolic processes	P
+GO:0016151	other molecular function	F
+GO:0016155	other molecular function	F
+GO:0016175	other molecular function	F
+GO:0016180	RNA metabolism	P
+GO:0016180	RNA metabolism	P
+GO:0016192	transport	P
+GO:0016192	transport	P
+GO:0016192	transport	P
+GO:0016192	transport	P
+GO:0016192	transport	P
+GO:0016192	transport	P
+GO:0016197	transport	P
+GO:0016197	transport	P
+GO:0016199	cell organization and biogenesis	P
+GO:0016199	developmental processes	P
+GO:0016208	other molecular function	F
+GO:0016233	DNA metabolism	P
+GO:0016233	cell organization and biogenesis	P
+GO:0016234	other cellular component	C
+GO:0016236	other metabolic processes	P
+GO:0016236	other metabolic processes	P
+GO:0016236	stress response	P
+GO:0016236	stress response	P
+GO:0016239	other metabolic processes	P
+GO:0016239	stress response	P
+GO:0016242	other metabolic processes	P
+GO:0016242	stress response	P
+GO:0016254	protein metabolism	P
+GO:0016256	protein metabolism	P
+GO:0016256	transport	P
+GO:0016287	other molecular function	F
+GO:0016301	kinase activity	F
+GO:0016319	developmental processes	P
+GO:0016321	cell cycle and proliferation	P
+GO:0016323	other membranes	C
+GO:0016323	other membranes	C
+GO:0016323	other membranes	C
+GO:0016323	other membranes	C
+GO:0016323	plasma membrane	C
+GO:0016323	plasma membrane	C
+GO:0016323	plasma membrane	C
+GO:0016323	plasma membrane	C
+GO:0016324	other membranes	C
+GO:0016324	other membranes	C
+GO:0016324	other membranes	C
+GO:0016324	other membranes	C
+GO:0016324	other membranes	C
+GO:0016324	plasma membrane	C
+GO:0016324	plasma membrane	C
+GO:0016324	plasma membrane	C
+GO:0016324	plasma membrane	C
+GO:0016324	plasma membrane	C
+GO:0016328	other membranes	C
+GO:0016328	plasma membrane	C
+GO:0016330	cell cycle and proliferation	P
+GO:0016330	developmental processes	P
+GO:0016333	developmental processes	P
+GO:0016337	cell adhesion	P
+GO:0016348	developmental processes	P
+GO:0016360	developmental processes	P
+GO:0016363	nucleus	C
+GO:0016363	nucleus	C
+GO:0016409	other molecular function	F
+GO:0016442	other cellular component	C
+GO:0016446	developmental processes	P
+GO:0016458	other metabolic processes	P
+GO:0016459	cytoskeleton	C
+GO:0016459	cytoskeleton	C
+GO:0016459	cytoskeleton	C
+GO:0016462	other molecular function	F
+GO:0016477	other biological processes	P
+GO:0016477	other biological processes	P
+GO:0016477	other biological processes	P
+GO:0016485	protein metabolism	P
+GO:0016485	protein metabolism	P
+GO:0016491	other molecular function	F
+GO:0016491	other molecular function	F
+GO:0016504	enzyme regulator activity	F
+GO:0016529	ER/Golgi	C
+GO:0016529	ER/Golgi	C
+GO:0016538	enzyme regulator activity	F
+GO:0016539	protein metabolism	P
+GO:0016540	protein metabolism	P
+GO:0016540	protein metabolism	P
+GO:0016556	RNA metabolism	P
+GO:0016567	protein metabolism	P
+GO:0016567	protein metabolism	P
+GO:0016567	protein metabolism	P
+GO:0016567	protein metabolism	P
+GO:0016567	protein metabolism	P
+GO:0016567	protein metabolism	P
+GO:0016567	protein metabolism	P
+GO:0016567	protein metabolism	P
+GO:0016567	protein metabolism	P
+GO:0016567	protein metabolism	P
+GO:0016567	protein metabolism	P
+GO:0016569	cell organization and biogenesis	P
+GO:0016569	cell organization and biogenesis	P
+GO:0016570	cell organization and biogenesis	P
+GO:0016570	protein metabolism	P
+GO:0016571	cell organization and biogenesis	P
+GO:0016571	protein metabolism	P
+GO:0016573	cell organization and biogenesis	P
+GO:0016573	protein metabolism	P
+GO:0016574	cell organization and biogenesis	P
+GO:0016574	protein metabolism	P
+GO:0016576	cell organization and biogenesis	P
+GO:0016576	protein metabolism	P
+GO:0016578	cell organization and biogenesis	P
+GO:0016578	cell organization and biogenesis	P
+GO:0016578	protein metabolism	P
+GO:0016578	protein metabolism	P
+GO:0016579	protein metabolism	P
+GO:0016579	protein metabolism	P
+GO:0016579	protein metabolism	P
+GO:0016593	nucleus	C
+GO:0016600	other membranes	C
+GO:0016600	plasma membrane	C
+GO:0016601	signal transduction	P
+GO:0016604	nucleus	C
+GO:0016604	nucleus	C
+GO:0016604	nucleus	C
+GO:0016604	nucleus	C
+GO:0016607	nucleus	C
+GO:0016607	nucleus	C
+GO:0016607	nucleus	C
+GO:0016607	nucleus	C
+GO:0016607	nucleus	C
+GO:0016614	other molecular function	F
+GO:0016614	other molecular function	F
+GO:0016614	other molecular function	F
+GO:0016627	other molecular function	F
+GO:0016628	other molecular function	F
+GO:0016628	other molecular function	F
+GO:0016709	other molecular function	F
+GO:0016740	other molecular function	F
+GO:0016740	other molecular function	F
+GO:0016740	other molecular function	F
+GO:0016742	other molecular function	F
+GO:0016746	other molecular function	F
+GO:0016780	other molecular function	F
+GO:0016787	other molecular function	F
+GO:0016787	other molecular function	F
+GO:0016787	other molecular function	F
+GO:0016791	other molecular function	F
+GO:0016853	other molecular function	F
+GO:0016874	other molecular function	F
+GO:0016887	other molecular function	F
+GO:0016887	other molecular function	F
+GO:0016887	other molecular function	F
+GO:0016887	other molecular function	F
+GO:0016887	other molecular function	F
+GO:0016903	other molecular function	F
+GO:0016903	other molecular function	F
+GO:0016925	protein metabolism	P
+GO:0016925	protein metabolism	P
+GO:0017022	cytoskeletal activity	F
+GO:0017048	other molecular function	F
+GO:0017056	other molecular function	F
+GO:0017056	other molecular function	F
+GO:0017065	other molecular function	F
+GO:0017075	other molecular function	F
+GO:0017091	nucleic acid binding activity	F
+GO:0017108	other molecular function	F
+GO:0017112	enzyme regulator activity	F
+GO:0017112	enzyme regulator activity	F
+GO:0017119	ER/Golgi	C
+GO:0017124	other molecular function	F
+GO:0017137	enzyme regulator activity	F
+GO:0017137	enzyme regulator activity	F
+GO:0017137	enzyme regulator activity	F
+GO:0017137	enzyme regulator activity	F
+GO:0017137	enzyme regulator activity	F
+GO:0017147	other molecular function	F
+GO:0017154	signal transduction activity	F
+GO:0017154	signal transduction activity	F
+GO:0017157	transport	P
+GO:0017166	cytoskeletal activity	F
+GO:0018024	other molecular function	F
+GO:0018024	other molecular function	F
+GO:0018063	cell organization and biogenesis	P
+GO:0018063	protein metabolism	P
+GO:0018149	protein metabolism	P
+GO:0018243	protein metabolism	P
+GO:0018243	protein metabolism	P
+GO:0018271	other molecular function	F
+GO:0018345	protein metabolism	P
+GO:0018812	other molecular function	F
+GO:0019003	other molecular function	F
+GO:0019083	RNA metabolism	P
+GO:0019104	other molecular function	F
+GO:0019206	kinase activity	F
+GO:0019208	enzyme regulator activity	F
+GO:0019208	enzyme regulator activity	F
+GO:0019209	enzyme regulator activity	F
+GO:0019218	other metabolic processes	P
+GO:0019244	other metabolic processes	P
+GO:0019413	other metabolic processes	P
+GO:0019427	other metabolic processes	P
+GO:0019464	other metabolic processes	P
+GO:0019542	other metabolic processes	P
+GO:0019706	other molecular function	F
+GO:0019773	other cellular component	C
+GO:0019805	other metabolic processes	P
+GO:0019827	other biological processes	P
+GO:0019827	other biological processes	P
+GO:0019843	nucleic acid binding activity	F
+GO:0019869	other molecular function	F
+GO:0019894	cytoskeletal activity	F
+GO:0019898	other membranes	C
+GO:0019898	other membranes	C
+GO:0019898	other membranes	C
+GO:0019899	other molecular function	F
+GO:0019899	other molecular function	F
+GO:0019899	other molecular function	F
+GO:0019899	other molecular function	F
+GO:0019899	other molecular function	F
+GO:0019899	other molecular function	F
+GO:0019899	other molecular function	F
+GO:0019900	other molecular function	F
+GO:0019901	other molecular function	F
+GO:0019901	other molecular function	F
+GO:0019901	other molecular function	F
+GO:0019901	other molecular function	F
+GO:0019901	other molecular function	F
+GO:0019901	other molecular function	F
+GO:0019901	other molecular function	F
+GO:0019902	other molecular function	F
+GO:0019902	other molecular function	F
+GO:0019903	other molecular function	F
+GO:0019903	other molecular function	F
+GO:0019904	other molecular function	F
+GO:0019904	other molecular function	F
+GO:0019904	other molecular function	F
+GO:0019904	other molecular function	F
+GO:0019904	other molecular function	F
+GO:0019904	other molecular function	F
+GO:0019904	other molecular function	F
+GO:0019905	other molecular function	F
+GO:0019985	DNA metabolism	P
+GO:0019985	DNA metabolism	P
+GO:0019985	stress response	P
+GO:0019985	stress response	P
+GO:0020037	other molecular function	F
+GO:0021506	developmental processes	P
+GO:0021559	developmental processes	P
+GO:0021623	developmental processes	P
+GO:0021702	developmental processes	P
+GO:0021756	developmental processes	P
+GO:0021762	developmental processes	P
+GO:0021766	developmental processes	P
+GO:0021785	cell organization and biogenesis	P
+GO:0021785	cell organization and biogenesis	P
+GO:0021785	developmental processes	P
+GO:0021785	developmental processes	P
+GO:0021884	developmental processes	P
+GO:0021915	developmental processes	P
+GO:0021930	cell cycle and proliferation	P
+GO:0021930	developmental processes	P
+GO:0021935	developmental processes	P
+GO:0021987	developmental processes	P
+GO:0021988	developmental processes	P
+GO:0021990	developmental processes	P
+GO:0022008	developmental processes	P
+GO:0022011	developmental processes	P
+GO:0022416	developmental processes	P
+GO:0022604	cell organization and biogenesis	P
+GO:0022612	developmental processes	P
+GO:0022625	cytosol	C
+GO:0022625	cytosol	C
+GO:0022625	translational apparatus	C
+GO:0022625	translational apparatus	C
+GO:0022821	transporter activity	F
+GO:0022857	transporter activity	F
+GO:0022857	transporter activity	F
+GO:0022891	transporter activity	F
+GO:0030010	cell organization and biogenesis	P
+GO:0030018	other cellular component	C
+GO:0030018	other cellular component	C
+GO:0030018	other cellular component	C
+GO:0030018	other cellular component	C
+GO:0030027	other cellular component	C
+GO:0030027	other cellular component	C
+GO:0030027	other cellular component	C
+GO:0030027	other cellular component	C
+GO:0030036	cell organization and biogenesis	P
+GO:0030041	cell organization and biogenesis	P
+GO:0030041	cell organization and biogenesis	P
+GO:0030041	cell organization and biogenesis	P
+GO:0030042	cell organization and biogenesis	P
+GO:0030048	transport	P
+GO:0030048	transport	P
+GO:0030054	other membranes	C
+GO:0030054	other membranes	C
+GO:0030054	other membranes	C
+GO:0030054	other membranes	C
+GO:0030054	other membranes	C
+GO:0030054	other membranes	C
+GO:0030054	plasma membrane	C
+GO:0030054	plasma membrane	C
+GO:0030054	plasma membrane	C
+GO:0030054	plasma membrane	C
+GO:0030054	plasma membrane	C
+GO:0030054	plasma membrane	C
+GO:0030071	cell cycle and proliferation	P
+GO:0030071	cell organization and biogenesis	P
+GO:0030072	cell-cell signaling	P
+GO:0030072	transport	P
+GO:0030073	cell-cell signaling	P
+GO:0030073	cell-cell signaling	P
+GO:0030073	transport	P
+GO:0030073	transport	P
+GO:0030091	protein metabolism	P
+GO:0030100	cell organization and biogenesis	P
+GO:0030100	transport	P
+GO:0030126	ER/Golgi	C
+GO:0030126	ER/Golgi	C
+GO:0030126	other membranes	C
+GO:0030126	other membranes	C
+GO:0030139	other cellular component	C
+GO:0030139	other cellular component	C
+GO:0030139	other cellular component	C
+GO:0030141	other cellular component	C
+GO:0030141	other cellular component	C
+GO:0030145	other molecular function	F
+GO:0030145	other molecular function	F
+GO:0030150	cell organization and biogenesis	P
+GO:0030150	transport	P
+GO:0030154	other biological processes	P
+GO:0030154	other biological processes	P
+GO:0030154	other biological processes	P
+GO:0030154	other biological processes	P
+GO:0030154	other biological processes	P
+GO:0030154	other biological processes	P
+GO:0030154	other biological processes	P
+GO:0030154	other biological processes	P
+GO:0030155	cell adhesion	P
+GO:0030155	cell adhesion	P
+GO:0030155	cell adhesion	P
+GO:0030158	other molecular function	F
+GO:0030158	other molecular function	F
+GO:0030163	protein metabolism	P
+GO:0030165	other molecular function	F
+GO:0030165	other molecular function	F
+GO:0030165	other molecular function	F
+GO:0030173	ER/Golgi	C
+GO:0030173	other membranes	C
+GO:0030175	other cellular component	C
+GO:0030175	other cellular component	C
+GO:0030176	ER/Golgi	C
+GO:0030176	ER/Golgi	C
+GO:0030176	ER/Golgi	C
+GO:0030176	other membranes	C
+GO:0030176	other membranes	C
+GO:0030176	other membranes	C
+GO:0030177	signal transduction	P
+GO:0030178	signal transduction	P
+GO:0030193	stress response	P
+GO:0030198	cell organization and biogenesis	P
+GO:0030199	cell organization and biogenesis	P
+GO:0030203	other metabolic processes	P
+GO:0030206	other metabolic processes	P
+GO:0030206	other metabolic processes	P
+GO:0030215	signal transduction activity	F
+GO:0030246	other molecular function	F
+GO:0030246	other molecular function	F
+GO:0030246	other molecular function	F
+GO:0030279	developmental processes	P
+GO:0030283	other molecular function	F
+GO:0030286	cytoskeleton	C
+GO:0030286	cytoskeleton	C
+GO:0030286	cytoskeleton	C
+GO:0030292	enzyme regulator activity	F
+GO:0030308	other biological processes	P
+GO:0030315	other membranes	C
+GO:0030315	other membranes	C
+GO:0030315	other membranes	C
+GO:0030315	plasma membrane	C
+GO:0030315	plasma membrane	C
+GO:0030315	plasma membrane	C
+GO:0030317	other biological processes	P
+GO:0030317	other biological processes	P
+GO:0030334	other biological processes	P
+GO:0030334	other biological processes	P
+GO:0030334	other biological processes	P
+GO:0030334	other biological processes	P
+GO:0030335	other biological processes	P
+GO:0030335	other biological processes	P
+GO:0030346	other molecular function	F
+GO:0030350	nucleic acid binding activity	F
+GO:0030374	transcription regulatory activity	F
+GO:0030424	other cellular component	C
+GO:0030424	other cellular component	C
+GO:0030424	other cellular component	C
+GO:0030424	other cellular component	C
+GO:0030424	other cellular component	C
+GO:0030424	other cellular component	C
+GO:0030425	other cellular component	C
+GO:0030425	other cellular component	C
+GO:0030425	other cellular component	C
+GO:0030425	other cellular component	C
+GO:0030425	other cellular component	C
+GO:0030426	other cellular component	C
+GO:0030496	other cellular component	C
+GO:0030496	other cellular component	C
+GO:0030496	other cellular component	C
+GO:0030496	other cellular component	C
+GO:0030496	other cellular component	C
+GO:0030501	developmental processes	P
+GO:0030507	cytoskeletal activity	F
+GO:0030509	signal transduction	P
+GO:0030512	signal transduction	P
+GO:0030522	signal transduction	P
+GO:0030529	other cellular component	C
+GO:0030529	other cellular component	C
+GO:0030529	other cellular component	C
+GO:0030529	other cellular component	C
+GO:0030529	other cellular component	C
+GO:0030529	other cellular component	C
+GO:0030539	developmental processes	P
+GO:0030659	other membranes	C
+GO:0030659	other membranes	C
+GO:0030659	other membranes	C
+GO:0030659	other membranes	C
+GO:0030659	other membranes	C
+GO:0030667	other membranes	C
+GO:0030670	other membranes	C
+GO:0030674	other molecular function	F
+GO:0030674	other molecular function	F
+GO:0030676	enzyme regulator activity	F
+GO:0030687	other cellular component	C
+GO:0030687	other cellular component	C
+GO:0030707	other biological processes	P
+GO:0030707	other biological processes	P
+GO:0030708	developmental processes	P
+GO:0030713	cell organization and biogenesis	P
+GO:0030718	other biological processes	P
+GO:0030720	other biological processes	P
+GO:0030727	cell cycle and proliferation	P
+GO:0030728	other biological processes	P
+GO:0030837	cell organization and biogenesis	P
+GO:0030837	protein metabolism	P
+GO:0030862	developmental processes	P
+GO:0030864	cytoskeleton	C
+GO:0030895	nucleus	C
+GO:0030898	other molecular function	F
+GO:0030898	other molecular function	F
+GO:0030902	developmental processes	P
+GO:0030904	other membranes	C
+GO:0030913	cell organization and biogenesis	P
+GO:0030913	developmental processes	P
+GO:0030914	nucleus	C
+GO:0030942	other molecular function	F
+GO:0030943	other molecular function	F
+GO:0030955	other molecular function	F
+GO:0030971	signal transduction activity	F
+GO:0031012	non-structural extracellular	C
+GO:0031012	non-structural extracellular	C
+GO:0031012	non-structural extracellular	C
+GO:0031032	cell organization and biogenesis	P
+GO:0031047	other metabolic processes	P
+GO:0031047	other metabolic processes	P
+GO:0031053	RNA metabolism	P
+GO:0031065	cell organization and biogenesis	P
+GO:0031065	protein metabolism	P
+GO:0031072	other molecular function	F
+GO:0031080	nucleus	C
+GO:0031080	other membranes	C
+GO:0031092	other membranes	C
+GO:0031098	signal transduction	P
+GO:0031098	signal transduction	P
+GO:0031098	stress response	P
+GO:0031098	stress response	P
+GO:0031100	developmental processes	P
+GO:0031122	cell organization and biogenesis	P
+GO:0031124	RNA metabolism	P
+GO:0031124	RNA metabolism	P
+GO:0031145	protein metabolism	P
+GO:0031145	protein metabolism	P
+GO:0031201	other membranes	C
+GO:0031201	other membranes	C
+GO:0031214	developmental processes	P
+GO:0031214	developmental processes	P
+GO:0031225	other membranes	C
+GO:0031225	other membranes	C
+GO:0031226	other membranes	C
+GO:0031226	plasma membrane	C
+GO:0031234	other membranes	C
+GO:0031234	plasma membrane	C
+GO:0031252	other cellular component	C
+GO:0031267	other molecular function	F
+GO:0031267	other molecular function	F
+GO:0031297	DNA metabolism	P
+GO:0031297	DNA metabolism	P
+GO:0031297	DNA metabolism	P
+GO:0031297	stress response	P
+GO:0031297	stress response	P
+GO:0031297	stress response	P
+GO:0031304	mitochondrion	C
+GO:0031304	other membranes	C
+GO:0031307	mitochondrion	C
+GO:0031307	mitochondrion	C
+GO:0031307	other membranes	C
+GO:0031307	other membranes	C
+GO:0031334	cell organization and biogenesis	P
+GO:0031338	cell organization and biogenesis	P
+GO:0031338	transport	P
+GO:0031397	protein metabolism	P
+GO:0031402	other molecular function	F
+GO:0031406	other molecular function	F
+GO:0031410	other cellular component	C
+GO:0031410	other cellular component	C
+GO:0031410	other cellular component	C
+GO:0031410	other cellular component	C
+GO:0031418	other molecular function	F
+GO:0031424	developmental processes	P
+GO:0031430	other cellular component	C
+GO:0031463	other cellular component	C
+GO:0031466	other cellular component	C
+GO:0031514	other cellular component	C
+GO:0031514	other cellular component	C
+GO:0031526	other membranes	C
+GO:0031526	plasma membrane	C
+GO:0031532	cell organization and biogenesis	P
+GO:0031572	cell cycle and proliferation	P
+GO:0031572	signal transduction	P
+GO:0031572	stress response	P
+GO:0031573	cell cycle and proliferation	P
+GO:0031573	signal transduction	P
+GO:0031573	stress response	P
+GO:0031587	signal transduction	P
+GO:0031589	cell adhesion	P
+GO:0031589	cell adhesion	P
+GO:0031594	other cellular component	C
+GO:0031594	other cellular component	C
+GO:0031623	cell organization and biogenesis	P
+GO:0031623	other metabolic processes	P
+GO:0031623	transport	P
+GO:0031625	other molecular function	F
+GO:0031625	other molecular function	F
+GO:0031625	other molecular function	F
+GO:0031625	other molecular function	F
+GO:0031625	other molecular function	F
+GO:0031630	cell organization and biogenesis	P
+GO:0031630	cell-cell signaling	P
+GO:0031630	transport	P
+GO:0031638	protein metabolism	P
+GO:0031639	protein metabolism	P
+GO:0031643	developmental processes	P
+GO:0031647	protein metabolism	P
+GO:0031647	protein metabolism	P
+GO:0031648	protein metabolism	P
+GO:0031667	other biological processes	P
+GO:0031672	other cellular component	C
+GO:0031672	other cellular component	C
+GO:0031674	other cellular component	C
+GO:0031683	other molecular function	F
+GO:0031752	signal transduction activity	F
+GO:0031901	other cytoplasmic organelle	C
+GO:0031901	other cytoplasmic organelle	C
+GO:0031901	other cytoplasmic organelle	C
+GO:0031901	other cytoplasmic organelle	C
+GO:0031901	other cytoplasmic organelle	C
+GO:0031901	other cytoplasmic organelle	C
+GO:0031901	other membranes	C
+GO:0031901	other membranes	C
+GO:0031901	other membranes	C
+GO:0031901	other membranes	C
+GO:0031901	other membranes	C
+GO:0031901	other membranes	C
+GO:0031902	other cytoplasmic organelle	C
+GO:0031902	other cytoplasmic organelle	C
+GO:0031902	other cytoplasmic organelle	C
+GO:0031902	other membranes	C
+GO:0031902	other membranes	C
+GO:0031902	other membranes	C
+GO:0031960	other biological processes	P
+GO:0031965	nucleus	C
+GO:0031965	nucleus	C
+GO:0031965	nucleus	C
+GO:0031965	nucleus	C
+GO:0031965	nucleus	C
+GO:0031965	nucleus	C
+GO:0031965	other membranes	C
+GO:0031965	other membranes	C
+GO:0031965	other membranes	C
+GO:0031965	other membranes	C
+GO:0031965	other membranes	C
+GO:0031965	other membranes	C
+GO:0031966	mitochondrion	C
+GO:0031966	mitochondrion	C
+GO:0031966	mitochondrion	C
+GO:0031966	other membranes	C
+GO:0031966	other membranes	C
+GO:0031966	other membranes	C
+GO:0031982	other cellular component	C
+GO:0031982	other cellular component	C
+GO:0031982	other cellular component	C
+GO:0031987	other biological processes	P
+GO:0032006	signal transduction	P
+GO:0032007	signal transduction	P
+GO:0032024	cell-cell signaling	P
+GO:0032024	transport	P
+GO:0032027	cytoskeletal activity	F
+GO:0032039	nucleus	C
+GO:0032039	nucleus	C
+GO:0032040	other cellular component	C
+GO:0032040	other cellular component	C
+GO:0032041	other molecular function	F
+GO:0032091	other biological processes	P
+GO:0032091	other biological processes	P
+GO:0032116	nucleus	C
+GO:0032147	other metabolic processes	P
+GO:0032147	other metabolic processes	P
+GO:0032147	other metabolic processes	P
+GO:0032154	other cellular component	C
+GO:0032210	DNA metabolism	P
+GO:0032210	cell organization and biogenesis	P
+GO:0032211	DNA metabolism	P
+GO:0032211	cell organization and biogenesis	P
+GO:0032266	other molecular function	F
+GO:0032268	protein metabolism	P
+GO:0032269	protein metabolism	P
+GO:0032355	other biological processes	P
+GO:0032355	other biological processes	P
+GO:0032391	other cellular component	C
+GO:0032403	other molecular function	F
+GO:0032403	other molecular function	F
+GO:0032403	other molecular function	F
+GO:0032421	other cellular component	C
+GO:0032434	protein metabolism	P
+GO:0032434	protein metabolism	P
+GO:0032436	protein metabolism	P
+GO:0032439	other biological processes	P
+GO:0032456	transport	P
+GO:0032456	transport	P
+GO:0032463	cell organization and biogenesis	P
+GO:0032467	other biological processes	P
+GO:0032467	other biological processes	P
+GO:0032482	signal transduction	P
+GO:0032496	other biological processes	P
+GO:0032545	nucleus	C
+GO:0032587	other membranes	C
+GO:0032587	plasma membrane	C
+GO:0032588	ER/Golgi	C
+GO:0032588	ER/Golgi	C
+GO:0032588	other membranes	C
+GO:0032588	other membranes	C
+GO:0032675	other biological processes	P
+GO:0032680	other biological processes	P
+GO:0032715	other biological processes	P
+GO:0032777	nucleus	C
+GO:0032811	transport	P
+GO:0032880	other biological processes	P
+GO:0032880	other biological processes	P
+GO:0032922	other metabolic processes	P
+GO:0032947	other molecular function	F
+GO:0032956	cell organization and biogenesis	P
+GO:0032958	other metabolic processes	P
+GO:0032964	other metabolic processes	P
+GO:0032968	RNA metabolism	P
+GO:0032968	RNA metabolism	P
+GO:0032981	cell organization and biogenesis	P
+GO:0032993	other cellular component	C
+GO:0033017	ER/Golgi	C
+GO:0033017	other membranes	C
+GO:0033018	ER/Golgi	C
+GO:0033120	RNA metabolism	P
+GO:0033138	protein metabolism	P
+GO:0033160	transport	P
+GO:0033179	other membranes	C
+GO:0033209	signal transduction	P
+GO:0033234	protein metabolism	P
+GO:0033235	protein metabolism	P
+GO:0033235	protein metabolism	P
+GO:0033268	other cellular component	C
+GO:0033276	nucleus	C
+GO:0033280	other biological processes	P
+GO:0033292	cell organization and biogenesis	P
+GO:0033365	other biological processes	P
+GO:0033489	other metabolic processes	P
+GO:0033490	other metabolic processes	P
+GO:0033557	nucleus	C
+GO:0033561	other biological processes	P
+GO:0033574	other biological processes	P
+GO:0033596	cytosol	C
+GO:0033622	protein metabolism	P
+GO:0033627	cell adhesion	P
+GO:0033674	other metabolic processes	P
+GO:0033683	DNA metabolism	P
+GO:0033683	stress response	P
+GO:0033743	other molecular function	F
+GO:0033962	cell organization and biogenesis	P
+GO:0033989	other molecular function	F
+GO:0034063	cell organization and biogenesis	P
+GO:0034088	cell cycle and proliferation	P
+GO:0034088	cell organization and biogenesis	P
+GO:0034097	other biological processes	P
+GO:0034121	signal transduction	P
+GO:0034121	stress response	P
+GO:0034184	cell cycle and proliferation	P
+GO:0034184	cell organization and biogenesis	P
+GO:0034185	other molecular function	F
+GO:0034198	stress response	P
+GO:0034220	transport	P
+GO:0034220	transport	P
+GO:0034260	other biological processes	P
+GO:0034314	cell organization and biogenesis	P
+GO:0034356	other metabolic processes	P
+GO:0034394	other biological processes	P
+GO:0034399	nucleus	C
+GO:0034399	nucleus	C
+GO:0034399	nucleus	C
+GO:0034418	other metabolic processes	P
+GO:0034427	RNA metabolism	P
+GO:0034446	cell adhesion	P
+GO:0034446	cell adhesion	P
+GO:0034446	cell organization and biogenesis	P
+GO:0034446	cell organization and biogenesis	P
+GO:0034451	cytoskeleton	C
+GO:0034452	cytoskeletal activity	F
+GO:0034456	nucleus	C
+GO:0034473	RNA metabolism	P
+GO:0034475	RNA metabolism	P
+GO:0034476	RNA metabolism	P
+GO:0034504	other biological processes	P
+GO:0034504	other biological processes	P
+GO:0034504	other biological processes	P
+GO:0034505	developmental processes	P
+GO:0034506	other cellular component	C
+GO:0034508	cell organization and biogenesis	P
+GO:0034587	RNA metabolism	P
+GO:0034613	other biological processes	P
+GO:0034613	other biological processes	P
+GO:0034613	other biological processes	P
+GO:0034613	other biological processes	P
+GO:0034693	nucleus	C
+GO:0034704	other membranes	C
+GO:0034774	other cellular component	C
+GO:0034968	cell organization and biogenesis	P
+GO:0034968	protein metabolism	P
+GO:0034976	stress response	P
+GO:0034976	stress response	P
+GO:0034976	stress response	P
+GO:0035001	developmental processes	P
+GO:0035003	other membranes	C
+GO:0035003	plasma membrane	C
+GO:0035011	other metabolic processes	P
+GO:0035011	stress response	P
+GO:0035019	other biological processes	P
+GO:0035023	signal transduction	P
+GO:0035023	signal transduction	P
+GO:0035023	signal transduction	P
+GO:0035023	signal transduction	P
+GO:0035023	signal transduction	P
+GO:0035064	other molecular function	F
+GO:0035065	cell organization and biogenesis	P
+GO:0035065	protein metabolism	P
+GO:0035082	cell organization and biogenesis	P
+GO:0035088	cell organization and biogenesis	P
+GO:0035091	other molecular function	F
+GO:0035091	other molecular function	F
+GO:0035091	other molecular function	F
+GO:0035091	other molecular function	F
+GO:0035097	nucleus	C
+GO:0035097	nucleus	C
+GO:0035115	developmental processes	P
+GO:0035115	developmental processes	P
+GO:0035136	developmental processes	P
+GO:0035136	developmental processes	P
+GO:0035145	nucleus	C
+GO:0035153	developmental processes	P
+GO:0035155	developmental processes	P
+GO:0035157	developmental processes	P
+GO:0035162	developmental processes	P
+GO:0035165	developmental processes	P
+GO:0035167	developmental processes	P
+GO:0035170	developmental processes	P
+GO:0035171	developmental processes	P
+GO:0035172	cell cycle and proliferation	P
+GO:0035172	developmental processes	P
+GO:0035176	other biological processes	P
+GO:0035197	nucleic acid binding activity	F
+GO:0035204	developmental processes	P
+GO:0035206	cell cycle and proliferation	P
+GO:0035206	developmental processes	P
+GO:0035214	developmental processes	P
+GO:0035222	developmental processes	P
+GO:0035235	signal transduction	P
+GO:0035249	cell-cell signaling	P
+GO:0035261	developmental processes	P
+GO:0035262	developmental processes	P
+GO:0035264	other biological processes	P
+GO:0035264	other biological processes	P
+GO:0035265	other biological processes	P
+GO:0035267	nucleus	C
+GO:0035267	nucleus	C
+GO:0035299	kinase activity	F
+GO:0035307	protein metabolism	P
+GO:0035315	developmental processes	P
+GO:0035315	developmental processes	P
+GO:0035317	cell organization and biogenesis	P
+GO:0035317	developmental processes	P
+GO:0040008	other biological processes	P
+GO:0040008	other biological processes	P
+GO:0040018	other biological processes	P
+GO:0042043	other molecular function	F
+GO:0042059	signal transduction	P
+GO:0042060	stress response	P
+GO:0042060	stress response	P
+GO:0042060	stress response	P
+GO:0042060	stress response	P
+GO:0042062	cell organization and biogenesis	P
+GO:0042062	cell-cell signaling	P
+GO:0042062	developmental processes	P
+GO:0042067	cell organization and biogenesis	P
+GO:0042067	developmental processes	P
+GO:0042102	cell cycle and proliferation	P
+GO:0042127	cell cycle and proliferation	P
+GO:0042127	cell cycle and proliferation	P
+GO:0042127	cell cycle and proliferation	P
+GO:0042127	cell cycle and proliferation	P
+GO:0042127	cell cycle and proliferation	P
+GO:0042133	cell-cell signaling	P
+GO:0042133	other metabolic processes	P
+GO:0042147	transport	P
+GO:0042162	nucleic acid binding activity	F
+GO:0042176	protein metabolism	P
+GO:0042249	developmental processes	P
+GO:0042254	other biological processes	P
+GO:0042273	other biological processes	P
+GO:0042273	other biological processes	P
+GO:0042297	other biological processes	P
+GO:0042301	other molecular function	F
+GO:0042307	transport	P
+GO:0042307	transport	P
+GO:0042383	other membranes	C
+GO:0042383	other membranes	C
+GO:0042383	plasma membrane	C
+GO:0042383	plasma membrane	C
+GO:0042393	other molecular function	F
+GO:0042445	other metabolic processes	P
+GO:0042470	other cellular component	C
+GO:0042470	other cellular component	C
+GO:0042471	developmental processes	P
+GO:0042472	developmental processes	P
+GO:0042472	developmental processes	P
+GO:0042473	developmental processes	P
+GO:0042474	developmental processes	P
+GO:0042475	developmental processes	P
+GO:0042493	other biological processes	P
+GO:0042493	other biological processes	P
+GO:0042493	other biological processes	P
+GO:0042493	other biological processes	P
+GO:0042493	other biological processes	P
+GO:0042493	other biological processes	P
+GO:0042493	other biological processes	P
+GO:0042493	other biological processes	P
+GO:0042542	stress response	P
+GO:0042552	developmental processes	P
+GO:0042554	other metabolic processes	P
+GO:0042582	other cytoplasmic organelle	C
+GO:0042593	other biological processes	P
+GO:0042594	stress response	P
+GO:0042605	other molecular function	F
+GO:0042626	transporter activity	F
+GO:0042626	transporter activity	F
+GO:0042634	other biological processes	P
+GO:0042641	cytoskeleton	C
+GO:0042645	mitochondrion	C
+GO:0042645	mitochondrion	C
+GO:0042676	developmental processes	P
+GO:0042686	developmental processes	P
+GO:0042688	developmental processes	P
+GO:0042689	developmental processes	P
+GO:0042691	developmental processes	P
+GO:0042692	other biological processes	P
+GO:0042711	other biological processes	P
+GO:0042732	other metabolic processes	P
+GO:0042732	other metabolic processes	P
+GO:0042733	developmental processes	P
+GO:0042733	developmental processes	P
+GO:0042734	other membranes	C
+GO:0042753	other biological processes	P
+GO:0042780	RNA metabolism	P
+GO:0042787	protein metabolism	P
+GO:0042787	protein metabolism	P
+GO:0042787	protein metabolism	P
+GO:0042787	protein metabolism	P
+GO:0042787	protein metabolism	P
+GO:0042795	RNA metabolism	P
+GO:0042795	RNA metabolism	P
+GO:0042800	other molecular function	F
+GO:0042800	other molecular function	F
+GO:0042802	other molecular function	F
+GO:0042802	other molecular function	F
+GO:0042802	other molecular function	F
+GO:0042802	other molecular function	F
+GO:0042802	other molecular function	F
+GO:0042802	other molecular function	F
+GO:0042802	other molecular function	F
+GO:0042802	other molecular function	F
+GO:0042802	other molecular function	F
+GO:0042802	other molecular function	F
+GO:0042803	other molecular function	F
+GO:0042803	other molecular function	F
+GO:0042803	other molecular function	F
+GO:0042803	other molecular function	F
+GO:0042803	other molecular function	F
+GO:0042803	other molecular function	F
+GO:0042803	other molecular function	F
+GO:0042803	other molecular function	F
+GO:0042803	other molecular function	F
+GO:0042803	other molecular function	F
+GO:0042803	other molecular function	F
+GO:0042803	other molecular function	F
+GO:0042803	other molecular function	F
+GO:0042803	other molecular function	F
+GO:0042803	other molecular function	F
+GO:0042813	signal transduction activity	F
+GO:0042826	other molecular function	F
+GO:0042891	transport	P
+GO:0042895	transporter activity	F
+GO:0042936	transporter activity	F
+GO:0042938	transport	P
+GO:0042981	death	P
+GO:0042981	death	P
+GO:0042981	death	P
+GO:0042981	death	P
+GO:0042987	other metabolic processes	P
+GO:0042987	other metabolic processes	P
+GO:0042995	other cellular component	C
+GO:0043005	other cellular component	C
+GO:0043005	other cellular component	C
+GO:0043005	other cellular component	C
+GO:0043005	other cellular component	C
+GO:0043005	other cellular component	C
+GO:0043014	cytoskeletal activity	F
+GO:0043015	cytoskeletal activity	F
+GO:0043015	cytoskeletal activity	F
+GO:0043020	other membranes	C
+GO:0043020	plasma membrane	C
+GO:0043024	translation activity	F
+GO:0043025	other cellular component	C
+GO:0043025	other cellular component	C
+GO:0043025	other cellular component	C
+GO:0043025	other cellular component	C
+GO:0043027	enzyme regulator activity	F
+GO:0043027	enzyme regulator activity	F
+GO:0043027	enzyme regulator activity	F
+GO:0043030	other biological processes	P
+GO:0043034	other cellular component	C
+GO:0043044	cell organization and biogenesis	P
+GO:0043044	cell organization and biogenesis	P
+GO:0043047	nucleic acid binding activity	F
+GO:0043065	death	P
+GO:0043065	death	P
+GO:0043065	death	P
+GO:0043065	death	P
+GO:0043065	death	P
+GO:0043065	death	P
+GO:0043065	death	P
+GO:0043066	death	P
+GO:0043066	death	P
+GO:0043066	death	P
+GO:0043066	death	P
+GO:0043066	death	P
+GO:0043066	death	P
+GO:0043066	death	P
+GO:0043066	death	P
+GO:0043086	other biological processes	P
+GO:0043086	other biological processes	P
+GO:0043087	other biological processes	P
+GO:0043087	other biological processes	P
+GO:0043097	other metabolic processes	P
+GO:0043101	other metabolic processes	P
+GO:0043123	signal transduction	P
+GO:0043123	signal transduction	P
+GO:0043124	signal transduction	P
+GO:0043130	other molecular function	F
+GO:0043138	other molecular function	F
+GO:0043142	other molecular function	F
+GO:0043154	death	P
+GO:0043154	death	P
+GO:0043161	protein metabolism	P
+GO:0043161	protein metabolism	P
+GO:0043161	protein metabolism	P
+GO:0043161	protein metabolism	P
+GO:0043162	protein metabolism	P
+GO:0043186	other cellular component	C
+GO:0043194	other cellular component	C
+GO:0043196	other cellular component	C
+GO:0043197	other cellular component	C
+GO:0043197	other cellular component	C
+GO:0043202	other cytoplasmic organelle	C
+GO:0043202	other cytoplasmic organelle	C
+GO:0043225	transporter activity	F
+GO:0043231	other cellular component	C
+GO:0043231	other cellular component	C
+GO:0043231	other cellular component	C
+GO:0043231	other cellular component	C
+GO:0043231	other cellular component	C
+GO:0043231	other cellular component	C
+GO:0043231	other cellular component	C
+GO:0043231	other cellular component	C
+GO:0043231	other cellular component	C
+GO:0043231	other cellular component	C
+GO:0043231	other cellular component	C
+GO:0043231	other cellular component	C
+GO:0043231	other cellular component	C
+GO:0043231	other cellular component	C
+GO:0043234	other cellular component	C
+GO:0043234	other cellular component	C
+GO:0043234	other cellular component	C
+GO:0043234	other cellular component	C
+GO:0043234	other cellular component	C
+GO:0043234	other cellular component	C
+GO:0043234	other cellular component	C
+GO:0043234	other cellular component	C
+GO:0043234	other cellular component	C
+GO:0043234	other cellular component	C
+GO:0043234	other cellular component	C
+GO:0043235	other cellular component	C
+GO:0043243	cell organization and biogenesis	P
+GO:0043268	transport	P
+GO:0043276	death	P
+GO:0043276	death	P
+GO:0043280	death	P
+GO:0043281	death	P
+GO:0043281	death	P
+GO:0043292	other cellular component	C
+GO:0043312	transport	P
+GO:0043312	transport	P
+GO:0043312	transport	P
+GO:0043312	transport	P
+GO:0043312	transport	P
+GO:0043407	other metabolic processes	P
+GO:0043410	signal transduction	P
+GO:0043410	signal transduction	P
+GO:0043410	signal transduction	P
+GO:0043410	signal transduction	P
+GO:0043434	other biological processes	P
+GO:0043434	other biological processes	P
+GO:0043491	signal transduction	P
+GO:0043507	protein metabolism	P
+GO:0043507	signal transduction	P
+GO:0043507	stress response	P
+GO:0043524	death	P
+GO:0043524	death	P
+GO:0043524	death	P
+GO:0043524	death	P
+GO:0043525	death	P
+GO:0043525	death	P
+GO:0043539	enzyme regulator activity	F
+GO:0043546	other molecular function	F
+GO:0043546	other molecular function	F
+GO:0043547	other biological processes	P
+GO:0043547	other biological processes	P
+GO:0043547	other biological processes	P
+GO:0043565	nucleic acid binding activity	F
+GO:0043565	nucleic acid binding activity	F
+GO:0043584	developmental processes	P
+GO:0043588	developmental processes	P
+GO:0043588	developmental processes	P
+GO:0043588	developmental processes	P
+GO:0043589	developmental processes	P
+GO:0043589	developmental processes	P
+GO:0043596	nucleus	C
+GO:0043596	nucleus	C
+GO:0043621	other molecular function	F
+GO:0043623	cell organization and biogenesis	P
+GO:0043627	other biological processes	P
+GO:0043666	other metabolic processes	P
+GO:0043679	other cellular component	C
+GO:0043687	protein metabolism	P
+GO:0043687	protein metabolism	P
+GO:0043928	RNA metabolism	P
+GO:0043967	cell organization and biogenesis	P
+GO:0043967	cell organization and biogenesis	P
+GO:0043967	protein metabolism	P
+GO:0043967	protein metabolism	P
+GO:0043968	cell organization and biogenesis	P
+GO:0043968	cell organization and biogenesis	P
+GO:0043968	protein metabolism	P
+GO:0043968	protein metabolism	P
+GO:0044030	DNA metabolism	P
+GO:0045008	DNA metabolism	P
+GO:0045008	stress response	P
+GO:0045019	other metabolic processes	P
+GO:0045047	transport	P
+GO:0045087	stress response	P
+GO:0045087	stress response	P
+GO:0045087	stress response	P
+GO:0045087	stress response	P
+GO:0045088	stress response	P
+GO:0045121	other membranes	C
+GO:0045121	other membranes	C
+GO:0045121	other membranes	C
+GO:0045121	other membranes	C
+GO:0045169	other cellular component	C
+GO:0045170	other cellular component	C
+GO:0045171	non-structural extracellular	C
+GO:0045176	other biological processes	P
+GO:0045177	other cellular component	C
+GO:0045179	other cellular component	C
+GO:0045184	other biological processes	P
+GO:0045184	other biological processes	P
+GO:0045202	other cellular component	C
+GO:0045202	other cellular component	C
+GO:0045202	other cellular component	C
+GO:0045211	other membranes	C
+GO:0045296	other molecular function	F
+GO:0045316	developmental processes	P
+GO:0045332	cell organization and biogenesis	P
+GO:0045332	cell organization and biogenesis	P
+GO:0045332	transport	P
+GO:0045332	transport	P
+GO:0045335	other cellular component	C
+GO:0045444	other biological processes	P
+GO:0045444	other biological processes	P
+GO:0045454	other biological processes	P
+GO:0045454	other biological processes	P
+GO:0045463	developmental processes	P
+GO:0045465	developmental processes	P
+GO:0045466	developmental processes	P
+GO:0045468	developmental processes	P
+GO:0045471	other biological processes	P
+GO:0045471	other biological processes	P
+GO:0045478	cell organization and biogenesis	P
+GO:0045494	other biological processes	P
+GO:0045503	other molecular function	F
+GO:0045503	other molecular function	F
+GO:0045503	other molecular function	F
+GO:0045503	other molecular function	F
+GO:0045503	other molecular function	F
+GO:0045504	other molecular function	F
+GO:0045505	other molecular function	F
+GO:0045505	other molecular function	F
+GO:0045505	other molecular function	F
+GO:0045505	other molecular function	F
+GO:0045505	other molecular function	F
+GO:0045595	other biological processes	P
+GO:0045595	other biological processes	P
+GO:0045595	other biological processes	P
+GO:0045599	other biological processes	P
+GO:0045602	other biological processes	P
+GO:0045616	other biological processes	P
+GO:0045663	developmental processes	P
+GO:0045664	developmental processes	P
+GO:0045664	developmental processes	P
+GO:0045664	developmental processes	P
+GO:0045666	developmental processes	P
+GO:0045723	other metabolic processes	P
+GO:0045724	cell organization and biogenesis	P
+GO:0045739	DNA metabolism	P
+GO:0045739	stress response	P
+GO:0045746	signal transduction	P
+GO:0045747	signal transduction	P
+GO:0045747	signal transduction	P
+GO:0045773	cell organization and biogenesis	P
+GO:0045773	developmental processes	P
+GO:0045778	developmental processes	P
+GO:0045792	other biological processes	P
+GO:0045807	cell organization and biogenesis	P
+GO:0045807	transport	P
+GO:0045815	other metabolic processes	P
+GO:0045859	other metabolic processes	P
+GO:0045860	other metabolic processes	P
+GO:0045861	protein metabolism	P
+GO:0045886	cell organization and biogenesis	P
+GO:0045886	cell-cell signaling	P
+GO:0045886	developmental processes	P
+GO:0045892	RNA metabolism	P
+GO:0045892	RNA metabolism	P
+GO:0045892	RNA metabolism	P
+GO:0045892	RNA metabolism	P
+GO:0045892	RNA metabolism	P
+GO:0045892	RNA metabolism	P
+GO:0045892	RNA metabolism	P
+GO:0045893	RNA metabolism	P
+GO:0045893	RNA metabolism	P
+GO:0045893	RNA metabolism	P
+GO:0045893	RNA metabolism	P
+GO:0045893	RNA metabolism	P
+GO:0045893	RNA metabolism	P
+GO:0045893	RNA metabolism	P
+GO:0045921	transport	P
+GO:0045931	cell cycle and proliferation	P
+GO:0045931	cell cycle and proliferation	P
+GO:0045944	RNA metabolism	P
+GO:0045944	RNA metabolism	P
+GO:0045944	RNA metabolism	P
+GO:0045944	RNA metabolism	P
+GO:0045944	RNA metabolism	P
+GO:0045944	RNA metabolism	P
+GO:0045944	RNA metabolism	P
+GO:0045944	RNA metabolism	P
+GO:0045944	RNA metabolism	P
+GO:0045944	RNA metabolism	P
+GO:0045944	RNA metabolism	P
+GO:0045944	RNA metabolism	P
+GO:0045995	developmental processes	P
+GO:0045995	developmental processes	P
+GO:0046068	other metabolic processes	P
+GO:0046104	other metabolic processes	P
+GO:0046329	signal transduction	P
+GO:0046329	stress response	P
+GO:0046330	signal transduction	P
+GO:0046330	signal transduction	P
+GO:0046330	stress response	P
+GO:0046330	stress response	P
+GO:0046331	cell-cell signaling	P
+GO:0046404	kinase activity	F
+GO:0046464	other metabolic processes	P
+GO:0046512	other metabolic processes	P
+GO:0046513	other metabolic processes	P
+GO:0046540	nucleus	C
+GO:0046626	signal transduction	P
+GO:0046627	signal transduction	P
+GO:0046638	developmental processes	P
+GO:0046655	other metabolic processes	P
+GO:0046666	death	P
+GO:0046666	developmental processes	P
+GO:0046667	death	P
+GO:0046667	developmental processes	P
+GO:0046677	other biological processes	P
+GO:0046777	protein metabolism	P
+GO:0046822	transport	P
+GO:0046825	transport	P
+GO:0046835	other metabolic processes	P
+GO:0046843	cell organization and biogenesis	P
+GO:0046847	cell organization and biogenesis	P
+GO:0046847	cell organization and biogenesis	P
+GO:0046870	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046872	other molecular function	F
+GO:0046902	cell organization and biogenesis	P
+GO:0046902	transport	P
+GO:0046914	other molecular function	F
+GO:0046949	other metabolic processes	P
+GO:0046961	transporter activity	F
+GO:0046982	other molecular function	F
+GO:0046983	other molecular function	F
+GO:0046983	other molecular function	F
+GO:0046983	other molecular function	F
+GO:0046983	other molecular function	F
+GO:0047144	other molecular function	F
+GO:0047372	other molecular function	F
+GO:0047484	stress response	P
+GO:0047485	other molecular function	F
+GO:0047485	other molecular function	F
+GO:0047485	other molecular function	F
+GO:0047496	transport	P
+GO:0047496	transport	P
+GO:0047696	kinase activity	F
+GO:0048009	signal transduction	P
+GO:0048013	signal transduction	P
+GO:0048026	RNA metabolism	P
+GO:0048037	other molecular function	F
+GO:0048041	cell adhesion	P
+GO:0048041	cell organization and biogenesis	P
+GO:0048052	developmental processes	P
+GO:0048072	other biological processes	P
+GO:0048105	developmental processes	P
+GO:0048134	cell cycle and proliferation	P
+GO:0048146	cell cycle and proliferation	P
+GO:0048146	cell cycle and proliferation	P
+GO:0048167	cell-cell signaling	P
+GO:0048172	cell-cell signaling	P
+GO:0048190	developmental processes	P
+GO:0048208	cell organization and biogenesis	P
+GO:0048208	transport	P
+GO:0048244	other molecular function	F
+GO:0048257	other molecular function	F
+GO:0048278	transport	P
+GO:0048306	other molecular function	F
+GO:0048312	cell organization and biogenesis	P
+GO:0048341	developmental processes	P
+GO:0048364	developmental processes	P
+GO:0048365	other molecular function	F
+GO:0048365	other molecular function	F
+GO:0048407	other molecular function	F
+GO:0048471	other cellular component	C
+GO:0048471	other cellular component	C
+GO:0048471	other cellular component	C
+GO:0048471	other cellular component	C
+GO:0048471	other cellular component	C
+GO:0048471	other cellular component	C
+GO:0048471	other cellular component	C
+GO:0048471	other cellular component	C
+GO:0048471	other cellular component	C
+GO:0048471	other cellular component	C
+GO:0048471	other cellular component	C
+GO:0048476	other cellular component	C
+GO:0048477	other biological processes	P
+GO:0048477	other biological processes	P
+GO:0048485	developmental processes	P
+GO:0048487	cytoskeletal activity	F
+GO:0048488	cell organization and biogenesis	P
+GO:0048488	transport	P
+GO:0048496	developmental processes	P
+GO:0048500	other cellular component	C
+GO:0048542	developmental processes	P
+GO:0048545	other biological processes	P
+GO:0048557	developmental processes	P
+GO:0048568	developmental processes	P
+GO:0048589	other biological processes	P
+GO:0048592	developmental processes	P
+GO:0048596	developmental processes	P
+GO:0048635	developmental processes	P
+GO:0048638	other biological processes	P
+GO:0048665	developmental processes	P
+GO:0048666	developmental processes	P
+GO:0048666	developmental processes	P
+GO:0048675	cell organization and biogenesis	P
+GO:0048675	developmental processes	P
+GO:0048696	cell organization and biogenesis	P
+GO:0048696	developmental processes	P
+GO:0048701	developmental processes	P
+GO:0048701	developmental processes	P
+GO:0048701	developmental processes	P
+GO:0048703	developmental processes	P
+GO:0048703	developmental processes	P
+GO:0048704	developmental processes	P
+GO:0048705	developmental processes	P
+GO:0048705	developmental processes	P
+GO:0048706	developmental processes	P
+GO:0048711	developmental processes	P
+GO:0048730	developmental processes	P
+GO:0048749	developmental processes	P
+GO:0048752	developmental processes	P
+GO:0048755	developmental processes	P
+GO:0048786	other cellular component	C
+GO:0048786	other cellular component	C
+GO:0048789	cell organization and biogenesis	P
+GO:0048790	cell-cell signaling	P
+GO:0048790	cell-cell signaling	P
+GO:0048790	transport	P
+GO:0048790	transport	P
+GO:0048800	developmental processes	P
+GO:0048803	developmental processes	P
+GO:0048812	cell organization and biogenesis	P
+GO:0048812	cell organization and biogenesis	P
+GO:0048812	developmental processes	P
+GO:0048812	developmental processes	P
+GO:0048813	cell organization and biogenesis	P
+GO:0048813	developmental processes	P
+GO:0048840	developmental processes	P
+GO:0048841	cell organization and biogenesis	P
+GO:0048841	cell organization and biogenesis	P
+GO:0048841	developmental processes	P
+GO:0048841	developmental processes	P
+GO:0048854	developmental processes	P
+GO:0048863	other biological processes	P
+GO:0050431	other molecular function	F
+GO:0050434	RNA metabolism	P
+GO:0050614	other molecular function	F
+GO:0050650	other metabolic processes	P
+GO:0050650	other metabolic processes	P
+GO:0050658	transport	P
+GO:0050660	other molecular function	F
+GO:0050660	other molecular function	F
+GO:0050660	other molecular function	F
+GO:0050660	other molecular function	F
+GO:0050660	other molecular function	F
+GO:0050660	other molecular function	F
+GO:0050679	cell cycle and proliferation	P
+GO:0050708	transport	P
+GO:0050708	transport	P
+GO:0050727	stress response	P
+GO:0050728	stress response	P
+GO:0050731	protein metabolism	P
+GO:0050767	developmental processes	P
+GO:0050768	developmental processes	P
+GO:0050770	cell organization and biogenesis	P
+GO:0050770	developmental processes	P
+GO:0050771	cell organization and biogenesis	P
+GO:0050771	developmental processes	P
+GO:0050795	other biological processes	P
+GO:0050804	cell-cell signaling	P
+GO:0050807	cell organization and biogenesis	P
+GO:0050807	cell-cell signaling	P
+GO:0050808	cell organization and biogenesis	P
+GO:0050809	other molecular function	F
+GO:0050821	protein metabolism	P
+GO:0050821	protein metabolism	P
+GO:0050829	stress response	P
+GO:0050877	other biological processes	P
+GO:0050885	other biological processes	P
+GO:0050890	other biological processes	P
+GO:0050892	other biological processes	P
+GO:0050896	other biological processes	P
+GO:0050896	other biological processes	P
+GO:0050918	other biological processes	P
+GO:0050953	other biological processes	P
+GO:0050982	other biological processes	P
+GO:0050998	other molecular function	F
+GO:0051001	other biological processes	P
+GO:0051013	other biological processes	P
+GO:0051015	cytoskeletal activity	F
+GO:0051015	cytoskeletal activity	F
+GO:0051015	cytoskeletal activity	F
+GO:0051020	other molecular function	F
+GO:0051028	transport	P
+GO:0051028	transport	P
+GO:0051028	transport	P
+GO:0051036	other biological processes	P
+GO:0051036	other biological processes	P
+GO:0051056	signal transduction	P
+GO:0051056	signal transduction	P
+GO:0051056	signal transduction	P
+GO:0051082	other molecular function	F
+GO:0051087	other molecular function	F
+GO:0051087	other molecular function	F
+GO:0051117	other molecular function	F
+GO:0051124	cell organization and biogenesis	P
+GO:0051124	developmental processes	P
+GO:0051209	transport	P
+GO:0051216	developmental processes	P
+GO:0051246	protein metabolism	P
+GO:0051247	protein metabolism	P
+GO:0051260	cell organization and biogenesis	P
+GO:0051260	cell organization and biogenesis	P
+GO:0051260	cell organization and biogenesis	P
+GO:0051260	cell organization and biogenesis	P
+GO:0051260	cell organization and biogenesis	P
+GO:0051262	cell organization and biogenesis	P
+GO:0051267	other molecular function	F
+GO:0051276	cell organization and biogenesis	P
+GO:0051279	transport	P
+GO:0051289	cell organization and biogenesis	P
+GO:0051290	cell organization and biogenesis	P
+GO:0051291	cell organization and biogenesis	P
+GO:0051291	cell organization and biogenesis	P
+GO:0051292	cell organization and biogenesis	P
+GO:0051292	cell organization and biogenesis	P
+GO:0051298	cell cycle and proliferation	P
+GO:0051298	cell cycle and proliferation	P
+GO:0051298	cell organization and biogenesis	P
+GO:0051298	cell organization and biogenesis	P
+GO:0051301	other biological processes	P
+GO:0051301	other biological processes	P
+GO:0051301	other biological processes	P
+GO:0051301	other biological processes	P
+GO:0051301	other biological processes	P
+GO:0051301	other biological processes	P
+GO:0051301	other biological processes	P
+GO:0051301	other biological processes	P
+GO:0051304	cell cycle and proliferation	P
+GO:0051321	cell cycle and proliferation	P
+GO:0051321	cell cycle and proliferation	P
+GO:0051384	other biological processes	P
+GO:0051402	death	P
+GO:0051402	death	P
+GO:0051403	signal transduction	P
+GO:0051403	stress response	P
+GO:0051415	cell cycle and proliferation	P
+GO:0051415	cell organization and biogenesis	P
+GO:0051436	cell cycle and proliferation	P
+GO:0051436	cell cycle and proliferation	P
+GO:0051437	cell cycle and proliferation	P
+GO:0051437	cell cycle and proliferation	P
+GO:0051439	cell cycle and proliferation	P
+GO:0051439	cell cycle and proliferation	P
+GO:0051480	other biological processes	P
+GO:0051489	cell organization and biogenesis	P
+GO:0051489	cell organization and biogenesis	P
+GO:0051495	cell organization and biogenesis	P
+GO:0051496	cell organization and biogenesis	P
+GO:0051496	cell organization and biogenesis	P
+GO:0051497	cell organization and biogenesis	P
+GO:0051537	other molecular function	F
+GO:0051537	other molecular function	F
+GO:0051537	other molecular function	F
+GO:0051538	other molecular function	F
+GO:0051539	other molecular function	F
+GO:0051568	cell organization and biogenesis	P
+GO:0051568	protein metabolism	P
+GO:0051569	cell organization and biogenesis	P
+GO:0051569	protein metabolism	P
+GO:0051571	cell organization and biogenesis	P
+GO:0051571	protein metabolism	P
+GO:0051575	other molecular function	F
+GO:0051591	other biological processes	P
+GO:0051591	other biological processes	P
+GO:0051592	other biological processes	P
+GO:0051597	other biological processes	P
+GO:0051599	stress response	P
+GO:0051607	stress response	P
+GO:0051640	other biological processes	P
+GO:0051642	other biological processes	P
+GO:0051693	cell organization and biogenesis	P
+GO:0051693	protein metabolism	P
+GO:0051702	other biological processes	P
+GO:0051726	cell cycle and proliferation	P
+GO:0051726	cell cycle and proliferation	P
+GO:0051781	other biological processes	P
+GO:0051881	other biological processes	P
+GO:0051895	cell adhesion	P
+GO:0051895	cell organization and biogenesis	P
+GO:0051897	signal transduction	P
+GO:0051898	signal transduction	P
+GO:0051898	signal transduction	P
+GO:0051924	transport	P
+GO:0051928	transport	P
+GO:0051938	transport	P
+GO:0051959	other molecular function	F
+GO:0051959	other molecular function	F
+GO:0051959	other molecular function	F
+GO:0051959	other molecular function	F
+GO:0051974	other biological processes	P
+GO:0051987	cell organization and biogenesis	P
+GO:0051988	cell organization and biogenesis	P
+GO:0052047	other biological processes	P
+GO:0055037	other cytoplasmic organelle	C
+GO:0055037	other cytoplasmic organelle	C
+GO:0055037	other cytoplasmic organelle	C
+GO:0055038	other cytoplasmic organelle	C
+GO:0055038	other membranes	C
+GO:0055072	other biological processes	P
+GO:0055085	transport	P
+GO:0055085	transport	P
+GO:0055085	transport	P
+GO:0055093	stress response	P
+GO:0055114	other metabolic processes	P
+GO:0055114	other metabolic processes	P
+GO:0055117	other biological processes	P
+GO:0060021	other biological processes	P
+GO:0060026	developmental processes	P
+GO:0060037	developmental processes	P
+GO:0060037	developmental processes	P
+GO:0060047	other biological processes	P
+GO:0060071	developmental processes	P
+GO:0060071	signal transduction	P
+GO:0060113	developmental processes	P
+GO:0060170	other membranes	C
+GO:0060170	other membranes	C
+GO:0060170	plasma membrane	C
+GO:0060170	plasma membrane	C
+GO:0060171	other membranes	C
+GO:0060171	plasma membrane	C
+GO:0060173	developmental processes	P
+GO:0060174	developmental processes	P
+GO:0060235	cell-cell signaling	P
+GO:0060235	developmental processes	P
+GO:0060250	other biological processes	P
+GO:0060252	cell cycle and proliferation	P
+GO:0060252	developmental processes	P
+GO:0060271	cell organization and biogenesis	P
+GO:0060271	cell organization and biogenesis	P
+GO:0060271	cell organization and biogenesis	P
+GO:0060271	cell organization and biogenesis	P
+GO:0060271	cell organization and biogenesis	P
+GO:0060272	developmental processes	P
+GO:0060285	other biological processes	P
+GO:0060287	developmental processes	P
+GO:0060288	developmental processes	P
+GO:0060291	cell-cell signaling	P
+GO:0060292	cell-cell signaling	P
+GO:0060294	other biological processes	P
+GO:0060294	other biological processes	P
+GO:0060294	other biological processes	P
+GO:0060307	other biological processes	P
+GO:0060325	other biological processes	P
+GO:0060325	other biological processes	P
+GO:0060325	other biological processes	P
+GO:0060346	developmental processes	P
+GO:0060348	developmental processes	P
+GO:0060348	developmental processes	P
+GO:0060349	developmental processes	P
+GO:0060351	developmental processes	P
+GO:0060429	developmental processes	P
+GO:0060429	developmental processes	P
+GO:0060487	developmental processes	P
+GO:0060487	developmental processes	P
+GO:0060488	developmental processes	P
+GO:0060489	developmental processes	P
+GO:0060490	developmental processes	P
+GO:0060544	death	P
+GO:0060546	death	P
+GO:0060736	developmental processes	P
+GO:0065001	developmental processes	P
+GO:0065010	non-structural extracellular	C
+GO:0070034	nucleic acid binding activity	F
+GO:0070050	other biological processes	P
+GO:0070059	death	P
+GO:0070062	non-structural extracellular	C
+GO:0070062	non-structural extracellular	C
+GO:0070062	non-structural extracellular	C
+GO:0070062	non-structural extracellular	C
+GO:0070062	non-structural extracellular	C
+GO:0070062	non-structural extracellular	C
+GO:0070062	non-structural extracellular	C
+GO:0070062	non-structural extracellular	C
+GO:0070062	non-structural extracellular	C
+GO:0070062	non-structural extracellular	C
+GO:0070062	non-structural extracellular	C
+GO:0070062	non-structural extracellular	C
+GO:0070062	non-structural extracellular	C
+GO:0070062	non-structural extracellular	C
+GO:0070062	non-structural extracellular	C
+GO:0070062	non-structural extracellular	C
+GO:0070062	non-structural extracellular	C
+GO:0070062	non-structural extracellular	C
+GO:0070062	non-structural extracellular	C
+GO:0070062	non-structural extracellular	C
+GO:0070062	non-structural extracellular	C
+GO:0070062	non-structural extracellular	C
+GO:0070062	non-structural extracellular	C
+GO:0070062	non-structural extracellular	C
+GO:0070062	non-structural extracellular	C
+GO:0070062	non-structural extracellular	C
+GO:0070062	non-structural extracellular	C
+GO:0070062	non-structural extracellular	C
+GO:0070062	non-structural extracellular	C
+GO:0070062	non-structural extracellular	C
+GO:0070064	other molecular function	F
+GO:0070087	other molecular function	F
+GO:0070096	cell organization and biogenesis	P
+GO:0070121	other biological processes	P
+GO:0070124	cell organization and biogenesis	P
+GO:0070124	cell organization and biogenesis	P
+GO:0070124	protein metabolism	P
+GO:0070124	protein metabolism	P
+GO:0070125	cell organization and biogenesis	P
+GO:0070125	cell organization and biogenesis	P
+GO:0070125	protein metabolism	P
+GO:0070125	protein metabolism	P
+GO:0070172	developmental processes	P
+GO:0070208	cell organization and biogenesis	P
+GO:0070247	death	P
+GO:0070266	death	P
+GO:0070296	transport	P
+GO:0070301	stress response	P
+GO:0070301	stress response	P
+GO:0070328	other biological processes	P
+GO:0070345	cell cycle and proliferation	P
+GO:0070372	signal transduction	P
+GO:0070424	signal transduction	P
+GO:0070424	stress response	P
+GO:0070449	nucleus	C
+GO:0070522	nucleus	C
+GO:0070534	protein metabolism	P
+GO:0070584	cell organization and biogenesis	P
+GO:0070588	transport	P
+GO:0070588	transport	P
+GO:0070742	other molecular function	None
+GO:0070781	other biological processes	None
+GO:0070820	other cellular component	None
+GO:0070821	other membranes	None
+GO:0070830	cell organization and biogenesis	None
+GO:0071004	nucleus	None
+GO:0071011	nucleus	None
+GO:0071013	nucleus	None
+GO:0071013	nucleus	None
+GO:0071013	nucleus	None
+GO:0071013	nucleus	None
+GO:0071013	nucleus	None
+GO:0071013	nucleus	None
+GO:0080008	other cellular component	C
+GO:0090005	other biological processes	None
