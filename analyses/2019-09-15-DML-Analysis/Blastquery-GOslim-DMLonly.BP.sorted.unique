@@ -1,0 +1,1221 @@
+GO:0000018	DNA metabolism
+GO:0000027	cell organization and biogenesis
+GO:0000028	cell organization and biogenesis
+GO:0000050	other metabolic processes
+GO:0000052	other metabolic processes
+GO:0000055	transport
+GO:0000056	transport
+GO:0000060	transport
+GO:0000082	cell cycle and proliferation
+GO:0000083	RNA metabolism
+GO:0000083	cell cycle and proliferation
+GO:0000086	cell cycle and proliferation
+GO:0000122	RNA metabolism
+GO:0000132	cell cycle and proliferation
+GO:0000132	cell organization and biogenesis
+GO:0000165	signal transduction
+GO:0000183	RNA metabolism
+GO:0000184	RNA metabolism
+GO:0000185	other metabolic processes
+GO:0000185	signal transduction
+GO:0000186	protein metabolism
+GO:0000186	signal transduction
+GO:0000209	protein metabolism
+GO:0000226	cell organization and biogenesis
+GO:0000245	RNA metabolism
+GO:0000245	cell organization and biogenesis
+GO:0000278	cell cycle and proliferation
+GO:0000281	cell cycle and proliferation
+GO:0000354	RNA metabolism
+GO:0000354	cell organization and biogenesis
+GO:0000375	RNA metabolism
+GO:0000381	RNA metabolism
+GO:0000398	RNA metabolism
+GO:0000462	RNA metabolism
+GO:0000466	RNA metabolism
+GO:0000467	RNA metabolism
+GO:0000706	DNA metabolism
+GO:0000706	cell cycle and proliferation
+GO:0000706	stress response
+GO:0000712	DNA metabolism
+GO:0000712	cell cycle and proliferation
+GO:0000715	DNA metabolism
+GO:0000715	cell organization and biogenesis
+GO:0000715	stress response
+GO:0000717	DNA metabolism
+GO:0000717	stress response
+GO:0000722	DNA metabolism
+GO:0000722	cell organization and biogenesis
+GO:0000723	DNA metabolism
+GO:0000723	cell organization and biogenesis
+GO:0000724	DNA metabolism
+GO:0000724	stress response
+GO:0000729	DNA metabolism
+GO:0000729	stress response
+GO:0000902	cell organization and biogenesis
+GO:0000910	other biological processes
+GO:0000920	other biological processes
+GO:0000956	RNA metabolism
+GO:0001501	developmental processes
+GO:0001503	developmental processes
+GO:0001508	other biological processes
+GO:0001525	developmental processes
+GO:0001539	other biological processes
+GO:0001541	developmental processes
+GO:0001560	signal transduction
+GO:0001561	other metabolic processes
+GO:0001568	developmental processes
+GO:0001575	other metabolic processes
+GO:0001649	developmental processes
+GO:0001656	developmental processes
+GO:0001658	developmental processes
+GO:0001659	other biological processes
+GO:0001662	stress response
+GO:0001666	stress response
+GO:0001667	other biological processes
+GO:0001682	RNA metabolism
+GO:0001701	developmental processes
+GO:0001708	other biological processes
+GO:0001711	other biological processes
+GO:0001736	developmental processes
+GO:0001738	developmental processes
+GO:0001745	developmental processes
+GO:0001756	developmental processes
+GO:0001764	developmental processes
+GO:0001822	developmental processes
+GO:0001832	developmental processes
+GO:0001833	cell cycle and proliferation
+GO:0001833	developmental processes
+GO:0001843	developmental processes
+GO:0001881	other metabolic processes
+GO:0001881	signal transduction
+GO:0001889	developmental processes
+GO:0001890	developmental processes
+GO:0001916	death
+GO:0001932	protein metabolism
+GO:0001933	protein metabolism
+GO:0001934	protein metabolism
+GO:0001937	cell cycle and proliferation
+GO:0001942	developmental processes
+GO:0001947	developmental processes
+GO:0001957	developmental processes
+GO:0001958	developmental processes
+GO:0001964	other biological processes
+GO:0002027	other biological processes
+GO:0002062	developmental processes
+GO:0002063	developmental processes
+GO:0002089	developmental processes
+GO:0002091	cell organization and biogenesis
+GO:0002091	protein metabolism
+GO:0002091	transport
+GO:0002092	cell organization and biogenesis
+GO:0002092	protein metabolism
+GO:0002092	transport
+GO:0002121	other biological processes
+GO:0002213	stress response
+GO:0002224	signal transduction
+GO:0002224	stress response
+GO:0002244	developmental processes
+GO:0002376	other biological processes
+GO:0002576	transport
+GO:0002862	stress response
+GO:0003006	other biological processes
+GO:0003007	developmental processes
+GO:0003091	other biological processes
+GO:0006000	other metabolic processes
+GO:0006003	other metabolic processes
+GO:0006006	other metabolic processes
+GO:0006048	other metabolic processes
+GO:0006084	other metabolic processes
+GO:0006085	other metabolic processes
+GO:0006094	other metabolic processes
+GO:0006099	other metabolic processes
+GO:0006101	other metabolic processes
+GO:0006103	other metabolic processes
+GO:0006110	other metabolic processes
+GO:0006120	other metabolic processes
+GO:0006139	other metabolic processes
+GO:0006144	other metabolic processes
+GO:0006148	other metabolic processes
+GO:0006195	other metabolic processes
+GO:0006206	other metabolic processes
+GO:0006259	DNA metabolism
+GO:0006260	DNA metabolism
+GO:0006261	DNA metabolism
+GO:0006264	DNA metabolism
+GO:0006264	cell organization and biogenesis
+GO:0006265	DNA metabolism
+GO:0006270	DNA metabolism
+GO:0006281	DNA metabolism
+GO:0006281	stress response
+GO:0006283	DNA metabolism
+GO:0006283	stress response
+GO:0006284	DNA metabolism
+GO:0006284	stress response
+GO:0006289	DNA metabolism
+GO:0006289	stress response
+GO:0006294	DNA metabolism
+GO:0006294	cell organization and biogenesis
+GO:0006294	stress response
+GO:0006298	DNA metabolism
+GO:0006298	stress response
+GO:0006301	DNA metabolism
+GO:0006301	stress response
+GO:0006302	DNA metabolism
+GO:0006302	stress response
+GO:0006346	RNA metabolism
+GO:0006346	cell organization and biogenesis
+GO:0006351	RNA metabolism
+GO:0006353	RNA metabolism
+GO:0006353	cell organization and biogenesis
+GO:0006355	RNA metabolism
+GO:0006357	RNA metabolism
+GO:0006361	RNA metabolism
+GO:0006361	cell organization and biogenesis
+GO:0006364	RNA metabolism
+GO:0006366	RNA metabolism
+GO:0006367	RNA metabolism
+GO:0006367	cell organization and biogenesis
+GO:0006368	RNA metabolism
+GO:0006369	RNA metabolism
+GO:0006369	cell organization and biogenesis
+GO:0006370	RNA metabolism
+GO:0006378	RNA metabolism
+GO:0006379	RNA metabolism
+GO:0006396	RNA metabolism
+GO:0006397	RNA metabolism
+GO:0006400	RNA metabolism
+GO:0006401	RNA metabolism
+GO:0006406	transport
+GO:0006409	transport
+GO:0006412	protein metabolism
+GO:0006413	protein metabolism
+GO:0006417	protein metabolism
+GO:0006426	RNA metabolism
+GO:0006426	protein metabolism
+GO:0006433	RNA metabolism
+GO:0006433	protein metabolism
+GO:0006446	protein metabolism
+GO:0006457	protein metabolism
+GO:0006458	protein metabolism
+GO:0006468	protein metabolism
+GO:0006469	other metabolic processes
+GO:0006470	protein metabolism
+GO:0006501	protein metabolism
+GO:0006506	protein metabolism
+GO:0006508	protein metabolism
+GO:0006511	protein metabolism
+GO:0006520	other metabolic processes
+GO:0006525	other metabolic processes
+GO:0006552	other metabolic processes
+GO:0006568	other metabolic processes
+GO:0006574	other metabolic processes
+GO:0006606	transport
+GO:0006607	transport
+GO:0006610	transport
+GO:0006611	transport
+GO:0006614	transport
+GO:0006629	other metabolic processes
+GO:0006635	other metabolic processes
+GO:0006646	other metabolic processes
+GO:0006650	other metabolic processes
+GO:0006672	other metabolic processes
+GO:0006678	other metabolic processes
+GO:0006680	other metabolic processes
+GO:0006681	other metabolic processes
+GO:0006684	other metabolic processes
+GO:0006695	other metabolic processes
+GO:0006720	other metabolic processes
+GO:0006730	other metabolic processes
+GO:0006738	other metabolic processes
+GO:0006744	other metabolic processes
+GO:0006768	other metabolic processes
+GO:0006779	other metabolic processes
+GO:0006782	other metabolic processes
+GO:0006783	other metabolic processes
+GO:0006805	other metabolic processes
+GO:0006809	other metabolic processes
+GO:0006810	transport
+GO:0006811	transport
+GO:0006814	transport
+GO:0006816	transport
+GO:0006820	transport
+GO:0006826	transport
+GO:0006829	transport
+GO:0006839	transport
+GO:0006843	transport
+GO:0006865	transport
+GO:0006869	transport
+GO:0006874	other biological processes
+GO:0006879	other biological processes
+GO:0006882	other biological processes
+GO:0006886	transport
+GO:0006887	transport
+GO:0006888	transport
+GO:0006890	transport
+GO:0006891	transport
+GO:0006893	transport
+GO:0006897	cell organization and biogenesis
+GO:0006897	transport
+GO:0006898	cell organization and biogenesis
+GO:0006898	transport
+GO:0006906	cell organization and biogenesis
+GO:0006906	transport
+GO:0006909	cell organization and biogenesis
+GO:0006909	transport
+GO:0006913	transport
+GO:0006914	other metabolic processes
+GO:0006915	death
+GO:0006919	death
+GO:0006936	other biological processes
+GO:0006953	stress response
+GO:0006954	stress response
+GO:0006955	other biological processes
+GO:0006964	other metabolic processes
+GO:0006964	stress response
+GO:0006974	stress response
+GO:0006977	cell cycle and proliferation
+GO:0006977	signal transduction
+GO:0006977	stress response
+GO:0006979	stress response
+GO:0006986	stress response
+GO:0007004	DNA metabolism
+GO:0007004	cell organization and biogenesis
+GO:0007005	cell organization and biogenesis
+GO:0007009	cell organization and biogenesis
+GO:0007010	cell organization and biogenesis
+GO:0007015	cell organization and biogenesis
+GO:0007016	cell organization and biogenesis
+GO:0007018	other biological processes
+GO:0007020	cell organization and biogenesis
+GO:0007026	cell organization and biogenesis
+GO:0007026	protein metabolism
+GO:0007029	cell organization and biogenesis
+GO:0007030	cell organization and biogenesis
+GO:0007032	cell organization and biogenesis
+GO:0007034	transport
+GO:0007040	cell organization and biogenesis
+GO:0007041	transport
+GO:0007042	cell organization and biogenesis
+GO:0007044	cell organization and biogenesis
+GO:0007049	cell cycle and proliferation
+GO:0007050	cell cycle and proliferation
+GO:0007064	cell cycle and proliferation
+GO:0007064	cell organization and biogenesis
+GO:0007077	cell cycle and proliferation
+GO:0007077	cell organization and biogenesis
+GO:0007088	cell cycle and proliferation
+GO:0007088	cell organization and biogenesis
+GO:0007093	cell cycle and proliferation
+GO:0007096	cell cycle and proliferation
+GO:0007096	cell organization and biogenesis
+GO:0007098	cell cycle and proliferation
+GO:0007098	cell organization and biogenesis
+GO:0007099	cell cycle and proliferation
+GO:0007099	cell organization and biogenesis
+GO:0007143	cell cycle and proliferation
+GO:0007155	cell adhesion
+GO:0007156	cell adhesion
+GO:0007157	cell adhesion
+GO:0007160	cell adhesion
+GO:0007161	cell adhesion
+GO:0007163	cell organization and biogenesis
+GO:0007165	signal transduction
+GO:0007166	signal transduction
+GO:0007169	signal transduction
+GO:0007186	signal transduction
+GO:0007188	signal transduction
+GO:0007190	other metabolic processes
+GO:0007212	signal transduction
+GO:0007219	signal transduction
+GO:0007229	signal transduction
+GO:0007249	signal transduction
+GO:0007254	signal transduction
+GO:0007254	stress response
+GO:0007257	protein metabolism
+GO:0007257	signal transduction
+GO:0007257	stress response
+GO:0007264	signal transduction
+GO:0007265	signal transduction
+GO:0007266	signal transduction
+GO:0007268	cell-cell signaling
+GO:0007269	cell-cell signaling
+GO:0007269	transport
+GO:0007274	cell-cell signaling
+GO:0007275	developmental processes
+GO:0007283	other biological processes
+GO:0007293	other biological processes
+GO:0007294	other biological processes
+GO:0007297	other biological processes
+GO:0007298	other biological processes
+GO:0007308	cell organization and biogenesis
+GO:0007314	cell organization and biogenesis
+GO:0007314	developmental processes
+GO:0007338	other biological processes
+GO:0007346	cell cycle and proliferation
+GO:0007369	developmental processes
+GO:0007389	developmental processes
+GO:0007391	developmental processes
+GO:0007398	developmental processes
+GO:0007399	developmental processes
+GO:0007400	developmental processes
+GO:0007403	developmental processes
+GO:0007409	cell organization and biogenesis
+GO:0007409	developmental processes
+GO:0007411	cell organization and biogenesis
+GO:0007411	developmental processes
+GO:0007415	cell organization and biogenesis
+GO:0007415	developmental processes
+GO:0007417	developmental processes
+GO:0007419	developmental processes
+GO:0007420	developmental processes
+GO:0007422	developmental processes
+GO:0007423	developmental processes
+GO:0007424	developmental processes
+GO:0007440	developmental processes
+GO:0007446	developmental processes
+GO:0007447	developmental processes
+GO:0007450	developmental processes
+GO:0007451	developmental processes
+GO:0007460	developmental processes
+GO:0007464	cell organization and biogenesis
+GO:0007464	developmental processes
+GO:0007473	developmental processes
+GO:0007474	developmental processes
+GO:0007476	developmental processes
+GO:0007478	developmental processes
+GO:0007498	developmental processes
+GO:0007501	developmental processes
+GO:0007507	developmental processes
+GO:0007519	developmental processes
+GO:0007521	developmental processes
+GO:0007528	cell organization and biogenesis
+GO:0007528	developmental processes
+GO:0007568	other biological processes
+GO:0007569	other biological processes
+GO:0007595	developmental processes
+GO:0007601	other biological processes
+GO:0007605	other biological processes
+GO:0007611	other biological processes
+GO:0007612	other biological processes
+GO:0007613	other biological processes
+GO:0007616	other biological processes
+GO:0007625	other biological processes
+GO:0007626	other biological processes
+GO:0008033	RNA metabolism
+GO:0008045	cell organization and biogenesis
+GO:0008045	developmental processes
+GO:0008088	transport
+GO:0008104	other biological processes
+GO:0008152	other metabolic processes
+GO:0008154	cell organization and biogenesis
+GO:0008203	other metabolic processes
+GO:0008219	death
+GO:0008283	cell cycle and proliferation
+GO:0008284	cell cycle and proliferation
+GO:0008285	cell cycle and proliferation
+GO:0008306	other biological processes
+GO:0008333	transport
+GO:0008334	RNA metabolism
+GO:0008340	developmental processes
+GO:0008347	developmental processes
+GO:0008356	other biological processes
+GO:0008360	cell organization and biogenesis
+GO:0008380	RNA metabolism
+GO:0008407	developmental processes
+GO:0008542	other biological processes
+GO:0008543	signal transduction
+GO:0008544	developmental processes
+GO:0008587	developmental processes
+GO:0008589	signal transduction
+GO:0008610	other metabolic processes
+GO:0008611	other metabolic processes
+GO:0008625	death
+GO:0008631	death
+GO:0008635	death
+GO:0008643	transport
+GO:0008654	other metabolic processes
+GO:0009058	other metabolic processes
+GO:0009083	other metabolic processes
+GO:0009115	other metabolic processes
+GO:0009258	other metabolic processes
+GO:0009267	stress response
+GO:0009268	other biological processes
+GO:0009305	protein metabolism
+GO:0009306	transport
+GO:0009411	other biological processes
+GO:0009414	stress response
+GO:0009590	other biological processes
+GO:0009608	other biological processes
+GO:0009612	other biological processes
+GO:0009615	other biological processes
+GO:0009630	other biological processes
+GO:0009653	other biological processes
+GO:0009725	other biological processes
+GO:0009791	developmental processes
+GO:0009792	developmental processes
+GO:0009847	other biological processes
+GO:0009880	developmental processes
+GO:0009888	developmental processes
+GO:0009950	developmental processes
+GO:0009952	developmental processes
+GO:0009954	developmental processes
+GO:0009966	signal transduction
+GO:0009994	other biological processes
+GO:0010001	developmental processes
+GO:0010040	other biological processes
+GO:0010172	developmental processes
+GO:0010212	other biological processes
+GO:0010224	other biological processes
+GO:0010457	cell organization and biogenesis
+GO:0010468	other metabolic processes
+GO:0010501	RNA metabolism
+GO:0010540	transport
+GO:0010575	other biological processes
+GO:0010603	cell organization and biogenesis
+GO:0010626	cell cycle and proliferation
+GO:0010626	developmental processes
+GO:0010628	other metabolic processes
+GO:0010629	other metabolic processes
+GO:0010632	other biological processes
+GO:0010633	other biological processes
+GO:0010666	death
+GO:0010718	cell organization and biogenesis
+GO:0010718	developmental processes
+GO:0010751	signal transduction
+GO:0010762	other biological processes
+GO:0010792	DNA metabolism
+GO:0010792	stress response
+GO:0010803	signal transduction
+GO:0010812	cell adhesion
+GO:0010824	cell cycle and proliferation
+GO:0010824	cell organization and biogenesis
+GO:0010827	transport
+GO:0010839	cell cycle and proliferation
+GO:0010842	developmental processes
+GO:0010881	transport
+GO:0010882	other biological processes
+GO:0010890	other biological processes
+GO:0010906	other metabolic processes
+GO:0010923	other metabolic processes
+GO:0010944	RNA metabolism
+GO:0010954	protein metabolism
+GO:0010971	cell cycle and proliferation
+GO:0010976	cell organization and biogenesis
+GO:0010976	developmental processes
+GO:0010996	other biological processes
+GO:0012501	death
+GO:0014032	developmental processes
+GO:0014047	cell-cell signaling
+GO:0014047	transport
+GO:0014067	signal transduction
+GO:0014070	other biological processes
+GO:0014706	developmental processes
+GO:0015012	other metabolic processes
+GO:0015031	transport
+GO:0015758	transport
+GO:0015760	transport
+GO:0015809	transport
+GO:0015917	transport
+GO:0015966	other metabolic processes
+GO:0015991	transport
+GO:0016031	transport
+GO:0016032	other biological processes
+GO:0016050	cell organization and biogenesis
+GO:0016055	signal transduction
+GO:0016070	RNA metabolism
+GO:0016075	RNA metabolism
+GO:0016126	other metabolic processes
+GO:0016180	RNA metabolism
+GO:0016192	transport
+GO:0016197	transport
+GO:0016199	cell organization and biogenesis
+GO:0016199	developmental processes
+GO:0016233	DNA metabolism
+GO:0016233	cell organization and biogenesis
+GO:0016236	other metabolic processes
+GO:0016236	stress response
+GO:0016239	other metabolic processes
+GO:0016239	stress response
+GO:0016242	other metabolic processes
+GO:0016242	stress response
+GO:0016254	protein metabolism
+GO:0016256	protein metabolism
+GO:0016256	transport
+GO:0016319	developmental processes
+GO:0016321	cell cycle and proliferation
+GO:0016330	cell cycle and proliferation
+GO:0016330	developmental processes
+GO:0016333	developmental processes
+GO:0016337	cell adhesion
+GO:0016348	developmental processes
+GO:0016360	developmental processes
+GO:0016446	developmental processes
+GO:0016458	other metabolic processes
+GO:0016477	other biological processes
+GO:0016485	protein metabolism
+GO:0016539	protein metabolism
+GO:0016540	protein metabolism
+GO:0016556	RNA metabolism
+GO:0016567	protein metabolism
+GO:0016569	cell organization and biogenesis
+GO:0016570	cell organization and biogenesis
+GO:0016570	protein metabolism
+GO:0016571	cell organization and biogenesis
+GO:0016571	protein metabolism
+GO:0016573	cell organization and biogenesis
+GO:0016573	protein metabolism
+GO:0016574	cell organization and biogenesis
+GO:0016574	protein metabolism
+GO:0016576	cell organization and biogenesis
+GO:0016576	protein metabolism
+GO:0016578	cell organization and biogenesis
+GO:0016578	protein metabolism
+GO:0016579	protein metabolism
+GO:0016601	signal transduction
+GO:0016925	protein metabolism
+GO:0017157	transport
+GO:0018063	cell organization and biogenesis
+GO:0018063	protein metabolism
+GO:0018149	protein metabolism
+GO:0018243	protein metabolism
+GO:0018345	protein metabolism
+GO:0019083	RNA metabolism
+GO:0019218	other metabolic processes
+GO:0019244	other metabolic processes
+GO:0019413	other metabolic processes
+GO:0019427	other metabolic processes
+GO:0019464	other metabolic processes
+GO:0019542	other metabolic processes
+GO:0019805	other metabolic processes
+GO:0019827	other biological processes
+GO:0019985	DNA metabolism
+GO:0019985	stress response
+GO:0021506	developmental processes
+GO:0021559	developmental processes
+GO:0021623	developmental processes
+GO:0021702	developmental processes
+GO:0021756	developmental processes
+GO:0021762	developmental processes
+GO:0021766	developmental processes
+GO:0021785	cell organization and biogenesis
+GO:0021785	developmental processes
+GO:0021884	developmental processes
+GO:0021915	developmental processes
+GO:0021930	cell cycle and proliferation
+GO:0021930	developmental processes
+GO:0021935	developmental processes
+GO:0021987	developmental processes
+GO:0021988	developmental processes
+GO:0021990	developmental processes
+GO:0022008	developmental processes
+GO:0022011	developmental processes
+GO:0022416	developmental processes
+GO:0022604	cell organization and biogenesis
+GO:0022612	developmental processes
+GO:0030010	cell organization and biogenesis
+GO:0030036	cell organization and biogenesis
+GO:0030041	cell organization and biogenesis
+GO:0030042	cell organization and biogenesis
+GO:0030048	transport
+GO:0030071	cell cycle and proliferation
+GO:0030071	cell organization and biogenesis
+GO:0030072	cell-cell signaling
+GO:0030072	transport
+GO:0030073	cell-cell signaling
+GO:0030073	transport
+GO:0030091	protein metabolism
+GO:0030100	cell organization and biogenesis
+GO:0030100	transport
+GO:0030150	cell organization and biogenesis
+GO:0030150	transport
+GO:0030154	other biological processes
+GO:0030155	cell adhesion
+GO:0030163	protein metabolism
+GO:0030177	signal transduction
+GO:0030178	signal transduction
+GO:0030193	stress response
+GO:0030198	cell organization and biogenesis
+GO:0030199	cell organization and biogenesis
+GO:0030203	other metabolic processes
+GO:0030206	other metabolic processes
+GO:0030279	developmental processes
+GO:0030308	other biological processes
+GO:0030317	other biological processes
+GO:0030334	other biological processes
+GO:0030335	other biological processes
+GO:0030501	developmental processes
+GO:0030509	signal transduction
+GO:0030512	signal transduction
+GO:0030522	signal transduction
+GO:0030539	developmental processes
+GO:0030707	other biological processes
+GO:0030708	developmental processes
+GO:0030713	cell organization and biogenesis
+GO:0030718	other biological processes
+GO:0030720	other biological processes
+GO:0030727	cell cycle and proliferation
+GO:0030728	other biological processes
+GO:0030837	cell organization and biogenesis
+GO:0030837	protein metabolism
+GO:0030862	developmental processes
+GO:0030902	developmental processes
+GO:0030913	cell organization and biogenesis
+GO:0030913	developmental processes
+GO:0031032	cell organization and biogenesis
+GO:0031047	other metabolic processes
+GO:0031053	RNA metabolism
+GO:0031065	cell organization and biogenesis
+GO:0031065	protein metabolism
+GO:0031098	signal transduction
+GO:0031098	stress response
+GO:0031100	developmental processes
+GO:0031122	cell organization and biogenesis
+GO:0031124	RNA metabolism
+GO:0031145	protein metabolism
+GO:0031214	developmental processes
+GO:0031297	DNA metabolism
+GO:0031297	stress response
+GO:0031334	cell organization and biogenesis
+GO:0031338	cell organization and biogenesis
+GO:0031338	transport
+GO:0031397	protein metabolism
+GO:0031424	developmental processes
+GO:0031532	cell organization and biogenesis
+GO:0031572	cell cycle and proliferation
+GO:0031572	signal transduction
+GO:0031572	stress response
+GO:0031573	cell cycle and proliferation
+GO:0031573	signal transduction
+GO:0031573	stress response
+GO:0031587	signal transduction
+GO:0031589	cell adhesion
+GO:0031623	cell organization and biogenesis
+GO:0031623	other metabolic processes
+GO:0031623	transport
+GO:0031630	cell organization and biogenesis
+GO:0031630	cell-cell signaling
+GO:0031630	transport
+GO:0031638	protein metabolism
+GO:0031639	protein metabolism
+GO:0031643	developmental processes
+GO:0031647	protein metabolism
+GO:0031648	protein metabolism
+GO:0031667	other biological processes
+GO:0031960	other biological processes
+GO:0031987	other biological processes
+GO:0032006	signal transduction
+GO:0032007	signal transduction
+GO:0032024	cell-cell signaling
+GO:0032024	transport
+GO:0032091	other biological processes
+GO:0032147	other metabolic processes
+GO:0032210	DNA metabolism
+GO:0032210	cell organization and biogenesis
+GO:0032211	DNA metabolism
+GO:0032211	cell organization and biogenesis
+GO:0032268	protein metabolism
+GO:0032269	protein metabolism
+GO:0032355	other biological processes
+GO:0032434	protein metabolism
+GO:0032436	protein metabolism
+GO:0032439	other biological processes
+GO:0032456	transport
+GO:0032463	cell organization and biogenesis
+GO:0032467	other biological processes
+GO:0032482	signal transduction
+GO:0032496	other biological processes
+GO:0032675	other biological processes
+GO:0032680	other biological processes
+GO:0032715	other biological processes
+GO:0032811	transport
+GO:0032880	other biological processes
+GO:0032922	other metabolic processes
+GO:0032956	cell organization and biogenesis
+GO:0032958	other metabolic processes
+GO:0032964	other metabolic processes
+GO:0032968	RNA metabolism
+GO:0032981	cell organization and biogenesis
+GO:0033120	RNA metabolism
+GO:0033138	protein metabolism
+GO:0033160	transport
+GO:0033209	signal transduction
+GO:0033234	protein metabolism
+GO:0033235	protein metabolism
+GO:0033280	other biological processes
+GO:0033292	cell organization and biogenesis
+GO:0033365	other biological processes
+GO:0033489	other metabolic processes
+GO:0033490	other metabolic processes
+GO:0033561	other biological processes
+GO:0033574	other biological processes
+GO:0033622	protein metabolism
+GO:0033627	cell adhesion
+GO:0033674	other metabolic processes
+GO:0033683	DNA metabolism
+GO:0033683	stress response
+GO:0033962	cell organization and biogenesis
+GO:0034063	cell organization and biogenesis
+GO:0034088	cell cycle and proliferation
+GO:0034088	cell organization and biogenesis
+GO:0034097	other biological processes
+GO:0034121	signal transduction
+GO:0034121	stress response
+GO:0034184	cell cycle and proliferation
+GO:0034184	cell organization and biogenesis
+GO:0034198	stress response
+GO:0034220	transport
+GO:0034260	other biological processes
+GO:0034314	cell organization and biogenesis
+GO:0034356	other metabolic processes
+GO:0034394	other biological processes
+GO:0034418	other metabolic processes
+GO:0034427	RNA metabolism
+GO:0034446	cell adhesion
+GO:0034446	cell organization and biogenesis
+GO:0034473	RNA metabolism
+GO:0034475	RNA metabolism
+GO:0034476	RNA metabolism
+GO:0034504	other biological processes
+GO:0034505	developmental processes
+GO:0034508	cell organization and biogenesis
+GO:0034587	RNA metabolism
+GO:0034613	other biological processes
+GO:0034968	cell organization and biogenesis
+GO:0034968	protein metabolism
+GO:0034976	stress response
+GO:0035001	developmental processes
+GO:0035011	other metabolic processes
+GO:0035011	stress response
+GO:0035019	other biological processes
+GO:0035023	signal transduction
+GO:0035065	cell organization and biogenesis
+GO:0035065	protein metabolism
+GO:0035082	cell organization and biogenesis
+GO:0035088	cell organization and biogenesis
+GO:0035115	developmental processes
+GO:0035136	developmental processes
+GO:0035153	developmental processes
+GO:0035155	developmental processes
+GO:0035157	developmental processes
+GO:0035162	developmental processes
+GO:0035165	developmental processes
+GO:0035167	developmental processes
+GO:0035170	developmental processes
+GO:0035171	developmental processes
+GO:0035172	cell cycle and proliferation
+GO:0035172	developmental processes
+GO:0035176	other biological processes
+GO:0035204	developmental processes
+GO:0035206	cell cycle and proliferation
+GO:0035206	developmental processes
+GO:0035214	developmental processes
+GO:0035222	developmental processes
+GO:0035235	signal transduction
+GO:0035249	cell-cell signaling
+GO:0035261	developmental processes
+GO:0035262	developmental processes
+GO:0035264	other biological processes
+GO:0035265	other biological processes
+GO:0035307	protein metabolism
+GO:0035315	developmental processes
+GO:0035317	cell organization and biogenesis
+GO:0035317	developmental processes
+GO:0040008	other biological processes
+GO:0040018	other biological processes
+GO:0042059	signal transduction
+GO:0042060	stress response
+GO:0042062	cell organization and biogenesis
+GO:0042062	cell-cell signaling
+GO:0042062	developmental processes
+GO:0042067	cell organization and biogenesis
+GO:0042067	developmental processes
+GO:0042102	cell cycle and proliferation
+GO:0042127	cell cycle and proliferation
+GO:0042133	cell-cell signaling
+GO:0042133	other metabolic processes
+GO:0042147	transport
+GO:0042176	protein metabolism
+GO:0042249	developmental processes
+GO:0042254	other biological processes
+GO:0042273	other biological processes
+GO:0042297	other biological processes
+GO:0042307	transport
+GO:0042445	other metabolic processes
+GO:0042471	developmental processes
+GO:0042472	developmental processes
+GO:0042473	developmental processes
+GO:0042474	developmental processes
+GO:0042475	developmental processes
+GO:0042493	other biological processes
+GO:0042542	stress response
+GO:0042552	developmental processes
+GO:0042554	other metabolic processes
+GO:0042593	other biological processes
+GO:0042594	stress response
+GO:0042634	other biological processes
+GO:0042676	developmental processes
+GO:0042686	developmental processes
+GO:0042688	developmental processes
+GO:0042689	developmental processes
+GO:0042691	developmental processes
+GO:0042692	other biological processes
+GO:0042711	other biological processes
+GO:0042732	other metabolic processes
+GO:0042733	developmental processes
+GO:0042753	other biological processes
+GO:0042780	RNA metabolism
+GO:0042787	protein metabolism
+GO:0042795	RNA metabolism
+GO:0042891	transport
+GO:0042938	transport
+GO:0042981	death
+GO:0042987	other metabolic processes
+GO:0043030	other biological processes
+GO:0043044	cell organization and biogenesis
+GO:0043065	death
+GO:0043066	death
+GO:0043086	other biological processes
+GO:0043087	other biological processes
+GO:0043097	other metabolic processes
+GO:0043101	other metabolic processes
+GO:0043123	signal transduction
+GO:0043124	signal transduction
+GO:0043154	death
+GO:0043161	protein metabolism
+GO:0043162	protein metabolism
+GO:0043243	cell organization and biogenesis
+GO:0043268	transport
+GO:0043276	death
+GO:0043280	death
+GO:0043281	death
+GO:0043312	transport
+GO:0043407	other metabolic processes
+GO:0043410	signal transduction
+GO:0043434	other biological processes
+GO:0043491	signal transduction
+GO:0043507	protein metabolism
+GO:0043507	signal transduction
+GO:0043507	stress response
+GO:0043524	death
+GO:0043525	death
+GO:0043547	other biological processes
+GO:0043584	developmental processes
+GO:0043588	developmental processes
+GO:0043589	developmental processes
+GO:0043623	cell organization and biogenesis
+GO:0043627	other biological processes
+GO:0043666	other metabolic processes
+GO:0043687	protein metabolism
+GO:0043928	RNA metabolism
+GO:0043967	cell organization and biogenesis
+GO:0043967	protein metabolism
+GO:0043968	cell organization and biogenesis
+GO:0043968	protein metabolism
+GO:0044030	DNA metabolism
+GO:0045008	DNA metabolism
+GO:0045008	stress response
+GO:0045019	other metabolic processes
+GO:0045047	transport
+GO:0045087	stress response
+GO:0045088	stress response
+GO:0045176	other biological processes
+GO:0045184	other biological processes
+GO:0045316	developmental processes
+GO:0045332	cell organization and biogenesis
+GO:0045332	transport
+GO:0045444	other biological processes
+GO:0045454	other biological processes
+GO:0045463	developmental processes
+GO:0045465	developmental processes
+GO:0045466	developmental processes
+GO:0045468	developmental processes
+GO:0045471	other biological processes
+GO:0045478	cell organization and biogenesis
+GO:0045494	other biological processes
+GO:0045595	other biological processes
+GO:0045599	other biological processes
+GO:0045602	other biological processes
+GO:0045616	other biological processes
+GO:0045663	developmental processes
+GO:0045664	developmental processes
+GO:0045666	developmental processes
+GO:0045723	other metabolic processes
+GO:0045724	cell organization and biogenesis
+GO:0045739	DNA metabolism
+GO:0045739	stress response
+GO:0045746	signal transduction
+GO:0045747	signal transduction
+GO:0045773	cell organization and biogenesis
+GO:0045773	developmental processes
+GO:0045778	developmental processes
+GO:0045792	other biological processes
+GO:0045807	cell organization and biogenesis
+GO:0045807	transport
+GO:0045815	other metabolic processes
+GO:0045859	other metabolic processes
+GO:0045860	other metabolic processes
+GO:0045861	protein metabolism
+GO:0045886	cell organization and biogenesis
+GO:0045886	cell-cell signaling
+GO:0045886	developmental processes
+GO:0045892	RNA metabolism
+GO:0045893	RNA metabolism
+GO:0045921	transport
+GO:0045931	cell cycle and proliferation
+GO:0045944	RNA metabolism
+GO:0045995	developmental processes
+GO:0046068	other metabolic processes
+GO:0046104	other metabolic processes
+GO:0046329	signal transduction
+GO:0046329	stress response
+GO:0046330	signal transduction
+GO:0046330	stress response
+GO:0046331	cell-cell signaling
+GO:0046464	other metabolic processes
+GO:0046512	other metabolic processes
+GO:0046513	other metabolic processes
+GO:0046626	signal transduction
+GO:0046627	signal transduction
+GO:0046638	developmental processes
+GO:0046655	other metabolic processes
+GO:0046666	death
+GO:0046666	developmental processes
+GO:0046667	death
+GO:0046667	developmental processes
+GO:0046677	other biological processes
+GO:0046777	protein metabolism
+GO:0046822	transport
+GO:0046825	transport
+GO:0046835	other metabolic processes
+GO:0046843	cell organization and biogenesis
+GO:0046847	cell organization and biogenesis
+GO:0046902	cell organization and biogenesis
+GO:0046902	transport
+GO:0046949	other metabolic processes
+GO:0047484	stress response
+GO:0047496	transport
+GO:0048009	signal transduction
+GO:0048013	signal transduction
+GO:0048026	RNA metabolism
+GO:0048041	cell adhesion
+GO:0048041	cell organization and biogenesis
+GO:0048052	developmental processes
+GO:0048072	other biological processes
+GO:0048105	developmental processes
+GO:0048134	cell cycle and proliferation
+GO:0048146	cell cycle and proliferation
+GO:0048167	cell-cell signaling
+GO:0048172	cell-cell signaling
+GO:0048190	developmental processes
+GO:0048208	cell organization and biogenesis
+GO:0048208	transport
+GO:0048278	transport
+GO:0048312	cell organization and biogenesis
+GO:0048341	developmental processes
+GO:0048364	developmental processes
+GO:0048477	other biological processes
+GO:0048485	developmental processes
+GO:0048488	cell organization and biogenesis
+GO:0048488	transport
+GO:0048496	developmental processes
+GO:0048542	developmental processes
+GO:0048545	other biological processes
+GO:0048557	developmental processes
+GO:0048568	developmental processes
+GO:0048589	other biological processes
+GO:0048592	developmental processes
+GO:0048596	developmental processes
+GO:0048635	developmental processes
+GO:0048638	other biological processes
+GO:0048665	developmental processes
+GO:0048666	developmental processes
+GO:0048675	cell organization and biogenesis
+GO:0048675	developmental processes
+GO:0048696	cell organization and biogenesis
+GO:0048696	developmental processes
+GO:0048701	developmental processes
+GO:0048703	developmental processes
+GO:0048704	developmental processes
+GO:0048705	developmental processes
+GO:0048706	developmental processes
+GO:0048711	developmental processes
+GO:0048730	developmental processes
+GO:0048749	developmental processes
+GO:0048752	developmental processes
+GO:0048755	developmental processes
+GO:0048789	cell organization and biogenesis
+GO:0048790	cell-cell signaling
+GO:0048790	transport
+GO:0048800	developmental processes
+GO:0048803	developmental processes
+GO:0048812	cell organization and biogenesis
+GO:0048812	developmental processes
+GO:0048813	cell organization and biogenesis
+GO:0048813	developmental processes
+GO:0048840	developmental processes
+GO:0048841	cell organization and biogenesis
+GO:0048841	developmental processes
+GO:0048854	developmental processes
+GO:0048863	other biological processes
+GO:0050434	RNA metabolism
+GO:0050650	other metabolic processes
+GO:0050658	transport
+GO:0050679	cell cycle and proliferation
+GO:0050708	transport
+GO:0050727	stress response
+GO:0050728	stress response
+GO:0050731	protein metabolism
+GO:0050767	developmental processes
+GO:0050768	developmental processes
+GO:0050770	cell organization and biogenesis
+GO:0050770	developmental processes
+GO:0050771	cell organization and biogenesis
+GO:0050771	developmental processes
+GO:0050795	other biological processes
+GO:0050804	cell-cell signaling
+GO:0050807	cell organization and biogenesis
+GO:0050807	cell-cell signaling
+GO:0050808	cell organization and biogenesis
+GO:0050821	protein metabolism
+GO:0050829	stress response
+GO:0050877	other biological processes
+GO:0050885	other biological processes
+GO:0050890	other biological processes
+GO:0050892	other biological processes
+GO:0050896	other biological processes
+GO:0050918	other biological processes
+GO:0050953	other biological processes
+GO:0050982	other biological processes
+GO:0051001	other biological processes
+GO:0051013	other biological processes
+GO:0051028	transport
+GO:0051036	other biological processes
+GO:0051056	signal transduction
+GO:0051124	cell organization and biogenesis
+GO:0051124	developmental processes
+GO:0051209	transport
+GO:0051216	developmental processes
+GO:0051246	protein metabolism
+GO:0051247	protein metabolism
+GO:0051260	cell organization and biogenesis
+GO:0051262	cell organization and biogenesis
+GO:0051276	cell organization and biogenesis
+GO:0051279	transport
+GO:0051289	cell organization and biogenesis
+GO:0051290	cell organization and biogenesis
+GO:0051291	cell organization and biogenesis
+GO:0051292	cell organization and biogenesis
+GO:0051298	cell cycle and proliferation
+GO:0051298	cell organization and biogenesis
+GO:0051301	other biological processes
+GO:0051304	cell cycle and proliferation
+GO:0051321	cell cycle and proliferation
+GO:0051384	other biological processes
+GO:0051402	death
+GO:0051403	signal transduction
+GO:0051403	stress response
+GO:0051415	cell cycle and proliferation
+GO:0051415	cell organization and biogenesis
+GO:0051436	cell cycle and proliferation
+GO:0051437	cell cycle and proliferation
+GO:0051439	cell cycle and proliferation
+GO:0051480	other biological processes
+GO:0051489	cell organization and biogenesis
+GO:0051495	cell organization and biogenesis
+GO:0051496	cell organization and biogenesis
+GO:0051497	cell organization and biogenesis
+GO:0051568	cell organization and biogenesis
+GO:0051568	protein metabolism
+GO:0051569	cell organization and biogenesis
+GO:0051569	protein metabolism
+GO:0051571	cell organization and biogenesis
+GO:0051571	protein metabolism
+GO:0051591	other biological processes
+GO:0051592	other biological processes
+GO:0051597	other biological processes
+GO:0051599	stress response
+GO:0051607	stress response
+GO:0051640	other biological processes
+GO:0051642	other biological processes
+GO:0051693	cell organization and biogenesis
+GO:0051693	protein metabolism
+GO:0051702	other biological processes
+GO:0051726	cell cycle and proliferation
+GO:0051781	other biological processes
+GO:0051881	other biological processes
+GO:0051895	cell adhesion
+GO:0051895	cell organization and biogenesis
+GO:0051897	signal transduction
+GO:0051898	signal transduction
+GO:0051924	transport
+GO:0051928	transport
+GO:0051938	transport
+GO:0051974	other biological processes
+GO:0051987	cell organization and biogenesis
+GO:0051988	cell organization and biogenesis
+GO:0052047	other biological processes
+GO:0055072	other biological processes
+GO:0055085	transport
+GO:0055093	stress response
+GO:0055114	other metabolic processes
+GO:0055117	other biological processes
+GO:0060021	other biological processes
+GO:0060026	developmental processes
+GO:0060037	developmental processes
+GO:0060047	other biological processes
+GO:0060071	developmental processes
+GO:0060071	signal transduction
+GO:0060113	developmental processes
+GO:0060173	developmental processes
+GO:0060174	developmental processes
+GO:0060235	cell-cell signaling
+GO:0060235	developmental processes
+GO:0060250	other biological processes
+GO:0060252	cell cycle and proliferation
+GO:0060252	developmental processes
+GO:0060271	cell organization and biogenesis
+GO:0060272	developmental processes
+GO:0060285	other biological processes
+GO:0060287	developmental processes
+GO:0060288	developmental processes
+GO:0060291	cell-cell signaling
+GO:0060292	cell-cell signaling
+GO:0060294	other biological processes
+GO:0060307	other biological processes
+GO:0060325	other biological processes
+GO:0060346	developmental processes
+GO:0060348	developmental processes
+GO:0060349	developmental processes
+GO:0060351	developmental processes
+GO:0060429	developmental processes
+GO:0060487	developmental processes
+GO:0060488	developmental processes
+GO:0060489	developmental processes
+GO:0060490	developmental processes
+GO:0060544	death
+GO:0060546	death
+GO:0060736	developmental processes
+GO:0065001	developmental processes
+GO:0070050	other biological processes
+GO:0070059	death
+GO:0070096	cell organization and biogenesis
+GO:0070121	other biological processes
+GO:0070124	cell organization and biogenesis
+GO:0070124	protein metabolism
+GO:0070125	cell organization and biogenesis
+GO:0070125	protein metabolism
+GO:0070172	developmental processes
+GO:0070208	cell organization and biogenesis
+GO:0070247	death
+GO:0070266	death
+GO:0070296	transport
+GO:0070301	stress response
+GO:0070328	other biological processes
+GO:0070345	cell cycle and proliferation
+GO:0070372	signal transduction
+GO:0070424	signal transduction
+GO:0070424	stress response
+GO:0070534	protein metabolism
+GO:0070584	cell organization and biogenesis
+GO:0070588	transport
