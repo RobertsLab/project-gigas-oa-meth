@@ -114,9 +114,47 @@ legend("topleft",
 
 # *C. virginica* and *C. gigas*
 
-## Import and reformat *C. virginica* data
+## Chi-squared tests of homogeneity
 
-### Exons
+### Import and reformat data
+
+```{r}
+comboDataFeatures <- read.csv("2020-02-11-Common-MI-Feature-Overlap-Proportions.csv", header = TRUE)
+rownames(comboDataFeatures) <- comboDataFeatures$genomicFeature #Set genomic feature indication as rownames
+comboDataFeatures <- comboDataFeatures[,-1] #Remove genomic feature indication column
+head(comboDataFeatures) #Confirm import
+```
+
+```{r}
+comboPropDataFeatures <- comboDataFeatures #Copy overlap data as a new dataframe
+comboFeaturesTotalEntries <- c(sum(comboPropDataFeatures$Cvirg),
+                               sum(comboPropDataFeatures$Cgigas)) #Sum the number of CpGs in each category
+comboPropDataFeatures <- rbind(comboPropDataFeatures, comboFeaturesTotalEntries) #Add comboTotalEntries to bottom of proportionData
+row.names(comboPropDataFeatures)[4] <- "totalEntries" #Add rowname
+head(comboPropDataFeatures) #Confirm changes
+```
+
+```{r}
+nLength <- length(comboPropDataFeatures$Cvirg) #Count number of rows
+for(i in 1:nLength) {
+  comboPropDataFeatures[i,] <- (comboPropDataFeatures[i,]/comboPropDataFeatures[4,])*100
+} #Divide each column of comboPropData by respective totalEntries entry. Multiply by 100 and and save the percentage
+comboPropDataFeatures <- comboPropDataFeatures[-4,] #Remove totalEntries
+head(comboPropDataFeatures) #Confirm changes
+```
+
+The null hypothesis is that various genomic features are distributed in the same proportions in MI across species.
+
+```{r}
+speciesFeaturesTest <- chisq.test(t(comboPropDataFeatures)) #Conduct a chi-squared test
+speciesFeaturesTest #The distribution of features in MI is significantly different between species.
+```
+
+## Grouped barplot
+
+### Import and reformat *C. virginica* data
+
+#### Exons
 
 ```{r}
 CvexonMI <- read.delim("../../../yaamini-virginica/analyses/2018-11-01-DML-and-DMR-Analysis/2020-02-06-MI-Exons.txt", header = FALSE) #Import overlaps
@@ -131,7 +169,7 @@ CvexonMI$percent <- CvexonMI$overlap / CvexonMI$MI.length #Calculate percent ove
 head(CvexonMI) #Check calculations
 ```
 
-### Introns
+#### Introns
 
 ```{r}
 CvintronMI <- read.delim("../../../yaamini-virginica/analyses/2018-11-01-DML-and-DMR-Analysis/2020-02-06-MI-Introns.txt", header = FALSE) #Import overlaps
@@ -146,7 +184,7 @@ CvintronMI$percent <- CvintronMI$overlap / CvintronMI$MI.length #Calculate perce
 head(CvintronMI) #Check calculations
 ```
 
-### Genes
+#### Genes
 
 ```{r}
 CvgenesMI <- read.delim("../../../yaamini-virginica/analyses/2018-11-01-DML-and-DMR-Analysis/2020-02-06-MI-Genes.txt", header = FALSE) #Import overlaps
@@ -161,7 +199,7 @@ CvgenesMI$percent <- CvgenesMI$overlap / CvgenesMI$MI.length #Calculate percent 
 head(CvgenesMI) #Check calculations
 ```
 
-### TE
+#### TE
 
 ```{r}
 CvtransElemMI <- read.delim("../../../yaamini-virginica/analyses/2018-11-01-DML-and-DMR-Analysis/2020-02-06-MI-TEall.txt", header = FALSE) #Import overlaps
@@ -176,7 +214,7 @@ CvtransElemMI$percent <- CvtransElemMI$overlap / CvtransElemMI$MI.length #Calcul
 head(CvtransElemMI) #Check calculations
 ```
 
-## Create grouped boxplot
+### Create figure
 
 ```{r}
 plotColors2 <- rev(RColorBrewer::brewer.pal(5, "Oranges")) #Create a color palette for the barplots. Use 5 purple shades from RColorBrewer. Reverse the order so the darkest shade is used first.
