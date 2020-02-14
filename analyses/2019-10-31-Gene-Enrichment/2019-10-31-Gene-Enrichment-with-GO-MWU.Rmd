@@ -67,6 +67,41 @@ BPGOSlimCounts$GOSlim <- c("Cell-Cell Signaling", "Cell Adhesion", "Death", "Sig
 head(BPGOSlimCounts) #Confirm capitalization
 ```
 
+### DML-Gene overlaps
+
+```{r}
+DMLBPGOSlim <- read.delim("../2019-09-15-DML-Analysis/Blastquery-GOslim-DMLonly.BP.sorted.unique.noOther", sep = "\t", header = FALSE) #Import unique BP GOslim terms without any "other biological processes" entries. File is tab-delimited and does not have a header.
+colnames(DMLBPGOSlim) <- c("geneID", "GOSlim") #Rename columns
+head(DMLBPGOSlim) #Confirm import
+```
+
+```{r}
+DMLBPGOSlimCounts <- as.data.frame(table(DMLBPGOSlim$GOSlim)) #Count the frequency of each GOslim term
+colnames(DMLBPGOSlimCounts) <- c("GOSlim", "frequency") #Rename columns
+head(DMLBPGOSlimCounts) #Confirm counting
+```
+
+```{r}
+DMLBPGOSlimCounts$percentage <- (DMLBPGOSlimCounts$frequency/sum(DMLBPGOSlimCounts$frequency)*100) #Create a new column with percentages of GOSlim terms instead of raw counts
+head(DMLBPGOSlimCounts) #Confirm column creation
+```
+
+```{r}
+DMLBPGOSlimCounts <- DMLBPGOSlimCounts[c(4, 1, 5, 11, 13,
+                                         2, 6, 3,
+                                         12,
+                                         7, 10, 9, 8),] #Reorganize rows based on broader functions. Rows are general activity, development, stress response, and metabolic processes
+head(DMLBPGOSlimCounts) #Confirm organization
+```
+
+```{r}
+DMLBPGOSlimCounts$GOSlim <- c("Cell-Cell Signaling", "Cell Adhesion", "Death", "Signal Transduction", "Transport",
+                              "Cell Cycle and Proliferation", "Developmental Processes", "Cell Organization and Biogenesis",
+                              "Stress Response",
+                              "DNA Metabolism", "RNA Metabolism", "Protein Metabolism", "Other Metabolic Processes") #Capitalize labels
+head(DMLBPGOSlimCounts) #Confirm capitalization
+```
+
 ## Pie chart
 
 ### Reformat data for pie chart
@@ -121,25 +156,25 @@ legend("bottomleft",
 #dev.off()
 ```
 
-### Genes with DML
+### DML-Gene overlaps
 
 ```{r}
 #pdf("2019-10-31-BP-GOSlim-DML-Gene-Overlaps.pdf", width = 11, height = 8.5) #Save as a pdf
 
 par(mar = c(5, 20, 1, 1)) #Change figure boundaries
 
-barsGOSlim <- barplot(BPGOSlimCounts$percentage,
-                      horiz = TRUE,
-                      axes = FALSE,
-                      xlim = c(0,14),
-                      col = c(rep(plotColors[2], times = 5),
-                              rep(plotColors[4], times = 3),
-                              rep(plotColors[5], times = 1),
-                              rep(plotColors[1], times = 4))) #Create a barplot that is horizontal (horiz = TRUE). Use axes = FALSE to remove all axes. Set xlim based on maximum percentage value. Colors correspond to broader GOSlim groupings. Save plot as a new object.
+DMLbarsGOSlim <- barplot(DMLBPGOSlimCounts$percentage,
+                         horiz = TRUE,
+                         axes = FALSE,
+                         xlim = c(0,24),
+                         col = c(rep(plotColors[2], times = 5),
+                                 rep(plotColors[4], times = 3),
+                                 rep(plotColors[5], times = 1),
+                                 rep(plotColors[1], times = 4))) #Create a barplot that is horizontal (horiz = TRUE). Use axes = FALSE to remove all axes. Set xlim based on maximum percentage value. Colors correspond to broader GOSlim groupings. Save plot as a new object.
 
-axis(side = 2, at = barsGOSlim, labels = BPGOSlimCounts$GOSlim, tick = FALSE, las = 2, col = "grey80", cex.axis = 1.5) #Add y-axis with GOSlim terms from BPGOSlimCounts. Place labels at specific barplot values from barsGOSlim. Remove tick marks (tick) and change orientation of labels (las)
+axis(side = 2, at = DMLbarsGOSlim, labels = DMLBPGOSlimCounts$GOSlim, tick = FALSE, las = 2, col = "grey80", cex.axis = 1.5) #Add y-axis with GOSlim terms from BPGOSlimCounts. Place labels at specific barplot values from barsGOSlim. Remove tick marks (tick) and change orientation of labels (las)
 
-axis(side = 1, at = seq(from = 0, to = 14, by = 2), cex = 1.2, col = "grey80") #Add x-axis
+axis(side = 1, at = seq(from = 0, to = 24, by = 2), cex = 1.2, col = "grey80") #Add x-axis
 mtext(side = 1, "Percent of Genes with DML", line = 3, cex = 1.5) #Add x-axis label
 
 par(fig = c(0, 1, 0, 1), oma = c(0, 0, 0, 0), mar = c(0, 0, 0, 0), new = TRUE) #Create new plot
@@ -158,28 +193,28 @@ legend("bottomleft",
 ### Back-to-back plot
 
 ```{r}
-#pdf(“2020-02-13-BP-GOSlim-AllGenes-Versus-DML-Recolored.pdf”, width = 11, height = 8.5) #Save as a pdf
+#pdf("2020-02-13-BP-GOSlim-AllGenes-Versus-DML-Recolored.pdf", width = 11, height = 8.5) #Save as a pdf
 
 par(mfrow = c(1, 2), oma = c(5, 20, 0, 3), mar = c(0, 0, 0, 0)) #Set up parameters for multipanel plot
 
 barsGOSlim2 <- barplot(-1*(BPGOSlimCounts$percentage),
                       horiz = TRUE,
                       axes = FALSE,
-                      xlim = c(-18,0),
+                      xlim = c(-24,0),
                       col = plotColors2[4]) #Create a barplot that is horizontal (horiz = TRUE). Use axes = FALSE to remove all axes. Set xlim based on maximum percentage value. Colors correspond to broader GOSlim groupings. Save plot as a new object.
 
 axis(side = 2, at = barsGOSlim2, labels = BPGOSlimCounts$GOSlim, tick = FALSE, las = 2, col = "grey80", cex.axis = 1.5) #Add y-axis with GOSlim terms from BPGOSlimCounts. Place labels at specific barplot values from barsGOSlim. Remove tick marks (tick) and change orientation of labels (las)
 
-axis(side = 1, at = seq(from = -18, to = 0, by = 2), labels = c(seq(from = 18, to = 0, by = -2)), cex = 1.2, col = "grey80") #Add x-axis
+axis(side = 1, at = seq(from = -24, to = 0, by = 2), labels = c(seq(from = 24, to = 0, by = -2)), cex = 1.2, col = "grey80") #Add x-axis
 mtext(side = 1, "% Genes", line = 3, cex = 1.5) #Add x-axis label
 
-barsGOSlimDML2 <- barplot(parentGOBPDMLGOslimCounts$percentage,
-                         horiz = TRUE,
-                         axes = FALSE,
-                         xlim = c(0,18),
-                         col = plotColors2[2]) #Create a barplot that is horizontal (horiz = TRUE). Use axes = FALSE to remove all axes. Set xlim based on maximum percentage value. Colors correspond to broader GOSlim groupings. Save plot as a new object.
+DMLbarsGOSlim2 <- barplot(DMLBPGOSlimCounts$percentage,
+                          horiz = TRUE,
+                          axes = FALSE,
+                          xlim = c(0,24),
+                          col = plotColors2[2]) #Create a barplot that is horizontal (horiz = TRUE). Use axes = FALSE to remove all axes. Set xlim based on maximum percentage value. Colors correspond to broader GOSlim groupings. Save plot as a new object.
 
-axis(side = 1, at = seq(from = 0, to = 18, by = 2), cex = 1.2, col = "grey80") #Add x-axis
+axis(side = 1, at = seq(from = 0, to = 24, by = 2), cex = 1.2, col = "grey80") #Add x-axis
 mtext(side = 1, "% Genes with DML", line = 3, cex = 1.5) #Add x-axis label
 
 #dev.off()
