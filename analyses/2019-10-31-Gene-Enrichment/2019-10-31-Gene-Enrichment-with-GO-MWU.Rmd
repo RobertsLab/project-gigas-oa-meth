@@ -258,25 +258,25 @@ head(CgCvGOSlimCounts) #Confirm column creation
 
 par(mfrow = c(1, 2), oma = c(5, 20, 0, 3), mar = c(0, 0, 0, 0)) #Set up parameters for multipanel plot
 
-CgbarsGOSlim <- barplot(-1*(CgCvGOSlimCounts$CgRelProp),
+CgbarsGOSlim <- barplot(-1*(CgCvGOSlimCounts$CvRelProp),
                       horiz = TRUE,
                       axes = FALSE,
                       xlim = c(-3,0),
                       col = plotColors2[4]) #Create a barplot that is horizontal (horiz = TRUE). Use axes = FALSE to remove all axes. Set xlim based on maximum percentage value. Colors correspond to broader GOSlim groupings. Save plot as a new object.
 
-axis(side = 2, at = CgbarsGOSlim, labels = CgCvGOSlimCounts$GOSlim, tick = FALSE, las = 2, col = "grey80", cex.axis = 1.5) #Add y-axis with GOSlim terms from BPGOSlimCounts. Place labels at specific barplot values from barsGOSlim. Remove tick marks (tick) and change orientation of labels (las)
+axis(side = 2, at = CvbarsGOSlim, labels = CgCvGOSlimCounts$GOSlim, tick = FALSE, las = 2, col = "grey80", cex.axis = 1.5) #Add y-axis with GOSlim terms from BPGOSlimCounts. Place labels at specific barplot values from barsGOSlim. Remove tick marks (tick) and change orientation of labels (las)
 
 axis(side = 1, at = seq(from = -3, to = 0, by = 0.5), labels = c(seq(from = 3, to = 0, by = -0.5)), cex = 1.2, col = "grey80") #Add x-axis
-mtext(side = 1, expression(italic("C. gigas")), line = 3, cex = 1.5) #Add x-axis label
+mtext(side = 1, expression(italic("C. virginica")), line = 3, cex = 1.5) #Add x-axis label
 
-CvbarsGOSlim <- barplot(CgCvGOSlimCounts$CvRelProp,
+CgbarsGOSlim <- barplot(CgCvGOSlimCounts$CgRelProp,
                           horiz = TRUE,
                           axes = FALSE,
                           xlim = c(0,3),
                           col = plotColors2[2]) #Create a barplot that is horizontal (horiz = TRUE). Use axes = FALSE to remove all axes. Set xlim based on maximum percentage value. Colors correspond to broader GOSlim groupings. Save plot as a new object.
 
 axis(side = 1, at = seq(from = 0, to = 3, by = 0.5), cex = 1.2, col = "grey80") #Add x-axis
-mtext(side = 1, expression(italic("C. virginica")), line = 3, cex = 1.5) #Add x-axis label
+mtext(side = 1, expression(italic("C. gigas")), line = 3, cex = 1.5) #Add x-axis label
 
 #dev.off()
 ```
