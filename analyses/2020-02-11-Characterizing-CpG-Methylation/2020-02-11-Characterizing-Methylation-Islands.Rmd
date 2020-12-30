@@ -3,6 +3,8 @@ title: "Chacterizing Methylation Islands"
 output: github_document
 ---
 
+In this script, I'll examine the distribution of various genome features within methylation islands for *C. gigas* and *C. virginica*. I'll also investigate the association between methylation island length and biological process GOterms for overlapping genes.
+
 # Set up R Markdown Document
 
 ```{r setup, include=FALSE}
@@ -22,11 +24,13 @@ require(dichromat)
 sessionInfo()
 ```
 
-# *C. gigas*
+# Genome feature distribution in methylation islands
 
-## Import and reformat data
+## *C. gigas*
 
-### Exons
+### Import and reformat data
+
+#### Exons
 
 ```{r}
 exonMI <- read.delim("../2019-09-15-DML-Analysis/2020-02-11-Exon-MI.txt", header = FALSE) #Import overlaps
@@ -45,7 +49,7 @@ head(exonMI) #Check calculations
 boxplot(exonMI$percent)
 ```
 
-### Introns
+#### Introns
 
 ```{r}
 intronMI <- read.delim("../2019-09-15-DML-Analysis/2020-02-11-Intron-MI.txt", header = FALSE) #Import overlaps
@@ -60,7 +64,7 @@ intronMI$percent <- intronMI$overlap / intronMI$MI.length #Calculate percent ove
 head(intronMI) #Check calculations
 ```
 
-### Genes
+#### Genes
 
 ```{r}
 genesMI <- read.delim("../2019-09-15-DML-Analysis/2020-02-11-Gene-MI.txt", header = FALSE) #Import overlaps
@@ -75,7 +79,7 @@ genesMI$percent <- genesMI$overlap / genesMI$MI.length #Calculate percent overla
 head(genesMI) #Check calculations
 ```
 
-### TE
+#### TE
 
 ```{r}
 transElemMI <- read.delim("../2019-09-15-DML-Analysis/2020-02-11-TE-MI.txt", header = FALSE) #Import overlaps
@@ -90,7 +94,7 @@ transElemMI$percent <- transElemMI$overlap / transElemMI$MI.length #Calculate pe
 head(transElemMI) #Check calculations
 ```
 
-## Create standalone boxplot
+### Create standalone boxplot
 
 ```{r}
 boxplot(exonMI$percent, intronMI$percent, transElemMI$percent, 
@@ -112,11 +116,11 @@ legend("topleft",
        cex = 1.2, bty = "n") #Place a legend in the top left of the figure with no box
 ```
 
-# *C. virginica* and *C. gigas*
+## *C. virginica* and *C. gigas*
 
-## Chi-squared tests of homogeneity
+### Chi-squared tests of homogeneity
 
-### Import and reformat data
+#### Import and reformat data
 
 ```{r}
 comboDataFeatures <- read.csv("2020-02-11-Common-MI-Feature-Overlap-Proportions.csv", header = TRUE)
@@ -150,11 +154,11 @@ speciesFeaturesTest <- chisq.test(t(comboPropDataFeatures)) #Conduct a chi-squar
 speciesFeaturesTest #The distribution of features in MI is significantly different between species.
 ```
 
-## Grouped barplot
+### Grouped barplot
 
-### Import and reformat *C. virginica* data
+#### Import and reformat *C. virginica* data
 
-#### Exons
+##### Exons
 
 ```{r}
 CvexonMI <- read.delim("../../../yaamini-virginica/analyses/2018-11-01-DML-and-DMR-Analysis/2020-02-06-MI-Exons.txt", header = FALSE) #Import overlaps
@@ -169,7 +173,7 @@ CvexonMI$percent <- CvexonMI$overlap / CvexonMI$MI.length #Calculate percent ove
 head(CvexonMI) #Check calculations
 ```
 
-#### Introns
+##### Introns
 
 ```{r}
 CvintronMI <- read.delim("../../../yaamini-virginica/analyses/2018-11-01-DML-and-DMR-Analysis/2020-02-06-MI-Introns.txt", header = FALSE) #Import overlaps
@@ -184,7 +188,7 @@ CvintronMI$percent <- CvintronMI$overlap / CvintronMI$MI.length #Calculate perce
 head(CvintronMI) #Check calculations
 ```
 
-#### Genes
+##### Genes
 
 ```{r}
 CvgenesMI <- read.delim("../../../yaamini-virginica/analyses/2018-11-01-DML-and-DMR-Analysis/2020-02-06-MI-Genes.txt", header = FALSE) #Import overlaps
@@ -199,7 +203,7 @@ CvgenesMI$percent <- CvgenesMI$overlap / CvgenesMI$MI.length #Calculate percent 
 head(CvgenesMI) #Check calculations
 ```
 
-#### TE
+##### TE
 
 ```{r}
 CvtransElemMI <- read.delim("../../../yaamini-virginica/analyses/2018-11-01-DML-and-DMR-Analysis/2020-02-06-MI-TEall.txt", header = FALSE) #Import overlaps
@@ -214,7 +218,7 @@ CvtransElemMI$percent <- CvtransElemMI$overlap / CvtransElemMI$MI.length #Calcul
 head(CvtransElemMI) #Check calculations
 ```
 
-### Create figure
+#### Create figure
 
 ```{r}
 plotColors2 <- rev(RColorBrewer::brewer.pal(5, "Oranges")) #Create a color palette for the barplots. Use 5 purple shades from RColorBrewer. Reverse the order so the darkest shade is used first.
@@ -250,4 +254,30 @@ legend("topright",
 
 #dev.off()
 ```
+
+# Methylation island length and associated biological processes for overlapping genes
+
+## Import and reformat data
+
+```{r}
+DMLMI <- read.delim("../2019-09-15-DML-Analysis/2020-02-11-DML-MI.txt", header = FALSE) #Import overlaps between DML and MI
+DMLMI <- DMLMI[,-c(4:5)] #Remove redundant columns
+colnames(DMLMI) <- c("chr", "DML.start", "DML.end", "MI.start", "MI.end", "overlap") #Add column names
+head(DMLMI) #Confirm reformatting
+```
+
+## Merge dataframes
+
+I want my final dataframe to contain MI start and end information, gene start and end information, biological process GOterms, and the number of overlapping DML.
+
+```{r}
+head(genesMI)
+```
+
+
+
+
+
+
+
 
