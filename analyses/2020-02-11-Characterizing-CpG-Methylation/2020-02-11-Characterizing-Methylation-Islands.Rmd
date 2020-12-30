@@ -309,8 +309,58 @@ head(genesBPMIDML) #Confirm merging and reformatting
 write.table(genesBPMIDML, "2020-12-30-Gene-MI-Overlaps-BP-DMLCount.txt", sep = "\t", quote = FALSE, row.names = FALSE) #Save table with MI-gene overlaps, DML counts, and biological process GOSlim terms
 ```
 
+## Determine length cut-offs
+
+```{r}
+methylationIslands <- read.delim("2020-02-11-Methylation-Islands-500_0.02_50-filtered.tab", header = FALSE) #Import methylation island track
+colnames(methylationIslands) <- c("chr", "MI.start", "MI.end", "CpGs") #Rename columns
+methylationIslands$length <- methylationIslands$MI.end - methylationIslands$MI.start #Calculate length
+head(methylationIslands) #Confirm reformatting
+```
+
+```{r}
+hist(methylationIslands$length) #Plot histogram of length. Most methylation islands are on the shorter end
+median(methylationIslands$length) #Determine the median of length. This will be my cutoff for "short" (< median) and "long" (> median) methylation islands
+```
+
+```{r}
+shortMI <- subset(genesBPMIDML, subset = genesBPMIDML$length <= median(methylationIslands$length)) #Subset information for short MI
+range(shortMI$length) #Confirm subset
+hist(shortMI$length) #Examine lengths represented
+```
+
+```{r}
+longMI <- subset(genesBPMIDML, subset = genesBPMIDML$length > median(methylationIslands$length)) #Subset information for long MI
+range(longMI$length) #Confirm subset
+hist(longMI$length) #Examine lengths represented
+```
+
+## Examine characteristics associated with methylation island length
+
+### DML
+
+This should be relatively straightforward, with short MI having less overlapping DML than long MI. I'm not sure if any methylation island is going to have lots of DML.
+
+```{r}
+range(shortMI$DML.overlaps) #Number of DML associated with short MI
+median(shortMI$DML.overlaps) #Median DML associated with short MI
+median(shortMI$DML.overlaps[which(shortMI$DML.overlaps != 0)]) #Median DML overlaps excluding no overlaps
+```
+
+```{r}
+range(longMI$DML.overlaps) #Number of DML associated with long MI
+median(longMI$DML.overlaps) #Median DML associated with long MI
+median(longMI$DML.overlaps[which(longMI$DML.overlaps != 0)]) #Median DML overlaps excluding no overlaps
+```
 
 
+```{r}
+hist(shortMI$DML.overlaps) #Frequency distribution of DML per MI
+hist(shortMI$DML.overlaps[which(shortMI$DML.overlaps != 0)]) #Frequency distribution of DML per MI excluding no overlaps
+hist(longMI$DML.overlaps) #Frequency of DML per MI
+hist(longMI$DML.overlaps[which(longMI$DML.overlaps != 0)]) #Frequency distribution of DML per MI excluding no overlaps
+```
 
+As expected, long MI had more DML than short MI, but both primarily had 1 DML overlapping (if there were any overlaps).
 
 
