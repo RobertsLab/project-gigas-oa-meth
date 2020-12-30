@@ -266,6 +266,14 @@ colnames(DMLMI) <- c("chr", "DML.start", "DML.end", "MI.start", "MI.end", "overl
 head(DMLMI) #Confirm reformatting
 ```
 
+```{r}
+geneIDMI <- read.delim("../2019-09-15-DML-Analysis/2020-02-11-Gene-MI.txt", header = FALSE) #Import overlaps
+geneIDMI <- geneIDMI[,-c(2:3, 6:8, 10)] #Remove redundant columns, but include gene ID information
+colnames(geneIDMI) <- c("chr", "genes.start", "genes.end", "geneID", "MI.start", "MI.end", "overlap") #Add column names
+geneIDMI$geneID <- substr(geneIDMI$geneID, 4, 15) #Remove extraneous characters surrounding gene ID information
+head(geneIDMI) #Confirm reformatting
+```
+
 ## Merge dataframes
 
 I want my final dataframe to contain MI start and end information, gene start and end information, biological process GOterms, and the number of overlapping DML.
