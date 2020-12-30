@@ -392,13 +392,28 @@ barplot(shortMIBPGOCounts$frequency)
 barplot(longMIBPGOCounts$frequency)
 ```
 
+The two histograms look very similar, but I'll go ahead and look at percents just to be safe.
+
 
 
 ### BP GOterms
 
-There's a chance that the GOSlim terms are masking any trends in individual GOterms
+There's a chance that the GOSlim terms are masking any trends in individual GOterms with short and long MI, so I'll look into that as well.
 
 ```{r}
+shortMIBPGOtermCounts <- as.data.frame(table(shortMI$BPGOterm)) #Determine the frequency of BP GOSlim terms associated with gene-short MI overlaps
+colnames(shortMIBPGOtermCounts) <- c("BPGOterm", "frequency") #Rename columns
+head(shortMIBPGOtermCounts) #Confirm counting
+```
 
+```{r}
+longMIBPGOtermCounts <- as.data.frame(table(longMI$BPGOterm)) #Determine the frequency of BP GOSlim terms associated with gene-long MI overlaps
+colnames(longMIBPGOtermCounts) <- c("BPGOterm", "frequency") #Rename columns
+head(longMIBPGOtermCounts) #Confirm counting
+```
+
+```{r}
+barplot(shortMIBPGOtermCounts$frequency)
+barplot(longMIBPGOtermCounts$frequency)
 ```
 
