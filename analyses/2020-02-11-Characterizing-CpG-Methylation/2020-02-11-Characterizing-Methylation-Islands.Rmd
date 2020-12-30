@@ -274,12 +274,19 @@ geneIDMI$geneID <- substr(geneIDMI$geneID, 4, 15) #Remove extraneous characters 
 head(geneIDMI) #Confirm reformatting
 ```
 
+```{r}
+BPGOSlim <- read.delim("../2019-09-15-DML-Analysis/Blastquery-GOslim-BP.sorted.unique.noOther", sep = "\t", header = FALSE) #Import unique BP GOslim terms without any "other biological processes" entries. File is tab-delimited and does not have a header.
+colnames(BPGOSlim) <- c("geneID", "GOSlim") #Rename columns
+head(BPGOSlim) #Confirm import
+```
+
 ## Merge dataframes
 
 I want my final dataframe to contain MI start and end information, gene start and end information, biological process GOterms, and the number of overlapping DML.
 
 ```{r}
-head(genesMI)
+genesBPMI <- merge(geneIDMI, BPGOSlim, by = "geneID") #Merge gene-MI overlaps and biological process GOSlim terms by geneID
+head(genesBPMI) #Confirm merging
 ```
 
 
