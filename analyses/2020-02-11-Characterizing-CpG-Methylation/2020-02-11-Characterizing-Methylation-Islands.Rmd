@@ -305,6 +305,9 @@ genesBPMIDML <- genesBPMIDML[,c(3, 2, 4, 5, 6, 7, 8, 9, 10, 11)] #Rearrange colu
 head(genesBPMIDML) #Confirm merging and reformatting
 ```
 
+```{r}
+write.table(genesBPMIDML, "2020-12-30-Gene-MI-Overlaps-BP-DMLCount.txt", sep = "\t", quote = FALSE, row.names = FALSE) #Save table with MI-gene overlaps, DML counts, and biological process GOSlim terms
+```
 
 
 
