@@ -281,15 +281,7 @@ mtext(side = 1, expression(italic("C. gigas")), line = 3, cex = 1.5) #Add x-axis
 #dev.off()
 ```
 
-
-
-
-
-
-
-
-
-**CODE BELOW THIS HAS NOT BEEN UPDATED TO REFLECT LATEST DATASET. DO NOT USE.**
+# **CODE BELOW THIS HAS NOT BEEN UPDATED TO REFLECT LATEST DATASET. DO NOT USE.**
 
 ## Match gene products to GOSlim categories
 
