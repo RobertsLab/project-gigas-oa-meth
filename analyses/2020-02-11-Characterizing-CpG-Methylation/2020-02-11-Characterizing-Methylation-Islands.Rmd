@@ -289,19 +289,29 @@ colnames(BPGOSlim) <- c("geneID", "GOSlim") #Rename columns
 head(BPGOSlim) #Confirm import
 ```
 
+```{r}
+BPGOterms <- read.delim("../2019-09-15-DML-Analysis/GO-GOslim.geneID.sorted", sep = "\t", header = FALSE) #Import all  GOterms with gene IDs
+BPGOterms <- BPGOterms[,-c(1,4)] #Remove GOterm ID and GOSlim term columns
+colnames(BPGOterms) <- c("geneID", "BPGOterm", "type") #Rename columns
+BPGOterms <- subset(BPGOterms, subset = BPGOterms$type == "P") #Subset BP information
+BPGOterms <- BPGOterms[,-3] #Remove type column
+head(BPGOterms) #Confirm reformatting
+```
+
 ## Merge dataframes
 
 I want my final dataframe to contain MI start and end information, gene start and end information, biological process GOterms, and the number of overlapping DML.
 
 ```{r}
 genesBPMI <- merge(geneIDMI, BPGOSlim, by = "geneID") #Merge gene-MI overlaps and biological process GOSlim terms by geneID. Do not keep gene-MI overlaps without associated biological process information
+genesBPMI <- merge(genesBPMI, BPGOterms, by = "geneID") #Add GOterms
 head(genesBPMI) #Confirm merging
 ```
 
 ```{r}
 genesBPMIDML <- merge(genesBPMI, DMLMIOverlapCounts, by = "MI.start.end", all.x = TRUE) #Merge gene-MI overlap and biological process information with number of DML overlaps for each MI. Keep MI that don't have associated DML overlap information
 genesBPMIDML$DML.overlaps[is.na(genesBPMIDML$DML.overlaps)] <- 0 #Replace NA in DML overlap column with 0 (no DML overlaps)
-genesBPMIDML <- genesBPMIDML[,c(3, 2, 4, 5, 6, 7, 8, 9, 10, 11)] #Rearrange columns
+genesBPMIDML <- genesBPMIDML[,c(3, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12)] #Rearrange columns
 head(genesBPMIDML) #Confirm merging and reformatting
 ```
 
@@ -363,4 +373,32 @@ hist(longMI$DML.overlaps[which(longMI$DML.overlaps != 0)]) #Frequency distributi
 
 As expected, long MI had more DML than short MI, but both primarily had 1 DML overlapping (if there were any overlaps).
 
+### BP GOSlim
+
+```{r}
+shortMIBPGOCounts <- as.data.frame(table(shortMI$GOSlim)) #Determine the frequency of BP GOSlim terms associated with gene-short MI overlaps
+colnames(shortMIBPGOCounts) <- c("BPGOSlim", "frequency") #Rename columns
+head(shortMIBPGOCounts) #Confirm counting
+```
+
+```{r}
+longMIBPGOCounts <- as.data.frame(table(longMI$GOSlim)) #Determine the frequency of BP GOSlim terms associated with gene-long MI overlaps
+colnames(longMIBPGOCounts) <- c("BPGOSlim", "frequency") #Rename columns
+head(longMIBPGOCounts) #Confirm counting
+```
+
+```{r}
+barplot(shortMIBPGOCounts$frequency)
+barplot(longMIBPGOCounts$frequency)
+```
+
+
+
+### BP GOterms
+
+There's a chance that the GOSlim terms are masking any trends in individual GOterms
+
+```{r}
+
+```
 
