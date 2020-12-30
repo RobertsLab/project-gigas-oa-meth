@@ -493,5 +493,3 @@ head(BPGOtermTestResultsSig) #Confirm formatting
 ```{r}
 write.table(BPGOtermTestResultsSig, "2020-12-30-BPGOterm-shortMI-longMI-ContTest-SigResults.txt", sep = "\t", quote = FALSE, row.names = FALSE) #Save table
 ```
-
-
