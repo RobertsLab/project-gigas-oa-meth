@@ -378,23 +378,23 @@ As expected, long MI had more DML than short MI, but both primarily had 1 DML ov
 ```{r}
 shortMIBPGOCounts <- as.data.frame(table(shortMI$GOSlim)) #Determine the frequency of BP GOSlim terms associated with gene-short MI overlaps
 colnames(shortMIBPGOCounts) <- c("BPGOSlim", "frequency") #Rename columns
+shortMIBPGOCounts$percentage <- (shortMIBPGOCounts$frequency/sum(shortMIBPGOCounts$frequency)*100) #Add percentage information
 head(shortMIBPGOCounts) #Confirm counting
 ```
 
 ```{r}
 longMIBPGOCounts <- as.data.frame(table(longMI$GOSlim)) #Determine the frequency of BP GOSlim terms associated with gene-long MI overlaps
 colnames(longMIBPGOCounts) <- c("BPGOSlim", "frequency") #Rename columns
+longMIBPGOCounts$percentage <- (longMIBPGOCounts$frequency/sum(longMIBPGOCounts$frequency)*100) #Add percentage information
 head(longMIBPGOCounts) #Confirm counting
 ```
 
 ```{r}
-barplot(shortMIBPGOCounts$frequency)
-barplot(longMIBPGOCounts$frequency)
+barplot(shortMIBPGOCounts$percentage)
+barplot(longMIBPGOCounts$percentage)
 ```
 
-The two histograms look very similar, but I'll go ahead and look at percents just to be safe.
-
-
+The two histograms look very similar, so I don't think there's any interesting information on differences between short and long MI when looking at GOSlim terms.
 
 ### BP GOterms
 
@@ -403,17 +403,34 @@ There's a chance that the GOSlim terms are masking any trends in individual GOte
 ```{r}
 shortMIBPGOtermCounts <- as.data.frame(table(shortMI$BPGOterm)) #Determine the frequency of BP GOSlim terms associated with gene-short MI overlaps
 colnames(shortMIBPGOtermCounts) <- c("BPGOterm", "frequency") #Rename columns
+shortMIBPGOtermCounts <- shortMIBPGOtermCounts[-1,] #Remove empty first row
+shortMIBPGOtermCounts$percentage <- (shortMIBPGOtermCounts$frequency/sum(shortMIBPGOtermCounts$frequency)*100) #Add percentage information
 head(shortMIBPGOtermCounts) #Confirm counting
 ```
 
 ```{r}
 longMIBPGOtermCounts <- as.data.frame(table(longMI$BPGOterm)) #Determine the frequency of BP GOSlim terms associated with gene-long MI overlaps
 colnames(longMIBPGOtermCounts) <- c("BPGOterm", "frequency") #Rename columns
+longMIBPGOtermCounts <- longMIBPGOtermCounts[-1,] #Remove empty first row
+longMIBPGOtermCounts$percentage <- (longMIBPGOtermCounts$frequency/sum(longMIBPGOtermCounts$frequency)*100) #Add percentage information
 head(longMIBPGOtermCounts) #Confirm counting
 ```
 
 ```{r}
-barplot(shortMIBPGOtermCounts$frequency)
-barplot(longMIBPGOtermCounts$frequency)
+barplot(shortMIBPGOtermCounts$percentage)
+barplot(longMIBPGOtermCounts$percentage)
+```
+
+It's hard to understand differences just by looking at the histograms. The larger trends look similar, but there may be differences in individual GOterms that are harder to visualize.
+
+```{r}
+BPGOtermCounts <- cbind(shortMIBPGOtermCounts, longMIBPGOtermCounts) #Combine tables
+BPGOtermCounts <- BPGOtermCounts[,-1] #Remove duplicate column
+colnames(BPGOtermCounts) <- c("BPGOterm", "shortFreq", "shortPerc", "longFreq", "longPerc") #Rename columns
+head(BPGOtermCounts) #Confirm table creation
+```
+
+```{r}
+write.table(BPGOtermCounts, "2020-12-30-BPGOterm-shortMI-longMI.txt", sep = "\t", quote = FALSE, row.names = FALSE) #Save file
 ```
 
