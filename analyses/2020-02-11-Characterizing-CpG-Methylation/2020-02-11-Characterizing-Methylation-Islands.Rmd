@@ -263,7 +263,14 @@ legend("topright",
 DMLMI <- read.delim("../2019-09-15-DML-Analysis/2020-02-11-DML-MI.txt", header = FALSE) #Import overlaps between DML and MI
 DMLMI <- DMLMI[,-c(4:5)] #Remove redundant columns
 colnames(DMLMI) <- c("chr", "DML.start", "DML.end", "MI.start", "MI.end", "overlap") #Add column names
+DMLMI$MI.start.end <- paste(DMLMI$MI.start, "-", DMLMI$MI.end, sep = "") #Combine start and end information for MI
 head(DMLMI) #Confirm reformatting
+```
+
+```{r}
+DMLMIOverlapCounts <- as.data.frame(table(DMLMI$MI.start.end)) #Count the frequency of each methylation island in MI-DML overlaps
+colnames(DMLMIOverlapCounts) <- c("MI.start.end", "DML.overlaps") #Rename columns
+head(DMLMIOverlapCounts) #Confirm counting
 ```
 
 ```{r}
@@ -271,6 +278,8 @@ geneIDMI <- read.delim("../2019-09-15-DML-Analysis/2020-02-11-Gene-MI.txt", head
 geneIDMI <- geneIDMI[,-c(2:3, 6:8, 10)] #Remove redundant columns, but include gene ID information
 colnames(geneIDMI) <- c("chr", "genes.start", "genes.end", "geneID", "MI.start", "MI.end", "overlap") #Add column names
 geneIDMI$geneID <- substr(geneIDMI$geneID, 4, 15) #Remove extraneous characters surrounding gene ID information
+geneIDMI$length <- geneIDMI$MI.end - geneIDMI$MI.start #Add MI length information
+geneIDMI$MI.start.end <- paste(geneIDMI$MI.start, "-", geneIDMI$MI.end, sep = "") #Combine start and end information for MI
 head(geneIDMI) #Confirm reformatting
 ```
 
@@ -285,10 +294,16 @@ head(BPGOSlim) #Confirm import
 I want my final dataframe to contain MI start and end information, gene start and end information, biological process GOterms, and the number of overlapping DML.
 
 ```{r}
-genesBPMI <- merge(geneIDMI, BPGOSlim, by = "geneID") #Merge gene-MI overlaps and biological process GOSlim terms by geneID
+genesBPMI <- merge(geneIDMI, BPGOSlim, by = "geneID") #Merge gene-MI overlaps and biological process GOSlim terms by geneID. Do not keep gene-MI overlaps without associated biological process information
 head(genesBPMI) #Confirm merging
 ```
 
+```{r}
+genesBPMIDML <- merge(genesBPMI, DMLMIOverlapCounts, by = "MI.start.end", all.x = TRUE) #Merge gene-MI overlap and biological process information with number of DML overlaps for each MI. Keep MI that don't have associated DML overlap information
+genesBPMIDML$DML.overlaps[is.na(genesBPMIDML$DML.overlaps)] <- 0 #Replace NA in DML overlap column with 0 (no DML overlaps)
+genesBPMIDML <- genesBPMIDML[,c(3, 2, 4, 5, 6, 7, 8, 9, 10, 11)] #Rearrange columns
+head(genesBPMIDML) #Confirm merging and reformatting
+```
 
 
 
