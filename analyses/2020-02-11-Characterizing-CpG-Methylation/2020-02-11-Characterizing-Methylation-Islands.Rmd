@@ -16,6 +16,9 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 #install.packages("dichromat")
 require(dichromat)
+
+#install.packages("broom")
+require(broom)
 ```
 
 # Session information
@@ -425,7 +428,7 @@ It's hard to understand differences just by looking at the histograms. The large
 
 ```{r}
 BPGOtermCounts <- cbind(shortMIBPGOtermCounts, longMIBPGOtermCounts) #Combine tables
-BPGOtermCounts <- BPGOtermCounts[,-1] #Remove duplicate column
+BPGOtermCounts <- BPGOtermCounts[,-4] #Remove duplicate column
 colnames(BPGOtermCounts) <- c("BPGOterm", "shortFreq", "shortPerc", "longFreq", "longPerc") #Rename columns
 head(BPGOtermCounts) #Confirm table creation
 ```
@@ -433,4 +436,62 @@ head(BPGOtermCounts) #Confirm table creation
 ```{r}
 write.table(BPGOtermCounts, "2020-12-30-BPGOterm-shortMI-longMI.txt", sep = "\t", quote = FALSE, row.names = FALSE) #Save file
 ```
+
+#### Contingency testing
+
+```{r}
+BPGOtermTest <- BPGOtermCounts[,c(1,2,4)] #Subset labels and frequency information
+rownames(BPGOtermTest) <- BPGOtermTest[,1] #Use first column as rownames
+BPGOtermTest <- BPGOtermTest[,-1] #Remove first column
+BPGOtermTest <- data.frame(t(BPGOtermTest)) #Transpose
+```
+
+```{r}
+BPGOtermTestResults <- data.frame() #Create empty dataframe to store chi-squared results
+for(i in 1:ncol(BPGOtermTest)) { #For each GOterm
+  shortGOterm <- BPGOtermTest[1,i] #Variable for # GOterms in short MI
+  longGOterm <- BPGOtermTest[2,i] #Variable for # GOterms in long MI
+  shortNotGOterm <- sum(BPGOtermTest[1,-i]) #Variable for # other GOterms types in short MI
+  longNotGOterm <- sum(BPGOtermTest[2,-i]) #Variable for # other GOterms in long MI
+  ct <- matrix(c(shortGOterm, longGOterm, shortNotGOterm, longNotGOterm), ncol = 2) #Create contingency table
+  colnames(ct) <- c(as.character(colnames(BPGOtermTest[i])), paste0("Not", colnames(BPGOtermTest[i]))) #Assign column names: type, not type
+  rownames(ct) <- c(as.character(row.names(BPGOtermTest)[c(1,2)])) #Assign row names
+  print(ct) #Confirm table is correct
+  ctResults <- data.frame(broom::tidy(chisq.test(ct))) #Create dataframe storing chi-sq stats results. Use broom::tidy to extract results from test output
+  ctResults$BPGOterm <- as.character(colnames(BPGOtermTest)[i]) #Add GOterm to results
+  BPGOtermTestResults <- rbind(BPGOtermTestResults, ctResults) #Add test statistics to master table
+}
+```
+
+```{r}
+BPGOtermTestResults$p.adj <- p.adjust(BPGOtermTestResults$p.value, method = "fdr") #Correct p-value using FDR
+head(BPGOtermTestResults) #Look at statistical output
+```
+
+```{r}
+BPGOtermTestResultsSig <- subset(BPGOtermTestResults, BPGOtermTestResults$p.adj < 0.05) #Subset only significant results
+head(BPGOtermTestResultsSig) #Confirm table creation
+nrow(BPGOtermTestResultsSig) #There are 1522 GOterms with significantly different associations between short and long MI
+```
+
+```{r}
+BPGOtermTestTrans <- BPGOtermCounts #Duplicate original dataframe
+rownames(BPGOtermTestTrans) <- BPGOtermTestTrans[,1] #Use first column as row names
+BPGOtermTestTrans <- BPGOtermTestTrans[,-1] #Remove first column
+BPGOtermTestTrans <- data.frame(t(data.frame(t(BPGOtermTestTrans)))) #Transpose twice so weird characters added when converting to column names are now in rows
+BPGOtermTestTrans$BPGOterm <- rownames(BPGOtermTestTrans) #Save weird rownames as a new column
+rownames(BPGOtermTestTrans) <- c(1:length(BPGOtermTestTrans$shortFreq)) #Add row numbers
+head(BPGOtermTestTrans) #Confirm formatting
+```
+
+```{r}
+BPGOtermTestResultsSig <- merge(BPGOtermTestResultsSig,BPGOtermTestTrans, by = "BPGOterm") #Add original frequency and percent information to the significance table
+nrow(BPGOtermTestResultsSig) #Row number is the same
+head(BPGOtermTestResultsSig) #Confirm formatting
+```
+
+```{r}
+write.table(BPGOtermTestResultsSig, "2020-12-30-BPGOterm-shortMI-longMI-ContTest-SigResults.txt", sep = "\t", quote = FALSE, row.names = FALSE) #Save table
+```
+
 
