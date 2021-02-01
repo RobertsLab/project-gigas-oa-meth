@@ -17,11 +17,21 @@
 ## Specify the working directory for this job
 #SBATCH --chdir=/gscratch/scrubbed/yaaminiv/Manchester/analyses/fastqc
 
+#Exit script if any command fails
+
+set -e
+
 # Directories and programs
 reads_dir="/gscratch/scrubbed/yaaminiv/Manchester/data/"
-
+fastqc_dir="/gscratch/srlab/programs/fastqc_v0.11.9/"
 source /gscratch/srlab/programs/scripts/paths.sh
 
 #FastQC: Assess raw sequence quality
 find ${reads_dir}* \
-| fastqc
+| ${fastqc_dir}fastqc \
+--outdir /gscratch/scrubbed/yaaminiv/Manchester/analyses/fastqc \
+--threads 28
+
+#MultiQC: Combine reports
+/gscratch/srlab/programs/anaconda3/bin/multiqc \
+/gscratch/scrubbed/yaaminiv/Manchester/analyses/fastqc/.
