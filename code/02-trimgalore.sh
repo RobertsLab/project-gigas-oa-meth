@@ -17,6 +17,10 @@
 ## Specify the working directory for this job
 #SBATCH --chdir=/gscratch/scrubbed/yaaminiv/Manchester/analyses/trimgalore
 
+#Exit script if any command fails
+
+set -e
+
 #TrimGalore: Remove most abundant sequences and hard trim 10 bp from each end
 /gscratch/srlab/programs/TrimGalore-0.6.6/trim_galore \
 --output_dir /gscratch/scrubbed/yaaminiv/Manchester/analyses/trimgalore \
