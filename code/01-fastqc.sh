@@ -26,6 +26,9 @@ reads_dir="/gscratch/scrubbed/yaaminiv/Manchester/data/"
 fastqc_dir="/gscratch/srlab/programs/fastqc_v0.11.9/"
 source /gscratch/srlab/programs/scripts/paths.sh
 
+# Load Python Mox module for Python module availability
+module load intel-python3_2017
+
 #FastQC: Assess raw sequence quality
 find ${reads_dir}* \
 | ${fastqc_dir}fastqc \
