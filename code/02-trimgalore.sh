@@ -8,7 +8,7 @@
 ## Nodes
 #SBATCH --nodes=1
 ## Walltime (days-hours:minutes:seconds format)
-#SBATCH --time=10-00:00:00
+#SBATCH --time=5-00:00:00
 ## Memory per node
 #SBATCH --mem=200G
 ##turn on e-mail notification
@@ -18,7 +18,6 @@
 #SBATCH --chdir=/gscratch/scrubbed/yaaminiv/Manchester/analyses/trimgalore
 
 #Exit script if any command fails
-
 set -e
 
 #TrimGalore: Remove most abundant sequences and hard trim 10 bp from each end
@@ -61,8 +60,6 @@ echo MultiQC 1 complete
 
 #TrimGalore: Remove adapter sequences
 
-cd ../trimaglore-2
-
 /gscratch/srlab/programs/TrimGalore-0.6.6/trim_galore \
 --output_dir /gscratch/scrubbed/yaaminiv/Manchester/analyses/trimgalore-2 \
 --paired \
@@ -97,8 +94,6 @@ echo TrimGalore 2 complete
 echo MultiQC2 complete
 
 #TrimGalore: Remove poly-G tails. Sequence obtained from FastQC reports
-
-cd poly-G
 
 /gscratch/srlab/programs/TrimGalore-0.6.6/trim_galore \
 --output_dir /gscratch/scrubbed/yaaminiv/Manchester/analyses/trimgalore-2/poly-G \
