@@ -89,7 +89,7 @@ ${fastqc} \
 ${fastqc_list}
 
 #MultiQC: Files after poly-G tail trimming
-/${multiqc}\
+${multiqc} \
 /gscratch/scrubbed/yaaminiv/Manchester/analyses/trimgalore-2/poly-G/.
 
 echo MultiQC 3 complete
