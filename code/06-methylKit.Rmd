@@ -140,13 +140,14 @@ for(i in 1:nFiles) { #For each data file
 
 ```{r}
 methylationInformationFilteredCov5 <- methylKit::unite(processedFilteredFilesCov5, 
-                                                       destrand = FALSE) #Combine all processed files into a single table. Use destrand = TRUE to not destrand. By default only bases with data in all samples will be kept
+                                                       destrand = FALSE,
+                                                       mc.cores = 2) #Combine all processed files into a single table. Use destrand = FALSE to not destrand. By default only bases with data in all samples will be kept
 head(methylationInformationFilteredCov5) #Confirm unite
 ```
 
 ```{r}
-save.image("../../analyses/Haws_04-methylKit/methylKit.RData") #Save R Data in case R crashes
-#load("../../analyses/Haws_04-methylKit/methylKit.RData") #Load R Data
+save.image("../output/06-methylKit/methylKit.RData") #Save R Data in case R crashes
+#load("../output/06-methylKit/methylKit.RData") #Load R Data
 ```
 
 ```{r}
