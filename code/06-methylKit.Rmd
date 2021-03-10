@@ -106,8 +106,8 @@ mkdir ../output/06-methylKit/general-stats
 
 ```{r}
 nFiles <- 8 #Count number of samples
-fileName <- data.frame("nameBase" = rep("../../analyses/Haws_04-methylKit/general-stats/percent-CpG-methylation", times = nFiles),
-                       "nameBase2" = rep("../../analyses/Haws_04-methylKit/general-stats/percent-CpG-coverage", times = nFiles),
+fileName <- data.frame("nameBase" = rep("../output/06-methylKit/general-stats/percent-CpG-methylation", times = nFiles),
+                       "nameBase2" = rep("../output/06-methylKit/general-stats/percent-CpG-coverage", times = nFiles),
                        "sample.ID" = 1:8) #Create new dataframe for filenames
 head(fileName) #Confirm dataframe creation
 ```
