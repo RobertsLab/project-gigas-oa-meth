@@ -155,32 +155,32 @@ clusteringInformationFilteredCov5 <- methylKit::clusterSamples(methylationInform
 ```
 
 ```{r}
-jpeg(filename = "../../analyses/Haws_04-methylKit/general-stats/Full-Sample-Pearson-Correlation-Plot-FilteredCov5Destrand.jpeg", height = 1000, width = 1000) #Save file with designated name
+jpeg(filename = "../output/06-methylKit/general-stats/Full-Sample-Pearson-Correlation-Plot-FilteredCov5Destrand.jpeg", height = 1000, width = 1000) #Save file with designated name
 methylKit::getCorrelation(methylationInformationFilteredCov5, plot = TRUE) #Understand correlation between methylation patterns in different samples
 dev.off()
 ```
 
 ```{r}
-jpeg(filename = "../../analyses/Haws_04-methylKit/general-stats/Full-Sample-CpG-Methylation-Clustering-FilteredCov5Destrand.jpeg", height = 1000, width = 1000) #Save file with designated name
+jpeg(filename = "../output/06-methylKit/general-stats/Full-Sample-CpG-Methylation-Clustering-FilteredCov5Destrand.jpeg", height = 1000, width = 1000) #Save file with designated name
 methylKit::clusterSamples(methylationInformationFilteredCov5, dist = "correlation", method = "ward", plot = TRUE) #Cluster samples based on correlation coefficients
 dev.off()
 ```
 
 ```{r}
-jpeg(filename = "../../analyses/Haws_04-methylKit/general-stats/Full-Sample-Methylation-PCA-FilteredCov5Destrand.jpeg", height = 1000, width = 1000) #Save file with designated name
+jpeg(filename = "../output/06-methylKit/general-stats/Full-Sample-Methylation-PCA-FilteredCov5Destrand.jpeg", height = 1000, width = 1000) #Save file with designated name
 methylKit::PCASamples(methylationInformationFilteredCov5) #Run a PCA analysis on percent methylation for all samples
 dev.off() #Turn off plotting device
 ```
 
 ```{r}
-jpeg(filename = "../../analyses/Haws_04-methylKit/general-stats/Full-Sample-Methylation-Screeplot-FilteredCov5Destrand.jpeg", height = 1000, width = 1000) #Save file with designated name
+jpeg(filename = "../output/06-methylKit/general-stats/Full-Sample-Methylation-Screeplot-FilteredCov5Destrand.jpeg", height = 1000, width = 1000) #Save file with designated name
 methylKit::PCASamples(methylationInformationFilteredCov5, screeplot = TRUE) #Run the PCA analysis and plot variances against PC number in a screeplot
 dev.off()
 ```
 
 ```{r}
-save.image("../../analyses/Haws_04-methylKit/methylKit.RData") #Save R Data in case R crashes
-#load("../../analyses/Haws_04-methylKit/methylKit.RData") #Load R Data
+save.image("../output/06-methylKit/methylKit.RData") #Save R Data in case R crashes
+#load("../output/06-methylKit/methylKit.RData") #Load R Data
 ```
 
 # Differentially methylated loci
