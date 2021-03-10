@@ -62,30 +62,22 @@ analysisFiles <- list("zr3616_1_R1_val_1_val_1_val_1_bismark_bt2_pe..CpG_report.
 ```
 
 ```{r}
-sampleMetadata <- data.frame("sampleID" = c("2H-1", "2H-2", "2H-3", "2H-4", "2H-5", "2H-6",
-                                            "2L-1", "2L-2", "2L-3", "2L-4", "2L-5", "2L-6",
-                                            "3H-1", "3H-2", "3H-3", "3H-4", "3H-5", "3H-6",
-                                            "3L-1", "3L-2", "3L-3", "3L-4", "3L-5", "3L-6"),
-                             "ploidyTreatment" = c(rep(0, times = 12),
-                                                    rep(1, times = 12)),
-                             "pHTreatment" = c(rep(0, times = 6),
-                                               rep(1, times = 6),
-                                               rep(0, times = 6),
-                                               rep(1, times = 6))) #Create dataframe with metadata
+sampleMetadata <- data.frame("sampleID" = c("1", "2", "3", "4",
+                                            "5", "6", "7", "8"),
+                             "pHTreatment" = c(rep(1, times = 4),
+                                               rep(0, times = 4))) #Create dataframe with metadata. 1 = low, 0 = ambient
 head(sampleMetadata) #Confirm dataframe creation
 ```
 
 I'll use `methRead` to create a methylation object from the coverage files, and include sample ID and treatment information.
 
 ```{r}
-setwd(dir = "../../analyses/Haws_04-methylKit/") #Set working directory inside code chunk
+setwd(dir = "../output/06-methylKit/") #Set working directory inside code chunk
 processedFiles <- methylKit::methRead(analysisFiles,
-                                      sample.id = list("2H-1", "2H-2", "2H-3", "2H-4", "2H-5", "2H-6",
-                                                       "2L-1", "2L-2", "2L-3", "2L-4", "2L-5", "2L-6",
-                                                       "3H-1", "3H-2", "3H-3", "3H-4", "3H-5", "3H-6",
-                                                       "3L-1", "3L-2", "3L-3", "3L-4", "3L-5", "3L-6"),
+                                      sample.id = list("1", "2", "3", "4",
+                                                       "5", "6", "7", "8"),
                                       assembly = "oyster_v9",
-                                      treatment = sampleMetadata$ploidyTreatment,
+                                      treatment = sampleMetadata$pHTreatment,
                                       pipeline = "bismarkCoverage",
                                       mincov = 2) #Process files. Treatment specified based on ploidy status. Use mincov = 2 to quickly process reads.
 ```
@@ -98,8 +90,8 @@ processedFilteredFilesCov5 <- methylKit::filterByCoverage(processedFiles,
 ```
 
 ```{r}
-save.image("../../analyses/Haws_04-methylKit/methylKit.RData") #Save R Data in case R crashes
-#load("../../analyses/Haws_04-methylKit/methylKit.RData") #Load R Data
+save.image("../output/06-methylKit/methylKit.RData") #Save R Data in case R crashes
+#load("../output/06-methylKit/methylKit.RData") #Load R Data
 ```
 
 # Characterize general methylation
