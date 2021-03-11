@@ -193,20 +193,19 @@ I don't have covariate information (tank, wet weight, shell length) for all samp
 
 ```{r}
 covariateMetadata <- data.frame("stage" = c("2", "0", "1", "1",
-                                            "0", "1", "2", "3"),
-                                "sex" = c("F", "I", "F", "F",
-                                          "I", "F", "F", "F")) #Create dataframe with stage and sex information. 0/I = intederminate, F = female, 1/2/3 = early female maturation
+                                            "0", "1", "2", "3")) #Create dataframe with stage information. 0 = intederminate, 1/2/3 = early female maturation
 head(covariateMetadata) #Check dataframe format
 ```
 
 ## Identify DML
 
 ```{r}
-differentialMethylationStatsTreatment <- methylKit::calculateDiffMeth(methylationInformationFilteredCov5,
-                                                                      covariates = covariateMetadata,
-                                                                      mc.cores = 4) #Calculate differential methylation statistics and include covariate information. Use 4 cores.
+#differentialMethylationStatsTreatment <- methylKit::calculateDiffMeth(methylationInformationFilteredCov5, mc.cores = 4)
+differentialMethylationStatsTreatment <- methylKit::calculateDiffMeth(methylationInformationFilteredCov5, covariates = covariateMetadata, overdispersion = "MN", test = "Chisq", mc.cores = 2) #Calculate differential methylation statistics and include covariate information. Use 4 cores.
 head(differentialMethylationStatsTreatment) #Look at differential methylation statistics
 ```
+
+*THE CODE BELOW HAS NOT BEEN UPDATED*
 
 ```{r}
 diffMethStatsTreatment25 <- methylKit::getMethylDiff(differentialMethylationStatsTreatment, difference = 25, qvalue = 0.01) #Identify loci that are at least 25% different
@@ -295,8 +294,6 @@ hist(pHRandTest) #Plot a histogram with randomization trial results
 
 #pHRandTest %>% filter(. > nrow(diffMethStatsTreatment50)) %>% nrow(.) / nrow(pHRandTest) #Calculate p-value
 ```
-
-*THE CODE BELOW HAS NOT BEEN UPDATED*
 
 # Save DMLs as BEDfiles
 
