@@ -64,8 +64,10 @@ analysisFiles <- list("zr3616_1_R1_val_1_val_1_val_1_bismark_bt2_pe..CpG_report.
 ```{r}
 sampleMetadata <- data.frame("sampleID" = c("1", "2", "3", "4",
                                             "5", "6", "7", "8"),
+                             "slide-label" = c("02-T1", "04-T3", "06-T1", "08-T2",
+                                               "11-T4", "UK-02", "UK-04", "UK-06"),
                              "pHTreatment" = c(rep(1, times = 4),
-                                               rep(0, times = 4))) #Create dataframe with metadata. 1 = low, 0 = ambient
+                                               rep(0, times = 4))) #Create dataframe with metadata. 1 = low, 0 = ambient. Slide label information from histology processing
 head(sampleMetadata) #Confirm dataframe creation
 ```
 
@@ -185,9 +187,24 @@ save.image("../output/06-methylKit/methylKit.RData") #Save R Data in case R cras
 
 # Differentially methylated loci
 
+## Create covariate matrix
+
+I don't have covariate information (tank, wet weight, shell length) for all samples, since some tissues were mixed up during histology processing. However, I do have sex and stage information for each sample that will likely contribute to methylation patterns. Information is from [this spreadsheet](https://github.com/RobertsLab/project-oyster-oa/blob/master/data/Manchester/2018-02-27-Gigas-Histology-Classification.csv), and slide label information is consistent with `sampleMetadata`.
+
+```{r}
+covariateMetadata <- data.frame("stage" = c("2", "0", "1", "1",
+                                            "0", "1", "2", "3"),
+                                "sex" = c("F", "I", "F", "F",
+                                          "I", "F", "F", "F")) #Create dataframe with stage and sex information. 0/I = intederminate, F = female, 1/2/3 = early female maturation
+head(covariateMetadata) #Check dataframe format
+```
+
+## Identify DML
+
 ```{r}
 differentialMethylationStatsTreatment <- methylKit::calculateDiffMeth(methylationInformationFilteredCov5,
-                                                                      mc.cores = 4) #Calculate differential methylation statistics based on treatment indication from methRead. Use 4 cores.
+                                                                      covariates = covariateMetadata,
+                                                                      mc.cores = 4) #Calculate differential methylation statistics and include covariate information. Use 4 cores.
 head(differentialMethylationStatsTreatment) #Look at differential methylation statistics
 ```
 
@@ -280,16 +297,6 @@ hist(pHRandTest) #Plot a histogram with randomization trial results
 ```
 
 *THE CODE BELOW HAS NOT BEEN UPDATED*
-
-# Covariate analysis
-
-I don't have covariate information (tank, wet weight, shell length) for all samples, since some tissues were mixed up during histology processing. I am going to keep samples I have covariate information for, then perform the analysis. Common DML between the two analyses will give me more confidence in my data.
-
-```{r}
-covariateMetadata <- data.frame("ploidy" = c(rep("2N", times = 12), 
-                                           rep("3N", times = 12))) #Create dataframe with ploidy covariate information
-head(covariatePloidy) #Check dataframe format
-```
 
 # Save DMLs as BEDfiles
 
