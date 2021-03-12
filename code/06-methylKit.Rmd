@@ -200,10 +200,12 @@ head(covariateMetadata) #Check dataframe format
 ## Identify DML
 
 ```{r}
-differentialMethylationStatsTreatment <- methylKit::calculateDiffMeth(methylationInformationFilteredCov5)
-#differentialMethylationStatsTreatment <- methylKit::calculateDiffMeth(methylationInformationFilteredCov5, overdispersion = "MN", test = "Chisq", mc.cores = 2)
-#differentialMethylationStatsTreatment <- methylKit::calculateDiffMeth(methylationInformationFilteredCov5, covariates = covariateMetadata, overdispersion = "MN", test = "Chisq", mc.cores = 2) #Calculate differential methylation statistics and include covariate information. Use 4 cores.
-head(differentialMethylationStatsTreatment) #Look at differential methylation statistics
+#differentialMethylationStatsTreatment <- methylKit::calculateDiffMeth(methylationInformationFilteredCov5)
+#differentialMethylationStatsTreatment2 <- methylKit::calculateDiffMeth(methylationInformationFilteredCov5, overdispersion = "MN", test = "Chisq")
+differentialMethylationStatsTreatment3 <- methylKit::calculateDiffMeth(methylationInformationFilteredCov5, covariates = covariateMetadata, overdispersion = "MN", test = "Chisq") #Calculate differential methylation statistics and include covariate information. Use 4 cores.
+#head(differentialMethylationStatsTreatment) #Look at differential methylation statistics
+#head(differentialMethylationStatsTreatment2) #Look at differential methylation statistics
+head(differentialMethylationStatsTreatment3) #Look at differential methylation statistics
 ```
 
 *THE CODE BELOW HAS NOT BEEN UPDATED*
