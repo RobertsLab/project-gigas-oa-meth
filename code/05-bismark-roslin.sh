@@ -31,7 +31,7 @@ source /gscratch/srlab/programs/scripts/paths.sh
 #The full genome can be found [here](https://gannet.fish.washington.edu/spartina/project-oyster-oa/Haws/data/cgigas_uk_roslin_v1_genomic-mito.fa)
 #I prepared the genome with [this script](https://github.com/RobertsLab/project-oyster-oa/blob/master/code/Haws/03-bismark-roslin.sh)
 
-genome_folder="/gscratch/scrubbed/yaaminiv/Manchester/data/Cg-roslin/"
+genome_folder="/gscratch/scrubbed/yaaminiv/Hawes/data/Cg-roslin/"
 
 #Align to Bisulfite Genome
 
