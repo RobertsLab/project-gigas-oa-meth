@@ -231,8 +231,28 @@ write.csv(diffMethStatsTreatment50, "../output/06-methylKit/DML-pH-50-Cov5.csv")
 
 ## Randomization trial
 
+### 25% difference
+
 ```{r}
-pHRandTest <- NULL #Create an empty matrix to store randomization trial results
+pHRandTest25 <- NULL #Create an empty matrix to store randomization trial results for 25% difference
+```
+
+```{r}
+# for (i in 1:1000) { #For each iteration
+#   pHRandTreat <- sample(sampleMetadata$pHTreatment, 
+#                         size = length(sampleMetadata$pHTreatment),
+#                         replace = FALSE) #Randomize treatment information
+#   pHRandDML <- methylKit::reorganize(processedFiles,
+#                                      sample.ids = sampleMetadata$sampleID,
+#                                      treatment = pHRandTreat) %>%
+#     methylKit::filterByCoverage(., lo.count = 5, lo.perc = NULL, 
+#                                 hi.count = NULL, hi.perc = 99.9) %>%
+#     methylKit::normalizeCoverage(.) %>%
+#     methylKit::unite(., destrand = FALSE) %>%
+#     methylKit::calculateDiffMeth(.) %>%
+#     methylKit::getMethylDiff(., difference = 50, qvalue = 0.01) %>% 
+#     nrow() -> pHRandTest25[i] #Reorganize, filter, normalize, and unite samples. Calculate diffMeth and obtain DML that are 50% and have a q-value of 0.01. Save the number of DML identified
+# }
 ```
 
 ```{r}
@@ -247,10 +267,31 @@ for (i in 1:1000) { #For each iteration
                                 hi.count = NULL, hi.perc = 99.9) %>%
     methylKit::normalizeCoverage(.) %>%
     methylKit::unite(., destrand = FALSE) %>%
-    methylKit::calculateDiffMeth(.) %>%
-    methylKit::getMethylDiff(., difference = 50, qvalue = 0.01) #Reorganize, filter, normalize, and unite samples. Calculate diffMeth and obtain DML that are 50% and have a q-value of 0.01
-  nrow(pHRandDML) -> pHRandTest[i] #Save the number of DML identified
+    methylKit::calculateDiffMeth(., covariates = covariateMetadata, 
+                                 overdispersion = "MN", 
+                                 test = "Chisq") %>%
+    methylKit::getMethylDiff(., difference = 25, qvalue = 0.01) %>%
+    nrow() -> pHRandTest25[i] ##Reorganize, filter, normalize, and unite samples. Calculate diffMeth and obtain DML that are 50% and have a q-value of 0.01. Save the number of DML identified
 }
+```
+
+```{r}
+pHRandTestResults25 <- t.test(pHRandTest25, alternative = "less", mu = nrow(diffMethStatsTreatment25)) #Conduct a one-sample t-test to determine the probability of identifying more DML by chance
+pHRandTestResults25$statistic #t
+pHRandTestResults25$parameter #df
+pHRandTestResults25$p.value #P-value
+```
+
+```{r}
+jpeg(filename = "../output/06-methylKit/rand-test/Random-Distribution-diff25.jpeg", height = 1000, width = 1000) #Save file with designated name
+hist(pHRandTest25, plot = TRUE, main = "", xlab = "Number of DML (25% difference)") #Plot a histogram with randomization trial results
+dev.off()
+```
+
+### 50% difference
+
+```{r}
+pHRandTest50 <- NULL #Create an empty matrix to store randomization trial results for 50% difference
 ```
 
 ```{r}
@@ -265,21 +306,28 @@ for (i in 1:1000) { #For each iteration
                                 hi.count = NULL, hi.perc = 99.9) %>%
     methylKit::normalizeCoverage(.) %>%
     methylKit::unite(., destrand = FALSE) %>%
-    methylKit::calculateDiffMeth(., covariates = covariatepH,
-                                 mc.cores = 4) %>%
-    methylKit::getMethylDiff(., difference = 50, qvalue = 0.01) %>% #Reorganize, filter, normalize, and unite samples. Calculate diffMeth and obtain DML that are 50% and have a q-value of 0.01
-    nrow() -> pHRandTest[i] #Save the number of DML identified
+    methylKit::calculateDiffMeth(., covariates = covariateMetadata, 
+                                 overdispersion = "MN", 
+                                 test = "Chisq") %>%
+    methylKit::getMethylDiff(., difference = 50, qvalue = 0.01) %>%
+    nrow() -> pHRandTest50[i] ##Reorganize, filter, normalize, and unite samples. Calculate diffMeth and obtain DML that are 50% and have a q-value of 0.01. Save the number of DML identified
 }
 ```
 
 ```{r}
-hist(pHRandTest) #Plot a histogram with randomization trial results
+pHRandTestResults50 <- t.test(pHRandTest50, alternative = "less", mu = nrow(diffMethStatsTreatment50)) #Conduct a one-sample t-test to determine the probability of identifying more DML by chance
+pHRandTestResults50$statistic #t
+pHRandTestResults50$parameter #df
+pHRandTestResults50$p.value #P-value
+```
 
-#pHRandTest %>% filter(. > nrow(diffMethStatsTreatment50)) %>% nrow(.) / nrow(pHRandTest) #Calculate p-value
+```{r}
+jpeg(filename = "../output/06-methylKit/rand-test/Random-Distribution-diff50.jpeg", height = 1000, width = 1000) #Save file with designated name
+hist(pHRandTest50, plot = TRUE, main = "", xlab = "Number of DML (50% difference)") #Plot a histogram with randomization trial results
+dev.off()
 ```
 
 # Save DMLs as BEDfiles
-
 
 ## Install packages
 
@@ -297,43 +345,21 @@ require(tidyverse) #Load package
 ## DML
 
 ```{r}
-DML5xFilteredDestrand09152019 <- mutate(diffMethStats50FilteredCov5Destrand, start = start, end = end) %>%
+DML5xdiff25 <- mutate(diffMethStatsTreatment25, start = start, end = end) %>%
   select(chr, start, end, meth.diff) %>% 
   mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
 ```
 
 ```{r}
-head(DML5xFilteredDestrand09152019) #Confirm changes
+write_delim(DML5xdiff25, "DML-5x-diff25.bed",  delim = '\t', col_names = FALSE) #Save data as a BED file
 ```
 
 ```{r}
-write_delim(DML5xFilteredDestrand09152019, "2019-09-15-DML-Destrand-5x-Locations.bed",  delim = '\t', col_names = FALSE) #Save data as a BED file
-```
-
-#### Hypermethylated DML
-
-```{r}
-DML5xFilteredDestrandHyper09152019 <- mutate(diffMethStats50FilteredCov5DestrandHyper, start = start -3, end = end) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
+DML5xdiff50 <- mutate(diffMethStatsTreatment50, start = start, end = end) %>%
+  select(chr, start, end, meth.diff) %>% 
+  mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
 ```
 
 ```{r}
-head(DML5xFilteredDestrandHyper09152019) #Confirm changes
-```
-
-```{r}
-write_delim(DML5xFilteredDestrandHyper09152019, "2019-09-15-DML-Destrand-5x-Locations-Hypermethylated.bed",  delim = '\t', col_names = FALSE) #Save data as a BED file
-```
-
-#### Hypomethyalted DML
-
-```{r}
-DML5xFilteredDestrandHypo09152019 <- mutate(diffMethStats50FilteredCov5DestrandHypo, start = start - 3, end = end) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
-```
-
-```{r}
-head(DML5xFilteredDestrandHypo09152019) #Confirm changes
-```
-
-```{r}
-write_delim(DML5xFilteredDestrandHypo09152019, "2019-09-15-DML-Destrand-5x-Locations-Hypomethylated.bed",  delim = '\t', col_names = FALSE) #Save data as a BED file
+write_delim(DML5xdiff50, "DML-5x-diff50.bed",  delim = '\t', col_names = FALSE) #Save data as a BED file
 ```
