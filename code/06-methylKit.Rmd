@@ -288,6 +288,11 @@ hist(pHRandTest25, plot = TRUE, main = "", xlab = "Number of DML (25% difference
 dev.off()
 ```
 
+```{r}
+save.image("../output/06-methylKit/methylKit.RData") #Save R Data in case R crashes
+#load("../output/06-methylKit/methylKit.RData") #Load R Data
+```
+
 ### 50% difference
 
 ```{r}
@@ -325,4 +330,9 @@ pHRandTestResults50$p.value #P-value
 jpeg(filename = "../output/06-methylKit/rand-test/Random-Distribution-diff50.jpeg", height = 1000, width = 1000) #Save file with designated name
 hist(pHRandTest50, plot = TRUE, main = "", xlab = "Number of DML (50% difference)") #Plot a histogram with randomization trial results
 dev.off()
+```
+
+```{r}
+save.image("../output/06-methylKit/methylKit.RData") #Save R Data in case R crashes
+#load("../output/06-methylKit/methylKit.RData") #Load R Data
 ```
