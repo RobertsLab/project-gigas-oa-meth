@@ -285,6 +285,7 @@ pHRandTestResults25$p.value #P-value
 ```{r}
 jpeg(filename = "../output/06-methylKit/rand-test/Random-Distribution-diff25.jpeg", height = 1000, width = 1000) #Save file with designated name
 hist(pHRandTest25, plot = TRUE, main = "", xlab = "Number of DML (25% difference)") #Plot a histogram with randomization trial results
+abline(v = nrow(diffMethStatsTreatment25)) #Add a vertical line for the number of DML identified with getMethylDiff
 dev.off()
 ```
 
@@ -329,6 +330,7 @@ pHRandTestResults50$p.value #P-value
 ```{r}
 jpeg(filename = "../output/06-methylKit/rand-test/Random-Distribution-diff50.jpeg", height = 1000, width = 1000) #Save file with designated name
 hist(pHRandTest50, plot = TRUE, main = "", xlab = "Number of DML (50% difference)") #Plot a histogram with randomization trial results
+abline(v = nrow(diffMethStatsTreatment50)) #Add a vertical line for the number of DML identified with getMethylDiff
 dev.off()
 ```
 
