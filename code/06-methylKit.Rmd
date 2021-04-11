@@ -48,28 +48,26 @@ mkdir ../output/06-methylKit #Make methylkit output directory
 mv *.merged_CpG_evidence.cov ../output/06-methylKit #Move files from current directory to analyses folder
 ```
 
-I have three female samples and one indeterminate sample per treatment. I will analyze these datasets separately.
-
-# Female samples
-
 ## Process methylation data
 
 ```{r}
 analysisFiles <- list("zr3616_1_R1_val_1_val_1_val_1_bismark_bt2_pe..CpG_report.merged_CpG_evidence.cov",
+                      "zr3616_2_R1_val_1_val_1_val_1_bismark_bt2_pe..CpG_report.merged_CpG_evidence.cov",
                       "zr3616_3_R1_val_1_val_1_val_1_bismark_bt2_pe..CpG_report.merged_CpG_evidence.cov",
                       "zr3616_4_R1_val_1_val_1_val_1_bismark_bt2_pe..CpG_report.merged_CpG_evidence.cov",
+                      "zr3616_5_R1_val_1_val_1_val_1_bismark_bt2_pe..CpG_report.merged_CpG_evidence.cov",
                       "zr3616_6_R1_val_1_val_1_val_1_bismark_bt2_pe..CpG_report.merged_CpG_evidence.cov",
                       "zr3616_7_R1_val_1_val_1_val_1_bismark_bt2_pe..CpG_report.merged_CpG_evidence.cov",
                       "zr3616_8_R1_val_1_val_1_val_1_bismark_bt2_pe..CpG_report.merged_CpG_evidence.cov") #Put all .cov files into a list for analysis.
 ```
 
 ```{r}
-sampleMetadata <- data.frame("sampleID" = c("1", "3", "4",
-                                            "6", "7", "8"),
-                             "slide-label" = c("02-T1", "06-T1", "08-T2",
-                                               "UK-02", "UK-04", "UK-06"),
-                             "pHTreatment" = c(rep(1, times = 3),
-                                               rep(0, times = 3))) #Create dataframe with metadata. 1 = low, 0 = ambient. Slide label information from histology processing
+sampleMetadata <- data.frame("sampleID" = c("1", "2", "3", "4",
+                                            "5", "6", "7", "8"),
+                             "slide-label" = c("02-T1", "04-T3", "06-T1", "08-T2",
+                                               "11-T4", "UK-02", "UK-04", "UK-06"),
+                             "pHTreatment" = c(rep(1, times = 4),
+                                               rep(0, times = 4))) #Create dataframe with metadata. 1 = low, 0 = ambient. Slide label information from histology processing
 head(sampleMetadata) #Confirm dataframe creation
 ```
 
@@ -78,8 +76,8 @@ I'll use `methRead` to create a methylation object from the coverage files, and 
 ```{r}
 setwd(dir = "../output/06-methylKit/") #Set working directory inside code chunk
 processedFiles <- methylKit::methRead(analysisFiles,
-                                      sample.id = list("1", "3", "4",
-                                                       "6", "7", "8"),
+                                      sample.id = list("1", "2" "3", "4",
+                                                       "5", "6", "7", "8"),
                                       assembly = "Roslin",
                                       treatment = sampleMetadata$pHTreatment,
                                       pipeline = "bismarkCoverage",
@@ -109,10 +107,10 @@ mkdir ../output/06-methylKit/general-stats
 ```
 
 ```{r}
-nFiles <- 6 #Count number of samples
+nFiles <- 8 #Count number of samples
 fileName <- data.frame("nameBase" = rep("../output/06-methylKit/general-stats/percent-CpG-methylation", times = nFiles),
                        "nameBase2" = rep("../output/06-methylKit/general-stats/percent-CpG-coverage", times = nFiles),
-                       "sample.ID" = c(1, 3, 4, 6:8)) #Create new dataframe for filenames. Make sure ID matches with samples
+                       "sample.ID" = c(1:8)) #Create new dataframe for filenames.
 head(fileName) #Confirm dataframe creation
 ```
 
@@ -189,7 +187,11 @@ save.image("../output/06-methylKit/methylKit.RData") #Save R Data in case R cras
 
 # Differentially methylated loci
 
-## Create covariate matrix
+I have three female samples and one indeterminate sample per treatment. Although I produced comparative plots for I will identify DML for these datasets separately.
+
+### Female samples
+
+#### Create covariate matrix
 
 I don't have covariate information (tank, wet weight, shell length) for all samples, since some tissues were mixed up during histology processing. However, I do have sex and stage information for each sample that will likely contribute to methylation patterns. Information is from [this spreadsheet](https://github.com/RobertsLab/project-oyster-oa/blob/master/data/Manchester/2018-02-27-Gigas-Histology-Classification.csv), and slide label information is consistent with `sampleMetadata`.
 
