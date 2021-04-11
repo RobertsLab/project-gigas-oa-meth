@@ -191,20 +191,33 @@ I have three female samples and one indeterminate sample per treatment. Although
 
 ### Female samples
 
-```{r}
-#Get female sample information from methylBase object created by unite by specifying sample IDs. Include treatment information as well
+I'll first separate the female samples from the full dataset, then conduct comparatie analyses within this subset.
 
+```{r}
 methylationInformationFilteredCov5Fem <- methylKit::reorganize(methylationInformationFilteredCov5,
                                                                sample.ids = c("1", "3", "4",
                                                                               "6", "7", "8"),
                                                                treatment = c(rep(1, times = 3),
-                                                                             rep(0, times = 3)))
+                                                                             rep(0, times = 3))) #Get female sample information from methylBase object created by unite by specifying sample IDs. Include treatment information as well
 ```
 
 ```{r}
-
+jpeg(filename = "../output/06-methylKit/general-stats/Full-Sample-CpG-Methylation-Clustering-FilteredCov5Destrand-Fem.jpeg", height = 1000, width = 1000) #Save file with designated name
+methylKit::clusterSamples(methylationInformationFilteredCov5Fem, dist = "correlation", method = "ward", plot = TRUE) #Cluster female samples based on correlation coefficients
+dev.off()
 ```
 
+```{r}
+jpeg(filename = "../output/06-methylKit/general-stats/Full-Sample-Methylation-PCA-FilteredCov5Destrand-Fem.jpeg", height = 1000, width = 1000) #Save file with designated name
+methylKit::PCASamples(methylationInformationFilteredCov5Fem) #Run a PCA analysis on percent methylation for female samples
+dev.off() #Turn off plotting device
+```
+
+```{r}
+jpeg(filename = "../output/06-methylKit/general-stats/Full-Sample-Methylation-Screeplot-FilteredCov5Destrand-Fem.jpeg", height = 1000, width = 1000) #Save file with designated name
+methylKit::PCASamples(methylationInformationFilteredCov5Fem, screeplot = TRUE) #Run the PCA analysis and plot variances against PC number in a screeplot for female samples
+dev.off()
+```
 
 ### Process methylation samples
 
