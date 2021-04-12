@@ -37,7 +37,7 @@ sessionInfo()
 # Download files from `gannet`
 
 ```{bash}
-wget -r -l1 --no-parent --no-directories -A.merged_CpG_evidence.cov https://gannet.fish.washington.edu/spartina/project-gigas-oa-meth/output/bismark/ #Download files from gannet to the current directory (where script is saved). Exclude directory structure
+wget -r -l1 --no-parent --no-directories -A.merged_CpG_evidence.cov https://gannet.fish.washington.edu/spartina/project-gigas-oa-meth/output/bismark-roslin/ #Download files from gannet to the current directory (where script is saved). Exclude directory structure
 ```
 
 ```{bash}
