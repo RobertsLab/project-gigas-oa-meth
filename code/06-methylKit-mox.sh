@@ -19,10 +19,10 @@
 
 # Load packages
 
-require(devtools)
-require(BiocManager)
-require(methylKit)
-require(dplyr)
+require(devtools, lib.loc = "/gscratch/srlab/rpackages/")
+require(BiocManager, lib.loc = "/gscratch/srlab/rpackages/")
+require(methylKit, lib.loc = "/gscratch/home/yaaminiv/R/x86_64-pc-linux-gnu-library/3.6/")
+require(dplyr, lib.loc = "/gscratch/srlab/rpackages/")
 sessionInfo()
 
 ## Process methylation data
