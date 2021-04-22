@@ -1,6 +1,6 @@
-#!/gscratch/srlab/programs/R-3.6.2/bin/R
+#!/gscratch/srlab/programs/R-3.6.2/bin/Rscript
 ## Job Name
-#SBATCH --job-name=manchester-roslin
+#SBATCH --job-name=methylKit-manchester
 ## Allocation Definition
 #SBATCH --account=srlab
 #SBATCH --partition=srlab
@@ -10,7 +10,7 @@
 ## Walltime (days-hours:minutes:seconds format)
 #SBATCH --time=10-00:00:00
 ## Memory per node
-#SBATCH --mem=500G
+#SBATCH --mem=100G
 ##turn on e-mail notification
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=yaaminiv@uw.edu
