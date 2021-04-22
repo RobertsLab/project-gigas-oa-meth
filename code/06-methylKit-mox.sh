@@ -194,7 +194,7 @@ pHRandTestResults25Fem$parameter
 pHRandTestResults25Fem$p.value
 
 jpeg(filename = "rand-test/Random-Distribution-diff25-Fem.jpeg", height = 1000, width = 1000)
-hist(pHRandTest25Fem, plot = TRUE, main = "", xlab = "Number of Female-DML (25% difference)")
+hist(pHRandTest25Fem, plot = TRUE, main = paste("t =", pHRandTestResults25Fem$statistic, "df = ", pHRandTestResults25Fem$parameter, "P-value =", pHRandTestResults25Fem$p.value), xlab = "Number of Female-DML (25% difference)")
 abline(v = nrow(diffMethStatsTreatment25Fem))
 dev.off()
 
@@ -224,7 +224,7 @@ pHRandTestResults50Fem$parameter
 pHRandTestResults50Fem$p.value
 
 jpeg(filename = "rand-test/Random-Distribution-diff50-Fem.jpeg", height = 1000, width = 1000)
-hist(pHRandTest50Fem, plot = TRUE, main = "", xlab = "Number of Female-DML (50% difference)")
+hist(pHRandTest50Fem, plot = TRUE, main = paste("t =", pHRandTestResults50Fem$statistic, "df = ", pHRandTestResults50Fem$parameter, "P-value =", pHRandTestResults50Fem$p.value), xlab = "Number of Female-DML (50% difference)")
 abline(v = nrow(diffMethStatsTreatment50Fem))
 dev.off()
 
@@ -297,7 +297,7 @@ pHRandTestResults25Ind$parameter
 pHRandTestResults25Ind$p.value
 
 jpeg(filename = "rand-test/Random-Distribution-diff25-Ind.jpeg", height = 1000, width = 1000)
-hist(pHRandTest25Ind, plot = TRUE, main = "", xlab = "Number of Indeterminate-DML (25% difference)")
+hist(pHRandTest25Ind, plot = TRUE, main = paste("t =", pHRandTestResults25Ind$statistic, "df = ", pHRandTestResults25Ind$parameter, "P-value =", pHRandTestResults25Ind$p.value), xlab = "Number of Indeterminate-DML (25% difference)")
 abline(v = nrow(diffMethStatsTreatment25Ind))
 dev.off()
 
@@ -323,7 +323,7 @@ pHRandTestResults50Ind$parameter
 pHRandTestResults50Ind$p.value
 
 jpeg(filename = "rand-test/Random-Distribution-diff50-Ind.jpeg", height = 1000, width = 1000)
-hist(pHRandTest50Ind, plot = TRUE, main = "", xlab = "Number of Indeterminate-DML (50% difference)")
+hist(pHRandTest50Ind, plot = TRUE, main = paste("t =", pHRandTestResults50Ind$statistic, "df = ", pHRandTestResults50Ind$parameter, "P-value =", pHRandTestResults50Ind$p.value), xlab = "Number of Indeterminate-DML (50% difference)")
 abline(v = nrow(diffMethStatsTreatment50Ind))
 dev.off()
 
