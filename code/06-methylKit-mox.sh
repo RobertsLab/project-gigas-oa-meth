@@ -19,6 +19,8 @@
 
 # Load packages
 
+require(devtools)
+require(BiocManager)
 require(methylKit)
 require(dplyr)
 sessionInfo()
