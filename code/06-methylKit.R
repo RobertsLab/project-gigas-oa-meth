@@ -125,7 +125,7 @@ head(covariateMetadataFem)
 
 ### Identify DML
 
-differentialMethylationStatsTreatmentFem <- methylKit::calculateDiffMeth(methylationInformationFilteredCov5Fem, covariates = covariateMetadata, overdispersion = "MN", test = "Chisq")
+differentialMethylationStatsTreatmentFem <- methylKit::calculateDiffMeth(methylationInformationFilteredCov5Fem, covariates = covariateMetadataFem, overdispersion = "MN", test = "Chisq")
 head(differentialMethylationStatsTreatment)
 
 diffMethStatsTreatment25Fem <- methylKit::getMethylDiff(differentialMethylationStatsTreatmentFem, difference = 25, qvalue = 0.01)
