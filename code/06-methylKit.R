@@ -2,8 +2,7 @@
 
 require(devtools)
 require(methylKit, lib.loc = "/gscratch/home/yaaminiv/R/x86_64-pc-linux-gnu-library/3.6/")
-require(dplyr, lib.loc = "/gscratch/srlab/rpackages/")
-require(tidyverse, lib.loc = "/gscratch/srlab/rpackages/")
+require(dplyr)
 sessionInfo()
 
 ## Process methylation data
