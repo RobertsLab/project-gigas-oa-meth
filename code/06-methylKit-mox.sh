@@ -19,9 +19,12 @@
 
 # Load packages
 
+require(usethis, lib.loc = "/gscratch/srlab/rpackages/")
 require(devtools, lib.loc = "/gscratch/srlab/rpackages/")
 require(BiocManager, lib.loc = "/gscratch/srlab/rpackages/")
+require(GenomeInfoDb, lib.loc = "/gscratch/home/yaaminiv/R/x86_64-pc-linux-gnu-library/3.6/")
 require(methylKit, lib.loc = "/gscratch/home/yaaminiv/R/x86_64-pc-linux-gnu-library/3.6/")
+require(R6, lib.loc = "/gscratch/srlab/rpackages/")
 require(dplyr, lib.loc = "/gscratch/srlab/rpackages/")
 sessionInfo()
 
