@@ -43,3 +43,27 @@ When done using RStudio Server, terminate the job by:
 
       scancel -f ${SLURM_JOB_ID}
 END
+
+mkdir -p "$TMPDIR/tmp/rstudio-server"
+uuidgen > "$TMPDIR/tmp/rstudio-server/secure-cookie-key"
+chmod 0600 "$TMPDIR/tmp/rstudio-server/secure-cookie-key"
+
+mkdir -p "$TMPDIR/var/lib"
+mkdir -p "$TMPDIR/var/run"
+
+# User-installed R packages go into their home directory
+if [ ! -e ${HOME}/.Renviron ]
+then
+  printf '\nNOTE: creating ~/.Renviron file\n\n'
+  echo 'R_LIBS_USER=~/R/%p-library/%v' >> ${HOME}/.Renviron
+fi
+
+# This example bind mounts the /project directory on the host into the Singularity container.
+# By default the only host file systems mounted within the container are $HOME, /tmp, /proc, /sys, and /dev.
+singularity exec \
+--bind="$TMPDIR/var/lib:/var/lib/rstudio-server" \
+--bind="$TMPDIR/var/run:/var/run/rstudio-server" \
+--bind="$TMPDIR/tmp:/tmp" \
+--bind=/gscratch/scrubbed/${USER} \
+/gscratch/srlab/programs/singularity_containers/rstudio-4.0.2.sjw-01 \
+rserver --www-port ${PORT} --auth-none=0 --auth-pam-helper-path=pam-helper
