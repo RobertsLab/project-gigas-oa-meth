@@ -44,3 +44,9 @@ output/06-methylKit/zr3616_8_R1_val_1_val_1_val_1_bismark_bt2_pe..CpG_report.mer
 .Rproj.user/shared/notebooks/F62D1288-06-methylKit/1/A60899EED6CF6492/c8jct1zaqlkwo/000002.csv
 .Rproj.user/*
 .Rproj.user
+genome-feature-files/report.txt
+genome-feature-files/ncbi-genomes-2021-05-04/README.txt
+genome-feature-files/ncbi-genomes-2021-05-04/md5checksums.txt
+genome-feature-files/ncbi-genomes-2021-05-04/GCF_902806645.1_cgigas_uk_roslin_v1_genomic.gff.gz
+genome-feature-files/ncbi-genomes-2021-05-04/GCF_902806645.1_cgigas_uk_roslin_v1_genomic.gff
+genome-feature-files/genome_assemblies_genome_gff.tar
