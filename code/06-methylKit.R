@@ -125,22 +125,26 @@ head(covariateMetadataFem)
 
 ### Identify DML
 
-differentialMethylationStatsTreatmentFem <- methylKit::calculateDiffMeth(methylationInformationFilteredCov5Fem, covariates = covariateMetadataFem, overdispersion = "MN", test = "Chisq")
-head(differentialMethylationStatsTreatment)
+differentialMethylationStatsTreatmentFem2 <- methylKit::calculateDiffMeth(methylationInformationFilteredCov5Fem, covariates = covariateMetadataFem, overdispersion = "MN", test = "Chisq")
+head(differentialMethylationStatsTreatmentFem2)
 
-diffMethStatsTreatment25Fem <- methylKit::getMethylDiff(differentialMethylationStatsTreatmentFem, difference = 25, qvalue = 0.01)
-length(diffMethStatsTreatment25Fem$chr)
+diffMethStatsTreatment25Fem <- methylKit::getMethylDiff(differentialMethylationStatsTreatmentFem2, difference = 25, qvalue = 0.01)
+length(diffMethStatsTreatment25Fem$chr) #20830 DML
 head(diffMethStatsTreatment25Fem)
 
-diffMethStatsTreatment50Fem <- methylKit::getMethylDiff(differentialMethylationStatsTreatmentFem, difference = 50, qvalue = 0.01)
-length(diffMethStatsTreatment50Fem$chr)
+diffMethStatsTreatment50Fem <- methylKit::getMethylDiff(differentialMethylationStatsTreatmentFem2, difference = 50, qvalue = 0.01)
+length(diffMethStatsTreatment50Fem$chr) #3709 DML
 head(diffMethStatsTreatment50Fem)
+
+diffMethStatsTreatment75Fem <- methylKit::getMethylDiff(differentialMethylationStatsTreatmentFem2, difference = 75, qvalue = 0.01)
+length(diffMethStatsTreatment75Fem$chr) #315 DML
+head(diffMethStatsTreatment75Fem)
 
 save.image("methylKit.RData")
 
-
-write.csv(diffMethStatsTreatment25, "DML/DML-pH-25-Cov5-Fem.csv")
-write.csv(diffMethStatsTreatment50, "DML/DML-pH-50-Cov5-Fem.csv")
+write.csv(diffMethStatsTreatment25Fem, "DML/DML-pH-25-Cov5-Fem.csv")
+write.csv(diffMethStatsTreatment50Fem, "DML/DML-pH-50-Cov5-Fem.csv")
+write.csv(diffMethStatsTreatment75Fem, "DML/DML-pH-75-Cov5-Fem.csv")
 
 ### Randomization trial
 
@@ -165,7 +169,7 @@ for (i in 1:1000) {
                                      treatment = pHRandTreat) %>%
     methylKit::calculateDiffMeth(., covariates = covariateMetadataFem,
                                  overdispersion = "MN",
-                                 test = "Chisq") %>%
+                                 test = "Chisq", mc.cores = 40) %>%
     methylKit::getMethylDiff(., difference = 25, qvalue = 0.01) %>%
     nrow() -> pHRandTest25Fem[i]
 }
@@ -195,7 +199,7 @@ for (i in 1:1000) {
                                      treatment = pHRandTreat) %>%
     methylKit::calculateDiffMeth(., covariates = covariateMetadataFem,
                                  overdispersion = "MN",
-                                 test = "Chisq") %>%
+                                 test = "Chisq", mc.cores = 40) %>%
     methylKit::getMethylDiff(., difference = 50, qvalue = 0.01) %>%
     nrow() -> pHRandTest50Fem[i]
 }
@@ -208,6 +212,36 @@ pHRandTestResults50Fem$p.value
 jpeg(filename = "rand-test/Random-Distribution-diff50-Fem.jpeg", height = 1000, width = 1000)
 hist(pHRandTest50Fem, plot = TRUE, main = paste("t =", pHRandTestResults50Fem$statistic, "df = ", pHRandTestResults50Fem$parameter, "P-value =", pHRandTestResults50Fem$p.value), xlab = "Number of Female-DML (50% difference)")
 abline(v = nrow(diffMethStatsTreatment50Fem))
+dev.off()
+
+save.image("methylKit.RData")
+
+#### 75% difference
+
+pHRandTest75Fem <- NULL
+
+for (i in 1:1000) {
+  pHRandTreat <- sample(sampleMetadataFem$pHTreatment,
+                        size = length(sampleMetadataFem$pHTreatment),
+                        replace = FALSE)
+  pHRandDML <- methylKit::reorganize(methylationInformationFilteredCov5Fem,
+                                     sample.ids = sampleMetadataFem$sampleID,
+                                     treatment = pHRandTreat) %>%
+    methylKit::calculateDiffMeth(., covariates = covariateMetadataFem,
+                                 overdispersion = "MN",
+                                 test = "Chisq", mc.cores = 40) %>%
+    methylKit::getMethylDiff(., difference = 75, qvalue = 0.01) %>%
+    nrow() -> pHRandTest75Fem[i]
+}
+
+pHRandTestResults75Fem <- t.test(pHRandTest75Fem, alternative = "less", mu = nrow(diffMethStatsTreatment75Fem))
+pHRandTestResults75Fem$statistic
+pHRandTestResults75Fem$parameter
+pHRandTestResults75Fem$p.value
+
+jpeg(filename = "rand-test/Random-Distribution-diff75-Fem.jpeg", height = 1000, width = 1000)
+hist(pHRandTest75Fem, plot = TRUE, main = paste("t =", pHRandTestResults75Fem$statistic, "df = ", pHRandTestResults75Fem$parameter, "P-value =", pHRandTestResults75Fem$p.value), xlab = "Number of Female-DML (75% difference)")
+abline(v = nrow(diffMethStatsTreatment75Fem))
 dev.off()
 
 save.image("methylKit.RData")
@@ -234,18 +268,30 @@ dev.off()
 ### Identify DML
 
 differentialMethylationStatsTreatmentInd <- methylKit::calculateDiffMeth(methylationInformationFilteredCov5Ind)
-head(differentialMethylationStatsTreatment)
+head(differentialMethylationStatsTreatmentInd)
 
 diffMethStatsTreatment25Ind <- methylKit::getMethylDiff(differentialMethylationStatsTreatmentInd, difference = 25, qvalue = 0.01)
+length(diffMethStatsTreatment25Ind$chr) #129040
 head(diffMethStatsTreatment25Ind)
 
 diffMethStatsTreatment50Ind <- methylKit::getMethylDiff(differentialMethylationStatsTreatmentInd, difference = 50, qvalue = 0.01)
+length(diffMethStatsTreatment50Ind$chr) #73414
 head(diffMethStatsTreatment50Ind)
+
+diffMethStatsTreatment75Ind <- methylKit::getMethylDiff(differentialMethylationStatsTreatmentInd, difference = 75, qvalue = 0.01)
+length(diffMethStatsTreatment75Ind$chr) #21891
+head(diffMethStatsTreatment75Ind)
+
+diffMethStatsTreatment100Ind <- methylKit::getMethylDiff(differentialMethylationStatsTreatmentInd, difference = 99, qvalue = 0.01)
+length(diffMethStatsTreatment100Ind$chr) #2861
+head(diffMethStatsTreatment100Ind)
 
 save.image("methylKit.RData")
 
-write.csv(diffMethStatsTreatment25, "DML/DML-pH-25-Cov5-Ind.csv")
-write.csv(diffMethStatsTreatment50, "DML/06-methylKit/DML-pH-50-Cov5-Ind.csv")
+write.csv(diffMethStatsTreatment25Ind, "DML/DML-pH-25-Cov5-Ind.csv")
+write.csv(diffMethStatsTreatment50Ind, "DML/DML-pH-50-Cov5-Ind.csv")
+write.csv(diffMethStatsTreatment75Ind, "DML/DML-pH-75-Cov5-Ind.csv")
+write.csv(diffMethStatsTreatment100Ind, "DML/DML-pH-100-Cov5-Ind.csv")
 
 ### Randomization trial
 
