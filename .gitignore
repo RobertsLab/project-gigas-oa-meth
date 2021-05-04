@@ -50,3 +50,4 @@ genome-feature-files/ncbi-genomes-2021-05-04/md5checksums.txt
 genome-feature-files/ncbi-genomes-2021-05-04/GCF_902806645.1_cgigas_uk_roslin_v1_genomic.gff.gz
 genome-feature-files/ncbi-genomes-2021-05-04/GCF_902806645.1_cgigas_uk_roslin_v1_genomic.gff
 genome-feature-files/genome_assemblies_genome_gff.tar
+genome-feature-files/cgigas_uk_roslin_v1_CDS.gff
