@@ -19,6 +19,10 @@
 #SBATCH --chdir=/gscratch/scrubbed/yaaminiv/Manchester/analyses/methylKit
 
 module load singularity
+# Do not suspend idle sessions.
+# Alternative to setting session-timeout-minutes=0 in /etc/rstudio/rsession.conf
+# https://github.com/rstudio/rstudio/blob/v1.4.1106/src/cpp/server/ServerSessionManager.cpp#L126
+export SINGULARITYENV_RSTUDIO_SESSION_TIMEOUT=0
 
 export PASSWORD=$(openssl rand -base64 15)
 # get unused socket per https://unix.stackexchange.com/a/132524
