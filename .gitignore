@@ -60,3 +60,4 @@ genome-feature-files/cgigas_uk_roslin_v1_rm.te.bed
 genome-feature-files/cgigas_uk_roslin_v1_rm.te
 genome-feature-files/cgigas_uk_roslin_v1_nonCDS.bed
 genome-feature-files/cgigas_uk_roslin_v1_intron.bed
+genome-feature-files/cgigas_uk_roslin_v1_intergenic.bed
