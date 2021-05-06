@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Session genome="https://gannet.fish.washington.edu/spartina/project-oyster-oa/data/Cg-roslin/cgigas_uk_roslin_v1_genomic-mito.fa" hasGeneTrack="false" hasSequenceTrack="true" locus="NC_047560.1:0-73222313" version="8">
+    <Resources>
+        <Resource name="cgigas_uk_roslin_v1_exonUTR.gff" path="http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_exonUTR.gff"/>
+        <Resource name="cgigas_uk_roslin_v1_intron.bed" path="http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_intron.bed"/>
+        <Resource name="cgigas_uk_roslin_v1_lncRNA.gff" path="http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_lncRNA.gff"/>
+        <Resource name="cgigas_uk_roslin_v1_mRNA.gff" path="http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_mRNA.gff"/>
+        <Resource name="cgigas_uk_roslin_v1_CDS.gff" path="http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_CDS.gff"/>
+        <Resource name="cgigas_uk_roslin_v1_downstream.gff" path="http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_downstream.gff"/>
+        <Resource name="cgigas_uk_roslin_v1_flanks.gff" path="http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_flanks.gff"/>
+        <Resource name="cgigas_uk_roslin_v1_upstream.gff" path="http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_upstream.gff"/>
+        <Resource name="cgigas_uk_roslin_v1_exon.gff" path="http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_exon.gff"/>
+        <Resource name="cgigas_uk_roslin_v1_nonCDS.bed" path="http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_nonCDS.bed"/>
+        <Resource name="cgigas_uk_roslin_v1_rm.te.bed" path="http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_rm.te.bed"/>
+        <Resource name="cgigas_uk_roslin_v1_intergenic.bed" path="http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_intergenic.bed"/>
+        <Resource name="cgigas_uk_roslin_v1_gene.gff" path="http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_gene.gff"/>
+    </Resources>
+    <Panel height="754" name="FeaturePanel" width="1903">
+        <Track attributeKey="Reference sequence" clazz="org.broad.igv.track.SequenceTrack" fontSize="10" id="Reference sequence" name="Reference sequence" sequenceTranslationStrandValue="POSITIVE" shouldShowTranslation="false" visible="true"/>
+        <Track attributeKey="cgigas_uk_roslin_v1_gene.gff" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;69.0;255,255,255;0,0,178" fontSize="10" id="http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_gene.gff" name="cgigas_uk_roslin_v1_gene.gff" visible="true"/>
+        <Track attributeKey="cgigas_uk_roslin_v1_intergenic.bed" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" fontSize="10" id="http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_intergenic.bed" name="cgigas_uk_roslin_v1_intergenic.bed" visible="true"/>
+        <Track attributeKey="cgigas_uk_roslin_v1_mRNA.gff" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;170.0;255,255,255;0,0,178" fontSize="10" id="http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_mRNA.gff" name="cgigas_uk_roslin_v1_mRNA.gff" visible="true"/>
+        <Track attributeKey="cgigas_uk_roslin_v1_CDS.gff" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;5782.0;255,255,255;0,0,178" fontSize="10" id="http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_CDS.gff" name="cgigas_uk_roslin_v1_CDS.gff" visible="true"/>
+        <Track attributeKey="cgigas_uk_roslin_v1_nonCDS.bed" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" fontSize="10" id="http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_nonCDS.bed" name="cgigas_uk_roslin_v1_nonCDS.bed" visible="true"/>
+        <Track attributeKey="cgigas_uk_roslin_v1_exon.gff" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;5834.0;255,255,255;0,0,178" fontSize="10" id="http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_exon.gff" name="cgigas_uk_roslin_v1_exon.gff" visible="true"/>
+        <Track attributeKey="cgigas_uk_roslin_v1_exonUTR.gff" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;561.0;255,255,255;0,0,178" fontSize="10" id="http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_exonUTR.gff" name="cgigas_uk_roslin_v1_exonUTR.gff" visible="true"/>
+        <Track attributeKey="cgigas_uk_roslin_v1_intron.bed" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" fontSize="10" id="http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_intron.bed" name="cgigas_uk_roslin_v1_intron.bed" visible="true"/>
+        <Track attributeKey="cgigas_uk_roslin_v1_flanks.gff" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;120.0;255,255,255;0,0,178" fontSize="10" id="http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_flanks.gff" name="cgigas_uk_roslin_v1_flanks.gff" visible="true"/>
+        <Track attributeKey="cgigas_uk_roslin_v1_upstream.gff" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;62.0;255,255,255;0,0,178" fontSize="10" id="http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_upstream.gff" name="cgigas_uk_roslin_v1_upstream.gff" visible="true"/>
+        <Track attributeKey="cgigas_uk_roslin_v1_downstream.gff" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;58.0;255,255,255;0,0,178" fontSize="10" id="http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_downstream.gff" name="cgigas_uk_roslin_v1_downstream.gff" visible="true"/>
+        <Track attributeKey="cgigas_uk_roslin_v1_lncRNA.gff" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;30.0;255,255,255;0,0,178" fontSize="10" id="http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_lncRNA.gff" name="cgigas_uk_roslin_v1_lncRNA.gff" visible="true"/>
+        <Track attributeKey="cgigas_uk_roslin_v1_rm.te.bed" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;1058.0;255,255,255;0,0,178" fontSize="10" id="http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_rm.te.bed" name="cgigas_uk_roslin_v1_rm.te.bed" visible="true"/>
+    </Panel>
+    <PanelLayout dividerFractions="0.00784313725490196"/>
+    <HiddenAttributes>
+        <Attribute name="DATA FILE"/>
+        <Attribute name="DATA TYPE"/>
+        <Attribute name="NAME"/>
+    </HiddenAttributes>
+</Session>
