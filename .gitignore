@@ -55,3 +55,6 @@ genome-feature-files/cgigas_uk_roslin_v1_CDS.gff
 genome-feature-files/genome_assemblies_genome_fasta.tar
 genome-feature-files/ncbi-genomes-2021-05-04/GCF_902806645.1_cgigas_uk_roslin_v1_genomic.fna
 genome-feature-files/ncbi-genomes-2021-05-04/GCF_902806645.1_cgigas_uk_roslin_v1_genomic.fna.gz
+genome-feature-files/cgigas_uk_roslin_v1_rm.te.gz
+genome-feature-files/cgigas_uk_roslin_v1_rm.te.bed
+genome-feature-files/cgigas_uk_roslin_v1_rm.te
