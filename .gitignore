@@ -61,3 +61,10 @@ genome-feature-files/cgigas_uk_roslin_v1_rm.te
 genome-feature-files/cgigas_uk_roslin_v1_nonCDS.bed
 genome-feature-files/cgigas_uk_roslin_v1_intron.bed
 genome-feature-files/cgigas_uk_roslin_v1_intergenic.bed
+output/09-methylation-landscape/zr3616_1_R1_val_1_val_1_val_1_bismark_bt2_pe._5x.bedgraph
+output/09-methylation-landscape/zr3616_2_R1_val_1_val_1_val_1_bismark_bt2_pe._5x.bedgraph
+output/09-methylation-landscape/zr3616_3_R1_val_1_val_1_val_1_bismark_bt2_pe._5x.bedgraph
+output/09-methylation-landscape/zr3616_4_R1_val_1_val_1_val_1_bismark_bt2_pe._5x.bedgraph
+output/09-methylation-landscape/zr3616_6_R1_val_1_val_1_val_1_bismark_bt2_pe._5x.bedgraph
+output/09-methylation-landscape/zr3616_7_R1_val_1_val_1_val_1_bismark_bt2_pe._5x.bedgraph
+output/09-methylation-landscape/zr3616_8_R1_val_1_val_1_val_1_bismark_bt2_pe._5x.bedgraph
