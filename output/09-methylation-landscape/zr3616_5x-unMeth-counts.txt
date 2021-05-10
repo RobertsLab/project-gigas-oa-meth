@@ -1,0 +1,9 @@
+6821711	zr3616_1_R1_val_1_val_1_val_1_bismark_bt2_pe._5x.bedgraph-unMeth
+6879957	zr3616_2_R1_val_1_val_1_val_1_bismark_bt2_pe._5x.bedgraph-unMeth
+6804581	zr3616_3_R1_val_1_val_1_val_1_bismark_bt2_pe._5x.bedgraph-unMeth
+7030213	zr3616_4_R1_val_1_val_1_val_1_bismark_bt2_pe._5x.bedgraph-unMeth
+6565845	zr3616_5_R1_val_1_val_1_val_1_bismark_bt2_pe._5x.bedgraph-unMeth
+6886482	zr3616_6_R1_val_1_val_1_val_1_bismark_bt2_pe._5x.bedgraph-unMeth
+6641450	zr3616_7_R1_val_1_val_1_val_1_bismark_bt2_pe._5x.bedgraph-unMeth
+6750245	zr3616_8_R1_val_1_val_1_val_1_bismark_bt2_pe._5x.bedgraph-unMeth
+9201922	zr3616_union-averages_5x.bedgraph-unMeth
