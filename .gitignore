@@ -77,3 +77,6 @@ output/09-methylation-landscape/zr3616_5_R1_val_1_val_1_val_1_bismark_bt2_pe._5x
 output/09-methylation-landscape/zr3616_6_R1_val_1_val_1_val_1_bismark_bt2_pe._5x.sort.bedgraph
 output/09-methylation-landscape/zr3616_7_R1_val_1_val_1_val_1_bismark_bt2_pe._5x.sort.bedgraph
 output/09-methylation-landscape/zr3616_8_R1_val_1_val_1_val_1_bismark_bt2_pe._5x.sort.bedgraph
+output/09-methylation-landscape/union-averages.bedgraph
+output/09-methylation-landscape/zr3616_union-averages_5x.bedgraph
+output/09-methylation-landscape/zr3616_union_5x.bedgraph
