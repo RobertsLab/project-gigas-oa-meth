@@ -369,3 +369,7 @@ output/10_DML-characterization/DML-pH-75-Cov5-Fem-intron.bed
 output/10_DML-characterization/DML-pH-75-Cov5-Fem-lncRNA.bed
 output/10_DML-characterization/DML-pH-75-Cov5-Fem-TE.bed
 output/10_DML-characterization/DML-pH-75-Cov5-Fem-upstream.bed
+output/10_DML-characterization/DML-pH-Cov5-Overlaps-intron.bed
+output/10_DML-characterization/DML-pH-Cov5-Overlaps-Gene.bed
+output/10_DML-characterization/DML-pH-Cov5-Overlaps-exonUTR.bed
+output/10_DML-characterization/DML-pH-Cov5-Overlaps-CDS.bed
