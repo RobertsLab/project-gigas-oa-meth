@@ -397,3 +397,6 @@ output/10_DML-characterization/DML-pH-75-Cov5-Fem-zr3616_5_CT-SNPs.bed
 output/10_DML-characterization/DML-pH-75-Cov5-Fem-zr3616_6_CT-SNPs.bed
 output/10_DML-characterization/DML-pH-75-Cov5-Fem-zr3616_7_CT-SNPs.bed
 output/10_DML-characterization/DML-pH-75-Cov5-Fem-zr3616_8_CT-SNPs.bed
+output/10_DML-characterization/DML-pH-100-Cov5-Ind-mergedSNP.bed
+output/10_DML-characterization/DML-pH-75-Cov5-Fem-mergedSNP.bed
+output/10_DML-characterization/DML-pH-Cov5-Overlaps-mergedSNP.bed
