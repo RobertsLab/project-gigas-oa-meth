@@ -21,4 +21,4 @@
 
 module load r_3.6.0
 
-Rscript > output.txt 2>&1 /gscratch/home/yaaminiv/06-methylKit.R
+Rscript > rand-test-output.txt 2>&1 /gscratch/home/yaaminiv/06-methylKit-randtest.R
