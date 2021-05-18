@@ -24,7 +24,8 @@ sampleMetadataFem <- data.frame("sampleID" = c("1", "3", "4",
                              "slide-label" = c("02-T1", "06-T1", "08-T2",
                                                "UK-02", "UK-04", "UK-06"),
                              "pHTreatment" = c(rep(1, times = 3),
-                                               rep(0, times = 3)))
+                                               rep(0, times = 3))) #Create metadata table
+sampleMetadataFem$sampleID <- as.character(sampleMetadataFem$sampleID) #Convert to character format
 head(sampleMetadataFem)
 
 pHRandTest75Fem <- NULL
@@ -65,6 +66,7 @@ sampleMetadataInd <- data.frame("sampleID" = c("2",
                                                "11-T4"),
                              "pHTreatment" = c(1,
                                                0))
+sampleMetadataInd$sampleID <- as.character(sampleMetadataInd$sampleID) #Convert to character format
 head(sampleMetadataInd)
 
 pHRandTest100Ind <- NULL
