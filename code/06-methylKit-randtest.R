@@ -1,4 +1,4 @@
-# Load packages and data
+# Load packages
 
 
 require(BiocGenerics, lib.loc = "/gscratch/home/yaaminiv/R/x86_64-pc-linux-gnu-library/3.6/")
@@ -9,7 +9,13 @@ require(GenomicRanges, lib.loc = "/gscratch/home/yaaminiv/R/x86_64-pc-linux-gnu-
 require(methylKit, lib.loc = "/gscratch/home/yaaminiv/R/x86_64-pc-linux-gnu-library/3.6/")
 
 require(dplyr)
-load("methylKit.RData") #Save R Data in case R crashes
+
+sessionInfo()
+
+# Load data
+
+setwd("/gscratch/scrubbed/yaaminiv/Manchester/analyses/methylKit") #Set working directory
+load("methylKit.RData") #Load R data from DML identification
 
 # Female samples
 
