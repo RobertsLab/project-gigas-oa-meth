@@ -25,12 +25,21 @@ set -e
 # Program paths
 diamond=/gscratch/srlab/programs/diamond-2.0.4/diamond
 
+# Create database from Uniprot-SwissProt information
+# Use 27 threads to create database
+# Save to srlab/yaamini/blastdbs
+
+${diamond} makedb \
+--in /gscratch/srlab/blastdbs/uniprot_sprot_20200123/uniprot_sprot.fasta \
+--threads 27 \
+-d  /gscratch/srlab/yaaminiv/blastdbs/20210601-uniprot-sprot.dmnd
+
 # Run DIAMOND with blastx
 # Output format 6 produces a standard BLAST tab-delimited file
 ${diamond} blastx \
---db /gscratch/srlab/blastdbs/uniprot_sprot_20200123/uniprot_sprot.dmnd \
+--db /gscratch/srlab/yaaminiv/blastdbs/20210601-uniprot-sprot.dmnd \
 --query /gscratch/scrubbed/yaaminiv/data/cgigas_uk_roslin_v1_genomic-mito.fa \
---out 20210526-cgigas-roslin-blastx.outfmt6 \
+--out 20210601-cgigas-roslin-mito-blastx.outfmt6 \
 --outfmt 6 \
 --evalue 1e-4 \
 --max-target-seqs 1 \
