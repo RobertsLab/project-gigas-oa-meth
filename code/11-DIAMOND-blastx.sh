@@ -10,7 +10,7 @@
 ## Walltime (days-hours:minutes:seconds format)
 #SBATCH --time=5-00:00:00
 ## Memory per node
-#SBATCH --mem=500G
+#SBATCH --mem=120G
 ##turn on e-mail notification
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=yaaminiv@uw.edu
@@ -28,6 +28,7 @@ diamond=/gscratch/srlab/programs/diamond-2.0.4/diamond
 # Create database from Uniprot-SwissProt information
 # Use 27 threads to create database
 # Save to srlab/yaamini/blastdbs
+
 ${diamond} makedb \
 --in /gscratch/srlab/yaaminiv/blastdbs/20210601-uniprot_sprot.fasta \
 --threads 27 \
