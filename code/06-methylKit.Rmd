@@ -35,12 +35,10 @@ require(dplyr)
 #Packages for visualization
 
 #install.packages("vegan")
-#install.packages("pheatmap")
 #install.packages("gplots")
 #install.packages("dichromat")
 
 require(vegan)
-require(pheatmap)
 require(gplots)
 require(dichromat)
 ```
@@ -539,17 +537,58 @@ legend("bottomright",
 #dev.off()
 ```
 
-### Make multipanel figure
+## Heatmap
 
+I will use `heatmap.2` to create a multipanel figure with four heatmaps: female DML that are not SNPs, female DML-SNP overlaps, indeterminate DML that are not SNPs, and indeterminate DML-SNP overlaps. I will use `heatmap.2` over `pheatmap` because it allows me to add a density plot with a legend.
 
+### Female samples
 
-
-
-
+#### Format data
 
 ```{r}
-methylKit::getCorrelation(methylationInformationFilteredCov5, plot = TRUE) #Understand correlation between methylation patterns in different samples
+DMLPositionsFem <- rep(0, times = length(diffMethStatsTreatment75Fem$chr)) #Create an empty vector to store row numbers
+for (i in 1:length(DMLPositionsFem)) {
+  DMLPositionsFem[i] <- which(getData(diffMethStatsTreatment75Fem)$start[i] == getData(methylationInformationFilteredCov5Fem)$start)
+} #For each DML, save the row number where that DML is found in methylationInformationFilteredCov5Fem. This will be used to subset the methylBase object with DML information
+tail(DMLPositionsFem) #Confirm vector was created
 ```
+
+```{r}
+DMLMatrixFem <- methylationInformationFilteredCov5Fem[DMLPositionsFem,] #Subset methylationInformationFilteredCov5Destrand to only include DML and save as a new methylBase object
+sum((DMLMatrixFem$start) == (diffMethStatsTreatment75Fem$start)) == length(diffMethStatsTreatment75Fem$start) #Confirm that start columns are identical. If they are identical, the sum of all TRUE statements should equal the length of the original methylBase object
+tail(DMLMatrixFem) #Confirm methylBase object creation
+```
+
+```{r}
+percMethDMLFem <- methylKit::percMethylation(DMLMatrixFem, rowids = TRUE) #Get percent methylation for all samples at DML. Include row IDs (chr, start, end) information
+head(percMethDMLFem) #Check that the DML matrix was created
+```
+
+```{r}
+#Create a heatmap with all female DML data
+
+heatmap.2(percMethDMLFem, col = rev(plotColors), scale = "none", margins = c(1,1),
+          trace = "none", tracecol = "black",
+          labRow = FALSE, labCol = FALSE, 
+          ColSideColors = c(rep("grey10", times = 3), rep("grey90", times = 3)),
+          key = TRUE, keysize = 1.8, density.info = "density", key.title = "", key.xlab = "% Methylation", key.ylab = "",
+          key.par = list(cex.lab = 2.0, cex.axis = 1.5)) #Create heatmap using heatmap.2 from gplots package using percMethDML data. Use plotColors but do not scale data, label rows, or label columns. Use ColSideColors to indicate colors for low (dark) and ambient (light) pH samples. Add a legend using key, and adjust keysize. Have key display density data with density.info. Do not add a key title or y-axis label, and label x axis with key.xlab.
+mtext("Density", cex = 1.6, las = 3, adj = 0.8, padj = -29) #Manually add y-axis label for key since heatmap.2 doesn't let you change font size
+```
+
+#### Separate DML-SNP overlaps and non-SNP DML
+
+```{r}
+uniqueSNPFem <- read.table("../10_DML-characterization/DML-pH-75-Cov5-Fem-unique-CT-SNPs.bed", header = FALSE, sep = "\t", col.names = c("chr", "start", "end", "meth.diff")) #Import overlaps between unique C/T SNPs and female DML produced with bedtools
+head(uniqueSNPFem)
+```
+
+
+#### Non-SNP DML
+
+#### DML-SNP overlaps
+
+### Indeterminate samples
 
 
 
