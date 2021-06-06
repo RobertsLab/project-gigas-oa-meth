@@ -11,7 +11,7 @@ In this script, I'll get preliminary methylation information from oyster samples
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-knitr::opts_knit$set(root.dir = "../output/06-methylKit/") #Set root directory
+knitr::opts_knit$set(root.dir = "/Users/yaamini/Documents/project-gigas-oa-meth/output/06-methylKit/") #Set root directory
 ```
 
 # Install packages
@@ -481,9 +481,8 @@ mkdir figures
 ```
 
 ```{r}
-plotColors <- 
+plotColors <- rev(RColorBrewer::brewer.pal(5, "Oranges")) #Create a color palette for the barplots. Use 5 purple shades from RColorBrewer. Reverse the order so the darkest shade is used first.
 ```
-
 
 ```{r}
 head(sampleMetadata) #Look at sample metadata
@@ -491,18 +490,66 @@ head(sampleMetadata) #Look at sample metadata
 
 ## Comparative analysis
 
-`methylKit` creates PCA biplots, but I want to create a custom biplot and multiplanel figure with the PCA and correlation plot to visualize the comparative analysis results.
+`methylKit` creates PCA biplots, but I want to create a custom biplot and multiplanel figure with the PCA and ANOTHER FIGURE to visualize the comparative analysis results.
+
+### Modify global PCA
+
+The correlation plot is difficult to modify, so I just need to modify the PCA.
 
 ```{r}
 allDataPCA <- PCASamples(methylationInformationFilteredCov5, obj.return = TRUE) #Run a PCA analysis on percent methylation for all samples. methylKit uses prcomp to create the PCA matrix
 summary(allDataPCA) #Look at summary statistics. The first PC explains 15.7% of variation, the second PC explains 14.8% of variation
 ```
 
-
 ```{r}
+#pdf("figures/all-sample-PCA.pdf", width = 11, height = 8.5)
 
+par(mar = c(5, 5, 1, 1)) #Specify inner and outer margins
+
+fig.allDataPCA <- ordiplot(allDataPCA, choices = c(1, 2), type = "none", display = "sites", cex = 0.5, xlab = "", ylab = "", xaxt = "n", yaxt = "n") #Use ordiplot to create base biplot. Do not add any points
+points(fig.allDataPCA, "sites", col = c(rep(plotColors[2], times = 4), rep(plotColors[4], times = 4)), pch = c(rep(16, times = 4), rep(17, times = 4)), cex = 3) #Add each sample. Darker samples are low pH, lighter samples are ambient
+
+#Add multiple white boxes on top of the default black box to manually change the color
+box(col = "white")
+box(col = "white")
+box(col = "white")
+box(col = "white")
+box(col = "white")
+box(col = "white")
+box(col = "white")
+box(col = "white")
+box(col = "white")
+box(col = "white")
+
+ordiellipse(allDataPCA, sampleMetadata$pHTreatment, show.groups = "1", col = plotColors[4]) #Add confidence ellipse around the samples in ambient pH
+ordiellipse(allDataPCA, sampleMetadata$pHTreatment, show.groups = "0", col = plotColors[2]) #Add confidence ellipse around the samples in low pH
+
+axis(side =  1, labels = TRUE, col = "grey80", cex.axis = 1.7) #Add x-axis
+mtext(side = 1, text = "PC 1 (15.7%)", line = 3, cex = 1.5) #Add x-axis label
+
+axis(side =  2, labels = TRUE, col = "grey80", cex.axis = 1.7) #Add y-axis
+mtext(side = 2, text = "PC 2 (14.8%)", line = 3, cex = 1.5) #Add y-axis label
+
+legend("bottomright", 
+       pch = c(16, 17), 
+       legend = c("Low pH", "Ambient pH"), 
+       col = c(plotColors[2], plotColors[4]), 
+       cex = 1.7, bty = "n") #Add a legend with information about ambient and elevated samples
+
+#dev.off()
 ```
 
+### Make multipanel figure
+
+
+
+
+
+
+
+```{r}
+methylKit::getCorrelation(methylationInformationFilteredCov5, plot = TRUE) #Understand correlation between methylation patterns in different samples
+```
 
 
 
