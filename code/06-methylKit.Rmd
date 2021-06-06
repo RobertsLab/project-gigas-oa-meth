@@ -11,21 +11,36 @@ In this script, I'll get preliminary methylation information from oyster samples
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = "../output/06-methylKit/") #Set root directory
 ```
 
 # Install packages
 
 ```{r}
-install.packages("devtools") #Install the devtools package
+#Packages for running methylKit
+
+#install.packages("devtools") #Install the devtools package
 require(devtools) #Load devtools
 #source("http://bioconductor.org/biocLite.R") #Source package from bioconductor
 #biocLite("methylKit") #Install methylkit
 #install_github("al2na/methylKit", build_vignettes = FALSE, repos = BiocManager::repositories(), dependencies = TRUE) #Install more methylKit options
 require(methylKit) #Load methylkit
+#install.packages("tidyverse")
+require(tidyverse)
+#install.packages("dplyr")
+require(dplyr)
 ```
 
 ```{r}
-require(dplyr) #Load dplyr
+#Packages for visualization
+
+#install.packages("vegan")
+#install.packages("pheatmap")
+#install.packages("gplots")
+
+require(vegan)
+require(pheatmap)
+require(gplots)
 ```
 
 # Obtain session information
@@ -62,19 +77,15 @@ analysisFiles <- list("zr3616_1_R1_val_1_val_1_val_1_bismark_bt2_pe..CpG_report.
 ```
 
 ```{r}
-sampleMetadata <- data.frame("sampleID" = c("1", "2", "3", "4",
-                                            "5", "6", "7", "8"),
-                             "slide-label" = c("02-T1", "04-T3", "06-T1", "08-T2",
-                                               "11-T4", "UK-02", "UK-04", "UK-06"),
-                             "pHTreatment" = c(rep(1, times = 4),
-                                               rep(0, times = 4))) #Create dataframe with metadata. 1 = low, 0 = ambient. Slide label information from histology processing
+sampleMetadata <- data.frame("sampleID" = c("1", "2", "3", "4", "5", "6", "7", "8"),
+                             "slide-label" = c("02-T1", "04-T3", "06-T1", "08-T2", "11-T4", "UK-02", "UK-04", "UK-06"),
+                             "pHTreatment" = c(rep(1, times = 4), rep(0, times = 4))) #Create dataframe with metadata. 1 = low, 0 = ambient. Slide label information from histology processing
 head(sampleMetadata) #Confirm dataframe creation
 ```
 
 I'll use `methRead` to create a methylation object from the coverage files, and include sample ID and treatment information.
 
 ```{r}
-setwd(dir = "../output/06-methylKit/") #Set working directory inside code chunk
 processedFiles <- methylKit::methRead(analysisFiles,
                                       sample.id = list("1", "2", "3", "4",
                                                        "5", "6", "7", "8"),
@@ -87,13 +98,13 @@ processedFiles <- methylKit::methRead(analysisFiles,
 ```{r}
 processedFilteredFilesCov5 <- methylKit::filterByCoverage(processedFiles,
                                                           lo.count = 5, lo.perc = NULL,
-                                                          high.count = NULL, high.perc = 99.9) %>% 
+                                                          high.count = NULL, high.perc = 99.9) %>%
   methylKit::normalizeCoverage(.) #Filter coverage information for minimum 5x coverage, and remove PCR duplicates by excluding data in the 99.9th percentile of coverage with hi.perc = 99.9. Normalize coverage between samples to avoid over-sampling reads from one sample during statistical testing
 ```
 
 ```{r}
-save.image("../output/06-methylKit/methylKit.RData") #Save R Data in case R crashes
-#load("../output/06-methylKit/methylKit.RData") #Load R Data
+save.image("methylKit.RData") #Save R Data in case R crashes
+#load("methylKit.RData") #Load R Data
 ```
 
 # Characterize general methylation
@@ -103,13 +114,13 @@ save.image("../output/06-methylKit/methylKit.RData") #Save R Data in case R cras
 ### Specify working directory for output
 
 ```{bash}
-mkdir ../output/06-methylKit/general-stats
+mkdir general-stats
 ```
 
 ```{r}
 nFiles <- 8 #Count number of samples
-fileName <- data.frame("nameBase" = rep("../output/06-methylKit/general-stats/percent-CpG-methylation", times = nFiles),
-                       "nameBase2" = rep("../output/06-methylKit/general-stats/percent-CpG-coverage", times = nFiles),
+fileName <- data.frame("nameBase" = rep("general-stats/percent-CpG-methylation", times = nFiles),
+                       "nameBase2" = rep("general-stats/percent-CpG-coverage", times = nFiles),
                        "sample.ID" = c(1:8)) #Create new dataframe for filenames.
 head(fileName) #Confirm dataframe creation
 ```
@@ -148,8 +159,8 @@ head(methylationInformationFilteredCov5) #Confirm unite
 ```
 
 ```{r}
-save.image("../output/06-methylKit/methylKit.RData") #Save R Data in case R crashes
-#load("../output/06-methylKit/methylKit.RData") #Load R Data
+save.image("methylKit.RData") #Save R Data in case R crashes
+#load("methylKit.RData") #Load R Data
 ```
 
 ```{r}
@@ -157,32 +168,32 @@ clusteringInformationFilteredCov5 <- methylKit::clusterSamples(methylationInform
 ```
 
 ```{r}
-jpeg(filename = "../output/06-methylKit/general-stats/Full-Sample-Pearson-Correlation-Plot-FilteredCov5Destrand.jpeg", height = 1000, width = 1000) #Save file with designated name
+jpeg(filename = "general-stats/Full-Sample-Pearson-Correlation-Plot-FilteredCov5Destrand.jpeg", height = 1000, width = 1000) #Save file with designated name
 methylKit::getCorrelation(methylationInformationFilteredCov5, plot = TRUE) #Understand correlation between methylation patterns in different samples
 dev.off()
 ```
 
 ```{r}
-jpeg(filename = "../output/06-methylKit/general-stats/Full-Sample-CpG-Methylation-Clustering-FilteredCov5Destrand.jpeg", height = 1000, width = 1000) #Save file with designated name
+jpeg(filename = "general-stats/Full-Sample-CpG-Methylation-Clustering-FilteredCov5Destrand.jpeg", height = 1000, width = 1000) #Save file with designated name
 methylKit::clusterSamples(methylationInformationFilteredCov5, dist = "correlation", method = "ward", plot = TRUE) #Cluster samples based on correlation coefficients
 dev.off()
 ```
 
 ```{r}
-jpeg(filename = "../output/06-methylKit/general-stats/Full-Sample-Methylation-PCA-FilteredCov5Destrand.jpeg", height = 1000, width = 1000) #Save file with designated name
+jpeg(filename = "general-stats/Full-Sample-Methylation-PCA-FilteredCov5Destrand.jpeg", height = 1000, width = 1000) #Save file with designated name
 methylKit::PCASamples(methylationInformationFilteredCov5) #Run a PCA analysis on percent methylation for all samples
 dev.off() #Turn off plotting device
 ```
 
 ```{r}
-jpeg(filename = "../output/06-methylKit/general-stats/Full-Sample-Methylation-Screeplot-FilteredCov5Destrand.jpeg", height = 1000, width = 1000) #Save file with designated name
+jpeg(filename = "general-stats/Full-Sample-Methylation-Screeplot-FilteredCov5Destrand.jpeg", height = 1000, width = 1000) #Save file with designated name
 methylKit::PCASamples(methylationInformationFilteredCov5, screeplot = TRUE) #Run the PCA analysis and plot variances against PC number in a screeplot
 dev.off()
 ```
 
 ```{r}
-save.image("../output/06-methylKit/methylKit.RData") #Save R Data in case R crashes
-#load("../output/06-methylKit/methylKit.RData") #Load R Data
+save.image("methylKit.RData") #Save R Data in case R crashes
+#load("methylKit.RData") #Load R Data
 ```
 
 # Differentially methylated loci
@@ -202,19 +213,19 @@ methylationInformationFilteredCov5Fem <- methylKit::reorganize(methylationInform
 ```
 
 ```{r}
-jpeg(filename = "../output/06-methylKit/general-stats/Full-Sample-CpG-Methylation-Clustering-FilteredCov5Destrand-Fem.jpeg", height = 1000, width = 1000) #Save file with designated name
+jpeg(filename = "general-stats/Full-Sample-CpG-Methylation-Clustering-FilteredCov5Destrand-Fem.jpeg", height = 1000, width = 1000) #Save file with designated name
 methylKit::clusterSamples(methylationInformationFilteredCov5Fem, dist = "correlation", method = "ward", plot = TRUE) #Cluster female samples based on correlation coefficients
 dev.off()
 ```
 
 ```{r}
-jpeg(filename = "../output/06-methylKit/general-stats/Full-Sample-Methylation-PCA-FilteredCov5Destrand-Fem.jpeg", height = 1000, width = 1000) #Save file with designated name
+jpeg(filename = "general-stats/Full-Sample-Methylation-PCA-FilteredCov5Destrand-Fem.jpeg", height = 1000, width = 1000) #Save file with designated name
 methylKit::PCASamples(methylationInformationFilteredCov5Fem) #Run a PCA analysis on percent methylation for female samples
 dev.off() #Turn off plotting device
 ```
 
 ```{r}
-jpeg(filename = "../output/06-methylKit/general-stats/Full-Sample-Methylation-Screeplot-FilteredCov5Destrand-Fem.jpeg", height = 1000, width = 1000) #Save file with designated name
+jpeg(filename = "general-stats/Full-Sample-Methylation-Screeplot-FilteredCov5Destrand-Fem.jpeg", height = 1000, width = 1000) #Save file with designated name
 methylKit::PCASamples(methylationInformationFilteredCov5Fem, screeplot = TRUE) #Run the PCA analysis and plot variances against PC number in a screeplot for female samples
 dev.off()
 ```
@@ -241,29 +252,31 @@ head(covariateMetadataFem) #Check dataframe format
 ```
 
 ```{r}
-differentialMethylationStatsTreatmentFem <- methylKit::calculateDiffMeth(methylationInformationFilteredCov5Fem, covariates = covariateMetadata, overdispersion = "MN", test = "Chisq") #Calculate differential methylation statistics and include covariate information.
-head(differentialMethylationStatsTreatment) #Look at differential methylation statistics
+differentialMethylationStatsTreatmentFem2 <- methylKit::calculateDiffMeth(methylationInformationFilteredCov5Fem, covariates = covariateMetadataFem, overdispersion = "MN", test = "Chisq") #Calculate differential methylation statistics and include covariate information.
+head(differentialMethylationStatsTreatmentFem2) #Look at differential methylation statistics
 ```
 
 ```{r}
-diffMethStatsTreatment25Fem <- methylKit::getMethylDiff(differentialMethylationStatsTreatmentFem, difference = 25, qvalue = 0.01) #Identify loci that are at least 25% different
-length(diffMethStatsTreatment25Fem$chr) #Count the number of DML
-head(diffMethStatsTreatment25Fem) #Confirm creation
+diffMethStatsTreatment25Fem <- methylKit::getMethylDiff(differentialMethylationStatsTreatmentFem2, difference = 25, qvalue = 0.01)
+length(diffMethStatsTreatment25Fem$chr) #20830 DML
+head(diffMethStatsTreatment25Fem)
 ```
 
 ```{r}
-diffMethStatsTreatment50Fem <- methylKit::getMethylDiff(differentialMethylationStatsTreatmentFem, difference = 50, qvalue = 0.01) #Identify loci that are at least 50% different
-length(diffMethStatsTreatment50Fem$chr) #Count the number of DML
-head(diffMethStatsTreatment50Fem) #Confirm creation
-```
-```{r}
-save.image("../output/06-methylKit/methylKit.RData") #Save R Data in case R crashes
-#load("../output/06-methylKit/methylKit.RData") #Load R Data
+diffMethStatsTreatment75Fem <- methylKit::getMethylDiff(differentialMethylationStatsTreatmentFem2, difference = 75, qvalue = 0.01)
+length(diffMethStatsTreatment75Fem$chr) #315 DML
+head(diffMethStatsTreatment75Fem)
 ```
 
 ```{r}
-write.csv(diffMethStatsTreatment25, "../output/06-methylKit/DML-pH-25-Cov5-Fem.csv") #Save table as .csv
-write.csv(diffMethStatsTreatment50, "../output/06-methylKit/DML-pH-50-Cov5-Fem.csv") #Save table as .csv
+save.image("methylKit.RData") #Save R Data in case R crashes
+#load("methylKit.RData") #Load R Data
+```
+
+```{r}
+write.csv(diffMethStatsTreatment25Fem, "DML/DML-pH-25-Cov5-Fem.csv")
+write.csv(diffMethStatsTreatment50Fem, "DML/DML-pH-50-Cov5-Fem.csv")
+write.csv(diffMethStatsTreatment75Fem, "DML/DML-pH-75-Cov5-Fem.csv")
 ```
 
 ### Randomization trial
@@ -297,10 +310,10 @@ sampleMetadataFem <- data.frame("sampleID" = c("1", "3", "4",
 head(sampleMetadataFem) #Confirm dataframe creation
 ```
 
-#### 25% difference
+#### 75% difference
 
 ```{r}
-pHRandTest25Fem <- NULL #Create an empty matrix to store randomization trial results for 25% difference
+pHRandTest75Fem <- NULL #Create an empty matrix to store randomization trial results for 25% difference
 ```
 
 ```{r}
@@ -314,63 +327,22 @@ for (i in 1:1000) { #For each iteration
     methylKit::calculateDiffMeth(., covariates = covariateMetadataFem, 
                                  overdispersion = "MN", 
                                  test = "Chisq") %>%
-    methylKit::getMethylDiff(., difference = 25, qvalue = 0.01) %>%
-    nrow() -> pHRandTest25Fem[i] #Shuffle treatments from methylBase object created by unite. Calculate diffMeth and obtain DML that are 25% and have a q-value of 0.01. Save the number of DML identified
+    methylKit::getMethylDiff(., difference = 75, qvalue = 0.01) %>%
+    nrow() -> pHRandTest75Fem[i] #Shuffle treatments from methylBase object created by unite. Calculate diffMeth and obtain DML that are 75% and have a q-value of 0.01. Save the number of DML identified
 }
 ```
 
 ```{r}
-pHRandTestResults25Fem <- t.test(pHRandTest25Fem, alternative = "less", mu = nrow(diffMethStatsTreatment25Fem)) #Conduct a one-sample t-test to determine the probability of identifying more DML by chance
-pHRandTestResults25Fem$statistic #t
-pHRandTestResults25Fem$parameter #df
-pHRandTestResults25Fem$p.value #P-value
+pHRandTestResults75Fem <- t.test(pHRandTest75Fem, alternative = "less", mu = nrow(diffMethStatsTreatment75Fem)) #Conduct a one-sample t-test to determine the probability of identifying more DML by chance
+pHRandTestResults75Fem$statistic #t
+pHRandTestResults75Fem$parameter #df
+pHRandTestResults75Fem$p.value #P-value
 ```
 
 ```{r}
-jpeg(filename = "../output/06-methylKit/rand-test/Random-Distribution-diff25-Fem.jpeg", height = 1000, width = 1000) #Save file with designated name
-hist(pHRandTest25Fem, plot = TRUE, main = "", xlab = "Number of Female-DML (25% difference)") #Plot a histogram with randomization trial results
-abline(v = nrow(diffMethStatsTreatment25Fem)) #Add a vertical line for the number of DML identified with getMethylDiff
-dev.off()
-```
-
-```{r}
-save.image("../output/06-methylKit/methylKit.RData") #Save R Data in case R crashes
-#load("../output/06-methylKit/methylKit.RData") #Load R Data
-```
-
-#### 50% difference
-
-```{r}
-pHRandTest50Fem <- NULL #Create an empty matrix to store randomization trial results for 50% difference
-```
-
-```{r}
-for (i in 1:1000) { #For each iteration
-  pHRandTreat <- sample(sampleMetadataFem$pHTreatment, 
-                        size = length(sampleMetadataFem$pHTreatment),
-                        replace = FALSE) #Randomize female treatment information
-  pHRandDML <- methylKit::reorganize(methylationInformationFilteredCov5Fem,
-                                     sample.ids = sampleMetadataFem$sampleID,
-                                     treatment = pHRandTreat) %>%
-    methylKit::calculateDiffMeth(., covariates = covariateMetadataFem, 
-                                 overdispersion = "MN", 
-                                 test = "Chisq") %>%
-    methylKit::getMethylDiff(., difference = 50, qvalue = 0.01) %>%
-    nrow() -> pHRandTest50Fem[i] #Shuffle treatments from methylBase object created by unite. Calculate diffMeth and obtain DML that are 50% and have a q-value of 0.01. Save the number of DML identified
-}
-```
-
-```{r}
-pHRandTestResults50Fem <- t.test(pHRandTest50Fem, alternative = "less", mu = nrow(diffMethStatsTreatment50Fem)) #Conduct a one-sample t-test to determine the probability of identifying more DML by chance
-pHRandTestResults50Fem$statistic #t
-pHRandTestResults50Fem$parameter #df
-pHRandTestResults50Fem$p.value #P-value
-```
-
-```{r}
-jpeg(filename = "../output/06-methylKit/rand-test/Random-Distribution-diff50-Fem.jpeg", height = 1000, width = 1000) #Save file with designated name
-hist(pHRandTest50Fem, plot = TRUE, main = "", xlab = "Number of Female-DML (50% difference)") #Plot a histogram with randomization trial results
-abline(v = nrow(diffMethStatsTreatment50Fem)) #Add a vertical line for the number of DML identified with getMethylDiff
+jpeg(filename = "../output/06-methylKit/rand-test/Random-Distribution-diff75-Fem.jpeg", height = 1000, width = 1000) #Save file with designated name
+hist(pHRandTest75Fem, plot = TRUE, main = "", xlab = "Number of Female-DML (75% difference)") #Plot a histogram with randomization trial results
+abline(v = nrow(diffMethStatsTreatment75Fem)) #Add a vertical line for the number of DML identified with getMethylDiff
 dev.off()
 ```
 
@@ -389,19 +361,19 @@ methylationInformationFilteredCov5Ind <- methylKit::reorganize(methylationInform
 ```
 
 ```{r}
-jpeg(filename = "../output/06-methylKit/general-stats/Full-Sample-CpG-Methylation-Clustering-FilteredCov5Destrand-Ind.jpeg", height = 1000, width = 1000) #Save file with designated name
+jpeg(filename = "general-stats/Full-Sample-CpG-Methylation-Clustering-FilteredCov5Destrand-Ind.jpeg", height = 1000, width = 1000) #Save file with designated name
 methylKit::clusterSamples(methylationInformationFilteredCov5Ind, dist = "correlation", method = "ward", plot = TRUE) #Cluster indeterminate samples based on correlation coefficients
 dev.off()
 ```
 
 ```{r}
-jpeg(filename = "../output/06-methylKit/general-stats/Full-Sample-Methylation-PCA-FilteredCov5Destrand-Ind.jpeg", height = 1000, width = 1000) #Save file with designated name
+jpeg(filename = "general-stats/Full-Sample-Methylation-PCA-FilteredCov5Destrand-Ind.jpeg", height = 1000, width = 1000) #Save file with designated name
 methylKit::PCASamples(methylationInformationFilteredCov5Ind) #Run a PCA analysis on percent methylation for indeterminate samples
 dev.off() #Turn off plotting device
 ```
 
 ```{r}
-jpeg(filename = "../output/06-methylKit/general-stats/Full-Sample-Methylation-Screeplot-FilteredCov5Destrand-Ind.jpeg", height = 1000, width = 1000) #Save file with designated name
+jpeg(filename = "general-stats/Full-Sample-Methylation-Screeplot-FilteredCov5Destrand-Ind.jpeg", height = 1000, width = 1000) #Save file with designated name
 methylKit::PCASamples(methylationInformationFilteredCov5Ind, screeplot = TRUE) #Run the PCA analysis and plot variances against PC number in a screeplot for indeterminate samples
 dev.off()
 ```
@@ -414,24 +386,39 @@ head(differentialMethylationStatsTreatment) #Look at differential methylation st
 ```
 
 ```{r}
-diffMethStatsTreatment25Ind <- methylKit::getMethylDiff(differentialMethylationStatsTreatmentInd, difference = 25, qvalue = 0.01) #Identify loci that are at least 25% different
-length(diffMethStatsTreatment25Ind$chr) #Count the number of DML
-head(diffMethStatsTreatment25Ind) #Confirm creation
+diffMethStatsTreatment25Ind <- methylKit::getMethylDiff(differentialMethylationStatsTreatmentInd, difference = 25, qvalue = 0.01)
+length(diffMethStatsTreatment25Ind$chr) #129040
+head(diffMethStatsTreatment25Ind)
 ```
 
 ```{r}
-diffMethStatsTreatment50Ind <- methylKit::getMethylDiff(differentialMethylationStatsTreatmentInd, difference = 50, qvalue = 0.01) #Identify loci that are at least 50% different
-length(diffMethStatsTreatment50Ind$chr) #Count the number of DML
-head(diffMethStatsTreatment50Ind) #Confirm creation
-```
-```{r}
-save.image("../output/06-methylKit/methylKit.RData") #Save R Data in case R crashes
-#load("../output/06-methylKit/methylKit.RData") #Load R Data
+diffMethStatsTreatment50Ind <- methylKit::getMethylDiff(differentialMethylationStatsTreatmentInd, difference = 50, qvalue = 0.01)
+length(diffMethStatsTreatment50Ind$chr) #73414
+head(diffMethStatsTreatment50Ind)
 ```
 
 ```{r}
-write.csv(diffMethStatsTreatment25, "../output/06-methylKit/DML-pH-25-Cov5-Ind.csv") #Save table as .csv
-write.csv(diffMethStatsTreatment50, "../output/06-methylKit/DML-pH-50-Cov5-Ind.csv") #Save table as .csv
+diffMethStatsTreatment75Ind <- methylKit::getMethylDiff(differentialMethylationStatsTreatmentInd, difference = 75, qvalue = 0.01)
+length(diffMethStatsTreatment75Ind$chr) #21891
+head(diffMethStatsTreatment75Ind)
+```
+
+```{r}
+diffMethStatsTreatment100Ind <- methylKit::getMethylDiff(differentialMethylationStatsTreatmentInd, difference = 99, qvalue = 0.01)
+length(diffMethStatsTreatment100Ind$chr) #2861
+head(diffMethStatsTreatment100Ind)
+```
+
+```{r}
+save.image("methylKit.RData") #Save R Data in case R crashes
+#load("methylKit.RData") #Load R Data
+```
+
+```{r}
+write.csv(diffMethStatsTreatment25Ind, "DML/DML-pH-25-Cov5-Ind.csv")
+write.csv(diffMethStatsTreatment50Ind, "DML/DML-pH-50-Cov5-Ind.csv")
+write.csv(diffMethStatsTreatment75Ind, "DML/DML-pH-75-Cov5-Ind.csv")
+write.csv(diffMethStatsTreatment100Ind, "DML/DML-pH-100-Cov5-Ind.csv")
 ```
 
 ### Randomization trial
@@ -446,10 +433,10 @@ sampleMetadataInd <- data.frame("sampleID" = c("2",
 head(sampleMetadataInd) #Confirm dataframe creation
 ```
 
-#### 25% difference
+#### 99% difference
 
 ```{r}
-pHRandTest25Ind <- NULL #Create an empty matrix to store randomization trial results for 25% difference
+pHRandTest99Ind <- NULL #Create an empty matrix to store randomization trial results for 99% difference
 ```
 
 ```{r}
@@ -461,65 +448,33 @@ for (i in 1:1000) { #For each iteration
                                      sample.ids = sampleMetadataInd$sampleID,
                                      treatment = pHRandTreat) %>%
     methylKit::calculateDiffMeth(.) %>%
-    methylKit::getMethylDiff(., difference = 25, qvalue = 0.01) %>%
-    nrow() -> pHRandTest25Ind[i] #Shuffle treatments from methylBase object created by unite. Calculate diffMeth and obtain DML that are 25% and have a q-value of 0.01. Save the number of DML identified
+    methylKit::getMethylDiff(., difference = 99, qvalue = 0.01) %>%
+    nrow() -> pHRandTest99Ind[i] #Shuffle treatments from methylBase object created by unite. Calculate diffMeth and obtain DML that are 99% and have a q-value of 0.01. Save the number of DML identified
 }
 ```
 
 ```{r}
-pHRandTestResults25Ind <- t.test(pHRandTest25Ind, alternative = "less", mu = nrow(diffMethStatsTreatment25Ind)) #Conduct a one-sample t-test to determine the probability of identifying more DML by chance
-pHRandTestResults25Ind$statistic #t
-pHRandTestResults25Ind$parameter #df
-pHRandTestResults25Ind$p.value #P-value
+pHRandTestResults99Ind <- t.test(pHRandTest99Ind, alternative = "less", mu = nrow(diffMethStatsTreatment99Ind)) #Conduct a one-sample t-test to determine the probability of identifying more DML by chance
+pHRandTestResults99Ind$statistic #t
+pHRandTestResults99Ind$parameter #df
+pHRandTestResults99Ind$p.value #P-value
 ```
 
 ```{r}
-jpeg(filename = "../output/06-methylKit/rand-test/Random-Distribution-diff25-Ind.jpeg", height = 1000, width = 1000) #Save file with designated name
-hist(pHRandTest25Ind, plot = TRUE, main = "", xlab = "Number of Indeterminate-DML (25% difference)") #Plot a histogram with randomization trial results
-abline(v = nrow(diffMethStatsTreatment25Ind)) #Add a vertical line for the number of DML identified with getMethylDiff
+jpeg(filename = "rand-test/Random-Distribution-diff99-Ind.jpeg", height = 1000, width = 1000) #Save file with designated name
+hist(pHRandTest99Ind, plot = TRUE, main = "", xlab = "Number of Indeterminate-DML (99% difference)") #Plot a histogram with randomization trial results
+abline(v = nrow(diffMethStatsTreatment99Ind)) #Add a vertical line for the number of DML identified with getMethylDiff
 dev.off()
 ```
 
 ```{r}
-save.image("../output/06-methylKit/methylKit.RData") #Save R Data in case R crashes
-#load("../output/06-methylKit/methylKit.RData") #Load R Data
+save.image("methylKit.RData") #Save R Data in case R crashes
+#load("methylKit.RData") #Load R Data
 ```
 
-#### 50% difference
+# FIGURES
 
-```{r}
-pHRandTest50Ind <- NULL #Create an empty matrix to store randomization trial results for 50% difference
-```
 
-```{r}
-for (i in 1:1000) { #For each iteration
-  pHRandTreat <- sample(sampleMetadataInd$pHTreatment, 
-                        size = length(sampleMetadataInd$pHTreatment),
-                        replace = FALSE) #Randomize female treatment information
-  pHRandDML <- methylKit::reorganize(methylationInformationFilteredCov5Ind,
-                                     sample.ids = sampleMetadataInd$sampleID,
-                                     treatment = pHRandTreat) %>%
-    methylKit::calculateDiffMeth(.) %>%
-    methylKit::getMethylDiff(., difference = 50, qvalue = 0.01) %>%
-    nrow() -> pHRandTest50Ind[i] #Shuffle treatments from methylBase object created by unite. Calculate diffMeth and obtain DML that are 50% and have a q-value of 0.01. Save the number of DML identified
-}
-```
 
-```{r}
-pHRandTestResults50Ind <- t.test(pHRandTest50Ind, alternative = "less", mu = nrow(diffMethStatsTreatment50Ind)) #Conduct a one-sample t-test to determine the probability of identifying more DML by chance
-pHRandTestResults50Ind$statistic #t
-pHRandTestResults50Ind$parameter #df
-pHRandTestResults50Ind$p.value #P-value
-```
 
-```{r}
-jpeg(filename = "../output/06-methylKit/rand-test/Random-Distribution-diff50-Ind.jpeg", height = 1000, width = 1000) #Save file with designated name
-hist(pHRandTest50Ind, plot = TRUE, main = "", xlab = "Number of Indeterminate-DML (50% difference)") #Plot a histogram with randomization trial results
-abline(v = nrow(diffMethStatsTreatment50Ind)) #Add a vertical line for the number of DML identified with getMethylDiff
-dev.off()
-```
 
-```{r}
-save.image("../output/06-methylKit/methylKit.RData") #Save R Data in case R crashes
-#load("../output/06-methylKit/methylKit.RData") #Load R Data
-```
