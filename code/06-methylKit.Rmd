@@ -567,13 +567,17 @@ head(percMethDMLFem) #Check that the DML matrix was created
 ```{r}
 #Create a heatmap with all female DML data
 
+#pdf("figures/all-female-heatmap.pdf", width = 11, height = 8.5)
+par(mar = c(5, 12, 1, 1)) #Specify inner and outer margins
+
 heatmap.2(percMethDMLFem, col = rev(plotColors), scale = "none", margins = c(1,1),
           trace = "none", tracecol = "black",
           labRow = FALSE, labCol = FALSE, 
           ColSideColors = c(rep("grey10", times = 3), rep("grey90", times = 3)),
           key = TRUE, keysize = 1.8, density.info = "density", key.title = "", key.xlab = "% Methylation", key.ylab = "",
           key.par = list(cex.lab = 2.0, cex.axis = 1.5)) #Create heatmap using heatmap.2 from gplots package using percMethDML data. Use plotColors but do not scale data, label rows, or label columns. Use ColSideColors to indicate colors for low (dark) and ambient (light) pH samples. Add a legend using key, and adjust keysize. Have key display density data with density.info. Do not add a key title or y-axis label, and label x axis with key.xlab.
-mtext("Density", cex = 1.6, las = 3, adj = 0.8, padj = -29) #Manually add y-axis label for key since heatmap.2 doesn't let you change font size
+
+#dev.off()
 ```
 
 #### DML-SNP overlaps
@@ -604,13 +608,17 @@ head(percMethUniqueSNPFem) #Check that the DML matrix was created
 ```{r}
 #Create a heatmap with DML-unique SNP overlap data
 
+#pdf("figures/SNP-female-heatmap.pdf", width = 11, height = 8.5)
+par(mar = c(5, 12, 1, 1)) #Specify inner and outer margins
+
 heatmap.2(percMethUniqueSNPFem, col = rev(plotColors), scale = "none", margins = c(1,1),
           trace = "none", tracecol = "black",
           labRow = FALSE, labCol = FALSE, 
           ColSideColors = c(rep("grey10", times = 3), rep("grey90", times = 3)),
           key = TRUE, keysize = 1.8, density.info = "density", key.title = "", key.xlab = "% Methylation", key.ylab = "",
           key.par = list(cex.lab = 2.0, cex.axis = 1.5)) #Create heatmap using heatmap.2 from gplots package using percMethUniqueSNPFem data. Use plotColors but do not scale data, label rows, or label columns. Use ColSideColors to indicate colors for low (dark) and ambient (light) pH samples. Add a legend using key, and adjust keysize. Have key display density data with density.info. Do not add a key title or y-axis label, and label x axis with key.xlab.
-mtext("Density", cex = 1.6, las = 3, adj = 0.8, padj = -29) #Manually add y-axis label for key since heatmap.2 doesn't let you change font size
+
+#dev.off()
 ```
 
 #### Non-SNP DML
@@ -623,13 +631,17 @@ head(percMethUniqueDMLFem) #Confirm
 ```{r}
 #Create a heatmap with DML-unique SNP overlap data
 
+#pdf("figures/uniqueDML-female-heatmap.pdf", width = 11, height = 8.5)
+par(mar = c(5, 12, 1, 1)) #Specify inner and outer margins
+
 heatmap.2(percMethUniqueDMLFem, col = rev(plotColors), scale = "none", margins = c(1,1),
           trace = "none", tracecol = "black",
           labRow = FALSE, labCol = FALSE, 
           ColSideColors = c(rep("grey10", times = 3), rep("grey90", times = 3)),
           key = TRUE, keysize = 1.8, density.info = "density", key.title = "", key.xlab = "% Methylation", key.ylab = "",
           key.par = list(cex.lab = 2.0, cex.axis = 1.5)) #Create heatmap using heatmap.2 from gplots package using percMethUniqueDMLFem data. Use plotColors but do not scale data, label rows, or label columns. Use ColSideColors to indicate colors for low (dark) and ambient (light) pH samples. Add a legend using key, and adjust keysize. Have key display density data with density.info. Do not add a key title or y-axis label, and label x axis with key.xlab.
-mtext("Density", cex = 1.6, las = 3, adj = 0.8, padj = -29) #Manually add y-axis label for key since heatmap.2 doesn't let you change font size
+
+#dev.off()
 ```
 
 ### Indeterminate samples
@@ -658,13 +670,17 @@ head(percMethDMLInd) #Check that the DML matrix was created
 ```{r}
 #Create a heatmap with all indeterminate DML data
 
+#pdf("figures/all-ind-heatmap.pdf", width = 11, height = 8.5)
+par(mar = c(5, 12, 1, 1)) #Specify inner and outer margins
+
 heatmap.2(percMethDMLInd, col = rev(plotColors), scale = "none", margins = c(1,1),
           trace = "none", tracecol = "black",
           labRow = FALSE, labCol = FALSE, 
           ColSideColors = c(rep("grey10", times = 1), rep("grey90", times = 1)),
           key = TRUE, keysize = 1.8, density.info = "density", key.title = "", key.xlab = "% Methylation", key.ylab = "",
           key.par = list(cex.lab = 2.0, cex.axis = 1.5)) #Create heatmap using heatmap.2 from gplots package using percMethDML data. Use plotColors but do not scale data, label rows, or label columns. Use ColSideColors to indicate colors for low (dark) and ambient (light) pH samples. Add a legend using key, and adjust keysize. Have key display density data with density.info. Do not add a key title or y-axis label, and label x axis with key.xlab.
-mtext("Density", cex = 1.6, las = 3, adj = 0.8, padj = -29) #Manually add y-axis label for key since heatmap.2 doesn't let you change font size
+
+#dev.off()
 ```
 
 #### DML-SNP overlaps
@@ -695,13 +711,17 @@ head(percMethUniqueSNPInd) #Check that the DML matrix was created
 ```{r}
 #Create a heatmap with DML-unique SNP overlap data
 
+#pdf("figures/SNP-ind-heatmap.pdf", width = 11, height = 8.5)
+par(mar = c(5, 12, 1, 1)) #Specify inner and outer margins
+
 heatmap.2(percMethUniqueSNPInd, col = rev(plotColors), scale = "none", margins = c(1,1),
           trace = "none", tracecol = "black",
           labRow = FALSE, labCol = FALSE, 
           ColSideColors = c(rep("grey10", times = 1), rep("grey90", times = 1)),
           key = TRUE, keysize = 1.8, density.info = "density", key.title = "", key.xlab = "% Methylation", key.ylab = "",
           key.par = list(cex.lab = 2.0, cex.axis = 1.5)) #Create heatmap using heatmap.2 from gplots package using percMethUniqueSNPInd data. Use plotColors but do not scale data, label rows, or label columns. Use ColSideColors to indicate colors for low (dark) and ambient (light) pH samples. Add a legend using key, and adjust keysize. Have key display density data with density.info. Do not add a key title or y-axis label, and label x axis with key.xlab.
-mtext("Density", cex = 1.6, las = 3, adj = 0.8, padj = -29) #Manually add y-axis label for key since heatmap.2 doesn't let you change font size
+
+#dev.off()
 ```
 
 #### Non-SNP DML
@@ -714,13 +734,17 @@ head(percMethUniqueDMLInd) #Confirm
 ```{r}
 #Create a heatmap with DML-unique SNP overlap data
 
+#pdf("figures/uniqueDML-ind-heatmap.pdf", width = 11, height = 8.5)
+par(mar = c(5, 12, 1, 1)) #Specify inner and outer margins
+
 heatmap.2(percMethUniqueDMLInd, col = rev(plotColors), scale = "none", margins = c(1,1),
           trace = "none", tracecol = "black",
           labRow = FALSE, labCol = FALSE, 
           ColSideColors = c(rep("grey10", times = 1), rep("grey90", times = 1)),
           key = TRUE, keysize = 1.8, density.info = "density", key.title = "", key.xlab = "% Methylation", key.ylab = "",
           key.par = list(cex.lab = 2.0, cex.axis = 1.5)) #Create heatmap using heatmap.2 from gplots package using percMethUniqueDMLInd data. Use plotColors but do not scale data, label rows, or label columns. Use ColSideColors to indicate colors for low (dark) and ambient (light) pH samples. Add a legend using key, and adjust keysize. Have key display density data with density.info. Do not add a key title or y-axis label, and label x axis with key.xlab.
-mtext("Density", cex = 1.6, las = 3, adj = 0.8, padj = -29) #Manually add y-axis label for key since heatmap.2 doesn't let you change font size
+
+#dev.off()
 ```
 
-
+`heatmap.2` calls a new plot each time so I cannot easily make a multipanel figure. I will do this in InDesign or PowerPoint.
