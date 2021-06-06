@@ -37,10 +37,12 @@ require(dplyr)
 #install.packages("vegan")
 #install.packages("pheatmap")
 #install.packages("gplots")
+#install.packages("dichromat")
 
 require(vegan)
 require(pheatmap)
 require(gplots)
+require(dichromat)
 ```
 
 # Obtain session information
@@ -472,8 +474,34 @@ save.image("methylKit.RData") #Save R Data in case R crashes
 #load("methylKit.RData") #Load R Data
 ```
 
-# FIGURES
+# Figures
 
+```{bash}
+mkdir figures
+```
+
+```{r}
+plotColors <- 
+```
+
+
+```{r}
+head(sampleMetadata) #Look at sample metadata
+```
+
+## Comparative analysis
+
+`methylKit` creates PCA biplots, but I want to create a custom biplot and multiplanel figure with the PCA and correlation plot to visualize the comparative analysis results.
+
+```{r}
+allDataPCA <- PCASamples(methylationInformationFilteredCov5, obj.return = TRUE) #Run a PCA analysis on percent methylation for all samples. methylKit uses prcomp to create the PCA matrix
+summary(allDataPCA) #Look at summary statistics. The first PC explains 15.7% of variation, the second PC explains 14.8% of variation
+```
+
+
+```{r}
+
+```
 
 
 
