@@ -576,19 +576,151 @@ heatmap.2(percMethDMLFem, col = rev(plotColors), scale = "none", margins = c(1,1
 mtext("Density", cex = 1.6, las = 3, adj = 0.8, padj = -29) #Manually add y-axis label for key since heatmap.2 doesn't let you change font size
 ```
 
-#### Separate DML-SNP overlaps and non-SNP DML
+#### DML-SNP overlaps
 
 ```{r}
 uniqueSNPFem <- read.table("../10_DML-characterization/DML-pH-75-Cov5-Fem-unique-CT-SNPs.bed", header = FALSE, sep = "\t", col.names = c("chr", "start", "end", "meth.diff")) #Import overlaps between unique C/T SNPs and female DML produced with bedtools
-head(uniqueSNPFem)
+head(uniqueSNPFem) #Confirm import
 ```
 
+```{r}
+uniqueSNPPositionsFem <- rep(0, times = length(uniqueSNPFem$chr)) #Create an empty vector to store row numbers
+for (i in 1:length(uniqueSNPPositionsFem)) {
+  uniqueSNPPositionsFem[i] <- which(uniqueSNPFem$start[i] == getData(methylationInformationFilteredCov5Fem)$start)
+} #For each DML, save the row number where that DML is found in methylationInformationFilteredCov5Fem. This will be used to subset the methylBase object with DML information
+tail(uniqueSNPPositionsFem) #Confirm vector was created
+```
+
+```{r}
+uniqueSNPMatrixFem <- methylationInformationFilteredCov5Fem[uniqueSNPPositionsFem,] #Subset methylationInformationFilteredCov5Fem to only include unique SNP overlaps and save as a new methylBase object
+tail(uniqueSNPMatrixFem) #Confirm methylBase object creation
+```
+
+```{r}
+percMethUniqueSNPFem <- methylKit::percMethylation(uniqueSNPMatrixFem, rowids = TRUE) #Get percent methylation for all samples at DML. Include row IDs (chr, start, end) information
+head(percMethUniqueSNPFem) #Check that the DML matrix was created
+```
+
+```{r}
+#Create a heatmap with DML-unique SNP overlap data
+
+heatmap.2(percMethUniqueSNPFem, col = rev(plotColors), scale = "none", margins = c(1,1),
+          trace = "none", tracecol = "black",
+          labRow = FALSE, labCol = FALSE, 
+          ColSideColors = c(rep("grey10", times = 3), rep("grey90", times = 3)),
+          key = TRUE, keysize = 1.8, density.info = "density", key.title = "", key.xlab = "% Methylation", key.ylab = "",
+          key.par = list(cex.lab = 2.0, cex.axis = 1.5)) #Create heatmap using heatmap.2 from gplots package using percMethUniqueSNPFem data. Use plotColors but do not scale data, label rows, or label columns. Use ColSideColors to indicate colors for low (dark) and ambient (light) pH samples. Add a legend using key, and adjust keysize. Have key display density data with density.info. Do not add a key title or y-axis label, and label x axis with key.xlab.
+mtext("Density", cex = 1.6, las = 3, adj = 0.8, padj = -29) #Manually add y-axis label for key since heatmap.2 doesn't let you change font size
+```
 
 #### Non-SNP DML
 
-#### DML-SNP overlaps
+```{r}
+percMethUniqueDMLFem <- percMethDMLFem[which(!(rownames(percMethDMLFem) %in% rownames(percMethUniqueSNPFem))),] #Identify rownames from percMethDMLFem in percMethUniqueSNPFem (%in%), then print the opposite (!). Use which() to get row numbers for subsetting. 
+head(percMethUniqueDMLFem) #Confirm 
+```
+
+```{r}
+#Create a heatmap with DML-unique SNP overlap data
+
+heatmap.2(percMethUniqueDMLFem, col = rev(plotColors), scale = "none", margins = c(1,1),
+          trace = "none", tracecol = "black",
+          labRow = FALSE, labCol = FALSE, 
+          ColSideColors = c(rep("grey10", times = 3), rep("grey90", times = 3)),
+          key = TRUE, keysize = 1.8, density.info = "density", key.title = "", key.xlab = "% Methylation", key.ylab = "",
+          key.par = list(cex.lab = 2.0, cex.axis = 1.5)) #Create heatmap using heatmap.2 from gplots package using percMethUniqueDMLFem data. Use plotColors but do not scale data, label rows, or label columns. Use ColSideColors to indicate colors for low (dark) and ambient (light) pH samples. Add a legend using key, and adjust keysize. Have key display density data with density.info. Do not add a key title or y-axis label, and label x axis with key.xlab.
+mtext("Density", cex = 1.6, las = 3, adj = 0.8, padj = -29) #Manually add y-axis label for key since heatmap.2 doesn't let you change font size
+```
 
 ### Indeterminate samples
 
+#### Format data
+
+```{r}
+DMLPositionsInd <- rep(0, times = length(diffMethStatsTreatment100Ind$chr)) #Create an empty vector to store row numbers
+for (i in 1:length(DMLPositionsInd)) {
+  DMLPositionsInd[i] <- which(getData(diffMethStatsTreatment100Ind)$start[i] == getData(methylationInformationFilteredCov5Ind)$start)
+} #For each DML, save the row number where that DML is found in methylationInformationFilteredCov5Ind. This will be used to subset the methylBase object with DML information
+tail(DMLPositionsInd) #Confirm vector was created
+```
+
+```{r}
+DMLMatrixInd <- methylationInformationFilteredCov5Ind[DMLPositionsInd,] #Subset methylationInformationFilteredCov5Destrand to only include DML and save as a new methylBase object
+sum((DMLMatrixInd$start) == (diffMethStatsTreatment100Ind$start)) == length(diffMethStatsTreatment100Ind$start) #Confirm that start columns are identical. If they are identical, the sum of all TRUE statements should equal the length of the original methylBase object
+tail(DMLMatrixInd) #Confirm methylBase object creation
+```
+
+```{r}
+percMethDMLInd <- methylKit::percMethylation(DMLMatrixInd, rowids = TRUE) #Get percent methylation for all samples at DML. Include row IDs (chr, start, end) information
+head(percMethDMLInd) #Check that the DML matrix was created
+```
+
+```{r}
+#Create a heatmap with all indeterminate DML data
+
+heatmap.2(percMethDMLInd, col = rev(plotColors), scale = "none", margins = c(1,1),
+          trace = "none", tracecol = "black",
+          labRow = FALSE, labCol = FALSE, 
+          ColSideColors = c(rep("grey10", times = 1), rep("grey90", times = 1)),
+          key = TRUE, keysize = 1.8, density.info = "density", key.title = "", key.xlab = "% Methylation", key.ylab = "",
+          key.par = list(cex.lab = 2.0, cex.axis = 1.5)) #Create heatmap using heatmap.2 from gplots package using percMethDML data. Use plotColors but do not scale data, label rows, or label columns. Use ColSideColors to indicate colors for low (dark) and ambient (light) pH samples. Add a legend using key, and adjust keysize. Have key display density data with density.info. Do not add a key title or y-axis label, and label x axis with key.xlab.
+mtext("Density", cex = 1.6, las = 3, adj = 0.8, padj = -29) #Manually add y-axis label for key since heatmap.2 doesn't let you change font size
+```
+
+#### DML-SNP overlaps
+
+```{r}
+uniqueSNPInd <- read.table("../10_DML-characterization/DML-pH-100-Cov5-Ind-unique-CT-SNPs.bed", header = FALSE, sep = "\t", col.names = c("chr", "start", "end", "meth.diff")) #Import overlaps between unique C/T SNPs and female DML produced with bedtools
+head(uniqueSNPInd) #Confirm import
+```
+
+```{r}
+uniqueSNPPositionsInd <- rep(0, times = length(uniqueSNPInd$chr)) #Create an empty vector to store row numbers
+for (i in 1:length(uniqueSNPPositionsInd)) {
+  uniqueSNPPositionsInd[i] <- which(uniqueSNPInd$start[i] == getData(methylationInformationFilteredCov5Ind)$start)
+} #For each DML, save the row number where that DML is found in methylationInformationFilteredCov5Ind. This will be used to subset the methylBase object with DML information
+tail(uniqueSNPPositionsInd) #Confirm vector was created
+```
+
+```{r}
+uniqueSNPMatrixInd <- methylationInformationFilteredCov5Ind[uniqueSNPPositionsInd,] #Subset methylationInformationFilteredCov5Ind to only include unique SNP overlaps and save as a new methylBase object
+tail(uniqueSNPMatrixInd) #Confirm methylBase object creation
+```
+
+```{r}
+percMethUniqueSNPInd <- methylKit::percMethylation(uniqueSNPMatrixInd, rowids = TRUE) #Get percent methylation for all samples at DML. Include row IDs (chr, start, end) information
+head(percMethUniqueSNPInd) #Check that the DML matrix was created
+```
+
+```{r}
+#Create a heatmap with DML-unique SNP overlap data
+
+heatmap.2(percMethUniqueSNPInd, col = rev(plotColors), scale = "none", margins = c(1,1),
+          trace = "none", tracecol = "black",
+          labRow = FALSE, labCol = FALSE, 
+          ColSideColors = c(rep("grey10", times = 1), rep("grey90", times = 1)),
+          key = TRUE, keysize = 1.8, density.info = "density", key.title = "", key.xlab = "% Methylation", key.ylab = "",
+          key.par = list(cex.lab = 2.0, cex.axis = 1.5)) #Create heatmap using heatmap.2 from gplots package using percMethUniqueSNPInd data. Use plotColors but do not scale data, label rows, or label columns. Use ColSideColors to indicate colors for low (dark) and ambient (light) pH samples. Add a legend using key, and adjust keysize. Have key display density data with density.info. Do not add a key title or y-axis label, and label x axis with key.xlab.
+mtext("Density", cex = 1.6, las = 3, adj = 0.8, padj = -29) #Manually add y-axis label for key since heatmap.2 doesn't let you change font size
+```
+
+#### Non-SNP DML
+
+```{r}
+percMethUniqueDMLInd <- percMethDMLInd[which(!(rownames(percMethDMLInd) %in% rownames(percMethUniqueSNPInd))),] #Identify rownames from percMethDMLInd in percMethUniqueSNPInd (%in%), then print the opposite (!). Use which() to get row numbers for subsetting. 
+head(percMethUniqueDMLInd) #Confirm 
+```
+
+```{r}
+#Create a heatmap with DML-unique SNP overlap data
+
+heatmap.2(percMethUniqueDMLInd, col = rev(plotColors), scale = "none", margins = c(1,1),
+          trace = "none", tracecol = "black",
+          labRow = FALSE, labCol = FALSE, 
+          ColSideColors = c(rep("grey10", times = 1), rep("grey90", times = 1)),
+          key = TRUE, keysize = 1.8, density.info = "density", key.title = "", key.xlab = "% Methylation", key.ylab = "",
+          key.par = list(cex.lab = 2.0, cex.axis = 1.5)) #Create heatmap using heatmap.2 from gplots package using percMethUniqueDMLInd data. Use plotColors but do not scale data, label rows, or label columns. Use ColSideColors to indicate colors for low (dark) and ambient (light) pH samples. Add a legend using key, and adjust keysize. Have key display density data with density.info. Do not add a key title or y-axis label, and label x axis with key.xlab.
+mtext("Density", cex = 1.6, las = 3, adj = 0.8, padj = -29) #Manually add y-axis label for key since heatmap.2 doesn't let you change font size
+```
 
 
