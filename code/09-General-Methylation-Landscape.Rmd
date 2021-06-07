@@ -248,17 +248,19 @@ text("Genome Feature", x = 0.785, y = 0.879, cex = 1.5) #Add legend title that i
 ```{r}
 #pdf("figures/meth-landscape-fig.pdf", width = 11, height = 8.5)
 
-par(mar = c(3,5,2,1), oma = c(0, 1, 0, 11), mfrow = c(2, 1)) #Change figure boundaries
+par(mar = c(4,5,4,1), oma = c(0, 1, 0, 11), mfrow = c(2, 1)) #Change figure boundaries
 
 #Frequency distribution
 
-hist(x = cpgMethylation$meth, axes = FALSE, xlab = "", ylab = "", main = "", col = plotColors[4], xaxs = "i", yaxs = "i") #Create base plot
+hist(x = cpgMethylation$meth, axes = FALSE, xlab = "", ylab = "", main = "", col = plotColors[4], xaxs = "i", yaxs = "i", ylim = c(0, 9.5e+06)) #Create base plot
 
 axis(side = 1, col = "grey80", at = seq(from = 0, to = 100, by = 10), cex.axis = 1.2) #Add x-axis
 mtext(side = 1, text = "Methylation (%)", line = 3, cex = 1.5) #Add x-axis label
 
 axis(side = 2, col = "grey80", las = 2, labels = c("0", "3", "6", "9"), at = c(0, 3e+06, 6e+06, 9e+06), cex.axis = 1.2) #add y-axis
 mtext(side = 2, text = "Frequency (x1,000,000)", line = 2.5, cex = 1.5) #Add y-axis label
+
+mtext("A) Frequency distribution", x = -20, y = 9.3e+06, cex = 1.5, adj = 0) #Add panel title
 
 #CpG feature overlaps
 
@@ -270,6 +272,8 @@ barplot(t(t(cpgFeatureOverlapsPercents[,c(1:4)])),
 
 axis(side = 2, at = seq(0, 100, by = 10), las = 2, col = "grey80", cex.axis = 1.2) #Add y-axis
 mtext(side = 2, "% CpGs", line = 3, cex = 1.5) #Add y-axis label
+
+mtext("B) CpG overlaps with genomic features", x = -20, y = 80, cex = 1.5, adj = 0) #Add panel title
 
 par(fig = c(0, 1, 0, 1), oma = c(0, 0, 0, 0), mar = c(0, 0, 0, 0), new = TRUE) #Create new plot
 plot(0, 0, type = "n", bty = "n", xaxt = "n", yaxt = "n") #Add new plot on top of current plot
