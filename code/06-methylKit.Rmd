@@ -911,10 +911,6 @@ legend("bottomright", xpd = TRUE, inset = c(0, 0),
 #dev.off()
 ```
 
-
-## Hypothetical gene distribution
-
-
-
-
-
+```{r}
+save.image("methylKit.RData") #Save R Data in case R crashes
+```
