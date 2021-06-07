@@ -762,27 +762,79 @@ nrow(genechrCounts) #There are 10 chromosomes + extra scaffolds that were not pl
 
 ```{r}
 CGmotifs <- read.table("../../genome-feature-files/cgigas_uk_roslin_v1_fuzznuc_CGmotif.gff", sep = "\t") #Import CG motif file
-CGmotifsCounts <-as.data.frame(table(CGmotifs$V1)) #Count the number of genes/chromosome
+CGmotifsCounts <-as.data.frame(table(CGmotifs$V1)) #Count the number of CpGs/chromosome
 colnames(CGmotifsCounts) <- c("chr", "chrCpGCounts") #Rename columns
 nrow(CGmotifsCounts) #There are 10 chromosomes + extra scaffolds that were not placed into chromosomes
+head(CGmotifsCounts)
 ```
 
 ### Female samples
 
-#### Format data
-
 ```{r}
-DMLchrCounts <-as.data.frame(table(diffMethStatsTreatment75Fem$chr)) #Count the number of DML/chromosome
-colnames(DMLchrCounts) <- c("chr", "DMLCount") #Rename columns
-head(DMLchrCounts) #Confirm formatting
+DMLchrCountsFem <-as.data.frame(table(diffMethStatsTreatment75Fem$chr)) #Count the number of DML/chromosome
+colnames(DMLchrCountsFem) <- c("chr", "DMLCount") #Rename columns
+head(DMLchrCountsFem) #Confirm formatting
 ```
 
 ```{r}
-DMLchrCounts <- merge(x = DMLchrCounts, y = genechrCounts, by = "chr") #Merge by chr to get gene counts for each chr with DML
-head(DMLchrCounts)
+DMLchrCountsFem <- merge(x = DMLchrCountsFem, y = genechrCounts, by = "chr") #Merge by chr to get gene counts for each chr with DML
+DMLchrCountsFem <- merge(x = DMLchrCountsFem, y = CGmotifsCounts, by = "chr") #Merge by chr to get CpG counts for each chr with DML
+DMLchrCountsFem$DMLbyChrCpG <- (DMLchrCountsFem$DMLCount / DMLchrCountsFem$chrCpGCounts) #Normalize DML counts by number of CpGs in each chromosome
+
+write.csv(DMLchrCountsFem, "DML/female-DML-by-chr.csv", row.names = TRUE, quote = FALSE) #Save file
+```
+
+```{r}
+DMLchrCountsFem <- DMLchrCountsFem[1:10,] #Retain the first 10 linkage groups, since this is the data in chrosomomes and not unplaced scaffolds
 ```
 
 ### Indeterminate samples
+
+```{r}
+DMLchrCountsFem <-as.data.frame(table(diffMethStatsTreatment100Ind$chr)) #Count the number of DML/chromosome
+colnames(DMLchrCountsFem) <- c("chr", "DMLCount") #Rename columns
+head(DMLchrCountsFem) #Confirm formatting
+```
+
+```{r}
+DMLchrCountsFem <- merge(x = DMLchrCountsFem, y = genechrCounts, by = "chr") #Merge by chr to get gene counts for each chr with DML
+DMLchrCountsFem <- merge(x = DMLchrCountsFem, y = CGmotifsCounts, by = "chr") #Merge by chr to get CpG counts for each chr with DML
+DMLchrCountsFem$DMLbyChrCpG <- (DMLchrCountsFem$DMLCount / DMLchrCountsFem$chrCpGCounts) #Normalize DML counts by number of CpGs in each chromosome
+
+write.csv(DMLchrCountsFem, "DML/indeterminate-DML-by-chr.csv", row.names = TRUE, quote = FALSE) #Save file
+```
+
+```{r}
+DMLchrCountsFem <- DMLchrCountsFem[1:10,] #Retain the first 10 linkage groups, since this is the data in chrosomomes and not unplaced scaffolds
+```
+
+### Create plot
+
+```{r}
+par(mar = c(5,7,2,10)) #Change figure boundaries
+
+DMLbarplotFem <- barplot(as.matrix(t(DMLchrCountsFem$DMLbyChrCpG)),
+                      axes = FALSE,
+                      names.arg = c("1", "2", "3", "4", "5", "6", "7", "8", "9", "10"),
+                      xlim = c(0.7,11.5),
+                      ylim = c(0,5e-05),
+                      cex.names = 1.5,
+                      col = plotColors[4]) #Create a barplot and save as a new object. Use axes = FALSE to remove the y-axis and names.arg to set labels on the x-axis. The object contains x coordinates for bars, so xlim is set at 11.5
+mtext(side = 1, "Chromosome", line = 3, cex = 1.5) #Add x-axis label
+axis(side = 2, line = 1.5, at = seq(0, 5e-05, by = 1e-05), labels = seq(0, 5, by = 1), las = 2, col = "grey80", cex.axis = 1.2) #Add y-axis for DML counts
+mtext(side = 2, "Number DML per 10,000 CpGs", line = 5, cex = 1.5) #Add y-axis label for DML counts
+
+par(new = TRUE) #Create a new plot
+plot(x = DMLbarplotFem,
+     y = DMLchrCountsFem$geneCount,
+     type = "b",
+     axes = FALSE, xlab = "", ylab = "", xaxs = "i", yaxs = "i",
+     pch = 16, col = plotColors[1],
+     xlim = c(0,12), ylim = c(0,4500)) #Plot points and lines (type = "b") for gene count by chromosome. Use the coordinates from DMLbarplotFem (x = DMLbarplotFem) and set xlim = (0,12) so plots are lined up. Use axes = FALSE to remove both axes. Remove x and y lables (xlab = ""; ylab = ""). Set ylim = (0,4500) to account for max y-values. Use xaxs and yxaxs to remove space between axes.
+axis(side = 4, line = 1.5, at = seq(0, 6500, by = 500), las = 2, col = "grey80", cex.axis = 1.2) #Add y-axis for gene sequence counts
+mtext(side = 4, "Number of Genes", line = 6, cex = 1.5) #Add y-axis label for gene sequence counts
+```
+
 
 
 ## Hypothetical gene distribution
