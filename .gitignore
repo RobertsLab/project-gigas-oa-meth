@@ -441,3 +441,6 @@ output/11-GOterm-annotation/gigas-blast-sort.tab
 output/11-GOterm-annotation/uniprot-SP-GO.sorted
 output/11-GOterm-annotation/_blast-annot.tab
 output/11-GOterm-annotation/gigas-blast-annot.tab
+output/11-GOterm-annotation/_blast-GO-unfolded.tab
+output/11-GOterm-annotation/_intermediate.file
+output/11-GOterm-annotation/_blast-GO-unfolded.sorted
