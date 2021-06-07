@@ -791,21 +791,21 @@ DMLchrCountsFem <- DMLchrCountsFem[1:10,] #Retain the first 10 linkage groups, s
 ### Indeterminate samples
 
 ```{r}
-DMLchrCountsFem <-as.data.frame(table(diffMethStatsTreatment100Ind$chr)) #Count the number of DML/chromosome
-colnames(DMLchrCountsFem) <- c("chr", "DMLCount") #Rename columns
-head(DMLchrCountsFem) #Confirm formatting
+DMLchrCountsInd <-as.data.frame(table(diffMethStatsTreatment100Ind$chr)) #Count the number of DML/chromosome
+colnames(DMLchrCountsInd) <- c("chr", "DMLCount") #Rename columns
+head(DMLchrCountsInd) #Confirm formatting
 ```
 
 ```{r}
-DMLchrCountsFem <- merge(x = DMLchrCountsFem, y = genechrCounts, by = "chr") #Merge by chr to get gene counts for each chr with DML
-DMLchrCountsFem <- merge(x = DMLchrCountsFem, y = CGmotifsCounts, by = "chr") #Merge by chr to get CpG counts for each chr with DML
-DMLchrCountsFem$DMLbyChrCpG <- (DMLchrCountsFem$DMLCount / DMLchrCountsFem$chrCpGCounts) #Normalize DML counts by number of CpGs in each chromosome
+DMLchrCountsInd <- merge(x = DMLchrCountsInd, y = genechrCounts, by = "chr") #Merge by chr to get gene counts for each chr with DML
+DMLchrCountsInd <- merge(x = DMLchrCountsInd, y = CGmotifsCounts, by = "chr") #Merge by chr to get CpG counts for each chr with DML
+DMLchrCountsInd$DMLbyChrCpG <- (DMLchrCountsInd$DMLCount / DMLchrCountsInd$chrCpGCounts) #Normalize DML counts by number of CpGs in each chromosome
 
-write.csv(DMLchrCountsFem, "DML/indeterminate-DML-by-chr.csv", row.names = TRUE, quote = FALSE) #Save file
+write.csv(DMLchrCountsInd, "DML/indeterminate-DML-by-chr.csv", row.names = TRUE, quote = FALSE) #Save file
 ```
 
 ```{r}
-DMLchrCountsFem <- DMLchrCountsFem[1:10,] #Retain the first 10 linkage groups, since this is the data in chrosomomes and not unplaced scaffolds
+DMLchrCountsInd <- DMLchrCountsInd[1:10,] #Retain the first 10 linkage groups, since this is the data in chrosomomes and not unplaced scaffolds
 ```
 
 ### Create plot
