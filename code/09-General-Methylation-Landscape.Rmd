@@ -41,7 +41,6 @@ plotColors <- rev(RColorBrewer::brewer.pal(5, "Oranges")) #Create a color palett
 plotColors2 <- rev(RColorBrewer::brewer.pal(8, "Oranges")) #Create a color palette for the barplots. Use 5 purple shades from RColorBrewer. Reverse the order so the darkest shade is used first.
 ```
 
-
 # Frequency distribution
 
 This is a more efficient way to visualize methylated, sparsely methylated, and unmethylated CpGs.
@@ -297,6 +296,4 @@ text("Genome Feature", x = 0.785, y = -0.22, cex = 1.5) #Add legend title that i
 
 #dev.off()
 ```
-
-
 
