@@ -1,0 +1,61 @@
+---
+title: "General Methylation Landscape"
+author: "Yaamini Venkataraman"
+output: github_document
+---
+
+In this script, I'll create summary tables for genomic location information, run statistcal tests, and visualize the distribution of DML in the genome.
+
+# Prepare R Markdown file
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = "/Users/yaamini/Documents/project-gigas-oa-meth/output/10_DML-characterization/") #Set root directory
+```
+
+# Install packages
+
+```{r}
+#Packages for visualization
+
+#install.packages("dichromat")
+#install.packages("broom")
+
+require(dichromat)
+require(broom)
+```
+
+# Obtain session information
+
+```{r}
+sessionInfo()
+```
+
+# Establish color scheme
+
+```{r}
+plotColors <- rev(RColorBrewer::brewer.pal(5, "Oranges")) #Create a color palette for the barplots. Use 5 purple shades from RColorBrewer. Reverse the order so the darkest shade is used first.
+```
+
+
+### Frequency distribution
+
+```{r}
+cpgMethylation <- read.table("../09-methylation-landscape/zr3616_union-averages_5x.bedgraph", header = FALSE, sep = "\t") #Import  bedgraph with percent methylation information for all CpGs with 5x coverage in each sample
+colnames(cpgMethylation) <- c("chr", "start", "end", "meth") #Add column names
+head(cpgMethylation) #Confirm import
+```
+
+```{r}
+#pdf("figures/frequency-distribution.pdf", width = 11, height = 8.5)
+
+hist(x = cpgMethylation$meth, axes = FALSE, xlab = "", ylab = "", main = "", col = plotColors[4], xaxs = "i", yaxs = "i") #Create base plot
+
+axis(side = 1, col = "grey80", at = seq(from = 0, to = 100, by = 10), cex.axis = 1.2) #Add x-axis
+mtext(side = 1, text = "Methylation (%)", line = 3, cex = 1.5) #Add x-axis label
+
+axis(side = 2, col = "grey80", las = 2, labels = c("0", "3", "6", "9"), at = c(0, 3e+06, 6e+06, 9e+06), cex.axis = 1.2) #add y-axis
+mtext(side = 2, text = "Frequency (x1,000,000)", line = 2.5, cex = 1.5) #Add y-axis label
+
+#dev.off()
+```
