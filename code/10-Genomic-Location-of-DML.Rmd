@@ -48,7 +48,7 @@ plotColors2 <- rev(RColorBrewer::brewer.pal(8, "Oranges")) #Create a color palet
 load("../../project-gigas-oa-meth.Rdata") #Load R Data if not already loaded
 ```
 
-I will look at genomic locations of each sex-specific DML list, then create a multipanel plot for visualization.
+I will look at genomic locations of each sex-specific DML list, then create a plot for visualization.
 
 # Female samples
 
@@ -105,9 +105,68 @@ head(CpGLocationMethDMLFem) #Confirm changes
 write.csv(CpGLocationMethDMLFem, "CpG-location-statResults-Fem.txt", quote = FALSE, row.names = TRUE) #Save statistical output
 ```
 
-## Create barplot
-
 # Indeterminate samples
 
-# Create multipanel plot
+## Import file counts
 
+```{r}
+cpgFeatureOverlapsInd <- read.table("DML-pH-100-Cov5-Ind-Overlap-counts.txt", header = FALSE, sep = "\t", col.names = c("indeterminateDML", "filename")) #Import line counts
+cpgFeatureOverlapsInd <- cpgFeatureOverlapsInd[-c(2, 3, 10, 12),] #Drop extra lines
+cpgFeatureOverlapsInd <- cpgFeatureOverlapsInd[c(4, 1, 6, 8, 3, 7, 2, 5),] #Reorganize rows to match order: exon UTR, CDS, intron, upstream, downstream, lncRNA, TE, intergenic
+tail(cpgFeatureOverlapsInd) #Confirm import
+```
+
+```{r}
+cpgFeatureOverlapsInd$Meth <- cpgFeatureOverlaps$Meth #Add methylated CpG information
+rownames(cpgFeatureOverlapsInd) <- row.names(cpgFeatureOverlaps) #Add rowname information
+cpgFeatureOverlapsInd <- cpgFeatureOverlapsInd[,-2] #Drop filename column
+head(cpgFeatureOverlapsInd)
+```
+
+## Contingency test
+
+```{r}
+cpgLocationStatTestInd <- data.frame(t(cpgFeatureOverlapsInd)) #Transpose for statistical testing
+head(cpgLocationStatTestInd) #Confirm formatting
+```
+
+```{r}
+CpGLocationMethDMLInd <- data.frame() #Create empty dataframe to store chi-squared results
+for(i in 1:ncol(cpgLocationStatTestInd)) { #For each genome feature
+  MethFeature <- cpgLocationStatTestInd[1,i] #Variable for # genome feature overlaps for methylated CpGs
+  IndFeature <- cpgLocationStatTestInd[2,i] #Variable for # genome feature overlaps for indeterminate DML
+  MethNotFeature <- sum(cpgLocationStatTestInd[1,-i]) #Variable for # other CpG types for methylated CpGs
+  IndNotFeature <- sum(cpgLocationStatTestInd[2,-i]) #Variable for # other CpG types for indeterminate DML
+  ct <- matrix(c(MethFeature, IndFeature, MethNotFeature, IndNotFeature), ncol = 2) #Create contingency table
+  colnames(ct) <- c(as.character(colnames(cpgLocationStatTestInd[i])), paste0("Not", colnames(cpgLocationStatTestInd[i]))) #Assign column names: type, not type
+  rownames(ct) <- c(as.character(row.names(cpgLocationStatTestInd)[c(1,2)])) #Assign row names: methylated CpGs, indeterminate DML
+  print(ct) #Confirm table is correct
+  ctResults <- data.frame(broom::tidy(chisq.test(ct))) #Create dataframe storing chi-sq stats results. Use broom::tidy to extract results from test output
+  ctResults$GenomeFeature <- as.character(colnames(cpgLocationStatTestInd)[i]) #Add CpG type to results
+  CpGLocationMethDMLInd <- rbind(CpGLocationMethDMLInd, ctResults) #Add test statistics to master table
+}
+```
+
+```{r}
+head(CpGLocationMethDMLInd)
+```
+
+```{r}
+CpGLocationMethDMLInd$p.adj <- p.adjust(CpGLocationMethDMLInd$p.value, method = "fdr") #Correct p-value using FDR
+range(CpGLocationMethDMLInd$p.adj) #Look at range of p-values
+head(CpGLocationMethDMLInd) #Confirm changes
+```
+
+```{r}
+write.csv(CpGLocationMethDMLInd, "CpG-location-statResults-Ind.txt", quote = FALSE, row.names = TRUE) #Save statistical output
+```
+
+# Create stacked barplot
+
+```{r}
+cpgFeatureOverlapsPercentsFem <- cpgFeatureOverlapsFem #Duplicate dataframe
+for (i in 1:length(cpgFeatureOverlapsFem)) {
+  cpgFeatureOverlapsPercentsFem[,i] <- (cpgFeatureOverlapsPercentsFem[,i] / (sum(cpgFeatureOverlapsPercentsFem[,i]))) * 100
+} #Divide every entry by sum of the column and multiply by 100 to get percentages. Do not include gene information
+head(cpgFeatureOverlapsPercentsFem) #Check calculations
+```
