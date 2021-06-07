@@ -8,7 +8,7 @@
 ## Nodes
 #SBATCH --nodes=1
 ## Walltime (days-hours:minutes:seconds format)
-#SBATCH --time=3-00:00:00
+#SBATCH --time=1-05:00:00
 ## Memory per node
 #SBATCH --mem=120G
 ##turn on e-mail notification
@@ -34,12 +34,12 @@ ${blast}makeblastdb \
 -dbtype prot \
 -out /gscratch/srlab/yaaminiv/blastdbs/20210601-uniprot-sprot.blastdb
 
-# Run blastx
+# Run blastx on RNA sequences from genome file
 # Output format 6 produces a standard BLAST tab-delimited file
 ${blast}blastx \
 -db /gscratch/srlab/yaaminiv/blastdbs/20210601-uniprot-sprot.blastdb \
--query /gscratch/scrubbed/yaaminiv/data/cgigas_uk_roslin_v1_genomic-mito.fa \
--out 20210605-cgigas-roslin-mito-blastx.outfmt6 \
+-query /gscratch/scrubbed/yaaminiv/data/GCF_902806645.1_cgigas_uk_roslin_v1_rna_from_genomic.fna \
+-out 20210606-cgigas-roslin-mito-blastx.outfmt6 \
 -outfmt 6 \
 -evalue 1e-4 \
 -max_target_seqs 1 \
