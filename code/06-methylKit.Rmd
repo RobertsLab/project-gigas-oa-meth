@@ -748,3 +748,46 @@ heatmap.2(percMethUniqueDMLInd, col = rev(plotColors), scale = "none", margins =
 ```
 
 `heatmap.2` calls a new plot each time so I cannot easily make a multipanel figure. I will do this in InDesign or PowerPoint.
+
+## Chromosome distribution
+
+I want to look at how DML (those that do and do not overlap with SNPs) are distributed across chromosomes of the genome.
+
+```{r}
+geneGFF <- read.table("../../genome-feature-files/cgigas_uk_roslin_v1_gene.gff", sep = "\t") #Import gene gff file
+genechrCounts <-as.data.frame(table(geneGFF$V1)) #Count the number of genes/chromosome
+colnames(genechrCounts) <- c("chr", "geneCount") #Rename columns
+nrow(genechrCounts) #There are 10 chromosomes + extra scaffolds that were not placed into chromosomes
+```
+
+```{r}
+CGmotifs <- read.table("../../genome-feature-files/cgigas_uk_roslin_v1_fuzznuc_CGmotif.gff", sep = "\t") #Import CG motif file
+CGmotifsCounts <-as.data.frame(table(CGmotifs$V1)) #Count the number of genes/chromosome
+colnames(CGmotifsCounts) <- c("chr", "chrCpGCounts") #Rename columns
+nrow(CGmotifsCounts) #There are 10 chromosomes + extra scaffolds that were not placed into chromosomes
+```
+
+### Female samples
+
+#### Format data
+
+```{r}
+DMLchrCounts <-as.data.frame(table(diffMethStatsTreatment75Fem$chr)) #Count the number of DML/chromosome
+colnames(DMLchrCounts) <- c("chr", "DMLCount") #Rename columns
+head(DMLchrCounts) #Confirm formatting
+```
+
+```{r}
+DMLchrCounts <- merge(x = DMLchrCounts, y = genechrCounts, by = "chr") #Merge by chr to get gene counts for each chr with DML
+head(DMLchrCounts)
+```
+
+### Indeterminate samples
+
+
+## Hypothetical gene distribution
+
+
+
+
+
