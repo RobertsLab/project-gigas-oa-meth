@@ -1,0 +1,12 @@
+78	DML-pH-75-Cov5-Fem-CDS.bed
+301	DML-pH-75-Cov5-Fem-Gene-wb.bed
+287	DML-pH-75-Cov5-Fem-Gene.bed
+91	DML-pH-75-Cov5-Fem-TE.bed
+16	DML-pH-75-Cov5-Fem-downstream.bed
+20	DML-pH-75-Cov5-Fem-exonUTR.bed
+12	DML-pH-75-Cov5-Fem-intergenic.bed
+190	DML-pH-75-Cov5-Fem-intron.bed
+5	DML-pH-75-Cov5-Fem-lncRNA.bed
+64	DML-pH-75-Cov5-Fem-unique-CT-SNPs.bed
+2	DML-pH-75-Cov5-Fem-upstream.bed
+1066	total

@@ -1,0 +1,12 @@
+789	DML-pH-100-Cov5-Ind-CDS.bed
+2642	DML-pH-100-Cov5-Ind-Gene-wb.bed
+2519	DML-pH-100-Cov5-Ind-Gene.bed
+829	DML-pH-100-Cov5-Ind-TE.bed
+140	DML-pH-100-Cov5-Ind-downstream.bed
+181	DML-pH-100-Cov5-Ind-exonUTR.bed
+178	DML-pH-100-Cov5-Ind-intergenic.bed
+1552	DML-pH-100-Cov5-Ind-intron.bed
+36	DML-pH-100-Cov5-Ind-lncRNA.bed
+561	DML-pH-100-Cov5-Ind-unique-CT-SNPs.bed
+33	DML-pH-100-Cov5-Ind-upstream.bed
+9460	total
