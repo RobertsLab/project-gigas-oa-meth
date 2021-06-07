@@ -450,3 +450,6 @@ output/11-GOterm-annotation/GCF_902806645.1_cgigas_uk_roslin_v1_rna_from_genomic
 output/11-GOterm-annotation/cgigas_uk_roslin_v1_rna_from_genomic.geneIDs
 output/11-GOterm-annotation/cgigas_uk_roslin_v1_rna_from_genomic.transcriptID.geneID
 output/11-GOterm-annotation/cgigas_uk_roslin_v1_mRNA.transcriptID.geneID
+output/11-GOterm-annotation/DML-pH-75-Cov5-Fem.GeneIDs.geneOverlap
+output/11-GOterm-annotation/DML-pH-75-Cov5-Fem.GeneIDs
+output/11-GOterm-annotation/DML-pH-75-Cov5-Fem.GeneIDs.geneOverlap.transcriptIDs
