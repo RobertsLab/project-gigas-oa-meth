@@ -445,3 +445,4 @@ output/11-GOterm-annotation/_blast-GO-unfolded.tab
 output/11-GOterm-annotation/_intermediate.file
 output/11-GOterm-annotation/_blast-GO-unfolded.sorted
 output/11-GOterm-annotation/GO-GOslim.sorted
+output/11-GOterm-annotation/Blastquery-GOslim.tab
