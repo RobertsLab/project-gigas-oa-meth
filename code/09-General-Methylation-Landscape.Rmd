@@ -10,7 +10,7 @@ In this script, I'll create summary tables for genomic location information, run
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-knitr::opts_knit$set(root.dir = "/Users/yaamini/Documents/project-gigas-oa-meth/output/10_DML-characterization/") #Set root directory
+knitr::opts_knit$set(root.dir = "/Users/yaamini/Documents/project-gigas-oa-meth/output/09-methylation-landscape/") #Set root directory
 ```
 
 # Install packages
@@ -37,11 +37,12 @@ sessionInfo()
 plotColors <- rev(RColorBrewer::brewer.pal(5, "Oranges")) #Create a color palette for the barplots. Use 5 purple shades from RColorBrewer. Reverse the order so the darkest shade is used first.
 ```
 
+# Frequency distribution
 
-### Frequency distribution
+This is a more efficient way to visualize methylated, sparsely methylated, and unmethylated CpGs.
 
 ```{r}
-cpgMethylation <- read.table("../09-methylation-landscape/zr3616_union-averages_5x.bedgraph", header = FALSE, sep = "\t") #Import  bedgraph with percent methylation information for all CpGs with 5x coverage in each sample
+cpgMethylation <- read.table("zr3616_union-averages_5x.bedgraph", header = FALSE, sep = "\t") #Import  bedgraph with percent methylation information for all CpGs with 5x coverage in each sample
 colnames(cpgMethylation) <- c("chr", "start", "end", "meth") #Add column names
 head(cpgMethylation) #Confirm import
 ```
@@ -59,3 +60,130 @@ mtext(side = 2, text = "Frequency (x1,000,000)", line = 2.5, cex = 1.5) #Add y-a
 
 #dev.off()
 ```
+
+# Genomic location of methylated CpGs
+
+My goal is to 1) understand statistical differences between distribution of CG motifs and methylated CpGs in various genomic features and 2) visualize the genomic locations of these loci.
+
+## Import file counts
+
+```{r}
+exonUTROverlaps <- read.table("zr3616_5x-exonUTR-counts.txt", header = FALSE, col.names = c("counts", "filename")) #Import file with all file overlaps
+exonUTROverlaps <- exonUTROverlaps[25:27,] #Retain final rows
+head(exonUTROverlaps) #Confirm import
+```
+
+```{r}
+CDSOverlaps <- read.table("zr3616_5x-CDS-counts.txt", header = FALSE, col.names = c("counts", "filename")) #Import file with all file overlaps
+CDSOverlaps <- CDSOverlaps[25:27,] #Retain final rows
+head(CDSOverlaps) #Confirm import
+```
+
+```{r}
+intronOverlaps <- read.table("zr3616_5x-intron-counts.txt", header = FALSE, col.names = c("counts", "filename")) #Import file with all file overlaps
+intronOverlaps <- intronOverlaps[25:27,] #Retain final rows
+head(intronOverlaps) #Confirm import
+```
+
+```{r}
+upstreamOverlaps <- read.table("zr3616_5x-upstreamFlanks-counts.txt", header = FALSE, col.names = c("counts", "filename")) #Import file with all file overlaps
+upstreamOverlaps <- upstreamOverlaps[25:27,] #Retain final rows
+head(upstreamOverlaps) #Confirm import
+```
+
+```{r}
+downstreamOverlaps <- read.table("zr3616_5x-downstreamFlanks-counts.txt", header = FALSE, col.names = c("counts", "filename")) #Import file with all file overlaps
+downstreamOverlaps <- downstreamOverlaps[25:27,] #Retain final rows
+head(downstreamOverlaps) #Confirm import
+```
+```{r}
+lncRNAOverlaps <- read.table("zr3616_5x-lncRNA-counts.txt", header = FALSE, col.names = c("counts", "filename")) #Import file with all file overlaps
+lncRNAOverlaps <- lncRNAOverlaps[25:27,] #Retain final rows
+head(lncRNAOverlaps) #Confirm import
+```
+
+```{r}
+TEOverlaps <- read.table("zr3616_5x-TE-counts.txt", header = FALSE, col.names = c("counts", "filename")) #Import file with all file overlaps
+TEOverlaps <- TEOverlaps[25:27,] #Retain final rows
+head(TEOverlaps) #Confirm import
+```
+
+```{r}
+intergenicOverlaps <- read.table("zr3616_5x-intergenic-counts.txt", header = FALSE, col.names = c("counts", "filename")) #Import file with all file overlaps
+intergenicOverlaps <- intergenicOverlaps[25:27,] #Retain final rows
+head(intergenicOverlaps) #Confirm import
+```
+
+## Create summary table
+
+```{r}
+cpgFeatureOverlaps <- cbind(exonUTROverlaps,
+                            CDSOverlaps,
+                            intronOverlaps,
+                            upstreamOverlaps,
+                            downstreamOverlaps,
+                            lncRNAOverlaps,
+                            TEOverlaps,
+                            intergenicOverlaps) #Combine information from all genome features
+rownames(cpgFeatureOverlaps) <- c("Meth", "sparseMeth", "unMeth") #Assign row names
+ncol(cpgFeatureOverlaps) #Count columns
+cpgFeatureOverlaps <- cpgFeatureOverlaps[,seq(1, 16, 2)] #Keep odd-numbered columns (counts)
+colnames(cpgFeatureOverlaps) <- c("exonUTR", "CDS", "intron", "upstream", "downstream", "lncRNA", "TE", "intergenic") #Add column names
+head(cpgFeatureOverlaps) #Confirm formatting
+```
+
+```{r}
+cpgFeatureOverlaps <- as.data.frame(t(cpgFeatureOverlaps)) #Transpose so column names are row names
+cpgFeatureOverlaps$allCpGs <- c(700167, 1516641, 5221932, 592834, 549787, 454393, 5424483, 4730728) #Add CpG motif overlap information
+cpgFeatureOverlaps <- cpgFeatureOverlaps[,c(4, 1:3)] #Reorganize columns
+head(cpgFeatureOverlaps) #Confirm formatting
+```
+
+```{r}
+write.csv(cpgFeatureOverlaps, "CpG-feature-overlaps.csv", quote = FALSE, row.names = TRUE) #Save data
+```
+
+## Contingency tests
+
+### Format data
+
+```{r}
+cpgLocationStatTest <- data.frame(t(cpgFeatureOverlaps)) #Transpose for statistical testing
+cpgLocationStatTest <- cpgLocationStatTest[1:2,] #keep only allCpGs and Meth data
+head(cpgLocationStatTest) #Confirm formatting
+```
+
+### All vs. Meth
+
+```{r}
+CpGLocationAllMeth <- data.frame() #Create empty dataframe to store chi-squared results
+for(i in 1:ncol(cpgLocationStatTest)) { #For each genome feature
+  AllFeature <- cpgLocationStatTest[1,i] #Variable for # genome feature overlaps for genomic CpGs with data
+  MethFeature <- cpgLocationStatTest[2,i] #Variable for # genome feature overlaps for methylated CpGs
+  AllNotFeature <- sum(cpgLocationStatTest[1,-i]) #Variable for # other CpG types for genomic CpGs with data
+  MethNotFeature <- sum(cpgLocationStatTest[2,-i]) #Variable for # other CpG types for methylated CpGs
+  ct <- matrix(c(AllFeature, MethFeature, AllNotFeature, MethNotFeature), ncol = 2) #Create contingency table
+  colnames(ct) <- c(as.character(colnames(cpgLocationStatTest[i])), paste0("Not", colnames(cpgLocationStatTest[i]))) #Assign column names: type, not type
+  rownames(ct) <- c(as.character(row.names(cpgLocationStatTest)[c(1,2)])) #Assign row names: genomic CpGs with data, methylated CpGs
+  print(ct) #Confirm table is correct
+  ctResults <- data.frame(broom::tidy(chisq.test(ct))) #Create dataframe storing chi-sq stats results. Use broom::tidy to extract results from test output
+  ctResults$GenomeFeature <- as.character(colnames(cpgLocationStatTest)[i]) #Add CpG type to results
+  CpGLocationAllMeth <- rbind(CpGLocationAllMeth, ctResults) #Add test statistics to master table
+}
+```
+
+```{r}
+head(CpGLocationAllMeth)
+```
+
+
+```{r}
+CpGLocationAllMeth$p.adj <- p.adjust(CpGLocationAllMeth$p.value, method = "fdr") #Correct p-value using FDR
+range(CpGLocationAllMeth$p.adj) #Look at range of p-values
+head(CpGLocationAllMeth) #Confirm changes
+```
+
+```{r}
+write.csv(CpGLocationAllMeth, "CpG-location-statResults.txt", quote = FALSE, row.names = TRUE) #Save statistical output
+```
+
