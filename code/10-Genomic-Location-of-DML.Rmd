@@ -1,0 +1,113 @@
+---
+title: "Genomic Location of DML"
+author: "Yaamini Venkataraman"
+output: github_document
+---
+
+In this script, I'll create summary tables for genomic location information, run statistcal tests, and visualize the distribution of DML in the genome.
+
+# Prepare R Markdown file
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = "/Users/yaamini/Documents/project-gigas-oa-meth/output/10_DML-characterization/") #Set root directory
+```
+
+# Install packages
+
+```{r}
+#Packages for visualization
+
+#install.packages("dichromat")
+#install.packages("broom")
+
+require(dichromat)
+require(broom)
+```
+
+# Obtain session information
+
+```{r}
+sessionInfo()
+```
+
+# Establish color scheme
+
+```{r}
+plotColors <- rev(RColorBrewer::brewer.pal(5, "Oranges")) #Create a color palette for the barplots. Use 5 purple shades from RColorBrewer. Reverse the order so the darkest shade is used first.
+```
+
+```{r}
+plotColors2 <- rev(RColorBrewer::brewer.pal(8, "Oranges")) #Create a color palette for the barplots. Use 5 purple shades from RColorBrewer. Reverse the order so the darkest shade is used first.
+```
+
+# Import data
+
+```{r}
+#save.image("../../project-gigas-oa-meth.Rdata")
+load("../../project-gigas-oa-meth.Rdata") #Load R Data if not already loaded
+```
+
+I will look at genomic locations of each sex-specific DML list, then create a multipanel plot for visualization.
+
+# Female samples
+
+## Import file counts
+
+```{r}
+cpgFeatureOverlapsFem <- read.table("DML-pH-75-Cov5-Fem-Overlap-counts.txt", header = FALSE, sep = "\t", col.names = c("femaleDML", "filename")) #Import line counts
+cpgFeatureOverlapsFem <- cpgFeatureOverlapsFem[-c(2, 3, 10, 12),] #Drop extra lines
+cpgFeatureOverlapsFem <- cpgFeatureOverlapsFem[c(4, 1, 6, 8, 3, 7, 2, 5),] #Reorganize rows to match order: exon UTR, CDS, intron, upstream, downstream, lncRNA, TE, intergenic
+tail(cpgFeatureOverlapsFem) #Confirm import
+```
+
+```{r}
+cpgFeatureOverlapsFem$Meth <- cpgFeatureOverlaps$Meth #Add methylated CpG information
+rownames(cpgFeatureOverlapsFem) <- row.names(cpgFeatureOverlaps) #Add rowname information
+cpgFeatureOverlapsFem <- cpgFeatureOverlapsFem[,-2] #Drop filename column
+head(cpgFeatureOverlapsFem)
+```
+
+## Contingency test
+
+```{r}
+cpgLocationStatTestFem <- data.frame(t(cpgFeatureOverlapsFem)) #Transpose for statistical testing
+head(cpgLocationStatTestFem) #Confirm formatting
+```
+```{r}
+CpGLocationMethDMLFem <- data.frame() #Create empty dataframe to store chi-squared results
+for(i in 1:ncol(cpgLocationStatTestFem)) { #For each genome feature
+  MethFeature <- cpgLocationStatTestFem[1,i] #Variable for # genome feature overlaps for methylated CpGs
+  FemFeature <- cpgLocationStatTestFem[2,i] #Variable for # genome feature overlaps for female DML
+  MethNotFeature <- sum(cpgLocationStatTestFem[1,-i]) #Variable for # other CpG types for methylated CpGs
+  FemNotFeature <- sum(cpgLocationStatTestFem[2,-i]) #Variable for # other CpG types for female DML
+  ct <- matrix(c(MethFeature, FemFeature, MethNotFeature, FemNotFeature), ncol = 2) #Create contingency table
+  colnames(ct) <- c(as.character(colnames(cpgLocationStatTestFem[i])), paste0("Not", colnames(cpgLocationStatTestFem[i]))) #Assign column names: type, not type
+  rownames(ct) <- c(as.character(row.names(cpgLocationStatTestFem)[c(1,2)])) #Assign row names: methylated CpGs, female DML
+  print(ct) #Confirm table is correct
+  ctResults <- data.frame(broom::tidy(chisq.test(ct))) #Create dataframe storing chi-sq stats results. Use broom::tidy to extract results from test output
+  ctResults$GenomeFeature <- as.character(colnames(cpgLocationStatTestFem)[i]) #Add CpG type to results
+  CpGLocationMethDMLFem <- rbind(CpGLocationMethDMLFem, ctResults) #Add test statistics to master table
+}
+```
+
+```{r}
+head(CpGLocationMethDMLFem)
+```
+
+```{r}
+CpGLocationMethDMLFem$p.adj <- p.adjust(CpGLocationMethDMLFem$p.value, method = "fdr") #Correct p-value using FDR
+range(CpGLocationMethDMLFem$p.adj) #Look at range of p-values
+head(CpGLocationMethDMLFem) #Confirm changes
+```
+
+```{r}
+write.csv(CpGLocationMethDMLFem, "CpG-location-statResults-Fem.txt", quote = FALSE, row.names = TRUE) #Save statistical output
+```
+
+## Create barplot
+
+# Indeterminate samples
+
+# Create multipanel plot
+
