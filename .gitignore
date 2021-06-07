@@ -432,3 +432,4 @@ output/10_DML-characterization/DML-pH-75-Cov5-Fem-Gene-wb.bed
 output/10_DML-characterization/DML-pH-Cov5-Overlaps-Gene-wb.bed
 output/11_blastx/20210605-cgigas-roslin-mito-blastx.outfmt6
 genome-feature-files/ncbi-genomes-2021-05-04/GCF_902806645.1_cgigas_uk_roslin_v1_rna_from_genomic.fna
+*.Rdata
