@@ -446,3 +446,4 @@ output/11-GOterm-annotation/_intermediate.file
 output/11-GOterm-annotation/_blast-GO-unfolded.sorted
 output/11-GOterm-annotation/GO-GOslim.sorted
 output/11-GOterm-annotation/Blastquery-GOslim.tab
+output/11-GOterm-annotation/GCF_902806645.1_cgigas_uk_roslin_v1_rna_from_genomic.tab
