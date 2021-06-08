@@ -458,3 +458,7 @@ output/11-GOterm-annotation/DML-pH-100-Cov5-Ind.GeneIDs.geneOverlap
 output/11-GOterm-annotation/DML-pH-100-Cov5-Ind.GeneIDs.geneOverlap.transcriptIDs
 output/09-methylation-landscape/zr3616_union-averages_5x-Gene-wb.bed
 output/09-methylation-landscape/zr3616_union-averages_5x.bedgraph.bed
+output/11-GOterm-annotation/union-averages_5x.GeneIDs.geneOverlap
+output/11-GOterm-annotation/union-averages_5x.GeneIDs.geneOverlap.transcriptIDs
+output/11-GOterm-annotation/union-averages_5x.GeneIDs
+output/11-GOterm-annotation/union-averages_5x.GeneIDs.geneOverlap.transcriptIDs.GOAnnot
