@@ -1,0 +1,123 @@
+---
+title: "Functional Enrichment"
+author: "Yaamini Venkataraman"
+output: html_document
+---
+
+In this script, I'll create summary tables for genomic location information, run statistcal tests, and visualize the distribution of DML in the genome.
+
+# Prepare R Markdown file
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = "/Users/yaamini/Documents/project-gigas-oa-meth/output/12-functional-enrichment") #Set root directory
+```
+
+# Install packages
+
+```{r}
+require(BiocManager)
+require(topGO)
+```
+
+```{r}
+require(tidyverse)
+```
+
+# Obtain session information
+
+```{r}
+sessionInfo()
+```
+
+# Describe GO terms associated with DML
+
+Before launching into enrichment, I want to create lists of GOterms associated with female-DML for descriptive purposes.
+
+```{r}
+femaleDMLGOterms <- read.table("../11-GOterm-annotation/DML-pH-75-Cov5-Fem.GeneIDs.geneOverlap.transcriptIDs.GOAnnot", header = FALSE, sep = "\t", col.names = c("transcript", "geneID", "chr", "start", "end", "GOID", "GOterm", "GOSlim", "GOcat")) #Import list of GO term annotations for female DML
+head(femaleDMLGOterms)
+```
+
+```{r}
+femaleDMLGOtermCounts <- as.data.frame(table(femaleDMLGOterms$GOID)) #Create table with GOID and counts
+colnames(femaleDMLGOtermCounts) <- c("GOID", "Freq") #Add column names
+range(femaleDMLGOtermCounts$Freq) #Get range of GOID frequency
+nrow(femaleDMLGOtermCounts) #Number of unique GOIDs associated with female-DML
+```
+
+```{r}
+femaleDMLGOtermsBP <- femaleDMLGOterms %>% filter(., femaleDMLGOterms$GOcat == "P") #Filter biological process terms
+femaleDMLGOtermCountsBP <- as.data.frame(table(femaleDMLGOtermsBP$GOID)) #Count GOIDs
+colnames(femaleDMLGOtermCountsBP) <- c("GOID", "Freq") #Add column names
+femaleDMLGOtermCountsBP <- femaleDMLGOtermCountsBP %>% filter(femaleDMLGOtermCountsBP$Freq != 0)
+range(femaleDMLGOtermCountsBP$Freq) #Get range of GOID frequency
+nrow(femaleDMLGOtermCountsBP) #Number of unique GOIDs associated with female-DML
+```
+
+# Gene enrichment with `topGO`
+
+Following protocol from [Chandra Rajan et al. 2021](https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.15675#support-information-section). Script found [here](https://onlinelibrary-wiley-com.offcampus.lib.washington.edu/action/downloadSupplement?doi=10.1111%2Fgcb.15675&file=gcb15675-sup-0002-FileS2.txt).
+
+## Load data for gene enrichment
+
+```{r}
+geneID2GO <- readMappings(file = "../11-GOterm-annotation/geneid2go-union5x.tab") #Loading the GO annotations and GeneIDs. Each line has one transcript ID and all associated GOterms
+str(head(geneID2GO)) #Confirm file structure
+```
+
+```{r}
+geneNames <- names(geneID2GO) #Extract names to use as gene universe
+head(geneNames)
+```
+
+I'm using the list of genes with DML as my list of interest. 
+
+```{r}
+femaleGenes <- femaleDMLGOterms$transcript #Extract transcript ID
+femaleGeneList <- factor(as.integer(geneNames %in% femaleGenes))
+names(femaleGeneList) <- femaleGenes
+str(femaleGeneList)
+```
+
+## Biological processes
+
+```{r}
+femaleGOdataBP <- new("topGOdata", ontology = "BP", allGenes = femaleGeneList,
+                      annot = annFUN.gene2GO, gene2GO = geneID2GO) #Create biological process topGO object
+femaleGOdataBP #Get summary of object
+```
+
+Available genes have annotations, but feasible ones are linked to the GO hierarchy that topGO uses (I think...see [this link](https://avrilomics.blogspot.com/2015/07/using-topgo-to-test-for-go-term.html)).
+
+```{r}
+test.stat <- new("classicCount", testStatistic = GOFisherTest, name = "Fisher test")
+resultFisher.femaleBP <- getSigGroups(femaleGOdataBP, test.stat)
+resultFisher.femaleBP
+```
+
+## Cellular components
+
+```{r}
+femaleGOdataCC <- new("topGOdata", ontology = "CC", allGenes = femaleGeneList,
+                      annot = annFUN.gene2GO, gene2GO = geneID2GO) #Create biological process topGO object
+femaleGOdataCC #Get summary of object
+```
+
+```{r}
+resultFisher.femaleCC <- getSigGroups(femaleGOdataCC, test.stat)
+resultFisher.femaleCC
+```
+
+## Molecular function
+
+```{r}
+femaleGOdataMF <- new("topGOdata", ontology = "MF", allGenes = femaleGeneList,
+                      annot = annFUN.gene2GO, gene2GO = geneID2GO) #Create biological process topGO object
+femaleGOdataMF #Get summary of object
+```
+
+```{r}
+resultFisher.femaleMF <- getSigGroups(femaleGOdataMF, test.stat) #Extract significant GOterms using Fisher exact test
+resultFisher.femaleMF #Get results summary
+```
