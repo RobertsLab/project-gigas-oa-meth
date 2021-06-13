@@ -465,3 +465,7 @@ output/11-GOterm-annotation/union-averages_5x.GeneIDs.geneOverlap.transcriptIDs.
 output/11-GOterm-annotation/union-averages_5x.transcriptIDs.unique
 output/11-GOterm-annotation/geneid2go-union5x.tab
 output/11-GOterm-annotation/geneid2go.tab
+genome-feature-files/ncbi-genomes-2021-05-04/GCF_902806645.1_cgigas_uk_roslin_v1_rna_from_genomic.tab
+output/11-GOterm-annotation/cgigas_uk_roslin_v1_rna_from_genomic_annot.transcript.tab
+output/11-GOterm-annotation/cgigas_uk_roslin_v1_rna_from_genomic_annotation.tab
+output/11-GOterm-annotation/cgigas_uk_roslin_v1_rna_from_genomic_transcript.tab
