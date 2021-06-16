@@ -97,6 +97,40 @@ save.image("methylKit.RData")
 
 # Differentially methylated loci
 
+## All samples
+
+### Create covariate matrix
+
+covariateMetadataAll <- data.frame("stage" = c("2", "0", "1", "1",
+                                               "0", "1", "2", "3"))
+
+### Identify DML
+
+differentialMethylationStatsTreatmentAll <- methylKit::calculateDiffMeth(methylationInformationFilteredCov5, covariates = covariateMetadataAll, overdispersion = "MN", test = "Chisq")
+head(differentialMethylationStatsTreatmentAll)
+
+save.image("methylKit.RData")
+
+diffMethStatsTreatment25All <- methylKit::getMethylDiff(differentialMethylationStatsTreatmentAll, difference = 25, qvalue = 0.01)
+length(diffMethStatsTreatment25All$chr) #12826 DML
+head(diffMethStatsTreatment25All)
+
+diffMethStatsTreatment50All <- methylKit::getMethylDiff(differentialMethylationStatsTreatmentAll, difference = 50, qvalue = 0.01)
+length(diffMethStatsTreatment50All$chr) #1599 DML
+head(diffMethStatsTreatment50All)
+
+diffMethStatsTreatment75All <- methylKit::getMethylDiff(differentialMethylationStatsTreatmentAll, difference = 75, qvalue = 0.01)
+length(diffMethStatsTreatment75All$chr) #59 DML
+head(diffMethStatsTreatment75All)
+
+save.image("methylKit.RData")
+
+write.csv(diffMethStatsTreatment25All, "DML/DML-pH-25-Cov5-All.csv")
+write.csv(diffMethStatsTreatment50All, "DML/DML-pH-50-Cov5-All.csv")
+write.csv(diffMethStatsTreatment75All, "DML/DML-pH-75-Cov5-All.csv")
+
+save.image("methylKit.RData")
+
 ## Female samples
 
 methylationInformationFilteredCov5Fem <- methylKit::reorganize(methylationInformationFilteredCov5,
@@ -195,4 +229,4 @@ write.csv(diffMethStatsTreatment50Ind, "DML/DML-pH-50-Cov5-Ind.csv")
 write.csv(diffMethStatsTreatment75Ind, "DML/DML-pH-75-Cov5-Ind.csv")
 write.csv(diffMethStatsTreatment100Ind, "DML/DML-pH-100-Cov5-Ind.csv")
 
-save.image("methylKit.RData")
+save.image("methylKit2.RData")
