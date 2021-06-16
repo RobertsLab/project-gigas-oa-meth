@@ -27,8 +27,6 @@ require(devtools) #Load devtools
 require(methylKit) #Load methylkit
 #install.packages("tidyverse")
 require(tidyverse)
-#install.packages("dplyr")
-require(dplyr)
 ```
 
 ```{r}
@@ -307,6 +305,12 @@ head(diffMethStatsTreatment25Fem)
 ```
 
 ```{r}
+diffMethStatsTreatment50Fem <- methylKit::getMethylDiff(differentialMethylationStatsTreatmentFem2, difference = 50, qvalue = 0.01)
+length(diffMethStatsTreatment50Fem$chr) #3709 DML
+head(diffMethStatsTreatment50Fem)
+```
+
+```{r}
 diffMethStatsTreatment75Fem <- methylKit::getMethylDiff(differentialMethylationStatsTreatmentFem2, difference = 75, qvalue = 0.01)
 length(diffMethStatsTreatment75Fem$chr) #315 DML
 head(diffMethStatsTreatment75Fem)
@@ -532,11 +536,10 @@ head(sampleMetadata) #Look at sample metadata
 
 ## Comparative analysis
 
-`methylKit` creates PCA biplots, but I want to create a custom biplot and multiplanel figure with the PCA and ANOTHER FIGURE to visualize the comparative analysis results.
+`methylKit` creates PCA biplots, but I want modify the PCA to visualize the comparative analysis results.
 
-### Modify global PCA
 
-The correlation plot is difficult to modify, so I just need to modify the PCA.
+The correlation plot is difficult to modify, so I just need to .
 
 ```{r}
 allDataPCA <- PCASamples(methylationInformationFilteredCov5, obj.return = TRUE) #Run a PCA analysis on percent methylation for all samples. methylKit uses prcomp to create the PCA matrix
@@ -549,7 +552,11 @@ summary(allDataPCA) #Look at summary statistics. The first PC explains 15.7% of 
 par(mar = c(5, 5, 1, 1)) #Specify inner and outer margins
 
 fig.allDataPCA <- ordiplot(allDataPCA, choices = c(1, 2), type = "none", display = "sites", cex = 0.5, xlab = "", ylab = "", xaxt = "n", yaxt = "n") #Use ordiplot to create base biplot. Do not add any points
-points(fig.allDataPCA, "sites", col = c(rep(plotColors[2], times = 4), rep(plotColors[4], times = 4)), pch = c(rep(16, times = 4), rep(17, times = 4)), cex = 3) #Add each sample. Darker samples are low pH, lighter samples are ambient
+points(fig.allDataPCA, "sites", 
+       col = c(rep(plotColors[2], times = 4), rep(plotColors[4], times = 4)), 
+       pch = c(15, 16, 17, 17,
+               16, 17, 15, 18), 
+       cex = 3) #Add each sample. Darker samples are low pH, lighter samples are ambient
 
 #Add multiple white boxes on top of the default black box to manually change the color
 box(col = "white")
@@ -573,9 +580,9 @@ axis(side =  2, labels = TRUE, col = "grey80", cex.axis = 1.7) #Add y-axis
 mtext(side = 2, text = "PC 2 (14.8%)", line = 3, cex = 1.5) #Add y-axis label
 
 legend("bottomright", 
-       pch = c(16, 17), 
-       legend = c("Low pH", "Ambient pH"), 
-       col = c(plotColors[2], plotColors[4]), 
+       pch = c(16, 16, 16, 17, 15, 18), 
+       legend = c("Low pH", "Ambient pH", "0", "1", "2", "3"), 
+       col = c(plotColors[2], plotColors[4], rep("grey20", times = 4)), 
        cex = 1.7, bty = "n") #Add a legend with information about ambient and elevated samples
 
 #dev.off()
