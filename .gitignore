@@ -469,3 +469,13 @@ genome-feature-files/ncbi-genomes-2021-05-04/GCF_902806645.1_cgigas_uk_roslin_v1
 output/11-GOterm-annotation/cgigas_uk_roslin_v1_rna_from_genomic_annot.transcript.tab
 output/11-GOterm-annotation/cgigas_uk_roslin_v1_rna_from_genomic_annotation.tab
 output/11-GOterm-annotation/cgigas_uk_roslin_v1_rna_from_genomic_transcript.tab
+output/10_DML-characterization/DML-pH-50-Cov5-All-CDS.bed
+output/10_DML-characterization/DML-pH-50-Cov5-All-downstream.bed
+output/10_DML-characterization/DML-pH-50-Cov5-All-exonUTR.bed
+output/10_DML-characterization/DML-pH-50-Cov5-All-Gene-wb.bed
+output/10_DML-characterization/DML-pH-50-Cov5-All-Gene.bed
+output/10_DML-characterization/DML-pH-50-Cov5-All-intergenic.bed
+output/10_DML-characterization/DML-pH-50-Cov5-All-intron.bed
+output/10_DML-characterization/DML-pH-50-Cov5-All-lncRNA.bed
+output/10_DML-characterization/DML-pH-50-Cov5-All-TE.bed
+output/10_DML-characterization/DML-pH-50-Cov5-All-upstream.bed
