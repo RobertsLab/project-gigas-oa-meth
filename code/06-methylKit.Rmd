@@ -947,7 +947,58 @@ nrow(CGmotifsCounts) #There are 10 chromosomes + extra scaffolds that were not p
 head(CGmotifsCounts)
 ```
 
-### Female samples
+### All samples
+
+```{r}
+DMLchrCountsAll <-as.data.frame(table(diffMethStatsTreatment50All$chr)) #Count the number of DML/chromosome
+colnames(DMLchrCountsAll) <- c("chr", "DMLCount") #Rename columns
+head(DMLchrCountsAll) #Confirm formatting
+```
+
+```{r}
+DMLchrCountsAll <- merge(x = DMLchrCountsAll, y = genechrCounts, by = "chr") #Merge by chr to get gene counts for each chr with DML
+DMLchrCountsAll <- merge(x = DMLchrCountsAll, y = CGmotifsCounts, by = "chr") #Merge by chr to get CpG counts for each chr with DML
+DMLchrCountsAll$DMLbyChrCpG <- (DMLchrCountsAll$DMLCount / DMLchrCountsAll$chrCpGCounts) #Normalize DML counts by number of CpGs in each chromosome
+
+write.csv(DMLchrCountsAll, "DML/All-DML-by-chr.csv", row.names = TRUE, quote = FALSE) #Save file
+```
+
+```{r}
+DMLchrCountsAll <- DMLchrCountsAll[1:10,] #Retain the first 10 linkage groups, since this is the data in chrosomomes and not unplaced scaffolds
+```
+
+```{r}
+#pdf("figures/all-DML-chr-distribution.pdf", width = 11, height = 8.5)
+
+par(mar = c(5,7,2,10)) #Change figure boundaries
+
+DMLbarplotAll <- barplot(as.matrix(t(DMLchrCountsAll$DMLbyChrCpG)),
+                      axes = FALSE,
+                      names.arg = c("1", "2", "3", "4", "5", "6", "7", "8", "9", "10"),
+                      xlim = c(0.7,11.5),
+                      ylim = c(0,3e-04),
+                      cex.names = 1.5,
+                      col = plotColors[3]) #Create a barplot and save as a new object. Use axes = FALSE to remove the y-axis and names.arg to set labels on the x-axis. The object contains x coordinates for bars, so xlim is set at 11.5
+mtext(side = 1, "Chromosome", line = 3, cex = 1.5) #Add x-axis label
+axis(side = 2, line = 1.5, at = seq(0, 3e-04, by = 1e-04), labels = seq(0, 3, by = 1), las = 2, col = "grey80", cex.axis = 1.2) #Add y-axis for DML counts
+mtext(side = 2, "Number DML per 10,000 CpGs", line = 5, cex = 1.5) #Add y-axis label for DML counts
+
+par(new = TRUE) #Create a new plot
+plot(x = DMLbarplotAll,
+     y = DMLchrCountsAll$geneCount,
+     type = "b",
+     axes = FALSE, xlab = "", ylab = "", xaxs = "i", yaxs = "i",
+     pch = 16, col = plotColors[1],
+     xlim = c(0,12), ylim = c(0,4500)) #Plot points and lines (type = "b") for gene count by chromosome. Use the coordinates from DMLbarplotAll (x = DMLbarplotAll) and set xlim = (0,12) so plots are lined up. Use axes = FALSE to remove both axes. Remove x and y lables (xlab = ""; ylab = ""). Set ylim = (0,4500) to account for max y-values. Use xaxs and yxaxs to remove space between axes.
+axis(side = 4, line = 1.5, at = seq(0, 6500, by = 500), las = 2, col = "grey80", cex.axis = 1.2) #Add y-axis for gene sequence counts
+mtext(side = 4, "Number of Genes", line = 6, cex = 1.5) #Add y-axis label for gene sequence counts
+
+#dev.off()
+```
+
+### Sex-specific information
+
+#### Female samples
 
 ```{r}
 DMLchrCountsFem <-as.data.frame(table(diffMethStatsTreatment75Fem$chr)) #Count the number of DML/chromosome
@@ -992,7 +1043,7 @@ axis(side = 4, line = 1.5, at = seq(0, 6500, by = 500), las = 2, col = "grey80",
 mtext(side = 4, "Number of Genes", line = 6, cex = 1.5) #Add y-axis label for gene sequence counts
 ```
 
-### Indeterminate samples
+#### Indeterminate samples
 
 ```{r}
 DMLchrCountsInd <-as.data.frame(table(diffMethStatsTreatment100Ind$chr)) #Count the number of DML/chromosome
@@ -1039,7 +1090,7 @@ axis(side = 4, line = 1.5, at = seq(0, 6500, by = 500), las = 2, col = "grey80",
 mtext(side = 4, "Number of Genes", line = 6, cex = 1.5) #Add y-axis label for gene sequence counts
 ```
 
-### Create plot
+#### Create plot
 
 I will format the data to create a stacked barplot as the base, then add a secondary axis for number of genes.
 
