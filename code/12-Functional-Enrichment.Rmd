@@ -32,7 +32,32 @@ sessionInfo()
 
 # Describe GO terms associated with DML
 
-Before launching into enrichment, I want to create lists of GOterms associated with female-DML for descriptive purposes.
+Before launching into enrichment, I want to create lists of GOterms associated with DML for descriptive purposes.
+
+## All DML
+
+```{r}
+allDMLGOterms <- read.table("../11-GOterm-annotation/DML-pH-50-Cov5-All.GeneIDs.geneOverlap.transcriptIDs.GOAnnot", header = FALSE, sep = "\t", col.names = c("transcript", "geneID", "chr", "start", "end", "GOID", "GOterm", "GOSlim", "GOcat")) #Import list of GO term annotations for all DML
+head(allDMLGOterms)
+```
+
+```{r}
+allDMLGOtermCounts <- as.data.frame(table(allDMLGOterms$GOID)) #Create table with GOID and counts
+colnames(allDMLGOtermCounts) <- c("GOID", "Freq") #Add column names
+range(allDMLGOtermCounts$Freq) #Get range of GOID frequency
+nrow(allDMLGOtermCounts) #Number of unique GOIDs associated with all-DML
+```
+
+```{r}
+allDMLGOtermsBP <- allDMLGOterms %>% filter(., allDMLGOterms$GOcat == "P") #Filter biological process terms
+allDMLGOtermCountsBP <- as.data.frame(table(allDMLGOtermsBP$GOID)) #Count GOIDs
+colnames(allDMLGOtermCountsBP) <- c("GOID", "Freq") #Add column names
+allDMLGOtermCountsBP <- allDMLGOtermCountsBP %>% filter(allDMLGOtermCountsBP$Freq != 0)
+range(allDMLGOtermCountsBP$Freq) #Get range of GOID frequency
+nrow(allDMLGOtermCountsBP) #Number of unique GOIDs associated with all-DML
+```
+
+## Female-DML
 
 ```{r}
 femaleDMLGOterms <- read.table("../11-GOterm-annotation/DML-pH-75-Cov5-Fem.GeneIDs.geneOverlap.transcriptIDs.GOAnnot", header = FALSE, sep = "\t", col.names = c("transcript", "geneID", "chr", "start", "end", "GOID", "GOterm", "GOSlim", "GOcat")) #Import list of GO term annotations for female DML
@@ -71,7 +96,91 @@ geneNames <- names(geneID2GO) #Extract names to use as gene universe
 head(geneNames)
 ```
 
-I'm using the list of genes with DML as my list of interest. 
+## All DML
+
+```{r}
+allGenes <- allDMLGOterms$transcript #Extract transcript ID
+allGeneList <- factor(as.integer(geneNames %in% allGenes))
+names(allGeneList) <- allGenes
+str(allGeneList)
+```
+
+### Biological processes
+
+```{r}
+allGOdataBP <- new("topGOdata", ontology = "BP", allGenes = allGeneList,
+                      annot = annFUN.gene2GO, gene2GO = geneID2GO) #Create biological process topGO object
+allGOdataBP #Get summary of object
+```
+
+Available genes have annotations, but feasible ones are linked to the GO hierarchy that topGO uses (I think...see [this link](https://avrilomics.blogspot.com/2015/07/using-topgo-to-test-for-go-term.html)).
+
+```{r}
+test.stat <- new("classicCount", testStatistic = GOFisherTest, name = "Fisher test")
+resultFisher.allBP <- getSigGroups(allGOdataBP, test.stat)
+resultFisher.allBP
+```
+
+```{r}
+pvalFis.allBP <- score(resultFisher.allBP) #Extract p-values
+head(pvalFis.allBP)
+hist(pvalFis.allBP, 50, xlab = "p-values") #Plot histogram of p-values
+```
+
+
+```{r}
+allRes.allBP <- GenTable(allGOdataBP, classic = resultFisher.allBP, ranksOf = "classic", orderBy = "classic", topNodes = length(pvalFis.allBP)) #Create a statistical results table with statistical test results. Order by p-value (classic), and include all results (topNodes)
+head(allRes.allBP)
+```
+
+```{r}
+write.csv(allRes.allBP, "all-BP-FisherTestResults.csv", quote = FALSE, row.names = FALSE) #Save dataframe
+```
+
+### Cellular components
+
+```{r}
+allGOdataCC <- new("topGOdata", ontology = "CC", allGenes = allGeneList,
+                      annot = annFUN.gene2GO, gene2GO = geneID2GO) #Create biological process topGO object
+allGOdataCC #Get summary of object
+```
+
+```{r}
+resultFisher.allCC <- getSigGroups(allGOdataCC, test.stat)
+resultFisher.allCC
+```
+
+### Molecular function
+
+```{r}
+allGOdataMF <- new("topGOdata", ontology = "MF", allGenes = allGeneList,
+                      annot = annFUN.gene2GO, gene2GO = geneID2GO) #Create biological process topGO object
+allGOdataMF #Get summary of object
+```
+
+```{r}
+resultFisher.allMF <- getSigGroups(allGOdataMF, test.stat) #Extract significant GOterms using Fisher exact test
+resultFisher.allMF #Get results summary
+```
+
+
+```{r}
+pvalFis.allMF <- score(resultFisher.allMF) #Extract p-values
+head(pvalFis.allMF)
+hist(pvalFis.allMF, 50, xlab = "p-values") #Plot histogram of p-values
+```
+
+
+```{r}
+allRes.allMF <- GenTable(allGOdataMF, classic = resultFisher.allMF, ranksOf = "classic", orderBy = "classic", topNodes = length(pvalFis.allMF)) #Create a statistical results table with statistical test results. Order by p-value (classic), and include all results (topNodes)
+head(allRes.allMF)
+```
+
+```{r}
+write.csv(allRes.allMF, "all-MF-FisherTestResults.csv", quote = FALSE, row.names = FALSE) #Save dataframe
+```
+
+## Female-DML
 
 ```{r}
 femaleGenes <- femaleDMLGOterms$transcript #Extract transcript ID
@@ -80,7 +189,7 @@ names(femaleGeneList) <- femaleGenes
 str(femaleGeneList)
 ```
 
-## Biological processes
+### Biological processes
 
 ```{r}
 femaleGOdataBP <- new("topGOdata", ontology = "BP", allGenes = femaleGeneList,
@@ -96,7 +205,7 @@ resultFisher.femaleBP <- getSigGroups(femaleGOdataBP, test.stat)
 resultFisher.femaleBP
 ```
 
-## Cellular components
+### Cellular components
 
 ```{r}
 femaleGOdataCC <- new("topGOdata", ontology = "CC", allGenes = femaleGeneList,
@@ -109,7 +218,7 @@ resultFisher.femaleCC <- getSigGroups(femaleGOdataCC, test.stat)
 resultFisher.femaleCC
 ```
 
-## Molecular function
+### Molecular function
 
 ```{r}
 femaleGOdataMF <- new("topGOdata", ontology = "MF", allGenes = femaleGeneList,
