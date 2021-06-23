@@ -480,3 +480,6 @@ output/10_DML-characterization/DML-pH-50-Cov5-All-lncRNA.bed
 output/10_DML-characterization/DML-pH-50-Cov5-All-TE.bed
 output/10_DML-characterization/DML-pH-50-Cov5-All-upstream.bed
 output/10_DML-characterization/DML-pH-50-Cov5-All-unique-CT-SNPs.bed
+output/11-GOterm-annotation/DML-pH-50-Cov5-All.GeneIDs
+output/11-GOterm-annotation/DML-pH-50-Cov5-All.GeneIDs.geneOverlap
+output/11-GOterm-annotation/DML-pH-50-Cov5-All.GeneIDs.geneOverlap.transcriptIDs
