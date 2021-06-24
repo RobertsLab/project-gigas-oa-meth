@@ -57,6 +57,10 @@ range(allDMLGOtermCountsBP$Freq) #Get range of GOID frequency
 nrow(allDMLGOtermCountsBP) #Number of unique GOIDs associated with all-DML
 ```
 
+```{r}
+write.csv(allDMLGOtermCountsBP, "pH-BP-GOterms.csv", quote = FALSE, row.names = FALSE)
+```
+
 ## Female-DML
 
 ```{r}
