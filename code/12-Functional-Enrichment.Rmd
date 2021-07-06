@@ -159,6 +159,14 @@ head(sigRes.allBPAnnot) #Confirm formatting
 write.csv(sigRes.allBPAnnot, "all-BP-EnrichedGO-DML-withTranscript.csv", quote = FALSE, row.names = FALSE) #Save dataframe
 ```
 
+```{r}
+sigRes.allBPAnnotnoT <- unique(sigRes.allBPAnnot[,-3]) #Drop transcript column and keep only unique rows
+head(sigRes.allBPAnnotnoT) #Confirm formatting
+```
+
+```{r}
+write.csv(sigRes.allBPAnnotnoT, "all-BP-EnrichedGO-DML.csv", quote = FALSE, row.names = FALSE) #Save dataframe
+```
 
 ### Cellular components
 
