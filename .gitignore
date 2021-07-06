@@ -1,4 +1,3 @@
-
 .Rproj.user/A60899EE/sources/prop/9F138F24
 .Rproj.user/A60899EE/sources/prop/INDEX
 .Rproj.user/A60899EE/sources/s-D6CF6492/FD3FA68D
@@ -483,3 +482,4 @@ output/10_DML-characterization/DML-pH-50-Cov5-All-unique-CT-SNPs.bed
 output/11-GOterm-annotation/DML-pH-50-Cov5-All.GeneIDs
 output/11-GOterm-annotation/DML-pH-50-Cov5-All.GeneIDs.geneOverlap
 output/11-GOterm-annotation/DML-pH-50-Cov5-All.GeneIDs.geneOverlap.transcriptIDs
+.Rhistory
