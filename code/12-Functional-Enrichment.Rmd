@@ -4,7 +4,7 @@ author: "Yaamini Venkataraman"
 output: html_document
 ---
 
-In this script, I'll create summary tables for genomic location information, run statistcal tests, and visualize the distribution of DML in the genome.
+In this script, I'll characterize general patterns of GOterms associated with genic DML, perform a functional enrichment with `topGO`, then visualize enrichment results with `simplifyEnrichment`.
 
 # Prepare R Markdown file
 
@@ -17,7 +17,13 @@ knitr::opts_knit$set(root.dir = "/Users/yaamini/Documents/project-gigas-oa-meth/
 
 ```{r}
 require(BiocManager)
+BiocManager::install("topGO")
+BiocManager::install("simplifyEnrichment") #Needs newest R Version (4.1.0)
+```
+
+```{r}
 require(topGO)
+require(simplifyEnrichment)
 ```
 
 ```{r}
@@ -293,3 +299,9 @@ femaleGOdataMF #Get summary of object
 resultFisher.femaleMF <- getSigGroups(femaleGOdataMF, test.stat) #Extract significant GOterms using Fisher exact test
 resultFisher.femaleMF #Get results summary
 ```
+
+# Figures
+
+I will use `simplifyEnrichment` to create heatmaps that cluster GO terms by semantic similarity.
+
+
