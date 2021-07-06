@@ -331,9 +331,28 @@ head(dfBP) #Dataframe with GOIDs, GOterms, and cluster
 sort(table(dfBP$cluster)) #Obtain size of clusters
 ```
 
-
-
 ## Molecular function
 
-## Multipanel plot
+```{r}
+matMF <- GO_similarity(go_id = sigRes.allMF$GOID, ont = "MF") #Calculate the semantic similarity matrix using the Rel method (default)
+```
+
+```{r}
+pdf("figures/simplifyEnrichment-MF.pdf", width = 11, height = 8.5) #Save figure
+
+simplifyGO(matMF,
+           column_title = "", col = rev(plotColors), fontsize_range = c(10,40),
+           word_cloud_grob_param = list(col = "black", max_width = 25)) #Plot GOterms based on semantic similarity. Do not include a column title. Set colors to be plot colors, and set fontsize to range from 10 to 40. Pass arguments to word_cloud_grob_param to dictate the colors of the words and maximum width
+
+dev.off()
+```
+
+```{r}
+dfMF <- simplifyGO(matMF, plot = FALSE) #Cluster GOterms by semantic similarity
+head(dfMF) #Dataframe with GOIDs, GOterms, and cluster
+sort(table(dfMF$cluster)) #Obtain size of clusters
+```
+
+Since the function calls a new plot each time, I will create a multipanel plot with InDesign.
+
 
