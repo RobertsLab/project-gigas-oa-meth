@@ -10,7 +10,7 @@ In this script, I'll characterize general patterns of GOterms associated with ge
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-knitr::opts_knit$set(root.dir = "/Users/yaamini/Documents/project-gigas-oa-meth/output/12-functional-enrichment") #Set root directory
+knitr::opts_knit$set(root.dir = "/Users/yaaminivenkataraman/Documents/project-gigas-oa-meth/output/12-functional-enrichment") #Set root directory
 ```
 
 # Install packages
@@ -304,4 +304,36 @@ resultFisher.femaleMF #Get results summary
 
 I will use `simplifyEnrichment` to create heatmaps that cluster GO terms by semantic similarity.
 
+```{bash}
+mkdir figures
+```
+
+
+## Biological processes
+
+```{r}
+matBP <- GO_similarity(go_id = sigRes.allBP$GOID, ont = "BP") #Calculate the semantic similarity matrix using the Rel method (default)
+```
+
+```{r}
+pdf("figures/simplifyEnrichment-BP.pdf", width = 11, height = 8.5) #Save figure
+
+simplifyGO(matBP,
+           column_title = "", col = rev(plotColors), fontsize_range = c(10,40),
+           word_cloud_grob_param = list(col = "black", max_width = 25)) #Plot GOterms based on semantic similarity. Do not include a column title. Set colors to be plot colors, and set fontsize to range from 10 to 40. Pass arguments to word_cloud_grob_param to dictate the colors of the words and maximum width
+
+dev.off()
+```
+
+```{r}
+dfBP <- simplifyGO(matBP, plot = FALSE) #Cluster GOterms by semantic similarity
+head(dfBP) #Dataframe with GOIDs, GOterms, and cluster
+sort(table(dfBP$cluster)) #Obtain size of clusters
+```
+
+
+
+## Molecular function
+
+## Multipanel plot
 
