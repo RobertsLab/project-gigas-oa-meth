@@ -352,7 +352,3 @@ dfMF <- simplifyGO(matMF, plot = FALSE) #Cluster GOterms by semantic similarity
 head(dfMF) #Dataframe with GOIDs, GOterms, and cluster
 sort(table(dfMF$cluster)) #Obtain size of clusters
 ```
-
-Since the function calls a new plot each time, I will create a multipanel plot with InDesign.
-
-
