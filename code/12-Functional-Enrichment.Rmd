@@ -141,7 +141,7 @@ head(allRes.allBP)
 write.csv(allRes.allBP, "all-BP-FisherTestResults.csv", quote = FALSE, row.names = FALSE) #Save dataframe
 ```
 
-#### Match with general annotation information
+#### Match enriched GOterms with general annotation information
 
 ```{r}
 sigRes.allBP <- allRes.allBP[1:35,c(1, 6)] #Filter significantly enriched GOterms, only keep GOID and p-value
@@ -209,6 +209,38 @@ head(allRes.allMF)
 
 ```{r}
 write.csv(allRes.allMF, "all-MF-FisherTestResults.csv", quote = FALSE, row.names = FALSE) #Save dataframe
+```
+
+#### Match with general annotation information
+
+```{r}
+sigRes.allMF <- allRes.allMF[1:15,c(1, 6)] #Filter significantly enriched GOterms, only keep GOID and p-value
+colnames(sigRes.allMF) <- c("GOID", "p.value") #Change column names
+head(sigRes.allMF)
+```
+
+```{r}
+allDMLGOtermsMF <- allDMLGOterms %>% filter(., allDMLGOterms$GOcat == "F") #Filter molecular function terms
+head(allDMLGOtermsMF) #Confirm formatting
+```
+
+```{r}
+sigRes.allMFAnnot <- merge(sigRes.allMF, allDMLGOtermsMF, by = "GOID") #Additional annotations
+sigRes.allMFAnnot <- unique(sigRes.allMFAnnot[,-11]) #Drop GOcat column and retain only unique lines 
+head(sigRes.allMFAnnot) #Confirm formatting
+```
+
+```{r}
+write.csv(sigRes.allMFAnnot, "all-MF-EnrichedGO-DML-withTranscript.csv", quote = FALSE, row.names = FALSE) #Save dataframe
+```
+
+```{r}
+sigRes.allMFAnnotnoT <- unique(sigRes.allMFAnnot[,-3]) #Drop transcript column and keep only unique rows
+head(sigRes.allMFAnnotnoT) #Confirm formatting
+```
+
+```{r}
+write.csv(sigRes.allMFAnnotnoT, "all-MF-EnrichedGO-DML.csv", quote = FALSE, row.names = FALSE) #Save dataframe
 ```
 
 ## Female-DML
