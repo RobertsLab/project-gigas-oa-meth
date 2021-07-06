@@ -37,7 +37,7 @@ Before launching into enrichment, I want to create lists of GOterms associated w
 ## All DML
 
 ```{r}
-allDMLGOterms <- read.table("../11-GOterm-annotation/DML-pH-50-Cov5-All.GeneIDs.geneOverlap.transcriptIDs.GOAnnot", header = FALSE, sep = "\t", col.names = c("transcript", "geneID", "chr", "start", "end", "GOID", "GOterm", "GOSlim", "GOcat")) #Import list of GO term annotations for all DML
+allDMLGOterms <- read.table("../11-GOterm-annotation/DML-pH-50-Cov5-All.GeneIDs.geneOverlap.transcriptIDs.GOAnnot", header = FALSE, sep = "\t", col.names = c("transcript", "geneID", "chr", "start", "end", "meth.diff","GOID", "GOterm", "GOSlim", "GOcat")) #Import list of GO term annotations for all DML
 head(allDMLGOterms)
 ```
 
@@ -140,6 +140,25 @@ head(allRes.allBP)
 ```{r}
 write.csv(allRes.allBP, "all-BP-FisherTestResults.csv", quote = FALSE, row.names = FALSE) #Save dataframe
 ```
+
+#### Match with general annotation information
+
+```{r}
+sigRes.allBP <- allRes.allBP[1:35,c(1, 6)] #Filter significantly enriched GOterms, only keep GOID and p-value
+colnames(sigRes.allBP) <- c("GOID", "p.value") #Change column names
+head(sigRes.allBP)
+```
+
+```{r}
+sigRes.allBPAnnot <- merge(sigRes.allBP, allDMLGOtermsBP, by = "GOID") #Additional annotations
+sigRes.allBPAnnot <- unique(sigRes.allBPAnnot[,-11]) #Drop GOcat column and retain only unique lines 
+head(sigRes.allBPAnnot) #Confirm formatting
+```
+
+```{r}
+write.csv(sigRes.allBPAnnot, "all-BP-EnrichedGO-DML-withTranscript.csv", quote = FALSE, row.names = FALSE) #Save dataframe
+```
+
 
 ### Cellular components
 
