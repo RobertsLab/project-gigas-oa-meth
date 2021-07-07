@@ -158,6 +158,8 @@ head(sigRes.allBP)
 ```{r}
 sigRes.allBPAnnot <- merge(sigRes.allBP, allDMLGOtermsBP, by = "GOID") #Additional annotations
 sigRes.allBPAnnot <- unique(sigRes.allBPAnnot[,-11]) #Drop GOcat column and retain only unique lines 
+length(unique(sigRes.allBPAnnot$geneID)) #20 unique genes
+length(unique(sigRes.allBPAnnot$transcript)) #42 unique genes
 head(sigRes.allBPAnnot) #Confirm formatting
 ```
 
@@ -233,6 +235,8 @@ head(allDMLGOtermsMF) #Confirm formatting
 ```{r}
 sigRes.allMFAnnot <- merge(sigRes.allMF, allDMLGOtermsMF, by = "GOID") #Additional annotations
 sigRes.allMFAnnot <- unique(sigRes.allMFAnnot[,-11]) #Drop GOcat column and retain only unique lines 
+length(unique(sigRes.allMFAnnot$geneID)) #12 unique genes
+length(unique(sigRes.allMFAnnot$transcript)) #50 unique genes
 head(sigRes.allMFAnnot) #Confirm formatting
 ```
 
