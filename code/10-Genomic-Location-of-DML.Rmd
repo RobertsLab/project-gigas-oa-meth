@@ -237,7 +237,7 @@ par(mar = c(1,5,0,1), oma = c(3, 1, 1, 11)) #Change figure boundaries
 barplot(t(t(cpgFeatureOverlapsPercentsAll[,c(2,1)])), 
         col= plotColors2, 
         axes = FALSE, 
-        names.arg = c("Genome", "DML"), cex.names = 1.5,
+        names.arg = c("All 5x CpGs", "DML"), cex.names = 1.5,
         ylim = c(0, 110)) #Create base plot. Everything should be white. Do not plot axes. Include sequencing type as labels and set size. Set y-axis specs. 
 
 axis(side = 2, at = seq(0, 100, by = 10), las = 2, col = "grey80", cex.axis = 1.2) #Add y-axis
