@@ -129,7 +129,7 @@ head(geneNames)
 ## All DML
 
 ```{r}
-allGenes <- allDMLGOterms$transcript #Extract transcript ID
+allGenes <- allDMLGOtermsFiltered$transcript #Extract transcript ID from dataframe that does not include SNP-DML overlaps
 allGeneList <- factor(as.integer(geneNames %in% allGenes))
 names(allGeneList) <- allGenes
 str(allGeneList)
@@ -156,7 +156,6 @@ pvalFis.allBP <- score(resultFisher.allBP) #Extract p-values
 head(pvalFis.allBP)
 hist(pvalFis.allBP, 50, xlab = "p-values") #Plot histogram of p-values
 ```
-
 
 ```{r}
 allRes.allBP <- GenTable(allGOdataBP, classic = resultFisher.allBP, ranksOf = "classic", orderBy = "classic", topNodes = length(pvalFis.allBP)) #Create a statistical results table with statistical test results. Order by p-value (classic), and include all results (topNodes)
