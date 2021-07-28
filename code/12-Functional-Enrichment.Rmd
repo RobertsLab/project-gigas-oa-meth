@@ -208,6 +208,50 @@ resultFisher.allCC <- getSigGroups(allGOdataCC, test.stat)
 resultFisher.allCC
 ```
 
+```{r}
+pvalFis.allCC <- score(resultFisher.allCC) #Extract p-values
+head(pvalFis.allCC)
+hist(pvalFis.allCC, 50, xlab = "p-values") #Plot histogram of p-values
+```
+
+```{r}
+allRes.allCC <- GenTable(allGOdataCC, classic = resultFisher.allCC, ranksOf = "classic", orderBy = "classic", topNodes = length(pvalFis.allCC)) #Create a statistical results table with statistical test results. Order by p-value (classic), and include all results (topNodes)
+head(allRes.allCC)
+```
+
+```{r}
+write.csv(allRes.allCC, "all-CC-FisherTestResults.csv", quote = FALSE, row.names = FALSE) #Save dataframe
+```
+
+#### Match enriched GOterms with general annotation information
+
+```{r}
+sigRes.allCC <- allRes.allCC[1:10,c(1, 6)] #Filter significantly enriched GOterms, only keep GOID and p-value
+colnames(sigRes.allCC) <- c("GOID", "p.value") #Change column names
+head(sigRes.allCC)
+```
+
+```{r}
+sigRes.allCCAnnot <- merge(sigRes.allCC, allDMLGOtermsCC, by = "GOID") #Additional annotations
+sigRes.allCCAnnot <- unique(sigRes.allCCAnnot[,-11]) #Drop GOcat column and retain only unique lines 
+length(unique(sigRes.allCCAnnot$geneID)) #20 unique genes
+length(unique(sigRes.allCCAnnot$transcript)) #42 unique genes
+head(sigRes.allCCAnnot) #Confirm formatting
+```
+
+```{r}
+write.csv(sigRes.allCCAnnot, "all-CC-EnrichedGO-DML-withTranscript.csv", quote = FALSE, row.names = FALSE) #Save dataframe
+```
+
+```{r}
+sigRes.allCCAnnotnoT <- unique(sigRes.allCCAnnot[,-3]) #Drop transcript column and keep only unique rows
+head(sigRes.allCCAnnotnoT) #Confirm formatting
+```
+
+```{r}
+write.csv(sigRes.allCCAnnotnoT, "all-CC-EnrichedGO-DML.csv", quote = FALSE, row.names = FALSE) #Save dataframe
+```
+
 ### Molecular function
 
 ```{r}
