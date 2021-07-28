@@ -38,14 +38,34 @@ sessionInfo()
 
 # Describe GO terms associated with DML
 
-Before launching into enrichment, I want to create lists of GOterms associated with DML for descriptive purposes.
+Before launching into enrichment, I want to create lists of GOterms associated with DML for descriptive purposes. I'll need to remove the DML that overlap with SNPs to do this, since I only want to look at functions for DML solely associated with pH treatment, and not pH AND genetic information.
 
 ## All DML
 
+### Remove overlaps with C/T SNPs
+
 ```{r}
 allDMLGOterms <- read.table("../11-GOterm-annotation/DML-pH-50-Cov5-All.GeneIDs.geneOverlap.transcriptIDs.GOAnnot", header = FALSE, sep = "\t", col.names = c("transcript", "geneID", "chr", "start", "end", "meth.diff","GOID", "GOterm", "GOSlim", "GOcat")) #Import list of GO term annotations for all DML
+allDMLGOterms$chrStartEnd <- paste(allDMLGOterms$chr, "-", allDMLGOterms$start, "-", allDMLGOterms$end, sep = "") #Create a column with chr, start, and end information separated by "-"
 head(allDMLGOterms)
 ```
+
+```{r}
+uniqueSNPAll <- read.table("../10_DML-characterization/DML-pH-50-Cov5-All-unique-CT-SNPs.bed", header = FALSE, sep = "\t", col.names = c("chr", "start", "end", "meth.diff")) #Import overlaps between unique C/T SNPs and all DML produced with bedtools
+uniqueSNPAll$chrStartEnd <- paste(uniqueSNPAll$chr, "-", uniqueSNPAll$start, "-", uniqueSNPAll$end, sep = "") #Create a column with chr, start, and end information separated by "-"
+head(uniqueSNPAll) #Confirm import
+```
+
+```{r}
+allDMLGOterms <- left_join(x = allDMLGOterms, y = uniqueSNPAll, by = "chrStartEnd") #Add all columns from uniqueSNPAll to allDMLGOterms
+allDMLGOtermsFiltered <- filter(allDMLGOterms, is.na(chr.y) == "TRUE")  %>%
+  select(!c(chrStartEnd, chr.y, start.y, end.y, meth.diff.y)) #Keep all rows where chr.y has an "NA", since this indicates there was no matching entry in the DML-SNP overlap dataframe. Then drop chrStartEnd, chr.y, start.y, end.y, and meth.diff.y
+length(allDMLGOtermsFiltered[,1]) #17810 rows without SNP overlaps
+colnames(allDMLGOtermsFiltered) <- c("transcript", "geneID", "chr", "start", "end", "meth.diff","GOID", "GOterm", "GOSlim", "GOcat") #Rename columns for consistency
+head(allDMLGOtermsFiltered) #Confirm formatting
+```
+
+### Summarize GOterms
 
 ```{r}
 allDMLGOtermCounts <- as.data.frame(table(allDMLGOterms$GOID)) #Create table with GOID and counts
