@@ -68,14 +68,14 @@ head(allDMLGOtermsFiltered) #Confirm formatting
 ### Summarize GOterms
 
 ```{r}
-allDMLGOtermCounts <- as.data.frame(table(allDMLGOterms$GOID)) #Create table with GOID and counts
+allDMLGOtermCounts <- as.data.frame(table(allDMLGOtermsFiltered$GOID)) #Create table with GOID and counts
 colnames(allDMLGOtermCounts) <- c("GOID", "Freq") #Add column names
 range(allDMLGOtermCounts$Freq) #Get range of GOID frequency
 nrow(allDMLGOtermCounts) #Number of unique GOIDs associated with all-DML
 ```
 
 ```{r}
-allDMLGOtermsBP <- allDMLGOterms %>% filter(., allDMLGOterms$GOcat == "P") #Filter biological process terms
+allDMLGOtermsBP <- allDMLGOtermsFiltered %>% filter(., allDMLGOtermsFiltered$GOcat == "P") #Filter biological process terms
 allDMLGOtermCountsBP <- as.data.frame(table(allDMLGOtermsBP$GOID)) #Count GOIDs
 colnames(allDMLGOtermCountsBP) <- c("GOID", "Freq") #Add column names
 allDMLGOtermCountsBP <- allDMLGOtermCountsBP %>% filter(allDMLGOtermCountsBP$Freq != 0)
