@@ -169,7 +169,7 @@ write.csv(allRes.allBP, "all-BP-FisherTestResults.csv", quote = FALSE, row.names
 #### Match enriched GOterms with general annotation information
 
 ```{r}
-sigRes.allBP <- allRes.allBP[1:35,c(1, 6)] #Filter significantly enriched GOterms, only keep GOID and p-value
+sigRes.allBP <- allRes.allBP[1:10,c(1, 6)] #Filter significantly enriched GOterms, only keep GOID and p-value
 colnames(sigRes.allBP) <- c("GOID", "p.value") #Change column names
 head(sigRes.allBP)
 ```
