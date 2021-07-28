@@ -270,57 +270,6 @@ resultFisher.allMF <- getSigGroups(allGOdataMF, test.stat) #Extract significant 
 resultFisher.allMF #Get results summary
 ```
 
-
-```{r}
-pvalFis.allMF <- score(resultFisher.allMF) #Extract p-values
-head(pvalFis.allMF)
-hist(pvalFis.allMF, 50, xlab = "p-values") #Plot histogram of p-values
-```
-
-
-```{r}
-allRes.allMF <- GenTable(allGOdataMF, classic = resultFisher.allMF, ranksOf = "classic", orderBy = "classic", topNodes = length(pvalFis.allMF)) #Create a statistical results table with statistical test results. Order by p-value (classic), and include all results (topNodes)
-head(allRes.allMF)
-```
-
-```{r}
-write.csv(allRes.allMF, "all-MF-FisherTestResults.csv", quote = FALSE, row.names = FALSE) #Save dataframe
-```
-
-#### Match with general annotation information
-
-```{r}
-sigRes.allMF <- allRes.allMF[1:15,c(1, 6)] #Filter significantly enriched GOterms, only keep GOID and p-value
-colnames(sigRes.allMF) <- c("GOID", "p.value") #Change column names
-head(sigRes.allMF)
-```
-
-```{r}
-allDMLGOtermsMF <- allDMLGOterms %>% filter(., allDMLGOterms$GOcat == "F") #Filter molecular function terms
-head(allDMLGOtermsMF) #Confirm formatting
-```
-
-```{r}
-sigRes.allMFAnnot <- merge(sigRes.allMF, allDMLGOtermsMF, by = "GOID") #Additional annotations
-sigRes.allMFAnnot <- unique(sigRes.allMFAnnot[,-11]) #Drop GOcat column and retain only unique lines 
-length(unique(sigRes.allMFAnnot$geneID)) #12 unique genes
-length(unique(sigRes.allMFAnnot$transcript)) #50 unique genes
-head(sigRes.allMFAnnot) #Confirm formatting
-```
-
-```{r}
-write.csv(sigRes.allMFAnnot, "all-MF-EnrichedGO-DML-withTranscript.csv", quote = FALSE, row.names = FALSE) #Save dataframe
-```
-
-```{r}
-sigRes.allMFAnnotnoT <- unique(sigRes.allMFAnnot[,-3]) #Drop transcript column and keep only unique rows
-head(sigRes.allMFAnnotnoT) #Confirm formatting
-```
-
-```{r}
-write.csv(sigRes.allMFAnnotnoT, "all-MF-EnrichedGO-DML.csv", quote = FALSE, row.names = FALSE) #Save dataframe
-```
-
 ## Female-DML
 
 ```{r}
