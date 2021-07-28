@@ -1,9 +1,9 @@
 ,statistic,p.value,parameter,method,GenomeFeature,p.adj
-1,0.224793618144784,0.63541144687,1,Pearson's Chi-squared test with Yates' continuity correction,exonUTR,0.63541144687
-2,30.0401180213002,4.23199660733639e-08,1,Pearson's Chi-squared test with Yates' continuity correction,CDS,1.69279864293455e-07
-3,11.9955878850763,0.000533266514861587,1,Pearson's Chi-squared test with Yates' continuity correction,intron,0.00106653302972317
-4,1.34856119890966,0.245529807504882,1,Pearson's Chi-squared test with Yates' continuity correction,upstream,0.280605494291294
-5,39.1190561588692,3.98733067308302e-10,1,Pearson's Chi-squared test with Yates' continuity correction,downstream,3.18986453846641e-09
-6,13.8741360359523,0.000195470027930658,1,Pearson's Chi-squared test with Yates' continuity correction,lncRNA,0.000521253407815088
-7,1.64447105175447,0.19971312418391,1,Pearson's Chi-squared test with Yates' continuity correction,TE,0.266284165578547
-8,5.29729916267376,0.0213585175591218,1,Pearson's Chi-squared test with Yates' continuity correction,intergenic,0.0341736280945948
+1,4.13693299030252,0.0419571231072652,1,Pearson's Chi-squared test with Yates' continuity correction,exonUTR,0.0479509978368746
+2,491.403067260043,7.05539846760792e-109,1,Pearson's Chi-squared test with Yates' continuity correction,CDS,2.82215938704317e-108
+3,321.118789387179,8.26429856257161e-72,1,Pearson's Chi-squared test with Yates' continuity correction,intron,2.2038129500191e-71
+4,43.9339468502828,3.39646645848715e-11,1,Pearson's Chi-squared test with Yates' continuity correction,upstream,6.79293291697429e-11
+5,2.47353808610467,0.115777046956507,1,Pearson's Chi-squared test with Yates' continuity correction,downstream,0.115777046956507
+6,33.559671149096,6.91108892560266e-09,1,Pearson's Chi-squared test with Yates' continuity correction,lncRNA,1.10577422809643e-08
+7,23.3288537657555,1.3653633241477e-06,1,Pearson's Chi-squared test with Yates' continuity correction,TE,1.82048443219693e-06
+8,582.071587887667,1.328830457829e-128,1,Pearson's Chi-squared test with Yates' continuity correction,intergenic,1.0630643662632e-127

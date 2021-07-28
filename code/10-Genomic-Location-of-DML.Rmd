@@ -10,7 +10,7 @@ In this script, I'll create summary tables for genomic location information, run
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-knitr::opts_knit$set(root.dir = "/Users/yaamini/Documents/project-gigas-oa-meth/output/10_DML-characterization/") #Set root directory
+knitr::opts_knit$set(root.dir = "/Users/yaaminivenkataraman/Documents/project-gigas-oa-meth/output/10_DML-characterization/") #Set root directory
 ```
 
 # Install packages
@@ -62,7 +62,7 @@ tail(cpgFeatureOverlapsAll) #Confirm import
 ```
 
 ```{r}
-cpgFeatureOverlapsAll$Meth <- cpgFeatureOverlaps$Meth #Add methylated CpG information
+cpgFeatureOverlapsAll$allCpGs <- cpgFeatureOverlaps$allCpGs #Add genomic CpG information
 rownames(cpgFeatureOverlapsAll) <- row.names(cpgFeatureOverlaps) #Add rowname information
 cpgFeatureOverlapsAll <- cpgFeatureOverlapsAll[,-2] #Drop filename column
 head(cpgFeatureOverlapsAll)
@@ -76,34 +76,34 @@ head(cpgLocationStatTestAll) #Confirm formatting
 ```
 
 ```{r}
-CpGLocationMethDMLAll <- data.frame() #Create empty dataframe to store chi-squared results
+CpGLocationGenomeDMLAll <- data.frame() #Create empty dataframe to store chi-squared results
 for(i in 1:ncol(cpgLocationStatTestAll)) { #For each genome feature
-  MethFeature <- cpgLocationStatTestAll[2,i] #Variable for # genome feature overlaps for methylated CpGs
+  GenomeFeature <- cpgLocationStatTestAll[2,i] #Variable for # genome feature overlaps for methylated CpGs
   AllFeature <- cpgLocationStatTestAll[1,i] #Variable for # genome feature overlaps for all DML
-  MethNotFeature <- sum(cpgLocationStatTestAll[2,-i]) #Variable for # other CpG types for methylated CpGs
+  GenomeNotFeature <- sum(cpgLocationStatTestAll[2,-i]) #Variable for # other CpG types for methylated CpGs
   AllNotFeature <- sum(cpgLocationStatTestAll[1,-i]) #Variable for # other CpG types for all DML
-  ct <- matrix(c(MethFeature, AllFeature, MethNotFeature, AllNotFeature), ncol = 2) #Create contingency table
+  ct <- matrix(c(GenomeFeature, AllFeature, GenomeNotFeature, AllNotFeature), ncol = 2) #Create contingency table
   colnames(ct) <- c(as.character(colnames(cpgLocationStatTestAll[i])), paste0("Not", colnames(cpgLocationStatTestAll[i]))) #Assign column names: type, not type
   rownames(ct) <- c(as.character(row.names(cpgLocationStatTestAll)[c(2,1)])) #Assign row names: methylated CpGs, all DML
   print(ct) #Confirm table is correct
   ctResults <- data.frame(broom::tidy(chisq.test(ct))) #Create dataframe storing chi-sq stats results. Use broom::tidy to extract results from test output
   ctResults$GenomeFeature <- as.character(colnames(cpgLocationStatTestAll)[i]) #Add CpG type to results
-  CpGLocationMethDMLAll <- rbind(CpGLocationMethDMLAll, ctResults) #Add test statistics to master table
+  CpGLocationGenomeDMLAll <- rbind(CpGLocationGenomeDMLAll, ctResults) #Add test statistics to master table
 }
 ```
 
 ```{r}
-head(CpGLocationMethDMLAll)
+head(CpGLocationGenomeDMLAll)
 ```
 
 ```{r}
-CpGLocationMethDMLAll$p.adj <- p.adjust(CpGLocationMethDMLAll$p.value, method = "fdr") #Correct p-value using FDR
-range(CpGLocationMethDMLAll$p.adj) #Look at range of p-values
-head(CpGLocationMethDMLAll) #Confirm changes
+CpGLocationGenomeDMLAll$p.adj <- p.adjust(CpGLocationGenomeDMLAll$p.value, method = "fdr") #Correct p-value using FDR
+range(CpGLocationGenomeDMLAll$p.adj) #Look at range of p-values
+head(CpGLocationGenomeDMLAll) #Confirm changes
 ```
 
 ```{r}
-write.csv(CpGLocationMethDMLAll, "CpG-location-statResults-All.txt", quote = FALSE, row.names = TRUE) #Save statistical output
+write.csv(CpGLocationGenomeDMLAll, "CpG-location-statResults-All.txt", quote = FALSE, row.names = TRUE) #Save statistical output
 ```
 
 # Female samples
