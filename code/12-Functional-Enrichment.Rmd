@@ -177,8 +177,8 @@ head(sigRes.allBP)
 ```{r}
 sigRes.allBPAnnot <- merge(sigRes.allBP, allDMLGOtermsBP, by = "GOID") #Additional annotations
 sigRes.allBPAnnot <- unique(sigRes.allBPAnnot[,-11]) #Drop GOcat column and retain only unique lines 
-length(unique(sigRes.allBPAnnot$geneID)) #20 unique genes
-length(unique(sigRes.allBPAnnot$transcript)) #42 unique genes
+length(unique(sigRes.allBPAnnot$geneID)) #7 unique genes
+length(unique(sigRes.allBPAnnot$transcript)) #34 unique genes
 head(sigRes.allBPAnnot) #Confirm formatting
 ```
 
@@ -226,16 +226,21 @@ write.csv(allRes.allCC, "all-CC-FisherTestResults.csv", quote = FALSE, row.names
 #### Match enriched GOterms with general annotation information
 
 ```{r}
-sigRes.allCC <- allRes.allCC[1:10,c(1, 6)] #Filter significantly enriched GOterms, only keep GOID and p-value
+sigRes.allCC <- allRes.allCC[1:4,c(1, 6)] #Filter significantly enriched GOterms, only keep GOID and p-value
 colnames(sigRes.allCC) <- c("GOID", "p.value") #Change column names
 head(sigRes.allCC)
 ```
 
 ```{r}
+allDMLGOtermsCC <- allDMLGOtermsFiltered %>% filter(., allDMLGOtermsFiltered$GOcat == "C") #Filter  cellular component terms
+head(allDMLGOtermsCC) #Confirm formatting
+```
+
+```{r}
 sigRes.allCCAnnot <- merge(sigRes.allCC, allDMLGOtermsCC, by = "GOID") #Additional annotations
 sigRes.allCCAnnot <- unique(sigRes.allCCAnnot[,-11]) #Drop GOcat column and retain only unique lines 
-length(unique(sigRes.allCCAnnot$geneID)) #20 unique genes
-length(unique(sigRes.allCCAnnot$transcript)) #42 unique genes
+length(unique(sigRes.allCCAnnot$geneID)) #2 unique genes
+length(unique(sigRes.allCCAnnot$transcript)) #15 unique transcripts
 head(sigRes.allCCAnnot) #Confirm formatting
 ```
 
