@@ -78,13 +78,13 @@ head(cpgLocationStatTestAll) #Confirm formatting
 ```{r}
 CpGLocationGenomeDMLAll <- data.frame() #Create empty dataframe to store chi-squared results
 for(i in 1:ncol(cpgLocationStatTestAll)) { #For each genome feature
-  GenomeFeature <- cpgLocationStatTestAll[2,i] #Variable for # genome feature overlaps for methylated CpGs
+  GenomeFeature <- cpgLocationStatTestAll[2,i] #Variable for # genome feature overlaps for genomic CpGs
   AllFeature <- cpgLocationStatTestAll[1,i] #Variable for # genome feature overlaps for all DML
-  GenomeNotFeature <- sum(cpgLocationStatTestAll[2,-i]) #Variable for # other CpG types for methylated CpGs
+  GenomeNotFeature <- sum(cpgLocationStatTestAll[2,-i]) #Variable for # other CpG types for genomic CpGs
   AllNotFeature <- sum(cpgLocationStatTestAll[1,-i]) #Variable for # other CpG types for all DML
   ct <- matrix(c(GenomeFeature, AllFeature, GenomeNotFeature, AllNotFeature), ncol = 2) #Create contingency table
   colnames(ct) <- c(as.character(colnames(cpgLocationStatTestAll[i])), paste0("Not", colnames(cpgLocationStatTestAll[i]))) #Assign column names: type, not type
-  rownames(ct) <- c(as.character(row.names(cpgLocationStatTestAll)[c(2,1)])) #Assign row names: methylated CpGs, all DML
+  rownames(ct) <- c(as.character(row.names(cpgLocationStatTestAll)[c(2,1)])) #Assign row names: genomic CpGs, all DML
   print(ct) #Confirm table is correct
   ctResults <- data.frame(broom::tidy(chisq.test(ct))) #Create dataframe storing chi-sq stats results. Use broom::tidy to extract results from test output
   ctResults$GenomeFeature <- as.character(colnames(cpgLocationStatTestAll)[i]) #Add CpG type to results
@@ -237,7 +237,7 @@ par(mar = c(1,5,0,1), oma = c(3, 1, 1, 11)) #Change figure boundaries
 barplot(t(t(cpgFeatureOverlapsPercentsAll[,c(2,1)])), 
         col= plotColors2, 
         axes = FALSE, 
-        names.arg = c("High", "DML"), cex.names = 1.5,
+        names.arg = c("Genome", "DML"), cex.names = 1.5,
         ylim = c(0, 110)) #Create base plot. Everything should be white. Do not plot axes. Include sequencing type as labels and set size. Set y-axis specs. 
 
 axis(side = 2, at = seq(0, 100, by = 10), las = 2, col = "grey80", cex.axis = 1.2) #Add y-axis
