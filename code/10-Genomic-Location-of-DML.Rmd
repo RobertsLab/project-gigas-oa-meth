@@ -4,7 +4,7 @@ author: "Yaamini Venkataraman"
 output: github_document
 ---
 
-In this script, I'll create summary tables for genomic location information, run statistcal tests, and visualize the distribution of DML in the genome.
+In this script, I'll create summary tables for genomic location information, run statistcal tests, and visualize the distribution of DML in the genome. I'll also count the number of genes with multiple DML.
 
 # Prepare R Markdown file
 
@@ -41,7 +41,9 @@ plotColors <- rev(RColorBrewer::brewer.pal(5, "Oranges")) #Create a color palett
 plotColors2 <- rev(RColorBrewer::brewer.pal(8, "Oranges")) #Create a color palette for the barplots. Use 5 purple shades from RColorBrewer. Reverse the order so the darkest shade is used first.
 ```
 
-# Import data
+# Genomic location of DML
+
+## Import data
 
 ```{r}
 #save.image("../../project-gigas-oa-meth.Rdata")
@@ -50,9 +52,9 @@ load("../../project-gigas-oa-meth.Rdata") #Load R Data if not already loaded
 
 I will look at genomic locations of each sex-specific DML list, then create a plot for visualization.
 
-# All samples
+## All samples
 
-## Import file counts
+### Import file counts
 
 ```{r}
 cpgFeatureOverlapsAll <- read.table("DML-pH-50-Cov5-All-Overlap-counts.txt", header = FALSE, sep = "\t", col.names = c("allDML", "filename")) #Import line counts
@@ -68,7 +70,7 @@ cpgFeatureOverlapsAll <- cpgFeatureOverlapsAll[,-2] #Drop filename column
 head(cpgFeatureOverlapsAll)
 ```
 
-## Contingency test
+### Contingency test
 
 ```{r}
 cpgLocationStatTestAll <- data.frame(t(cpgFeatureOverlapsAll)) #Transpose for statistical testing
@@ -106,9 +108,9 @@ head(CpGLocationGenomeDMLAll) #Confirm changes
 write.csv(CpGLocationGenomeDMLAll, "CpG-location-statResults-All.txt", quote = FALSE, row.names = TRUE) #Save statistical output
 ```
 
-# Female samples
+## Female samples
 
-## Import file counts
+### Import file counts
 
 ```{r}
 cpgFeatureOverlapsFem <- read.table("DML-pH-75-Cov5-Fem-Overlap-counts.txt", header = FALSE, sep = "\t", col.names = c("femaleDML", "filename")) #Import line counts
@@ -124,7 +126,7 @@ cpgFeatureOverlapsFem <- cpgFeatureOverlapsFem[,-2] #Drop filename column
 head(cpgFeatureOverlapsFem)
 ```
 
-## Contingency test
+### Contingency test
 
 ```{r}
 cpgLocationStatTestFem <- data.frame(t(cpgFeatureOverlapsFem)) #Transpose for statistical testing
@@ -161,9 +163,9 @@ head(CpGLocationMethDMLFem) #Confirm changes
 write.csv(CpGLocationMethDMLFem, "CpG-location-statResults-Fem.txt", quote = FALSE, row.names = TRUE) #Save statistical output
 ```
 
-# Indeterminate samples
+## Indeterminate samples
 
-## Import file counts
+### Import file counts
 
 ```{r}
 cpgFeatureOverlapsInd <- read.table("DML-pH-100-Cov5-Ind-Overlap-counts.txt", header = FALSE, sep = "\t", col.names = c("indeterminateDML", "filename")) #Import line counts
@@ -179,7 +181,7 @@ cpgFeatureOverlapsInd <- cpgFeatureOverlapsInd[,-2] #Drop filename column
 head(cpgFeatureOverlapsInd)
 ```
 
-## Contingency test
+### Contingency test
 
 ```{r}
 cpgLocationStatTestInd <- data.frame(t(cpgFeatureOverlapsInd)) #Transpose for statistical testing
@@ -217,9 +219,9 @@ head(CpGLocationMethDMLInd) #Confirm changes
 write.csv(CpGLocationMethDMLInd, "CpG-location-statResults-Ind.txt", quote = FALSE, row.names = TRUE) #Save statistical output
 ```
 
-# Create stacked barplot
+## Create stacked barplot
 
-## All DML
+### All DML
 
 ```{r}
 cpgFeatureOverlapsPercentsAll <- cpgFeatureOverlapsAll #Duplicate dataframe
@@ -266,7 +268,7 @@ text("Genome Feature", x = 0.785, y = 0.879, cex = 1.5) #Add legend title that i
 #dev.off()
 ```
 
-## Sex-specific DML
+### Sex-specific DML
 
 ```{r}
 cpgFeatureOverlapsPercentsFem <- cpgFeatureOverlapsFem #Duplicate dataframe
@@ -326,3 +328,41 @@ text("Genome Feature", x = 0.785, y = 0.879, cex = 1.5) #Add legend title that i
 
 #dev.off()
 ```
+
+# Genes with multiple DML
+
+```{r}
+geneDMLOverlaps <- read.table("DML-pH-50-Cov5-All-Gene-wb.bed", header = FALSE, sep = "\t") #Import table of gene-DML overlaps
+head(geneDMLOverlaps) #Confirm import
+```
+
+```{r}
+geneID <- read.table("geneID-DML-overlap.tab") #Import column with gene ID information already separated
+nrow(geneID) == nrow(geneDMLOverlaps) #Check that both dataframes have the same number of rows
+head(geneID) #Confim import
+```
+
+```{r}
+geneDMLOverlaps <- cbind(geneDMLOverlaps[,-c(5:7,10:13)], geneID) #Add gene ID column to overlap information
+colnames(geneDMLOverlaps) <- c("chr", "DMLstart", "DMLend", "meth.diff",
+                               "geneStart", "geneEnd", "geneID") #Add column names
+head(geneDMLOverlaps) #Confirm formatting
+```
+
+```{r}
+geneDMLCounts <- as.data.frame(table(geneDMLOverlaps$geneID)) #Create a dataframe with the number of DML/gene
+colnames(geneDMLCounts) <- c("geneID", "numDML") #Add column names
+head(geneDMLCounts) #Confirm formatting
+```
+
+```{r}
+range(geneDMLCounts$numDML) #Range of number DML/gene
+hist(geneDMLCounts$numDML, ylim = c(0,20)) #Plot the frequency of multiple DML in genes. Most genes have between 1-10 DML, with one gene having > 10 and another having 104
+```
+
+
+```{r}
+write.csv(geneDMLCounts, "Number-of-DML-per-Gene.csv", quote = FALSE, row.names = FALSE) #Save file with number of DML per gene
+```
+
+
