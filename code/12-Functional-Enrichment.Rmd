@@ -59,10 +59,15 @@ head(uniqueSNPAll) #Confirm import
 ```{r}
 allDMLGOterms <- left_join(x = allDMLGOterms, y = uniqueSNPAll, by = "chrStartEnd") #Add all columns from uniqueSNPAll to allDMLGOterms
 allDMLGOtermsFiltered <- filter(allDMLGOterms, is.na(chr.y) == "TRUE")  %>%
-  select(!c(chrStartEnd, chr.y, start.y, end.y, meth.diff.y)) #Keep all rows where chr.y has an "NA", since this indicates there was no matching entry in the DML-SNP overlap dataframe. Then drop chrStartEnd, chr.y, start.y, end.y, and meth.diff.y
+  select(!c(chr.y, start.y, end.y, meth.diff.y)) #Keep all rows where chr.y has an "NA", since this indicates there was no matching entry in the DML-SNP overlap dataframe. Then drop chr.y, start.y, end.y, and meth.diff.y
 length(allDMLGOtermsFiltered[,1]) #17810 rows without SNP overlaps
-colnames(allDMLGOtermsFiltered) <- c("transcript", "geneID", "chr", "start", "end", "meth.diff","GOID", "GOterm", "GOSlim", "GOcat") #Rename columns for consistency
+colnames(allDMLGOtermsFiltered) <- c("transcript", "geneID", "chr", "start", "end", "meth.diff","GOID", "GOterm", "GOSlim", "GOcat", "chrStartEnd") #Rename columns for consistency
 head(allDMLGOtermsFiltered) #Confirm formatting
+```
+
+```{r}
+length(unique(allDMLGOtermsFiltered$geneID)) #339 annotated genes
+length(unique(allDMLGOtermsFiltered$chrStartEnd)) #437 DML in annotated genes
 ```
 
 ### Summarize GOterms
