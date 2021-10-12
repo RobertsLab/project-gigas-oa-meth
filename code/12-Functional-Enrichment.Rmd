@@ -171,7 +171,7 @@ head(allRes.allBP)
 write.csv(allRes.allBP, "all-BP-FisherTestResults.csv", quote = FALSE, row.names = FALSE) #Save dataframe
 ```
 
-#### Match enriched GOterms with general annotation information
+#### Match enriched GOterms with general annotation information and product ID
 
 ```{r}
 sigRes.allBP <- allRes.allBP[1:10,c(1, 6)] #Filter significantly enriched GOterms, only keep GOID and p-value
@@ -195,9 +195,20 @@ write.csv(sigRes.allBPAnnot, "all-BP-EnrichedGO-DML-withTranscript.csv", quote =
 sigRes.allBPAnnotnoT <- unique(sigRes.allBPAnnot[,-3]) #Drop transcript column and keep only unique rows
 head(sigRes.allBPAnnotnoT) #Confirm formatting
 ```
-
 ```{r}
 write.csv(sigRes.allBPAnnotnoT, "all-BP-EnrichedGO-DML.csv", quote = FALSE, row.names = FALSE) #Save dataframe
+```
+
+```{r}
+geneProductIDs <- read.delim("../11-GOterm-annotation/cgigas_uk_roslin_v1_rna_from_genomic_annot.transcript.tab", sep = "\t", header = FALSE, col.names = c("transcript", "product")) #Import transcript and gene product information
+head(geneProductIDs) #Confirm import
+```
+```{r}
+sigRes.allBPProduct <- merge(sigRes.allBPAnnot, geneProductIDs, by = "transcript") #Add product annotations
+head(sigRes.allBPProduct) #Confirm formatting
+```
+```{r}
+write.csv(sigRes.allBPProduct, "all-BP-EnrichedGO-DML-Product.csv", quote = FALSE, row.names = FALSE) #Save dataframe
 ```
 
 ### Cellular components
@@ -251,6 +262,15 @@ head(sigRes.allCCAnnot) #Confirm formatting
 
 ```{r}
 write.csv(sigRes.allCCAnnot, "all-CC-EnrichedGO-DML-withTranscript.csv", quote = FALSE, row.names = FALSE) #Save dataframe
+```
+
+```{r}
+sigRes.allCCProduct <- merge(sigRes.allCCAnnot, geneProductIDs, by = "transcript") #Add product annotations
+head(sigRes.allCCProduct) #Confirm formatting
+```
+
+```{r}
+write.csv(sigRes.allCCProduct, "all-CC-EnrichedGO-DML-Product.csv", quote = FALSE, row.names = FALSE) #Save dataframe
 ```
 
 ```{r}
