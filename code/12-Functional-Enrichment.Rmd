@@ -180,10 +180,11 @@ head(sigRes.allBP)
 ```
 
 ```{r}
-sigRes.allBPAnnot <- merge(sigRes.allBP, allDMLGOtermsBP, by = "GOID") #Additional annotations
+sigRes.allBPAnnot <- left_join(sigRes.allBP, allDMLGOtermsBP, by = "GOID") #Additional annotations. Use left join to keep GOterms that may not have matching annotations.
+nrow(sigRes.allBPAnnot) #Count the number of rows
 sigRes.allBPAnnot <- unique(sigRes.allBPAnnot[,-11]) #Drop GOcat column and retain only unique lines 
-length(unique(sigRes.allBPAnnot$geneID)) #7 unique genes
-length(unique(sigRes.allBPAnnot$transcript)) #34 unique transcripts
+length(unique(sigRes.allBPAnnot$geneID)) #8 unique genes
+length(unique(sigRes.allBPAnnot$transcript)) #35 unique transcripts
 head(sigRes.allBPAnnot) #Confirm formatting
 ```
 
@@ -204,10 +205,11 @@ geneProductIDs <- read.delim("../11-GOterm-annotation/cgigas_uk_roslin_v1_rna_fr
 head(geneProductIDs) #Confirm import
 ```
 ```{r}
-sigRes.allBPProduct <- merge(sigRes.allBPAnnot, geneProductIDs, by = "transcript") #Add product annotations
+sigRes.allBPProduct <- left_join(sigRes.allBPAnnot, geneProductIDs, by = "transcript") #Add product annotations and retain rows that may not have annotations
 nrow(sigRes.allBPProduct) == nrow(sigRes.allBPAnnot) #Confirm all transcripts have an annotation
 head(sigRes.allBPProduct) #Confirm formatting
 ```
+
 ```{r}
 write.csv(sigRes.allBPProduct, "all-BP-EnrichedGO-DML-Product.csv", quote = FALSE, row.names = FALSE) #Save dataframe
 ```
@@ -384,11 +386,10 @@ sort(table(dfBP$SEcluster)) #Obtain size of clusters
 dfBP
 ```
 
-
 ### Merge with product information
 
 ```{r}
-sigRes.allBPCluster <- merge(sigRes.allBPProduct, dfBP, by = "GOID") #Add cluster information to product annotations
+sigRes.allBPCluster <- left_join(sigRes.allBPProduct, dfBP, by = "GOID") #Add cluster information to product annotations
 nrow(sigRes.allBPCluster) == nrow(sigRes.allBPProduct) #Confirm all rows have a cluster ID
 sigRes.allBPCluster <- sigRes.allBPCluster[,-c(9, 12)] #Remove duplicate columns
 head(sigRes.allBPCluster)
