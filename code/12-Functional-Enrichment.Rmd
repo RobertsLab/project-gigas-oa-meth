@@ -174,18 +174,37 @@ write.csv(allRes.allBP, "all-BP-FisherTestResults.csv", quote = FALSE, row.names
 #### Match enriched GOterms with general annotation information and product ID
 
 ```{r}
-sigRes.allBP <- allRes.allBP[1:10,c(1, 6)] #Filter significantly enriched GOterms, only keep GOID and p-value
-colnames(sigRes.allBP) <- c("GOID", "p.value") #Change column names
-head(sigRes.allBP)
+sigRes.allBP <- allRes.allBP[1:10,c(1, 2, 6)] #Filter significantly enriched GOterms, only keep GOID, GOterm, and p-value
+colnames(sigRes.allBP) <- c("GOID", "GOterm", "p.value") #Change column names
+sigRes.allBP
 ```
 
 ```{r}
-sigRes.allBPAnnot <- left_join(sigRes.allBP, allDMLGOtermsBP, by = "GOID") #Additional annotations. Use left join to keep GOterms that may not have matching annotations.
+sigRes.allBPGenes <- genesInTerm(allGOdataBP, whichGO = allRes.allBP$GO.ID[1:10]) #Extract genes associated with each GOterm from topGO's annotations
+sigRes.allBPGenes <- as.data.frame(vapply(sigRes.allBPGenes, paste, collapse = ",", character(1L))) #Collapse all transcript IDs into one column and convert into a dataframe. GO IDs will be the rownames
+colnames(sigRes.allBPGenes) <- c("transcript")
+sigRes.allBPGenes$GOID <- rownames(sigRes.allBPGenes) #Convert row names to a separate column
+rownames(sigRes.allBPGenes) <- 1:nrow(sigRes.allBPGenes) #Convert row names to numeric values
+sigRes.allBPGenes <- separate_rows(sigRes.allBPGenes, transcript, sep = ",") #Separate transcripts so each transcript is on a separate row
+head(sigRes.allBPGenes) #Confirm formatting
+```
+
+```{r}
+sigRes.allBPtopGO <- left_join(sigRes.allBP, sigRes.allBPGenes, by = "GOID") #Add transcript information from topGO to GOIDs
+sum(is.na(sigRes.allBPtopGO$transcript)) #sum = 0, there are no N/As and every GOID has a transcript
+nrow(sigRes.allBPtopGO) #Count the number of rows
+head(sigRes.allBPtopGO) #Confirm formatting
+```
+
+```{r}
+sigRes.allBPAnnot <- left_join(sigRes.allBPtopGO, allDMLGOtermsBP, by = c("GOID", "transcript")) #Additional annotations. Left join (merge) based on matching transcript IDs. There are some rows with transcript IDs without corresponding annotations because there was no matching GOterm from my annotations.
+colnames(sigRes.allBPAnnot)[2] <- "topGOterm" #Rename to indicate GOterms from topGO
+colnames(sigRes.allBPAnnot)[10] <- "GOterm" #Rename to indicate a GOterms from my annotation
+sigRes.allBPAnnot <- unique(sigRes.allBPAnnot[,-12]) #Drop GOcat column and retain only unique lines 
 nrow(sigRes.allBPAnnot) #Count the number of rows
-sigRes.allBPAnnot <- unique(sigRes.allBPAnnot[,-11]) #Drop GOcat column and retain only unique lines 
-length(unique(sigRes.allBPAnnot$geneID)) #8 unique genes
-length(unique(sigRes.allBPAnnot$transcript)) #35 unique transcripts
-head(sigRes.allBPAnnot) #Confirm formatting
+length(na.omit(unique(sigRes.allBPAnnot$geneID))) #7 unique genes
+length(na.omit(unique(sigRes.allBPAnnot$transcript))) #37 unique transcripts
+head(sigRes.allBPAnnot) #Confirm formatting. 
 ```
 
 ```{r}
@@ -193,9 +212,10 @@ write.csv(sigRes.allBPAnnot, "all-BP-EnrichedGO-DML-withTranscript.csv", quote =
 ```
 
 ```{r}
-sigRes.allBPAnnotnoT <- unique(sigRes.allBPAnnot[,-3]) #Drop transcript column and keep only unique rows
+sigRes.allBPAnnotnoT <- unique(sigRes.allBPAnnot[,-4]) #Drop transcript column and keep only unique rows
 head(sigRes.allBPAnnotnoT) #Confirm formatting
 ```
+
 ```{r}
 write.csv(sigRes.allBPAnnotnoT, "all-BP-EnrichedGO-DML.csv", quote = FALSE, row.names = FALSE) #Save dataframe
 ```
@@ -391,7 +411,7 @@ dfBP
 ```{r}
 sigRes.allBPCluster <- left_join(sigRes.allBPProduct, dfBP, by = "GOID") #Add cluster information to product annotations
 nrow(sigRes.allBPCluster) == nrow(sigRes.allBPProduct) #Confirm all rows have a cluster ID
-sigRes.allBPCluster <- sigRes.allBPCluster[,-c(9, 12)] #Remove duplicate columns
+sigRes.allBPCluster <- sigRes.allBPCluster[,-c(10, 13)] #Remove duplicate columns
 head(sigRes.allBPCluster)
 ```
 

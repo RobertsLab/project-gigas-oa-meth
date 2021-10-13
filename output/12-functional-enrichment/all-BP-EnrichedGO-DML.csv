@@ -1,23 +1,26 @@
-GOID,p.value,geneID,chr,start,end,meth.diff,GOterm,GOSlim
-GO:0001539,0.00076,NA,NA,NA,NA,NA,NA,NA
-GO:0030317,0.00076,105330782,NC_047563.1,23984358,23984360,52.2604687653231,sperm motility,other biological processes
-GO:0030317,0.00076,105330782,NC_047563.1,23995567,23995569,55.2521008403361,sperm motility,other biological processes
-GO:0030317,0.00076,105337636,NC_047563.1,63424371,63424373,55.8695652173913,sperm motility,other biological processes
-GO:0030317,0.00076,105337636,NC_047563.1,63429513,63429515,-58.6647727272727,sperm motility,other biological processes
-GO:0060285,0.00076,NA,NA,NA,NA,NA,NA,NA
-GO:0060294,0.00076,NA,NA,NA,NA,NA,NA,NA
-GO:0097722,0.00076,NA,NA,NA,NA,NA,NA,NA
-GO:0003341,0.00263,NA,NA,NA,NA,NA,NA,NA
-GO:0002165,0.00298,105331446,NC_047564.1,26693493,26693495,59.066100667071,instar larval or pupal development,developmental processes
-GO:0002165,0.00298,105331446,NC_047564.1,26781172,26781174,61.411479630471,instar larval or pupal development,developmental processes
-GO:0002165,0.00298,105331446,NC_047564.1,26781458,26781460,52.1683673469388,instar larval or pupal development,developmental processes
-GO:0002165,0.00298,105331446,NC_047564.1,26782469,26782471,62.6101987899741,instar larval or pupal development,developmental processes
-GO:0002165,0.00298,105331446,NC_047564.1,26783579,26783581,65.3896713615023,instar larval or pupal development,developmental processes
-GO:0009791,0.00442,105317044,NC_047560.1,1302128,1302130,66.1481481481482,post-embryonic development,developmental processes
-GO:0009791,0.00442,105317044,NC_047560.1,1302706,1302708,54.9908703590992,post-embryonic development,developmental processes
-GO:0009791,0.00442,105328930,NC_047562.1,39658233,39658235,-53.5816210045662,post-embryonic development,developmental processes
-GO:0009791,0.00442,105339958,NC_047563.1,43490501,43490503,-64.6616541353384,post-embryonic development,developmental processes
-GO:0009791,0.00442,105317516,NC_047564.1,25225793,25225795,58.974358974359,post-embryonic development,developmental processes
-GO:0001700,0.00816,NA,NA,NA,NA,NA,NA,NA
-GO:0007391,0.00816,105337636,NC_047563.1,63424371,63424373,55.8695652173913,dorsal closure,developmental processes
-GO:0007391,0.00816,105337636,NC_047563.1,63429513,63429515,-58.6647727272727,dorsal closure,developmental processes
+GOID,topGOterm,p.value,geneID,chr,start,end,meth.diff,GOterm,GOSlim
+GO:0001539,cilium or flagellum-dependent cell motil...,0.00076,NA,NA,NA,NA,NA,NA,NA
+GO:0030317,flagellated sperm motility,0.00076,105330782,NC_047563.1,23984358,23984360,52.2604687653231,sperm motility,other biological processes
+GO:0030317,flagellated sperm motility,0.00076,105330782,NC_047563.1,23995567,23995569,55.2521008403361,sperm motility,other biological processes
+GO:0030317,flagellated sperm motility,0.00076,105337636,NC_047563.1,63424371,63424373,55.8695652173913,sperm motility,other biological processes
+GO:0030317,flagellated sperm motility,0.00076,105337636,NC_047563.1,63429513,63429515,-58.6647727272727,sperm motility,other biological processes
+GO:0060285,cilium-dependent cell motility,0.00076,NA,NA,NA,NA,NA,NA,NA
+GO:0060294,cilium movement involved in cell motilit...,0.00076,NA,NA,NA,NA,NA,NA,NA
+GO:0097722,sperm motility,0.00076,NA,NA,NA,NA,NA,NA,NA
+GO:0003341,cilium movement,0.00263,NA,NA,NA,NA,NA,NA,NA
+GO:0002165,instar larval or pupal development,0.00298,NA,NA,NA,NA,NA,NA,NA
+GO:0002165,instar larval or pupal development,0.00298,105331446,NC_047564.1,26693493,26693495,59.066100667071,instar larval or pupal development,developmental processes
+GO:0002165,instar larval or pupal development,0.00298,105331446,NC_047564.1,26781172,26781174,61.411479630471,instar larval or pupal development,developmental processes
+GO:0002165,instar larval or pupal development,0.00298,105331446,NC_047564.1,26781458,26781460,52.1683673469388,instar larval or pupal development,developmental processes
+GO:0002165,instar larval or pupal development,0.00298,105331446,NC_047564.1,26782469,26782471,62.6101987899741,instar larval or pupal development,developmental processes
+GO:0002165,instar larval or pupal development,0.00298,105331446,NC_047564.1,26783579,26783581,65.3896713615023,instar larval or pupal development,developmental processes
+GO:0009791,post-embryonic development,0.00442,105317044,NC_047560.1,1302128,1302130,66.1481481481482,post-embryonic development,developmental processes
+GO:0009791,post-embryonic development,0.00442,105317044,NC_047560.1,1302706,1302708,54.9908703590992,post-embryonic development,developmental processes
+GO:0009791,post-embryonic development,0.00442,NA,NA,NA,NA,NA,NA,NA
+GO:0009791,post-embryonic development,0.00442,105328930,NC_047562.1,39658233,39658235,-53.5816210045662,post-embryonic development,developmental processes
+GO:0009791,post-embryonic development,0.00442,105339958,NC_047563.1,43490501,43490503,-64.6616541353384,post-embryonic development,developmental processes
+GO:0009791,post-embryonic development,0.00442,105317516,NC_047564.1,25225793,25225795,58.974358974359,post-embryonic development,developmental processes
+GO:0001700,embryonic development via the syncytial ...,0.00816,NA,NA,NA,NA,NA,NA,NA
+GO:0007391,dorsal closure,0.00816,105337636,NC_047563.1,63424371,63424373,55.8695652173913,dorsal closure,developmental processes
+GO:0007391,dorsal closure,0.00816,105337636,NC_047563.1,63429513,63429515,-58.6647727272727,dorsal closure,developmental processes
+GO:0007391,dorsal closure,0.00816,NA,NA,NA,NA,NA,NA,NA
