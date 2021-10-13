@@ -205,6 +205,7 @@ head(geneProductIDs) #Confirm import
 ```
 ```{r}
 sigRes.allBPProduct <- merge(sigRes.allBPAnnot, geneProductIDs, by = "transcript") #Add product annotations
+nrow(sigRes.allBPProduct) == nrow(sigRes.allBPAnnot) #Confirm all transcripts have an annotation
 head(sigRes.allBPProduct) #Confirm formatting
 ```
 ```{r}
@@ -367,13 +368,29 @@ simplifyGO(matBP,
            column_title = "", col = rev(plotColors), fontsize_range = c(10,40),
            word_cloud_grob_param = list(col = "black", max_width = 25)) #Plot GOterms based on semantic similarity. Do not include a column title. Set colors to be plot colors, and set fontsize to range from 10 to 40. Pass arguments to word_cloud_grob_param to dictate the colors of the words and maximum width
 
+#Clusters 2-5 are probably all related to eachother (development), so I would argue there are only two clusters.
+
 #dev.off()
 ```
 
 ```{r}
 dfBP <- simplifyGO(matBP, plot = FALSE) #Cluster GOterms by semantic similarity
+colnames(dfBP) <- c("GOID", "GOterm", "SEcluster") #Modify column names
 head(dfBP) #Dataframe with GOIDs, GOterms, and cluster
-sort(table(dfBP$cluster)) #Obtain size of clusters
+sort(table(dfBP$SEcluster)) #Obtain size of clusters
+```
+
+### Merge with product information
+
+```{r}
+sigRes.allBPCluster <- merge(sigRes.allBPProduct, dfBP, by = "GOID") #Add cluster information to product annotations
+nrow(sigRes.allBPCluster) == nrow(sigRes.allBPProduct) #Confirm all rows have a cluster ID
+sigRes.allBPCluster <- sigRes.allBPCluster[,-c(9, 12)] #Remove duplicate columns
+head(sigRes.allBPCluster)
+```
+
+```{r}
+write.csv(sigRes.allBPCluster, "all-CC-EnrichedGO-DML-Cluster.csv", row.names = FALSE, quote = FALSE) #Save
 ```
 
 ## Cellular components
