@@ -265,22 +265,37 @@ write.csv(allRes.allCC, "all-CC-FisherTestResults.csv", quote = FALSE, row.names
 #### Match enriched GOterms with general annotation information
 
 ```{r}
-sigRes.allCC <- allRes.allCC[1:4,c(1, 6)] #Filter significantly enriched GOterms, only keep GOID and p-value
-colnames(sigRes.allCC) <- c("GOID", "p.value") #Change column names
-head(sigRes.allCC)
+sigRes.allCC <- allRes.allCC[1:4,c(1, 2, 6)] #Filter significantly enriched GOterms, only keep GOID, GOterm, and p-value
+colnames(sigRes.allCC) <- c("GOID", "GOterm", "p.value") #Change column names
+sigRes.allCC
 ```
 
 ```{r}
-allDMLGOtermsCC <- allDMLGOtermsFiltered %>% filter(., allDMLGOtermsFiltered$GOcat == "C") #Filter  cellular component terms
-head(allDMLGOtermsCC) #Confirm formatting
+sigRes.allCCGenes <- genesInTerm(allGOdataCC, whichGO = allRes.allCC$GO.ID[1:4]) #Extract genes associated with each GOterm from topGO's annotations
+sigRes.allCCGenes <- as.data.frame(vapply(sigRes.allCCGenes, paste, collapse = ",", character(1L))) #Collapse all transcript IDs into one column and convert into a dataframe. GO IDs will be the rownames
+colnames(sigRes.allCCGenes) <- c("transcript")
+sigRes.allCCGenes$GOID <- rownames(sigRes.allCCGenes) #Convert row names to a separate column
+rownames(sigRes.allCCGenes) <- 1:nrow(sigRes.allCCGenes) #Convert row names to numeric values
+sigRes.allCCGenes <- separate_rows(sigRes.allCCGenes, transcript, sep = ",") #Separate transcripts so each transcript is on a separate row
+head(sigRes.allCCGenes) #Confirm formatting
 ```
 
 ```{r}
-sigRes.allCCAnnot <- merge(sigRes.allCC, allDMLGOtermsCC, by = "GOID") #Additional annotations
-sigRes.allCCAnnot <- unique(sigRes.allCCAnnot[,-11]) #Drop GOcat column and retain only unique lines 
-length(unique(sigRes.allCCAnnot$geneID)) #2 unique genes
-length(unique(sigRes.allCCAnnot$transcript)) #15 unique transcripts
-head(sigRes.allCCAnnot) #Confirm formatting
+sigRes.allCCtopGO <- left_join(sigRes.allCC, sigRes.allCCGenes, by = "GOID") #Add transcript information from topGO to GOIDs
+sum(is.na(sigRes.allCCtopGO$transcript)) #sum = 0, there are no N/As and every GOID has a transcript
+nrow(sigRes.allCCtopGO) #Count the number of rows
+head(sigRes.allCCtopGO) #Confirm formatting
+```
+
+```{r}
+sigRes.allCCAnnot <- left_join(sigRes.allCCtopGO, allDMLGOtermsCC, by = c("GOID", "transcript")) #Additional annotations. Left join (merge) based on matching transcript IDs. There are some rows with transcript IDs without corresponding annotations because there was no matching GOterm from my annotations.
+colnames(sigRes.allCCAnnot)[2] <- "topGOterm" #Rename to indicate GOterms from topGO
+colnames(sigRes.allCCAnnot)[10] <- "GOterm" #Rename to indicate a GOterms from my annotation
+sigRes.allCCAnnot <- unique(sigRes.allCCAnnot[,-12]) #Drop GOcat column and retain only unique lines 
+nrow(sigRes.allCCAnnot) #Count the number of rows
+length(na.omit(unique(sigRes.allCCAnnot$geneID))) #2 unique genes
+length(na.omit(unique(sigRes.allCCAnnot$transcript))) #25 unique transcripts
+head(sigRes.allCCAnnot) #Confirm formatting. 
 ```
 
 ```{r}
@@ -288,21 +303,22 @@ write.csv(sigRes.allCCAnnot, "all-CC-EnrichedGO-DML-withTranscript.csv", quote =
 ```
 
 ```{r}
-sigRes.allCCProduct <- merge(sigRes.allCCAnnot, geneProductIDs, by = "transcript") #Add product annotations
-head(sigRes.allCCProduct) #Confirm formatting
-```
-
-```{r}
-write.csv(sigRes.allCCProduct, "all-CC-EnrichedGO-DML-Product.csv", quote = FALSE, row.names = FALSE) #Save dataframe
-```
-
-```{r}
-sigRes.allCCAnnotnoT <- unique(sigRes.allCCAnnot[,-3]) #Drop transcript column and keep only unique rows
+sigRes.allCCAnnotnoT <- unique(sigRes.allCCAnnot[,-4]) #Drop transcript column and keep only unique rows
 head(sigRes.allCCAnnotnoT) #Confirm formatting
 ```
 
 ```{r}
 write.csv(sigRes.allCCAnnotnoT, "all-CC-EnrichedGO-DML.csv", quote = FALSE, row.names = FALSE) #Save dataframe
+```
+
+```{r}
+sigRes.allCCProduct <- left_join(sigRes.allCCAnnot, geneProductIDs, by = "transcript") #Add product annotations and retain rows that may not have annotations
+nrow(sigRes.allCCProduct) == nrow(sigRes.allCCAnnot) #Confirm all transcripts have an annotation
+head(sigRes.allCCProduct) #Confirm formatting
+```
+
+```{r}
+write.csv(sigRes.allCCProduct, "all-CC-EnrichedGO-DML-Product.csv", quote = FALSE, row.names = FALSE) #Save dataframe
 ```
 
 ### Molecular function
