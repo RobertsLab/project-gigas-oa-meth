@@ -380,6 +380,11 @@ head(dfBP) #Dataframe with GOIDs, GOterms, and cluster
 sort(table(dfBP$SEcluster)) #Obtain size of clusters
 ```
 
+```{r}
+dfBP
+```
+
+
 ### Merge with product information
 
 ```{r}
@@ -390,7 +395,7 @@ head(sigRes.allBPCluster)
 ```
 
 ```{r}
-write.csv(sigRes.allBPCluster, "all-CC-EnrichedGO-DML-Cluster.csv", row.names = FALSE, quote = FALSE) #Save
+write.csv(sigRes.allBPCluster, "all-BP-EnrichedGO-DML-Cluster.csv", row.names = FALSE, quote = FALSE) #Save
 ```
 
 ## Cellular components
@@ -412,7 +417,7 @@ simplifyGO(matCC,
 ```{r}
 dfCC <- simplifyGO(matCC, plot = FALSE) #Cluster GOterms by semantic similarity
 head(dfCC) #Dataframe with GOIDs, GOterms, and cluster
-sort(table(dfCC$cluster)) #Obtain size of clusters
+sort(table(dfCC$cluster)) #Obtain size of clusters. I won't annotate with cluster information for CC since there is only one cluster.
 ```
 
 ```{r}
