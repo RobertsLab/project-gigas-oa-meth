@@ -1,93 +1,93 @@
 GOID,topGOterm,p.value,transcript,geneID,chr,start,end,meth.diff,GOterm,GOSlim,product
-GO:0005875,microtubule associated complex,0.0061,XM_034465963.1,NA,NA,NA,NA,NA,NA,NA,kinesin-like protein KIF23, transcript variant X1
-GO:0005875,microtubule associated complex,0.0061,XM_034465964.1,NA,NA,NA,NA,NA,NA,NA,kinesin-like protein KIF23, transcript variant X2
-GO:0005875,microtubule associated complex,0.0061,XM_034465965.1,NA,NA,NA,NA,NA,NA,NA,kinesin-like protein KIF23, transcript variant X3
-GO:0005875,microtubule associated complex,0.0061,XM_034469289.1,NA,NA,NA,NA,NA,NA,NA,cytoplasmic dynein 2 light intermediate chain 1-like, transcript variant X2
-GO:0005875,microtubule associated complex,0.0061,XM_034479303.1,NA,NA,NA,NA,NA,NA,NA,dynein heavy chain 5, axonemal, transcript variant X1
-GO:0005875,microtubule associated complex,0.0061,XM_034479304.1,NA,NA,NA,NA,NA,NA,NA,dynein heavy chain 5, axonemal, transcript variant X2
-GO:0005875,microtubule associated complex,0.0061,XM_034479305.1,NA,NA,NA,NA,NA,NA,NA,dynein heavy chain 5, axonemal, transcript variant X3
-GO:0005875,microtubule associated complex,0.0061,XM_034479306.1,NA,NA,NA,NA,NA,NA,NA,dynein heavy chain 5, axonemal, transcript variant X4
-GO:0005875,microtubule associated complex,0.0061,XM_034479307.1,NA,NA,NA,NA,NA,NA,NA,dynein heavy chain 5, axonemal, transcript variant X5
-GO:0005875,microtubule associated complex,0.0061,XM_034479684.1,105337636,NC_047563.1,63424371,63424373,55.8695652173913,microtubule associated complex,cytoskeleton,unconventional myosin-VI, transcript variant X1
-GO:0005875,microtubule associated complex,0.0061,XM_034479684.1,105337636,NC_047563.1,63429513,63429515,-58.6647727272727,microtubule associated complex,cytoskeleton,unconventional myosin-VI, transcript variant X1
-GO:0005875,microtubule associated complex,0.0061,XM_034479685.1,105337636,NC_047563.1,63424371,63424373,55.8695652173913,microtubule associated complex,cytoskeleton,unconventional myosin-VI, transcript variant X2
-GO:0005875,microtubule associated complex,0.0061,XM_034479685.1,105337636,NC_047563.1,63429513,63429515,-58.6647727272727,microtubule associated complex,cytoskeleton,unconventional myosin-VI, transcript variant X2
-GO:0005875,microtubule associated complex,0.0061,XM_034479686.1,105337636,NC_047563.1,63424371,63424373,55.8695652173913,microtubule associated complex,cytoskeleton,unconventional myosin-VI, transcript variant X3
-GO:0005875,microtubule associated complex,0.0061,XM_034479686.1,105337636,NC_047563.1,63429513,63429515,-58.6647727272727,microtubule associated complex,cytoskeleton,unconventional myosin-VI, transcript variant X3
-GO:0005875,microtubule associated complex,0.0061,XM_034479687.1,105337636,NC_047563.1,63424371,63424373,55.8695652173913,microtubule associated complex,cytoskeleton,unconventional myosin-VI, transcript variant X4
-GO:0005875,microtubule associated complex,0.0061,XM_034479687.1,105337636,NC_047563.1,63429513,63429515,-58.6647727272727,microtubule associated complex,cytoskeleton,unconventional myosin-VI, transcript variant X4
-GO:0005875,microtubule associated complex,0.0061,XM_034479688.1,105337636,NC_047563.1,63424371,63424373,55.8695652173913,microtubule associated complex,cytoskeleton,unconventional myosin-VI, transcript variant X5
-GO:0005875,microtubule associated complex,0.0061,XM_034479688.1,105337636,NC_047563.1,63429513,63429515,-58.6647727272727,microtubule associated complex,cytoskeleton,unconventional myosin-VI, transcript variant X5
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482479.1,105331446,NC_047564.1,26693493,26693495,59.06610067,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X1"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482479.1,105331446,NC_047564.1,26781172,26781174,61.41147963,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X1"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482479.1,105331446,NC_047564.1,26781458,26781460,52.16836735,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X1"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482479.1,105331446,NC_047564.1,26782469,26782471,62.61019879,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X1"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482479.1,105331446,NC_047564.1,26783579,26783581,65.38967136,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X1"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482488.1,105331446,NC_047564.1,26693493,26693495,59.06610067,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X10"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482488.1,105331446,NC_047564.1,26781172,26781174,61.41147963,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X10"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482488.1,105331446,NC_047564.1,26781458,26781460,52.16836735,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X10"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482488.1,105331446,NC_047564.1,26782469,26782471,62.61019879,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X10"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482488.1,105331446,NC_047564.1,26783579,26783581,65.38967136,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X10"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482480.1,105331446,NC_047564.1,26693493,26693495,59.06610067,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X2"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482480.1,105331446,NC_047564.1,26781172,26781174,61.41147963,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X2"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482480.1,105331446,NC_047564.1,26781458,26781460,52.16836735,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X2"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482480.1,105331446,NC_047564.1,26782469,26782471,62.61019879,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X2"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482480.1,105331446,NC_047564.1,26783579,26783581,65.38967136,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X2"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482481.1,105331446,NC_047564.1,26693493,26693495,59.06610067,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X3"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482481.1,105331446,NC_047564.1,26781172,26781174,61.41147963,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X3"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482481.1,105331446,NC_047564.1,26781458,26781460,52.16836735,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X3"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482481.1,105331446,NC_047564.1,26782469,26782471,62.61019879,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X3"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482481.1,105331446,NC_047564.1,26783579,26783581,65.38967136,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X3"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482482.1,105331446,NC_047564.1,26693493,26693495,59.06610067,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X4"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482482.1,105331446,NC_047564.1,26781172,26781174,61.41147963,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X4"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482482.1,105331446,NC_047564.1,26781458,26781460,52.16836735,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X4"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482482.1,105331446,NC_047564.1,26782469,26782471,62.61019879,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X4"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482482.1,105331446,NC_047564.1,26783579,26783581,65.38967136,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X4"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482483.1,105331446,NC_047564.1,26693493,26693495,59.06610067,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X5"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482483.1,105331446,NC_047564.1,26781172,26781174,61.41147963,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X5"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482483.1,105331446,NC_047564.1,26781458,26781460,52.16836735,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X5"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482483.1,105331446,NC_047564.1,26782469,26782471,62.61019879,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X5"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482483.1,105331446,NC_047564.1,26783579,26783581,65.38967136,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X5"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482484.1,105331446,NC_047564.1,26693493,26693495,59.06610067,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X6"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482484.1,105331446,NC_047564.1,26781172,26781174,61.41147963,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X6"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482484.1,105331446,NC_047564.1,26781458,26781460,52.16836735,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X6"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482484.1,105331446,NC_047564.1,26782469,26782471,62.61019879,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X6"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482484.1,105331446,NC_047564.1,26783579,26783581,65.38967136,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X6"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482485.1,105331446,NC_047564.1,26693493,26693495,59.06610067,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X7"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482485.1,105331446,NC_047564.1,26781172,26781174,61.41147963,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X7"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482485.1,105331446,NC_047564.1,26781458,26781460,52.16836735,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X7"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482485.1,105331446,NC_047564.1,26782469,26782471,62.61019879,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X7"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482485.1,105331446,NC_047564.1,26783579,26783581,65.38967136,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X7"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482486.1,105331446,NC_047564.1,26693493,26693495,59.06610067,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X8"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482486.1,105331446,NC_047564.1,26781172,26781174,61.41147963,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X8"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482486.1,105331446,NC_047564.1,26781458,26781460,52.16836735,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X8"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482486.1,105331446,NC_047564.1,26782469,26782471,62.61019879,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X8"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482486.1,105331446,NC_047564.1,26783579,26783581,65.38967136,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X8"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482487.1,105331446,NC_047564.1,26693493,26693495,59.06610067,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X9"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482487.1,105331446,NC_047564.1,26781172,26781174,61.41147963,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X9"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482487.1,105331446,NC_047564.1,26781458,26781460,52.16836735,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X9"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482487.1,105331446,NC_047564.1,26782469,26782471,62.61019879,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X9"
+GO:0000123,histone acetyltransferase complex,0.0093,XM_034482487.1,105331446,NC_047564.1,26783579,26783581,65.38967136,histone acetyltransferase complex,nucleus,"helicase domino, transcript variant X9"
 GO:0000123,histone acetyltransferase complex,0.0093,XM_034462443.1,NA,NA,NA,NA,NA,NA,NA,NA
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482479.1,105331446,NC_047564.1,26693493,26693495,59.066100667071,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X1
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482479.1,105331446,NC_047564.1,26781172,26781174,61.411479630471,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X1
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482479.1,105331446,NC_047564.1,26781458,26781460,52.1683673469388,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X1
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482479.1,105331446,NC_047564.1,26782469,26782471,62.6101987899741,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X1
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482479.1,105331446,NC_047564.1,26783579,26783581,65.3896713615023,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X1
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482480.1,105331446,NC_047564.1,26693493,26693495,59.066100667071,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X2
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482480.1,105331446,NC_047564.1,26781172,26781174,61.411479630471,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X2
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482480.1,105331446,NC_047564.1,26781458,26781460,52.1683673469388,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X2
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482480.1,105331446,NC_047564.1,26782469,26782471,62.6101987899741,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X2
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482480.1,105331446,NC_047564.1,26783579,26783581,65.3896713615023,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X2
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482481.1,105331446,NC_047564.1,26693493,26693495,59.066100667071,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X3
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482481.1,105331446,NC_047564.1,26781172,26781174,61.411479630471,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X3
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482481.1,105331446,NC_047564.1,26781458,26781460,52.1683673469388,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X3
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482481.1,105331446,NC_047564.1,26782469,26782471,62.6101987899741,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X3
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482481.1,105331446,NC_047564.1,26783579,26783581,65.3896713615023,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X3
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482482.1,105331446,NC_047564.1,26693493,26693495,59.066100667071,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X4
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482482.1,105331446,NC_047564.1,26781172,26781174,61.411479630471,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X4
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482482.1,105331446,NC_047564.1,26781458,26781460,52.1683673469388,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X4
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482482.1,105331446,NC_047564.1,26782469,26782471,62.6101987899741,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X4
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482482.1,105331446,NC_047564.1,26783579,26783581,65.3896713615023,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X4
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482483.1,105331446,NC_047564.1,26693493,26693495,59.066100667071,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X5
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482483.1,105331446,NC_047564.1,26781172,26781174,61.411479630471,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X5
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482483.1,105331446,NC_047564.1,26781458,26781460,52.1683673469388,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X5
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482483.1,105331446,NC_047564.1,26782469,26782471,62.6101987899741,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X5
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482483.1,105331446,NC_047564.1,26783579,26783581,65.3896713615023,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X5
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482484.1,105331446,NC_047564.1,26693493,26693495,59.066100667071,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X6
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482484.1,105331446,NC_047564.1,26781172,26781174,61.411479630471,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X6
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482484.1,105331446,NC_047564.1,26781458,26781460,52.1683673469388,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X6
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482484.1,105331446,NC_047564.1,26782469,26782471,62.6101987899741,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X6
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482484.1,105331446,NC_047564.1,26783579,26783581,65.3896713615023,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X6
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482485.1,105331446,NC_047564.1,26693493,26693495,59.066100667071,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X7
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482485.1,105331446,NC_047564.1,26781172,26781174,61.411479630471,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X7
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482485.1,105331446,NC_047564.1,26781458,26781460,52.1683673469388,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X7
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482485.1,105331446,NC_047564.1,26782469,26782471,62.6101987899741,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X7
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482485.1,105331446,NC_047564.1,26783579,26783581,65.3896713615023,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X7
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482486.1,105331446,NC_047564.1,26693493,26693495,59.066100667071,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X8
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482486.1,105331446,NC_047564.1,26781172,26781174,61.411479630471,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X8
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482486.1,105331446,NC_047564.1,26781458,26781460,52.1683673469388,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X8
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482486.1,105331446,NC_047564.1,26782469,26782471,62.6101987899741,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X8
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482486.1,105331446,NC_047564.1,26783579,26783581,65.3896713615023,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X8
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482487.1,105331446,NC_047564.1,26693493,26693495,59.066100667071,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X9
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482487.1,105331446,NC_047564.1,26781172,26781174,61.411479630471,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X9
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482487.1,105331446,NC_047564.1,26781458,26781460,52.1683673469388,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X9
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482487.1,105331446,NC_047564.1,26782469,26782471,62.6101987899741,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X9
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482487.1,105331446,NC_047564.1,26783579,26783581,65.3896713615023,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X9
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482488.1,105331446,NC_047564.1,26693493,26693495,59.066100667071,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X10
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482488.1,105331446,NC_047564.1,26781172,26781174,61.411479630471,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X10
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482488.1,105331446,NC_047564.1,26781458,26781460,52.1683673469388,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X10
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482488.1,105331446,NC_047564.1,26782469,26782471,62.6101987899741,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X10
-GO:0000123,histone acetyltransferase complex,0.0093,XM_034482488.1,105331446,NC_047564.1,26783579,26783581,65.3896713615023,histone acetyltransferase complex,nucleus,helicase domino, transcript variant X10
+GO:0005875,microtubule associated complex,0.0061,XM_034469289.1,NA,NA,NA,NA,NA,NA,NA,"cytoplasmic dynein 2 light intermediate chain 1-like, transcript variant X2"
+GO:0005875,microtubule associated complex,0.0061,XM_034479303.1,NA,NA,NA,NA,NA,NA,NA,"dynein heavy chain 5, axonemal, transcript variant X1"
+GO:0005875,microtubule associated complex,0.0061,XM_034479304.1,NA,NA,NA,NA,NA,NA,NA,"dynein heavy chain 5, axonemal, transcript variant X2"
+GO:0005875,microtubule associated complex,0.0061,XM_034479305.1,NA,NA,NA,NA,NA,NA,NA,"dynein heavy chain 5, axonemal, transcript variant X3"
+GO:0005875,microtubule associated complex,0.0061,XM_034479306.1,NA,NA,NA,NA,NA,NA,NA,"dynein heavy chain 5, axonemal, transcript variant X4"
+GO:0005875,microtubule associated complex,0.0061,XM_034479307.1,NA,NA,NA,NA,NA,NA,NA,"dynein heavy chain 5, axonemal, transcript variant X5"
+GO:0005875,microtubule associated complex,0.0061,XM_034465963.1,NA,NA,NA,NA,NA,NA,NA,"kinesin-like protein KIF23, transcript variant X1"
+GO:0005875,microtubule associated complex,0.0061,XM_034465964.1,NA,NA,NA,NA,NA,NA,NA,"kinesin-like protein KIF23, transcript variant X2"
+GO:0005875,microtubule associated complex,0.0061,XM_034465965.1,NA,NA,NA,NA,NA,NA,NA,"kinesin-like protein KIF23, transcript variant X3"
+GO:0005875,microtubule associated complex,0.0061,XM_034479684.1,105337636,NC_047563.1,63424371,63424373,55.86956522,microtubule associated complex,cytoskeleton,"unconventional myosin-VI, transcript variant X1"
+GO:0005875,microtubule associated complex,0.0061,XM_034479684.1,105337636,NC_047563.1,63429513,63429515,-58.66477273,microtubule associated complex,cytoskeleton,"unconventional myosin-VI, transcript variant X1"
+GO:0005875,microtubule associated complex,0.0061,XM_034479685.1,105337636,NC_047563.1,63424371,63424373,55.86956522,microtubule associated complex,cytoskeleton,"unconventional myosin-VI, transcript variant X2"
+GO:0005875,microtubule associated complex,0.0061,XM_034479685.1,105337636,NC_047563.1,63429513,63429515,-58.66477273,microtubule associated complex,cytoskeleton,"unconventional myosin-VI, transcript variant X2"
+GO:0005875,microtubule associated complex,0.0061,XM_034479686.1,105337636,NC_047563.1,63424371,63424373,55.86956522,microtubule associated complex,cytoskeleton,"unconventional myosin-VI, transcript variant X3"
+GO:0005875,microtubule associated complex,0.0061,XM_034479686.1,105337636,NC_047563.1,63429513,63429515,-58.66477273,microtubule associated complex,cytoskeleton,"unconventional myosin-VI, transcript variant X3"
+GO:0005875,microtubule associated complex,0.0061,XM_034479687.1,105337636,NC_047563.1,63424371,63424373,55.86956522,microtubule associated complex,cytoskeleton,"unconventional myosin-VI, transcript variant X4"
+GO:0005875,microtubule associated complex,0.0061,XM_034479687.1,105337636,NC_047563.1,63429513,63429515,-58.66477273,microtubule associated complex,cytoskeleton,"unconventional myosin-VI, transcript variant X4"
+GO:0005875,microtubule associated complex,0.0061,XM_034479688.1,105337636,NC_047563.1,63424371,63424373,55.86956522,microtubule associated complex,cytoskeleton,"unconventional myosin-VI, transcript variant X5"
+GO:0005875,microtubule associated complex,0.0061,XM_034479688.1,105337636,NC_047563.1,63429513,63429515,-58.66477273,microtubule associated complex,cytoskeleton,"unconventional myosin-VI, transcript variant X5"
+GO:0031248,protein acetyltransferase complex,0.0093,XM_034482479.1,NA,NA,NA,NA,NA,NA,NA,"helicase domino, transcript variant X1"
+GO:0031248,protein acetyltransferase complex,0.0093,XM_034482488.1,NA,NA,NA,NA,NA,NA,NA,"helicase domino, transcript variant X10"
+GO:0031248,protein acetyltransferase complex,0.0093,XM_034482480.1,NA,NA,NA,NA,NA,NA,NA,"helicase domino, transcript variant X2"
+GO:0031248,protein acetyltransferase complex,0.0093,XM_034482481.1,NA,NA,NA,NA,NA,NA,NA,"helicase domino, transcript variant X3"
+GO:0031248,protein acetyltransferase complex,0.0093,XM_034482482.1,NA,NA,NA,NA,NA,NA,NA,"helicase domino, transcript variant X4"
+GO:0031248,protein acetyltransferase complex,0.0093,XM_034482483.1,NA,NA,NA,NA,NA,NA,NA,"helicase domino, transcript variant X5"
+GO:0031248,protein acetyltransferase complex,0.0093,XM_034482484.1,NA,NA,NA,NA,NA,NA,NA,"helicase domino, transcript variant X6"
+GO:0031248,protein acetyltransferase complex,0.0093,XM_034482485.1,NA,NA,NA,NA,NA,NA,NA,"helicase domino, transcript variant X7"
+GO:0031248,protein acetyltransferase complex,0.0093,XM_034482486.1,NA,NA,NA,NA,NA,NA,NA,"helicase domino, transcript variant X8"
+GO:0031248,protein acetyltransferase complex,0.0093,XM_034482487.1,NA,NA,NA,NA,NA,NA,NA,"helicase domino, transcript variant X9"
 GO:0031248,protein acetyltransferase complex,0.0093,XM_034462443.1,NA,NA,NA,NA,NA,NA,NA,NA
-GO:0031248,protein acetyltransferase complex,0.0093,XM_034482479.1,NA,NA,NA,NA,NA,NA,NA,helicase domino, transcript variant X1
-GO:0031248,protein acetyltransferase complex,0.0093,XM_034482480.1,NA,NA,NA,NA,NA,NA,NA,helicase domino, transcript variant X2
-GO:0031248,protein acetyltransferase complex,0.0093,XM_034482481.1,NA,NA,NA,NA,NA,NA,NA,helicase domino, transcript variant X3
-GO:0031248,protein acetyltransferase complex,0.0093,XM_034482482.1,NA,NA,NA,NA,NA,NA,NA,helicase domino, transcript variant X4
-GO:0031248,protein acetyltransferase complex,0.0093,XM_034482483.1,NA,NA,NA,NA,NA,NA,NA,helicase domino, transcript variant X5
-GO:0031248,protein acetyltransferase complex,0.0093,XM_034482484.1,NA,NA,NA,NA,NA,NA,NA,helicase domino, transcript variant X6
-GO:0031248,protein acetyltransferase complex,0.0093,XM_034482485.1,NA,NA,NA,NA,NA,NA,NA,helicase domino, transcript variant X7
-GO:0031248,protein acetyltransferase complex,0.0093,XM_034482486.1,NA,NA,NA,NA,NA,NA,NA,helicase domino, transcript variant X8
-GO:0031248,protein acetyltransferase complex,0.0093,XM_034482487.1,NA,NA,NA,NA,NA,NA,NA,helicase domino, transcript variant X9
-GO:0031248,protein acetyltransferase complex,0.0093,XM_034482488.1,NA,NA,NA,NA,NA,NA,NA,helicase domino, transcript variant X10
+GO:1902493,acetyltransferase complex,0.0093,XM_034482479.1,NA,NA,NA,NA,NA,NA,NA,"helicase domino, transcript variant X1"
+GO:1902493,acetyltransferase complex,0.0093,XM_034482488.1,NA,NA,NA,NA,NA,NA,NA,"helicase domino, transcript variant X10"
+GO:1902493,acetyltransferase complex,0.0093,XM_034482480.1,NA,NA,NA,NA,NA,NA,NA,"helicase domino, transcript variant X2"
+GO:1902493,acetyltransferase complex,0.0093,XM_034482481.1,NA,NA,NA,NA,NA,NA,NA,"helicase domino, transcript variant X3"
+GO:1902493,acetyltransferase complex,0.0093,XM_034482482.1,NA,NA,NA,NA,NA,NA,NA,"helicase domino, transcript variant X4"
+GO:1902493,acetyltransferase complex,0.0093,XM_034482483.1,NA,NA,NA,NA,NA,NA,NA,"helicase domino, transcript variant X5"
+GO:1902493,acetyltransferase complex,0.0093,XM_034482484.1,NA,NA,NA,NA,NA,NA,NA,"helicase domino, transcript variant X6"
+GO:1902493,acetyltransferase complex,0.0093,XM_034482485.1,NA,NA,NA,NA,NA,NA,NA,"helicase domino, transcript variant X7"
+GO:1902493,acetyltransferase complex,0.0093,XM_034482486.1,NA,NA,NA,NA,NA,NA,NA,"helicase domino, transcript variant X8"
+GO:1902493,acetyltransferase complex,0.0093,XM_034482487.1,NA,NA,NA,NA,NA,NA,NA,"helicase domino, transcript variant X9"
 GO:1902493,acetyltransferase complex,0.0093,XM_034462443.1,NA,NA,NA,NA,NA,NA,NA,NA
-GO:1902493,acetyltransferase complex,0.0093,XM_034482479.1,NA,NA,NA,NA,NA,NA,NA,helicase domino, transcript variant X1
-GO:1902493,acetyltransferase complex,0.0093,XM_034482480.1,NA,NA,NA,NA,NA,NA,NA,helicase domino, transcript variant X2
-GO:1902493,acetyltransferase complex,0.0093,XM_034482481.1,NA,NA,NA,NA,NA,NA,NA,helicase domino, transcript variant X3
-GO:1902493,acetyltransferase complex,0.0093,XM_034482482.1,NA,NA,NA,NA,NA,NA,NA,helicase domino, transcript variant X4
-GO:1902493,acetyltransferase complex,0.0093,XM_034482483.1,NA,NA,NA,NA,NA,NA,NA,helicase domino, transcript variant X5
-GO:1902493,acetyltransferase complex,0.0093,XM_034482484.1,NA,NA,NA,NA,NA,NA,NA,helicase domino, transcript variant X6
-GO:1902493,acetyltransferase complex,0.0093,XM_034482485.1,NA,NA,NA,NA,NA,NA,NA,helicase domino, transcript variant X7
-GO:1902493,acetyltransferase complex,0.0093,XM_034482486.1,NA,NA,NA,NA,NA,NA,NA,helicase domino, transcript variant X8
-GO:1902493,acetyltransferase complex,0.0093,XM_034482487.1,NA,NA,NA,NA,NA,NA,NA,helicase domino, transcript variant X9
-GO:1902493,acetyltransferase complex,0.0093,XM_034482488.1,NA,NA,NA,NA,NA,NA,NA,helicase domino, transcript variant X10
