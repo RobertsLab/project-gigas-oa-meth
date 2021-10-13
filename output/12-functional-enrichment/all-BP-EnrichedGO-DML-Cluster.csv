@@ -1,183 +1,183 @@
-GOID,topGOterm,p.value,transcript,geneID,chr,start,end,meth.diff,GOSlim,product,SEcluster
-GO:0001539,cilium or flagellum-dependent cell motil...,0.00076,XM_034479303.1,NA,NA,NA,NA,NA,NA,dynein heavy chain 5, axonemal, transcript variant X1,1
-GO:0001539,cilium or flagellum-dependent cell motil...,0.00076,XM_034479304.1,NA,NA,NA,NA,NA,NA,dynein heavy chain 5, axonemal, transcript variant X2,1
-GO:0001539,cilium or flagellum-dependent cell motil...,0.00076,XM_034479305.1,NA,NA,NA,NA,NA,NA,dynein heavy chain 5, axonemal, transcript variant X3,1
-GO:0001539,cilium or flagellum-dependent cell motil...,0.00076,XM_034479306.1,NA,NA,NA,NA,NA,NA,dynein heavy chain 5, axonemal, transcript variant X4,1
-GO:0001539,cilium or flagellum-dependent cell motil...,0.00076,XM_034479307.1,NA,NA,NA,NA,NA,NA,dynein heavy chain 5, axonemal, transcript variant X5,1
-GO:0001539,cilium or flagellum-dependent cell motil...,0.00076,XM_034479684.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X1,1
-GO:0001539,cilium or flagellum-dependent cell motil...,0.00076,XM_034479685.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X2,1
-GO:0001539,cilium or flagellum-dependent cell motil...,0.00076,XM_034479686.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X3,1
-GO:0001539,cilium or flagellum-dependent cell motil...,0.00076,XM_034479687.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X4,1
-GO:0001539,cilium or flagellum-dependent cell motil...,0.00076,XM_034479688.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X5,1
-GO:0030317,flagellated sperm motility,0.00076,XM_034479303.1,105330782,NC_047563.1,23984358,23984360,52.2604687653231,other biological processes,dynein heavy chain 5, axonemal, transcript variant X1,1
-GO:0030317,flagellated sperm motility,0.00076,XM_034479303.1,105330782,NC_047563.1,23995567,23995569,55.2521008403361,other biological processes,dynein heavy chain 5, axonemal, transcript variant X1,1
-GO:0030317,flagellated sperm motility,0.00076,XM_034479304.1,105330782,NC_047563.1,23984358,23984360,52.2604687653231,other biological processes,dynein heavy chain 5, axonemal, transcript variant X2,1
-GO:0030317,flagellated sperm motility,0.00076,XM_034479304.1,105330782,NC_047563.1,23995567,23995569,55.2521008403361,other biological processes,dynein heavy chain 5, axonemal, transcript variant X2,1
-GO:0030317,flagellated sperm motility,0.00076,XM_034479305.1,105330782,NC_047563.1,23984358,23984360,52.2604687653231,other biological processes,dynein heavy chain 5, axonemal, transcript variant X3,1
-GO:0030317,flagellated sperm motility,0.00076,XM_034479305.1,105330782,NC_047563.1,23995567,23995569,55.2521008403361,other biological processes,dynein heavy chain 5, axonemal, transcript variant X3,1
-GO:0030317,flagellated sperm motility,0.00076,XM_034479306.1,105330782,NC_047563.1,23984358,23984360,52.2604687653231,other biological processes,dynein heavy chain 5, axonemal, transcript variant X4,1
-GO:0030317,flagellated sperm motility,0.00076,XM_034479306.1,105330782,NC_047563.1,23995567,23995569,55.2521008403361,other biological processes,dynein heavy chain 5, axonemal, transcript variant X4,1
-GO:0030317,flagellated sperm motility,0.00076,XM_034479307.1,105330782,NC_047563.1,23984358,23984360,52.2604687653231,other biological processes,dynein heavy chain 5, axonemal, transcript variant X5,1
-GO:0030317,flagellated sperm motility,0.00076,XM_034479307.1,105330782,NC_047563.1,23995567,23995569,55.2521008403361,other biological processes,dynein heavy chain 5, axonemal, transcript variant X5,1
-GO:0030317,flagellated sperm motility,0.00076,XM_034479684.1,105337636,NC_047563.1,63424371,63424373,55.8695652173913,other biological processes,unconventional myosin-VI, transcript variant X1,1
-GO:0030317,flagellated sperm motility,0.00076,XM_034479684.1,105337636,NC_047563.1,63429513,63429515,-58.6647727272727,other biological processes,unconventional myosin-VI, transcript variant X1,1
-GO:0030317,flagellated sperm motility,0.00076,XM_034479685.1,105337636,NC_047563.1,63424371,63424373,55.8695652173913,other biological processes,unconventional myosin-VI, transcript variant X2,1
-GO:0030317,flagellated sperm motility,0.00076,XM_034479685.1,105337636,NC_047563.1,63429513,63429515,-58.6647727272727,other biological processes,unconventional myosin-VI, transcript variant X2,1
-GO:0030317,flagellated sperm motility,0.00076,XM_034479686.1,105337636,NC_047563.1,63424371,63424373,55.8695652173913,other biological processes,unconventional myosin-VI, transcript variant X3,1
-GO:0030317,flagellated sperm motility,0.00076,XM_034479686.1,105337636,NC_047563.1,63429513,63429515,-58.6647727272727,other biological processes,unconventional myosin-VI, transcript variant X3,1
-GO:0030317,flagellated sperm motility,0.00076,XM_034479687.1,105337636,NC_047563.1,63424371,63424373,55.8695652173913,other biological processes,unconventional myosin-VI, transcript variant X4,1
-GO:0030317,flagellated sperm motility,0.00076,XM_034479687.1,105337636,NC_047563.1,63429513,63429515,-58.6647727272727,other biological processes,unconventional myosin-VI, transcript variant X4,1
-GO:0030317,flagellated sperm motility,0.00076,XM_034479688.1,105337636,NC_047563.1,63424371,63424373,55.8695652173913,other biological processes,unconventional myosin-VI, transcript variant X5,1
-GO:0030317,flagellated sperm motility,0.00076,XM_034479688.1,105337636,NC_047563.1,63429513,63429515,-58.6647727272727,other biological processes,unconventional myosin-VI, transcript variant X5,1
-GO:0060285,cilium-dependent cell motility,0.00076,XM_034479303.1,NA,NA,NA,NA,NA,NA,dynein heavy chain 5, axonemal, transcript variant X1,1
-GO:0060285,cilium-dependent cell motility,0.00076,XM_034479304.1,NA,NA,NA,NA,NA,NA,dynein heavy chain 5, axonemal, transcript variant X2,1
-GO:0060285,cilium-dependent cell motility,0.00076,XM_034479305.1,NA,NA,NA,NA,NA,NA,dynein heavy chain 5, axonemal, transcript variant X3,1
-GO:0060285,cilium-dependent cell motility,0.00076,XM_034479306.1,NA,NA,NA,NA,NA,NA,dynein heavy chain 5, axonemal, transcript variant X4,1
-GO:0060285,cilium-dependent cell motility,0.00076,XM_034479307.1,NA,NA,NA,NA,NA,NA,dynein heavy chain 5, axonemal, transcript variant X5,1
-GO:0060285,cilium-dependent cell motility,0.00076,XM_034479684.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X1,1
-GO:0060285,cilium-dependent cell motility,0.00076,XM_034479685.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X2,1
-GO:0060285,cilium-dependent cell motility,0.00076,XM_034479686.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X3,1
-GO:0060285,cilium-dependent cell motility,0.00076,XM_034479687.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X4,1
-GO:0060285,cilium-dependent cell motility,0.00076,XM_034479688.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X5,1
-GO:0060294,cilium movement involved in cell motilit...,0.00076,XM_034479303.1,NA,NA,NA,NA,NA,NA,dynein heavy chain 5, axonemal, transcript variant X1,1
-GO:0060294,cilium movement involved in cell motilit...,0.00076,XM_034479304.1,NA,NA,NA,NA,NA,NA,dynein heavy chain 5, axonemal, transcript variant X2,1
-GO:0060294,cilium movement involved in cell motilit...,0.00076,XM_034479305.1,NA,NA,NA,NA,NA,NA,dynein heavy chain 5, axonemal, transcript variant X3,1
-GO:0060294,cilium movement involved in cell motilit...,0.00076,XM_034479306.1,NA,NA,NA,NA,NA,NA,dynein heavy chain 5, axonemal, transcript variant X4,1
-GO:0060294,cilium movement involved in cell motilit...,0.00076,XM_034479307.1,NA,NA,NA,NA,NA,NA,dynein heavy chain 5, axonemal, transcript variant X5,1
-GO:0060294,cilium movement involved in cell motilit...,0.00076,XM_034479684.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X1,1
-GO:0060294,cilium movement involved in cell motilit...,0.00076,XM_034479685.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X2,1
-GO:0060294,cilium movement involved in cell motilit...,0.00076,XM_034479686.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X3,1
-GO:0060294,cilium movement involved in cell motilit...,0.00076,XM_034479687.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X4,1
-GO:0060294,cilium movement involved in cell motilit...,0.00076,XM_034479688.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X5,1
-GO:0097722,sperm motility,0.00076,XM_034479303.1,NA,NA,NA,NA,NA,NA,dynein heavy chain 5, axonemal, transcript variant X1,1
-GO:0097722,sperm motility,0.00076,XM_034479304.1,NA,NA,NA,NA,NA,NA,dynein heavy chain 5, axonemal, transcript variant X2,1
-GO:0097722,sperm motility,0.00076,XM_034479305.1,NA,NA,NA,NA,NA,NA,dynein heavy chain 5, axonemal, transcript variant X3,1
-GO:0097722,sperm motility,0.00076,XM_034479306.1,NA,NA,NA,NA,NA,NA,dynein heavy chain 5, axonemal, transcript variant X4,1
-GO:0097722,sperm motility,0.00076,XM_034479307.1,NA,NA,NA,NA,NA,NA,dynein heavy chain 5, axonemal, transcript variant X5,1
-GO:0097722,sperm motility,0.00076,XM_034479684.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X1,1
-GO:0097722,sperm motility,0.00076,XM_034479685.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X2,1
-GO:0097722,sperm motility,0.00076,XM_034479686.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X3,1
-GO:0097722,sperm motility,0.00076,XM_034479687.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X4,1
-GO:0097722,sperm motility,0.00076,XM_034479688.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X5,1
-GO:0003341,cilium movement,0.00263,XM_034474502.1,NA,NA,NA,NA,NA,NA,serine/threonine-protein kinase 36, transcript variant X1,1
-GO:0003341,cilium movement,0.00263,XM_034474503.1,NA,NA,NA,NA,NA,NA,serine/threonine-protein kinase 36, transcript variant X2,1
-GO:0003341,cilium movement,0.00263,XM_034479303.1,NA,NA,NA,NA,NA,NA,dynein heavy chain 5, axonemal, transcript variant X1,1
-GO:0003341,cilium movement,0.00263,XM_034479304.1,NA,NA,NA,NA,NA,NA,dynein heavy chain 5, axonemal, transcript variant X2,1
-GO:0003341,cilium movement,0.00263,XM_034479305.1,NA,NA,NA,NA,NA,NA,dynein heavy chain 5, axonemal, transcript variant X3,1
-GO:0003341,cilium movement,0.00263,XM_034479306.1,NA,NA,NA,NA,NA,NA,dynein heavy chain 5, axonemal, transcript variant X4,1
-GO:0003341,cilium movement,0.00263,XM_034479307.1,NA,NA,NA,NA,NA,NA,dynein heavy chain 5, axonemal, transcript variant X5,1
-GO:0003341,cilium movement,0.00263,XM_034479684.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X1,1
-GO:0003341,cilium movement,0.00263,XM_034479685.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X2,1
-GO:0003341,cilium movement,0.00263,XM_034479686.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X3,1
-GO:0003341,cilium movement,0.00263,XM_034479687.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X4,1
-GO:0003341,cilium movement,0.00263,XM_034479688.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X5,1
-GO:0002165,instar larval or pupal development,0.00298,XM_034473960.1,NA,NA,NA,NA,NA,NA,protein neuralized, transcript variant X3,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034479684.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X1,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034479685.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X2,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034479686.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X3,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034479687.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X4,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034479688.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X5,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482479.1,105331446,NC_047564.1,26693493,26693495,59.066100667071,developmental processes,helicase domino, transcript variant X1,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482479.1,105331446,NC_047564.1,26781172,26781174,61.411479630471,developmental processes,helicase domino, transcript variant X1,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482479.1,105331446,NC_047564.1,26781458,26781460,52.1683673469388,developmental processes,helicase domino, transcript variant X1,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482479.1,105331446,NC_047564.1,26782469,26782471,62.6101987899741,developmental processes,helicase domino, transcript variant X1,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482479.1,105331446,NC_047564.1,26783579,26783581,65.3896713615023,developmental processes,helicase domino, transcript variant X1,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482480.1,105331446,NC_047564.1,26693493,26693495,59.066100667071,developmental processes,helicase domino, transcript variant X2,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482480.1,105331446,NC_047564.1,26781172,26781174,61.411479630471,developmental processes,helicase domino, transcript variant X2,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482480.1,105331446,NC_047564.1,26781458,26781460,52.1683673469388,developmental processes,helicase domino, transcript variant X2,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482480.1,105331446,NC_047564.1,26782469,26782471,62.6101987899741,developmental processes,helicase domino, transcript variant X2,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482480.1,105331446,NC_047564.1,26783579,26783581,65.3896713615023,developmental processes,helicase domino, transcript variant X2,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482481.1,105331446,NC_047564.1,26693493,26693495,59.066100667071,developmental processes,helicase domino, transcript variant X3,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482481.1,105331446,NC_047564.1,26781172,26781174,61.411479630471,developmental processes,helicase domino, transcript variant X3,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482481.1,105331446,NC_047564.1,26781458,26781460,52.1683673469388,developmental processes,helicase domino, transcript variant X3,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482481.1,105331446,NC_047564.1,26782469,26782471,62.6101987899741,developmental processes,helicase domino, transcript variant X3,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482481.1,105331446,NC_047564.1,26783579,26783581,65.3896713615023,developmental processes,helicase domino, transcript variant X3,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482482.1,105331446,NC_047564.1,26693493,26693495,59.066100667071,developmental processes,helicase domino, transcript variant X4,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482482.1,105331446,NC_047564.1,26781172,26781174,61.411479630471,developmental processes,helicase domino, transcript variant X4,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482482.1,105331446,NC_047564.1,26781458,26781460,52.1683673469388,developmental processes,helicase domino, transcript variant X4,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482482.1,105331446,NC_047564.1,26782469,26782471,62.6101987899741,developmental processes,helicase domino, transcript variant X4,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482482.1,105331446,NC_047564.1,26783579,26783581,65.3896713615023,developmental processes,helicase domino, transcript variant X4,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482483.1,105331446,NC_047564.1,26693493,26693495,59.066100667071,developmental processes,helicase domino, transcript variant X5,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482483.1,105331446,NC_047564.1,26781172,26781174,61.411479630471,developmental processes,helicase domino, transcript variant X5,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482483.1,105331446,NC_047564.1,26781458,26781460,52.1683673469388,developmental processes,helicase domino, transcript variant X5,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482483.1,105331446,NC_047564.1,26782469,26782471,62.6101987899741,developmental processes,helicase domino, transcript variant X5,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482483.1,105331446,NC_047564.1,26783579,26783581,65.3896713615023,developmental processes,helicase domino, transcript variant X5,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482484.1,105331446,NC_047564.1,26693493,26693495,59.066100667071,developmental processes,helicase domino, transcript variant X6,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482484.1,105331446,NC_047564.1,26781172,26781174,61.411479630471,developmental processes,helicase domino, transcript variant X6,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482484.1,105331446,NC_047564.1,26781458,26781460,52.1683673469388,developmental processes,helicase domino, transcript variant X6,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482484.1,105331446,NC_047564.1,26782469,26782471,62.6101987899741,developmental processes,helicase domino, transcript variant X6,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482484.1,105331446,NC_047564.1,26783579,26783581,65.3896713615023,developmental processes,helicase domino, transcript variant X6,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482485.1,105331446,NC_047564.1,26693493,26693495,59.066100667071,developmental processes,helicase domino, transcript variant X7,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482485.1,105331446,NC_047564.1,26781172,26781174,61.411479630471,developmental processes,helicase domino, transcript variant X7,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482485.1,105331446,NC_047564.1,26781458,26781460,52.1683673469388,developmental processes,helicase domino, transcript variant X7,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482485.1,105331446,NC_047564.1,26782469,26782471,62.6101987899741,developmental processes,helicase domino, transcript variant X7,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482485.1,105331446,NC_047564.1,26783579,26783581,65.3896713615023,developmental processes,helicase domino, transcript variant X7,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482486.1,105331446,NC_047564.1,26693493,26693495,59.066100667071,developmental processes,helicase domino, transcript variant X8,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482486.1,105331446,NC_047564.1,26781172,26781174,61.411479630471,developmental processes,helicase domino, transcript variant X8,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482486.1,105331446,NC_047564.1,26781458,26781460,52.1683673469388,developmental processes,helicase domino, transcript variant X8,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482486.1,105331446,NC_047564.1,26782469,26782471,62.6101987899741,developmental processes,helicase domino, transcript variant X8,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482486.1,105331446,NC_047564.1,26783579,26783581,65.3896713615023,developmental processes,helicase domino, transcript variant X8,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482487.1,105331446,NC_047564.1,26693493,26693495,59.066100667071,developmental processes,helicase domino, transcript variant X9,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482487.1,105331446,NC_047564.1,26781172,26781174,61.411479630471,developmental processes,helicase domino, transcript variant X9,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482487.1,105331446,NC_047564.1,26781458,26781460,52.1683673469388,developmental processes,helicase domino, transcript variant X9,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482487.1,105331446,NC_047564.1,26782469,26782471,62.6101987899741,developmental processes,helicase domino, transcript variant X9,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482487.1,105331446,NC_047564.1,26783579,26783581,65.3896713615023,developmental processes,helicase domino, transcript variant X9,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482488.1,105331446,NC_047564.1,26693493,26693495,59.066100667071,developmental processes,helicase domino, transcript variant X10,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482488.1,105331446,NC_047564.1,26781172,26781174,61.411479630471,developmental processes,helicase domino, transcript variant X10,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482488.1,105331446,NC_047564.1,26781458,26781460,52.1683673469388,developmental processes,helicase domino, transcript variant X10,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482488.1,105331446,NC_047564.1,26782469,26782471,62.6101987899741,developmental processes,helicase domino, transcript variant X10,2
-GO:0002165,instar larval or pupal development,0.00298,XM_034482488.1,105331446,NC_047564.1,26783579,26783581,65.3896713615023,developmental processes,helicase domino, transcript variant X10,2
-GO:0009791,post-embryonic development,0.00442,XM_034465734.1,105317044,NC_047560.1,1302128,1302130,66.1481481481482,developmental processes,cytoplasmic aconitate hydratase, transcript variant X1,3
-GO:0009791,post-embryonic development,0.00442,XM_034465734.1,105317044,NC_047560.1,1302706,1302708,54.9908703590992,developmental processes,cytoplasmic aconitate hydratase, transcript variant X1,3
-GO:0009791,post-embryonic development,0.00442,XM_034465735.1,105317044,NC_047560.1,1302128,1302130,66.1481481481482,developmental processes,cytoplasmic aconitate hydratase, transcript variant X2,3
-GO:0009791,post-embryonic development,0.00442,XM_034465735.1,105317044,NC_047560.1,1302706,1302708,54.9908703590992,developmental processes,cytoplasmic aconitate hydratase, transcript variant X2,3
-GO:0009791,post-embryonic development,0.00442,XM_034465736.1,105317044,NC_047560.1,1302128,1302130,66.1481481481482,developmental processes,cytoplasmic aconitate hydratase, transcript variant X3,3
-GO:0009791,post-embryonic development,0.00442,XM_034465736.1,105317044,NC_047560.1,1302706,1302708,54.9908703590992,developmental processes,cytoplasmic aconitate hydratase, transcript variant X3,3
-GO:0009791,post-embryonic development,0.00442,XM_034465737.1,105317044,NC_047560.1,1302128,1302130,66.1481481481482,developmental processes,cytoplasmic aconitate hydratase, transcript variant X4,3
-GO:0009791,post-embryonic development,0.00442,XM_034465737.1,105317044,NC_047560.1,1302706,1302708,54.9908703590992,developmental processes,cytoplasmic aconitate hydratase, transcript variant X4,3
-GO:0009791,post-embryonic development,0.00442,XM_034465738.1,105317044,NC_047560.1,1302128,1302130,66.1481481481482,developmental processes,cytoplasmic aconitate hydratase, transcript variant X5,3
-GO:0009791,post-embryonic development,0.00442,XM_034465738.1,105317044,NC_047560.1,1302706,1302708,54.9908703590992,developmental processes,cytoplasmic aconitate hydratase, transcript variant X5,3
-GO:0009791,post-embryonic development,0.00442,XM_034473960.1,NA,NA,NA,NA,NA,NA,protein neuralized, transcript variant X3,3
-GO:0009791,post-embryonic development,0.00442,XM_034474502.1,105328930,NC_047562.1,39658233,39658235,-53.5816210045662,developmental processes,serine/threonine-protein kinase 36, transcript variant X1,3
-GO:0009791,post-embryonic development,0.00442,XM_034474503.1,105328930,NC_047562.1,39658233,39658235,-53.5816210045662,developmental processes,serine/threonine-protein kinase 36, transcript variant X2,3
-GO:0009791,post-embryonic development,0.00442,XM_034478686.1,105339958,NC_047563.1,43490501,43490503,-64.6616541353384,developmental processes,cation-independent mannose-6-phosphate receptor, transcript variant X1,3
-GO:0009791,post-embryonic development,0.00442,XM_034478687.1,105339958,NC_047563.1,43490501,43490503,-64.6616541353384,developmental processes,cation-independent mannose-6-phosphate receptor, transcript variant X2,3
-GO:0009791,post-embryonic development,0.00442,XM_034478689.1,105339958,NC_047563.1,43490501,43490503,-64.6616541353384,developmental processes,cation-independent mannose-6-phosphate receptor, transcript variant X3,3
-GO:0009791,post-embryonic development,0.00442,XM_034478690.1,105339958,NC_047563.1,43490501,43490503,-64.6616541353384,developmental processes,cation-independent mannose-6-phosphate receptor, transcript variant X4,3
-GO:0009791,post-embryonic development,0.00442,XM_034479684.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X1,3
-GO:0009791,post-embryonic development,0.00442,XM_034479685.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X2,3
-GO:0009791,post-embryonic development,0.00442,XM_034479686.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X3,3
-GO:0009791,post-embryonic development,0.00442,XM_034479687.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X4,3
-GO:0009791,post-embryonic development,0.00442,XM_034479688.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X5,3
-GO:0009791,post-embryonic development,0.00442,XM_034482479.1,NA,NA,NA,NA,NA,NA,helicase domino, transcript variant X1,3
-GO:0009791,post-embryonic development,0.00442,XM_034482480.1,NA,NA,NA,NA,NA,NA,helicase domino, transcript variant X2,3
-GO:0009791,post-embryonic development,0.00442,XM_034482481.1,NA,NA,NA,NA,NA,NA,helicase domino, transcript variant X3,3
-GO:0009791,post-embryonic development,0.00442,XM_034482482.1,NA,NA,NA,NA,NA,NA,helicase domino, transcript variant X4,3
-GO:0009791,post-embryonic development,0.00442,XM_034482483.1,NA,NA,NA,NA,NA,NA,helicase domino, transcript variant X5,3
-GO:0009791,post-embryonic development,0.00442,XM_034482484.1,NA,NA,NA,NA,NA,NA,helicase domino, transcript variant X6,3
-GO:0009791,post-embryonic development,0.00442,XM_034482485.1,NA,NA,NA,NA,NA,NA,helicase domino, transcript variant X7,3
-GO:0009791,post-embryonic development,0.00442,XM_034482486.1,NA,NA,NA,NA,NA,NA,helicase domino, transcript variant X8,3
-GO:0009791,post-embryonic development,0.00442,XM_034482487.1,NA,NA,NA,NA,NA,NA,helicase domino, transcript variant X9,3
-GO:0009791,post-embryonic development,0.00442,XM_034482488.1,NA,NA,NA,NA,NA,NA,helicase domino, transcript variant X10,3
-GO:0009791,post-embryonic development,0.00442,XM_034482647.1,105317516,NC_047564.1,25225793,25225795,58.974358974359,developmental processes,serine-protein kinase ATM, transcript variant X1,3
-GO:0009791,post-embryonic development,0.00442,XM_034482648.1,105317516,NC_047564.1,25225793,25225795,58.974358974359,developmental processes,serine-protein kinase ATM, transcript variant X2,3
-GO:0009791,post-embryonic development,0.00442,XM_034482649.1,105317516,NC_047564.1,25225793,25225795,58.974358974359,developmental processes,serine-protein kinase ATM, transcript variant X3,3
-GO:0001700,embryonic development via the syncytial ...,0.00816,XM_034479684.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X1,4
-GO:0001700,embryonic development via the syncytial ...,0.00816,XM_034479685.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X2,4
-GO:0001700,embryonic development via the syncytial ...,0.00816,XM_034479686.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X3,4
-GO:0001700,embryonic development via the syncytial ...,0.00816,XM_034479687.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X4,4
-GO:0001700,embryonic development via the syncytial ...,0.00816,XM_034479688.1,NA,NA,NA,NA,NA,NA,unconventional myosin-VI, transcript variant X5,4
-GO:0001700,embryonic development via the syncytial ...,0.00816,XM_034481540.1,NA,NA,NA,NA,NA,NA,uncharacterized LOC105324167, transcript variant X1,4
-GO:0001700,embryonic development via the syncytial ...,0.00816,XM_034481541.1,NA,NA,NA,NA,NA,NA,uncharacterized LOC105324167, transcript variant X2,4
-GO:0007391,dorsal closure,0.00816,XM_034479684.1,105337636,NC_047563.1,63424371,63424373,55.8695652173913,developmental processes,unconventional myosin-VI, transcript variant X1,5
-GO:0007391,dorsal closure,0.00816,XM_034479684.1,105337636,NC_047563.1,63429513,63429515,-58.6647727272727,developmental processes,unconventional myosin-VI, transcript variant X1,5
-GO:0007391,dorsal closure,0.00816,XM_034479685.1,105337636,NC_047563.1,63424371,63424373,55.8695652173913,developmental processes,unconventional myosin-VI, transcript variant X2,5
-GO:0007391,dorsal closure,0.00816,XM_034479685.1,105337636,NC_047563.1,63429513,63429515,-58.6647727272727,developmental processes,unconventional myosin-VI, transcript variant X2,5
-GO:0007391,dorsal closure,0.00816,XM_034479686.1,105337636,NC_047563.1,63424371,63424373,55.8695652173913,developmental processes,unconventional myosin-VI, transcript variant X3,5
-GO:0007391,dorsal closure,0.00816,XM_034479686.1,105337636,NC_047563.1,63429513,63429515,-58.6647727272727,developmental processes,unconventional myosin-VI, transcript variant X3,5
-GO:0007391,dorsal closure,0.00816,XM_034479687.1,105337636,NC_047563.1,63424371,63424373,55.8695652173913,developmental processes,unconventional myosin-VI, transcript variant X4,5
-GO:0007391,dorsal closure,0.00816,XM_034479687.1,105337636,NC_047563.1,63429513,63429515,-58.6647727272727,developmental processes,unconventional myosin-VI, transcript variant X4,5
-GO:0007391,dorsal closure,0.00816,XM_034479688.1,105337636,NC_047563.1,63424371,63424373,55.8695652173913,developmental processes,unconventional myosin-VI, transcript variant X5,5
-GO:0007391,dorsal closure,0.00816,XM_034479688.1,105337636,NC_047563.1,63429513,63429515,-58.6647727272727,developmental processes,unconventional myosin-VI, transcript variant X5,5
-GO:0007391,dorsal closure,0.00816,XM_034481540.1,NA,NA,NA,NA,NA,NA,uncharacterized LOC105324167, transcript variant X1,5
-GO:0007391,dorsal closure,0.00816,XM_034481541.1,NA,NA,NA,NA,NA,NA,uncharacterized LOC105324167, transcript variant X2,5
+GOID,topGOterm,p.value,transcript,geneID,chr,start,end,meth.diff,GOterm,GOSlim,product,SEcluster
+GO:0001539,cilium or flagellum-dependent cell motility,0.00076,XM_034479303.1,NA,NA,NA,NA,NA,NA,NA,"dynein heavy chain 5, axonemal, transcript variant X1",1
+GO:0001539,cilium or flagellum-dependent cell motility,0.00076,XM_034479304.1,NA,NA,NA,NA,NA,NA,NA,"dynein heavy chain 5, axonemal, transcript variant X2",1
+GO:0001539,cilium or flagellum-dependent cell motility,0.00076,XM_034479305.1,NA,NA,NA,NA,NA,NA,NA,"dynein heavy chain 5, axonemal, transcript variant X3",1
+GO:0001539,cilium or flagellum-dependent cell motility,0.00076,XM_034479306.1,NA,NA,NA,NA,NA,NA,NA,"dynein heavy chain 5, axonemal, transcript variant X4",1
+GO:0001539,cilium or flagellum-dependent cell motility,0.00076,XM_034479307.1,NA,NA,NA,NA,NA,NA,NA,"dynein heavy chain 5, axonemal, transcript variant X5",1
+GO:0001539,cilium or flagellum-dependent cell motility,0.00076,XM_034479684.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X1",1
+GO:0001539,cilium or flagellum-dependent cell motility,0.00076,XM_034479685.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X2",1
+GO:0001539,cilium or flagellum-dependent cell motility,0.00076,XM_034479686.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X3",1
+GO:0001539,cilium or flagellum-dependent cell motility,0.00076,XM_034479687.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X4",1
+GO:0001539,cilium or flagellum-dependent cell motility,0.00076,XM_034479688.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X5",1
+GO:0003341,cilium movement,0.00263,XM_034479303.1,NA,NA,NA,NA,NA,NA,NA,"dynein heavy chain 5, axonemal, transcript variant X1",1
+GO:0003341,cilium movement,0.00263,XM_034479304.1,NA,NA,NA,NA,NA,NA,NA,"dynein heavy chain 5, axonemal, transcript variant X2",1
+GO:0003341,cilium movement,0.00263,XM_034479305.1,NA,NA,NA,NA,NA,NA,NA,"dynein heavy chain 5, axonemal, transcript variant X3",1
+GO:0003341,cilium movement,0.00263,XM_034479306.1,NA,NA,NA,NA,NA,NA,NA,"dynein heavy chain 5, axonemal, transcript variant X4",1
+GO:0003341,cilium movement,0.00263,XM_034479307.1,NA,NA,NA,NA,NA,NA,NA,"dynein heavy chain 5, axonemal, transcript variant X5",1
+GO:0003341,cilium movement,0.00263,XM_034474502.1,NA,NA,NA,NA,NA,NA,NA,"serine/threonine-protein kinase 36, transcript variant X1",1
+GO:0003341,cilium movement,0.00263,XM_034474503.1,NA,NA,NA,NA,NA,NA,NA,"serine/threonine-protein kinase 36, transcript variant X2",1
+GO:0003341,cilium movement,0.00263,XM_034479684.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X1",1
+GO:0003341,cilium movement,0.00263,XM_034479685.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X2",1
+GO:0003341,cilium movement,0.00263,XM_034479686.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X3",1
+GO:0003341,cilium movement,0.00263,XM_034479687.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X4",1
+GO:0003341,cilium movement,0.00263,XM_034479688.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X5",1
+GO:0030317,flagellated sperm motility,0.00076,XM_034479303.1,105330782,NC_047563.1,23984358,23984360,52.26046877,sperm motility,other biological processes,"dynein heavy chain 5, axonemal, transcript variant X1",1
+GO:0030317,flagellated sperm motility,0.00076,XM_034479303.1,105330782,NC_047563.1,23995567,23995569,55.25210084,sperm motility,other biological processes,"dynein heavy chain 5, axonemal, transcript variant X1",1
+GO:0030317,flagellated sperm motility,0.00076,XM_034479304.1,105330782,NC_047563.1,23984358,23984360,52.26046877,sperm motility,other biological processes,"dynein heavy chain 5, axonemal, transcript variant X2",1
+GO:0030317,flagellated sperm motility,0.00076,XM_034479304.1,105330782,NC_047563.1,23995567,23995569,55.25210084,sperm motility,other biological processes,"dynein heavy chain 5, axonemal, transcript variant X2",1
+GO:0030317,flagellated sperm motility,0.00076,XM_034479305.1,105330782,NC_047563.1,23984358,23984360,52.26046877,sperm motility,other biological processes,"dynein heavy chain 5, axonemal, transcript variant X3",1
+GO:0030317,flagellated sperm motility,0.00076,XM_034479305.1,105330782,NC_047563.1,23995567,23995569,55.25210084,sperm motility,other biological processes,"dynein heavy chain 5, axonemal, transcript variant X3",1
+GO:0030317,flagellated sperm motility,0.00076,XM_034479306.1,105330782,NC_047563.1,23984358,23984360,52.26046877,sperm motility,other biological processes,"dynein heavy chain 5, axonemal, transcript variant X4",1
+GO:0030317,flagellated sperm motility,0.00076,XM_034479306.1,105330782,NC_047563.1,23995567,23995569,55.25210084,sperm motility,other biological processes,"dynein heavy chain 5, axonemal, transcript variant X4",1
+GO:0030317,flagellated sperm motility,0.00076,XM_034479307.1,105330782,NC_047563.1,23984358,23984360,52.26046877,sperm motility,other biological processes,"dynein heavy chain 5, axonemal, transcript variant X5",1
+GO:0030317,flagellated sperm motility,0.00076,XM_034479307.1,105330782,NC_047563.1,23995567,23995569,55.25210084,sperm motility,other biological processes,"dynein heavy chain 5, axonemal, transcript variant X5",1
+GO:0030317,flagellated sperm motility,0.00076,XM_034479684.1,105337636,NC_047563.1,63424371,63424373,55.86956522,sperm motility,other biological processes,"unconventional myosin-VI, transcript variant X1",1
+GO:0030317,flagellated sperm motility,0.00076,XM_034479684.1,105337636,NC_047563.1,63429513,63429515,-58.66477273,sperm motility,other biological processes,"unconventional myosin-VI, transcript variant X1",1
+GO:0030317,flagellated sperm motility,0.00076,XM_034479685.1,105337636,NC_047563.1,63424371,63424373,55.86956522,sperm motility,other biological processes,"unconventional myosin-VI, transcript variant X2",1
+GO:0030317,flagellated sperm motility,0.00076,XM_034479685.1,105337636,NC_047563.1,63429513,63429515,-58.66477273,sperm motility,other biological processes,"unconventional myosin-VI, transcript variant X2",1
+GO:0030317,flagellated sperm motility,0.00076,XM_034479686.1,105337636,NC_047563.1,63424371,63424373,55.86956522,sperm motility,other biological processes,"unconventional myosin-VI, transcript variant X3",1
+GO:0030317,flagellated sperm motility,0.00076,XM_034479686.1,105337636,NC_047563.1,63429513,63429515,-58.66477273,sperm motility,other biological processes,"unconventional myosin-VI, transcript variant X3",1
+GO:0030317,flagellated sperm motility,0.00076,XM_034479687.1,105337636,NC_047563.1,63424371,63424373,55.86956522,sperm motility,other biological processes,"unconventional myosin-VI, transcript variant X4",1
+GO:0030317,flagellated sperm motility,0.00076,XM_034479687.1,105337636,NC_047563.1,63429513,63429515,-58.66477273,sperm motility,other biological processes,"unconventional myosin-VI, transcript variant X4",1
+GO:0030317,flagellated sperm motility,0.00076,XM_034479688.1,105337636,NC_047563.1,63424371,63424373,55.86956522,sperm motility,other biological processes,"unconventional myosin-VI, transcript variant X5",1
+GO:0030317,flagellated sperm motility,0.00076,XM_034479688.1,105337636,NC_047563.1,63429513,63429515,-58.66477273,sperm motility,other biological processes,"unconventional myosin-VI, transcript variant X5",1
+GO:0060285,cilium-dependent cell motility,0.00076,XM_034479303.1,NA,NA,NA,NA,NA,NA,NA,"dynein heavy chain 5, axonemal, transcript variant X1",1
+GO:0060285,cilium-dependent cell motility,0.00076,XM_034479304.1,NA,NA,NA,NA,NA,NA,NA,"dynein heavy chain 5, axonemal, transcript variant X2",1
+GO:0060285,cilium-dependent cell motility,0.00076,XM_034479305.1,NA,NA,NA,NA,NA,NA,NA,"dynein heavy chain 5, axonemal, transcript variant X3",1
+GO:0060285,cilium-dependent cell motility,0.00076,XM_034479306.1,NA,NA,NA,NA,NA,NA,NA,"dynein heavy chain 5, axonemal, transcript variant X4",1
+GO:0060285,cilium-dependent cell motility,0.00076,XM_034479307.1,NA,NA,NA,NA,NA,NA,NA,"dynein heavy chain 5, axonemal, transcript variant X5",1
+GO:0060285,cilium-dependent cell motility,0.00076,XM_034479684.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X1",1
+GO:0060285,cilium-dependent cell motility,0.00076,XM_034479685.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X2",1
+GO:0060285,cilium-dependent cell motility,0.00076,XM_034479686.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X3",1
+GO:0060285,cilium-dependent cell motility,0.00076,XM_034479687.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X4",1
+GO:0060285,cilium-dependent cell motility,0.00076,XM_034479688.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X5",1
+GO:0060294,cilium movement involved in cell motility,0.00076,XM_034479303.1,NA,NA,NA,NA,NA,NA,NA,"dynein heavy chain 5, axonemal, transcript variant X1",1
+GO:0060294,cilium movement involved in cell motility,0.00076,XM_034479304.1,NA,NA,NA,NA,NA,NA,NA,"dynein heavy chain 5, axonemal, transcript variant X2",1
+GO:0060294,cilium movement involved in cell motility,0.00076,XM_034479305.1,NA,NA,NA,NA,NA,NA,NA,"dynein heavy chain 5, axonemal, transcript variant X3",1
+GO:0060294,cilium movement involved in cell motility,0.00076,XM_034479306.1,NA,NA,NA,NA,NA,NA,NA,"dynein heavy chain 5, axonemal, transcript variant X4",1
+GO:0060294,cilium movement involved in cell motility,0.00076,XM_034479307.1,NA,NA,NA,NA,NA,NA,NA,"dynein heavy chain 5, axonemal, transcript variant X5",1
+GO:0060294,cilium movement involved in cell motility,0.00076,XM_034479684.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X1",1
+GO:0060294,cilium movement involved in cell motility,0.00076,XM_034479685.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X2",1
+GO:0060294,cilium movement involved in cell motility,0.00076,XM_034479686.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X3",1
+GO:0060294,cilium movement involved in cell motility,0.00076,XM_034479687.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X4",1
+GO:0060294,cilium movement involved in cell motility,0.00076,XM_034479688.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X5",1
+GO:0097722,sperm motility,0.00076,XM_034479303.1,NA,NA,NA,NA,NA,NA,NA,"dynein heavy chain 5, axonemal, transcript variant X1",1
+GO:0097722,sperm motility,0.00076,XM_034479304.1,NA,NA,NA,NA,NA,NA,NA,"dynein heavy chain 5, axonemal, transcript variant X2",1
+GO:0097722,sperm motility,0.00076,XM_034479305.1,NA,NA,NA,NA,NA,NA,NA,"dynein heavy chain 5, axonemal, transcript variant X3",1
+GO:0097722,sperm motility,0.00076,XM_034479306.1,NA,NA,NA,NA,NA,NA,NA,"dynein heavy chain 5, axonemal, transcript variant X4",1
+GO:0097722,sperm motility,0.00076,XM_034479307.1,NA,NA,NA,NA,NA,NA,NA,"dynein heavy chain 5, axonemal, transcript variant X5",1
+GO:0097722,sperm motility,0.00076,XM_034479684.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X1",1
+GO:0097722,sperm motility,0.00076,XM_034479685.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X2",1
+GO:0097722,sperm motility,0.00076,XM_034479686.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X3",1
+GO:0097722,sperm motility,0.00076,XM_034479687.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X4",1
+GO:0097722,sperm motility,0.00076,XM_034479688.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X5",1
+GO:0002165,instar larval or pupal development,0.00298,XM_034482479.1,105331446,NC_047564.1,26693493,26693495,59.06610067,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X1",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482479.1,105331446,NC_047564.1,26781172,26781174,61.41147963,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X1",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482479.1,105331446,NC_047564.1,26781458,26781460,52.16836735,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X1",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482479.1,105331446,NC_047564.1,26782469,26782471,62.61019879,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X1",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482479.1,105331446,NC_047564.1,26783579,26783581,65.38967136,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X1",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482488.1,105331446,NC_047564.1,26693493,26693495,59.06610067,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X10",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482488.1,105331446,NC_047564.1,26781172,26781174,61.41147963,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X10",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482488.1,105331446,NC_047564.1,26781458,26781460,52.16836735,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X10",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482488.1,105331446,NC_047564.1,26782469,26782471,62.61019879,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X10",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482488.1,105331446,NC_047564.1,26783579,26783581,65.38967136,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X10",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482480.1,105331446,NC_047564.1,26693493,26693495,59.06610067,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X2",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482480.1,105331446,NC_047564.1,26781172,26781174,61.41147963,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X2",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482480.1,105331446,NC_047564.1,26781458,26781460,52.16836735,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X2",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482480.1,105331446,NC_047564.1,26782469,26782471,62.61019879,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X2",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482480.1,105331446,NC_047564.1,26783579,26783581,65.38967136,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X2",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482481.1,105331446,NC_047564.1,26693493,26693495,59.06610067,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X3",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482481.1,105331446,NC_047564.1,26781172,26781174,61.41147963,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X3",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482481.1,105331446,NC_047564.1,26781458,26781460,52.16836735,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X3",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482481.1,105331446,NC_047564.1,26782469,26782471,62.61019879,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X3",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482481.1,105331446,NC_047564.1,26783579,26783581,65.38967136,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X3",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482482.1,105331446,NC_047564.1,26693493,26693495,59.06610067,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X4",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482482.1,105331446,NC_047564.1,26781172,26781174,61.41147963,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X4",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482482.1,105331446,NC_047564.1,26781458,26781460,52.16836735,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X4",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482482.1,105331446,NC_047564.1,26782469,26782471,62.61019879,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X4",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482482.1,105331446,NC_047564.1,26783579,26783581,65.38967136,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X4",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482483.1,105331446,NC_047564.1,26693493,26693495,59.06610067,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X5",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482483.1,105331446,NC_047564.1,26781172,26781174,61.41147963,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X5",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482483.1,105331446,NC_047564.1,26781458,26781460,52.16836735,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X5",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482483.1,105331446,NC_047564.1,26782469,26782471,62.61019879,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X5",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482483.1,105331446,NC_047564.1,26783579,26783581,65.38967136,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X5",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482484.1,105331446,NC_047564.1,26693493,26693495,59.06610067,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X6",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482484.1,105331446,NC_047564.1,26781172,26781174,61.41147963,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X6",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482484.1,105331446,NC_047564.1,26781458,26781460,52.16836735,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X6",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482484.1,105331446,NC_047564.1,26782469,26782471,62.61019879,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X6",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482484.1,105331446,NC_047564.1,26783579,26783581,65.38967136,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X6",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482485.1,105331446,NC_047564.1,26693493,26693495,59.06610067,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X7",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482485.1,105331446,NC_047564.1,26781172,26781174,61.41147963,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X7",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482485.1,105331446,NC_047564.1,26781458,26781460,52.16836735,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X7",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482485.1,105331446,NC_047564.1,26782469,26782471,62.61019879,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X7",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482485.1,105331446,NC_047564.1,26783579,26783581,65.38967136,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X7",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482486.1,105331446,NC_047564.1,26693493,26693495,59.06610067,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X8",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482486.1,105331446,NC_047564.1,26781172,26781174,61.41147963,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X8",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482486.1,105331446,NC_047564.1,26781458,26781460,52.16836735,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X8",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482486.1,105331446,NC_047564.1,26782469,26782471,62.61019879,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X8",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482486.1,105331446,NC_047564.1,26783579,26783581,65.38967136,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X8",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482487.1,105331446,NC_047564.1,26693493,26693495,59.06610067,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X9",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482487.1,105331446,NC_047564.1,26781172,26781174,61.41147963,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X9",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482487.1,105331446,NC_047564.1,26781458,26781460,52.16836735,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X9",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482487.1,105331446,NC_047564.1,26782469,26782471,62.61019879,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X9",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034482487.1,105331446,NC_047564.1,26783579,26783581,65.38967136,instar larval or pupal development,developmental processes,"helicase domino, transcript variant X9",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034473960.1,NA,NA,NA,NA,NA,NA,NA,"protein neuralized, transcript variant X3",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034479684.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X1",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034479685.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X2",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034479686.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X3",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034479687.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X4",2
+GO:0002165,instar larval or pupal development,0.00298,XM_034479688.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X5",2
+GO:0009791,post-embryonic development,0.00442,XM_034478686.1,105339958,NC_047563.1,43490501,43490503,-64.66165414,post-embryonic development,developmental processes,"cation-independent mannose-6-phosphate receptor, transcript variant X1",3
+GO:0009791,post-embryonic development,0.00442,XM_034478687.1,105339958,NC_047563.1,43490501,43490503,-64.66165414,post-embryonic development,developmental processes,"cation-independent mannose-6-phosphate receptor, transcript variant X2",3
+GO:0009791,post-embryonic development,0.00442,XM_034478689.1,105339958,NC_047563.1,43490501,43490503,-64.66165414,post-embryonic development,developmental processes,"cation-independent mannose-6-phosphate receptor, transcript variant X3",3
+GO:0009791,post-embryonic development,0.00442,XM_034478690.1,105339958,NC_047563.1,43490501,43490503,-64.66165414,post-embryonic development,developmental processes,"cation-independent mannose-6-phosphate receptor, transcript variant X4",3
+GO:0009791,post-embryonic development,0.00442,XM_034465734.1,105317044,NC_047560.1,1302128,1302130,66.14814815,post-embryonic development,developmental processes,"cytoplasmic aconitate hydratase, transcript variant X1",3
+GO:0009791,post-embryonic development,0.00442,XM_034465734.1,105317044,NC_047560.1,1302706,1302708,54.99087036,post-embryonic development,developmental processes,"cytoplasmic aconitate hydratase, transcript variant X1",3
+GO:0009791,post-embryonic development,0.00442,XM_034465735.1,105317044,NC_047560.1,1302128,1302130,66.14814815,post-embryonic development,developmental processes,"cytoplasmic aconitate hydratase, transcript variant X2",3
+GO:0009791,post-embryonic development,0.00442,XM_034465735.1,105317044,NC_047560.1,1302706,1302708,54.99087036,post-embryonic development,developmental processes,"cytoplasmic aconitate hydratase, transcript variant X2",3
+GO:0009791,post-embryonic development,0.00442,XM_034465736.1,105317044,NC_047560.1,1302128,1302130,66.14814815,post-embryonic development,developmental processes,"cytoplasmic aconitate hydratase, transcript variant X3",3
+GO:0009791,post-embryonic development,0.00442,XM_034465736.1,105317044,NC_047560.1,1302706,1302708,54.99087036,post-embryonic development,developmental processes,"cytoplasmic aconitate hydratase, transcript variant X3",3
+GO:0009791,post-embryonic development,0.00442,XM_034465737.1,105317044,NC_047560.1,1302128,1302130,66.14814815,post-embryonic development,developmental processes,"cytoplasmic aconitate hydratase, transcript variant X4",3
+GO:0009791,post-embryonic development,0.00442,XM_034465737.1,105317044,NC_047560.1,1302706,1302708,54.99087036,post-embryonic development,developmental processes,"cytoplasmic aconitate hydratase, transcript variant X4",3
+GO:0009791,post-embryonic development,0.00442,XM_034465738.1,105317044,NC_047560.1,1302128,1302130,66.14814815,post-embryonic development,developmental processes,"cytoplasmic aconitate hydratase, transcript variant X5",3
+GO:0009791,post-embryonic development,0.00442,XM_034465738.1,105317044,NC_047560.1,1302706,1302708,54.99087036,post-embryonic development,developmental processes,"cytoplasmic aconitate hydratase, transcript variant X5",3
+GO:0009791,post-embryonic development,0.00442,XM_034482479.1,NA,NA,NA,NA,NA,NA,NA,"helicase domino, transcript variant X1",3
+GO:0009791,post-embryonic development,0.00442,XM_034482488.1,NA,NA,NA,NA,NA,NA,NA,"helicase domino, transcript variant X10",3
+GO:0009791,post-embryonic development,0.00442,XM_034482480.1,NA,NA,NA,NA,NA,NA,NA,"helicase domino, transcript variant X2",3
+GO:0009791,post-embryonic development,0.00442,XM_034482481.1,NA,NA,NA,NA,NA,NA,NA,"helicase domino, transcript variant X3",3
+GO:0009791,post-embryonic development,0.00442,XM_034482482.1,NA,NA,NA,NA,NA,NA,NA,"helicase domino, transcript variant X4",3
+GO:0009791,post-embryonic development,0.00442,XM_034482483.1,NA,NA,NA,NA,NA,NA,NA,"helicase domino, transcript variant X5",3
+GO:0009791,post-embryonic development,0.00442,XM_034482484.1,NA,NA,NA,NA,NA,NA,NA,"helicase domino, transcript variant X6",3
+GO:0009791,post-embryonic development,0.00442,XM_034482485.1,NA,NA,NA,NA,NA,NA,NA,"helicase domino, transcript variant X7",3
+GO:0009791,post-embryonic development,0.00442,XM_034482486.1,NA,NA,NA,NA,NA,NA,NA,"helicase domino, transcript variant X8",3
+GO:0009791,post-embryonic development,0.00442,XM_034482487.1,NA,NA,NA,NA,NA,NA,NA,"helicase domino, transcript variant X9",3
+GO:0009791,post-embryonic development,0.00442,XM_034473960.1,NA,NA,NA,NA,NA,NA,NA,"protein neuralized, transcript variant X3",3
+GO:0009791,post-embryonic development,0.00442,XM_034482647.1,105317516,NC_047564.1,25225793,25225795,58.97435897,post-embryonic development,developmental processes,"serine-protein kinase ATM, transcript variant X1",3
+GO:0009791,post-embryonic development,0.00442,XM_034482648.1,105317516,NC_047564.1,25225793,25225795,58.97435897,post-embryonic development,developmental processes,"serine-protein kinase ATM, transcript variant X2",3
+GO:0009791,post-embryonic development,0.00442,XM_034482649.1,105317516,NC_047564.1,25225793,25225795,58.97435897,post-embryonic development,developmental processes,"serine-protein kinase ATM, transcript variant X3",3
+GO:0009791,post-embryonic development,0.00442,XM_034474502.1,105328930,NC_047562.1,39658233,39658235,-53.581621,post-embryonic development,developmental processes,"serine/threonine-protein kinase 36, transcript variant X1",3
+GO:0009791,post-embryonic development,0.00442,XM_034474503.1,105328930,NC_047562.1,39658233,39658235,-53.581621,post-embryonic development,developmental processes,"serine/threonine-protein kinase 36, transcript variant X2",3
+GO:0009791,post-embryonic development,0.00442,XM_034479684.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X1",3
+GO:0009791,post-embryonic development,0.00442,XM_034479685.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X2",3
+GO:0009791,post-embryonic development,0.00442,XM_034479686.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X3",3
+GO:0009791,post-embryonic development,0.00442,XM_034479687.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X4",3
+GO:0009791,post-embryonic development,0.00442,XM_034479688.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X5",3
+GO:0001700,embryonic development via the syncytial blastoderm,0.00816,XM_034481540.1,NA,NA,NA,NA,NA,NA,NA,"uncharacterized LOC105324167, transcript variant X1",4
+GO:0001700,embryonic development via the syncytial blastoderm,0.00816,XM_034481541.1,NA,NA,NA,NA,NA,NA,NA,"uncharacterized LOC105324167, transcript variant X2",4
+GO:0001700,embryonic development via the syncytial blastoderm,0.00816,XM_034479684.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X1",4
+GO:0001700,embryonic development via the syncytial blastoderm,0.00816,XM_034479685.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X2",4
+GO:0001700,embryonic development via the syncytial blastoderm,0.00816,XM_034479686.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X3",4
+GO:0001700,embryonic development via the syncytial blastoderm,0.00816,XM_034479687.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X4",4
+GO:0001700,embryonic development via the syncytial blastoderm,0.00816,XM_034479688.1,NA,NA,NA,NA,NA,NA,NA,"unconventional myosin-VI, transcript variant X5",4
+GO:0007391,dorsal closure,0.00816,XM_034481540.1,NA,NA,NA,NA,NA,NA,NA,"uncharacterized LOC105324167, transcript variant X1",5
+GO:0007391,dorsal closure,0.00816,XM_034481541.1,NA,NA,NA,NA,NA,NA,NA,"uncharacterized LOC105324167, transcript variant X2",5
+GO:0007391,dorsal closure,0.00816,XM_034479684.1,105337636,NC_047563.1,63424371,63424373,55.86956522,dorsal closure,developmental processes,"unconventional myosin-VI, transcript variant X1",5
+GO:0007391,dorsal closure,0.00816,XM_034479684.1,105337636,NC_047563.1,63429513,63429515,-58.66477273,dorsal closure,developmental processes,"unconventional myosin-VI, transcript variant X1",5
+GO:0007391,dorsal closure,0.00816,XM_034479685.1,105337636,NC_047563.1,63424371,63424373,55.86956522,dorsal closure,developmental processes,"unconventional myosin-VI, transcript variant X2",5
+GO:0007391,dorsal closure,0.00816,XM_034479685.1,105337636,NC_047563.1,63429513,63429515,-58.66477273,dorsal closure,developmental processes,"unconventional myosin-VI, transcript variant X2",5
+GO:0007391,dorsal closure,0.00816,XM_034479686.1,105337636,NC_047563.1,63424371,63424373,55.86956522,dorsal closure,developmental processes,"unconventional myosin-VI, transcript variant X3",5
+GO:0007391,dorsal closure,0.00816,XM_034479686.1,105337636,NC_047563.1,63429513,63429515,-58.66477273,dorsal closure,developmental processes,"unconventional myosin-VI, transcript variant X3",5
+GO:0007391,dorsal closure,0.00816,XM_034479687.1,105337636,NC_047563.1,63424371,63424373,55.86956522,dorsal closure,developmental processes,"unconventional myosin-VI, transcript variant X4",5
+GO:0007391,dorsal closure,0.00816,XM_034479687.1,105337636,NC_047563.1,63429513,63429515,-58.66477273,dorsal closure,developmental processes,"unconventional myosin-VI, transcript variant X4",5
+GO:0007391,dorsal closure,0.00816,XM_034479688.1,105337636,NC_047563.1,63424371,63424373,55.86956522,dorsal closure,developmental processes,"unconventional myosin-VI, transcript variant X5",5
+GO:0007391,dorsal closure,0.00816,XM_034479688.1,105337636,NC_047563.1,63429513,63429515,-58.66477273,dorsal closure,developmental processes,"unconventional myosin-VI, transcript variant X5",5

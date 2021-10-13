@@ -411,7 +411,8 @@ dfBP
 ```{r}
 sigRes.allBPCluster <- left_join(sigRes.allBPProduct, dfBP, by = "GOID") #Add cluster information to product annotations
 nrow(sigRes.allBPCluster) == nrow(sigRes.allBPProduct) #Confirm all rows have a cluster ID
-sigRes.allBPCluster <- sigRes.allBPCluster[,-c(10, 13)] #Remove duplicate columns
+sigRes.allBPCluster <- sigRes.allBPCluster[,-13] #Remove duplicate columns
+colnames(sigRes.allBPCluster)[10] <- "GOterm" #Remove suffix from column name
 head(sigRes.allBPCluster)
 ```
 
