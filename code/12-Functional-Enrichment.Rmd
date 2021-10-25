@@ -234,6 +234,27 @@ head(sigRes.allBPProduct) #Confirm formatting
 write.csv(sigRes.allBPProduct, "all-BP-EnrichedGO-DML-Product.csv", quote = FALSE, row.names = FALSE) #Save dataframe
 ```
 
+#### Count the number of hyper- or hypomethylated DML in genes with enriched GOterms
+
+```{r}
+sigRes.allBPMethDiff <- unique(sigRes.allBPProduct %>%
+  dplyr::select(., transcript) %>%
+  left_join(., allDMLGOtermsFiltered, by = "transcript") %>%
+  filter(., GOcat == "P") %>%
+  dplyr::select(., geneID, chr, start, end, meth.diff)) #Isolate transcript column; join with DML list; remove all rows that aren't BP GOterms, select gene ID/chr/start/end/meth.diff columns
+head(sigRes.allBPMethDiff) #Confirm formatting
+```
+
+```{r}
+nrow(sigRes.allBPMethDiff) #Number of unqiue DML in genes with enriched GOterms
+sum(sigRes.allBPMethDiff$meth.diff >= 0) #Number of unique DML hypermethylated
+sum(sigRes.allBPMethDiff$meth.diff <= 0) #Number of unique DML hypomethylated
+```
+
+```{r}
+write.csv(sigRes.allBPMethDiff, "all-BP-EnrichedGO-DMLOnly.csv", quote = FALSE, row.names = FALSE) #Save dataframe as csv
+```
+
 ### Cellular components
 
 ```{r}
