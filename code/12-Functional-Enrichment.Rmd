@@ -342,6 +342,28 @@ head(sigRes.allCCProduct) #Confirm formatting
 write.csv(sigRes.allCCProduct, "all-CC-EnrichedGO-DML-Product.csv", quote = FALSE, row.names = FALSE) #Save dataframe
 ```
 
+#### Count the number of hyper- or hypomethylated DML in genes with enriched GOterms
+
+```{r}
+sigRes.allCCMethDiff <- unique(sigRes.allCCProduct %>%
+  dplyr::select(., transcript) %>%
+  left_join(., allDMLGOtermsFiltered, by = "transcript") %>%
+  filter(., GOcat == "C") %>%
+  dplyr::select(., geneID, chr, start, end, meth.diff)) #Isolate transcript column; join with DML list; remove all rows that aren't CC GOterms, select gene ID/chr/start/end/meth.diff columns
+head(sigRes.allCCMethDiff) #Confirm formatting
+```
+
+```{r}
+nrow(sigRes.allCCMethDiff) #Number of unqiue DML in genes with enriched GOterms
+sum(sigRes.allCCMethDiff$meth.diff >= 0) #Number of unique DML hypermethylated
+sum(sigRes.allCCMethDiff$meth.diff <= 0) #Number of unique DML hypomethylated
+```
+
+```{r}
+write.csv(sigRes.allCCMethDiff, "all-CC-EnrichedGO-DMLOnly.csv", quote = FALSE, row.names = FALSE) #Save dataframe as csv
+```
+
+
 ### Molecular function
 
 ```{r}
