@@ -204,7 +204,7 @@ sigRes.allBPAnnot <- unique(sigRes.allBPAnnot[,-12]) #Drop GOcat column and reta
 nrow(sigRes.allBPAnnot) #Count the number of rows
 length(na.omit(unique(sigRes.allBPAnnot$geneID))) #7 unique genes
 length(na.omit(unique(sigRes.allBPAnnot$transcript))) #37 unique transcripts
-head(sigRes.allBPAnnot) #Confirm formatting. 
+head(sigRes.allBPAnnot) #Confirm formatting 
 ```
 
 ```{r}
