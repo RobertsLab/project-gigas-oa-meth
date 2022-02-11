@@ -11,7 +11,7 @@ In this script, I'll get preliminary methylation information from oyster samples
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-knitr::opts_knit$set(root.dir = "/Users/yaamini/Documents/project-gigas-oa-meth/output/06-methylKit/") #Set root directory
+knitr::opts_knit$set(root.dir = "/Users/yaaminivenkataraman/Documents/project-gigas-oa-meth/output/06-methylKit/") #Set root directory
 ```
 
 # Install packages
@@ -950,11 +950,16 @@ head(CGmotifsCounts)
 ### All samples
 
 ```{r}
-DMLchrCountsAll <-as.data.frame(table(diffMethStatsTreatment50All$chr)) #Count the number of DML/chromosome
+uniqueDMLAll <- read.delim("../10_DML-characterization/DML-pH-50-Cov5-All-NO-SNPs.bed", header = FALSE, sep = "\t") #Import DML list without SNPs
+colnames(uniqueDMLAll) <- c("chr", "start", "stop", "meth.diff") #Add column names
+head() #Confirm formatting
+```
+
+```{r}
+DMLchrCountsAll <-as.data.frame(table(uniqueDMLAll$chr)) #Count the number of DML/chromosome
 colnames(DMLchrCountsAll) <- c("chr", "DMLCount") #Rename columns
 head(DMLchrCountsAll) #Confirm formatting
 ```
-
 ```{r}
 DMLchrCountsAll <- merge(x = DMLchrCountsAll, y = genechrCounts, by = "chr") #Merge by chr to get gene counts for each chr with DML
 DMLchrCountsAll <- merge(x = DMLchrCountsAll, y = CGmotifsCounts, by = "chr") #Merge by chr to get CpG counts for each chr with DML
