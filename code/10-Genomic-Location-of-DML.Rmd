@@ -60,7 +60,7 @@ I will look at genomic locations of each sex-specific DML list, then create a pl
 cpgFeatureOverlapsAll <- read.table("DML-pH-50-Cov5-All-Overlap-counts.txt", header = FALSE, sep = "\t", col.names = c("allDML", "filename")) #Import line counts
 cpgFeatureOverlapsAll <- cpgFeatureOverlapsAll[-c(2, 3, 10, 12),] #Drop extra lines
 cpgFeatureOverlapsAll <- cpgFeatureOverlapsAll[c(4, 1, 6, 8, 3, 7, 2, 5),] #Reorganize rows to match order: exon UTR, CDS, intron, upstream, downstream, lncRNA, TE, intergenic
-tail(cpgFeatureOverlapsAll) #Confirm import
+cpgFeatureOverlapsAll #Confirm import
 ```
 
 ```{r}
