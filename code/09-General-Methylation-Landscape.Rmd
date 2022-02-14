@@ -46,7 +46,7 @@ plotColors2 <- rev(RColorBrewer::brewer.pal(8, "Oranges")) #Create a color palet
 This is a more efficient way to visualize methylated, sparsely methylated, and unmethylated CpGs.
 
 ```{r}
-cpgMethylation <- read.table("zr3616_union-averages_5x.bedgraph", header = FALSE, sep = "\t") #Import  bedgraph with percent methylation information for all CpGs with 5x coverage in each sample
+cpgMethylation <- read.table("zr3616_union-averages_5x.bedgraph.NO-SNPs", header = FALSE, sep = "\t") #Import  bedgraph with percent methylation information for all CpGs with 5x coverage in each sample
 colnames(cpgMethylation) <- c("chr", "start", "end", "meth") #Add column names
 head(cpgMethylation) #Confirm import
 ```
