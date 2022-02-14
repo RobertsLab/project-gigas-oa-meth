@@ -517,3 +517,4 @@ output/09-methylation-landscape/zr3616_8_R1_val_1_val_1_val_1_bismark_bt2_pe._5x
 output/09-methylation-landscape/zr3616_union-averages_5x.bedgraph.NO-SNPs-Meth.bed
 output/09-methylation-landscape/zr3616_union-averages_5x.bedgraph.NO-SNPs-sparseMeth.bed
 output/09-methylation-landscape/zr3616_union-averages_5x.bedgraph.NO-SNPs-unMeth.bed
+*.bed-CDS
