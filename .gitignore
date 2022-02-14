@@ -519,3 +519,4 @@ output/09-methylation-landscape/zr3616_union-averages_5x.bedgraph.NO-SNPs-sparse
 output/09-methylation-landscape/zr3616_union-averages_5x.bedgraph.NO-SNPs-unMeth.bed
 *.bed-CDS
 *.bed-exonUTR
+*.bed-intron
