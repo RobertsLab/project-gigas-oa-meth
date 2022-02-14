@@ -523,3 +523,4 @@ output/09-methylation-landscape/zr3616_union-averages_5x.bedgraph.NO-SNPs-unMeth
 *.bed-upstreamFlanks
 *.bed-downstreamFlanks
 *.bed-intergenic
+*.bed-lncRNA
