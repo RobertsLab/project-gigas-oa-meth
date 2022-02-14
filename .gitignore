@@ -486,3 +486,4 @@ output/11-GOterm-annotation/DML-pH-50-Cov5-All.GeneIDs.geneOverlap.transcriptIDs
 output/10_DML-characterization/DML-pH-50-Cov5-All-Gene-unique-CT-SNPs.bed
 .RDataTmp
 *.NO-SNPs
+*.NO-SNPs-Meth
